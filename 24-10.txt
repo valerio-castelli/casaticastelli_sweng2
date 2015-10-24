@@ -9,6 +9,10 @@ Assumptions:
 ( - qualunque meccanismo di prenotazione fosse in atto prima (ad es. telefonica), non verrà più usato )
 - Users don't have the need to choose a particular taxi driver among those that are available for their ride.
 (- User will always accept the taxi selected for their ride.)
+"Every taxi is uniquely identified by an alphanumeric code that is assigned by the city administration when he becomes part of the taxi service"
+	-- what is the taxi service exactly???
+"User will request a ride only from within the city." (i.e., the origin of the ride is inside the city)
+	-- req.???
 
 
 Goal 1: "L'amministrazione deve avere la possibilità di trasferire i dati dei tassisti nel nuovo sistema"

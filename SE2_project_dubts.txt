@@ -30,15 +30,18 @@ Scope:
 - time in hh:mm (??)
 - urban zone for the selection of available taxi (??)
 
-
 ____________________________________________________________________________________________________
 
 
 - corse extraurbane? permetterle? se sì, cosa succede squanto il taxi è fuori?
+- programmatic	interfaces?
+- mapping service: world or shared?
+- la prenotazione è una interfaccia programmabile / modulo esterno
+- come viene calcolato il waiting time?
+- per chi fa richieste
 
 
 Dubbi/Osservazioni
-- code: preassegnato o generato dal sistema??
 - se manca interntet? l'id come fa ed essere messo in coda?
 - se nessun taxi è available (tutti impeganti in una corsa, tutti fuopri città, ...)?
 - come essere sicuri che un taxista, quando ha accettatto una corsa, ci è andato veramente?
@@ -52,15 +55,10 @@ Dubbi/Osservazioni
 - in che posizione viene messo il taxista quando accetta la richiesta?
 - quando una corsa è conclusa, in che pos. è il taxi?
 - il taxista può, dopo aver accettato una chiamata, rifiutarla?
-- programmatic	interfaces?
-- mapping service: world or shared?
 - waiting time and reply message for the user: what if there is no taxi available?
 	-- e se ci sono ritardi?
 - se non ci sono taxi in coda?
 	- do all'utente la possibilità di mettersi in coda nelle richieste, dicendolgi anche quanti utenti ci sono già in coda
-- per chi fa richieste
-- la prenotazione è una interfaccia programmabile / modulo esterno
-- come viene calcolato il waiting time?
 		
 
 SW req.
