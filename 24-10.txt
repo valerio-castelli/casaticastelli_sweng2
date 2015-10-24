@@ -1,15 +1,17 @@
-"I dati relativi ai tassisti vengono inseriti manualmente alla prima installazione del sistema"
+Assumptions:
+- User will not directly contact a taxi driver to request a ride.
+	-- "directly"?
+- Taxi drivers will make rides by only accepting a request from the system.
+- all the data stored in the system-as-is (o come si chiamava) must be transferred in the system-to-be at its very start"
+	- ambiguo come li trasferiamo però?
+	- serve un req. per dire che il sistema assicura di permettere la cosa
+	- evitare di dire "at start", oppure metterlo separatamente
+( qualunque meccanismo di prenotazione fosse in atto prima (ad es. telefonica), non verrà più usato )
 
-"The system will not allow any operation to take place until data entry is completed"
+Goal 1: "L'amministrazione deve avere la possibilità di trasferire i dati dei tassisti nel nuovo sistema"
+Requirements:
+- "The system must provide a data entry form to collect data about the taxi drivers"
+- "The system must provide a way for the operator to confirm that the initial data entry operation is complete (i.e., a button)"
+- The system will not allow any operation to take place until data entry is completed"
 
-"The system must provide a data entry form to collect data about the taxi drivers"
 
-"The system must provide a way for the operator to confirm that the initial data entry operation is complete (i.e., a button)"
-
-"L'amministrazione deve avere la possibilità di trasferire i dati dei tassisti nel nuovo sistema"
-
-qualunque meccanismo di prenotazione fosse in atto prima (ad es. telefonica), non verrà più usato
-
-"Users are not able to directly contact a taxi driver."
-or
-"Taxis can only be reserved through the usage of the web app / mobile app. No other reservation system coexists"
