@@ -33,6 +33,7 @@ Dubbi/Osservazioni
 - la prenotazione è una interfaccia programmabile / modulo esterno
 - non garantiamo che in 10 minuti il taxi arrivi, nel caso di prenotazione
 - fair management?
+- code: what is its structure? (alphanumeric char, length)
 		
 
 SW req.
