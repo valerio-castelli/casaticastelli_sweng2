@@ -1,10 +1,7 @@
 Assumptions:
-- sistema che "cade dall'alto" sui taxisti: i taxisti vi si adatteranno senza problemi (assunzione forte: cosa vuol dire "senza problemi"??)
-- l'utente non ha la necessità di richiedere un taxi specifico
 - all'utente che prenota con largo anticipo non importa se il taxi non arriva nei 10 minuti >> non garantiamo che arrivi nei 10 minuti
 - identifare e code sono la stessa cosa
 (- stuttura del codice: alfanumerico, lunghezza, ...)
-- sistema preesistente 
 
 Goals:
 - all a guest to register
@@ -37,23 +34,21 @@ Scope:
 ____________________________________________________________________________________________________
 
 
+- corse extraurbane? permetterle? se sì, cosa succede squanto il taxi è fuori?
+
 
 Dubbi/Osservazioni
 - code: preassegnato o generato dal sistema??
 - se manca interntet? l'id come fa ed essere messo in coda?
-- se nessun texi è available (tutti impeganti in una corsa, tutti fuopri città, ...)?
+- se nessun taxi è available (tutti impeganti in una corsa, tutti fuopri città, ...)?
 - come essere sicuri che un taxista, quando ha accettatto una corsa, ci è andato veramente?
 - essere sicuri che il taxista completa effettivamente la corsa
-- corse extraurbane? permetterle? se sì, cosa succede squanto il taxi è fuori?
 - come il taxista comunica di essere avialbale
 - frequenze ricezione dati GPS (una volta al minuto?, ...)
 - se il taxista spegne il cellulare / il taxista è irraggiungibile / se c'era già una corsa in corso?
 	-- si scarica la batteria durante una corsa extraurbana?
 - come si prenota attualmente un taxi?
-- interfacciamenteo con sistema preesistente (?)
-- cosa succede alla vecchia modalità di prenotazione? rimane/si deve cooperare? ...
 - timeout >> rifiuto
-- queue management
 - in che posizione viene messo il taxista quando accetta la richiesta?
 - quando una corsa è conclusa, in che pos. è il taxi?
 - il taxista può, dopo aver accettato una chiamata, rifiutarla?
@@ -65,8 +60,6 @@ Dubbi/Osservazioni
 	- do all'utente la possibilità di mettersi in coda nelle richieste, dicendolgi anche quanti utenti ci sono già in coda
 - per chi fa richieste
 - la prenotazione è una interfaccia programmabile / modulo esterno
-- non garantiamo che in 10 minuti il taxi arrivi, nel caso di prenotazione
-- fair management?
 - come viene calcolato il waiting time?
 		
 

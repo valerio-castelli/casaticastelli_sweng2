@@ -6,7 +6,10 @@ Assumptions:
 	- ambiguo come li trasferiamo però?
 	- serve un req. per dire che il sistema assicura di permettere la cosa
 	- evitare di dire "at start", oppure metterlo separatamente
-( qualunque meccanismo di prenotazione fosse in atto prima (ad es. telefonica), non verrà più usato )
+( - qualunque meccanismo di prenotazione fosse in atto prima (ad es. telefonica), non verrà più usato )
+- Users don't have the need to choose a particular taxi driver among those that are available for their ride.
+(- User will always accept the taxi selected for their ride.)
+
 
 Goal 1: "L'amministrazione deve avere la possibilità di trasferire i dati dei tassisti nel nuovo sistema"
 Requirements:

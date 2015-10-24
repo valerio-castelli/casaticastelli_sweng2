@@ -1,0 +1,5 @@
+- Taxi drivers will be using the system since the very first day of its start.
+or
+- sistema che "cade dall'alto" sui taxisti: i taxisti vi si adatteranno senza problemi (assunzione forte: cosa vuol dire "senza problemi"??)
+	-- fuori dal nostro orizzonte (se non viene usato dal comune o robe simili, sono cavoli loro, non impatta sul design del sistema)
+- sistema preesistente
