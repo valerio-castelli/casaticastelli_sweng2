@@ -4,6 +4,7 @@ Assumptions:
 - all'utente che prenota con largo anticipo non importa se il taxi non arriva nei 10 minuti >> non garantiamo che arrivi nei 10 minuti
 - identifare e code sono la stessa cosa
 (- stuttura del codice: alfanumerico, lunghezza, ...)
+- sistema preesistente 
 
 Goals:
 - all a guest to register

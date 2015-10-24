@@ -1,0 +1,15 @@
+"I dati relativi ai tassisti vengono inseriti manualmente alla prima installazione del sistema"
+
+"The system will not allow any operation to take place until data entry is completed"
+
+"The system must provide a data entry form to collect data about the taxi drivers"
+
+"The system must provide a way for the operator to confirm that the initial data entry operation is complete (i.e., a button)"
+
+"L'amministrazione deve avere la possibilità di trasferire i dati dei tassisti nel nuovo sistema"
+
+qualunque meccanismo di prenotazione fosse in atto prima (ad es. telefonica), non verrà più usato
+
+"Users are not able to directly contact a taxi driver."
+or
+"Taxis can only be reserved through the usage of the web app / mobile app. No other reservation system coexists"
