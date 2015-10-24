@@ -2,9 +2,32 @@ Assumptions:
 - all'utente che prenota con largo anticipo non importa se il taxi non arriva nei 10 minuti >> non garantiamo che arrivi nei 10 minuti
 - identifare e code sono la stessa cosa
 (- stuttura del codice: alfanumerico, lunghezza, ...)
+- the user cannot specify which taxi he/she wants to reserve: he can only specify origin and destination of the ride
+
 
 Goals:
-- all a guest to register
+NB: there are many queues of available taxi: one for each zone
+- if a user request a ride, is request is stored in a queue of requests (waiting list???)
+	-- specify / give a name to this list
+- if there is a pending call in the waiting list, as soon as there is a taxi code in the queue, the taxi related to this code is associated with the first
+	-- too much saying
+- if a user request a ride, a taxi must arrive as soon as possible
+	-- as soon as possible ??? w.r.t what "possible" ???
+- if a user request a ride, the first taxi available in the queue is selected
+- if a taxi driver refuse a call, it is remove from the queue and put in the last position of the queue.
+- when a taxi driver accept a call, it is remove from the queue and putted in a list of unavailable taxi
+	-- specify / give a name to this list
+- ??? what happen to the managed calls (i.e.: when a taxi has been associated to a call) ???
+- when a taxi communicate its availability, its code is stored in the queue (in the last position).
+- a queue (i.e., a FIFO list) is used to store the availabilities of taxi drivers: the first taxi to communicate its availability, will be the first in the code.
+	-- it is necessary to specify that when a taxi is taken from the queue, all the other are shifted??? i think no, it's the definition of queue/FIFO...
+- if a user reserve a taxi, the reservation must be stored (i.e.: it will not be lost)
+- if a user withdraw from a call, ???
+- if a user delete a reservation,  ???
+- 
+
+- if a user has booked a ride, starting from 10 minutes before the time of the ride a taxi must b
+- allow a guest to register
 - allow users to:
 	-- log in
 	-- call for a taxi
@@ -25,13 +48,6 @@ Goals:
 	-- FIFO
 	-- ...
 - programmatic	interfaces (is this a goal ??)
-
-Scope:
-- time in hh:mm (??)
-- urban zone for the selection of available taxi (??)
-
-____________________________________________________________________________________________________
-
 
 - corse extraurbane? permetterle? se sì, cosa succede squanto il taxi è fuori?
 - programmatic	interfaces?
@@ -61,12 +77,6 @@ Dubbi/Osservazioni
 	- do all'utente la possibilità di mettersi in coda nelle richieste, dicendolgi anche quanti utenti ci sono già in coda
 		
 
-SW req.
-- google mapping
-
-HW requirement
-- mobile da usare?
-
 Comportamenti utente
 - l'utente può rifiutare?
 	-- se riufiuta, viene inviata una notificia al taxista? il taxista deve riconfermare di essere disponibile? viene lasciato 
@@ -74,4 +84,16 @@ Comportamenti utente
 - se l'utente prenota con giorni di anticipo, può ritirare la prenotazione?
 - l'utente deve registrarsi (?)
 - con quanti giorni di anticipo??
+
+____________________________________________________________________________________________________
+
+SW req.
+- google mapping
+
+HW requirement
+- mobile da usare?
+
+Scope:
+- time in hh:mm (??)
+- urban zone for the selection of available taxi (??)
 
