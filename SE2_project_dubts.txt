@@ -1,13 +1,47 @@
 Assumptions:
-- code: preassegnato o generato dal sistema??
-- sistema che "cade dall'alto" sui taxisti
-- se manca interntet? l'id come fa ed essere messo in coda?
+- sistema che "cade dall'alto" sui taxisti: i taxisti vi si adatteranno senza problemi (assunzione forte: cosa vuol dire "senza problemi"??)
 - l'utente non ha la necessità di richiedere un taxi specifico
-- all'utente che prenota non largo anticinpo non gliene frega niente se il taxi non arriva nei 10 minuti >> non garantiamo che arrivi nei 10 minuti
+- all'utente che prenota con largo anticipo non importa se il taxi non arriva nei 10 minuti >> non garantiamo che arrivi nei 10 minuti
+- identifare e code sono la stessa cosa
+(- stuttura del codice: alfanumerico, lunghezza, ...)
+
+Goals:
+- all a guest to register
+- allow users to:
+	-- log in
+	-- call for a taxi
+	-- prenote a taxi
+	-- withdraw from a call (???)
+	-- delete a prenotation (probable yes)
+- inform user when a tax is coming
+	-- send them regular updates (??)
+- allow taxi drives to:
+	-- accept a call
+	-- refuse a call
+	-- communicate "user on board"
+	-- communicate "user arrived at destination"
+	-- communicate his availability
+	-- withdraw from the queue (??)
+- fair use of the queue:
+	-- only taxy from the zone are selected
+	-- FIFO
+	-- ...
+- programmatic	interfaces (is this a goal ??)
+
+Scope:
+- time in hh:mm (??)
+- urban zone for the selection of available taxi (??)
+
+
+____________________________________________________________________________________________________
+
+
 
 Dubbi/Osservazioni
-- nessun texi è available (tutti impeganti in una corsa, tutti fuopri città, ...)
-- com eessere sicuri che un taxista, quando ha accettatto una corsa, ci è andato veramente?
+- code: preassegnato o generato dal sistema??
+- se manca interntet? l'id come fa ed essere messo in coda?
+- se nessun texi è available (tutti impeganti in una corsa, tutti fuopri città, ...)?
+- come essere sicuri che un taxista, quando ha accettatto una corsa, ci è andato veramente?
 - essere sicuri che il taxista completa effettivamente la corsa
 - corse extraurbane? permetterle? se sì, cosa succede squanto il taxi è fuori?
 - come il taxista comunica di essere avialbale
@@ -15,7 +49,6 @@ Dubbi/Osservazioni
 - se il taxista spegne il cellulare / il taxista è irraggiungibile / se c'era già una corsa in corso?
 	-- si scarica la batteria durante una corsa extraurbana?
 - come si prenota attualmente un taxi?
-- id == code ?
 - interfacciamenteo con sistema preesistente (?)
 - cosa succede alla vecchia modalità di prenotazione? rimane/si deve cooperare? ...
 - timeout >> rifiuto
@@ -33,7 +66,7 @@ Dubbi/Osservazioni
 - la prenotazione è una interfaccia programmabile / modulo esterno
 - non garantiamo che in 10 minuti il taxi arrivi, nel caso di prenotazione
 - fair management?
-- code: what is its structure? (alphanumeric char, length)
+- come viene calcolato il waiting time?
 		
 
 SW req.
@@ -50,5 +83,3 @@ Comportamenti utente
 - l'utente deve registrarsi (?)
 - con quanti giorni di anticipo??
 
-
-- come viene calcolato il waiting time?
