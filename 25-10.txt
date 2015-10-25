@@ -87,6 +87,7 @@ System:
 	-- otherwise, the request is inserted in the PQ
 - the system periodically sends messages to users to whom the code of an incoming taxi has been already communicated
 	-- this requires a list of "request in progress / managing"
+- the registered user must be able to see their active reservations
 	
 	
 MISSING:
