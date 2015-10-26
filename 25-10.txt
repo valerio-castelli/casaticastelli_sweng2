@@ -1,12 +1,18 @@
 Assumptions:
 - the city is divided in taxi zones
 	-- hmm... maybe our system has to create this division???
+	— no: decided by city council. We have to support the insertion (and update) of this data
 
 
 Stakeholders:
 - taxi drivers
+- taxi drivers’ union
 - users
+- association of consumer rights
 - city government
+- mobile phone producer/reseller? 
+- training and user support staff? does it even exists?
+
 
 Terminology and acronym (momentary):
 - "system"
