@@ -1,23 +1,36 @@
 Assumptions:
-- User will not directly contact a taxi driver to request a ride.
-	-- "directly"?
-- Taxi drivers will make rides by only accepting a request from the system.
-- all the data stored in the system-as-is (o come si chiamava) must be transferred in the system-to-be at its very start"
-	- ambiguo come li trasferiamo però?
-	- serve un req. per dire che il sistema assicura di permettere la cosa
-	- evitare di dire "at start", oppure metterlo separatamente
+- User can only request rides using either the web application or the mobile application provided by the system.
+- [OR] Users do not request rides using their personal acquaintance with taxi drivers.
+- Taxi drivers will only make rides by accepting a request from the system.
+- Contact information of taxi drivers are not disclosed by the city administration.
+- All the data already stored in the system-as-is is actually transferred to the system-to-be when it is put into operation. [related req.: how can we transfer this data?]
+
 ( - qualunque meccanismo di prenotazione fosse in atto prima (ad es. telefonica), non verrà più usato )
 - Users don't have the need to choose a particular taxi driver among those that are available for their ride.
-(- User will always accept the taxi selected for their ride.)
-"Every taxi is uniquely identified by an alphanumeric code that is assigned by the city administration when he becomes part of the taxi service"
-	-- what is the taxi service exactly???
+- Users do not have to confirm the choice of the selected taxi.
+
+- The city council has divided the city in taxi zones.
+- The city council may update the taxi zone division in the future. (is this a req.? probably yes)
+
+- The taxi service is operated 24h/day, unless exceptional circumstances occur. ***
+- In case any exceptional circumstance occur for which the taxi service cannot be operated, the system is not required to satisfy incoming and reserved requests. 
+
+*** exceptional circumstance: strikes, severe weather conditions, service suspension decided by the city council, particular holidays… [terminology]
+
+
+- Every taxi driver is provided with a business mobile phone by the city council.
+
+- Every taxi is uniquely identified by an alphanumeric code that is assigned by the city administration when he becomes part of the taxi service 
+	-- we have to define what we mean by taxi service in the acronym and def. section
 "User will request a ride only from within the city." (i.e., the origin of the ride is inside the city)
-	-- req.???
+	-- Not an assumption: TBD as a requirement (“the system should not allow for requests to have an origin outside the city”)
+
 
 
 Goal 1: "L'amministrazione deve avere la possibilità di trasferire i dati dei tassisti nel nuovo sistema"
 Requirements:
 - "The system must provide a data entry form to collect data about the taxi drivers"
+	- Data: name, surname, mobile phone number, code/identifier, taxi driver license, taxi license plate
 - "The system must provide a way for the operator to confirm that the initial data entry operation is complete (i.e., a button)"
 - The system will not allow any operation to take place until data entry is completed"
 
