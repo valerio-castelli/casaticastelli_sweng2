@@ -25,6 +25,12 @@ Assumptions:
 "User will request a ride only from within the city." (i.e., the origin of the ride is inside the city)
 	-- Not an assumption: TBD as a requirement (“the system should not allow for requests to have an origin outside the city”)
 
+- In order to receive ride requests, a taxi driver must explicitly mark himself as available.
+- A taxi driver will not be able to receive ride requests while he’s unavailable.
+- Taxis that are considered to be out-of-city will not be able to receive calls. (redundant?)
+- A taxi driver who is currently on a ride will not be able to receive calls.
+- A taxi driver must always notify the system when he terminates a ride. 
+
 
 
 Goal 1: "L'amministrazione deve avere la possibilità di trasferire i dati dei tassisti nel nuovo sistema"

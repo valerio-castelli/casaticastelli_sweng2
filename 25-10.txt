@@ -32,16 +32,11 @@ Terminology and acronym (momentary):
 GOALS / REQ. :
 
 Taxi drivers:
-- a taxi driver that has already given his avail. cannot send another message of avail. (i.e., the system must prevent him to do it)
-- if a taxi driver change zone while it has already marked himself available, the system TODO (do nothing OR move his code in the new queue zone ???)
-- if a taxy driver leaves the city while he's avaiable, TODO
-- the taxi codes of unavailable taxi drivers are stored in a UL
-	-- unnecessary, given the following req.s ?
-- when a taxi driver communicate is availability, the system:
-	-- retrive his actual position by the mapping service
-	-- if he is out of the city, his code in inserted in the OCL;
-	-- if he is inside the city, the system compute in which zone the tazi driver is and insert his taxi code in the queue (in last position) associated to that zone 		by removing it from the UL.
-	-- if his id has been correctly stored, a confirmation message is sent to the taxi driver app.
+- If a taxi driver changes zone while it has already marked himself available, the system should move his code in the queue of the new zone. 
+- When a taxi driver marks himself as available, the mobile application should send his GPS coordinates to the central system.
+- When a taxi driver marks himself as available, the system should use the retrieved GPS coordinates to compute the taxi zone to which the taxi belongs and move its code into the last position of the corresponding queue. 
+- If the system successfully registers a taxi driver as available, it should send him a positive notification on the mobile application. Otherwise, it should send him a negative notification and ask him to retry later.
+
 - when a taxi driver accepts a call in the zone of his avail., the system:
 	-- removes his taxi code from the ZQ and putted in the UL
 	-- send a message to the user containing the waiting time and the code of he incoming taxi
@@ -54,6 +49,27 @@ Taxi drivers:
 - comm. when a user has been taken on board (?
 - comm. when a user arrives at destination
 	-- may be necessary if we keep track of the calls that are currently served be a taxi driver.
+
+
+- The system should consider all drivers to be initially (?) unavailable by default.
+- The unavailability status of a taxi driver should not be affected by him leaving or entering the city.
+- The mobile application should implement a toggle to allow drivers switch their availability status.
+- A taxi driver that has marked himself as available should only be able to mark himself as unavailable. 
+- A taxi driver that has marked himself as unavailable should only be able to mark himself as available. 
+- A taxi driver should be able to mark himself as available only if it’s inside the city. 
+- If a taxi driver is set as available and exits the city, the system should put it into an “out-of-city” list.
+- If a taxi driver considered to be out-of-city enters the city and the taxi driver was available before leaving the city and he has not marked himself as unavailable, the system should assign it to the queue of the zone in which he has entered.
+- If a taxi driver considered to be out-of-city enters the city and the taxi driver has signaled himself as unavailable while he was out, the system should move the driver to the unavailability list.
+- When a taxi driver leaves the city while he’s available, the system should prevent him from signaling he’s available until he is again in the perimeter of the city.
+- When a taxi driver marks himself as unavailable, his taxi code should be moved into the unavailability list.
+- When a taxi driver is moved to the unavailability list, he should receive a notification warning him that he’s no longer available to accept requests.
+- If a taxi driver accepts a request for a ride, the system should put it into a “currently riding” list.
+- A taxi driver who is currently on a ride should not be able to mark himself as unavailable. 
+- A taxi driver who has terminated a ride should be able to notify the system that the ride has ended.
+- When the system receives the notification that a driver has terminated a ride and the driver is still outside the city, the system should move him to the outside-the-city list.
+- When the system receives the notification that a driver has terminated a ride and the driver is inside the city, the system should assign him to the queue of the zone in which he is.
+
+
 	
 Users:
 - if a user request a ride:
