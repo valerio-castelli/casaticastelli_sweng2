@@ -17,7 +17,7 @@ Terminology and acronym (momentary):
 - "unavailable taxi"
 - "zone"
 - "unavailability list", UL: the list where codes of the taxi drivers actually unavailable are stored;
-- "zone queue", ZQ: the FIFO list, one for each zone, where the codes of taxi driveres available for a ride in that zone are stored;
+- "zone queue", ZQ: the FIFO list, one for each zone, where the codes of taxi drivers available for a ride in that zone are stored;
 - "pending call zone queue", PQ: the FIFO list, one for each zone, where calls of users that are requesting a ride in that zone are stored until a taxi in that zone is available;
 - "out of city list", OCL: the list where the code of taxi drivers actually out of city are put in;
 - "reservations register", RR: the data structure that stores all the reservation of users; 
@@ -26,68 +26,21 @@ Terminology and acronym (momentary):
 GOALS / REQ. :
 
 Taxi drivers:
-- If a taxi driver changes zone while it has already marked himself available, the system should move his code in the queue of the new zone. 
-- When a taxi driver marks himself as available, the mobile application should send his GPS coordinates to the central system.
-- When a taxi driver marks himself as available, the system should use the retrieved GPS coordinates to compute the taxi zone to which the taxi belongs and move its code into the last position of the corresponding queue. 
-- If the system successfully registers a taxi driver as available, it should send him a positive notification on the mobile application. Otherwise, it should send him a negative notification and ask him to retry later.
-
-- The system should consider all drivers to be initially (?) unavailable by default.
-- The unavailability status of a taxi driver should not be affected by him leaving or entering the city.
-- The mobile application should implement a toggle to allow drivers switch their availability status.
-- A taxi driver that has marked himself as available should only be able to mark himself as unavailable. 
-- A taxi driver that has marked himself as unavailable should only be able to mark himself as available. 
-- A taxi driver should be able to mark himself as available only if it’s inside the city. 
-- If a taxi driver is set as available and exits the city, the system should put it into an “out-of-city” list.
-- If a taxi driver considered to be out-of-city enters the city and the taxi driver was available before leaving the city and he has not marked himself as unavailable, the system should assign it to the queue of the zone in which he has entered.
-- If a taxi driver considered to be out-of-city enters the city and the taxi driver has signaled himself as unavailable while he was out, the system should move the driver to the unavailability list.
-- When a taxi driver leaves the city while he’s available, the system should prevent him from signaling he’s available until he is again in the perimeter of the city.
-- When a taxi driver marks himself as unavailable, his taxi code should be moved into the unavailability list.
-- When a taxi driver is moved to the unavailability list, he should receive a notification warning him that he’s no longer available to accept requests.
-- If a taxi driver accepts a request for a ride, the system should put it into a “currently riding” list.
-- If a taxi driver refuses a request for a ride, his taxi code is moved to the last position of the queue of the zone he’s currently in.
-- A taxi driver who is currently on a ride should not be able to mark himself as unavailable. 
-- If a taxi driver has marked himself as on a ride, the mobile application should periodically (?) send his GPS coordinates to the main system. 
-- A taxi driver should be able to notify that he’s terminated a ride only after the system has checked that the meeting point has actually been reached within a given level of precision. (?) 
-- If a passenger who has requested a ride doesn’t show up at the meeting location, the system should allow the taxi driver to drop the request. 
-- In order for the “drop request” functionality to be enabled, the system should check that the taxi driver has effectively reached the meeting point.
-- If a taxi driver uses the “drop request” functionality, the system should notify the passenger that his request has been dropped. 
-- A taxi driver who has terminated a ride should be able to notify the system that the ride has ended.
-- When the system receives the notification that a driver has terminated a ride and the driver is still outside the city, the system should move him to the outside-the-city list.
-- When the system receives the notification that a driver has terminated a ride and the driver is inside the city, the system should assign him to the queue of the zone in which he is.
 
 
-- The system should not allow for requests to have an origin outside the city. 
+
+
+
+
+
+
 	
 Users:
-- The system should provide a way for users to request a ride.
-	- The mobile application should be able to detect the current GPS location and use it as the source point of a ride request.
-	- The mobile application should allow the user to enter an address as the source point of a ride request.
-	- The web application should allow the user to enter an address as the source point of a ride request.
-- When a user requests a ride, the system should use the source field of the request to compute the corresponding taxi zone. 
-- After a request’s taxi zone has been computed, the system should assign the request to the first taxi in that zone’s queue.
-- The taxi driver that has been selected for a ride should receive a notification containing details on the meeting location and be allowed to accept or refuse the request.
-- If a taxi driver accepts a request for a ride, the system should send a notification to the requesting user containing the code of the incoming taxi and an estimation of the waiting time (ETA).
-- If the selected taxi driver refuses the request, the system should move his taxi code to the last position of the queue and forward the request to the following taxi in the queue.
-- If the selected taxi driver does not answer within two minutes from the assignment, the system should consider the request refused. 
-- If the system is not able to find any available taxi in the queue of the specified zone, it should notify the passenger that the request could not be fulfilled. 
 
-- The system should provide a way for registered users to reserve a ride for a specific date and time.
-	- The mobile application should allow the user to enter the source and destination addresses for the ride and the meeting time.
-	- The web application should allow the user to enter the source and destination addresses for the ride and the meeting time.
-- The system should provide a way for registered users to review their active reservations.
-- The system should provide a way for registered users to delete a reservation. 
-- The system should store reservations in a reservation queue. 
-- For every stored reservation, the system should proceed with selecting a taxi only 10 minutes before the scheduled meeting time.
-- For every stored reservation, the system should only select taxis from the queue of the zone associated with the source address.
-- The system should not allow a reservation to be scheduled if there aren’t at least two hours between the desired meeting time and the moment when the reservation request is submitted. 
-- The system should not allow a reservation to be scheduled more than 15 days in advance.
-- Reservations can’t be deleted after a taxi has already been associated to them.
-- If no taxis are available to fulfill a reservation 10 minutes before the scheduled meeting time, the system should attempt to reschedule it at intervals of 5 minutes for at most 10 times.
-- If a reservation can’t be fulfilled after 10 reschedules, the system should notify the passenger that his reservation will be dropped. 
+ 
+
 [TODO how can we formulate the corresponding assumption?]
 
-- The system should provide a registration form. (including which data?)
-- The system should keep an association between a user profile and his reservations.
 -
 
 
