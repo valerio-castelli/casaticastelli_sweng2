@@ -22,32 +22,7 @@ Terminology and acronym (momentary):
 - "out of city list", OCL: the list where the code of taxi drivers actually out of city are put in;
 - "reservations register", RR: the data structure that stores all the reservation of users; 
 
-
-GOALS / REQ. :
-
-Taxi drivers:
-
-
-
-
-
-
-
-
-	
-Users:
-
- 
-
-[TODO how can we formulate the corresponding assumption?]
-
--
-
-
-
-
 System:
-
 
 - there is no ZQ or PQ that is not associated to a taxi zone;
 - the system periodically sends messages to users to whom the code of an incoming taxi has been already communicated

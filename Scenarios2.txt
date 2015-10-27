@@ -1,0 +1,64 @@
+SOME POSSIBLE SCENARIOS
+(with a template of event flow for the sequence diagram)
+
+1) Alice has just got out of her office after an intense day of work. Unfortunately she finished late and so she missed the last train back home. 
+She decides then to request a taxi. She opens the taxi application on her mobile phone and she clicks on the “request a taxi for this location” button. 
+The mobile application detects her GPS location, creates a taxi request and forwards it to the central system. 
+The system receives the taxi request, extracts the GPS coordinates and realizes that Alice is in zone 2. Thus, it forwards a request to the first taxi in the queue associated with zone 2, which happens to be Bob’s taxi.
+Bob receives a request notification on his mobile terminal, which employs the associated GPS information to point out Alice’s location on the city map. Bob decides to accept the request and clicks on the “accept request” button, then he starts driving.
+The system receives Bob’s confirmation along with his GPS coordinates and moves his taxi code from the zone 2 queue to the “currently riding” list; it then uses this information to retrieve from an external mapping service an estimate time of arrival (ETA) and notifies it to Alice along with the taxi code of Bob’s taxi.
+Alice receives the notification on her mobile phone and patiently waits for the taxi to arrive.
+
+2) Jessica and Davide are planning to celebrate their anniversary, which is happening in a week, by going out and have dinner at a very expensive restaurant. 
+Since they probably would end up being drunk after the night, they decide it would be better to avoid driving and they decide instead to reserve a taxi.
+Davide opens the taxi reservation web page on his laptop and logins using his credentials (he’s a proud taxi user!). He then clicks on the “reserve a taxi” button and fills in the required details for the reservation: the departing address, the destination address and the date and time of the meeting. He then confirms.
+The system receives the request and stores it into the list of reservations, then sends a confirmation back to Davide’s laptop.
+Davide receives the confirmation and is assured that the system will handle his request.
+
+3) On the night of their anniversary, Jessica and Davide are getting ready to leave. 
+10 minutes before the scheduled meeting time, the system uses the specified departing address to compute the zone associated with Davide’s apartment and realizes he lives in zone 4. It then forwards the request to the the first taxi in the queue associated with zone 4, which happens to be Matteo’s taxi.
+Matteo receives a request notification on his mobile terminal, which employs the associated GPS information to point out Davide’s apartment location on the city map. Matteo decides to accept the request and clicks on the “accept request” button, then he starts driving.
+The system receives Matteo’s confirmation along with his GPS coordinates and moves his taxi code from the zone 4 queue to the “currently riding” list; it then uses this information to retrieve from an external mapping service an estimate time of arrival (ETA) and notifies it to Davide along with the taxi code of Matteo’s taxi.
+Davide receives the notification on her mobile phone and patiently waits for the taxi to arrive.
+
+
+
+A user requests a taxi:
+- A user access the app (mobile or web?)
+- The user request a taxi
+- The system receive the request
+- The system, by interaction with the mapping serve, compute in which zone the user is
+- The system checks if in this zone there is a taxi available; let's suppose there is one (or do we have to consider also the other case?)
+- The system sends to the taxi driver a notification (with which info???)
+- The taxi driver accepts
+- The system receive the confirmation
+- The system remove the taxi driver from the queue and put it on the UL
+- The system sends a notification to the user with taxi code and waiting time
+- The user receive the confirm
+
+A user books/reserves a ride:
+- The user open the web app
+- The user log in
+- The user open the form to reserve a taxi
+- The user insert all the requested info
+- The user confirm
+- The system receive the request
+- The system store the request (???)
+
+A taxi driver has ended a ride and wants to communicate his availability:
+- The taxi driver sends a notification of "ride endend"
+- The system receive it and delete the request of the user (?)
+- The taxi driver sends a message of "available"
+- The system receive it
+- The system compute the taxi driver position (by the mean of the mapping service ?)
+- The system put the taxi code in the zone queue
+
+A user withdraw / delete a book / ... (one of this will be enough ???)
+
+A taxi driver withdraw / ... (one of this will be enough ???)
+
+A taxi driver enter in city
+
+A taxi driver changes zone / leaves the city
+
+10 minutes before a meeting time, the system associates a taxi to the reservation

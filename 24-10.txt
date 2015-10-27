@@ -15,8 +15,6 @@ Domain properties:
 - Every taxi is uniquely identified by an alphanumeric code that is assigned by the city administration when he becomes part of the taxi service.
 
 
-
-
 Assumptions:
 - Users are not allowed to place reservations more than 15 days in advance. 
 - The city council may decide to update the taxi zone division in the future. 
@@ -31,21 +29,9 @@ Assumptions:
 - After a taxi driver has been associated to a call, he must confirm or refuse the request within two minutes. After that period of time, the call is considered refused. 
 
 
-
-( - qualunque meccanismo di prenotazione fosse in atto prima (ad es. telefonica), non verrà più usato )
-
-
 - Traffic information and route data can be obtained from a third party mapping service.
 
-
-
-
-
-
-
 - A user that has already requested a taxi will not request another one before having completed his ride.
-
-
 
 
 Goal 1: The city administration must have the possibility to enter the data about the taxi drivers and about the taxi zones. 
@@ -69,7 +55,7 @@ Requirements:
 
 Goal 4: The taxi driver must be able to communicate his availability status. 
 Requirements:
-- The mobile application should implement a toggle to allow drivers switch their availability status.
+- The mobile application should implement a toggle to allow drivers to switch their availability status.
 - A taxi driver that has marked himself as available should only be able to mark himself as unavailable. 
 - A taxi driver that has marked himself as unavailable should only be able to mark himself as available. 
 - A taxi driver should be able to mark himself as available only if it’s inside the city. 
