@@ -8,6 +8,7 @@ Assumptions:
 ( - qualunque meccanismo di prenotazione fosse in atto prima (ad es. telefonica), non verrà più usato )
 - Users don't have the need to choose a particular taxi driver among those that are available for their ride.
 - Users do not have to confirm the choice of the selected taxi.
+- Users are not allowed to place reservations more than 15 days in advance. 
 
 - The city council has divided the city in taxi zones.
 - The city council may update the taxi zone division in the future. (is this a req.? probably yes)
@@ -17,13 +18,16 @@ Assumptions:
 
 *** exceptional circumstance: strikes, severe weather conditions, service suspension decided by the city council, particular holidays… [terminology]
 
+- Traffic information and route data can be obtained from a third party mapping service.
 
 - Every taxi driver is provided with a business mobile phone by the city council.
 
 - Every taxi is uniquely identified by an alphanumeric code that is assigned by the city administration when he becomes part of the taxi service 
 	-- we have to define what we mean by taxi service in the acronym and def. section
-"User will request a ride only from within the city." (i.e., the origin of the ride is inside the city)
-	-- Not an assumption: TBD as a requirement (“the system should not allow for requests to have an origin outside the city”)
+
+
+- The only taxis eligible for fulfilling a reservation are the ones that are present in the queue of the zone associated with the reservation source address 10 minutes before the scheduled meeting time.
+
 
 - In order to receive ride requests, a taxi driver must explicitly mark himself as available.
 - A taxi driver will not be able to receive ride requests while he’s unavailable.
@@ -31,13 +35,39 @@ Assumptions:
 - A taxi driver who is currently on a ride will not be able to receive calls.
 - A taxi driver must always notify the system when he terminates a ride. 
 
+- A user that has already requested a taxi will not request another one before having completed his ride.
+
+- A user is not required to be registered in order to request a ride.
+- A user must be registered and logged in to the system in order to reserve a ride.
+
+- After a taxi driver has been associated to a call, he must confirm or refuse the request within two minutes. After that period of time, the call is considered refused. 
 
 
 Goal 1: "L'amministrazione deve avere la possibilità di trasferire i dati dei tassisti nel nuovo sistema"
 Requirements:
-- "The system must provide a data entry form to collect data about the taxi drivers"
-	- Data: name, surname, mobile phone number, code/identifier, taxi driver license, taxi license plate
-- "The system must provide a way for the operator to confirm that the initial data entry operation is complete (i.e., a button)"
-- The system will not allow any operation to take place until data entry is completed"
+- The system must provide a data entry form to collect data about the taxi drivers. In particular, the following information is required for each taxi driver: name, surname, mobile phone number, code/identifier, taxi driver license, taxi license plate.
+- The system must provide a way for the operator to confirm that the initial data entry operation is complete. 
+- The system will not allow any operation to take place until data entry is marked as completed. 
+
+
+
+
+
+- The system should provide a way to update existing taxi driver data. 
+- The system should provide a way to remove a taxi driver from the list.
+- The system should provide a way to insert a new taxi driver. 
+
+
+
+- The system must provide a way to specify the taxi zone division of the city. 
+- The system must provide a way to update the boundaries of an existing taxi zone. 
+- The system must provide a way to insert a new taxi zone.
+- The system must provide a way to remove an existing taxi zone.
+- Each taxi zone must be internally associated with a queue containing the codes of the available taxis.
+- The system must implement a list where to store codes of taxis who are not in service (“unavailability list”).
+- The system must implement a list where to store codes of taxis who are currently on a ride (“currently riding list”).
+- The system must implement a list where to store codes of taxis who are currently out of the city (“out-of-city list”).
+
+
 
 
