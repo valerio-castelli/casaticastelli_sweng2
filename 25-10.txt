@@ -1,9 +1,3 @@
-Assumptions:
-- the city is divided in taxi zones
-	-- hmm... maybe our system has to create this division???
-	— no: decided by city council. We have to support the insertion (and update) of this data
-
-
 Stakeholders:
 - taxi drivers
 - taxi drivers’ union
@@ -23,7 +17,7 @@ Terminology and acronym (momentary):
 - "unavailable taxi"
 - "zone"
 - "unavailability list", UL: the list where codes of the taxi drivers actually unavailable are stored;
-- "zone queue", ZQ: the FIFO list, one for each zone, where the codes of taxi driveres available for a ride in that zone are stored;
+- "zone queue", ZQ: the FIFO list, one for each zone, where the codes of taxi drivers available for a ride in that zone are stored;
 - "pending call zone queue", PQ: the FIFO list, one for each zone, where calls of users that are requesting a ride in that zone are stored until a taxi in that zone is available;
 - "out of city list", OCL: the list where the code of taxi drivers actually out of city are put in;
 - "reservations register", RR: the data structure that stores all the reservation of users; 
@@ -32,70 +26,30 @@ Terminology and acronym (momentary):
 GOALS / REQ. :
 
 Taxi drivers:
-- a taxi driver that has already given his avail. cannot send another message of avail. (i.e., the system must prevent him to do it)
-- if a taxi driver change zone while it has already marked himself available, the system TODO (do nothing OR move his code in the new queue zone ???)
-- if a taxy driver leaves the city while he's avaiable, TODO
-- the taxi codes of unavailable taxi drivers are stored in a UL
-	-- unnecessary, given the following req.s ?
-- when a taxi driver communicate is availability, the system:
-	-- retrive his actual position by the mapping service
-	-- if he is out of the city, his code in inserted in the OCL;
-	-- if he is inside the city, the system compute in which zone the tazi driver is and insert his taxi code in the queue (in last position) associated to that zone 		by removing it from the UL.
-	-- if his id has been correctly stored, a confirmation message is sent to the taxi driver app.
-- when a taxi driver accepts a call in the zone of his avail., the system:
-	-- removes his taxi code from the ZQ and putted in the UL
-	-- send a message to the user containing the waiting time and the code of he incoming taxi
-		--- computation of waiting time???
-- if a taxi driver refuses a call, his code is "popped" from the ZQ and put in last position
-- a taxi driver can withdraw from a ZQ by communicating is unavailability: in that case, his code is removed from the ZQ and put in UL
-	-- really can? or can we assume that he will just refuse a call? probably not... (or he will receive many useless message of pending request...)
-- when a ride has ended, the taxi driver must communicate it (?)
-- taxi drivers can communicate that a user did not turn up
-- comm. when a user has been taken on board (?
-- comm. when a user arrives at destination
-	-- may be necessary if we keep track of the calls that are currently served be a taxi driver.
+
+
+
+
+
+
+
+
 	
 Users:
-- if a user request a ride:
-	-- if a taxi driver is available in that zone (i.e.: the ZQ contains at least a code), his call is associated to that taxi
-	-- if no taxi si available, his request is stored in the PQ;
-- if a user withdraw from a call, TODO
-	-- se riufiuta, viene inviata una notificia al taxista? il taxista deve riconfermare di essere disponibile? viene lasciato 
-- if a user delete a reservation,  TODO
-- if a user reserve a taxi, the reservation must be correctly stored (i.e.: it will not be lost)
-	-- too trivial???
-- if a user request a ride, a taxi must arrive as soon as possible
-	-- as soon as possible ??? w.r.t what "possible" ???
-	
+
+ 
+
+[TODO how can we formulate the corresponding assumption?]
+
+-
+
+
+
+
 System:
-- each zone has associated:
-	- ZQ
-	- PQ
+
+
 - there is no ZQ or PQ that is not associated to a taxi zone;
-- the system provides a form to request a taxi; web and mobile
-	-- the system rejects request coming from the same user (i.e., same mobile phone number, for the mobile app, or same account, for the web app)
-	-- registrations for web app. ??? probably yes
-- the system provides an interface for the taxi drivers to communicate their availability, unavailability, withdraw, ...
-	-- if no confirmation message arrive from the system, ...
-	-- improve
-- the system provides a reservation form that:
-	-- asks the user for a origin, a destination, a meeting time
-	-- the system refuses reservations that request a taxi within less than two hours or before 15 (?) days;
-		--- bad saying... improve!!!
-- a queue (i.e., a FIFO list) is used to store the availabilities of taxi drivers: the first taxi to communicate its availability, will be the first in the code.
-	-- is it necessary to specify that when a taxi is taken from the queue, all the other are shifted??? i think no, it's the definition of queue/FIFO...
-- as soon as a taxi driver communicates his avail. in a zone where the PQ is not empty, his taxi is associated to the first call in the PQ
-- the system periodically check the OCL: if it finds that a taxi driver inside the list has entered the city, his code is put in the right ZQ
-- after that a taxi has been associated to a call, the taxi driver has 2 minutes to accept it: after that time, the system consider that as a refuse from the taxi driver
-- every minute the system checks the RR:
-	(-- do we have to say how?? i.e., the RR is ordered by ascending time, so that the system has to do only few checks...)
-	-- ten minutes after the meeting time with the user, if there is a code in the ZQ of the origin of the ride, the associated taxi is allocated to the reservation;
-	-- otherwise, the request is inserted in the PQ
 - the system periodically sends messages to users to whom the code of an incoming taxi has been already communicated
 	-- this requires a list of "request in progress / managing"
-- the registered user must be able to see their active reservations
-	
-	
-MISSING:
-- what happens to accepted call? (i.e. remove from PQ and then what? deleted?)
 
