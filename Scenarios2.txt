@@ -5,9 +5,10 @@ SOME POSSIBLE SCENARIOS
 She decides then to request a taxi. She opens the taxi application on her mobile phone and she clicks on the “request a taxi for this location” button. 
 The mobile application detects her GPS location, creates a taxi request and forwards it to the central system. 
 The system receives the taxi request, extracts the GPS coordinates and realizes that Alice is in zone 2. Thus, it forwards a request to the first taxi in the queue associated with zone 2, which happens to be Bob’s taxi.
-Bob receives a request notification on his mobile terminal, which employs the associated GPS information to point out Alice’s location on the city map. Bob decides to accept the request and clicks on the “accept request” button, then he starts driving.
-The system receives Bob’s confirmation along with his GPS coordinates and moves his taxi code from the zone 2 queue to the “currently riding” list; it then uses this information to retrieve from an external mapping service an estimate time of arrival (ETA) and notifies it to Alice along with the taxi code of Bob’s taxi.
+Bob receives a request notification on his mobile terminal, which employs the associated GPS information to point out Alice’s location on the city map. Bob decides to accept the request and clicks on the “accept request” button. 
+The system receives Bob’s confirmation along with his GPS coordinates and moves his taxi code from the zone 2 queue to the “currently riding” list; it then uses this information to retrieve from an external mapping service an estimate time of arrival (ETA) and notifies it to Alice along with the taxi code of Bob’s taxi and a security code associated with the ride. The system also notifies Bob the security code associated with the ride; then Bob starts driving.
 Alice receives the notification on her mobile phone and patiently waits for the taxi to arrive.
+When Bob’s taxi arrives, Alice tells Bob the security code and the taxi code she received from the system. Bob checks they correspond to his own and let Alice get on the car.
 
 2) Jessica and Davide are planning to celebrate their anniversary, which is happening in a week, by going out and have dinner at a very expensive restaurant. 
 Since they probably would end up being drunk after the night, they decide it would be better to avoid driving and they decide instead to reserve a taxi.
@@ -17,9 +18,29 @@ Davide receives the confirmation and is assured that the system will handle his 
 
 3) On the night of their anniversary, Jessica and Davide are getting ready to leave. 
 10 minutes before the scheduled meeting time, the system uses the specified departing address to compute the zone associated with Davide’s apartment and realizes he lives in zone 4. It then forwards the request to the the first taxi in the queue associated with zone 4, which happens to be Matteo’s taxi.
-Matteo receives a request notification on his mobile terminal, which employs the associated GPS information to point out Davide’s apartment location on the city map. Matteo decides to accept the request and clicks on the “accept request” button, then he starts driving.
-The system receives Matteo’s confirmation along with his GPS coordinates and moves his taxi code from the zone 4 queue to the “currently riding” list; it then uses this information to retrieve from an external mapping service an estimate time of arrival (ETA) and notifies it to Davide along with the taxi code of Matteo’s taxi.
+Matteo receives a request notification on his mobile terminal, which employs the associated GPS information to point out Davide’s apartment location on the city map. Matteo decides to accept the request and clicks on the “accept request” button.
+The system receives Matteo’s confirmation along with his GPS coordinates and moves his taxi code from the zone 4 queue to the “currently riding” list; it then uses this information to retrieve from an external mapping service an estimate time of arrival (ETA) and notifies it to Davide along with the taxi code of Matteo’s taxi and a security code associated with the ride. The system also notifies Matteo the security code associated with the ride, then Matteo starts driving.
 Davide receives the notification on her mobile phone and patiently waits for the taxi to arrive.
+When Matteo’s taxi arrives, Davide tells Matteo the security code and the taxi code he received from the system. Matteo checks they correspond to his own and let Davide and Jessica get on the car.
+
+4) Matteo has just drove Davide and Jessica to their destination, which is a restaurant in the middle of the city. He clicks the “confirm ride ended” button in the mobile application. The mobile application sends a notification message to the central system, which acknowledges that the ride has ended. 
+Since Matteo was previously available before the ride and has not switched the available/unavailable toggle, the system computes the zone associated with his current GPS coordinates and moves his taxi code into the last position of the respective queue.
+
+5) Bob has just drove Alice back to her apartment, which is a small flat in the suburbs (but still belonging to the city). He clicks the “confirm ride ended” button in the mobile application. The mobile application sends a notification message to the central system, which acknowledges that the ride has ended. 
+Since Bob was previously available before the ride and has not switched the available/unavailable toggle, the system computes the zone associated with his current GPS coordinates and moves his taxi code in the respective code, in the last position.
+At this point, however, Bob feels a little tired and decides to take a nap, so he switches the available/unavailable toggle to the unavailable position. 
+The mobile application sends a notification to the central system, which acknowledges Bob’s decision and proceeds to move his taxi code from the queue of his current zone to the unavailability queue. It then sends back a notification to Bob informing him that he’s been correctly registered as unavailable and that he will not be able to receive further requests as long as he remain so.
+Bob can now take some well deserved rest.
+
+6) Frank, a taxi driver, has just picked up Samuel from a very famous hotel in the city. 
+During their journey to the airport, which is Samuel’s destination, Frank has to cross the city border: in fact, the airport is located just outside the city.
+After leaving Samuel at the airport, Frank clicks the “confirm ride ended” button in the mobile application.
+The mobile application sends a notification to the central system, which acknowledges that the ride has ended.
+Since Frank is now located outside the city, the system moves his taxi code into the “out-of-city” queue.
+
+7) As soon as Frank crosses the city border the mobile application, which has been continually sending GPS location data to the central system for the whole journey, sends a notification to the central system containing the new location data. 
+The system determines that Frank’s current location is now inside the boundaries of the city and computes the associated zone. 
+Since Frank had flagged himself as available before accepting Samuel’s request and has not switched the available/unavailable toggle for the whole journey, the system moves his taxi code into the last position of the computed zone’s queue. 
 
 
 

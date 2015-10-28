@@ -78,15 +78,14 @@ Requirements:
 - The system must implement a list where to store codes of taxis who are not in service (“unavailability list”).
 - The system must implement a list where to store codes of taxis who are currently on a ride (“currently riding list”).
 - The system must implement a list where to store codes of taxis who are currently out of the city (“out-of-city list”).
-- If a taxi driver changes zone while it has already marked himself as available, the system should move his code in the queue of the new zone. 
-- If a taxi driver is set as available and exits the city, the system should put it into an “out-of-city” list.
-- If a taxi driver considered to be out-of-city enters the city and the taxi driver was available before leaving the city and he has not marked himself as unavailable, the system should assign it to the queue of the zone in which he has entered.
-- If a taxi driver considered to be out-of-city enters the city and the taxi driver has signaled himself as unavailable while he was out, the system should move the driver to the unavailability list.
-- If a taxi driver leaves the city while he’s available, the system should prevent him from signaling he’s available until he is again in the perimeter of the city.
+- If a taxi driver who has marked himself as available changes zone while he’s not on a ride, the system should move his code in the queue of the new zone. 
+- If a taxi driver who is currently on a ride changes zone, the system should keep his code into the “currently riding list”. 
+- If a taxi driver who has marked himself as available exits the city while he’s not on a ride, the system should put it into an “out-of-city” list.
+- If a taxi driver who is currently on a ride exits the city, the system should keep his code into the “currently riding list”.
+- If a taxi driver whose taxi code is in the “out-of-city” list enters the city and the taxi driver was available before leaving the city and he has not marked himself as unavailable, the system should assign it to the queue of the zone in which he has entered.
+- If a taxi driver whose taxi code is in the “out-of-city” list enters the city and the taxi driver has signaled himself as unavailable while he was out, the system should move the driver to the unavailability list.
+- If a taxi driver leaves the city while he’s unavailable, the system should prevent him from signaling he’s available until he is again in the perimeter of the city.
 - The mobile application of each taxi driver should periodically send his GPS coordinates to the main system. 
-
-
-
 
 Goal 6: The taxi driver should be able to receive, accept and refuse ride requests.
 Requirements:
@@ -108,7 +107,7 @@ Goal 8: The taxi driver should be able to communicate he has terminated a ride.
 Requirements:
 - A taxi driver who has terminated a ride should be able to notify the system that the ride has ended.
 - A taxi driver should be able to notify that he’s terminated a ride only after the system has checked that the meeting point has actually been reached within a given level of precision. (?) 
-- When the system receives the notification that a driver has terminated a ride and the driver is still outside the city, the system should move him to the outside-the-city list.
+- When the system receives the notification that a driver has terminated a ride and the driver is still outside the city, the system should move him to the “out-of-city” list.
 - When the system receives the notification that a driver has terminated a ride and the driver is inside the city, the system should assign him to the queue of the zone in which he is.
 
 Goal 9: Users should be able to request rides. 
