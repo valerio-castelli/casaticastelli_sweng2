@@ -1,31 +1,44 @@
 \section{Product perspective}
 The system that will eventually be released is composed of four major components:
-A mobile application for passengers
-A web application for passengers
-A mobile application for taxi driver
-The backend infrastructure to manage the service
+\begin{itemize}
+\item A mobile application for passengers;
+\item A web application for passengers;
+\item A mobile application for taxi driver;
+\item The backend infrastructure to manage the service.
+\end{itemize}
 In particular, we expect the new system to fully replace any mechanism that the city administration had previously in place for the management of taxi calls.
+
 
 \subsection{System interfaces}
 The system has to be designed to be expandable, in order to let other developers implement new functionalities in the future should they be needed. This implies that the system will have to provide a proper set of APIs to expose its core functionalities to external plugins. 
 
+
 \subsection{User interfaces}
 The mobile application should natively support both smartphones and tablets by offering a uniquely optimized user interface tailored to the specific kind of device being used. 
 
-Furthermore, the mobile application should be resolution independent; in particular, it should support all display sizes comprised between 3” and 6” (when used on a mobile phone) and between 7” and 12” (when used on a tablet). 
-The web application should properly address dynamic web page resizing by proportionally scaling header, footer and side bars to the amount of available space without stretching individual components and forms. It should also be offered both in a desktop version and in a mobile-friendly version. 
+Furthermore, the mobile application should be resolution independent; in particular, it should support all display sizes comprised between 3” and 6” (when used on a mobile phone) and between 7” and 12” (when used on a tablet).
+
+The web application should properly address dynamic web page resizing by proportionally scaling header, footer and side bars to the amount of available space without stretching individual components and forms. It should also be offered both in a desktop version and in a mobile-friendly version.
+
 In addition, both the mobile application and the web application should be designed to be accessible by blind people, that means that it should be possible for a screen reader software to correctly interpret them in a meaningful way.
 
+
 \subsection{Hardware interfaces}
-The system should support smartphones and tablets as end-user terminals by offering mobile applications both for taxi drivers and passengers. 
-In order to maximize the accessibility of the service, the system should offer a native application for the three major mobile platforms (iOS, Android, Windows Phone). 
+The system should support smartphones and tablets as end-user terminals by offering mobile applications both for taxi drivers and passengers.
+
+In order to maximize the accessibility of the service, the system should offer a native application for the three major mobile platforms (iOS, Android, Windows Phone).
+
 The central system should be designed to run on standard x86 server machines.
 
+
 \subsection{Software interfaces}
-The system will have to communicate with an external mapping service in order to use the functionalities of GPS location decoding (note: must be specified what we mean) and waiting time estimation. 
+The system will have to communicate with an external mapping service in order to use the functionalities of GPS location decoding (note: must be specified what we mean) and waiting time estimation.
+
 The system will also interface with a commercial DBMS in order to store and retrieve data and perform queries over it.
 
+
 \section{Product functions}
+
 
 \section{User characteristics}
 Stakeholders: (non va qui però!!!)
