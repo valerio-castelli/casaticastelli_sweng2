@@ -1,5 +1,6 @@
 open util/integer as integer
 
+/* Signatures */
 sig float{}
 
 sig Location{
@@ -14,45 +15,14 @@ sig LocationUpdate{
 }{
 }
 
-fact{
-	// No locations should simultaneously belong to two different zones
-	all loc: Location | (no disj z1, z2:Zone | (loc in z1.boundaries && loc in z2.boundaries))
-	// Two locations cannot be identical
-	no disj loc1,loc2: Location | (loc1.latitude = loc2.latitude && loc1.longitude = loc2.longitude)
-}
-
-fact{
-	// Uniqueness of identifiers
-	// Two zones cannot have an identical zoneId
-	no disj z1,z2: Zone | (z1.zoneId = z2.zoneId)
-	// Two taxis cannot have the same taxi code, license plate
-	no disj t1,t2: Taxi | (t1.taxiCode = t2.taxiCode || t1.licensePlate = t2.licensePlate)
-	// Two users cannot have the same userId
-	no disj u1,u2 :User | (u1.userId = u2.userId)
-	// Two registered users cannot have the same username
-	no disj u1,u2: RegisteredUser | (u1.username = u2.username) 
-	// Two requests cannot have the same identifier
-	no disj r1,r2: Request | (r1.requestId = r2.requestId)
-	// Two reservations cannot have the same identifier
-	no disj r1,r2: Reservation | (r1.reservationId = r2.reservationId)
-	// Two taxi drivers cannot have the same taxi license or driving license or phone number
-	no disj td1,td2:TaxiDriver | (td1.taxiLicense = td2.taxiLicense || td1.drivingLicense = td2.drivingLicense || td1.mobilePhoneNumber = td2.mobilePhoneNumber) 
-}
-
-
 sig Taxi{
 	taxiCode: Int,
 	licensePlate: String, 
 	taxiStatus: TaxiStatus,
-	serves: lone Request
+	serves: lone Request,
+	isManagedBy: TaxiManager
 }{
 	taxiCode>=0
-}
-fact{
-	// If a taxi is available, there should be no request associated
-	all t:Taxi|	t.taxiStatus = available implies (t.serves = none)
-	// If a taxi is currently on a ride, there should be a request which is currently served
-	all t:Taxi| t.taxiStatus = currentlyRiding implies (one r:Request | r in t.serves)
 }
 
 sig TaxiDriver{
@@ -61,7 +31,8 @@ sig TaxiDriver{
 	taxiLicense: String,
 	drivingLicense: String,
 	mobilePhoneNumber: String,
-	drives: Taxi
+	drives: Taxi,
+	isNotifiedBy: TaxiManager
 }
 
 sig Zone{
@@ -69,7 +40,8 @@ sig Zone{
  	contains: set Taxi,
 	boundaries: some Location
 }
-{
+{	
+	// Each zone must contain at least 3 points in order to have a proper boundary
 	#boundaries >= 3
 	zoneId >= 0
 }
@@ -90,7 +62,13 @@ sig SettingsManager{
 }
 
 sig TaxiManager{
-	instance: TaxiManager
+	instance: TaxiManager,
+	handles: set Reservation,
+	manages: set Request,
+	unavailableTaxis: some Taxi,
+	availableTaxis: some Taxi,
+	currentlyRidingTaxis: some Taxi,
+	outsideCityTaxis: some Taxi
 }
 
 sig DBManager{
@@ -98,21 +76,15 @@ sig DBManager{
 }
 
 sig NotificationManager{
-	instance: NotificationManager
+	instance: NotificationManager,
+	isUsedBy: TaxiManager,
+	sends: set Notification
 }
 
 sig ZoneManager{
-	instance: ZoneManager
-}
-
-fact{
-	// Singletons
-	#AccessManager=1
-	#SettingsManager=1
-	#TaxiManager=1
-	#DBManager=1
-	#NotificationManager=1
-	#ZoneManager=1
+	instance: ZoneManager,
+	isUsedBy: TaxiManager,
+	manages: set Zone
 }
 
 abstract sig User{
@@ -129,7 +101,8 @@ sig Guest extends User{}
 sig RegisteredUser extends User{
 	username: String,
 	password: String,
-	usesAccessManager: AccessManager
+	usesAccessManager: AccessManager,
+	usesSettingsManager: SettingsManager
 }
 
 sig Request{
@@ -180,12 +153,81 @@ sig TaxiSecretCodeNotification extends Notification{
 	secretCode >= 0
 }
 
+/* Facts */
 
+fact AllNotificationInNotificationManager{
+	// All notifications are sent by the notification manager
+	all n: Notification | one nm: NotificationManager | n in nm.sends
+}
 
-
-
-pred show{
+fact AllZonesAreManagedByZoneManager{
+	// All zones are actually managed
+	all z: Zone | one zm: ZoneManager | z in zm.manages
 }
 
 
-run show for 3 but 5 Location, 5 Taxi
+fact AllTaxisAreDrivenByASingleDriver{
+	// All taxis are driven by exactly a driver
+	all t: Taxi | one td: TaxiDriver | t in td.drives
+}
+
+fact TaxiStatusCoherence{
+	all t:Taxi | t.taxiStatus = available implies (one tm: TaxiManager | t in tm.availableTaxis)
+}
+
+
+fact TaxiStatusCorrectlyUpdated {
+	// If a taxi is available, there should be no request associated
+	all t:Taxi|	t.taxiStatus = available implies (t.serves = none)
+	// If a taxi is currently on a ride, there should be a request which is currently served
+	all t:Taxi| t.taxiStatus = currentlyRiding implies (one r:Request | r in t.serves)
+	// If a taxi is outside the city, it cannot be associated with requests
+	all t:Taxi| t.taxiStatus = outsideCity implies (t.serves = none)
+	// If a taxis is unavailable, it cannot be associated with requests
+	all t:Taxi| t.taxiStatus = unavailable implies (t.serves = none)
+}
+
+fact NoLocationInTwoZones{
+	// No locations should simultaneously belong to two different zones
+	all loc: Location | (no disj z1, z2:Zone | (loc in z1.boundaries && loc in z2.boundaries))
+}
+
+fact NoTwoIdenticalLocations{
+	// Two locations cannot be identical
+	no disj loc1,loc2: Location | (loc1.latitude = loc2.latitude && loc1.longitude = loc2.longitude)
+}
+
+fact UniquenessOfIdentifiers{
+	// Uniqueness of identifiers
+	// Two zones cannot have an identical zoneId
+	no disj z1,z2: Zone | (z1.zoneId = z2.zoneId)
+	// Two taxis cannot have the same taxi code, license plate
+	no disj t1,t2: Taxi | (t1.taxiCode = t2.taxiCode || t1.licensePlate = t2.licensePlate)
+	// Two users cannot have the same userId
+	no disj u1,u2 :User | (u1.userId = u2.userId)
+	// Two registered users cannot have the same username
+	no disj u1,u2: RegisteredUser | (u1.username = u2.username) 
+	// Two requests cannot have the same identifier
+	no disj r1,r2: Request | (r1.requestId = r2.requestId)
+	// Two reservations cannot have the same identifier
+	no disj r1,r2: Reservation | (r1.reservationId = r2.reservationId)
+	// Two taxi drivers cannot have the same taxi license or driving license or phone number
+	no disj td1,td2:TaxiDriver | (td1.taxiLicense = td2.taxiLicense || td1.drivingLicense = td2.drivingLicense || td1.mobilePhoneNumber = td2.mobilePhoneNumber) 
+}
+
+fact SingletonClasses{
+	// Singletons
+	#AccessManager=1
+	#SettingsManager=1
+	//#TaxiManager=1
+	#DBManager=1
+	//#NotificationManager=1
+	//#ZoneManager=1
+}
+
+pred show{}
+
+
+run show for 10
+
+
