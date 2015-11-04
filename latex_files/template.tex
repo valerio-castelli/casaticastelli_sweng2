@@ -1,5 +1,16 @@
 \input{files/settings.tex}
 \input{files/alloy_style.tex}
+\usepackage{graphicx}
+
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{lscape}
+\usepackage{rotating}
+\usepackage{epstopdf}
+\usepackage{lscape}
+\usepackage{pdflscape}
+
+
 
 \begin{document}
 
@@ -10,6 +21,10 @@
 \tableofcontents
 
 \chapter{Introduction}
+\begin{landscape}
+    \includegraphics[width=580pt, keepaspectratio]{files/index.png}
+    \label{fig:PropProf}
+\end{landscape}
 \input{files/introduction.tex}
 
 \chapter{Overall description}
