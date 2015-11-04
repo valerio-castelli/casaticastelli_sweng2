@@ -69,7 +69,11 @@ sig TaxiManager{
 	unavailableTaxis: set Taxi,
 	availableTaxis: set Taxi,
 	currentlyRidingTaxis: set Taxi,
-	outsideCityTaxis: set Taxi
+	outsideCityTaxis: set Taxi,
+	servedRequests: set Request,
+	pendingRequests: set Request,
+	servedReservations: set Reservation,
+	pendingReservations: set Reservation
 }
 
 sig DBManager{
@@ -126,8 +130,7 @@ sig Reservation{
 abstract sig Notification{
 	notificationId: Int,
 	message: string,
-	receiver: User,
-	relativeTo: Request
+	receiver: User
 }{
 	notificationId >= 0
 }
@@ -135,7 +138,8 @@ abstract sig Notification{
 sig IncomingTaxiNotification extends Notification{
 	ETA: Int,
 	taxiCode: Int,
-	secretCode: Int
+	secretCode: Int,
+	relativeTo: Request
 }{
 	ETA >= 0
 	taxiCode >= 0
@@ -145,6 +149,7 @@ sig IncomingTaxiNotification extends Notification{
 }
 
 sig ReservationConfirmationNotification extends Notification{
+	relativeTo: Reservation
 }
 
 sig NoTaxiAvailableNotification extends Notification{
@@ -158,14 +163,29 @@ sig TaxiSecretCodeNotification extends Notification{
 
 /* Facts */
 
-fact IncomingTaxiNotificationOnlyIfThereIsARequest{
-	/* Incoming taxi notifications are always associated to a request made by a user,
-	and their recipient is exactly that user */
-	all n: IncomingTaxiNotification | one r:Request | n.relativeTo = r 
-	all n: IncomingTaxiNotification | one r:Request | (n.relativeTo = r) <=> r.user = n.receiver
+fact RequestShouldBeEitherServedOrPending{
+	no r:Request, tm:TaxiManager | (r in tm.pendingRequests) && (r in tm.servedRequests)
+	all r:Request | one tm:TaxiManager | (r in tm.pendingRequests) || (r in tm.servedRequests)
 }
 
 
+fact ReservationShouldBeEitherServedOrPending{
+	no r:Reservation, tm:TaxiManager | (r in tm.pendingReservations) && (r in tm.servedReservations)
+	all r:Reservation | one tm:TaxiManager | (r in tm.pendingReservations) || (r in tm.servedReservations)
+}
+
+fact IncomingTaxiNotificationBehavior{
+	/* Incoming taxi notifications are always sent exactly to the user that
+	has made the request, and their taxi code matches */
+	all n: IncomingTaxiNotification | one r:Request, t:Taxi, tm:TaxiManager | ((n.relativeTo = r) <=> (r.sentBy = n.receiver
+	&& t.serves=r && n.taxiCode = t.taxiCode && r in tm.pendingRequests))
+}
+
+fact ReservationConfirmationNotificationBehavior{
+	/* Incoming taxi notifications are always sent exactly to the user that
+	has made the request */
+	all n: ReservationConfirmationNotification | one r:Reservation | (n.relativeTo = r) <=> r.madeBy = n.receiver
+}
 
 fact AllNotificationInNotificationManager{
 	// All notifications are sent by the notification manager
@@ -184,6 +204,7 @@ fact AllTaxisAreDrivenByASingleDriver{
 }
 
 fact TaxiStatusCoherence{
+	// The taxi status should be coherent wrt the TaxiManager
 	all t:Taxi | t.taxiStatus = available <=> (one tm: TaxiManager | t in tm.availableTaxis)
 	all t:Taxi | t.taxiStatus = unavailable <=> (one tm: TaxiManager | t in tm.unavailableTaxis)
 	all t:Taxi | t.taxiStatus = currentlyRiding <=> (one tm: TaxiManager | t in tm.currentlyRidingTaxis)
@@ -286,7 +307,6 @@ pred taxiAvailabilityToggle(t, t':Taxi, newStatus:TaxiStatus){
 	// A taxi can become unavailable only if it's currently available (not on a ride, not outside the city)
 	newStatus = unavailable implies (t.taxiStatus=available && t'.taxiStatus=unavailable)
 }
-
 
 pred addTaxiToZoneQueue(t:Taxi, z:Zone){
 	// postconditions
