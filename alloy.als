@@ -2,6 +2,7 @@ open util/integer as integer
 
 /* Signatures */
 sig float{}
+sig string{}
 
 sig Location{
 	latitude: float,
@@ -17,7 +18,7 @@ sig LocationUpdate{
 
 sig Taxi{
 	taxiCode: Int,
-	licensePlate: String, 
+	licensePlate: string, 
 	taxiStatus: TaxiStatus,
 	serves: lone Request,
 	isManagedBy: TaxiManager
@@ -26,11 +27,11 @@ sig Taxi{
 }
 
 sig TaxiDriver{
-	name: String,
-	surname: String,
-	taxiLicense: String,
-	drivingLicense: String,
-	mobilePhoneNumber: String,
+	name: string,
+	surname: string,
+	taxiLicense: string,
+	drivingLicense: string,
+	mobilePhoneNumber: string, 
 	drives: Taxi,
 	isNotifiedBy: TaxiManager
 }
@@ -65,10 +66,10 @@ sig TaxiManager{
 	instance: TaxiManager,
 	handles: set Reservation,
 	manages: set Request,
-	unavailableTaxis: some Taxi,
-	availableTaxis: some Taxi,
-	currentlyRidingTaxis: some Taxi,
-	outsideCityTaxis: some Taxi
+	unavailableTaxis: set Taxi,
+	availableTaxis: set Taxi,
+	currentlyRidingTaxis: set Taxi,
+	outsideCityTaxis: set Taxi
 }
 
 sig DBManager{
@@ -89,9 +90,9 @@ sig ZoneManager{
 
 abstract sig User{
 	userId: Int,
-	name: String,
-	surname: String,
-	mobilePhoneNumber: String
+	name: string,
+	surname: string,
+	mobilePhoneNumber: string
 }{
 	userId >= 0
 }
@@ -99,8 +100,8 @@ abstract sig User{
 sig Guest extends User{}
 
 sig RegisteredUser extends User{
-	username: String,
-	password: String,
+	username: string,
+	password: string,
 	usesAccessManager: AccessManager,
 	usesSettingsManager: SettingsManager
 }
@@ -124,7 +125,7 @@ sig Reservation{
 
 abstract sig Notification{
 	notificationId: Int,
-	message: String
+	message: string
 }{
 	notificationId >= 0
 }
@@ -172,7 +173,10 @@ fact AllTaxisAreDrivenByASingleDriver{
 }
 
 fact TaxiStatusCoherence{
-	all t:Taxi | t.taxiStatus = available implies (one tm: TaxiManager | t in tm.availableTaxis)
+	all t:Taxi | t.taxiStatus = available <=> (one tm: TaxiManager | t in tm.availableTaxis)
+	all t:Taxi | t.taxiStatus = unavailable <=> (one tm: TaxiManager | t in tm.unavailableTaxis)
+	all t:Taxi | t.taxiStatus = currentlyRiding <=> (one tm: TaxiManager | t in tm.currentlyRidingTaxis)
+	all t:Taxi | t.taxiStatus = outsideCity <=> (one tm: TaxiManager | t in tm.outsideCityTaxis)
 }
 
 
@@ -219,13 +223,18 @@ fact SingletonClasses{
 	// Singletons
 	#AccessManager=1
 	#SettingsManager=1
-	//#TaxiManager=1
+	#TaxiManager=1
 	#DBManager=1
-	//#NotificationManager=1
-	//#ZoneManager=1
+	#NotificationManager=1
+	#ZoneManager=1
 }
 
-pred show{}
+pred show{
+	#Taxi = 1
+	#Zone = 1
+	#Notification = 0
+	#User = 2
+}
 
 
 run show for 10
