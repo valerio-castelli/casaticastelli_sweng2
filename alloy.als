@@ -229,6 +229,17 @@ fact SingletonClasses{
 	#ZoneManager=1
 }
 
+/* Predicates */
+pred associateRequestToTaxi(t, t':Taxi, r: Request){
+	// precondition
+	t.taxiStatus = available
+	#t.serves = 0
+	// postcondition
+	t'.taxiStatus = currentlyRiding
+	r in t'.serves
+	t'.isManagedBy = t.isManagedBy
+}
+
 pred show{
 	#Taxi = 1
 	#Zone = 1
@@ -237,6 +248,6 @@ pred show{
 }
 
 
-run show for 10
+run associateRequestToTaxi
 
 
