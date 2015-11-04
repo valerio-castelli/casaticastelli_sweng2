@@ -125,7 +125,9 @@ sig Reservation{
 
 abstract sig Notification{
 	notificationId: Int,
-	message: string
+	message: string,
+	receiver: User,
+	relativeTo: Request
 }{
 	notificationId >= 0
 }
@@ -155,6 +157,15 @@ sig TaxiSecretCodeNotification extends Notification{
 }
 
 /* Facts */
+
+fact IncomingTaxiNotificationOnlyIfThereIsARequest{
+	/* Incoming taxi notifications are always associated to a request made by a user,
+	and their recipient is exactly that user */
+	all n: IncomingTaxiNotification | one r:Request | n.relativeTo = r 
+	all n: IncomingTaxiNotification | one r:Request | (n.relativeTo = r) <=> r.user = n.receiver
+}
+
+
 
 fact AllNotificationInNotificationManager{
 	// All notifications are sent by the notification manager
@@ -189,6 +200,7 @@ fact TaxiStatusCorrectlyUpdated {
 	all t:Taxi| t.taxiStatus = outsideCity implies (t.serves = none)
 	// If a taxis is unavailable, it cannot be associated with requests
 	all t:Taxi| t.taxiStatus = unavailable implies (t.serves = none)
+
 }
 
 fact NoLocationInTwoZones{
@@ -219,6 +231,11 @@ fact UniquenessOfIdentifiers{
 	no disj td1,td2:TaxiDriver | (td1.taxiLicense = td2.taxiLicense || td1.drivingLicense = td2.drivingLicense || td1.mobilePhoneNumber = td2.mobilePhoneNumber) 
 }
 
+fact NoTaxiInMultipleZones{
+	// No taxi can be simultaneously in two zones
+	all t:Taxi | no disj z,z':Zone | (t in z.contains && t in z'.contains)
+}
+
 fact SingletonClasses{
 	// Singletons
 	#AccessManager=1
@@ -231,14 +248,63 @@ fact SingletonClasses{
 
 /* Predicates */
 pred associateRequestToTaxi(t, t':Taxi, r: Request){
-	// precondition
+	// preconditions
 	t.taxiStatus = available
 	#t.serves = 0
-	// postcondition
+	// postconditions
 	t'.taxiStatus = currentlyRiding
 	r in t'.serves
 	t'.isManagedBy = t.isManagedBy
+	// we have to remove the taxi from his zone queue
+	one z,z':Zone | (t in z.contains) implies (z'.contains = z.contains - t)
+	// the new zone must be identical to the previous one
+	one z,z'':Zone | (z''.contains = z.contains - t) implies (z.boundaries = z''.boundaries)
+	/* the addition to the currentlyRidingTaxis list is guaranteed by the 
+	TaxiStatusCoherence fact */
+	/* We can't express continuity of identifiers because it's in 
+	contrast with their uniqueness in the model (Alloy limitation) */
 }
+
+pred confirmRideHasEndedInZone(t, t':Taxi, r:Request, z:Zone){
+	// preconditions
+	t.taxiStatus = currentlyRiding
+	#t.serves = 1
+	r in t.serves
+	// postconditions
+	t'.taxiStatus = available
+	#t'.serves = 0
+	t'.isManagedBy = t.isManagedBy
+	// we have to add this taxi to his current zone
+	addTaxiToZoneQueue[t',z]
+	/* the addition to the availableTaxis list is guaranteed by the 
+	TaxiStatusCoherence fact */
+}
+
+pred taxiAvailabilityToggle(t, t':Taxi, newStatus:TaxiStatus){
+	// A taxi can become available only if it's not already so
+	newStatus = available implies (t.taxiStatus!=available && t'.taxiStatus=available)
+	// A taxi can become unavailable only if it's currently available (not on a ride, not outside the city)
+	newStatus = unavailable implies (t.taxiStatus=available && t'.taxiStatus=unavailable)
+}
+
+
+pred addTaxiToZoneQueue(t:Taxi, z:Zone){
+	// postconditions
+	one z':Zone | (z'.contains = z.contains + t)
+	one z'':Zone | (z''.contains = z.contains + t) implies (z''.boundaries = z.boundaries)
+	/* We can't express continuity of identifier because it's in 
+	contrast with their uniqueness in the model (Alloy limitation) */
+}
+
+pred removeTaxiFromZoneQueue(t:Taxi, z,z':Zone){
+	// Postcondition: the boundaries are the same
+	one z':Zone | (t in z.contains) implies (z'.contains = z.contains - t) else (z'.contains = z.contains)
+	one z'':Zone | (z''.contains = z.contains - t) implies (z''.boundaries = z.boundaries)
+	/* We can't express continuity of identifier because it's in 
+	contrast with their uniqueness in the model (Alloy limitation) */
+}
+
+
 
 pred show{
 	#Taxi = 1
@@ -247,7 +313,6 @@ pred show{
 	#User = 2
 }
 
-
-run associateRequestToTaxi
+run addTaxiToZoneQueue for 2 but 10 Location
 
 
