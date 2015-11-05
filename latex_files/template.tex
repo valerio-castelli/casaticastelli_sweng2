@@ -9,6 +9,8 @@
 \usepackage{epstopdf}
 \usepackage{lscape}
 \usepackage{pdflscape}
+\usepackage{pdfpages}
+
 
 \begin{document}
 
@@ -23,7 +25,10 @@
     \includegraphics[width=580pt, keepaspectratio]{files/index.png}
     \label{fig:PropProf}
 \end{landscape}
+\includepdf{files/document.pdf}
+\includepdf[width=300pt]{files/document.pdf}
 \input{files/introduction.tex}
+
 
 \chapter{Overall description}
 \input{files/overall_description}
