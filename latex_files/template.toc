@@ -60,5 +60,5 @@
 \contentsline {subsection}{\numberline {3.6.6}Scenario 6}{24}{subsection.3.6.6}
 \contentsline {subsection}{\numberline {3.6.7}Scenario 7}{24}{subsection.3.6.7}
 \contentsline {chapter}{Appendix \numberline {A}Alloy}{26}{Appendix.1.A}
-\contentsline {chapter}{Appendix \numberline {B}Work hours}{36}{Appendix.1.B}
-\contentsline {chapter}{Appendix \numberline {C}Tries}{37}{Appendix.1.C}
+\contentsline {chapter}{Appendix \numberline {B}Work hours}{37}{Appendix.1.B}
+\contentsline {chapter}{Appendix \numberline {C}Tries}{38}{Appendix.1.C}
