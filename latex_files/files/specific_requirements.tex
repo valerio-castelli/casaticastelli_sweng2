@@ -135,6 +135,8 @@ Requirements:
 \item If a taxi driver accepts a request for a ride, the system should send a notification to the requesting user containing the code of the incoming taxi and an estimation of the waiting time (ETA).
 \item If the selected taxi driver refuses the request, the system should move his taxi code to the last position of the queue and forward the request to the following taxi in the queue.
 \item If the system is not able to find any available taxi in the queue of the specified zone, it should notify the passenger that the request could not be fulfilled. 
+\item The system should keep track of the taxi drivers who have already refused a request.
+\item If all taxi drivers refuse a certain request, the system should notify the passenger that the request could not be fulfilled.
 \end{itemize}
 
 \subsection{Goal 10}
