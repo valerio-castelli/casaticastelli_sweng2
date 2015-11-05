@@ -1,52 +1,7 @@
 \section{External Interface Requirements}
+\subsection{User interface sketches}
+Add the forms here, along with their description.
 \section{Functional Requirements}
-\section{Performance Requirements}
-Since the system is expected to operate in a medium-large sized city, it has to offer a certain level of performance in order to be considered usable. Since no actual data is available for our particular city, the following figures have been estimated by considering the structure of existing taxi services in major cities in the world.
-
-In particular, the following requirements have to be met:
-\begin{itemize}
-\item The system should support at least 10.000 overall taxi drivers, with the pessimistic assumption that all of them might be in service at the same time.
-\item The system should support at least a million registered passengers.
-\item The system should support at least 1000 concurrent taxi requests.
-\item The response time should be less than 1s for 95\% of all transactions.
-\end{itemize}
-
-
-\section{Design Constraints}
-\subsection{Hardware constraints}
-\begin{itemize}
-\item The mobile applications destined to taxi drivers and passengers should be designed taking into account the fact that only a fraction of our potential customers use a latest-generation smartphone. 
-\end{itemize}
-
-
-\subsection{Standard compliance}
-\begin{itemize}
-\item The system has to store taxi license plates in a format that is compliant with the national laws governing license plates issuing. 
-\item The system has to store taxi licenses and driving licenses accordingly to the national law.
-\item The system has to comply to the regulatory policies regarding taxi services. 
-\end{itemize}
-
-
-\section{Software System Attributes}
-\subsection{Reliability}
-In order to keep maintenance costs low, the system should offer a level of reliability such that no key component of the system should fail more than once every three years.
-Availability
-\subsection{Availability}
-The system is required to have an availability of 99.99\%. This means that it’s considered acceptable to have a downtime of up to 1 hour every year due to malfunctioning of the system. This implies that, at the architectural level, the system has to include a certain level of replication of its hardware structures in order to overcome potential failures. 
-\subsection{Security}
-The system should guarantee that only authorized taxi drivers are able to access and operate the mobile taxi driver application. 
-The system should guarantee that only authorized administrative personnel can have access to the service management panel. Before confirming an update of the taxi zone division or of the taxi driver list, the system should require a password and perform a safety backup.
-For what concerns security of users’s data, passwords will have to be encrypted. 
-\subsection{Maintainability}
-\subsection{Portability}
-Portability
-The system should be designed to be easily portable. In particular, the mobile side of the system should be coded using a programming language and a set of frameworks that can run on the major mobile platforms (iOS, Android) with the option of being easily portable on new ones, in order to anticipate for future market changes. No platform-dependent frameworks should be used while coding the mobile applications.
-\section{Other Requirements}
-
-
-
-
-\section{Goals and requirements}
 \subsection{Goal 1}
 Goal 1: The city administration must have the possibility to enter the data about the taxi drivers and about the taxi zones. 
 
@@ -92,7 +47,7 @@ Requirements:
 \item When a taxi driver marks himself as available, the system should use the retrieved GPS coordinates to compute the taxi zone to which the taxi belongs and move its code into the last position of the corresponding queue. 
 \item If the system successfully registers a taxi driver as available, it should send him a positive notification on the mobile application. Otherwise, it should send him a negative notification and ask him to retry later.
 \item When a taxi driver marks himself as unavailable while being inside the city, his taxi code should be removed from the queue of the corresponding zone.
-\item When a taxi driver marks himself as unavailable, his internal status should be updated accordingly. 
+\item When a taxi driver marks himself as unavailable, the status of his taxi should be updated accordingly. 
 \item When a taxi driver is set as unavailable, he should receive a notification warning him that he’s no longer available to accept requests.
 \end{itemize}
 
@@ -121,7 +76,7 @@ Goal 6: The taxi driver should be able to receive, accept and refuse ride reques
 Requirements:
 \begin{itemize}
 \item The taxi driver that has been selected for a ride should receive a notification containing details on the meeting location and be allowed to accept or refuse the request.
-\item The system should be able to reverse-decode the GPS coordinates of the meeting location into a valid city address.
+\item The system should be able to reverse-geocode the GPS coordinates of the meeting location into a valid city address.
 \item The system should provide an appropriate interface to let the driver accept or refuse the ride request.
 \item If a taxi driver accepts a request for a ride, the system should update its taxi status to “currently riding”.
 \item If a taxi driver refuses a request for a ride, his taxi code should be moved to the last position of the queue of the zone he’s currently in.
@@ -151,21 +106,21 @@ Requirements:
 \end{itemize}
 
 \subsection{Goal 9}
-Goal 9: Users should be able to request rides.
+Goal 9: Passengers should be able to request rides.
 
 Requirements:
 \begin{itemize}
 \item The system should not allow for requests to have an origin outside the city. 
-\item The system should provide a way for users to request a ride.
+\item The system should provide a way for passengers to request a ride.
 	- The mobile application should be able to detect the current GPS location and use it as the source point of a ride request.
-	- The mobile application should allow the user to enter an address as the source point of a ride request.
-	- The web application should allow the user to enter an address as the source point of a ride request.
-\item If it’s not possible to retrieve the GPS location of the passenger (either because there is no satellite coverage or because the authorization to use location services has been refused), the system should notify the user that it’s unable to automatically locate his position.
-\item If it’s not possible to establish an internet connection to the central system, the mobile application should notify the user that it’s unable to operate correctly.
-\item In case the internet connection goes down at any point during the request process, the mobile application should abort the process and notify the user that the request could not be completed.
-\item When a user requests a ride, the system should use the source field of the request to compute the corresponding taxi zone. 
+	- The mobile application should allow the passenger to enter an address as the source point of a ride request.
+	- The web application should allow the passenger to enter an address as the source point of a ride request.
+\item If it’s not possible to retrieve the GPS location of the passenger (either because there is no satellite coverage or because the authorization to use location services has been refused), the system should notify the passenger that it’s unable to automatically locate his position.
+\item If it’s not possible to establish an internet connection to the central system, the mobile application should notify the passenger that it’s unable to operate correctly.
+\item In case the internet connection goes down at any point during the request process, the mobile application should abort the process and notify the passenger that the request could not be completed.
+\item When a passenger requests a ride, the system should use the source field of the request to compute the corresponding taxi zone. 
 \item After a request’s taxi zone has been computed, the system should assign the request to the first taxi in that zone’s queue.
-\item If a taxi driver accepts a request for a ride, the system should send a notification to the requesting user containing the code of the incoming taxi and an estimation of the waiting time (ETA).
+\item If a taxi driver accepts a request for a ride, the system should send a notification to the requesting passenger containing the code of the incoming taxi and an estimation of the waiting time (ETA).
 \item If the selected taxi driver refuses the request, the system should move his taxi code to the last position of the queue and forward the request to the following taxi in the queue.
 \item If the system is not able to find any available taxi in the queue of the specified zone, it should notify the passenger that the request could not be fulfilled. 
 \item The system should keep track of the taxi drivers who have already refused a request.
@@ -173,7 +128,7 @@ Requirements:
 \end{itemize}
 
 \subsection{Goal 10}
-Goal 10: Users should be able to register.
+Goal 10: Passengers should be able to register.
 
 Requirements:
 \begin{itemize}
@@ -181,18 +136,18 @@ Requirements:
 \end{itemize}
 
 \subsection{Goal 11}
-Goal 11: Registered users should be able to reserve rides in advance.
+Goal 11: Registered passengers should be able to reserve rides in advance.
 
 Requirements:
 \begin{itemize}
-\item The system should keep an association between a user profile and his reservations.
-\item The system should provide a way for registered users to reserve a ride for a specific date and time.
-	- The mobile application should allow the user to enter the source and destination addresses for the ride and the meeting time.
-	- The web application should allow the user to enter the source and destination addresses for the ride and the meeting time.
-\item If it’s not possible to establish an internet connection to the central system, the mobile application should notify the user that it’s unable to operate correctly.
-\item In case the internet connection goes down at any point during the reservation process, the mobile application should abort the process and notify the user that the request could not be completed.
-\item The system should provide a way for registered users to review their active reservations.
-\item The system should provide a way for registered users to delete a reservation.
+\item The system should keep an association between a passenger profile and his reservations.
+\item The system should provide a way for registered passengers to reserve a ride for a specific date and time.
+	- The mobile application should allow the passenger to enter the source and destination addresses for the ride and the meeting time.
+	- The web application should allow the passenger to enter the source and destination addresses for the ride and the meeting time.
+\item If it’s not possible to establish an internet connection to the central system, the mobile application should notify the passenger that it’s unable to operate correctly.
+\item In case the internet connection goes down at any point during the reservation process, the mobile application should abort the process and notify the passenger that the request could not be completed.
+\item The system should provide a way for registered passengers to review their active reservations.
+\item The system should provide a way for registered passengers to delete a reservation.
 \item The system should store reservations in a reservation queue. 
 \item For every stored reservation, the system should proceed with selecting a taxi only 10 minutes before the scheduled meeting time.
 \item For every stored reservation, the system should only select taxis from the queue of the zone associated with the source address.
@@ -212,6 +167,45 @@ Requirements:
 \item The security number must be sent to the taxi driver upon his confirmation that he will take care of the ride.
 \item The security number must be sent to the passenger who requested the ride (?).
 \end{itemize}
+
+\section{Performance Requirements}
+Since the system is expected to operate in a medium-large sized city, it has to offer a certain level of performance in order to be considered usable. Since no actual data is available for our particular city, the following figures have been estimated by considering the structure of existing taxi services in major cities in the world.
+
+In particular, the following requirements have to be met:
+\begin{itemize}
+\item The system should support at least 10.000 overall taxi drivers, with the pessimistic assumption that all of them might be in service at the same time.
+\item The system should support at least a million registered passengers.
+\item The system should support at least 1000 concurrent taxi requests.
+\item The response time should be less than 1s for 95\% of all transactions.
+\end{itemize}
+
+
+\section{Design Constraints}
+
+\subsection{Standard compliance}
+\begin{itemize}
+\item The system has to store taxi license plates in a format that is compliant with the national laws governing license plates issuing. 
+\item The system has to store taxi licenses and driving licenses accordingly to the national law.
+\item The system has to comply to the regulatory policies regarding taxi services. 
+\end{itemize}
+
+
+\section{Software System Attributes}
+\subsection{Reliability}
+In order to keep maintenance costs low, the system should offer a level of reliability such that no key component of the system should fail more than once every three years.
+Availability
+\subsection{Availability}
+The system is required to have an availability of 99.99\%. This means that it’s considered acceptable to have a downtime of up to 1 hour every year due to malfunctioning of the system. This implies that, at the architectural level, the system has to include a certain level of replication of its hardware structures in order to overcome potential failures. 
+\subsection{Security}
+The system should guarantee that only authorized taxi drivers are able to access and operate the mobile taxi driver application. 
+The system should guarantee that only authorized administrative personnel can have access to the service management panel. Before confirming an update of the taxi zone division or of the taxi driver list, the system should require a password and perform a safety backup.
+Moreover, the central infrastructure of the system must implement proper mechanisms to be resistant to external malicious attacks. 
+In particular, it should be robust with respect to DDoS, SQL injection and other common attack vectors; furthermore, only the connections necessary for the correct operations of the services should be allowed, with all the other ones being blocked by a physical firewall.
+For what concerns security of users’ (taxi drivers and passengers) data, passwords will have to be encrypted. 
+The disk drives of the servers that are going to run the system will have to be encrypted too, in order to neutralize physical attacks to the infrastructure. 
+Adequate protection against fire, floods and other disasters should be taken into account. 
+\subsection{Portability}
+The system should be designed to be easily portable. In particular, the mobile side of the system should be coded using a programming language and a set of frameworks that can run on the major mobile platforms (iOS, Android, Windows Phone) with the option of being easily portable on new ones, in order to anticipate for future market changes. No platform-dependent frameworks should be used while coding the mobile applications.
 
 \section{Scenarios}
 SOME POSSIBLE SCENARIOS
@@ -253,7 +247,7 @@ On the night of their anniversary, Jessica and Davide are getting ready to leave
 
 Matteo receives a request notification on his mobile terminal, which employs the associated GPS information to point out Davide’s apartment location on the city map. Matteo decides to accept the request and clicks on the “accept request” button.
 
-The system receives Matteo’s confirmation along with his GPS coordinates and moves his taxi code from the zone 4 queue to the “currently riding” list; it then uses this information to retrieve from an external mapping service an estimate time of arrival (ETA) and notifies it to Davide along with the taxi code of Matteo’s taxi and a security code associated with the ride. The system also notifies Matteo the security code associated with the ride, then Matteo starts driving.
+The system receives Matteo’s confirmation along with his GPS coordinates, updates his taxi status to “currently riding” and moves it from the zone 4 queue to the “currently riding” list; it then uses this information to retrieve from an external mapping service an estimate time of arrival (ETA) and notifies it to Davide along with the taxi code of Matteo’s taxi and a security code associated with the ride. The system also notifies Matteo the security code associated with the ride, then Matteo starts driving.
 
 Davide receives the notification on her mobile phone and patiently waits for the taxi to arrive.
 
@@ -263,17 +257,17 @@ When Matteo’s taxi arrives, Davide tells Matteo the security code and the taxi
 \subsection{Scenario 4}
 Matteo has just drove Davide and Jessica to their destination, which is a restaurant in the middle of the city. He clicks the “confirm ride ended” button in the mobile application. The mobile application sends a notification message to the central system, which acknowledges that the ride has ended.
 
-Since Matteo was previously available before the ride and has not switched the available/unavailable toggle, the system computes the zone associated with his current GPS coordinates and moves his taxi code into the last position of the respective queue.
+Since Matteo was previously available before the ride and has not switched the available/unavailable toggle, the system computes the zone associated with his current GPS coordinates and moves his taxi into the last position of the respective queue.
 
 
 \subsection{Scenario 5}
 Bob has just drove Alice back to her apartment, which is a small flat in the suburbs (but still belonging to the city). He clicks the “confirm ride ended” button in the mobile application. The mobile application sends a notification message to the central system, which acknowledges that the ride has ended.
 
-Since Bob was previously available before the ride and has not switched the available/unavailable toggle, the system computes the zone associated with his current GPS coordinates and moves his taxi code in the respective code, in the last position.
+Since Bob was previously available before the ride and has not switched the available/unavailable toggle, the system computes the zone associated with his current GPS coordinates and moves his taxi in the respective code, in the last position.
 
 At this point, however, Bob feels a little tired and decides to take a nap, so he switches the available/unavailable toggle to the unavailable position.
 
-The mobile application sends a notification to the central system, which acknowledges Bob’s decision and proceeds to move his taxi code from the queue of his current zone to the unavailability queue. It then sends back a notification to Bob informing him that he’s been correctly registered as unavailable and that he will not be able to receive further requests as long as he remain so.
+The mobile application sends a notification to the central system, which acknowledges Bob’s decision, sets the status of its taxi to “unavailable” and proceeds to move it from the queue of his current zone to the unavailability queue. It then sends back a notification to Bob informing him that he’s been correctly registered as unavailable and that he will not be able to receive further requests as long as he remain so.
 
 Bob can now take some well deserved rest.
 
@@ -285,9 +279,9 @@ During their journey to the airport, which is Samuel’s destination, Frank has 
 
 After leaving Samuel at the airport, Frank clicks the “confirm ride ended” button in the mobile application.
 
-The mobile application sends a notification to the central system, which acknowledges that the ride has ended.
+The mobile application sends a notification to the central system, which acknowledges that the ride has ended. 
 
-Since Frank is now located outside the city, the system moves his taxi code into the “out-of-city” queue.
+Since Frank is now located outside the city, the system changes the status of his taxi to “outside-city” and moves it to the corresponding list.
 
 
 \subsection{Scenario 7}
@@ -295,46 +289,4 @@ As soon as Frank crosses the city border the mobile application, which has been 
 
 The system determines that Frank’s current location is now inside the boundaries of the city and computes the associated zone.
 
-Since Frank had flagged himself as available before accepting Samuel’s request and has not switched the available/unavailable toggle for the whole journey, the system moves his taxi code into the last position of the computed zone’s queue. 
-
-
-\subsection{???}
-A user requests a taxi:
-- A user access the app (mobile or web?)
-- The user request a taxi
-- The system receive the request
-- The system, by interaction with the mapping serve, compute in which zone the user is
-- The system checks if in this zone there is a taxi available; let's suppose there is one (or do we have to consider also the other case?)
-- The system sends to the taxi driver a notification (with which info???)
-- The taxi driver accepts
-- The system receive the confirmation
-- The system remove the taxi driver from the queue and put it on the UL
-- The system sends a notification to the user with taxi code and waiting time
-- The user receive the confirm
-
-A user books/reserves a ride:
-- The user open the web app
-- The user log in
-- The user open the form to reserve a taxi
-- The user insert all the requested info
-- The user confirm
-- The system receive the request
-- The system store the request (???)
-
-A taxi driver has ended a ride and wants to communicate his availability:
-- The taxi driver sends a notification of "ride endend"
-- The system receive it and delete the request of the user (?)
-- The taxi driver sends a message of "available"
-- The system receive it
-- The system compute the taxi driver position (by the mean of the mapping service ?)
-- The system put the taxi code in the zone queue
-
-A user withdraw / delete a book / ... (one of this will be enough ???)
-
-A taxi driver withdraw / ... (one of this will be enough ???)
-
-A taxi driver enter in city
-
-A taxi driver changes zone / leaves the city
-
-10 minutes before a meeting time, the system associates a taxi to the reservation
+Since Frank had flagged himself as available before accepting Samuel’s request and has not switched the available/unavailable toggle for the whole journey, the system moves his taxi into the last position of the computed zone’s queue. 
