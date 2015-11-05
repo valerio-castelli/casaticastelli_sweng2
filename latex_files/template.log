@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.2)  5 NOV 2015 20:42
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.2)  5 NOV 2015 20:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1035,7 +1035,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[27])
+[27]) (./files/alloy.tex
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 2.
+ (../alloy.als
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1043,12 +1046,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [28]
-Appendix A.
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 43.
-(../alloy.als [29
 
-]
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[29]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1104,7 +1108,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[37])
+[37]))
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1112,26 +1116,30 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [38]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 48.
- [39
+Appendix A.
+[39
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 48.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 49.
+ [40
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 49.
  (./template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 48.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 48.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 49.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 49.
 Package rerunfilecheck Info: File `template.out' has not changed.
 (rerunfilecheck)             Checksum: 71A6EE62A045302EAB430CB3C76CE0BD;3765.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 48.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 49.
  ) 
 Here is how much of TeX's memory you used:
- 8144 strings out of 494967
- 120449 string characters out of 6179868
- 318754 words of memory out of 5000000
+ 8147 strings out of 494967
+ 120487 string characters out of 6179868
+ 321162 words of memory out of 5000000
  10838 multiletter control sequences out of 15000+600000
  10191 words of font info for 36 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
- 40i,18n,49p,2490b,1935s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 40i,18n,49p,2490b,1905s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
@@ -1139,9 +1147,9 @@ ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on template.pdf (40 pages, 565893 bytes).
+Output written on template.pdf (41 pages, 565940 bytes).
 PDF statistics:
- 939 PDF objects out of 1000 (max. 8388607)
- 438 named destinations out of 1000 (max. 500000)
+ 944 PDF objects out of 1000 (max. 8388607)
+ 439 named destinations out of 1000 (max. 500000)
  508 words of extra memory for PDF output out of 10000 (max. 10000000)
 
