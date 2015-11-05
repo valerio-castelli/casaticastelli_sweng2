@@ -1,35 +1,20 @@
 \input{files/settings.tex}
 \input{files/alloy_style.tex}
-\usepackage{graphicx}
-
-\usepackage{graphicx}
-\usepackage{wrapfig}
-\usepackage{lscape}
-\usepackage{rotating}
-\usepackage{epstopdf}
-\usepackage{lscape}
-\usepackage{pdflscape}
-\usepackage{pdfpages}
-\usepackage[titletoc]{appendix}% http://ctan.org/pkg/appendices
-
 
 \begin{document}
 
-\title{Software Engineering 2 Project}
-\author{Casati Fabrizio, Castelli Valerio}
+\title{RASD}
+\author{
+	CASATI Fabrizio, 835195
+	\and
+	CASTELLI Valerio, 
+}
 
 \maketitle
 \tableofcontents
 
 \chapter{Introduction}
-\begin{landscape}
-    \includegraphics[width=580pt, keepaspectratio]{files/index.png}
-    \label{fig:PropProf}
-\end{landscape}
-\includepdf{files/document.pdf}
-\includepdf[width=300pt]{files/document.pdf}
 \input{files/introduction.tex}
-
 
 \chapter{Overall description}
 \input{files/overall_description}
@@ -38,12 +23,19 @@
 \input{files/specific_requirements.tex}
 
 \begin{appendices}
+\chapter{Alloy}
 \input{files/alloy.tex}
 
-\chapter{Alloy}
+\chapter{Work hours}
+To redact this document, we spend around 40 hours per person.
 
+\chapter{Tries}
+\begin{landscape}
+    \includegraphics[width=580pt, keepaspectratio]{files/index.png}
+    \label{fig:PropProf}
+\end{landscape}
+\includepdf{files/document.pdf}
+\includepdf[width=300pt]{files/document.pdf}
 \end{appendices}
-\chapter*{Index}
-text
 
 \end{document}
