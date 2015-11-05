@@ -8,13 +8,19 @@ The aim of the project is to create a new taxi management system to optimize an 
 
 \section{Definitions, acronyms, and abbreviations}
 \subsection{Definition}
-Here we present a list of all terms used in the document.
+Here we present a list of significant, context-specific terms used in the document.
 \begin{itemize}
-\item "system": the system that has to be designed and main argument of this document
-\item "user": a person that use the system to request a ride
-\item "code" or "taxi code": the unique identifier associated to each taxi
-\item "available": a taxi driver is considered available if he can answer to a user call.
-\item "unavailable taxi": if not
+\item “System": the system that has to be designed. 
+\item “Passenger”: a person that uses the system to request a ride.
+\item “Guest passenger”: a person that is using the passenger application, but that has not performed a login. 
+\item “Logged in passenger”: a person that is using the passenger application and that has performed a login. 
+\item “Guest taxi driver”: a person that is using the taxi driver application, but that has not performed a login. 
+\item “Logged in taxi driver”: a person that is using the taxi driver application and that has performed a login. 
+\item “Administrative personnel”: the city administration staff that is responsible for the administrative operations related to the configuration of the system.
+\item “Taxi code": the unique identifier associated to each taxi.
+\item “Secret code": the random identifier associated to each request to certify that the user that is getting on a taxi is effectively the one that has requested it.
+\item “Available": a taxi driver is considered available if he can answer to a user call.
+\item “Unavailable taxi":  a taxi driver is considered available if he’s not in service.
 \item "taxi zone": zone in which the city is divided in.
 \item "unavailability list", UL: the list where codes of the taxi drivers actually unavailable are stored;
 \item "zone queue", ZQ: the FIFO list, one for each zone, where the codes of available taxi driveres are stored;
