@@ -1,2 +1,6 @@
-Alloy code.
+Here follows the skeleton of a possible Alloy formalization of the proposed system.
+This Alloy model depicts the key concepts and entities that make up the system and the relationships between them.
+However, it should be noted that not all the possible requirements could be expressed in terms of this Alloy model. 
+In particular, Alloy’s lack of support for proper variables has forced us to avoid the inclusion of integrity constraints between the previous and the next state of an entity, as this would have violated the constraints on the uniqueness of the entities identifiers (which have been expressed as facts). 
+As such, this Alloy model should not be interpreted as an exhaustive expression of all the rules that govern the operations of the system, and should be seen instead as an attempt to capture its essential features. 
 \alloyfile{../alloy.als}
