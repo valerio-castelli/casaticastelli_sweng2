@@ -16,46 +16,49 @@
 \BOOKMARK [2][-]{subsection.2.1.4}{Software interfaces}{section.2.1}% 16
 \BOOKMARK [1][-]{section.2.2}{Product functions}{chapter.2}% 17
 \BOOKMARK [1][-]{section.2.3}{User characteristics}{chapter.2}% 18
-\BOOKMARK [1][-]{section.2.4}{Constraints}{chapter.2}% 19
-\BOOKMARK [1][-]{section.2.5}{Assumptions and dependencies}{chapter.2}% 20
-\BOOKMARK [2][-]{subsection.2.5.1}{Domain properties}{section.2.5}% 21
-\BOOKMARK [2][-]{subsection.2.5.2}{Assumptions}{section.2.5}% 22
-\BOOKMARK [0][-]{chapter.3}{Specific requirements}{}% 23
-\BOOKMARK [1][-]{section.3.1}{External Interface Requirements}{chapter.3}% 24
-\BOOKMARK [1][-]{section.3.2}{Functional Requirements}{chapter.3}% 25
-\BOOKMARK [1][-]{section.3.3}{Performance Requirements}{chapter.3}% 26
-\BOOKMARK [1][-]{section.3.4}{Design Constraints}{chapter.3}% 27
-\BOOKMARK [2][-]{subsection.3.4.1}{Hardware constraints}{section.3.4}% 28
-\BOOKMARK [2][-]{subsection.3.4.2}{Standard compliance}{section.3.4}% 29
-\BOOKMARK [1][-]{section.3.5}{Software System Attributes}{chapter.3}% 30
-\BOOKMARK [2][-]{subsection.3.5.1}{Reliability}{section.3.5}% 31
-\BOOKMARK [2][-]{subsection.3.5.2}{Availability}{section.3.5}% 32
-\BOOKMARK [2][-]{subsection.3.5.3}{Security}{section.3.5}% 33
-\BOOKMARK [2][-]{subsection.3.5.4}{Maintainability}{section.3.5}% 34
-\BOOKMARK [2][-]{subsection.3.5.5}{Portability}{section.3.5}% 35
-\BOOKMARK [1][-]{section.3.6}{Other Requirements}{chapter.3}% 36
-\BOOKMARK [1][-]{section.3.7}{Goals and requirements}{chapter.3}% 37
-\BOOKMARK [2][-]{subsection.3.7.1}{Goal 1}{section.3.7}% 38
-\BOOKMARK [2][-]{subsection.3.7.2}{Goal 2}{section.3.7}% 39
-\BOOKMARK [2][-]{subsection.3.7.3}{Goal 3}{section.3.7}% 40
-\BOOKMARK [2][-]{subsection.3.7.4}{Goal 4}{section.3.7}% 41
-\BOOKMARK [2][-]{subsection.3.7.5}{Goal 5}{section.3.7}% 42
-\BOOKMARK [2][-]{subsection.3.7.6}{Goal 6}{section.3.7}% 43
-\BOOKMARK [2][-]{subsection.3.7.7}{Goal 7}{section.3.7}% 44
-\BOOKMARK [2][-]{subsection.3.7.8}{Goal 8}{section.3.7}% 45
-\BOOKMARK [2][-]{subsection.3.7.9}{Goal 9}{section.3.7}% 46
-\BOOKMARK [2][-]{subsection.3.7.10}{Goal 10}{section.3.7}% 47
-\BOOKMARK [2][-]{subsection.3.7.11}{Goal 11}{section.3.7}% 48
-\BOOKMARK [2][-]{subsection.3.7.12}{Goal 12}{section.3.7}% 49
-\BOOKMARK [1][-]{section.3.8}{Scenarios}{chapter.3}% 50
-\BOOKMARK [2][-]{subsection.3.8.1}{Scenario 1}{section.3.8}% 51
-\BOOKMARK [2][-]{subsection.3.8.2}{Scenario 2}{section.3.8}% 52
-\BOOKMARK [2][-]{subsection.3.8.3}{Scenario 3}{section.3.8}% 53
-\BOOKMARK [2][-]{subsection.3.8.4}{Scenario 4}{section.3.8}% 54
-\BOOKMARK [2][-]{subsection.3.8.5}{Scenario 5}{section.3.8}% 55
-\BOOKMARK [2][-]{subsection.3.8.6}{Scenario 6}{section.3.8}% 56
-\BOOKMARK [2][-]{subsection.3.8.7}{Scenario 7}{section.3.8}% 57
-\BOOKMARK [2][-]{subsection.3.8.8}{???}{section.3.8}% 58
-\BOOKMARK [0][-]{Appendix.1.A}{Appendix Alloy}{}% 59
-\BOOKMARK [0][-]{Appendix.1.B}{Appendix Work hours}{}% 60
-\BOOKMARK [0][-]{Appendix.1.C}{Appendix Tries}{}% 61
+\BOOKMARK [2][-]{subsection.2.3.1}{Actors identifying}{section.2.3}% 19
+\BOOKMARK [1][-]{section.2.4}{Constraints}{chapter.2}% 20
+\BOOKMARK [2][-]{subsection.2.4.1}{Regulatory policies}{section.2.4}% 21
+\BOOKMARK [2][-]{subsection.2.4.2}{Hardware limitations}{section.2.4}% 22
+\BOOKMARK [2][-]{subsection.2.4.3}{Interfaces to other applications}{section.2.4}% 23
+\BOOKMARK [2][-]{subsection.2.4.4}{Parallel operation}{section.2.4}% 24
+\BOOKMARK [2][-]{subsection.2.4.5}{Criticality of the application}{section.2.4}% 25
+\BOOKMARK [2][-]{subsection.2.4.6}{Safety and security considerations}{section.2.4}% 26
+\BOOKMARK [1][-]{section.2.5}{Assumptions and dependencies}{chapter.2}% 27
+\BOOKMARK [2][-]{subsection.2.5.1}{Domain properties}{section.2.5}% 28
+\BOOKMARK [2][-]{subsection.2.5.2}{Assumptions}{section.2.5}% 29
+\BOOKMARK [0][-]{chapter.3}{Specific requirements}{}% 30
+\BOOKMARK [1][-]{section.3.1}{External Interface Requirements}{chapter.3}% 31
+\BOOKMARK [2][-]{subsection.3.1.1}{User interface sketches}{section.3.1}% 32
+\BOOKMARK [1][-]{section.3.2}{Functional Requirements}{chapter.3}% 33
+\BOOKMARK [2][-]{subsection.3.2.1}{Goal 1}{section.3.2}% 34
+\BOOKMARK [2][-]{subsection.3.2.2}{Goal 2}{section.3.2}% 35
+\BOOKMARK [2][-]{subsection.3.2.3}{Goal 3}{section.3.2}% 36
+\BOOKMARK [2][-]{subsection.3.2.4}{Goal 4}{section.3.2}% 37
+\BOOKMARK [2][-]{subsection.3.2.5}{Goal 5}{section.3.2}% 38
+\BOOKMARK [2][-]{subsection.3.2.6}{Goal 6}{section.3.2}% 39
+\BOOKMARK [2][-]{subsection.3.2.7}{Goal 7}{section.3.2}% 40
+\BOOKMARK [2][-]{subsection.3.2.8}{Goal 8}{section.3.2}% 41
+\BOOKMARK [2][-]{subsection.3.2.9}{Goal 9}{section.3.2}% 42
+\BOOKMARK [2][-]{subsection.3.2.10}{Goal 10}{section.3.2}% 43
+\BOOKMARK [2][-]{subsection.3.2.11}{Goal 11}{section.3.2}% 44
+\BOOKMARK [2][-]{subsection.3.2.12}{Goal 12}{section.3.2}% 45
+\BOOKMARK [1][-]{section.3.3}{Performance Requirements}{chapter.3}% 46
+\BOOKMARK [1][-]{section.3.4}{Design Constraints}{chapter.3}% 47
+\BOOKMARK [2][-]{subsection.3.4.1}{Standard compliance}{section.3.4}% 48
+\BOOKMARK [1][-]{section.3.5}{Software System Attributes}{chapter.3}% 49
+\BOOKMARK [2][-]{subsection.3.5.1}{Reliability}{section.3.5}% 50
+\BOOKMARK [2][-]{subsection.3.5.2}{Availability}{section.3.5}% 51
+\BOOKMARK [2][-]{subsection.3.5.3}{Security}{section.3.5}% 52
+\BOOKMARK [2][-]{subsection.3.5.4}{Portability}{section.3.5}% 53
+\BOOKMARK [1][-]{section.3.6}{Scenarios}{chapter.3}% 54
+\BOOKMARK [2][-]{subsection.3.6.1}{Scenario 1}{section.3.6}% 55
+\BOOKMARK [2][-]{subsection.3.6.2}{Scenario 2}{section.3.6}% 56
+\BOOKMARK [2][-]{subsection.3.6.3}{Scenario 3}{section.3.6}% 57
+\BOOKMARK [2][-]{subsection.3.6.4}{Scenario 4}{section.3.6}% 58
+\BOOKMARK [2][-]{subsection.3.6.5}{Scenario 5}{section.3.6}% 59
+\BOOKMARK [2][-]{subsection.3.6.6}{Scenario 6}{section.3.6}% 60
+\BOOKMARK [2][-]{subsection.3.6.7}{Scenario 7}{section.3.6}% 61
+\BOOKMARK [0][-]{Appendix.1.A}{Appendix Alloy}{}% 62
+\BOOKMARK [0][-]{Appendix.1.B}{Appendix Work hours}{}% 63
+\BOOKMARK [0][-]{Appendix.1.C}{Appendix Tries}{}% 64
