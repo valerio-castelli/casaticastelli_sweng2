@@ -129,8 +129,7 @@ sig Reservation{
 
 abstract sig Notification{
 	notificationId: Int,
-	message: string,
-	receiver: User
+	message: string
 }{
 	notificationId >= 0
 }
@@ -139,7 +138,8 @@ sig IncomingTaxiNotification extends Notification{
 	ETA: Int,
 	taxiCode: Int,
 	secretCode: Int,
-	relativeTo: Request
+	relativeTo: Request,
+	receiver: User
 }{
 	ETA >= 0
 	taxiCode >= 0
@@ -149,14 +149,19 @@ sig IncomingTaxiNotification extends Notification{
 }
 
 sig ReservationConfirmationNotification extends Notification{
-	relativeTo: Reservation
+	relativeTo: Reservation,
+	receiver: User
 }
 
 sig NoTaxiAvailableNotification extends Notification{
+	receiver: User
 }
 
 sig TaxiSecretCodeNotification extends Notification{
-	secretCode: Int
+	secretCode: Int, 
+	taxi:Taxi,
+	relativeTo: Request,
+	receiver: TaxiDriver
 }{
 	secretCode >= 0
 }
@@ -177,14 +182,24 @@ fact ReservationShouldBeEitherServedOrPending{
 fact IncomingTaxiNotificationBehavior{
 	/* Incoming taxi notifications are always sent exactly to the user that
 	has made the request, and their taxi code matches */
-	all n: IncomingTaxiNotification | one r:Request, t:Taxi, tm:TaxiManager | ((n.relativeTo = r) <=> (r.sentBy = n.receiver
+	all n: IncomingTaxiNotification | one r:Request | (n.relativeTo = r)
+	all n: IncomingTaxiNotification | one r:Request, t:Taxi, tm:TaxiManager | ((n.relativeTo = r) && (r.sentBy = n.receiver
 	&& t.serves=r && n.taxiCode = t.taxiCode && r in tm.pendingRequests))
+}
+
+fact TaxiSecretCodeNotificationBehavior{
+	/* Incoming taxi notifications are always sent exactly to the user that
+	has made the request, and their taxi code matches */
+	all n: TaxiSecretCodeNotification | one r:Request | (n.relativeTo = r)
+ 	all n: TaxiSecretCodeNotification | one r:Request, td:TaxiDriver, t:Taxi, tm:TaxiManager | ((n.relativeTo = r) && (td = n.receiver 
+	&& t.serves=r && td.drives = t && r in tm.pendingRequests))
 }
 
 fact ReservationConfirmationNotificationBehavior{
 	/* Incoming taxi notifications are always sent exactly to the user that
 	has made the request */
-	all n: ReservationConfirmationNotification | one r:Reservation | (n.relativeTo = r) <=> r.madeBy = n.receiver
+	all n: ReservationConfirmationNotification | one r:Reservation | (n.relativeTo = r) 
+	all n: ReservationConfirmationNotification | one r:Reservation | (n.relativeTo = r)  <=> r.madeBy = n.receiver
 }
 
 fact AllNotificationInNotificationManager{
@@ -328,11 +343,11 @@ pred removeTaxiFromZoneQueue(t:Taxi, z,z':Zone){
 
 pred show{
 	#Taxi = 1
-	#Zone = 1
-	#Notification = 0
+	#Zone = 2
 	#User = 2
+	#Notification = 1
 }
 
-run addTaxiToZoneQueue for 2 but 10 Location
+run show for 6
 
 
