@@ -38,9 +38,43 @@ The system will also interface with a commercial DBMS in order to store and retr
 
 
 \section{Product functions}
+In order to be considered functional, the system has to provide a set of key functionalities.
+These functionalities are either related to the administrative side of the taxi service or to the end users (which include taxi drivers and passengers).
+
+In particular, the system is expected to be able to:
+\begin{itemize}
+\item Let the city administration insert and update the information about the taxis operating in the city.
+\item Let the city administration define the division of the city in taxi zones, specify their boundaries and update them if needed
+\item Let passengers to request a taxi
+\item Let registered passengers to reserve a taxi for a specific date and time
+\item Keep track of the zone in which every taxi is waiting
+\item Keep track of the availability of each taxi
+\item Allocate requests coming from a specific zone to taxis waiting in that zone following a FIFO policy
+\end{itemize}
+
+
+the system should keep track of the taxi drivers who have already refused a request. 
+
+if all taxi drivers refuse a certain request, the system should notify the passenger that the request could not be fulfilled.
 
 
 \section{User characteristics}
+In general, we do not expect the users of our system to be particularly tech-savvy. 
+The main audience for which our system is intended comprises, in fact, customers coming from all levels of education.
+Taxi drivers are very expert of the dynamics of a traditional, non-technological taxi service and they expect the new system to fully comply with those dynamics without having to change their habits. They know, however, how to use a smartphone with reasonable proficiency.
+
+The city administration personnel has no specific technological background, apart from a generic introduction to the administrative tools they have to use.
+
+Passengers are considered to know enough technology to be able to use a smartphone and a web browser, but no further assumption on their level of expertise is possible. 
+
+
+Actors identifying
+Guest passenger: a passenger that has not registered to the service yet. He can only decide to request a taxi for his current location, or to register in order to fully use the platform. 
+Registered passenger: a passenger that has registered to the service and has successfully logged in. Apart from the possibility to request a taxi, he can also reserve a taxi for a specific date and time and manage his personal information.
+Guest taxi driver: a taxi driver that has not yet logged in. This user can only perform the login operation, which is required in order to access the full set of functionalities reserved for taxi drivers. 
+Logged in taxi driver: a taxi driver that has logged in. This user can mark himself as available or unavailable to receive requests; if available, he can receive, accept and refuse requests. He can also see what’s his current zone and his position in the corresponding taxi queue. Finally, he can review all his served requests.
+Administrative personnel: the staff that configures the system with the taxi driver data and the zone division. 
+Mapping service: the linked system from which our platform will retrieve information about the estimated time of arrival of taxis from their location to the required pickup location.
 
 
 \section{Constraints}

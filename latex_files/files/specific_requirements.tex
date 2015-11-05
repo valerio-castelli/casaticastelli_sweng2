@@ -1,13 +1,46 @@
 \section{External Interface Requirements}
 \section{Functional Requirements}
 \section{Performance Requirements}
+Since the system is expected to operate in a medium-large sized city, it has to offer a certain level of performance in order to be considered usable. Since no actual data is available for our particular city, the following figures have been estimated by considering the structure of existing taxi services in major cities in the world.
+
+In particular, the following requirements have to be met:
+\begin{itemize}
+\item The system should support at least 10.000 overall taxi drivers, with the pessimistic assumption that all of them might be in service at the same time.
+\item The system should support at least a million registered passengers.
+\item The system should support at least 1000 concurrent taxi requests.
+\item The response time should be less than 1s for 95\% of all transactions.
+\end{itemize}
+
+
 \section{Design Constraints}
+\subsection{Hardware constraints}
+\begin{itemize}
+\item The mobile applications destined to taxi drivers and passengers should be designed taking into account the fact that only a fraction of our potential customers use a latest-generation smartphone. 
+\end{itemize}
+
+
+\subsection{Standard compliance}
+\begin{itemize}
+\item The system has to store taxi license plates in a format that is compliant with the national laws governing license plates issuing. 
+\item The system has to store taxi licenses and driving licenses accordingly to the national law.
+\item The system has to comply to the regulatory policies regarding taxi services. 
+\end{itemize}
+
+
 \section{Software System Attributes}
 \subsection{Reliability}
+In order to keep maintenance costs low, the system should offer a level of reliability such that no key component of the system should fail more than once every three years.
+Availability
 \subsection{Availability}
+The system is required to have an availability of 99.99\%. This means that it’s considered acceptable to have a downtime of up to 1 hour every year due to malfunctioning of the system. This implies that, at the architectural level, the system has to include a certain level of replication of its hardware structures in order to overcome potential failures. 
 \subsection{Security}
+The system should guarantee that only authorized taxi drivers are able to access and operate the mobile taxi driver application. 
+The system should guarantee that only authorized administrative personnel can have access to the service management panel. Before confirming an update of the taxi zone division or of the taxi driver list, the system should require a password and perform a safety backup.
+For what concerns security of users’s data, passwords will have to be encrypted. 
 \subsection{Maintainability}
 \subsection{Portability}
+Portability
+The system should be designed to be easily portable. In particular, the mobile side of the system should be coded using a programming language and a set of frameworks that can run on the major mobile platforms (iOS, Android) with the option of being easily portable on new ones, in order to anticipate for future market changes. No platform-dependent frameworks should be used while coding the mobile applications.
 \section{Other Requirements}
 
 
