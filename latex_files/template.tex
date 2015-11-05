@@ -10,6 +10,7 @@
 \usepackage{lscape}
 \usepackage{pdflscape}
 \usepackage{pdfpages}
+\usepackage[titletoc]{appendix}% http://ctan.org/pkg/appendices
 
 
 \begin{document}
@@ -36,10 +37,14 @@
 \chapter{Specific requirements}
 \input{files/specific_requirements.tex}
 
-\chapter*{Appendixes}
+\begin{appendices}
+\chapter{Alloy}
 Alloy code.
 \alloyfile{../alloy.als}
 
+\chapter{Alloy}
+
+\end{appendices}
 \chapter*{Index}
 text
 
