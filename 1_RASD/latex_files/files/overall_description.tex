@@ -1,0 +1,142 @@
+\section{Product perspective}
+The system that will eventually be released is composed of four major components:
+\begin{itemize}
+\item A mobile application for passengers;
+\item A web application for passengers;
+\item A mobile application for taxi drivers;
+\item The backend infrastructure to manage the service.
+\end{itemize}
+In particular, we expect the new system to fully replace any mechanism that the city administration had previously in place for the management of taxi calls.
+
+
+\subsection{System interfaces}
+The system has to be designed to be expandable, in order to let other developers implement new functionalities in the future should they be needed. This implies that the system will have to provide a proper set of APIs to expose its core functionalities to external plugins. 
+
+
+\subsection{User interfaces}
+The mobile application should natively support both smartphones and tablets by offering a uniquely optimized user interface tailored to the specific kind of device being used. 
+
+Furthermore, the mobile application should be resolution independent; in particular, it should support all display sizes comprised between 3" and 6" (when used on a mobile phone) and between 7" and 12" (when used on a tablet).
+
+The web application should properly address dynamic web page resizing by proportionally scaling header, footer and side bars to the amount of available space without stretching individual components and forms. It should also be offered both in a desktop version and in a mobile-friendly version.
+
+In addition, both the mobile application and the web application should be designed to be accessible by blind people, that means that it should be possible for a screen reader software to correctly interpret them in a meaningful way.
+
+
+\subsection{Software interfaces}
+The system will have to communicate with an external mapping service in order to use the functionalities of GPS location reverse-geocoding and waiting time estimation.
+
+The system will also interface with a commercial DBMS in order to store and retrieve data and perform queries over it.
+
+Finally, in order to offer the web application functionalities, the system will have to interface with an external web server.
+
+
+\section{Product functions}
+In order to be considered functional, the system has to provide a set of key functionalities.
+These functionalities are either related to the administrative side of the taxi service or to the end users (which include taxi drivers and passengers).
+
+In particular, the system is expected to be able to:
+\begin{itemize}
+\item Let the city administration insert and update the information about the taxis operating in the city.
+\item Let the city administration define the division of the city in taxi zones, specify their boundaries and update them if needed.
+\item Let passengers request a taxi.
+\item Let passengers register to the service.
+\item Let logged in passengers reserve a taxi for a specific date and time.
+\item Keep track of the zone in which every taxi is waiting.
+\item Keep track of the availability of each taxi.
+\item Allocate requests coming from a specific zone to taxis waiting in that zone following a FIFO policy.
+\end{itemize}
+
+
+\section{User characteristics}
+In general, we do not expect the users of our system to be particularly tech-savvy. 
+The main audience for which our system is intended comprises, in fact, customers coming from all levels of education.
+
+Taxi drivers are very expert of the dynamics of a traditional, non-technological taxi service and they expect the new system to fully comply with those dynamics without having to change their habits. They know, however, how to use a smartphone with reasonable proficiency.
+
+The city administration personnel has no specific technological background, apart from a generic introduction to the administrative tools they have to use.
+
+Passengers are considered to know enough technology to be able to use a smartphone and a web browser, but no further assumption on their level of expertise is made. 
+
+
+\subsection{Actors identifying}
+\begin{itemize}
+\item Guest passenger: a passenger that has not logged in to the service yet. He can only decide to request a taxi for his current location, or to register in order to fully use the platform. 
+\item Logged in passenger: a passenger that has registered to the service and has successfully logged in. Apart from the possibility to request a taxi, he can also reserve a taxi for a specific date and time and manage his personal information.
+\item Guest taxi driver: a taxi driver that has not yet logged in. This user can only perform the login operation, which is required in order to access the full set of functionalities reserved to taxi drivers. 
+\item Logged in taxi driver: a taxi driver that has logged in. This user can mark himself as available or unavailable to receive requests; if available, he can receive, accept and refuse requests. He can also see what his current zone is and his position in the corresponding taxi queue. Finally, he can review all his served requests.
+\item Administrative personnel: the staff that configures the system with the taxi driver data and the zone division. 
+\item Mapping service: the linked system from which our platform will retrieve information about the estimated time of arrival of taxis from their location to the required pickup location.
+\end{itemize}
+
+
+\section{Constraints}
+There are a few constraints on the way the system has to be designed. In the following paragraphs, we will analyze them with further detail.
+
+
+\subsection{Regulatory policies}
+The system will be subject to the regulatory policies that discipline the operations of a taxi service. These policies come from the city government, the state law and the taxi drivers' union.
+
+
+\subsection{Hardware limitations}
+The system should support smartphones and tablets as end-user terminals by offering mobile applications both for taxi drivers and passengers. 
+
+In order to maximize the accessibility of the service, the system should offer a native application for the three major mobile platforms (iOS, Android, Windows Phone).
+The mobile applications destined to taxi drivers and passengers should be designed taking into account the fact that only a fraction of our potential customers use a latest-generation smartphone. As such, the mobile application should use no more than 64MB of RAM to execute and should be able to run correctly on smartphones with single core processors clocked at 800Mhz or more.
+
+The central system should be designed to run on standard x86 server machines.
+
+
+\subsection{Interfaces to other applications}
+The system has to interface with an external mapping provider in order to calculate the ETA and to reverse-geocode location data into addresses.
+
+
+\subsection{Parallel operation}
+The system has to support multiple concurrent transactions, both in terms of ride requests and in terms of managing the transition of taxis among the different zones. 
+
+
+\subsection{Criticality of the application}
+The system is not considered to be mission-critical, meaning that an unexpected failure doesn't imply risks for human lives. 
+However, it should be considered that the taxi service of a large city is rather critical and should, at least theoretically, be always available. As such, the system is still considered of critical importance in order to avoid paralysis of the taxi infrastructure, which would lead to not-negligible negative consequences for the city mobility.
+
+
+\subsection{Safety and security considerations}
+Given its relative criticality, it is important to ensure that the system is adequately protected against attacks and misusage. A list of safety requirements will be analyzed more in detail in the system attributes section of this document.
+
+
+\section{Domain properties and assumptions}
+\begin{itemize}
+\item Zones do not overlap.
+\item A taxi driver drives only a single taxi.
+\item A taxi can be driven only by a single taxi driver.
+\item Passengers can only request rides using either the web application or the mobile application provided by the system.
+\item Passengers do not request rides using their personal acquaintance with taxi drivers.
+\item Taxi drivers will only make rides by accepting a request from the system.
+\item Contact information of taxi drivers are not disclosed by the city administration.
+\item All the data already stored in the system-as-is is actually transferred to the system-to-be when it is put into operation.
+\item Uses don't have the need to choose a particular taxi driver among those that are available for their ride.
+\item Passengers do not have to confirm the choice of the selected taxi.
+\item The city council has divided the city in taxi zones.
+\item The taxi service is operated 24h/day, unless exceptional circumstances occur.
+\item In case any exceptional circumstance occur for which the taxi service cannot be operated, the system is not required to satisfy incoming and reserved requests. 
+\item For any given GPS location inside the boundaries of the city, it is always possible to reverse-geocode it into a valid city address. 
+\item A taxi driver will take a passenger onboard if and only if both the taxi code and the secret security code sent to the passenger are equal to his own.
+\item Every taxi driver is provided with a business mobile phone by the city council.
+\item The business phone of every taxi driver has always an active data plan.
+\item Every taxi is uniquely identified by an alphanumeric code that is assigned by the city administration when he becomes part of the taxi service.
+\item Passengers are not allowed to place reservations more than 15 days in advance. 
+\item The city council may decide to update the taxi zone division in the future. 
+\item The only taxis eligible for fulfilling a reservation are the ones that are present in the queue of the zone associated with the reservation source address 10 minutes before the scheduled meeting time.
+\item In order to receive ride requests, a taxi driver must explicitly mark himself as available.
+\item A taxi driver will not be able to receive ride requests while he's unavailable.
+\item Taxis that are considered to be out-of-city will not be able to receive calls.
+\item A taxi driver who is currently on a ride will not be able to receive calls.
+\item A taxi driver must always notify the system when he terminates a ride. 
+\item A passenger is not required to be registered in order to request a ride.
+\item A passenger must be registered and logged in to the system in order to reserve a ride.
+\item After a taxi driver has been associated to a call, he must confirm or refuse the request within two minutes. After that period of time, the call is considered refused. 
+\item Traffic information and route data can be obtained from a third party mapping service.
+\item A passenger that has already requested a taxi will not request another one before having completed his ride.
+\item If no taxis are available to fulfill a reservation 10 minutes before the scheduled meeting time, new attempts of rescheduling are to be made at intervals of 2 minutes for at most 20 times.
+\item A taxi driver that has received a request will not change zone before accepting (or rejecting) it.
+\end{itemize}
