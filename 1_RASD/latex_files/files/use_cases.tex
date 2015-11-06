@@ -1,0 +1,199 @@
+\begin{center}
+\begin{longtable}{|l| p{9cm}|}
+\hline
+Name &
+Request a taxi \\
+\hline
+Actors &
+Passenger, Taxi driver \\
+\hline
+Entry condition & 
+The passenger presses the “Call Taxi” button in the mobile app. \\
+\hline
+Flow of events &
+The mobile app of the passenger detects the GPS location, creates a taxi request and forwards the request to the central system.
+
+The system receives the request and extracts the GPS location to compute the zone where the passenger is.
+
+The system selects the first available taxi driver from that zone queue and send him the request.
+
+The taxi driver receives the request and accepts it. The mobile app of the taxi driver sends a confirmation to the system.
+
+The system receives the confirmation and sends a confirmation to the passenger including the taxi code, a security code and an estimated time of arrival.
+
+The taxi driver checks that the security number and the taxi code sent to the passenger correspond to his own. \\
+\hline
+Exit condition &
+The taxi driver confirms that the Passenger is on board. \\
+\hline
+Exceptions &
+- If the passenger mobile app cannot receive the GPS location, the mobile app asks the passenger to insert his position manually.
+
+- If the passenger cannot connect to Internet, the mobile app tells the passenger that he can't call a taxi at the moment.
+
+- If the taxi driver refuses the call (or doesn't answer in 2 minutes), the system moves the taxi driver in the last position of the zone queue and forwards the request to the next available taxi driver.
+
+- If the system cannot forward the request to the taxi driver because he is not connected to Internet, it moves the taxi driver in the last position of the zone queue and forwards the request to the next available taxi driver.
+
+- If all taxi drivers refuse the request, the system notifies the passenger that is request could not be fulfilled.
+
+- If the passenger doesn't show up at the meeting location, the taxi driver clicks on the “drop call” button. The system will then notify the user that his request has been dropped. \\
+\hline
+\end{longtable}
+
+
+\begin{longtable}{|l| p{9cm}|}
+\hline
+Name &
+Reserve a taxi via the web application \\
+\hline
+Actors &
+Passenger \\
+\hline
+Entry condition & 
+The passenger opens the main page of the web application. \\
+\hline
+Flow of events & 
+The passenger logins, clicks on the “reserve a taxi” button and enters the departing address, the destination address and the date and time of the meeting.
+
+The passenger confirms the data and clicks on the “confirm reservation” button.
+
+The system receives the request, stores it into the list of reservations and sends a confirmation. \\
+\hline
+Exit condition &
+The passenger receives the confirmation. \\
+\hline
+Exceptions &
+- If one of the inserted fields in incorrect, the app requests the passenger to insert it again. \\
+\hline
+\end{longtable}
+
+
+\begin{longtable}{|l| p{9cm}|}
+\hline
+Name &
+Allocate a reservation to a taxi \\
+\hline
+Actors &
+Passenger, Taxi driver \\
+\hline
+Entry condition & 
+The system checks if a reservation must be allocated, and discovers that there is one. \\
+\hline
+Flow of events & 
+The system uses the specified departing address to compute the corresponding zone and forwards the request to the first taxi in the queue associated with that zone.
+
+The selected taxi driver receives a notification
+and clicks on the “accept request” button.
+
+The system receives the taxi driver's confirmation, sets his status to “currently riding” and moves his taxi code from the current taxi zone queue to the “currently riding” list.
+
+The system uses this information to retrieve from an external mapping service an estimate time of arrival (ETA) and sends it to the passenger in a notifications along with the security code associated with the ride and the code of the assigned taxi.
+
+The passenger receives the notification on his mobile phone and waits for the taxi.
+
+The taxi driver drives to the meeting location.
+
+After arriving to the meeting location, the taxi driver checks that the passenger's security number and taxi code matches his own. \\
+\hline
+Exit condition &
+The taxi driver take the passenger on board. \\
+\hline
+Exceptions &
+- If the taxi driver refuses the call (or do not answer in 2 minutes), the system moves the taxi driver in the last position of the zone queue and forwards the request to the next available taxi driver.
+
+- If the system cannot forward the request to the taxi driver because he is not connected to Internet, it moves the taxi driver in the last position of the zone queue and forwards the request to the next available taxi driver.
+
+- If all taxi drivers refuse the request, the system notifies the passenger that is request could not be fulfilled.
+
+- If the passenger doesn't show up at the meeting location, the taxi driver clicks on the “drop call” button. The system will then notify the user that his request has been dropped. \\
+\hline
+\end{longtable}
+
+\begin{longtable}{|l| p{9cm}|}
+\hline
+Name &
+End a ride \\
+\hline
+Actors &
+Taxi driver \\
+\hline
+Entry condition & 
+A taxi driver clicks the “confirm ride ended” button in the mobile application while being inside the city. \\
+\hline
+Flow of events & 
+The mobile application sends a notification message to the central system.
+
+The system receives and computes the zone associated with the taxi driver's current GPS coordinates.
+
+The system moves the taxi into the zone queue and sets the taxi as available. \\
+\hline
+Exit condition &
+The taxi driver receives a confirmation that he's now considered available. \\
+\hline
+Exceptions &
+- If the taxi driver has concluded his ride outside the city, when he presses the “confirm ride ended” button the system will change his status to “outside city” and move his taxi code to the corresponding queue.\\
+\hline
+\end{longtable}
+
+\begin{longtable}{|l| p{9cm}|}
+\hline
+Name &
+Communicate taxi unavailability \\
+\hline
+Actors &
+Taxi driver \\
+\hline
+Entry condition & 
+The taxi driver switches the availability toggle in the mobile application to the “unavailable” position. \\
+\hline
+Flow of events & 
+The mobile application sends a notification message to the central system, 
+
+The system receives the notification and sets the taxi driver state to “unavailable”, then proceeds to move his taxi code from the queue of his current zone to the unavailability queue.
+
+The system sends a notification to the taxi driver to confirm he's been registered as unavailable. \\
+\hline
+Exit condition &
+The taxi driver receives the notification. \\
+\hline
+Exceptions &
+- If the taxi driver's app cannot connect to internet, the app shows an error message saying that his current status is unchanged.
+
+- If the system cannot notify the taxi driver, it has to retry to forward the notification for a fixed number of times. \\
+\hline
+\end{longtable}
+
+
+
+\begin{longtable}{|l| p{9cm}|}
+\hline
+Name &
+A taxi enters the city \\
+\hline
+Actors &
+Taxi driver \\
+\hline
+Entry condition & 
+The taxi driver crosses the city border. \\
+\hline
+Flow of events & 
+The mobile app of the taxi driver sends a notification to the central system containing the new location data. 
+
+The system receives the notification and determines that the taxi driver's current location is now inside the boundaries of the city, and computes the associated zone.
+
+The system sets the taxi status as available, moves the taxi code into the last position of the computed zone’s queue and send a notitication to the taxi driver. \\
+\hline
+Exit condition &
+The taxi driver receives the notification. \\
+\hline
+Exceptions &
+- If the system cannot notify the taxi driver, it has to retry to forward the notification for a fixed number of times.
+
+- If the taxi driver had set himself as unavailable while being outside the city, the system does not update his status and keeps his taxi code in the unavailability list.\\
+\hline
+\end{longtable}
+
+
+
+\end{center}
