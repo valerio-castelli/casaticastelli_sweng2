@@ -94,11 +94,11 @@ Requirements:
 \item Each taxi zone must be internally associated with a queue containing the codes of the available taxis.
 \item The system must be able to distinguish the different states in which a taxi could be: that is available, unavailable, currently on a ride, out of the city.
 \item If a taxi which has marked himself as available changes zone while he's not on a ride, the system should move his code in the queue of the new zone.
-\item If a taxi which is currently on a ride changes zone, the system should not add his code in the queue of the new zone and his status should remain ``currently riding".
+\item If a taxi which is currently on a ride changes zone, the system should not add his code in the queue of the new zone and his status should remain ``currently riding''.
 \item If a taxi which has marked himself as available exits the city while he's not on a ride, the system should update his status accordingly.
-\item If a taxi which is currently on a ride exits the city, the system should keep his status as ``currently riding". 
-\item If a taxi whose status is set as ``out of the city" enters the city and the taxi was available before leaving the city and he has not marked himself as unavailable, the system should assign it to the queue of the zone in which he has entered.
-\item If a taxi whose status is set as “out of the city” enters the city and the taxi has signaled himself as unavailable while he was out, the system should set its status as ``unavailable" and move its code to the unavailability list.. 
+\item If a taxi which is currently on a ride exits the city, the system should keep his status as ``currently riding''. 
+\item If a taxi whose status is set as ``out of the city'' enters the city and the taxi was available before leaving the city and he has not marked himself as unavailable, the system should assign it to the queue of the zone in which he has entered.
+\item If a taxi whose status is set as “out of the city” enters the city and the taxi has signaled himself as unavailable while he was out, the system should set its status as ``unavailable'' and move its code to the unavailability list.. 
 \item If a taxi leaves the city while he's unavailable, the system should prevent him from signaling he's available until he is again inside the perimeter of the city.
 \item The mobile application of each taxi driver should periodically send his GPS coordinates to the main system. 
 \end{itemize}
@@ -112,7 +112,7 @@ Requirements:
 \item The taxi driver that has been selected for a ride should receive a notification containing details on the meeting location and be allowed to accept or refuse the request.
 \item The system should be able to reverse-geocode the GPS coordinates of the meeting location into a valid city address.
 \item The system should provide an appropriate interface to let the driver accept or refuse the ride request.
-\item If a taxi driver accepts a request for a ride, the system should update its taxi status to ``currently riding" and move its code to the currently riding list.
+\item If a taxi driver accepts a request for a ride, the system should update its taxi status to ``currently riding'' and move its code to the currently riding list.
 \item If a taxi driver refuses a request for a ride, his taxi code should be moved to the last position of the queue of the zone he's currently in.
 \item If the selected taxi driver does not answer within two minutes from the assignment, the system should consider the request refused. 
 \item If it's not possible to establish an internet connection to the central system, the mobile application should notify the taxi driver that it's unable to operate correctly.
@@ -138,7 +138,7 @@ Requirements:
 \begin{itemize}
 \item A taxi driver who has terminated a ride should be able to notify the system that the ride has ended.
 \item A taxi driver should be able to notify that he's terminated a ride only after the system has checked that the meeting point has actually been reached within a given level of precision.
-\item When the system receives the notification that a driver has terminated a ride and the driver is still outside the city, the system should set its status as ``out of the city" and move its code to the out of city list.
+\item When the system receives the notification that a driver has terminated a ride and the driver is still outside the city, the system should set its status as ``out of the city'' and move its code to the out of city list.
 \item When the system receives the notification that a driver has terminated a ride and the driver is inside the city, the system should mark its taxi as available and assign it to the queue of the zone he is in.
 \end{itemize}
 
@@ -265,13 +265,13 @@ The system should be designed to be easily portable. In particular, the mobile s
 \subsection{Scenario 1}
 Alice has just got out of her office after an intense day of work. Unfortunately she finished late and so she missed the last train back home.
 
-She decides then to request a taxi. She opens the taxi application on her mobile phone and she clicks on the ``request a taxi for this location" button.
+She decides then to request a taxi. She opens the taxi application on her mobile phone and she clicks on the ``request a taxi for this location'' button.
 
 The mobile application detects her GPS location, creates a taxi request and forwards it to the central system.
 
 The system receives the taxi request, extracts the GPS coordinates and realizes that Alice is in zone 2. Thus, it forwards a request to the first taxi in the queue associated with zone 2, which happens to be Bob's taxi.
 
-Bob receives a request notification on his mobile terminal, which employs the associated GPS information to point out Alice's location on the city map. Bob decides to accept the request and clicks on the ``accept request" button.
+Bob receives a request notification on his mobile terminal, which employs the associated GPS information to point out Alice's location on the city map. Bob decides to accept the request and clicks on the ``accept request'' button.
 
 The system receives Bob's confirmation along with his GPS coordinates and moves his taxi code from the zone 2 queue to the currently riding list; it then uses this information to retrieve from an external mapping service an estimate time of arrival (ETA) and notifies it to Alice along with the taxi code of Bob's taxi and a security code associated with the ride. The system also notifies Bob the security code associated with the ride; then Bob starts driving.
 
@@ -285,7 +285,7 @@ Jessica and Davide are planning to celebrate their anniversary, which is happeni
 
 Since they probably would end up being drunk after the night, they decide it would be better to avoid driving and they decide instead to reserve a taxi.
 
-Davide opens the taxi reservation web page on his laptop and logins using his credentials (he's a proud taxi user!). He then clicks on the ``reserve a taxi" button and fills in the required details for the reservation: the departing address, the destination address and the date and time of the meeting. He then confirms.
+Davide opens the taxi reservation web page on his laptop and logins using his credentials (he's a proud taxi user!). He then clicks on the ``reserve a taxi'' button and fills in the required details for the reservation: the departing address, the destination address and the date and time of the meeting. He then confirms.
 
 The system receives the request and stores it into the list of reservations, then sends a confirmation back to Davide's laptop.
 
@@ -297,9 +297,9 @@ On the night of their anniversary, Jessica and Davide are getting ready to leave
 
 10 minutes before the scheduled meeting time, the system uses the specified departing address to compute the zone associated with Davide's apartment and realizes he lives in zone 4. It then forwards the request to the first taxi in the queue associated with zone 4, which happens to be Matteo's taxi.
 
-Matteo receives a request notification on his mobile terminal, which employs the associated GPS information to point out Davide's apartment location on the city map. Matteo decides to accept the request and clicks on the ``accept request" button.
+Matteo receives a request notification on his mobile terminal, which employs the associated GPS information to point out Davide's apartment location on the city map. Matteo decides to accept the request and clicks on the ``accept request'' button.
 
-The system receives Matteo's confirmation along with his GPS coordinates, updates his taxi status to ``currently riding" and moves it from the zone 4 queue to the ``currently riding" list; it then uses this information to retrieve from an external mapping service an estimate time of arrival (ETA) and notifies it to Davide along with the taxi code of Matteo's taxi and a security code associated with the ride. The system also notifies Matteo the security code associated with the ride, then Matteo starts driving.
+The system receives Matteo's confirmation along with his GPS coordinates, updates his taxi status to ``currently riding'' and moves it from the zone 4 queue to the ``currently riding'' list; it then uses this information to retrieve from an external mapping service an estimate time of arrival (ETA) and notifies it to Davide along with the taxi code of Matteo's taxi and a security code associated with the ride. The system also notifies Matteo the security code associated with the ride, then Matteo starts driving.
 
 Davide receives the notification on his mobile phone and patiently waits for the taxi to arrive.
 
@@ -307,13 +307,13 @@ When Matteo's taxi arrives, Davide tells Matteo the security code and the taxi c
 
 
 \subsection{Scenario 4}
-Matteo has just driven Davide and Jessica to their destination, which is a restaurant in the middle of the city. He clicks the ``confirm ride ended" button in the mobile application. The mobile application sends a notification message to the central system, which acknowledges that the ride has ended.
+Matteo has just driven Davide and Jessica to their destination, which is a restaurant in the middle of the city. He clicks the ``confirm ride ended'' button in the mobile application. The mobile application sends a notification message to the central system, which acknowledges that the ride has ended.
 
 Since Matteo was previously available before the ride and has not switched the available/unavailable toggle, the system computes the zone associated with his current GPS coordinates and moves his taxi into the last position of the respective queue.
 
 
 \subsection{Scenario 5}
-Bob has just driven Alice back to her apartment, which is a small flat in the suburbs (but still belonging to the city). He clicks the ``confirm ride ended" button in the mobile application. The mobile application sends a notification message to the central system, which acknowledges that the ride has ended.
+Bob has just driven Alice back to her apartment, which is a small flat in the suburbs (but still belonging to the city). He clicks the ``confirm ride ended'' button in the mobile application. The mobile application sends a notification message to the central system, which acknowledges that the ride has ended.
 
 Since Bob was previously available before the ride and has not switched the available/unavailable toggle, the system computes the zone associated with his current GPS coordinates and moves his taxi in the respective code, in the last position.
 
@@ -329,11 +329,11 @@ Frank, a taxi driver, has just picked up Samuel from a very famous hotel in the 
 
 During their journey to the airport, which is Samuel's destination, Frank has to cross the city border: in fact, the airport is located just outside the city.
 
-After leaving Samuel at the airport, Frank clicks the ``confirm ride ended" button in the mobile application.
+After leaving Samuel at the airport, Frank clicks the ``confirm ride ended'' button in the mobile application.
 
 The mobile application sends a notification to the central system, which acknowledges that the ride has ended. 
 
-Since Frank is now located outside the city, the system changes the status of his taxi to ``outside city" and moves it to the corresponding list.
+Since Frank is now located outside the city, the system changes the status of his taxi to ``outside city'' and moves it to the corresponding list.
 
 
 \subsection{Scenario 7}
