@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.2)  6 NOV 2015 14:43
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.2)  6 NOV 2015 15:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -285,8 +285,7 @@ Package: appendix 2009/09/02 v1.2b extra appendix facilities
 \c@@pps=\count113
 \c@@ppsavesec=\count114
 \c@@ppsaveapp=\count115
-))
-(./files/alloy_style.tex)
+)
 (/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
 \LTleft=\skip58
@@ -304,29 +303,30 @@ Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
 \c@LT@tables=\count119
 \c@LT@chunks=\count120
 \LT@p@ftn=\toks19
-) (./1_RASD.aux
+))
+(./files/alloy_style.tex) (./1_RASD.aux
 
 LaTeX Warning: Label `fig:PropProf' multiply defined.
 
 )
 \openout1 = `1_RASD.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
 \AtBeginShipoutBox=\box36
-Package hyperref Info: Link coloring OFF on input line 5.
+Package hyperref Info: Link coloring OFF on input line 4.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -335,9 +335,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count121
 )
-LaTeX Info: Redefining \ref on input line 5.
-LaTeX Info: Redefining \pageref on input line 5.
-LaTeX Info: Redefining \nameref on input line 5.
+LaTeX Info: Redefining \ref on input line 4.
+LaTeX Info: Redefining \pageref on input line 4.
+LaTeX Info: Redefining \nameref on input line 4.
 
 (./1_RASD.out) (./1_RASD.out)
 \@outlinefile=\write3
@@ -360,11 +360,11 @@ LaTeX Info: Redefining \nameref on input line 5.
 \everyMPtoPDFconversion=\toks21
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 15.
+(Font)              <12> on input line 14.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 15.
+(Font)              <8> on input line 14.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 15.
+(Font)              <6> on input line 14.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./1_RASD.toc
@@ -816,35 +816,166 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [41]
 Appendix C.
-(./files/uml.tex) [42
+(./files/uml.tex [42
 
 ]
+<pdfs/class_diagram.pdf, id=930, 806.01125pt x 512.91624pt>
+File: pdfs/class_diagram.pdf Graphic file (type pdf)
+
+<use pdfs/class_diagram.pdf>
+Package pdftex.def Info: pdfs/class_diagram.pdf used on input line 5.
+(pdftex.def)             Requested size: 806.00928pt x 512.915pt.
+File: pdfs/class_diagram.pdf Graphic file (type pdf)
+ <use pdfs/class_diagram.pdf>
+Package pdftex.def Info: pdfs/class_diagram.pdf used on input line 5.
+(pdftex.def)             Requested size: 806.00928pt x 512.915pt.
+
+<pdfs/class_diagram.pdf, id=933, page=1, 806.01125pt x 512.91624pt>
+File: pdfs/class_diagram.pdf Graphic file (type pdf)
+
+<use pdfs/class_diagram.pdf, page 1>
+Package pdftex.def Info: pdfs/class_diagram.pdf, page1 used on input line 5.
+(pdftex.def)             Requested size: 806.00928pt x 512.915pt.
+File: pdfs/class_diagram.pdf Graphic file (type pdf)
+ <use pdfs/class_diagram.pdf, page 1>
+Package pdftex.def Info: pdfs/class_diagram.pdf, page1 used on input line 5.
+(pdftex.def)             Requested size: 765.70634pt x 487.26767pt.
+File: pdfs/class_diagram.pdf Graphic file (type pdf)
+
+<use pdfs/class_diagram.pdf, page 1>
+Package pdftex.def Info: pdfs/class_diagram.pdf, page1 used on input line 5.
+(pdftex.def)             Requested size: 765.70634pt x 487.26767pt.
+File: pdfs/class_diagram.pdf Graphic file (type pdf)
+ <use pdfs/class_diagram.pdf, page 1>
+Package pdftex.def Info: pdfs/class_diagram.pdf, page1 used on input line 5.
+(pdftex.def)             Requested size: 765.70634pt x 487.26767pt.
+File: pdfs/class_diagram.pdf Graphic file (type pdf)
+
+<use pdfs/class_diagram.pdf, page 1>
+Package pdftex.def Info: pdfs/class_diagram.pdf, page1 used on input line 5.
+(pdftex.def)             Requested size: 765.70634pt x 487.26767pt.
+ [43
+
+ <./pdfs/class_diagram.pdf>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[44
+
+] <pdfs/state.pdf, id=945, 806.01125pt x 442.65375pt>
+File: pdfs/state.pdf Graphic file (type pdf)
+ <use pdfs/state.pdf>
+Package pdftex.def Info: pdfs/state.pdf used on input line 14.
+(pdftex.def)             Requested size: 806.00928pt x 442.65265pt.
+File: pdfs/state.pdf Graphic file (type pdf)
+
+<use pdfs/state.pdf>
+Package pdftex.def Info: pdfs/state.pdf used on input line 14.
+(pdftex.def)             Requested size: 806.00928pt x 442.65265pt.
+
+<pdfs/state.pdf, id=948, page=1, 806.01125pt x 442.65375pt>
+File: pdfs/state.pdf Graphic file (type pdf)
+
+<use pdfs/state.pdf, page 1>
+Package pdftex.def Info: pdfs/state.pdf, page1 used on input line 14.
+(pdftex.def)             Requested size: 806.00928pt x 442.65265pt.
+File: pdfs/state.pdf Graphic file (type pdf)
+ <use pdfs/state.pdf, page 1>
+Package pdftex.def Info: pdfs/state.pdf, page1 used on input line 14.
+(pdftex.def)             Requested size: 765.70634pt x 420.51866pt.
+File: pdfs/state.pdf Graphic file (type pdf)
+
+<use pdfs/state.pdf, page 1>
+Package pdftex.def Info: pdfs/state.pdf, page1 used on input line 14.
+(pdftex.def)             Requested size: 765.70634pt x 420.51866pt.
+File: pdfs/state.pdf Graphic file (type pdf)
+ <use pdfs/state.pdf, page 1>
+Package pdftex.def Info: pdfs/state.pdf, page1 used on input line 14.
+(pdftex.def)             Requested size: 765.70634pt x 420.51866pt.
+File: pdfs/state.pdf Graphic file (type pdf)
+
+<use pdfs/state.pdf, page 1>
+Package pdftex.def Info: pdfs/state.pdf, page1 used on input line 14.
+(pdftex.def)             Requested size: 765.70634pt x 420.51866pt.
+ [45
+
+ <./pdfs/state.pdf>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[46
+
+] <pdfs/use_case.pdf, id=961, 806.01125pt x 442.65375pt>
+File: pdfs/use_case.pdf Graphic file (type pdf)
+
+<use pdfs/use_case.pdf>
+Package pdftex.def Info: pdfs/use_case.pdf used on input line 19.
+(pdftex.def)             Requested size: 806.00928pt x 442.65265pt.
+File: pdfs/use_case.pdf Graphic file (type pdf)
+ <use pdfs/use_case.pdf>
+Package pdftex.def Info: pdfs/use_case.pdf used on input line 19.
+(pdftex.def)             Requested size: 806.00928pt x 442.65265pt.
+
+<pdfs/use_case.pdf, id=964, page=1, 806.01125pt x 442.65375pt>
+File: pdfs/use_case.pdf Graphic file (type pdf)
+
+<use pdfs/use_case.pdf, page 1>
+Package pdftex.def Info: pdfs/use_case.pdf, page1 used on input line 19.
+(pdftex.def)             Requested size: 806.00928pt x 442.65265pt.
+File: pdfs/use_case.pdf Graphic file (type pdf)
+ <use pdfs/use_case.pdf, page 1>
+Package pdftex.def Info: pdfs/use_case.pdf, page1 used on input line 19.
+(pdftex.def)             Requested size: 765.70634pt x 420.51866pt.
+File: pdfs/use_case.pdf Graphic file (type pdf)
+
+<use pdfs/use_case.pdf, page 1>
+Package pdftex.def Info: pdfs/use_case.pdf, page1 used on input line 19.
+(pdftex.def)             Requested size: 765.70634pt x 420.51866pt.
+File: pdfs/use_case.pdf Graphic file (type pdf)
+ <use pdfs/use_case.pdf, page 1>
+Package pdftex.def Info: pdfs/use_case.pdf, page1 used on input line 19.
+(pdftex.def)             Requested size: 765.70634pt x 420.51866pt.
+File: pdfs/use_case.pdf Graphic file (type pdf)
+
+<use pdfs/use_case.pdf, page 1>
+Package pdftex.def Info: pdfs/use_case.pdf, page1 used on input line 19.
+(pdftex.def)             Requested size: 765.70634pt x 420.51866pt.
+ [47
+
+ <./pdfs/use_case.pdf>])
 Appendix D.
-[43
+[48
+
 
 ]
 Appendix E.
-[44
+[49
 
-] <files/index.png, id=933, 1540.75626pt x 847.165pt>
+] <files/index.png, id=980, 1540.75626pt x 847.165pt>
 File: files/index.png Graphic file (type png)
  <use files/index.png>
-Package pdftex.def Info: files/index.png used on input line 41.
+Package pdftex.def Info: files/index.png used on input line 40.
 (pdftex.def)             Requested size: 850.0pt x 467.3512pt.
 
-<files/use_case.pdf, id=935, 806.01125pt x 442.65375pt>
+<files/use_case.pdf, id=982, 806.01125pt x 442.65375pt>
 File: files/use_case.pdf Graphic file (type pdf)
 
 <use files/use_case.pdf>
-Package pdftex.def Info: files/use_case.pdf used on input line 43.
+Package pdftex.def Info: files/use_case.pdf used on input line 42.
 (pdftex.def)             Requested size: 806.00928pt x 442.65265pt.
 
-Overfull \hbox (271.19974pt too wide) in paragraph at lines 41--44
+Overfull \hbox (271.19974pt too wide) in paragraph at lines 40--43
 [][]
  []
 
 
-Overfull \hbox (210.20901pt too wide) in paragraph at lines 41--44
+Overfull \hbox (210.20901pt too wide) in paragraph at lines 40--43
 [][] 
  []
 
@@ -854,7 +985,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[45
+[50
 
 ]
 Overfull \vbox (551.00385pt too high) has occurred while \output is active []
@@ -866,140 +997,134 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[46 <./files/index.png> <./files/use_case.pdf>]
+[51 <./files/index.png> <./files/use_case.pdf>]
 File: files/use_case.pdf Graphic file (type pdf)
  <use files/use_case.pdf>
-Package pdftex.def Info: files/use_case.pdf used on input line 45.
+Package pdftex.def Info: files/use_case.pdf used on input line 44.
 (pdftex.def)             Requested size: 806.00928pt x 442.65265pt.
 File: files/use_case.pdf Graphic file (type pdf)
 
 <use files/use_case.pdf>
-Package pdftex.def Info: files/use_case.pdf used on input line 45.
+Package pdftex.def Info: files/use_case.pdf used on input line 44.
 (pdftex.def)             Requested size: 806.00928pt x 442.65265pt.
 
-<files/use_case.pdf, id=951, page=1, 806.01125pt x 442.65375pt>
+<files/use_case.pdf, id=998, page=1, 806.01125pt x 442.65375pt>
 File: files/use_case.pdf Graphic file (type pdf)
 
 <use files/use_case.pdf, page 1>
-Package pdftex.def Info: files/use_case.pdf, page1 used on input line 45.
+Package pdftex.def Info: files/use_case.pdf, page1 used on input line 44.
 (pdftex.def)             Requested size: 800.0pt x 439.35652pt.
 File: files/use_case.pdf Graphic file (type pdf)
  <use files/use_case.pdf, page 1>
-Package pdftex.def Info: files/use_case.pdf, page1 used on input line 45.
+Package pdftex.def Info: files/use_case.pdf, page1 used on input line 44.
 (pdftex.def)             Requested size: 851.39157pt x 467.57617pt.
 File: files/use_case.pdf Graphic file (type pdf)
 
 <use files/use_case.pdf, page 1>
-Package pdftex.def Info: files/use_case.pdf, page1 used on input line 45.
+Package pdftex.def Info: files/use_case.pdf, page1 used on input line 44.
 (pdftex.def)             Requested size: 851.39157pt x 467.57617pt.
 File: files/use_case.pdf Graphic file (type pdf)
  <use files/use_case.pdf, page 1>
-Package pdftex.def Info: files/use_case.pdf, page1 used on input line 45.
+Package pdftex.def Info: files/use_case.pdf, page1 used on input line 44.
 (pdftex.def)             Requested size: 851.39157pt x 467.57617pt.
 File: files/use_case.pdf Graphic file (type pdf)
 
 <use files/use_case.pdf, page 1>
-Package pdftex.def Info: files/use_case.pdf, page1 used on input line 45.
+Package pdftex.def Info: files/use_case.pdf, page1 used on input line 44.
 (pdftex.def)             Requested size: 851.39157pt x 467.57617pt.
- [47
+ [52
 
  <./files/use_case.pdf>]
-<files/document.pdf, id=959, 806.01125pt x 1106.1325pt>
+<files/document.pdf, id=1006, 806.01125pt x 1106.1325pt>
 File: files/document.pdf Graphic file (type pdf)
 
 <use files/document.pdf>
-Package pdftex.def Info: files/document.pdf used on input line 46.
+Package pdftex.def Info: files/document.pdf used on input line 45.
 (pdftex.def)             Requested size: 806.00928pt x 1106.1298pt.
 File: files/document.pdf Graphic file (type pdf)
  <use files/document.pdf>
-Package pdftex.def Info: files/document.pdf used on input line 46.
+Package pdftex.def Info: files/document.pdf used on input line 45.
 (pdftex.def)             Requested size: 806.00928pt x 1106.1298pt.
 
-<files/document.pdf, id=962, page=1, 806.01125pt x 1106.1325pt>
+<files/document.pdf, id=1009, page=1, 806.01125pt x 1106.1325pt>
 File: files/document.pdf Graphic file (type pdf)
 
 <use files/document.pdf, page 1>
-Package pdftex.def Info: files/document.pdf, page1 used on input line 46.
+Package pdftex.def Info: files/document.pdf, page1 used on input line 45.
 (pdftex.def)             Requested size: 806.00928pt x 1106.1298pt.
 File: files/document.pdf Graphic file (type pdf)
  <use files/document.pdf, page 1>
-Package pdftex.def Info: files/document.pdf, page1 used on input line 46.
+Package pdftex.def Info: files/document.pdf, page1 used on input line 45.
 (pdftex.def)             Requested size: 597.50897pt x 819.99365pt.
 File: files/document.pdf Graphic file (type pdf)
 
 <use files/document.pdf, page 1>
-Package pdftex.def Info: files/document.pdf, page1 used on input line 46.
+Package pdftex.def Info: files/document.pdf, page1 used on input line 45.
 (pdftex.def)             Requested size: 597.50897pt x 819.99365pt.
 File: files/document.pdf Graphic file (type pdf)
  <use files/document.pdf, page 1>
-Package pdftex.def Info: files/document.pdf, page1 used on input line 46.
+Package pdftex.def Info: files/document.pdf, page1 used on input line 45.
 (pdftex.def)             Requested size: 597.50897pt x 819.99365pt.
 File: files/document.pdf Graphic file (type pdf)
 
 <use files/document.pdf, page 1>
-Package pdftex.def Info: files/document.pdf, page1 used on input line 46.
+Package pdftex.def Info: files/document.pdf, page1 used on input line 45.
 (pdftex.def)             Requested size: 597.50897pt x 819.99365pt.
- [48 <./files/document.pdf>]
+ [53 <./files/document.pdf>]
 File: files/document.pdf Graphic file (type pdf)
 
 <use files/document.pdf>
-Package pdftex.def Info: files/document.pdf used on input line 48.
+Package pdftex.def Info: files/document.pdf used on input line 47.
 (pdftex.def)             Requested size: 806.00928pt x 1106.1298pt.
 File: files/document.pdf Graphic file (type pdf)
  <use files/document.pdf>
-Package pdftex.def Info: files/document.pdf used on input line 48.
+Package pdftex.def Info: files/document.pdf used on input line 47.
 (pdftex.def)             Requested size: 806.00928pt x 1106.1298pt.
 File: files/document.pdf Graphic file (type pdf)
 
 <use files/document.pdf, page 1>
-Package pdftex.def Info: files/document.pdf, page1 used on input line 48.
+Package pdftex.def Info: files/document.pdf, page1 used on input line 47.
 (pdftex.def)             Requested size: 300.0pt x 411.70996pt.
 File: files/document.pdf Graphic file (type pdf)
  <use files/document.pdf, page 1>
-Package pdftex.def Info: files/document.pdf, page1 used on input line 48.
+Package pdftex.def Info: files/document.pdf, page1 used on input line 47.
 (pdftex.def)             Requested size: 1605.31573pt x 2203.06099pt.
 File: files/document.pdf Graphic file (type pdf)
 
 <use files/document.pdf, page 1>
-Package pdftex.def Info: files/document.pdf, page1 used on input line 48.
+Package pdftex.def Info: files/document.pdf, page1 used on input line 47.
 (pdftex.def)             Requested size: 1605.31573pt x 2203.06099pt.
 File: files/document.pdf Graphic file (type pdf)
  <use files/document.pdf, page 1>
-Package pdftex.def Info: files/document.pdf, page1 used on input line 48.
+Package pdftex.def Info: files/document.pdf, page1 used on input line 47.
 (pdftex.def)             Requested size: 1605.31573pt x 2203.06099pt.
 File: files/document.pdf Graphic file (type pdf)
 
 <use files/document.pdf, page 1>
-Package pdftex.def Info: files/document.pdf, page1 used on input line 48.
+Package pdftex.def Info: files/document.pdf, page1 used on input line 47.
 (pdftex.def)             Requested size: 1605.31573pt x 2203.06099pt.
- [49]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 52.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 52.
+ [54]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 51.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 51.
  (./1_RASD.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 52.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 52.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 51.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 51.
+Package rerunfilecheck Info: File `1_RASD.out' has not changed.
+(rerunfilecheck)             Checksum: 699EADF40629B3149494FCA2C4126279;4866.
 
-
-Package rerunfilecheck Warning: File `1_RASD.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `1_RASD.out':
-(rerunfilecheck)             Before: 57D3C613B918DD2A3F167EBD66D2DEFF;4813
-(rerunfilecheck)             After:  E8D242D9AD2CC365EABA2F9B8B86DA09;4808.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 52.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 51.
  ) 
 Here is how much of TeX's memory you used:
- 8314 strings out of 494967
- 122563 string characters out of 6179868
- 311405 words of memory out of 5000000
- 10948 multiletter control sequences out of 15000+600000
+ 8347 strings out of 494967
+ 123209 string characters out of 6179868
+ 311408 words of memory out of 5000000
+ 10970 multiletter control sequences out of 15000+600000
  10191 words of font info for 36 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
- 40i,18n,49p,2491b,1955s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,21n,51p,2491b,1955s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
@@ -1007,9 +1132,9 @@ ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on 1_RASD.pdf (53 pages, 1034490 bytes).
+Output written on 1_RASD.pdf (58 pages, 2688054 bytes).
 PDF statistics:
- 1102 PDF objects out of 1200 (max. 8388607)
- 485 named destinations out of 1000 (max. 500000)
- 640 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1150 PDF objects out of 1200 (max. 8388607)
+ 491 named destinations out of 1000 (max. 500000)
+ 708 words of extra memory for PDF output out of 10000 (max. 10000000)
 
