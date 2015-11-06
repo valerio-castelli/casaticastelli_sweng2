@@ -8,9 +8,9 @@ Here we include a diagram which contains all the use cases that are relevant for
 \section{Class diagram}
 Here we include sketch of a possible class diagram for the system. 
 
-It should be noted that this diagram is intended to be used as a preliminary draft for further analysis in the design phase, and that it doesn’t fully represent the final class infrastructure the shipped system will be based upon.
+It should be noted that this diagram is intended to be used as a preliminary draft for further analysis in the design phase, and that it doesn't fully represent the final class infrastructure the shipped system will be based upon.
 
-Furthermore, this diagram only covers the classes that are present in the central system and doesn’t include the structure of the mobile applications and of the web applications.
+Furthermore, this diagram only covers the classes that are present in the central system and doesn't include the structure of the mobile applications and of the web applications.
 
 \begin{landscape}
 %\includegraphics[width=850pt,keepaspectratio]{pdfs/class_diagram.pdf}
@@ -49,7 +49,7 @@ Furthermore, this diagram only covers the classes that are present in the centra
 \end{figure}
 
 
-\subsection{Set a driver’s status to unavailable}
+\subsection{Set a driver's status to unavailable}
 \begin{figure}[H]
 \centering
 \makebox[\columnwidth]{\includegraphics[width=280pt,keepaspectratio]{pdfs/05_unavailable.pdf}}
@@ -71,9 +71,9 @@ This state chart models the possible states in which a taxi can be inside the sy
 
 It should be noted that the states the system recognizes are not mapped one-to-one to all the possible states a taxi can be in. 
 
-In particular, the taxi transition from the inside to the outside of the city and viceversa is not modeled if the taxi is performing a ride or if he’s unavailable; that means that the status of the taxi will not change when crossing the border if the taxi is not in the “available” status. 
+In particular, the taxi transition from the inside to the outside of the city and viceversa is not modeled if the taxi is performing a ride or if he's unavailable; that means that the status of the taxi will not change when crossing the border if the taxi is not in the “available” status. 
 
-This is not a limitation for the system: in fact, we don’t need to know whether a taxi is inside or outside the city if he’s performing a ride or if he’s unavailable, because in either case he would not be able to receive requests anyway.
+This is not a limitation for the system: in fact, we don't need to know whether a taxi is inside or outside the city if he's performing a ride or if he's unavailable, because in either case he would not be able to receive requests anyway.
 
 \begin{figure}[H]
 \centering

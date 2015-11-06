@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.2)  6 NOV 2015 23:26
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.2)  6 NOV 2015 23:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -388,10 +388,6 @@ l.33 ...rline {3.2.3}Goal 3}{22}{subsection.3.2.3}
                                                    [1
 
 ]
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -807,51 +803,44 @@ Appendix B.
 (./chapters/uml.tex [40
 
 ]
-<pdfs/use_case.pdf, id=627, 806.01125pt x 442.65375pt>
-File: pdfs/use_case.pdf Graphic file (type pdf)
- <use pdfs/use_case.pdf>
-Package pdftex.def Info: pdfs/use_case.pdf used on input line 4.
-(pdftex.def)             Requested size: 806.00928pt x 442.65265pt.
+<pdfs/use_case.pdf, id=627, 1540.75626pt x 846.16125pt>
 File: pdfs/use_case.pdf Graphic file (type pdf)
 
 <use pdfs/use_case.pdf>
 Package pdftex.def Info: pdfs/use_case.pdf used on input line 4.
-(pdftex.def)             Requested size: 806.00928pt x 442.65265pt.
+(pdftex.def)             Requested size: 1540.7525pt x 846.1592pt.
+File: pdfs/use_case.pdf Graphic file (type pdf)
+ <use pdfs/use_case.pdf>
+Package pdftex.def Info: pdfs/use_case.pdf used on input line 4.
+(pdftex.def)             Requested size: 1540.7525pt x 846.1592pt.
 
-<pdfs/use_case.pdf, id=630, page=1, 806.01125pt x 442.65375pt>
+<pdfs/use_case.pdf, id=630, page=1, 1540.75626pt x 846.16125pt>
 File: pdfs/use_case.pdf Graphic file (type pdf)
 
 <use pdfs/use_case.pdf, page 1>
 Package pdftex.def Info: pdfs/use_case.pdf, page1 used on input line 4.
-(pdftex.def)             Requested size: 806.00928pt x 442.65265pt.
+(pdftex.def)             Requested size: 1540.7525pt x 846.1592pt.
 File: pdfs/use_case.pdf Graphic file (type pdf)
  <use pdfs/use_case.pdf, page 1>
 Package pdftex.def Info: pdfs/use_case.pdf, page1 used on input line 4.
-(pdftex.def)             Requested size: 765.70634pt x 420.51866pt.
+(pdftex.def)             Requested size: 1463.71017pt x 803.84865pt.
 File: pdfs/use_case.pdf Graphic file (type pdf)
 
 <use pdfs/use_case.pdf, page 1>
 Package pdftex.def Info: pdfs/use_case.pdf, page1 used on input line 4.
-(pdftex.def)             Requested size: 765.70634pt x 420.51866pt.
+(pdftex.def)             Requested size: 1463.71017pt x 803.84865pt.
 File: pdfs/use_case.pdf Graphic file (type pdf)
  <use pdfs/use_case.pdf, page 1>
 Package pdftex.def Info: pdfs/use_case.pdf, page1 used on input line 4.
-(pdftex.def)             Requested size: 765.70634pt x 420.51866pt.
+(pdftex.def)             Requested size: 1463.71017pt x 803.84865pt.
 File: pdfs/use_case.pdf Graphic file (type pdf)
 
 <use pdfs/use_case.pdf, page 1>
 Package pdftex.def Info: pdfs/use_case.pdf, page1 used on input line 4.
-(pdftex.def)             Requested size: 765.70634pt x 420.51866pt.
+(pdftex.def)             Requested size: 1463.71017pt x 803.84865pt.
  [41
 
  <./pdfs/use_case.pdf>]
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -949,10 +938,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [46 <./pdfs/03_allocate_taxi.pdf>]
-Missing character: There is no ‚ in font cmbx12!
-Missing character: There is no Ä in font cmbx12!
-Missing character: There is no ô in font cmbx12!
-
 <pdfs/05_unavailable.pdf, id=679, 606.265pt x 1148.29pt>
 File: pdfs/05_unavailable.pdf Graphic file (type pdf)
 
@@ -1027,22 +1012,10 @@ Package pdftex.def Info: pdfs/sequence.pdf, page1 used on input line 65.
  <./pdfs/sequence.pdf>]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
 
 <pdfs/statechart.pdf, id=709, 722.7pt x 552.0625pt>
 File: pdfs/statechart.pdf Graphic file (type pdf)
@@ -1277,7 +1250,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 57.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 57.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 57.
 Package rerunfilecheck Info: File `1_RASD.out' has not changed.
-(rerunfilecheck)             Checksum: 7A640B124F11765C0E35BDBEF8EBF74F;5239.
+(rerunfilecheck)             Checksum: 5F536A7F3DD83606021530A0179592DE;5237.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 57.
  ) 
 Here is how much of TeX's memory you used:
@@ -1295,7 +1268,7 @@ live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on 1_RASD.pdf (71 pages, 3743931 bytes).
+Output written on 1_RASD.pdf (71 pages, 3738090 bytes).
 PDF statistics:
  1333 PDF objects out of 1440 (max. 8388607)
  526 named destinations out of 1000 (max. 500000)

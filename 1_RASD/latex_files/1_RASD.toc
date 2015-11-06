@@ -71,7 +71,7 @@
 \contentsline {subsection}{\numberline {B.3.2}Place a taxi reservation}{45}{subsection.1.B.3.2}
 \contentsline {subsection}{\numberline {B.3.3}Reservation allocation}{46}{subsection.1.B.3.3}
 \contentsline {subsection}{\numberline {B.3.4}Confirm a ride has ended}{47}{subsection.1.B.3.4}
-\contentsline {subsection}{\numberline {B.3.5}Set a driver’s status to unavailable}{48}{subsection.1.B.3.5}
+\contentsline {subsection}{\numberline {B.3.5}Set a driver's status to unavailable}{48}{subsection.1.B.3.5}
 \contentsline {section}{\numberline {B.4}Sequence diagram}{49}{section.1.B.4}
 \contentsline {section}{\numberline {B.5}State chart diagram}{51}{section.1.B.5}
 \contentsline {chapter}{Appendix \numberline {C}Alloy}{52}{Appendix.1.C}
