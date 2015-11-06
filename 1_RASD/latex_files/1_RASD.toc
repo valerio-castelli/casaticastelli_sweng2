@@ -1,79 +1,79 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}Purpose}{1}{section.1.1}
-\contentsline {section}{\numberline {1.2}Scope}{1}{section.1.2}
-\contentsline {section}{\numberline {1.3}Stakeholders}{2}{section.1.3}
+\contentsline {section}{\numberline {1.1}Purpose}{2}{section.1.1}
+\contentsline {section}{\numberline {1.2}Scope}{2}{section.1.2}
+\contentsline {section}{\numberline {1.3}Stakeholders}{3}{section.1.3}
 \contentsline {section}{\numberline {1.4}Definitions, acronyms, and abbreviations}{3}{section.1.4}
 \contentsline {subsection}{\numberline {1.4.1}Definitions}{3}{subsection.1.4.1}
-\contentsline {subsection}{\numberline {1.4.2}Acronyms}{4}{subsection.1.4.2}
+\contentsline {subsection}{\numberline {1.4.2}Acronyms}{5}{subsection.1.4.2}
 \contentsline {subsection}{\numberline {1.4.3}Abbreviations}{5}{subsection.1.4.3}
 \contentsline {section}{\numberline {1.5}References}{5}{section.1.5}
-\contentsline {section}{\numberline {1.6}Overview}{5}{section.1.6}
-\contentsline {chapter}{\numberline {2}Overall description}{6}{chapter.2}
-\contentsline {section}{\numberline {2.1}Product perspective}{6}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}System interfaces}{6}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}User interfaces}{6}{subsection.2.1.2}
-\contentsline {subsection}{\numberline {2.1.3}Software interfaces}{7}{subsection.2.1.3}
-\contentsline {section}{\numberline {2.2}Product functions}{7}{section.2.2}
-\contentsline {section}{\numberline {2.3}User characteristics}{8}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Actors identifying}{8}{subsection.2.3.1}
-\contentsline {section}{\numberline {2.4}Constraints}{9}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Regulatory policies}{9}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Hardware limitations}{9}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Interfaces to other applications}{9}{subsection.2.4.3}
-\contentsline {subsection}{\numberline {2.4.4}Parallel operation}{9}{subsection.2.4.4}
-\contentsline {subsection}{\numberline {2.4.5}Criticality of the application}{9}{subsection.2.4.5}
-\contentsline {subsection}{\numberline {2.4.6}Safety and security considerations}{10}{subsection.2.4.6}
-\contentsline {section}{\numberline {2.5}Domain properties and assumptions}{10}{section.2.5}
-\contentsline {chapter}{\numberline {3}Specific requirements}{13}{chapter.3}
-\contentsline {section}{\numberline {3.1}External Interface Requirements}{13}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}User interface sketches}{13}{subsection.3.1.1}
-\contentsline {paragraph}{Metti un nome qui se vuoi distinguerle...}{13}{section*.2}
-\contentsline {section}{\numberline {3.2}Functional Requirements}{19}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Goal 1}{19}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Goal 2}{19}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Goal 3}{19}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Goal 4}{20}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}Goal 5}{20}{subsection.3.2.5}
-\contentsline {subsection}{\numberline {3.2.6}Goal 6}{21}{subsection.3.2.6}
-\contentsline {subsection}{\numberline {3.2.7}Goal 7}{22}{subsection.3.2.7}
-\contentsline {subsection}{\numberline {3.2.8}Goal 8}{22}{subsection.3.2.8}
-\contentsline {subsection}{\numberline {3.2.9}Goal 9}{23}{subsection.3.2.9}
-\contentsline {subsection}{\numberline {3.2.10}Goal 10}{24}{subsection.3.2.10}
-\contentsline {subsection}{\numberline {3.2.11}Goal 11}{24}{subsection.3.2.11}
-\contentsline {subsection}{\numberline {3.2.12}Goal 12}{25}{subsection.3.2.12}
-\contentsline {section}{\numberline {3.3}Performance Requirements}{26}{section.3.3}
-\contentsline {section}{\numberline {3.4}Design Constraints}{26}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Standard compliance}{26}{subsection.3.4.1}
-\contentsline {section}{\numberline {3.5}Software System Attributes}{26}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Reliability}{26}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Availability}{26}{subsection.3.5.2}
-\contentsline {subsection}{\numberline {3.5.3}Security}{27}{subsection.3.5.3}
-\contentsline {subsection}{\numberline {3.5.4}Portability}{27}{subsection.3.5.4}
-\contentsline {section}{\numberline {3.6}Scenarios}{27}{section.3.6}
-\contentsline {subsection}{\numberline {3.6.1}Scenario 1}{27}{subsection.3.6.1}
-\contentsline {subsection}{\numberline {3.6.2}Scenario 2}{28}{subsection.3.6.2}
-\contentsline {subsection}{\numberline {3.6.3}Scenario 3}{28}{subsection.3.6.3}
-\contentsline {subsection}{\numberline {3.6.4}Scenario 4}{29}{subsection.3.6.4}
-\contentsline {subsection}{\numberline {3.6.5}Scenario 5}{29}{subsection.3.6.5}
-\contentsline {subsection}{\numberline {3.6.6}Scenario 6}{30}{subsection.3.6.6}
-\contentsline {subsection}{\numberline {3.6.7}Scenario 7}{30}{subsection.3.6.7}
-\contentsline {chapter}{Appendix \numberline {A}Use cases}{31}{Appendix.1.A}
-\contentsline {section}{\numberline {A.1}Request a taxi}{31}{section.1.A.1}
-\contentsline {section}{\numberline {A.2}Reserve a taxi via the web application}{32}{section.1.A.2}
-\contentsline {section}{\numberline {A.3}Allocate a reservation to a taxi}{33}{section.1.A.3}
-\contentsline {section}{\numberline {A.4}End a ride}{34}{section.1.A.4}
-\contentsline {section}{\numberline {A.5}Communicate taxi unavailability}{34}{section.1.A.5}
-\contentsline {section}{\numberline {A.6}Enter inside city}{35}{section.1.A.6}
-\contentsline {chapter}{Appendix \numberline {B}Alloy}{36}{Appendix.1.B}
-\contentsline {chapter}{Appendix \numberline {C}UML diagrams}{47}{Appendix.1.C}
-\contentsline {section}{\numberline {C.1}Use case diagram}{47}{section.1.C.1}
-\contentsline {section}{\numberline {C.2}Class diagram}{49}{section.1.C.2}
-\contentsline {section}{\numberline {C.3}Activity diagrams}{51}{section.1.C.3}
-\contentsline {subsection}{\numberline {C.3.1}bla bla bla}{51}{subsection.1.C.3.1}
-\contentsline {subsection}{\numberline {C.3.2}bla bla bla}{52}{subsection.1.C.3.2}
-\contentsline {subsection}{\numberline {C.3.3}bla bla bla}{53}{subsection.1.C.3.3}
-\contentsline {subsection}{\numberline {C.3.4}bla bla bla}{54}{subsection.1.C.3.4}
-\contentsline {subsection}{\numberline {C.3.5}bla bla bla}{55}{subsection.1.C.3.5}
-\contentsline {section}{\numberline {C.4}Statechart diagram}{56}{section.1.C.4}
-\contentsline {chapter}{Appendix \numberline {D}Work hours}{57}{Appendix.1.D}
-\contentsline {chapter}{Appendix \numberline {E}Tries}{58}{Appendix.1.E}
+\contentsline {section}{\numberline {1.6}Overview}{6}{section.1.6}
+\contentsline {chapter}{\numberline {2}Overall description}{7}{chapter.2}
+\contentsline {section}{\numberline {2.1}Product perspective}{7}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}System interfaces}{7}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}User interfaces}{7}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Software interfaces}{8}{subsection.2.1.3}
+\contentsline {section}{\numberline {2.2}Product functions}{8}{section.2.2}
+\contentsline {section}{\numberline {2.3}User characteristics}{9}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Actors identifying}{9}{subsection.2.3.1}
+\contentsline {section}{\numberline {2.4}Constraints}{10}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Regulatory policies}{10}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Hardware limitations}{10}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Interfaces to other applications}{10}{subsection.2.4.3}
+\contentsline {subsection}{\numberline {2.4.4}Parallel operation}{10}{subsection.2.4.4}
+\contentsline {subsection}{\numberline {2.4.5}Criticality of the application}{10}{subsection.2.4.5}
+\contentsline {subsection}{\numberline {2.4.6}Safety and security considerations}{11}{subsection.2.4.6}
+\contentsline {section}{\numberline {2.5}Domain properties and assumptions}{11}{section.2.5}
+\contentsline {chapter}{\numberline {3}Specific requirements}{14}{chapter.3}
+\contentsline {section}{\numberline {3.1}External Interface Requirements}{14}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}User interface sketches}{14}{subsection.3.1.1}
+\contentsline {paragraph}{Metti un nome qui se vuoi distinguerle...}{14}{section*.2}
+\contentsline {section}{\numberline {3.2}Functional Requirements}{20}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Goal 1}{20}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Goal 2}{20}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Goal 3}{20}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Goal 4}{21}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Goal 5}{21}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.6}Goal 6}{22}{subsection.3.2.6}
+\contentsline {subsection}{\numberline {3.2.7}Goal 7}{23}{subsection.3.2.7}
+\contentsline {subsection}{\numberline {3.2.8}Goal 8}{23}{subsection.3.2.8}
+\contentsline {subsection}{\numberline {3.2.9}Goal 9}{24}{subsection.3.2.9}
+\contentsline {subsection}{\numberline {3.2.10}Goal 10}{25}{subsection.3.2.10}
+\contentsline {subsection}{\numberline {3.2.11}Goal 11}{25}{subsection.3.2.11}
+\contentsline {subsection}{\numberline {3.2.12}Goal 12}{26}{subsection.3.2.12}
+\contentsline {section}{\numberline {3.3}Performance Requirements}{27}{section.3.3}
+\contentsline {section}{\numberline {3.4}Design Constraints}{27}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Standard compliance}{27}{subsection.3.4.1}
+\contentsline {section}{\numberline {3.5}Software System Attributes}{27}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Reliability}{27}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Availability}{27}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}Security}{28}{subsection.3.5.3}
+\contentsline {subsection}{\numberline {3.5.4}Portability}{28}{subsection.3.5.4}
+\contentsline {section}{\numberline {3.6}Scenarios}{28}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Scenario 1}{28}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}Scenario 2}{29}{subsection.3.6.2}
+\contentsline {subsection}{\numberline {3.6.3}Scenario 3}{29}{subsection.3.6.3}
+\contentsline {subsection}{\numberline {3.6.4}Scenario 4}{30}{subsection.3.6.4}
+\contentsline {subsection}{\numberline {3.6.5}Scenario 5}{30}{subsection.3.6.5}
+\contentsline {subsection}{\numberline {3.6.6}Scenario 6}{31}{subsection.3.6.6}
+\contentsline {subsection}{\numberline {3.6.7}Scenario 7}{31}{subsection.3.6.7}
+\contentsline {chapter}{Appendix \numberline {A}Use cases}{32}{Appendix.1.A}
+\contentsline {section}{\numberline {A.1}Request a taxi}{32}{section.1.A.1}
+\contentsline {section}{\numberline {A.2}Reserve a taxi via the web application}{33}{section.1.A.2}
+\contentsline {section}{\numberline {A.3}Allocate a reservation to a taxi}{34}{section.1.A.3}
+\contentsline {section}{\numberline {A.4}End a ride}{35}{section.1.A.4}
+\contentsline {section}{\numberline {A.5}Communicate taxi unavailability}{35}{section.1.A.5}
+\contentsline {section}{\numberline {A.6}Enter inside city}{36}{section.1.A.6}
+\contentsline {chapter}{Appendix \numberline {B}Alloy}{37}{Appendix.1.B}
+\contentsline {chapter}{Appendix \numberline {C}UML diagrams}{48}{Appendix.1.C}
+\contentsline {section}{\numberline {C.1}Use case diagram}{48}{section.1.C.1}
+\contentsline {section}{\numberline {C.2}Class diagram}{50}{section.1.C.2}
+\contentsline {section}{\numberline {C.3}Activity diagrams}{52}{section.1.C.3}
+\contentsline {subsection}{\numberline {C.3.1}bla bla bla}{52}{subsection.1.C.3.1}
+\contentsline {subsection}{\numberline {C.3.2}bla bla bla}{53}{subsection.1.C.3.2}
+\contentsline {subsection}{\numberline {C.3.3}bla bla bla}{54}{subsection.1.C.3.3}
+\contentsline {subsection}{\numberline {C.3.4}bla bla bla}{55}{subsection.1.C.3.4}
+\contentsline {subsection}{\numberline {C.3.5}bla bla bla}{56}{subsection.1.C.3.5}
+\contentsline {section}{\numberline {C.4}Statechart diagram}{57}{section.1.C.4}
+\contentsline {chapter}{Appendix \numberline {D}Work hours}{58}{Appendix.1.D}
+\contentsline {chapter}{Appendix \numberline {E}Tries}{59}{Appendix.1.E}
