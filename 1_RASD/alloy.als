@@ -344,10 +344,16 @@ pred removeTaxiFromZoneQueue(t:Taxi, z,z':Zone){
 pred show{
 	#Taxi = 1
 	#Zone = 2
-	#User = 2
+	#User = 1
+	#Request = 0
 	#Notification = 1
 }
 
-run show for 6
+run show for 3 but exactly 6 Location  
+run associateRequestToTaxi
+run confirmRideHasEndedInZone
+run taxiAvailabilityToggle
+run addTaxiToZoneQueue 
+run removeTaxiFromZoneQueue
 
 
