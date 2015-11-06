@@ -9,7 +9,7 @@ Actors &
 Passenger, Taxi driver \\
 \hline
 Entry condition & 
-The passenger presses the ``Call Taxi” button in the mobile app. \\
+The passenger presses the ``Call Taxi'' button in the mobile app. \\
 \hline
 Flow of events &
 The mobile app of the passenger detects the GPS location, creates a taxi request and forwards the request to the central system.
@@ -38,7 +38,7 @@ Exceptions &
 
 - If all taxi drivers refuse the request, the system notifies the passenger that is request could not be fulfilled.
 
-- If the passenger doesn't show up at the meeting location, the taxi driver clicks on the ``drop call” button. The system will then notify the user that his request has been dropped. \\
+- If the passenger doesn't show up at the meeting location, the taxi driver clicks on the ``drop call'' button. The system will then notify the user that his request has been dropped. \\
 \hline
 \end{longtable}
 \end{center}
@@ -58,9 +58,9 @@ Entry condition &
 The passenger opens the main page of the web application. \\
 \hline
 Flow of events & 
-The passenger logins, clicks on the ``reserve a taxi” button and enters the departing address, the destination address and the date and time of the meeting.
+The passenger logins, clicks on the ``reserve a taxi'' button and enters the departing address, the destination address and the date and time of the meeting.
 
-The passenger confirms the data and clicks on the ``confirm reservation” button.
+The passenger confirms the data and clicks on the ``confirm reservation'' button.
 
 The system receives the request, stores it into the list of reservations and sends a confirmation. \\
 \hline
@@ -91,9 +91,9 @@ Flow of events &
 The system uses the specified departing address to compute the corresponding zone and forwards the request to the first taxi in the queue associated with that zone.
 
 The selected taxi driver receives a notification
-and clicks on the ``accept request” button.
+and clicks on the ``accept request'' button.
 
-The system receives the taxi driver's confirmation, sets his status to ``currently riding” and moves his taxi code from the current taxi zone queue to the ``currently riding” list.
+The system receives the taxi driver's confirmation, sets his status to ``currently riding'' and moves his taxi code from the current taxi zone queue to the ``currently riding'' list.
 
 The system uses this information to retrieve from an external mapping service an estimate time of arrival (ETA) and sends it to the passenger in a notifications along with the security code associated with the ride and the code of the assigned taxi.
 
@@ -113,7 +113,7 @@ Exceptions &
 
 - If all taxi drivers refuse the request, the system notifies the passenger that is request could not be fulfilled.
 
-- If the passenger doesn't show up at the meeting location, the taxi driver clicks on the ``drop call” button. The system will then notify the user that his request has been dropped. \\
+- If the passenger doesn't show up at the meeting location, the taxi driver clicks on the ``drop call'' button. The system will then notify the user that his request has been dropped. \\
 \hline
 \end{longtable}
 \end{center}
@@ -130,7 +130,7 @@ Actors &
 Taxi driver \\
 \hline
 Entry condition & 
-A taxi driver clicks the ``confirm ride ended” button in the mobile application while being inside the city. \\
+A taxi driver clicks the ``confirm ride ended'' button in the mobile application while being inside the city. \\
 \hline
 Flow of events & 
 The mobile application sends a notification message to the central system.
@@ -143,7 +143,7 @@ Exit condition &
 The taxi driver receives a confirmation that he's now considered available. \\
 \hline
 Exceptions &
-- If the taxi driver has concluded his ride outside the city, when he presses the ``confirm ride ended” button the system will change his status to ``outside city” and move his taxi code to the corresponding queue.\\
+- If the taxi driver has concluded his ride outside the city, when he presses the ``confirm ride ended'' button the system will change his status to ``outside city'' and move his taxi code to the corresponding queue.\\
 \hline
 \end{longtable}
 \end{center}
@@ -160,12 +160,12 @@ Actors &
 Taxi driver \\
 \hline
 Entry condition & 
-The taxi driver switches the availability toggle in the mobile application to the ``unavailable” position. \\
+The taxi driver switches the availability toggle in the mobile application to the ``unavailable'' position. \\
 \hline
 Flow of events & 
 The mobile application sends a notification message to the central system, 
 
-The system receives the notification and sets the taxi driver state to ``unavailable”, then proceeds to move his taxi code from the queue of his current zone to the unavailability queue.
+The system receives the notification and sets the taxi driver state to ``unavailable'', then proceeds to move his taxi code from the queue of his current zone to the unavailability queue.
 
 The system sends a notification to the taxi driver to confirm he's been registered as unavailable. \\
 \hline

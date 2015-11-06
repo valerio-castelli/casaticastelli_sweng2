@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.2)  6 NOV 2015 22:56
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.2)  6 NOV 2015 23:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -384,7 +384,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.42 ...rline {3.2.3}Goal 3}{23}{subsection.3.2.3}
+l.45 ...rline {3.2.3}Goal 3}{21}{subsection.3.2.3}
                                                    [1
 
 ]
@@ -555,44 +555,24 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [14 <./images/guest_login.png> <./images/user_call.png>]
-<images/taxi_new_ride.png, id=487, 382.42876pt x 650.43pt>
-File: images/taxi_new_ride.png Graphic file (type png)
-
-<use images/taxi_new_ride.png>
-Package pdftex.def Info: images/taxi_new_ride.png used on input line 39.
-(pdftex.def)             Requested size: 150.0pt x 255.11569pt.
-
-<images/user_home.png, id=488, 764.8575pt x 483.8075pt>
+<images/user_home.png, id=487, 764.8575pt x 483.8075pt>
 File: images/user_home.png Graphic file (type png)
 
 <use images/user_home.png>
-Package pdftex.def Info: images/user_home.png used on input line 42.
+Package pdftex.def Info: images/user_home.png used on input line 39.
 (pdftex.def)             Requested size: 300.0pt x 189.76198pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[15 <./images/user_confirm.png> <./images/taxi_new_ride.png>]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
-File: images/taxi_new_ride.png Graphic file (type png)
 
-<use images/taxi_new_ride.png>
-Package pdftex.def Info: images/taxi_new_ride.png used on input line 50.
-(pdftex.def)             Requested size: 150.0pt x 255.11569pt.
-
-<images/user_reservation.png, id=497, 875.27pt x 512.91624pt>
+<images/user_reservation.png, id=488, 875.27pt x 512.91624pt>
 File: images/user_reservation.png Graphic file (type png)
 
 <use images/user_reservation.png>
-Package pdftex.def Info: images/user_reservation.png used on input line 53.
+Package pdftex.def Info: images/user_reservation.png used on input line 47.
 (pdftex.def)             Requested size: 300.0pt x 175.8058pt.
 
 
@@ -601,74 +581,46 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16 <./images/user_home.png>]
-File: images/taxi_new_ride.png Graphic file (type png)
- <use images/taxi_new_ride.png>
-Package pdftex.def Info: images/taxi_new_ride.png used on input line 60.
-(pdftex.def)             Requested size: 150.0pt x 255.11569pt.
-
-<images/taxi_accepted_ride.png, id=504, 382.42876pt x 650.43pt>
+[15 <./images/user_confirm.png> <./images/user_home.png>]
+<images/taxi_accepted_ride.png, id=498, 382.42876pt x 650.43pt>
 File: images/taxi_accepted_ride.png Graphic file (type png)
 
 <use images/taxi_accepted_ride.png>
-Package pdftex.def Info: images/taxi_accepted_ride.png used on input line 63.
-(pdftex.def)             Requested size: 150.0pt x 255.11569pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[17 <./images/user_reservation.png>]
-<images/taxi_available.png, id=511, 382.42876pt x 650.43pt>
-Missing character: There is no ‚ in font cmbx10!
-Missing character: There is no Ä in font cmbx10!
-Missing character: There is no ô in font cmbx10!
-File: images/taxi_available.png Graphic file (type png)
-
-<use images/taxi_available.png>
-Package pdftex.def Info: images/taxi_available.png used on input line 66.
-(pdftex.def)             Requested size: 150.0pt x 255.11569pt.
-File: images/taxi_new_ride.png Graphic file (type png)
- <use images/taxi_new_ride.png>
-Package pdftex.def Info: images/taxi_new_ride.png used on input line 71.
-(pdftex.def)             Requested size: 150.0pt x 255.11569pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[18 <./images/taxi_accepted_ride.png> <./images/taxi_available.png>]
-<images/taxi_login.png, id=519, 382.42876pt x 650.43pt>
-File: images/taxi_login.png Graphic file (type png)
-
-<use images/taxi_login.png>
-Package pdftex.def Info: images/taxi_login.png used on input line 74.
+Package pdftex.def Info: images/taxi_accepted_ride.png used on input line 55.
 (pdftex.def)             Requested size: 150.0pt x 255.11569pt.
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
 
+<images/taxi_available.png, id=499, 382.42876pt x 650.43pt>
+File: images/taxi_available.png Graphic file (type png)
+
+<use images/taxi_available.png>
+Package pdftex.def Info: images/taxi_available.png used on input line 63.
+(pdftex.def)             Requested size: 150.0pt x 255.11569pt.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[19 <./images/taxi_login.png>]
-File: images/taxi_new_ride.png Graphic file (type png)
- <use images/taxi_new_ride.png>
-Package pdftex.def Info: images/taxi_new_ride.png used on input line 80.
-(pdftex.def)             Requested size: 150.0pt x 255.11569pt.
+[16 <./images/user_reservation.png> <./images/taxi_accepted_ride.png>]
+<images/taxi_login.png, id=508, 382.42876pt x 650.43pt>
+File: images/taxi_login.png Graphic file (type png)
 
-<images/taxi_meeting.png, id=526, 382.42876pt x 650.43pt>
+<use images/taxi_login.png>
+Package pdftex.def Info: images/taxi_login.png used on input line 71.
+(pdftex.def)             Requested size: 150.0pt x 255.11569pt.
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+
+<images/taxi_meeting.png, id=509, 382.42876pt x 650.43pt>
 File: images/taxi_meeting.png Graphic file (type png)
 
 <use images/taxi_meeting.png>
-Package pdftex.def Info: images/taxi_meeting.png used on input line 82.
+Package pdftex.def Info: images/taxi_meeting.png used on input line 79.
 (pdftex.def)             Requested size: 150.0pt x 255.11569pt.
 
 
@@ -677,13 +629,22 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[20 <./images/taxi_meeting.png>]
+[17 <./images/taxi_available.png> <./images/taxi_login.png>]
+<images/taxi_new_ride.png, id=517, 382.42876pt x 650.43pt>
 File: images/taxi_new_ride.png Graphic file (type png)
- <use images/taxi_new_ride.png>
+
+<use images/taxi_new_ride.png>
 Package pdftex.def Info: images/taxi_new_ride.png used on input line 87.
 (pdftex.def)             Requested size: 150.0pt x 255.11569pt.
 
-<images/taxi_unavailable.png, id=532, 382.42876pt x 650.43pt>
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[18 <./images/taxi_meeting.png>]
+<images/taxi_unavailable.png, id=525, 382.42876pt x 650.43pt>
 File: images/taxi_unavailable.png Graphic file (type png)
 
 <use images/taxi_unavailable.png>
@@ -696,21 +657,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
+[19 <./images/taxi_new_ride.png> <./images/taxi_unavailable.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[20]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
 [21]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[22 <./images/taxi_unavailable.png>]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[23]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
@@ -718,6 +679,20 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
 
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[22]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[23]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -746,6 +721,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [27]
+Overfull \hbox (1.74294pt too wide) in paragraph at lines 317--318
+[]\OT1/cmr/m/n/10.95 Moreover, the cen-tral in-fras-truc-ture of the sys-tem mu
+st im-ple-ment proper
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -760,32 +740,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [29]
-Overfull \hbox (1.74294pt too wide) in paragraph at lines 317--318
-[]\OT1/cmr/m/n/10.95 Moreover, the cen-tral in-fras-truc-ture of the sys-tem mu
-st im-ple-ment proper
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[30]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[31]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[32]
 Overfull \hbox (3.78085pt too wide) in paragraph at lines 379--380
 []\OT1/cmr/m/n/10.95 Since Mat-teo was pre-vi-ously avail-able be-fore the ride
  and has not switched
@@ -800,58 +754,32 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[33])
+[30])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[34]
+[31]
 Appendix A.
 (./chapters/use_cases.tex
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-
 Underfull \vbox (badness 10000) detected at line 43
  []
 
-[35
+[32
 
 ]
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-
 Underfull \vbox (badness 10000) detected at line 73
  []
 
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[36]
+[33]
 Underfull \vbox (badness 10000) detected at line 118
  []
 
@@ -861,26 +789,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[37]
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-
+[34]
 Underfull \vbox (badness 10000) detected at line 148
  []
 
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
 
 Underfull \vbox (badness 10000) detected at line 180
  []
@@ -891,7 +803,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[38]
+[35]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
@@ -906,14 +818,35 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[39]
+[36]
 Appendix B.
 (./chapters/alloy.tex
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 8.
- (../alloy.als [40
+ (../alloy.als [37
 
 ]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[38]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[39]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[40]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -955,28 +888,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[46]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[47]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[48]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[49]) <images/alloy_execution_result.jpg, id=987, 625.33624pt x 716.6775pt>
+[46]) <images/alloy_execution_result.jpg, id=978, 625.33624pt x 716.6775pt>
 File: images/alloy_execution_result.jpg Graphic file (type jpg)
 
 <use images/alloy_execution_result.jpg>
@@ -990,15 +902,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[50]
+[47]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[51 <./images/alloy_execution_result.jpg>]
-<pdfs/alloy_world_1.pdf, id=1030, 597.51233pt x 845.0471pt>
+[48 <./images/alloy_execution_result.jpg>]
+<pdfs/alloy_world_1.pdf, id=1020, 597.51233pt x 845.0471pt>
 File: pdfs/alloy_world_1.pdf Graphic file (type pdf)
 
 <use pdfs/alloy_world_1.pdf>
@@ -1009,7 +921,7 @@ File: pdfs/alloy_world_1.pdf Graphic file (type pdf)
 Package pdftex.def Info: pdfs/alloy_world_1.pdf used on input line 18.
 (pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
 
-<pdfs/alloy_world_1.pdf, id=1033, page=1, 597.51233pt x 845.0471pt>
+<pdfs/alloy_world_1.pdf, id=1023, page=1, 597.51233pt x 845.0471pt>
 File: pdfs/alloy_world_1.pdf Graphic file (type pdf)
 
 <use pdfs/alloy_world_1.pdf, page 1>
@@ -1033,10 +945,10 @@ File: pdfs/alloy_world_1.pdf Graphic file (type pdf)
 <use pdfs/alloy_world_1.pdf, page 1>
 Package pdftex.def Info: pdfs/alloy_world_1.pdf, page1 used on input line 18.
 (pdftex.def)             Requested size: 567.63348pt x 802.7902pt.
- [52
+ [49
 
  <./pdfs/alloy_world_1.pdf>]
-<pdfs/alloy_world_2.pdf, id=1052, 597.51233pt x 845.0471pt>
+<pdfs/alloy_world_2.pdf, id=1042, 597.51233pt x 845.0471pt>
 File: pdfs/alloy_world_2.pdf Graphic file (type pdf)
 
 <use pdfs/alloy_world_2.pdf>
@@ -1047,7 +959,7 @@ File: pdfs/alloy_world_2.pdf Graphic file (type pdf)
 Package pdftex.def Info: pdfs/alloy_world_2.pdf used on input line 22.
 (pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
 
-<pdfs/alloy_world_2.pdf, id=1055, page=1, 597.51233pt x 845.0471pt>
+<pdfs/alloy_world_2.pdf, id=1045, page=1, 597.51233pt x 845.0471pt>
 File: pdfs/alloy_world_2.pdf Graphic file (type pdf)
 
 <use pdfs/alloy_world_2.pdf, page 1>
@@ -1071,11 +983,11 @@ File: pdfs/alloy_world_2.pdf Graphic file (type pdf)
 <use pdfs/alloy_world_2.pdf, page 1>
 Package pdftex.def Info: pdfs/alloy_world_2.pdf, page1 used on input line 22.
 (pdftex.def)             Requested size: 567.63348pt x 802.7902pt.
- [53
+ [50
 
 
  <./pdfs/alloy_world_2.pdf>]
-<pdfs/alloy_world_3.pdf, id=1074, 597.51233pt x 845.0471pt>
+<pdfs/alloy_world_3.pdf, id=1064, 597.51233pt x 845.0471pt>
 File: pdfs/alloy_world_3.pdf Graphic file (type pdf)
 
 <use pdfs/alloy_world_3.pdf>
@@ -1086,7 +998,7 @@ File: pdfs/alloy_world_3.pdf Graphic file (type pdf)
 Package pdftex.def Info: pdfs/alloy_world_3.pdf used on input line 26.
 (pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
 
-<pdfs/alloy_world_3.pdf, id=1077, page=1, 597.51233pt x 845.0471pt>
+<pdfs/alloy_world_3.pdf, id=1067, page=1, 597.51233pt x 845.0471pt>
 File: pdfs/alloy_world_3.pdf Graphic file (type pdf)
 
 <use pdfs/alloy_world_3.pdf, page 1>
@@ -1110,16 +1022,16 @@ File: pdfs/alloy_world_3.pdf Graphic file (type pdf)
 <use pdfs/alloy_world_3.pdf, page 1>
 Package pdftex.def Info: pdfs/alloy_world_3.pdf, page1 used on input line 26.
 (pdftex.def)             Requested size: 567.63348pt x 802.7902pt.
- [54
+ [51
 
 
  <./pdfs/alloy_world_3.pdf>])
 Appendix C.
-(./chapters/uml.tex [55
+(./chapters/uml.tex [52
 
 
 ]
-<pdfs/use_case.pdf, id=1100, 806.01125pt x 442.65375pt>
+<pdfs/use_case.pdf, id=1091, 806.01125pt x 442.65375pt>
 File: pdfs/use_case.pdf Graphic file (type pdf)
 
 <use pdfs/use_case.pdf>
@@ -1130,7 +1042,7 @@ File: pdfs/use_case.pdf Graphic file (type pdf)
 Package pdftex.def Info: pdfs/use_case.pdf used on input line 4.
 (pdftex.def)             Requested size: 806.00928pt x 442.65265pt.
 
-<pdfs/use_case.pdf, id=1103, page=1, 806.01125pt x 442.65375pt>
+<pdfs/use_case.pdf, id=1094, page=1, 806.01125pt x 442.65375pt>
 File: pdfs/use_case.pdf Graphic file (type pdf)
 
 <use pdfs/use_case.pdf, page 1>
@@ -1154,7 +1066,7 @@ File: pdfs/use_case.pdf Graphic file (type pdf)
 <use pdfs/use_case.pdf, page 1>
 Package pdftex.def Info: pdfs/use_case.pdf, page1 used on input line 4.
 (pdftex.def)             Requested size: 765.70634pt x 420.51866pt.
- [56
+ [53
 
  <./pdfs/use_case.pdf>]
 Missing character: There is no ‚ in font cmr10!
@@ -1170,9 +1082,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[57
+[54
 
-] <pdfs/class_diagram.pdf, id=1116, 806.01125pt x 512.91624pt>
+] <pdfs/class_diagram.pdf, id=1106, 806.01125pt x 512.91624pt>
 File: pdfs/class_diagram.pdf Graphic file (type pdf)
 
 <use pdfs/class_diagram.pdf>
@@ -1183,7 +1095,7 @@ File: pdfs/class_diagram.pdf Graphic file (type pdf)
 Package pdftex.def Info: pdfs/class_diagram.pdf used on input line 18.
 (pdftex.def)             Requested size: 806.00928pt x 512.915pt.
 
-<pdfs/class_diagram.pdf, id=1119, page=1, 806.01125pt x 512.91624pt>
+<pdfs/class_diagram.pdf, id=1109, page=1, 806.01125pt x 512.91624pt>
 File: pdfs/class_diagram.pdf Graphic file (type pdf)
 
 <use pdfs/class_diagram.pdf, page 1>
@@ -1207,17 +1119,17 @@ File: pdfs/class_diagram.pdf Graphic file (type pdf)
 <use pdfs/class_diagram.pdf, page 1>
 Package pdftex.def Info: pdfs/class_diagram.pdf, page1 used on input line 18.
 (pdftex.def)             Requested size: 765.70634pt x 487.26767pt.
- [58
+ [55
 
  <./pdfs/class_diagram.pdf>]
-<pdfs/01_call_taxi.pdf, id=1127, 1231.60126pt x 1690.315pt>
+<pdfs/01_call_taxi.pdf, id=1117, 1231.60126pt x 1690.315pt>
 File: pdfs/01_call_taxi.pdf Graphic file (type pdf)
 
 <use pdfs/01_call_taxi.pdf>
 Package pdftex.def Info: pdfs/01_call_taxi.pdf used on input line 26.
 (pdftex.def)             Requested size: 360.0pt x 494.07341pt.
 
-<pdfs/02_reserve_taxi.pdf, id=1128, 546.04pt x 827.09pt>
+<pdfs/02_reserve_taxi.pdf, id=1118, 546.04pt x 827.09pt>
 File: pdfs/02_reserve_taxi.pdf Graphic file (type pdf)
 
 <use pdfs/02_reserve_taxi.pdf>
@@ -1230,10 +1142,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[59
+[56
 
  <./pdfs/01_call_taxi.pdf>]
-<pdfs/03_allocate_taxi.pdf, id=1136, 887.315pt x 1589.94pt>
+<pdfs/03_allocate_taxi.pdf, id=1126, 887.315pt x 1589.94pt>
 File: pdfs/03_allocate_taxi.pdf Graphic file (type pdf)
 
 <use pdfs/03_allocate_taxi.pdf>
@@ -1246,8 +1158,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[60 <./pdfs/02_reserve_taxi.pdf>]
-<pdfs/04_end_ride.pdf, id=1144, 1088.065pt x 1579.9025pt>
+[57 <./pdfs/02_reserve_taxi.pdf>]
+<pdfs/04_end_ride.pdf, id=1135, 1088.065pt x 1579.9025pt>
 File: pdfs/04_end_ride.pdf Graphic file (type pdf)
 
 <use pdfs/04_end_ride.pdf>
@@ -1260,12 +1172,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[61 <./pdfs/03_allocate_taxi.pdf>]
+[58 <./pdfs/03_allocate_taxi.pdf>]
 Missing character: There is no ‚ in font cmbx12!
 Missing character: There is no Ä in font cmbx12!
 Missing character: There is no ô in font cmbx12!
 
-<pdfs/05_unavailable.pdf, id=1152, 606.265pt x 1148.29pt>
+<pdfs/05_unavailable.pdf, id=1143, 606.265pt x 1148.29pt>
 File: pdfs/05_unavailable.pdf Graphic file (type pdf)
 
 <use pdfs/05_unavailable.pdf>
@@ -1278,7 +1190,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[62 <./pdfs/04_end_ride.pdf>]
+[59 <./pdfs/04_end_ride.pdf>]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
@@ -1292,14 +1204,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[63 <./pdfs/05_unavailable.pdf>]
+[60 <./pdfs/05_unavailable.pdf>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[64] <pdfs/sequence.pdf, id=1172, 1449.415pt x 939.51pt>
+[61] <pdfs/sequence.pdf, id=1162, 1449.415pt x 939.51pt>
 File: pdfs/sequence.pdf Graphic file (type pdf)
 
 <use pdfs/sequence.pdf>
@@ -1310,7 +1222,7 @@ File: pdfs/sequence.pdf Graphic file (type pdf)
 Package pdftex.def Info: pdfs/sequence.pdf used on input line 65.
 (pdftex.def)             Requested size: 1449.41147pt x 939.5077pt.
 
-<pdfs/sequence.pdf, id=1175, page=1, 1449.415pt x 939.51pt>
+<pdfs/sequence.pdf, id=1165, page=1, 1449.415pt x 939.51pt>
 File: pdfs/sequence.pdf Graphic file (type pdf)
 
 <use pdfs/sequence.pdf, page 1>
@@ -1334,7 +1246,7 @@ File: pdfs/sequence.pdf Graphic file (type pdf)
 <use pdfs/sequence.pdf, page 1>
 Package pdftex.def Info: pdfs/sequence.pdf, page1 used on input line 65.
 (pdftex.def)             Requested size: 1376.93646pt x 892.52945pt.
- [65
+ [62
 
  <./pdfs/sequence.pdf>]
 Missing character: There is no ‚ in font cmr10!
@@ -1356,7 +1268,7 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
 
-<pdfs/statechart.pdf, id=1183, 722.7pt x 552.0625pt>
+<pdfs/statechart.pdf, id=1173, 722.7pt x 552.0625pt>
 File: pdfs/statechart.pdf Graphic file (type pdf)
  <use pdfs/statechart.pdf>
 Package pdftex.def Info: pdfs/statechart.pdf used on input line 80.
@@ -1368,12 +1280,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[66
+[63
 
  <./pdfs/statechart.pdf>])
 Appendix D.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 57.
-[67
+[64
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 57.
@@ -1386,12 +1298,12 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 57.
  ) 
 Here is how much of TeX's memory you used:
  8480 strings out of 494967
- 126726 string characters out of 6179868
+ 126738 string characters out of 6179868
  311981 words of memory out of 5000000
  11042 multiletter control sequences out of 15000+600000
  10180 words of font info for 36 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
- 44i,21n,51p,2494b,1878s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,21n,51p,2494b,1876s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
@@ -1399,9 +1311,9 @@ live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on 1_RASD.pdf (71 pages, 3744349 bytes).
+Output written on 1_RASD.pdf (68 pages, 3741689 bytes).
 PDF statistics:
- 1330 PDF objects out of 1440 (max. 8388607)
+ 1321 PDF objects out of 1440 (max. 8388607)
  523 named destinations out of 1000 (max. 500000)
  845 words of extra memory for PDF output out of 10000 (max. 10000000)
 

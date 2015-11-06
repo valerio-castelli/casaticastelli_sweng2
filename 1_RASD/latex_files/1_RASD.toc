@@ -32,56 +32,59 @@
 \contentsline {paragraph}{Sketch 3}{14}{section*.4}
 \contentsline {paragraph}{Sketch 4}{14}{section*.5}
 \contentsline {paragraph}{Sketch 5}{15}{section*.6}
-\contentsline {paragraph}{Sketch 6}{16}{section*.7}
-\contentsline {paragraph}{Sketch 7}{17}{section*.8}
-\contentsline {paragraph}{This sketch shows a possible implementation of the main screen of the taxi driver mobile application. In this screen, a taxi driver can see his current status, check the zone he’s in and the number of taxis ahead of him in queue. He can also change his status to unavailable.}{18}{section*.9}
-\contentsline {paragraph}{This sketch shows a possible implementation of the login screen of the taxi driver mobile application.}{19}{section*.10}
-\contentsline {section}{\numberline {3.2}Functional Requirements}{22}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Goal 1}{22}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Goal 2}{22}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Goal 3}{23}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Goal 4}{23}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}Goal 5}{24}{subsection.3.2.5}
-\contentsline {subsection}{\numberline {3.2.6}Goal 6}{25}{subsection.3.2.6}
-\contentsline {subsection}{\numberline {3.2.7}Goal 7}{25}{subsection.3.2.7}
-\contentsline {subsection}{\numberline {3.2.8}Goal 8}{26}{subsection.3.2.8}
-\contentsline {subsection}{\numberline {3.2.9}Goal 9}{26}{subsection.3.2.9}
-\contentsline {subsection}{\numberline {3.2.10}Goal 10}{27}{subsection.3.2.10}
-\contentsline {subsection}{\numberline {3.2.11}Goal 11}{28}{subsection.3.2.11}
-\contentsline {subsection}{\numberline {3.2.12}Goal 12}{29}{subsection.3.2.12}
-\contentsline {section}{\numberline {3.3}Performance Requirements}{29}{section.3.3}
-\contentsline {section}{\numberline {3.4}Design Constraints}{29}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Standard compliance}{29}{subsection.3.4.1}
-\contentsline {section}{\numberline {3.5}Software System Attributes}{30}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Reliability}{30}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Availability}{30}{subsection.3.5.2}
-\contentsline {subsection}{\numberline {3.5.3}Security}{30}{subsection.3.5.3}
-\contentsline {subsection}{\numberline {3.5.4}Portability}{31}{subsection.3.5.4}
-\contentsline {section}{\numberline {3.6}Scenarios}{31}{section.3.6}
-\contentsline {subsection}{\numberline {3.6.1}Scenario 1}{31}{subsection.3.6.1}
-\contentsline {subsection}{\numberline {3.6.2}Scenario 2}{31}{subsection.3.6.2}
-\contentsline {subsection}{\numberline {3.6.3}Scenario 3}{32}{subsection.3.6.3}
-\contentsline {subsection}{\numberline {3.6.4}Scenario 4}{32}{subsection.3.6.4}
-\contentsline {subsection}{\numberline {3.6.5}Scenario 5}{33}{subsection.3.6.5}
-\contentsline {subsection}{\numberline {3.6.6}Scenario 6}{33}{subsection.3.6.6}
-\contentsline {subsection}{\numberline {3.6.7}Scenario 7}{34}{subsection.3.6.7}
-\contentsline {chapter}{Appendix \numberline {A}Use cases}{35}{Appendix.1.A}
-\contentsline {section}{\numberline {A.1}Request a taxi}{35}{section.1.A.1}
-\contentsline {section}{\numberline {A.2}Reserve a taxi via the web application}{36}{section.1.A.2}
-\contentsline {section}{\numberline {A.3}Allocate a reservation to a taxi}{37}{section.1.A.3}
-\contentsline {section}{\numberline {A.4}End a ride}{38}{section.1.A.4}
-\contentsline {section}{\numberline {A.5}Communicate taxi unavailability}{38}{section.1.A.5}
-\contentsline {section}{\numberline {A.6}Enter inside city}{39}{section.1.A.6}
-\contentsline {chapter}{Appendix \numberline {B}Alloy}{40}{Appendix.1.B}
-\contentsline {chapter}{Appendix \numberline {C}UML diagrams}{55}{Appendix.1.C}
-\contentsline {section}{\numberline {C.1}Use case diagram}{55}{section.1.C.1}
-\contentsline {section}{\numberline {C.2}Class diagram}{57}{section.1.C.2}
-\contentsline {section}{\numberline {C.3}Activity diagrams}{59}{section.1.C.3}
-\contentsline {subsection}{\numberline {C.3.1}Request a taxi}{59}{subsection.1.C.3.1}
-\contentsline {subsection}{\numberline {C.3.2}Place a taxi reservation}{60}{subsection.1.C.3.2}
-\contentsline {subsection}{\numberline {C.3.3}Reservation allocation}{61}{subsection.1.C.3.3}
-\contentsline {subsection}{\numberline {C.3.4}Confirm a ride has ended}{62}{subsection.1.C.3.4}
-\contentsline {subsection}{\numberline {C.3.5}Set a driver’s status to unavailable}{63}{subsection.1.C.3.5}
-\contentsline {section}{\numberline {C.4}Sequence diagram}{64}{section.1.C.4}
-\contentsline {section}{\numberline {C.5}State chart diagram}{66}{section.1.C.5}
-\contentsline {chapter}{Appendix \numberline {D}Work hours}{67}{Appendix.1.D}
+\contentsline {paragraph}{Sketch 6}{15}{section*.7}
+\contentsline {paragraph}{Sketch 7}{16}{section*.8}
+\contentsline {paragraph}{Sketch 8}{16}{section*.9}
+\contentsline {paragraph}{Sketch 9}{17}{section*.10}
+\contentsline {paragraph}{Sketch 10}{18}{section*.11}
+\contentsline {paragraph}{Sketch 11}{18}{section*.12}
+\contentsline {paragraph}{Sketch 12}{19}{section*.13}
+\contentsline {section}{\numberline {3.2}Functional Requirements}{20}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Goal 1}{20}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Goal 2}{20}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Goal 3}{20}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Goal 4}{21}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Goal 5}{21}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.6}Goal 6}{22}{subsection.3.2.6}
+\contentsline {subsection}{\numberline {3.2.7}Goal 7}{23}{subsection.3.2.7}
+\contentsline {subsection}{\numberline {3.2.8}Goal 8}{23}{subsection.3.2.8}
+\contentsline {subsection}{\numberline {3.2.9}Goal 9}{24}{subsection.3.2.9}
+\contentsline {subsection}{\numberline {3.2.10}Goal 10}{25}{subsection.3.2.10}
+\contentsline {subsection}{\numberline {3.2.11}Goal 11}{25}{subsection.3.2.11}
+\contentsline {subsection}{\numberline {3.2.12}Goal 12}{26}{subsection.3.2.12}
+\contentsline {section}{\numberline {3.3}Performance Requirements}{27}{section.3.3}
+\contentsline {section}{\numberline {3.4}Design Constraints}{27}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Standard compliance}{27}{subsection.3.4.1}
+\contentsline {section}{\numberline {3.5}Software System Attributes}{27}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Reliability}{27}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Availability}{27}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}Security}{28}{subsection.3.5.3}
+\contentsline {subsection}{\numberline {3.5.4}Portability}{28}{subsection.3.5.4}
+\contentsline {section}{\numberline {3.6}Scenarios}{28}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Scenario 1}{28}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}Scenario 2}{29}{subsection.3.6.2}
+\contentsline {subsection}{\numberline {3.6.3}Scenario 3}{29}{subsection.3.6.3}
+\contentsline {subsection}{\numberline {3.6.4}Scenario 4}{30}{subsection.3.6.4}
+\contentsline {subsection}{\numberline {3.6.5}Scenario 5}{30}{subsection.3.6.5}
+\contentsline {subsection}{\numberline {3.6.6}Scenario 6}{31}{subsection.3.6.6}
+\contentsline {subsection}{\numberline {3.6.7}Scenario 7}{31}{subsection.3.6.7}
+\contentsline {chapter}{Appendix \numberline {A}Use cases}{32}{Appendix.1.A}
+\contentsline {section}{\numberline {A.1}Request a taxi}{32}{section.1.A.1}
+\contentsline {section}{\numberline {A.2}Reserve a taxi via the web application}{33}{section.1.A.2}
+\contentsline {section}{\numberline {A.3}Allocate a reservation to a taxi}{34}{section.1.A.3}
+\contentsline {section}{\numberline {A.4}End a ride}{35}{section.1.A.4}
+\contentsline {section}{\numberline {A.5}Communicate taxi unavailability}{35}{section.1.A.5}
+\contentsline {section}{\numberline {A.6}Enter inside city}{36}{section.1.A.6}
+\contentsline {chapter}{Appendix \numberline {B}Alloy}{37}{Appendix.1.B}
+\contentsline {chapter}{Appendix \numberline {C}UML diagrams}{52}{Appendix.1.C}
+\contentsline {section}{\numberline {C.1}Use case diagram}{52}{section.1.C.1}
+\contentsline {section}{\numberline {C.2}Class diagram}{54}{section.1.C.2}
+\contentsline {section}{\numberline {C.3}Activity diagrams}{56}{section.1.C.3}
+\contentsline {subsection}{\numberline {C.3.1}Request a taxi}{56}{subsection.1.C.3.1}
+\contentsline {subsection}{\numberline {C.3.2}Place a taxi reservation}{57}{subsection.1.C.3.2}
+\contentsline {subsection}{\numberline {C.3.3}Reservation allocation}{58}{subsection.1.C.3.3}
+\contentsline {subsection}{\numberline {C.3.4}Confirm a ride has ended}{59}{subsection.1.C.3.4}
+\contentsline {subsection}{\numberline {C.3.5}Set a driver’s status to unavailable}{60}{subsection.1.C.3.5}
+\contentsline {section}{\numberline {C.4}Sequence diagram}{61}{section.1.C.4}
+\contentsline {section}{\numberline {C.5}State chart diagram}{63}{section.1.C.5}
+\contentsline {chapter}{Appendix \numberline {D}Work hours}{64}{Appendix.1.D}
