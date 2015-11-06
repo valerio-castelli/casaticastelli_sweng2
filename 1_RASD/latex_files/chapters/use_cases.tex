@@ -20,12 +20,12 @@ The system selects the first available taxi driver from that zone queue and send
 
 The taxi driver receives the request and accepts it. The mobile app of the taxi driver sends a confirmation to the system.
 
-The system receives the confirmation and sends a confirmation to the passenger including the taxi code, a security code and an estimated time of arrival.
+The system receives the confirmation and sends a notification to the passenger including the taxi code, a security code and an estimated time of arrival.
 
 The taxi driver checks that the security number and the taxi code sent to the passenger correspond to his own. \\
 \hline
 Exit condition &
-The taxi driver confirms that the Passenger is on board. \\
+The taxi driver confirms that the passenger is on board. \\
 \hline
 Exceptions &
 - If the passenger mobile app cannot receive the GPS location, the mobile app asks the passenger to insert his position manually.
@@ -36,7 +36,7 @@ Exceptions &
 
 - If the system cannot forward the request to the taxi driver because he is not connected to Internet, it moves the taxi driver in the last position of the zone queue and forwards the request to the next available taxi driver.
 
-- If all taxi drivers refuse the request, the system notifies the passenger that is request could not be fulfilled.
+- If all taxi drivers refuse the request, the system notifies the passenger that his request could not be fulfilled.
 
 - If the passenger doesn't show up at the meeting location, the taxi driver clicks on the ``drop call'' button. The system will then notify the user that his request has been dropped. \\
 \hline
