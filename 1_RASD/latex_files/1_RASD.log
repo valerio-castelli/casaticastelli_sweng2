@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.2)  6 NOV 2015 23:32
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.2)  6 NOV 2015 23:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -692,7 +692,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [28]
-Overfull \hbox (1.74294pt too wide) in paragraph at lines 317--318
+Overfull \hbox (1.74294pt too wide) in paragraph at lines 316--317
 []\OT1/cmr/m/n/10.95 Moreover, the cen-tral in-fras-truc-ture of the sys-tem mu
 st im-ple-ment proper
  []
@@ -718,7 +718,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [31]
-Overfull \hbox (3.78085pt too wide) in paragraph at lines 379--380
+Overfull \hbox (3.78085pt too wide) in paragraph at lines 378--379
 []\OT1/cmr/m/n/10.95 Since Mat-teo was pre-vi-ously avail-able be-fore the ride
  and has not switched
  []
