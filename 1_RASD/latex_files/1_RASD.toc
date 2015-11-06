@@ -65,16 +65,16 @@
 \contentsline {section}{\numberline {A.5}Communicate taxi unavailability}{34}{section.1.A.5}
 \contentsline {section}{\numberline {A.6}Enter inside city}{35}{section.1.A.6}
 \contentsline {chapter}{Appendix \numberline {B}Alloy}{36}{Appendix.1.B}
-\contentsline {chapter}{Appendix \numberline {C}UML diagrams}{47}{Appendix.1.C}
-\contentsline {section}{\numberline {C.1}Use case diagram}{47}{section.1.C.1}
-\contentsline {section}{\numberline {C.2}Class diagram}{49}{section.1.C.2}
-\contentsline {section}{\numberline {C.3}Activity diagrams}{51}{section.1.C.3}
-\contentsline {subsection}{\numberline {C.3.1}Request a taxi}{51}{subsection.1.C.3.1}
-\contentsline {subsection}{\numberline {C.3.2}Place a taxi reservation}{52}{subsection.1.C.3.2}
-\contentsline {subsection}{\numberline {C.3.3}Reservation allocation}{53}{subsection.1.C.3.3}
-\contentsline {subsection}{\numberline {C.3.4}Confirm a ride has ended}{54}{subsection.1.C.3.4}
-\contentsline {subsection}{\numberline {C.3.5}Set a driver’s status to unavailable}{55}{subsection.1.C.3.5}
-\contentsline {section}{\numberline {C.4}Sequence diagram}{56}{section.1.C.4}
-\contentsline {section}{\numberline {C.5}Statechart diagram}{58}{section.1.C.5}
-\contentsline {chapter}{Appendix \numberline {D}Work hours}{59}{Appendix.1.D}
-\contentsline {chapter}{Appendix \numberline {E}Tries}{60}{Appendix.1.E}
+\contentsline {chapter}{Appendix \numberline {C}UML diagrams}{49}{Appendix.1.C}
+\contentsline {section}{\numberline {C.1}Use case diagram}{49}{section.1.C.1}
+\contentsline {section}{\numberline {C.2}Class diagram}{51}{section.1.C.2}
+\contentsline {section}{\numberline {C.3}Activity diagrams}{53}{section.1.C.3}
+\contentsline {subsection}{\numberline {C.3.1}Request a taxi}{53}{subsection.1.C.3.1}
+\contentsline {subsection}{\numberline {C.3.2}Place a taxi reservation}{54}{subsection.1.C.3.2}
+\contentsline {subsection}{\numberline {C.3.3}Reservation allocation}{55}{subsection.1.C.3.3}
+\contentsline {subsection}{\numberline {C.3.4}Confirm a ride has ended}{56}{subsection.1.C.3.4}
+\contentsline {subsection}{\numberline {C.3.5}Set a driver’s status to unavailable}{57}{subsection.1.C.3.5}
+\contentsline {section}{\numberline {C.4}Sequence diagram}{58}{section.1.C.4}
+\contentsline {section}{\numberline {C.5}Statechart diagram}{60}{section.1.C.5}
+\contentsline {chapter}{Appendix \numberline {D}Work hours}{61}{Appendix.1.D}
+\contentsline {chapter}{Appendix \numberline {E}Tries}{62}{Appendix.1.E}
