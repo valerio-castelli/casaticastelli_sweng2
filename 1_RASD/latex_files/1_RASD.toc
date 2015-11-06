@@ -58,4 +58,8 @@
 \contentsline {subsection}{\numberline {3.6.7}Scenario 7}{25}{subsection.3.6.7}
 \contentsline {chapter}{Appendix \numberline {A}Alloy}{26}{Appendix.1.A}
 \contentsline {chapter}{Appendix \numberline {B}Work hours}{37}{Appendix.1.B}
-\contentsline {chapter}{Appendix \numberline {C}Tries}{38}{Appendix.1.C}
+\contentsline {chapter}{Appendix \numberline {C}UML diagrams}{38}{Appendix.1.C}
+\contentsline {section}{\numberline {C.1}Class diagram}{38}{section.1.C.1}
+\contentsline {section}{\numberline {C.2}Activity diagrams}{38}{section.1.C.2}
+\contentsline {section}{\numberline {C.3}Statechart diagram}{38}{section.1.C.3}
+\contentsline {chapter}{Appendix \numberline {D}Tries}{39}{Appendix.1.D}

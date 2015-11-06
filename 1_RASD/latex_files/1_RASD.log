@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.2)  6 NOV 2015 13:48
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.2)  6 NOV 2015 13:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -657,27 +657,31 @@ Appendix B.
 
 ]
 Appendix C.
-[38
+(./files/uml.tex) [38
 
-] <files/index.png, id=838, 1540.75626pt x 847.165pt>
+]
+Appendix D.
+[39
+
+] <files/index.png, id=846, 1540.75626pt x 847.165pt>
 File: files/index.png Graphic file (type png)
  <use files/index.png>
-Package pdftex.def Info: files/index.png used on input line 34.
+Package pdftex.def Info: files/index.png used on input line 38.
 (pdftex.def)             Requested size: 850.0pt x 467.3512pt.
 
-<files/use_case.pdf, id=840, 806.01125pt x 442.65375pt>
+<files/use_case.pdf, id=848, 806.01125pt x 442.65375pt>
 File: files/use_case.pdf Graphic file (type pdf)
 
 <use files/use_case.pdf>
-Package pdftex.def Info: files/use_case.pdf used on input line 36.
+Package pdftex.def Info: files/use_case.pdf used on input line 40.
 (pdftex.def)             Requested size: 806.00928pt x 442.65265pt.
 
-Overfull \hbox (271.19974pt too wide) in paragraph at lines 34--37
+Overfull \hbox (271.19974pt too wide) in paragraph at lines 38--41
 [][]
  []
 
 
-Overfull \hbox (210.20901pt too wide) in paragraph at lines 34--37
+Overfull \hbox (210.20901pt too wide) in paragraph at lines 38--41
 [][] 
  []
 
@@ -687,7 +691,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[39
+[40
 
 ]
 Overfull \vbox (551.00385pt too high) has occurred while \output is active []
@@ -699,129 +703,135 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[40 <./files/index.png> <./files/use_case.pdf>]
+[41 <./files/index.png> <./files/use_case.pdf>]
 File: files/use_case.pdf Graphic file (type pdf)
  <use files/use_case.pdf>
-Package pdftex.def Info: files/use_case.pdf used on input line 38.
+Package pdftex.def Info: files/use_case.pdf used on input line 42.
 (pdftex.def)             Requested size: 806.00928pt x 442.65265pt.
 File: files/use_case.pdf Graphic file (type pdf)
 
 <use files/use_case.pdf>
-Package pdftex.def Info: files/use_case.pdf used on input line 38.
+Package pdftex.def Info: files/use_case.pdf used on input line 42.
 (pdftex.def)             Requested size: 806.00928pt x 442.65265pt.
 
-<files/use_case.pdf, id=856, page=1, 806.01125pt x 442.65375pt>
+<files/use_case.pdf, id=864, page=1, 806.01125pt x 442.65375pt>
 File: files/use_case.pdf Graphic file (type pdf)
 
 <use files/use_case.pdf, page 1>
-Package pdftex.def Info: files/use_case.pdf, page1 used on input line 38.
+Package pdftex.def Info: files/use_case.pdf, page1 used on input line 42.
 (pdftex.def)             Requested size: 800.0pt x 439.35652pt.
 File: files/use_case.pdf Graphic file (type pdf)
  <use files/use_case.pdf, page 1>
-Package pdftex.def Info: files/use_case.pdf, page1 used on input line 38.
+Package pdftex.def Info: files/use_case.pdf, page1 used on input line 42.
 (pdftex.def)             Requested size: 851.39157pt x 467.57617pt.
 File: files/use_case.pdf Graphic file (type pdf)
 
 <use files/use_case.pdf, page 1>
-Package pdftex.def Info: files/use_case.pdf, page1 used on input line 38.
+Package pdftex.def Info: files/use_case.pdf, page1 used on input line 42.
 (pdftex.def)             Requested size: 851.39157pt x 467.57617pt.
 File: files/use_case.pdf Graphic file (type pdf)
  <use files/use_case.pdf, page 1>
-Package pdftex.def Info: files/use_case.pdf, page1 used on input line 38.
+Package pdftex.def Info: files/use_case.pdf, page1 used on input line 42.
 (pdftex.def)             Requested size: 851.39157pt x 467.57617pt.
 File: files/use_case.pdf Graphic file (type pdf)
 
 <use files/use_case.pdf, page 1>
-Package pdftex.def Info: files/use_case.pdf, page1 used on input line 38.
+Package pdftex.def Info: files/use_case.pdf, page1 used on input line 42.
 (pdftex.def)             Requested size: 851.39157pt x 467.57617pt.
- [41
+ [42
 
  <./files/use_case.pdf>]
-<files/document.pdf, id=864, 806.01125pt x 1106.1325pt>
+<files/document.pdf, id=872, 806.01125pt x 1106.1325pt>
 File: files/document.pdf Graphic file (type pdf)
 
 <use files/document.pdf>
-Package pdftex.def Info: files/document.pdf used on input line 39.
+Package pdftex.def Info: files/document.pdf used on input line 43.
 (pdftex.def)             Requested size: 806.00928pt x 1106.1298pt.
 File: files/document.pdf Graphic file (type pdf)
  <use files/document.pdf>
-Package pdftex.def Info: files/document.pdf used on input line 39.
+Package pdftex.def Info: files/document.pdf used on input line 43.
 (pdftex.def)             Requested size: 806.00928pt x 1106.1298pt.
 
-<files/document.pdf, id=867, page=1, 806.01125pt x 1106.1325pt>
+<files/document.pdf, id=875, page=1, 806.01125pt x 1106.1325pt>
 File: files/document.pdf Graphic file (type pdf)
 
 <use files/document.pdf, page 1>
-Package pdftex.def Info: files/document.pdf, page1 used on input line 39.
+Package pdftex.def Info: files/document.pdf, page1 used on input line 43.
 (pdftex.def)             Requested size: 806.00928pt x 1106.1298pt.
 File: files/document.pdf Graphic file (type pdf)
  <use files/document.pdf, page 1>
-Package pdftex.def Info: files/document.pdf, page1 used on input line 39.
+Package pdftex.def Info: files/document.pdf, page1 used on input line 43.
 (pdftex.def)             Requested size: 597.50897pt x 819.99365pt.
 File: files/document.pdf Graphic file (type pdf)
 
 <use files/document.pdf, page 1>
-Package pdftex.def Info: files/document.pdf, page1 used on input line 39.
+Package pdftex.def Info: files/document.pdf, page1 used on input line 43.
 (pdftex.def)             Requested size: 597.50897pt x 819.99365pt.
 File: files/document.pdf Graphic file (type pdf)
  <use files/document.pdf, page 1>
-Package pdftex.def Info: files/document.pdf, page1 used on input line 39.
+Package pdftex.def Info: files/document.pdf, page1 used on input line 43.
 (pdftex.def)             Requested size: 597.50897pt x 819.99365pt.
 File: files/document.pdf Graphic file (type pdf)
 
 <use files/document.pdf, page 1>
-Package pdftex.def Info: files/document.pdf, page1 used on input line 39.
+Package pdftex.def Info: files/document.pdf, page1 used on input line 43.
 (pdftex.def)             Requested size: 597.50897pt x 819.99365pt.
- [42 <./files/document.pdf>]
+ [43 <./files/document.pdf>]
 File: files/document.pdf Graphic file (type pdf)
 
 <use files/document.pdf>
-Package pdftex.def Info: files/document.pdf used on input line 41.
+Package pdftex.def Info: files/document.pdf used on input line 45.
 (pdftex.def)             Requested size: 806.00928pt x 1106.1298pt.
 File: files/document.pdf Graphic file (type pdf)
  <use files/document.pdf>
-Package pdftex.def Info: files/document.pdf used on input line 41.
+Package pdftex.def Info: files/document.pdf used on input line 45.
 (pdftex.def)             Requested size: 806.00928pt x 1106.1298pt.
 File: files/document.pdf Graphic file (type pdf)
 
 <use files/document.pdf, page 1>
-Package pdftex.def Info: files/document.pdf, page1 used on input line 41.
+Package pdftex.def Info: files/document.pdf, page1 used on input line 45.
 (pdftex.def)             Requested size: 300.0pt x 411.70996pt.
 File: files/document.pdf Graphic file (type pdf)
  <use files/document.pdf, page 1>
-Package pdftex.def Info: files/document.pdf, page1 used on input line 41.
+Package pdftex.def Info: files/document.pdf, page1 used on input line 45.
 (pdftex.def)             Requested size: 1605.31573pt x 2203.06099pt.
 File: files/document.pdf Graphic file (type pdf)
 
 <use files/document.pdf, page 1>
-Package pdftex.def Info: files/document.pdf, page1 used on input line 41.
+Package pdftex.def Info: files/document.pdf, page1 used on input line 45.
 (pdftex.def)             Requested size: 1605.31573pt x 2203.06099pt.
 File: files/document.pdf Graphic file (type pdf)
  <use files/document.pdf, page 1>
-Package pdftex.def Info: files/document.pdf, page1 used on input line 41.
+Package pdftex.def Info: files/document.pdf, page1 used on input line 45.
 (pdftex.def)             Requested size: 1605.31573pt x 2203.06099pt.
 File: files/document.pdf Graphic file (type pdf)
 
 <use files/document.pdf, page 1>
-Package pdftex.def Info: files/document.pdf, page1 used on input line 41.
+Package pdftex.def Info: files/document.pdf, page1 used on input line 45.
 (pdftex.def)             Requested size: 1605.31573pt x 2203.06099pt.
- [43]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 45.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 45.
+ [44]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 49.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 49.
  (./1_RASD.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 45.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 45.
-Package rerunfilecheck Info: File `1_RASD.out' has not changed.
-(rerunfilecheck)             Checksum: F37EEA6E40026171EB9EABC1A1B90E19;3965.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 49.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 49.
 
+
+Package rerunfilecheck Warning: File `1_RASD.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `1_RASD.out':
+(rerunfilecheck)             Before: F37EEA6E40026171EB9EABC1A1B90E19;3965
+(rerunfilecheck)             After:  81D062C6A9677EF58DFF5E7F7635D0BF;4229.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 45.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 49.
  ) 
 Here is how much of TeX's memory you used:
- 8182 strings out of 494967
- 121044 string characters out of 6179868
+ 8190 strings out of 494967
+ 121133 string characters out of 6179868
  309346 words of memory out of 5000000
  10850 multiletter control sequences out of 15000+600000
  10191 words of font info for 36 fonts, out of 8000000 for 9000
@@ -834,9 +844,9 @@ ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on 1_RASD.pdf (46 pages, 1012816 bytes).
+Output written on 1_RASD.pdf (47 pages, 1014441 bytes).
 PDF statistics:
- 1002 PDF objects out of 1200 (max. 8388607)
- 460 named destinations out of 1000 (max. 500000)
+ 1011 PDF objects out of 1200 (max. 8388607)
+ 465 named destinations out of 1000 (max. 500000)
  544 words of extra memory for PDF output out of 10000 (max. 10000000)
 
