@@ -86,4 +86,3 @@
 \contentsline {section}{\numberline {C.4}Sequence diagram}{61}{section.1.C.4}
 \contentsline {section}{\numberline {C.5}State chart diagram}{63}{section.1.C.5}
 \contentsline {chapter}{Appendix \numberline {D}Work hours}{64}{Appendix.1.D}
-\contentsline {chapter}{Appendix \numberline {E}Tries}{65}{Appendix.1.E}
