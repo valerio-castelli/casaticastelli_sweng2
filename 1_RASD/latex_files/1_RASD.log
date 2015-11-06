@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.2)  6 NOV 2015 23:18
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.2)  6 NOV 2015 23:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -388,17 +388,17 @@ l.33 ...rline {3.2.3}Goal 3}{22}{subsection.3.2.3}
                                                    [1
 
 ]
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2]
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
-)
+[2])
 \tf@toc=\write4
 \openout4 = `1_RASD.toc'.
 
@@ -773,16 +773,15 @@ Underfull \vbox (badness 10000) detected at line 148
  []
 
 
-Underfull \vbox (badness 10000) detected at line 180
- []
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [37]
+Underfull \vbox (badness 10000) detected at line 180
+ []
+
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
@@ -805,229 +804,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [39]
 Appendix B.
-(./chapters/alloy.tex
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 8.
- (../alloy.als [40
+(./chapters/uml.tex [40
 
 ]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[41]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[42]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[43]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[44]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[45]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[46]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[47]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[48]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[49]) <images/alloy_execution_result.jpg, id=990, 625.33624pt x 716.6775pt>
-File: images/alloy_execution_result.jpg Graphic file (type jpg)
-
-<use images/alloy_execution_result.jpg>
-Package pdftex.def Info: images/alloy_execution_result.jpg used on input line 1
-4.
-(pdftex.def)             Requested size: 350.0pt x 401.12889pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[50]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[51 <./images/alloy_execution_result.jpg>]
-<pdfs/alloy_world_1.pdf, id=1033, 597.51233pt x 845.0471pt>
-File: pdfs/alloy_world_1.pdf Graphic file (type pdf)
-
-<use pdfs/alloy_world_1.pdf>
-Package pdftex.def Info: pdfs/alloy_world_1.pdf used on input line 18.
-(pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
-File: pdfs/alloy_world_1.pdf Graphic file (type pdf)
- <use pdfs/alloy_world_1.pdf>
-Package pdftex.def Info: pdfs/alloy_world_1.pdf used on input line 18.
-(pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
-
-<pdfs/alloy_world_1.pdf, id=1036, page=1, 597.51233pt x 845.0471pt>
-File: pdfs/alloy_world_1.pdf Graphic file (type pdf)
-
-<use pdfs/alloy_world_1.pdf, page 1>
-Package pdftex.def Info: pdfs/alloy_world_1.pdf, page1 used on input line 18.
-(pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
-File: pdfs/alloy_world_1.pdf Graphic file (type pdf)
- <use pdfs/alloy_world_1.pdf, page 1>
-Package pdftex.def Info: pdfs/alloy_world_1.pdf, page1 used on input line 18.
-(pdftex.def)             Requested size: 567.63348pt x 802.7902pt.
-File: pdfs/alloy_world_1.pdf Graphic file (type pdf)
-
-<use pdfs/alloy_world_1.pdf, page 1>
-Package pdftex.def Info: pdfs/alloy_world_1.pdf, page1 used on input line 18.
-(pdftex.def)             Requested size: 567.63348pt x 802.7902pt.
-File: pdfs/alloy_world_1.pdf Graphic file (type pdf)
- <use pdfs/alloy_world_1.pdf, page 1>
-Package pdftex.def Info: pdfs/alloy_world_1.pdf, page1 used on input line 18.
-(pdftex.def)             Requested size: 567.63348pt x 802.7902pt.
-File: pdfs/alloy_world_1.pdf Graphic file (type pdf)
-
-<use pdfs/alloy_world_1.pdf, page 1>
-Package pdftex.def Info: pdfs/alloy_world_1.pdf, page1 used on input line 18.
-(pdftex.def)             Requested size: 567.63348pt x 802.7902pt.
- [52
-
- <./pdfs/alloy_world_1.pdf>]
-<pdfs/alloy_world_2.pdf, id=1055, 597.51233pt x 845.0471pt>
-File: pdfs/alloy_world_2.pdf Graphic file (type pdf)
-
-<use pdfs/alloy_world_2.pdf>
-Package pdftex.def Info: pdfs/alloy_world_2.pdf used on input line 22.
-(pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
-File: pdfs/alloy_world_2.pdf Graphic file (type pdf)
- <use pdfs/alloy_world_2.pdf>
-Package pdftex.def Info: pdfs/alloy_world_2.pdf used on input line 22.
-(pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
-
-<pdfs/alloy_world_2.pdf, id=1058, page=1, 597.51233pt x 845.0471pt>
-File: pdfs/alloy_world_2.pdf Graphic file (type pdf)
-
-<use pdfs/alloy_world_2.pdf, page 1>
-Package pdftex.def Info: pdfs/alloy_world_2.pdf, page1 used on input line 22.
-(pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
-File: pdfs/alloy_world_2.pdf Graphic file (type pdf)
- <use pdfs/alloy_world_2.pdf, page 1>
-Package pdftex.def Info: pdfs/alloy_world_2.pdf, page1 used on input line 22.
-(pdftex.def)             Requested size: 567.63348pt x 802.7902pt.
-File: pdfs/alloy_world_2.pdf Graphic file (type pdf)
-
-<use pdfs/alloy_world_2.pdf, page 1>
-Package pdftex.def Info: pdfs/alloy_world_2.pdf, page1 used on input line 22.
-(pdftex.def)             Requested size: 567.63348pt x 802.7902pt.
-File: pdfs/alloy_world_2.pdf Graphic file (type pdf)
- <use pdfs/alloy_world_2.pdf, page 1>
-Package pdftex.def Info: pdfs/alloy_world_2.pdf, page1 used on input line 22.
-(pdftex.def)             Requested size: 567.63348pt x 802.7902pt.
-File: pdfs/alloy_world_2.pdf Graphic file (type pdf)
-
-<use pdfs/alloy_world_2.pdf, page 1>
-Package pdftex.def Info: pdfs/alloy_world_2.pdf, page1 used on input line 22.
-(pdftex.def)             Requested size: 567.63348pt x 802.7902pt.
- [53
-
-
- <./pdfs/alloy_world_2.pdf>]
-<pdfs/alloy_world_3.pdf, id=1077, 597.51233pt x 845.0471pt>
-File: pdfs/alloy_world_3.pdf Graphic file (type pdf)
-
-<use pdfs/alloy_world_3.pdf>
-Package pdftex.def Info: pdfs/alloy_world_3.pdf used on input line 26.
-(pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
-File: pdfs/alloy_world_3.pdf Graphic file (type pdf)
- <use pdfs/alloy_world_3.pdf>
-Package pdftex.def Info: pdfs/alloy_world_3.pdf used on input line 26.
-(pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
-
-<pdfs/alloy_world_3.pdf, id=1080, page=1, 597.51233pt x 845.0471pt>
-File: pdfs/alloy_world_3.pdf Graphic file (type pdf)
-
-<use pdfs/alloy_world_3.pdf, page 1>
-Package pdftex.def Info: pdfs/alloy_world_3.pdf, page1 used on input line 26.
-(pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
-File: pdfs/alloy_world_3.pdf Graphic file (type pdf)
- <use pdfs/alloy_world_3.pdf, page 1>
-Package pdftex.def Info: pdfs/alloy_world_3.pdf, page1 used on input line 26.
-(pdftex.def)             Requested size: 567.63348pt x 802.7902pt.
-File: pdfs/alloy_world_3.pdf Graphic file (type pdf)
-
-<use pdfs/alloy_world_3.pdf, page 1>
-Package pdftex.def Info: pdfs/alloy_world_3.pdf, page1 used on input line 26.
-(pdftex.def)             Requested size: 567.63348pt x 802.7902pt.
-File: pdfs/alloy_world_3.pdf Graphic file (type pdf)
- <use pdfs/alloy_world_3.pdf, page 1>
-Package pdftex.def Info: pdfs/alloy_world_3.pdf, page1 used on input line 26.
-(pdftex.def)             Requested size: 567.63348pt x 802.7902pt.
-File: pdfs/alloy_world_3.pdf Graphic file (type pdf)
-
-<use pdfs/alloy_world_3.pdf, page 1>
-Package pdftex.def Info: pdfs/alloy_world_3.pdf, page1 used on input line 26.
-(pdftex.def)             Requested size: 567.63348pt x 802.7902pt.
- [54
-
-
- <./pdfs/alloy_world_3.pdf>])
-Appendix C.
-(./chapters/uml.tex [55
-
-
-]
-<pdfs/use_case.pdf, id=1103, 806.01125pt x 442.65375pt>
+<pdfs/use_case.pdf, id=627, 806.01125pt x 442.65375pt>
+File: pdfs/use_case.pdf Graphic file (type pdf)
+ <use pdfs/use_case.pdf>
+Package pdftex.def Info: pdfs/use_case.pdf used on input line 4.
+(pdftex.def)             Requested size: 806.00928pt x 442.65265pt.
 File: pdfs/use_case.pdf Graphic file (type pdf)
 
 <use pdfs/use_case.pdf>
 Package pdftex.def Info: pdfs/use_case.pdf used on input line 4.
 (pdftex.def)             Requested size: 806.00928pt x 442.65265pt.
-File: pdfs/use_case.pdf Graphic file (type pdf)
- <use pdfs/use_case.pdf>
-Package pdftex.def Info: pdfs/use_case.pdf used on input line 4.
-(pdftex.def)             Requested size: 806.00928pt x 442.65265pt.
 
-<pdfs/use_case.pdf, id=1106, page=1, 806.01125pt x 442.65375pt>
+<pdfs/use_case.pdf, id=630, page=1, 806.01125pt x 442.65375pt>
 File: pdfs/use_case.pdf Graphic file (type pdf)
 
 <use pdfs/use_case.pdf, page 1>
@@ -1051,7 +842,7 @@ File: pdfs/use_case.pdf Graphic file (type pdf)
 <use pdfs/use_case.pdf, page 1>
 Package pdftex.def Info: pdfs/use_case.pdf, page1 used on input line 4.
 (pdftex.def)             Requested size: 765.70634pt x 420.51866pt.
- [56
+ [41
 
  <./pdfs/use_case.pdf>]
 Missing character: There is no â in font cmr10!
@@ -1067,9 +858,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[57
+[42
 
-] <pdfs/class_diagram.pdf, id=1119, 806.01125pt x 512.91624pt>
+] <pdfs/class_diagram.pdf, id=642, 806.01125pt x 512.91624pt>
 File: pdfs/class_diagram.pdf Graphic file (type pdf)
 
 <use pdfs/class_diagram.pdf>
@@ -1080,7 +871,7 @@ File: pdfs/class_diagram.pdf Graphic file (type pdf)
 Package pdftex.def Info: pdfs/class_diagram.pdf used on input line 18.
 (pdftex.def)             Requested size: 806.00928pt x 512.915pt.
 
-<pdfs/class_diagram.pdf, id=1122, page=1, 806.01125pt x 512.91624pt>
+<pdfs/class_diagram.pdf, id=645, page=1, 806.01125pt x 512.91624pt>
 File: pdfs/class_diagram.pdf Graphic file (type pdf)
 
 <use pdfs/class_diagram.pdf, page 1>
@@ -1104,17 +895,17 @@ File: pdfs/class_diagram.pdf Graphic file (type pdf)
 <use pdfs/class_diagram.pdf, page 1>
 Package pdftex.def Info: pdfs/class_diagram.pdf, page1 used on input line 18.
 (pdftex.def)             Requested size: 765.70634pt x 487.26767pt.
- [58
+ [43
 
  <./pdfs/class_diagram.pdf>]
-<pdfs/01_call_taxi.pdf, id=1130, 1231.60126pt x 1690.315pt>
+<pdfs/01_call_taxi.pdf, id=653, 1231.60126pt x 1690.315pt>
 File: pdfs/01_call_taxi.pdf Graphic file (type pdf)
 
 <use pdfs/01_call_taxi.pdf>
 Package pdftex.def Info: pdfs/01_call_taxi.pdf used on input line 26.
 (pdftex.def)             Requested size: 360.0pt x 494.07341pt.
 
-<pdfs/02_reserve_taxi.pdf, id=1131, 546.04pt x 827.09pt>
+<pdfs/02_reserve_taxi.pdf, id=654, 546.04pt x 827.09pt>
 File: pdfs/02_reserve_taxi.pdf Graphic file (type pdf)
 
 <use pdfs/02_reserve_taxi.pdf>
@@ -1127,10 +918,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[59
+[44
 
  <./pdfs/01_call_taxi.pdf>]
-<pdfs/03_allocate_taxi.pdf, id=1139, 887.315pt x 1589.94pt>
+<pdfs/03_allocate_taxi.pdf, id=662, 887.315pt x 1589.94pt>
 File: pdfs/03_allocate_taxi.pdf Graphic file (type pdf)
 
 <use pdfs/03_allocate_taxi.pdf>
@@ -1143,8 +934,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[60 <./pdfs/02_reserve_taxi.pdf>]
-<pdfs/04_end_ride.pdf, id=1147, 1088.065pt x 1579.9025pt>
+[45 <./pdfs/02_reserve_taxi.pdf>]
+<pdfs/04_end_ride.pdf, id=671, 1088.065pt x 1579.9025pt>
 File: pdfs/04_end_ride.pdf Graphic file (type pdf)
 
 <use pdfs/04_end_ride.pdf>
@@ -1157,12 +948,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[61 <./pdfs/03_allocate_taxi.pdf>]
+[46 <./pdfs/03_allocate_taxi.pdf>]
 Missing character: There is no â in font cmbx12!
 Missing character: There is no € in font cmbx12!
 Missing character: There is no ™ in font cmbx12!
 
-<pdfs/05_unavailable.pdf, id=1155, 606.265pt x 1148.29pt>
+<pdfs/05_unavailable.pdf, id=679, 606.265pt x 1148.29pt>
 File: pdfs/05_unavailable.pdf Graphic file (type pdf)
 
 <use pdfs/05_unavailable.pdf>
@@ -1175,7 +966,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[62 <./pdfs/04_end_ride.pdf>]
+[47 <./pdfs/04_end_ride.pdf>]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no œ in font cmr10!
@@ -1189,14 +980,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[63 <./pdfs/05_unavailable.pdf>]
+[48 <./pdfs/05_unavailable.pdf>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[64] <pdfs/sequence.pdf, id=1175, 1449.415pt x 939.51pt>
+[49] <pdfs/sequence.pdf, id=698, 1449.415pt x 939.51pt>
 File: pdfs/sequence.pdf Graphic file (type pdf)
 
 <use pdfs/sequence.pdf>
@@ -1207,7 +998,7 @@ File: pdfs/sequence.pdf Graphic file (type pdf)
 Package pdftex.def Info: pdfs/sequence.pdf used on input line 65.
 (pdftex.def)             Requested size: 1449.41147pt x 939.5077pt.
 
-<pdfs/sequence.pdf, id=1178, page=1, 1449.415pt x 939.51pt>
+<pdfs/sequence.pdf, id=701, page=1, 1449.415pt x 939.51pt>
 File: pdfs/sequence.pdf Graphic file (type pdf)
 
 <use pdfs/sequence.pdf, page 1>
@@ -1231,7 +1022,7 @@ File: pdfs/sequence.pdf Graphic file (type pdf)
 <use pdfs/sequence.pdf, page 1>
 Package pdftex.def Info: pdfs/sequence.pdf, page1 used on input line 65.
 (pdftex.def)             Requested size: 1376.93646pt x 892.52945pt.
- [65
+ [50
 
  <./pdfs/sequence.pdf>]
 Missing character: There is no â in font cmr10!
@@ -1253,7 +1044,7 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
 
-<pdfs/statechart.pdf, id=1186, 722.7pt x 552.0625pt>
+<pdfs/statechart.pdf, id=709, 722.7pt x 552.0625pt>
 File: pdfs/statechart.pdf Graphic file (type pdf)
  <use pdfs/statechart.pdf>
 Package pdftex.def Info: pdfs/statechart.pdf used on input line 80.
@@ -1265,12 +1056,220 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[66
+[51
 
  <./pdfs/statechart.pdf>])
+Appendix C.
+(./chapters/alloy.tex
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 8.
+ (../alloy.als [52
+
+]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[53]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[54]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[55]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[56]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[57]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[58]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[59]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[60]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[61])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[62] <images/alloy_execution_result.jpg, id=1123, 625.33624pt x 716.6775pt>
+File: images/alloy_execution_result.jpg Graphic file (type jpg)
+
+<use images/alloy_execution_result.jpg>
+Package pdftex.def Info: images/alloy_execution_result.jpg used on input line 1
+4.
+(pdftex.def)             Requested size: 350.0pt x 401.12889pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[63 <./images/alloy_execution_result.jpg>]
+<pdfs/alloy_world_1.pdf, id=1129, 597.51233pt x 845.0471pt>
+File: pdfs/alloy_world_1.pdf Graphic file (type pdf)
+
+<use pdfs/alloy_world_1.pdf>
+Package pdftex.def Info: pdfs/alloy_world_1.pdf used on input line 18.
+(pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
+File: pdfs/alloy_world_1.pdf Graphic file (type pdf)
+ <use pdfs/alloy_world_1.pdf>
+Package pdftex.def Info: pdfs/alloy_world_1.pdf used on input line 18.
+(pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
+
+<pdfs/alloy_world_1.pdf, id=1132, page=1, 597.51233pt x 845.0471pt>
+File: pdfs/alloy_world_1.pdf Graphic file (type pdf)
+
+<use pdfs/alloy_world_1.pdf, page 1>
+Package pdftex.def Info: pdfs/alloy_world_1.pdf, page1 used on input line 18.
+(pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
+File: pdfs/alloy_world_1.pdf Graphic file (type pdf)
+ <use pdfs/alloy_world_1.pdf, page 1>
+Package pdftex.def Info: pdfs/alloy_world_1.pdf, page1 used on input line 18.
+(pdftex.def)             Requested size: 567.63348pt x 802.7902pt.
+File: pdfs/alloy_world_1.pdf Graphic file (type pdf)
+
+<use pdfs/alloy_world_1.pdf, page 1>
+Package pdftex.def Info: pdfs/alloy_world_1.pdf, page1 used on input line 18.
+(pdftex.def)             Requested size: 567.63348pt x 802.7902pt.
+File: pdfs/alloy_world_1.pdf Graphic file (type pdf)
+ <use pdfs/alloy_world_1.pdf, page 1>
+Package pdftex.def Info: pdfs/alloy_world_1.pdf, page1 used on input line 18.
+(pdftex.def)             Requested size: 567.63348pt x 802.7902pt.
+File: pdfs/alloy_world_1.pdf Graphic file (type pdf)
+
+<use pdfs/alloy_world_1.pdf, page 1>
+Package pdftex.def Info: pdfs/alloy_world_1.pdf, page1 used on input line 18.
+(pdftex.def)             Requested size: 567.63348pt x 802.7902pt.
+ [64
+
+ <./pdfs/alloy_world_1.pdf>]
+<pdfs/alloy_world_2.pdf, id=1151, 597.51233pt x 845.0471pt>
+File: pdfs/alloy_world_2.pdf Graphic file (type pdf)
+
+<use pdfs/alloy_world_2.pdf>
+Package pdftex.def Info: pdfs/alloy_world_2.pdf used on input line 22.
+(pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
+File: pdfs/alloy_world_2.pdf Graphic file (type pdf)
+ <use pdfs/alloy_world_2.pdf>
+Package pdftex.def Info: pdfs/alloy_world_2.pdf used on input line 22.
+(pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
+
+<pdfs/alloy_world_2.pdf, id=1154, page=1, 597.51233pt x 845.0471pt>
+File: pdfs/alloy_world_2.pdf Graphic file (type pdf)
+
+<use pdfs/alloy_world_2.pdf, page 1>
+Package pdftex.def Info: pdfs/alloy_world_2.pdf, page1 used on input line 22.
+(pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
+File: pdfs/alloy_world_2.pdf Graphic file (type pdf)
+ <use pdfs/alloy_world_2.pdf, page 1>
+Package pdftex.def Info: pdfs/alloy_world_2.pdf, page1 used on input line 22.
+(pdftex.def)             Requested size: 567.63348pt x 802.7902pt.
+File: pdfs/alloy_world_2.pdf Graphic file (type pdf)
+
+<use pdfs/alloy_world_2.pdf, page 1>
+Package pdftex.def Info: pdfs/alloy_world_2.pdf, page1 used on input line 22.
+(pdftex.def)             Requested size: 567.63348pt x 802.7902pt.
+File: pdfs/alloy_world_2.pdf Graphic file (type pdf)
+ <use pdfs/alloy_world_2.pdf, page 1>
+Package pdftex.def Info: pdfs/alloy_world_2.pdf, page1 used on input line 22.
+(pdftex.def)             Requested size: 567.63348pt x 802.7902pt.
+File: pdfs/alloy_world_2.pdf Graphic file (type pdf)
+
+<use pdfs/alloy_world_2.pdf, page 1>
+Package pdftex.def Info: pdfs/alloy_world_2.pdf, page1 used on input line 22.
+(pdftex.def)             Requested size: 567.63348pt x 802.7902pt.
+ [65
+
+
+ <./pdfs/alloy_world_2.pdf>]
+<pdfs/alloy_world_3.pdf, id=1173, 597.51233pt x 845.0471pt>
+File: pdfs/alloy_world_3.pdf Graphic file (type pdf)
+
+<use pdfs/alloy_world_3.pdf>
+Package pdftex.def Info: pdfs/alloy_world_3.pdf used on input line 26.
+(pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
+File: pdfs/alloy_world_3.pdf Graphic file (type pdf)
+ <use pdfs/alloy_world_3.pdf>
+Package pdftex.def Info: pdfs/alloy_world_3.pdf used on input line 26.
+(pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
+
+<pdfs/alloy_world_3.pdf, id=1176, page=1, 597.51233pt x 845.0471pt>
+File: pdfs/alloy_world_3.pdf Graphic file (type pdf)
+
+<use pdfs/alloy_world_3.pdf, page 1>
+Package pdftex.def Info: pdfs/alloy_world_3.pdf, page1 used on input line 26.
+(pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
+File: pdfs/alloy_world_3.pdf Graphic file (type pdf)
+ <use pdfs/alloy_world_3.pdf, page 1>
+Package pdftex.def Info: pdfs/alloy_world_3.pdf, page1 used on input line 26.
+(pdftex.def)             Requested size: 567.63348pt x 802.7902pt.
+File: pdfs/alloy_world_3.pdf Graphic file (type pdf)
+
+<use pdfs/alloy_world_3.pdf, page 1>
+Package pdftex.def Info: pdfs/alloy_world_3.pdf, page1 used on input line 26.
+(pdftex.def)             Requested size: 567.63348pt x 802.7902pt.
+File: pdfs/alloy_world_3.pdf Graphic file (type pdf)
+ <use pdfs/alloy_world_3.pdf, page 1>
+Package pdftex.def Info: pdfs/alloy_world_3.pdf, page1 used on input line 26.
+(pdftex.def)             Requested size: 567.63348pt x 802.7902pt.
+File: pdfs/alloy_world_3.pdf Graphic file (type pdf)
+
+<use pdfs/alloy_world_3.pdf, page 1>
+Package pdftex.def Info: pdfs/alloy_world_3.pdf, page1 used on input line 26.
+(pdftex.def)             Requested size: 567.63348pt x 802.7902pt.
+ [66
+
+
+ <./pdfs/alloy_world_3.pdf>])
 Appendix D.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 57.
 [67
+
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 57.
@@ -1278,7 +1277,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 57.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 57.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 57.
 Package rerunfilecheck Info: File `1_RASD.out' has not changed.
-(rerunfilecheck)             Checksum: C350646EF26DC70D66EB867FBEBB7C6E;5236.
+(rerunfilecheck)             Checksum: 7A640B124F11765C0E35BDBEF8EBF74F;5239.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 57.
  ) 
 Here is how much of TeX's memory you used:
@@ -1288,7 +1287,7 @@ Here is how much of TeX's memory you used:
  11042 multiletter control sequences out of 15000+600000
  10180 words of font info for 36 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
- 44i,21n,51p,2494b,1880s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,21n,51p,2494b,1894s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
@@ -1296,7 +1295,7 @@ live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on 1_RASD.pdf (71 pages, 3743685 bytes).
+Output written on 1_RASD.pdf (71 pages, 3743926 bytes).
 PDF statistics:
  1333 PDF objects out of 1440 (max. 8388607)
  526 named destinations out of 1000 (max. 500000)

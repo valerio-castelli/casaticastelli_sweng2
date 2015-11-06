@@ -63,16 +63,16 @@
 \BOOKMARK [1][-]{section.1.A.4}{End a ride}{Appendix.1.A}% 63
 \BOOKMARK [1][-]{section.1.A.5}{Communicate taxi unavailability}{Appendix.1.A}% 64
 \BOOKMARK [1][-]{section.1.A.6}{Enter inside city}{Appendix.1.A}% 65
-\BOOKMARK [0][-]{Appendix.1.B}{Appendix Alloy}{}% 66
-\BOOKMARK [0][-]{Appendix.1.C}{Appendix UML diagrams}{}% 67
-\BOOKMARK [1][-]{section.1.C.1}{Use case diagram}{Appendix.1.C}% 68
-\BOOKMARK [1][-]{section.1.C.2}{Class diagram}{Appendix.1.C}% 69
-\BOOKMARK [1][-]{section.1.C.3}{Activity diagrams}{Appendix.1.C}% 70
-\BOOKMARK [2][-]{subsection.1.C.3.1}{Request a taxi}{section.1.C.3}% 71
-\BOOKMARK [2][-]{subsection.1.C.3.2}{Place a taxi reservation}{section.1.C.3}% 72
-\BOOKMARK [2][-]{subsection.1.C.3.3}{Reservation allocation}{section.1.C.3}% 73
-\BOOKMARK [2][-]{subsection.1.C.3.4}{Confirm a ride has ended}{section.1.C.3}% 74
-\BOOKMARK [2][-]{subsection.1.C.3.5}{Set a driver’s status to unavailable}{section.1.C.3}% 75
-\BOOKMARK [1][-]{section.1.C.4}{Sequence diagram}{Appendix.1.C}% 76
-\BOOKMARK [1][-]{section.1.C.5}{State chart diagram}{Appendix.1.C}% 77
-\BOOKMARK [0][-]{Appendix.1.D}{Appendix Work hours}{}% 78
+\BOOKMARK [0][-]{Appendix.1.B}{Appendix UML diagrams}{}% 66
+\BOOKMARK [1][-]{section.1.B.1}{Use case diagram}{Appendix.1.B}% 67
+\BOOKMARK [1][-]{section.1.B.2}{Class diagram}{Appendix.1.B}% 68
+\BOOKMARK [1][-]{section.1.B.3}{Activity diagrams}{Appendix.1.B}% 69
+\BOOKMARK [2][-]{subsection.1.B.3.1}{Request a taxi}{section.1.B.3}% 70
+\BOOKMARK [2][-]{subsection.1.B.3.2}{Place a taxi reservation}{section.1.B.3}% 71
+\BOOKMARK [2][-]{subsection.1.B.3.3}{Reservation allocation}{section.1.B.3}% 72
+\BOOKMARK [2][-]{subsection.1.B.3.4}{Confirm a ride has ended}{section.1.B.3}% 73
+\BOOKMARK [2][-]{subsection.1.B.3.5}{Set a driver’s status to unavailable}{section.1.B.3}% 74
+\BOOKMARK [1][-]{section.1.B.4}{Sequence diagram}{Appendix.1.B}% 75
+\BOOKMARK [1][-]{section.1.B.5}{State chart diagram}{Appendix.1.B}% 76
+\BOOKMARK [0][-]{Appendix.1.C}{Appendix Alloy}{}% 77
+\BOOKMARK [0][-]{Appendix.1.D}{Appendix Hours of work}{}% 78
