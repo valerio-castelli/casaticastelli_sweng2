@@ -62,7 +62,7 @@
 \contentsline {section}{\numberline {A.3}Allocate a reservation to a taxi}{28}{section.1.A.3}
 \contentsline {section}{\numberline {A.4}End a ride}{29}{section.1.A.4}
 \contentsline {section}{\numberline {A.5}Communicate taxi unavailability}{29}{section.1.A.5}
-\contentsline {section}{\numberline {A.6}A taxi enters the city}{30}{section.1.A.6}
+\contentsline {section}{\numberline {A.6}Enter inside city}{30}{section.1.A.6}
 \contentsline {chapter}{Appendix \numberline {B}Alloy}{31}{Appendix.1.B}
 \contentsline {chapter}{Appendix \numberline {C}UML diagrams}{42}{Appendix.1.C}
 \contentsline {section}{\numberline {C.1}Class diagram}{42}{section.1.C.1}

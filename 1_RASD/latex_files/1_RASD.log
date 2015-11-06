@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.2)  6 NOV 2015 14:41
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.2)  6 NOV 2015 14:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -978,9 +978,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 52.
  (./1_RASD.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 52.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 52.
-Package rerunfilecheck Info: File `1_RASD.out' has not changed.
-(rerunfilecheck)             Checksum: 57D3C613B918DD2A3F167EBD66D2DEFF;4813.
 
+
+Package rerunfilecheck Warning: File `1_RASD.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `1_RASD.out':
+(rerunfilecheck)             Before: 57D3C613B918DD2A3F167EBD66D2DEFF;4813
+(rerunfilecheck)             After:  E8D242D9AD2CC365EABA2F9B8B86DA09;4808.
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -1001,7 +1007,7 @@ ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on 1_RASD.pdf (53 pages, 1034499 bytes).
+Output written on 1_RASD.pdf (53 pages, 1034490 bytes).
 PDF statistics:
  1102 PDF objects out of 1200 (max. 8388607)
  485 named destinations out of 1000 (max. 500000)
