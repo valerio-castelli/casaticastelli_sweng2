@@ -68,11 +68,12 @@
 \BOOKMARK [1][-]{section.1.C.1}{Use case diagram}{Appendix.1.C}% 68
 \BOOKMARK [1][-]{section.1.C.2}{Class diagram}{Appendix.1.C}% 69
 \BOOKMARK [1][-]{section.1.C.3}{Activity diagrams}{Appendix.1.C}% 70
-\BOOKMARK [2][-]{subsection.1.C.3.1}{bla bla bla}{section.1.C.3}% 71
-\BOOKMARK [2][-]{subsection.1.C.3.2}{bla bla bla}{section.1.C.3}% 72
-\BOOKMARK [2][-]{subsection.1.C.3.3}{bla bla bla}{section.1.C.3}% 73
-\BOOKMARK [2][-]{subsection.1.C.3.4}{bla bla bla}{section.1.C.3}% 74
-\BOOKMARK [2][-]{subsection.1.C.3.5}{bla bla bla}{section.1.C.3}% 75
-\BOOKMARK [1][-]{section.1.C.4}{Statechart diagram}{Appendix.1.C}% 76
-\BOOKMARK [0][-]{Appendix.1.D}{Appendix Work hours}{}% 77
-\BOOKMARK [0][-]{Appendix.1.E}{Appendix Tries}{}% 78
+\BOOKMARK [2][-]{subsection.1.C.3.1}{Request a taxi}{section.1.C.3}% 71
+\BOOKMARK [2][-]{subsection.1.C.3.2}{Place a taxi reservation}{section.1.C.3}% 72
+\BOOKMARK [2][-]{subsection.1.C.3.3}{Reservation allocation}{section.1.C.3}% 73
+\BOOKMARK [2][-]{subsection.1.C.3.4}{Confirm a ride has ended}{section.1.C.3}% 74
+\BOOKMARK [2][-]{subsection.1.C.3.5}{Set a driver’s status to unavailable}{section.1.C.3}% 75
+\BOOKMARK [1][-]{section.1.C.4}{Sequence diagram}{Appendix.1.C}% 76
+\BOOKMARK [1][-]{section.1.C.5}{Statechart diagram}{Appendix.1.C}% 77
+\BOOKMARK [0][-]{Appendix.1.D}{Appendix Work hours}{}% 78
+\BOOKMARK [0][-]{Appendix.1.E}{Appendix Tries}{}% 79
