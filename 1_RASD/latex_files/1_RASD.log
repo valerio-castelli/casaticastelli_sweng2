@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.2)  6 NOV 2015 20:12
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.2)  6 NOV 2015 20:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -364,18 +364,22 @@ LaTeX Info: Redefining \nameref on input line 4.
 \MPnumerator=\count128
 \makeMPintoPDFobject=\count129
 \everyMPtoPDFconversion=\toks23
-)
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 14.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 14.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 14.
- [1
+) <polimi_logo.png, id=3, 419.31656pt x 417.81094pt>
+File: polimi_logo.png Graphic file (type png)
+ <use polimi_logo.png>
+Package pdftex.def Info: polimi_logo.png used on input line 31.
+(pdftex.def)             Requested size: 150.0pt x 149.4619pt.
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./1_RASD.toc
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./polimi_logo.png>]
+(./1_RASD.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.95> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 2.
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
 been already used, duplicate ignored
 <to be read again> 
@@ -497,21 +501,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [12]
 Chapter 3.
 (./chapters/specific_requirements.tex
-<images/guest_home.png, id=466, 643.40375pt x 381.425pt>
+<images/guest_home.png, id=233, 643.40375pt x 381.425pt>
 File: images/guest_home.png Graphic file (type png)
 
 <use images/guest_home.png>
 Package pdftex.def Info: images/guest_home.png used on input line 5.
 (pdftex.def)             Requested size: 300.0pt x 177.84967pt.
 
-<images/guest_login.png, id=468, 643.40375pt x 399.4925pt>
+<images/guest_login.png, id=235, 643.40375pt x 399.4925pt>
 File: images/guest_login.png Graphic file (type png)
 
 <use images/guest_login.png>
 Package pdftex.def Info: images/guest_login.png used on input line 7.
 (pdftex.def)             Requested size: 300.0pt x 186.27412pt.
 
-<images/user_call.png, id=469, 711.65875pt x 436.63126pt> [13
+<images/user_call.png, id=236, 711.65875pt x 436.63126pt> [13
 
  <./images/guest_home.png>]
 File: images/user_call.png Graphic file (type png)
@@ -519,21 +523,21 @@ File: images/user_call.png Graphic file (type png)
 Package pdftex.def Info: images/user_call.png used on input line 9.
 (pdftex.def)             Requested size: 300.0pt x 184.05678pt.
 
-<images/user_confirm.png, id=476, 764.8575pt x 483.8075pt>
+<images/user_confirm.png, id=243, 764.8575pt x 483.8075pt>
 File: images/user_confirm.png Graphic file (type png)
 
 <use images/user_confirm.png>
 Package pdftex.def Info: images/user_confirm.png used on input line 11.
 (pdftex.def)             Requested size: 300.0pt x 189.76198pt.
 
-<images/user_home.png, id=477, 764.8575pt x 483.8075pt>
+<images/user_home.png, id=244, 764.8575pt x 483.8075pt>
 File: images/user_home.png Graphic file (type png)
 
 <use images/user_home.png>
 Package pdftex.def Info: images/user_home.png used on input line 13.
 (pdftex.def)             Requested size: 300.0pt x 189.76198pt.
 
-<images/user_reservation.png, id=478, 875.27pt x 512.91624pt>
+<images/user_reservation.png, id=245, 875.27pt x 512.91624pt>
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -547,14 +551,14 @@ File: images/user_reservation.png Graphic file (type png)
 Package pdftex.def Info: images/user_reservation.png used on input line 15.
 (pdftex.def)             Requested size: 300.0pt x 175.8058pt.
 
-<images/taxi_accepted_ride.png, id=486, 382.42876pt x 650.43pt>
+<images/taxi_accepted_ride.png, id=253, 382.42876pt x 650.43pt>
 File: images/taxi_accepted_ride.png Graphic file (type png)
 
 <use images/taxi_accepted_ride.png>
 Package pdftex.def Info: images/taxi_accepted_ride.png used on input line 17.
 (pdftex.def)             Requested size: 150.0pt x 255.11569pt.
 
-<images/taxi_available.png, id=487, 382.42876pt x 650.43pt>
+<images/taxi_available.png, id=254, 382.42876pt x 650.43pt>
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -568,14 +572,14 @@ File: images/taxi_available.png Graphic file (type png)
 Package pdftex.def Info: images/taxi_available.png used on input line 19.
 (pdftex.def)             Requested size: 150.0pt x 255.11569pt.
 
-<images/taxi_login.png, id=495, 382.42876pt x 650.43pt>
+<images/taxi_login.png, id=262, 382.42876pt x 650.43pt>
 File: images/taxi_login.png Graphic file (type png)
 
 <use images/taxi_login.png>
 Package pdftex.def Info: images/taxi_login.png used on input line 21.
 (pdftex.def)             Requested size: 150.0pt x 255.11569pt.
 
-<images/taxi_meeting.png, id=496, 382.42876pt x 650.43pt>
+<images/taxi_meeting.png, id=263, 382.42876pt x 650.43pt>
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -589,14 +593,14 @@ File: images/taxi_meeting.png Graphic file (type png)
 Package pdftex.def Info: images/taxi_meeting.png used on input line 23.
 (pdftex.def)             Requested size: 150.0pt x 255.11569pt.
 
-<images/taxi_new_ride.png, id=503, 382.42876pt x 650.43pt>
+<images/taxi_new_ride.png, id=270, 382.42876pt x 650.43pt>
 File: images/taxi_new_ride.png Graphic file (type png)
 
 <use images/taxi_new_ride.png>
 Package pdftex.def Info: images/taxi_new_ride.png used on input line 25.
 (pdftex.def)             Requested size: 150.0pt x 255.11569pt.
 
-<images/taxi_unavailable.png, id=504, 382.42876pt x 650.43pt>
+<images/taxi_unavailable.png, id=271, 382.42876pt x 650.43pt>
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -943,7 +947,7 @@ Appendix C.
 (./chapters/uml.tex [47
 
 ]
-<pdfs/use_case.pdf, id=997, 806.01125pt x 442.65375pt>
+<pdfs/use_case.pdf, id=764, 806.01125pt x 442.65375pt>
 File: pdfs/use_case.pdf Graphic file (type pdf)
  <use pdfs/use_case.pdf>
 Package pdftex.def Info: pdfs/use_case.pdf used on input line 3.
@@ -954,7 +958,7 @@ File: pdfs/use_case.pdf Graphic file (type pdf)
 Package pdftex.def Info: pdfs/use_case.pdf used on input line 3.
 (pdftex.def)             Requested size: 806.00928pt x 442.65265pt.
 
-<pdfs/use_case.pdf, id=1000, page=1, 806.01125pt x 442.65375pt>
+<pdfs/use_case.pdf, id=767, page=1, 806.01125pt x 442.65375pt>
 File: pdfs/use_case.pdf Graphic file (type pdf)
 
 <use pdfs/use_case.pdf, page 1>
@@ -989,7 +993,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [49
 
-] <pdfs/class_diagram.pdf, id=1012, 806.01125pt x 512.91624pt>
+] <pdfs/class_diagram.pdf, id=779, 806.01125pt x 512.91624pt>
 File: pdfs/class_diagram.pdf Graphic file (type pdf)
 
 <use pdfs/class_diagram.pdf>
@@ -1000,7 +1004,7 @@ File: pdfs/class_diagram.pdf Graphic file (type pdf)
 Package pdftex.def Info: pdfs/class_diagram.pdf used on input line 11.
 (pdftex.def)             Requested size: 806.00928pt x 512.915pt.
 
-<pdfs/class_diagram.pdf, id=1015, page=1, 806.01125pt x 512.91624pt>
+<pdfs/class_diagram.pdf, id=782, page=1, 806.01125pt x 512.91624pt>
 File: pdfs/class_diagram.pdf Graphic file (type pdf)
 
 <use pdfs/class_diagram.pdf, page 1>
@@ -1027,14 +1031,14 @@ Package pdftex.def Info: pdfs/class_diagram.pdf, page1 used on input line 11.
  [50
 
  <./pdfs/class_diagram.pdf>]
-<pdfs/01_call_taxi.pdf, id=1023, 1231.60126pt x 1690.315pt>
+<pdfs/01_call_taxi.pdf, id=790, 1231.60126pt x 1690.315pt>
 File: pdfs/01_call_taxi.pdf Graphic file (type pdf)
 
 <use pdfs/01_call_taxi.pdf>
 Package pdftex.def Info: pdfs/01_call_taxi.pdf used on input line 19.
 (pdftex.def)             Requested size: 360.0pt x 494.07341pt.
 
-<pdfs/02_reserve_taxi.pdf, id=1024, 546.04pt x 827.09pt>
+<pdfs/02_reserve_taxi.pdf, id=791, 546.04pt x 827.09pt>
 File: pdfs/02_reserve_taxi.pdf Graphic file (type pdf)
 
 <use pdfs/02_reserve_taxi.pdf>
@@ -1050,7 +1054,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [51
 
  <./pdfs/01_call_taxi.pdf>]
-<pdfs/03_allocate_taxi.pdf, id=1033, 887.315pt x 1589.94pt>
+<pdfs/03_allocate_taxi.pdf, id=800, 887.315pt x 1589.94pt>
 File: pdfs/03_allocate_taxi.pdf Graphic file (type pdf)
 
 <use pdfs/03_allocate_taxi.pdf>
@@ -1064,7 +1068,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [52 <./pdfs/02_reserve_taxi.pdf>]
-<pdfs/04_end_ride.pdf, id=1041, 1088.065pt x 1579.9025pt>
+<pdfs/04_end_ride.pdf, id=808, 1088.065pt x 1579.9025pt>
 File: pdfs/04_end_ride.pdf Graphic file (type pdf)
 
 <use pdfs/04_end_ride.pdf>
@@ -1078,7 +1082,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [53 <./pdfs/03_allocate_taxi.pdf>]
-<pdfs/05_unavailable.pdf, id=1049, 606.265pt x 1148.29pt>
+<pdfs/05_unavailable.pdf, id=816, 606.265pt x 1148.29pt>
 File: pdfs/05_unavailable.pdf Graphic file (type pdf)
 
 <use pdfs/05_unavailable.pdf>
@@ -1092,7 +1096,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [54 <./pdfs/04_end_ride.pdf>]
-<pdfs/statechart.pdf, id=1057, 722.7pt x 552.0625pt>
+<pdfs/statechart.pdf, id=824, 722.7pt x 552.0625pt>
 File: pdfs/statechart.pdf Graphic file (type pdf)
  <use pdfs/statechart.pdf>
 Package pdftex.def Info: pdfs/statechart.pdf used on input line 57.
@@ -1117,36 +1121,43 @@ Appendix D.
 
 ]
 Appendix E.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 51.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 94.
 [58
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 51.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 94.
  (./1_RASD.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 51.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 51.
-Package rerunfilecheck Info: File `1_RASD.out' has not changed.
-(rerunfilecheck)             Checksum: B250B66C0D1C7AA91CAE85CC155A6C88;5153.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 51.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 94.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 94.
+
+
+Package rerunfilecheck Warning: File `1_RASD.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `1_RASD.out':
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  B250B66C0D1C7AA91CAE85CC155A6C88;5153.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 94.
  ) 
 Here is how much of TeX's memory you used:
- 8414 strings out of 494967
- 125345 string characters out of 6179868
- 311981 words of memory out of 5000000
- 11007 multiletter control sequences out of 15000+600000
- 10191 words of font info for 36 fonts, out of 8000000 for 9000
+ 8339 strings out of 494967
+ 124168 string characters out of 6179868
+ 311725 words of memory out of 5000000
+ 10931 multiletter control sequences out of 15000+600000
+ 10180 words of font info for 36 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
  44i,21n,51p,2494b,1878s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on 1_RASD.pdf (62 pages, 2546516 bytes).
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on 1_RASD.pdf (62 pages, 2581130 bytes).
 PDF statistics:
- 1211 PDF objects out of 1440 (max. 8388607)
+ 977 PDF objects out of 1000 (max. 8388607)
  500 named destinations out of 1000 (max. 500000)
- 755 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 136 words of extra memory for PDF output out of 10000 (max. 10000000)
 
