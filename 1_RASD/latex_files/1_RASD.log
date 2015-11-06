@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.2)  6 NOV 2015 21:07
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.2)  6 NOV 2015 21:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -367,7 +367,7 @@ LaTeX Info: Redefining \nameref on input line 4.
 ) <polimi_logo.png, id=315, 419.31656pt x 417.81094pt>
 File: polimi_logo.png Graphic file (type png)
  <use polimi_logo.png>
-Package pdftex.def Info: polimi_logo.png used on input line 31.
+Package pdftex.def Info: polimi_logo.png used on input line 7.
 (pdftex.def)             Requested size: 150.0pt x 149.4619pt.
 
 [1
@@ -1079,17 +1079,17 @@ Appendix D.
 
 ]
 Appendix E.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 94.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 68.
 [58
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 94.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 68.
  (./1_RASD.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 94.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 94.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 68.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 68.
 Package rerunfilecheck Info: File `1_RASD.out' has not changed.
 (rerunfilecheck)             Checksum: B250B66C0D1C7AA91CAE85CC155A6C88;5153.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 94.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 68.
  ) 
 Here is how much of TeX's memory you used:
  8418 strings out of 494967
