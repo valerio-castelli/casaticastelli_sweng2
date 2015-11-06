@@ -57,6 +57,12 @@
 \contentsline {subsection}{\numberline {3.6.6}Scenario 6}{24}{subsection.3.6.6}
 \contentsline {subsection}{\numberline {3.6.7}Scenario 7}{25}{subsection.3.6.7}
 \contentsline {chapter}{Appendix \numberline {A}Use cases}{26}{Appendix.1.A}
+\contentsline {section}{\numberline {A.1}Request a taxi}{26}{section.1.A.1}
+\contentsline {section}{\numberline {A.2}Reserve a taxi via the web application}{27}{section.1.A.2}
+\contentsline {section}{\numberline {A.3}Allocate a reservation to a taxi}{28}{section.1.A.3}
+\contentsline {section}{\numberline {A.4}End a ride}{29}{section.1.A.4}
+\contentsline {section}{\numberline {A.5}Communicate taxi unavailability}{29}{section.1.A.5}
+\contentsline {section}{\numberline {A.6}A taxi enters the city}{30}{section.1.A.6}
 \contentsline {chapter}{Appendix \numberline {B}Alloy}{31}{Appendix.1.B}
 \contentsline {chapter}{Appendix \numberline {C}UML diagrams}{42}{Appendix.1.C}
 \contentsline {section}{\numberline {C.1}Class diagram}{42}{section.1.C.1}

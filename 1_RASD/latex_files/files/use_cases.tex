@@ -1,3 +1,4 @@
+\section{Request a taxi}
 \begin{center}
 \begin{longtable}{|l| p{9cm}|}
 \hline
@@ -40,8 +41,11 @@ Exceptions &
 - If the passenger doesn't show up at the meeting location, the taxi driver clicks on the “drop call” button. The system will then notify the user that his request has been dropped. \\
 \hline
 \end{longtable}
+\end{center}
 
 
+\section{Reserve a taxi via the web application}
+\begin{center}
 \begin{longtable}{|l| p{9cm}|}
 \hline
 Name &
@@ -67,8 +71,11 @@ Exceptions &
 - If one of the inserted fields in incorrect, the app requests the passenger to insert it again. \\
 \hline
 \end{longtable}
+\end{center}
 
 
+\section{Allocate a reservation to a taxi}
+\begin{center}
 \begin{longtable}{|l| p{9cm}|}
 \hline
 Name &
@@ -109,7 +116,11 @@ Exceptions &
 - If the passenger doesn't show up at the meeting location, the taxi driver clicks on the “drop call” button. The system will then notify the user that his request has been dropped. \\
 \hline
 \end{longtable}
+\end{center}
 
+
+\section{End a ride}
+\begin{center}
 \begin{longtable}{|l| p{9cm}|}
 \hline
 Name &
@@ -135,7 +146,11 @@ Exceptions &
 - If the taxi driver has concluded his ride outside the city, when he presses the “confirm ride ended” button the system will change his status to “outside city” and move his taxi code to the corresponding queue.\\
 \hline
 \end{longtable}
+\end{center}
 
+
+\section{Communicate taxi unavailability}
+\begin{center}
 \begin{longtable}{|l| p{9cm}|}
 \hline
 Name &
@@ -163,9 +178,11 @@ Exceptions &
 - If the system cannot notify the taxi driver, it has to retry to forward the notification for a fixed number of times. \\
 \hline
 \end{longtable}
+\end{center}
 
 
-
+\section{A taxi enters the city}
+\begin{center}
 \begin{longtable}{|l| p{9cm}|}
 \hline
 Name &
@@ -193,7 +210,4 @@ Exceptions &
 - If the taxi driver had set himself as unavailable while being outside the city, the system does not update his status and keeps his taxi code in the unavailability list.\\
 \hline
 \end{longtable}
-
-
-
 \end{center}

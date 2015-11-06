@@ -57,11 +57,17 @@
 \BOOKMARK [2][-]{subsection.3.6.6}{Scenario 6}{section.3.6}% 57
 \BOOKMARK [2][-]{subsection.3.6.7}{Scenario 7}{section.3.6}% 58
 \BOOKMARK [0][-]{Appendix.1.A}{Appendix Use cases}{}% 59
-\BOOKMARK [0][-]{Appendix.1.B}{Appendix Alloy}{}% 60
-\BOOKMARK [0][-]{Appendix.1.C}{Appendix UML diagrams}{}% 61
-\BOOKMARK [1][-]{section.1.C.1}{Class diagram}{Appendix.1.C}% 62
-\BOOKMARK [1][-]{section.1.C.2}{Activity diagrams}{Appendix.1.C}% 63
-\BOOKMARK [1][-]{section.1.C.3}{Statechart diagram}{Appendix.1.C}% 64
-\BOOKMARK [1][-]{section.1.C.4}{Use case diagram}{Appendix.1.C}% 65
-\BOOKMARK [0][-]{Appendix.1.D}{Appendix Work hours}{}% 66
-\BOOKMARK [0][-]{Appendix.1.E}{Appendix Tries}{}% 67
+\BOOKMARK [1][-]{section.1.A.1}{Request a taxi}{Appendix.1.A}% 60
+\BOOKMARK [1][-]{section.1.A.2}{Reserve a taxi via the web application}{Appendix.1.A}% 61
+\BOOKMARK [1][-]{section.1.A.3}{Allocate a reservation to a taxi}{Appendix.1.A}% 62
+\BOOKMARK [1][-]{section.1.A.4}{End a ride}{Appendix.1.A}% 63
+\BOOKMARK [1][-]{section.1.A.5}{Communicate taxi unavailability}{Appendix.1.A}% 64
+\BOOKMARK [1][-]{section.1.A.6}{A taxi enters the city}{Appendix.1.A}% 65
+\BOOKMARK [0][-]{Appendix.1.B}{Appendix Alloy}{}% 66
+\BOOKMARK [0][-]{Appendix.1.C}{Appendix UML diagrams}{}% 67
+\BOOKMARK [1][-]{section.1.C.1}{Class diagram}{Appendix.1.C}% 68
+\BOOKMARK [1][-]{section.1.C.2}{Activity diagrams}{Appendix.1.C}% 69
+\BOOKMARK [1][-]{section.1.C.3}{Statechart diagram}{Appendix.1.C}% 70
+\BOOKMARK [1][-]{section.1.C.4}{Use case diagram}{Appendix.1.C}% 71
+\BOOKMARK [0][-]{Appendix.1.D}{Appendix Work hours}{}% 72
+\BOOKMARK [0][-]{Appendix.1.E}{Appendix Tries}{}% 73

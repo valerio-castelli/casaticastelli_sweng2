@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.2)  6 NOV 2015 14:32
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.2)  6 NOV 2015 14:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -377,7 +377,14 @@ been already used, duplicate ignored
 l.33 ...rline {3.2.3}Goal 3}{14}{subsection.3.2.3}
                                                    [1
 
-])
+]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[2])
 \tf@toc=\write4
 \openout4 = `1_RASD.toc'.
 
@@ -388,7 +395,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2]
+[3]
 Chapter 1.
 (./files/introduction.tex [1
 
@@ -605,7 +612,7 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
 
-Underfull \vbox (badness 10000) detected at line 42
+Underfull \vbox (badness 10000) detected at line 43
  []
 
 [26
@@ -624,7 +631,7 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
 
-Underfull \vbox (badness 10000) detected at line 69
+Underfull \vbox (badness 10000) detected at line 73
  []
 
 Missing character: There is no ‚ in font cmr10!
@@ -651,10 +658,6 @@ Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
-
-Underfull \vbox (badness 10000) detected at line 111
- []
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -662,26 +665,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [27]
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ú in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ú in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ú in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-
-Underfull \vbox (badness 10000) detected at line 137
+Underfull \vbox (badness 10000) detected at line 118
  []
 
 
@@ -703,15 +687,30 @@ Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
 
-Underfull \vbox (badness 10000) detected at line 165
+Underfull \vbox (badness 10000) detected at line 148
  []
 
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
 
-Underfull \vbox (badness 10000) detected at line 195
+Underfull \vbox (badness 10000) detected at line 180
  []
 
 
@@ -720,7 +719,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[29])
+[29]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+
+Underfull \vbox (badness 10000) detected at line 212
+ []
+
+)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -819,13 +826,13 @@ Appendix D.
 Appendix E.
 [44
 
-] <files/index.png, id=899, 1540.75626pt x 847.165pt>
+] <files/index.png, id=933, 1540.75626pt x 847.165pt>
 File: files/index.png Graphic file (type png)
  <use files/index.png>
 Package pdftex.def Info: files/index.png used on input line 41.
 (pdftex.def)             Requested size: 850.0pt x 467.3512pt.
 
-<files/use_case.pdf, id=901, 806.01125pt x 442.65375pt>
+<files/use_case.pdf, id=935, 806.01125pt x 442.65375pt>
 File: files/use_case.pdf Graphic file (type pdf)
 
 <use files/use_case.pdf>
@@ -870,7 +877,7 @@ File: files/use_case.pdf Graphic file (type pdf)
 Package pdftex.def Info: files/use_case.pdf used on input line 45.
 (pdftex.def)             Requested size: 806.00928pt x 442.65265pt.
 
-<files/use_case.pdf, id=917, page=1, 806.01125pt x 442.65375pt>
+<files/use_case.pdf, id=951, page=1, 806.01125pt x 442.65375pt>
 File: files/use_case.pdf Graphic file (type pdf)
 
 <use files/use_case.pdf, page 1>
@@ -897,7 +904,7 @@ Package pdftex.def Info: files/use_case.pdf, page1 used on input line 45.
  [47
 
  <./files/use_case.pdf>]
-<files/document.pdf, id=925, 806.01125pt x 1106.1325pt>
+<files/document.pdf, id=959, 806.01125pt x 1106.1325pt>
 File: files/document.pdf Graphic file (type pdf)
 
 <use files/document.pdf>
@@ -908,7 +915,7 @@ File: files/document.pdf Graphic file (type pdf)
 Package pdftex.def Info: files/document.pdf used on input line 46.
 (pdftex.def)             Requested size: 806.00928pt x 1106.1298pt.
 
-<files/document.pdf, id=928, page=1, 806.01125pt x 1106.1325pt>
+<files/document.pdf, id=962, page=1, 806.01125pt x 1106.1325pt>
 File: files/document.pdf Graphic file (type pdf)
 
 <use files/document.pdf, page 1>
@@ -972,7 +979,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 52.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 52.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 52.
 Package rerunfilecheck Info: File `1_RASD.out' has not changed.
-(rerunfilecheck)             Checksum: E708DFF17F41346DA75F94AAD4945E8A;4354.
+(rerunfilecheck)             Checksum: 57D3C613B918DD2A3F167EBD66D2DEFF;4813.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -980,13 +987,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 52.
  ) 
 Here is how much of TeX's memory you used:
- 8301 strings out of 494967
- 122387 string characters out of 6179868
- 311389 words of memory out of 5000000
- 10942 multiletter control sequences out of 15000+600000
+ 8314 strings out of 494967
+ 122563 string characters out of 6179868
+ 311405 words of memory out of 5000000
+ 10948 multiletter control sequences out of 15000+600000
  10191 words of font info for 36 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
- 40i,18n,49p,2491b,1941s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 40i,18n,49p,2491b,1955s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
@@ -994,9 +1001,9 @@ ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on 1_RASD.pdf (52 pages, 1029949 bytes).
+Output written on 1_RASD.pdf (53 pages, 1034499 bytes).
 PDF statistics:
- 1067 PDF objects out of 1200 (max. 8388607)
- 478 named destinations out of 1000 (max. 500000)
- 592 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1102 PDF objects out of 1200 (max. 8388607)
+ 485 named destinations out of 1000 (max. 500000)
+ 640 words of extra memory for PDF output out of 10000 (max. 10000000)
 
