@@ -69,8 +69,11 @@
 \contentsline {section}{\numberline {C.1}Use case diagram}{47}{section.1.C.1}
 \contentsline {section}{\numberline {C.2}Class diagram}{49}{section.1.C.2}
 \contentsline {section}{\numberline {C.3}Activity diagrams}{51}{section.1.C.3}
-\contentsline {subsection}{\numberline {C.3.1}bla bla bla}{53}{subsection.1.C.3.1}
-\contentsline {subsection}{\numberline {C.3.2}bla bla bla}{55}{subsection.1.C.3.2}
+\contentsline {subsection}{\numberline {C.3.1}bla bla bla}{51}{subsection.1.C.3.1}
+\contentsline {subsection}{\numberline {C.3.2}bla bla bla}{52}{subsection.1.C.3.2}
+\contentsline {subsection}{\numberline {C.3.3}bla bla bla}{53}{subsection.1.C.3.3}
+\contentsline {subsection}{\numberline {C.3.4}bla bla bla}{54}{subsection.1.C.3.4}
+\contentsline {subsection}{\numberline {C.3.5}bla bla bla}{55}{subsection.1.C.3.5}
 \contentsline {section}{\numberline {C.4}Statechart diagram}{56}{section.1.C.4}
 \contentsline {chapter}{Appendix \numberline {D}Work hours}{57}{Appendix.1.D}
 \contentsline {chapter}{Appendix \numberline {E}Tries}{58}{Appendix.1.E}
