@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.2)  6 NOV 2015 22:33
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.2)  6 NOV 2015 22:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -944,17 +944,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[47] <pdfs/alloy_world_1.pdf, id=1019, 597.51233pt x 845.0471pt>
-File: pdfs/alloy_world_1.pdf Graphic file (type pdf)
-
-<use pdfs/alloy_world_1.pdf>
-Package pdftex.def Info: pdfs/alloy_world_1.pdf used on input line 15.
-(pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
-File: pdfs/alloy_world_1.pdf Graphic file (type pdf)
- <use pdfs/alloy_world_1.pdf>
-Package pdftex.def Info: pdfs/alloy_world_1.pdf used on input line 15.
-(pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
-
+[47]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -962,103 +952,117 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [48 <./images/alloy_execution_result.jpg>]
+<pdfs/alloy_world_1.pdf, id=1023, 597.51233pt x 845.0471pt>
+File: pdfs/alloy_world_1.pdf Graphic file (type pdf)
+
+<use pdfs/alloy_world_1.pdf>
+Package pdftex.def Info: pdfs/alloy_world_1.pdf used on input line 16.
+(pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
+File: pdfs/alloy_world_1.pdf Graphic file (type pdf)
+ <use pdfs/alloy_world_1.pdf>
+Package pdftex.def Info: pdfs/alloy_world_1.pdf used on input line 16.
+(pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
+
 <pdfs/alloy_world_1.pdf, id=1026, page=1, 597.51233pt x 845.0471pt>
 File: pdfs/alloy_world_1.pdf Graphic file (type pdf)
 
 <use pdfs/alloy_world_1.pdf, page 1>
-Package pdftex.def Info: pdfs/alloy_world_1.pdf, page1 used on input line 15.
+Package pdftex.def Info: pdfs/alloy_world_1.pdf, page1 used on input line 16.
 (pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
 File: pdfs/alloy_world_1.pdf Graphic file (type pdf)
  <use pdfs/alloy_world_1.pdf, page 1>
-Package pdftex.def Info: pdfs/alloy_world_1.pdf, page1 used on input line 15.
+Package pdftex.def Info: pdfs/alloy_world_1.pdf, page1 used on input line 16.
 (pdftex.def)             Requested size: 567.63348pt x 802.7902pt.
 File: pdfs/alloy_world_1.pdf Graphic file (type pdf)
 
 <use pdfs/alloy_world_1.pdf, page 1>
-Package pdftex.def Info: pdfs/alloy_world_1.pdf, page1 used on input line 15.
+Package pdftex.def Info: pdfs/alloy_world_1.pdf, page1 used on input line 16.
 (pdftex.def)             Requested size: 567.63348pt x 802.7902pt.
 File: pdfs/alloy_world_1.pdf Graphic file (type pdf)
  <use pdfs/alloy_world_1.pdf, page 1>
-Package pdftex.def Info: pdfs/alloy_world_1.pdf, page1 used on input line 15.
+Package pdftex.def Info: pdfs/alloy_world_1.pdf, page1 used on input line 16.
 (pdftex.def)             Requested size: 567.63348pt x 802.7902pt.
 File: pdfs/alloy_world_1.pdf Graphic file (type pdf)
 
 <use pdfs/alloy_world_1.pdf, page 1>
-Package pdftex.def Info: pdfs/alloy_world_1.pdf, page1 used on input line 15.
+Package pdftex.def Info: pdfs/alloy_world_1.pdf, page1 used on input line 16.
 (pdftex.def)             Requested size: 567.63348pt x 802.7902pt.
- [49 <./pdfs/alloy_world_1.pdf>]
+ [49
+
+ <./pdfs/alloy_world_1.pdf>]
 <pdfs/alloy_world_2.pdf, id=1045, 597.51233pt x 845.0471pt>
 File: pdfs/alloy_world_2.pdf Graphic file (type pdf)
 
 <use pdfs/alloy_world_2.pdf>
-Package pdftex.def Info: pdfs/alloy_world_2.pdf used on input line 18.
+Package pdftex.def Info: pdfs/alloy_world_2.pdf used on input line 20.
 (pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
 File: pdfs/alloy_world_2.pdf Graphic file (type pdf)
  <use pdfs/alloy_world_2.pdf>
-Package pdftex.def Info: pdfs/alloy_world_2.pdf used on input line 18.
+Package pdftex.def Info: pdfs/alloy_world_2.pdf used on input line 20.
 (pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
 
 <pdfs/alloy_world_2.pdf, id=1048, page=1, 597.51233pt x 845.0471pt>
 File: pdfs/alloy_world_2.pdf Graphic file (type pdf)
 
 <use pdfs/alloy_world_2.pdf, page 1>
-Package pdftex.def Info: pdfs/alloy_world_2.pdf, page1 used on input line 18.
+Package pdftex.def Info: pdfs/alloy_world_2.pdf, page1 used on input line 20.
 (pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
 File: pdfs/alloy_world_2.pdf Graphic file (type pdf)
  <use pdfs/alloy_world_2.pdf, page 1>
-Package pdftex.def Info: pdfs/alloy_world_2.pdf, page1 used on input line 18.
+Package pdftex.def Info: pdfs/alloy_world_2.pdf, page1 used on input line 20.
 (pdftex.def)             Requested size: 567.63348pt x 802.7902pt.
 File: pdfs/alloy_world_2.pdf Graphic file (type pdf)
 
 <use pdfs/alloy_world_2.pdf, page 1>
-Package pdftex.def Info: pdfs/alloy_world_2.pdf, page1 used on input line 18.
+Package pdftex.def Info: pdfs/alloy_world_2.pdf, page1 used on input line 20.
 (pdftex.def)             Requested size: 567.63348pt x 802.7902pt.
 File: pdfs/alloy_world_2.pdf Graphic file (type pdf)
  <use pdfs/alloy_world_2.pdf, page 1>
-Package pdftex.def Info: pdfs/alloy_world_2.pdf, page1 used on input line 18.
+Package pdftex.def Info: pdfs/alloy_world_2.pdf, page1 used on input line 20.
 (pdftex.def)             Requested size: 567.63348pt x 802.7902pt.
 File: pdfs/alloy_world_2.pdf Graphic file (type pdf)
 
 <use pdfs/alloy_world_2.pdf, page 1>
-Package pdftex.def Info: pdfs/alloy_world_2.pdf, page1 used on input line 18.
+Package pdftex.def Info: pdfs/alloy_world_2.pdf, page1 used on input line 20.
 (pdftex.def)             Requested size: 567.63348pt x 802.7902pt.
  [50
+
 
  <./pdfs/alloy_world_2.pdf>]
 <pdfs/alloy_world_3.pdf, id=1067, 597.51233pt x 845.0471pt>
 File: pdfs/alloy_world_3.pdf Graphic file (type pdf)
 
 <use pdfs/alloy_world_3.pdf>
-Package pdftex.def Info: pdfs/alloy_world_3.pdf used on input line 22.
+Package pdftex.def Info: pdfs/alloy_world_3.pdf used on input line 24.
 (pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
 File: pdfs/alloy_world_3.pdf Graphic file (type pdf)
  <use pdfs/alloy_world_3.pdf>
-Package pdftex.def Info: pdfs/alloy_world_3.pdf used on input line 22.
+Package pdftex.def Info: pdfs/alloy_world_3.pdf used on input line 24.
 (pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
 
 <pdfs/alloy_world_3.pdf, id=1070, page=1, 597.51233pt x 845.0471pt>
 File: pdfs/alloy_world_3.pdf Graphic file (type pdf)
 
 <use pdfs/alloy_world_3.pdf, page 1>
-Package pdftex.def Info: pdfs/alloy_world_3.pdf, page1 used on input line 22.
+Package pdftex.def Info: pdfs/alloy_world_3.pdf, page1 used on input line 24.
 (pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
 File: pdfs/alloy_world_3.pdf Graphic file (type pdf)
  <use pdfs/alloy_world_3.pdf, page 1>
-Package pdftex.def Info: pdfs/alloy_world_3.pdf, page1 used on input line 22.
+Package pdftex.def Info: pdfs/alloy_world_3.pdf, page1 used on input line 24.
 (pdftex.def)             Requested size: 567.63348pt x 802.7902pt.
 File: pdfs/alloy_world_3.pdf Graphic file (type pdf)
 
 <use pdfs/alloy_world_3.pdf, page 1>
-Package pdftex.def Info: pdfs/alloy_world_3.pdf, page1 used on input line 22.
+Package pdftex.def Info: pdfs/alloy_world_3.pdf, page1 used on input line 24.
 (pdftex.def)             Requested size: 567.63348pt x 802.7902pt.
 File: pdfs/alloy_world_3.pdf Graphic file (type pdf)
  <use pdfs/alloy_world_3.pdf, page 1>
-Package pdftex.def Info: pdfs/alloy_world_3.pdf, page1 used on input line 22.
+Package pdftex.def Info: pdfs/alloy_world_3.pdf, page1 used on input line 24.
 (pdftex.def)             Requested size: 567.63348pt x 802.7902pt.
 File: pdfs/alloy_world_3.pdf Graphic file (type pdf)
 
 <use pdfs/alloy_world_3.pdf, page 1>
-Package pdftex.def Info: pdfs/alloy_world_3.pdf, page1 used on input line 22.
+Package pdftex.def Info: pdfs/alloy_world_3.pdf, page1 used on input line 24.
 (pdftex.def)             Requested size: 567.63348pt x 802.7902pt.
  [51
 
@@ -1353,7 +1357,7 @@ live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on 1_RASD.pdf (69 pages, 3747148 bytes).
+Output written on 1_RASD.pdf (69 pages, 3747186 bytes).
 PDF statistics:
  1328 PDF objects out of 1440 (max. 8388607)
  523 named destinations out of 1000 (max. 500000)
