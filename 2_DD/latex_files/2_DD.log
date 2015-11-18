@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.2)  11 NOV 2015 21:56
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.2)  18 NOV 2015 09:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -363,16 +363,24 @@ LaTeX Info: Redefining \nameref on input line 3.
 \MPnumerator=\count128
 \makeMPintoPDFobject=\count129
 \everyMPtoPDFconversion=\toks23
-) <images/polimi_logo.png, id=3, 419.31656pt x 417.81094pt>
-File: images/polimi_logo.png Graphic file (type png)
+) (./various/title_page.tex
+<various/polimi_logo.png, id=83, 419.31656pt x 417.81094pt>
+File: various/polimi_logo.png Graphic file (type png)
 
-<use images/polimi_logo.png>
-Package pdftex.def Info: images/polimi_logo.png used on input line 6.
+<use various/polimi_logo.png>
+Package pdftex.def Info: various/polimi_logo.png used on input line 3.
 (pdftex.def)             Requested size: 150.0pt x 149.4619pt.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images/polimi_logo.png>]
- (./2_DD.toc)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./various/polimi_logo.png>
+]) (./2_DD.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 2.
+)
 \tf@toc=\write4
 \openout4 = `2_DD.toc'.
 
@@ -380,34 +388,65 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.30 \tableofcontents
-                      [1
+l.7 \tableofcontents
+                     [1
+
+] (./chapters/introduction.tex
+Chapter 1.
+) (./chapters/architectural_design.tex [1
+
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 36.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 36.
+Chapter 2.
+) (./chapters/others.tex [2
+
+]
+Chapter 3.
+[3
+
+]
+Chapter 4.
+[4
+
+]
+Chapter 5.
+[5
+
+]
+Chapter 6.
+[6
+
+]
+Appendix A.
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 15.
+ [7
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 15.
  (./2_DD.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 36.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 36.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 15.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 15.
 Package rerunfilecheck Info: File `2_DD.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 36.
+(rerunfilecheck)             Checksum: B5F6C6A73B50736D093B249BB3938EF4;1244.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 15.
  ) 
 Here is how much of TeX's memory you used:
- 7471 strings out of 494967
- 110538 string characters out of 6179868
- 193778 words of memory out of 5000000
- 10619 multiletter control sequences out of 15000+600000
- 6958 words of font info for 25 fonts, out of 8000000 for 9000
+ 7553 strings out of 494967
+ 111536 string characters out of 6179868
+ 196790 words of memory out of 5000000
+ 10654 multiletter control sequences out of 15000+600000
+ 9705 words of font info for 34 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
  32i,6n,43p,244b,360s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on 2_DD.pdf (2 pages, 101591 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+Output written on 2_DD.pdf (9 pages, 146246 bytes).
 PDF statistics:
- 32 PDF objects out of 1000 (max. 8388607)
- 3 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 172 PDF objects out of 1000 (max. 8388607)
+ 30 named destinations out of 1000 (max. 500000)
+ 166 words of extra memory for PDF output out of 10000 (max. 10000000)
 
