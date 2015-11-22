@@ -31,69 +31,69 @@ System Administration</panel_attributes>
     <coordinates>
       <x>256</x>
       <y>336</y>
-      <w>136</w>
+      <w>144</w>
       <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 m2=&lt;&lt;delegate&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;10.0;150.0;10.0</additional_attributes>
+    <additional_attributes>10.0;10.0;160.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>360</x>
+      <x>368</x>
       <y>224</y>
-      <w>72</w>
+      <w>64</w>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=)-</panel_attributes>
-    <additional_attributes>20.0;20.0;70.0;20.0</additional_attributes>
+    <additional_attributes>20.0;20.0;60.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>360</x>
+      <x>368</x>
       <y>328</y>
-      <w>72</w>
+      <w>64</w>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=)-</panel_attributes>
-    <additional_attributes>20.0;20.0;70.0;20.0</additional_attributes>
+    <additional_attributes>20.0;20.0;60.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>328</x>
+      <x>368</x>
       <y>432</y>
-      <w>104</w>
+      <w>64</w>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=)-</panel_attributes>
-    <additional_attributes>20.0;20.0;110.0;20.0</additional_attributes>
+    <additional_attributes>20.0;20.0;60.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>248</x>
       <y>232</y>
-      <w>136</w>
+      <w>152</w>
       <h>128</h>
     </coordinates>
     <panel_attributes>lt=[]&lt;.
 m2=&lt;&lt;delegate&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;140.0;150.0;10.0</additional_attributes>
+    <additional_attributes>10.0;140.0;50.0;140.0;50.0;10.0;170.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>256</x>
-      <y>344</y>
-      <w>160</w>
-      <h>120</h>
+      <y>336</y>
+      <w>144</w>
+      <h>136</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 m2=&lt;&lt;delegate&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;10.0;100.0;130.0</additional_attributes>
+    <additional_attributes>10.0;10.0;40.0;10.0;40.0;140.0;160.0;140.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
