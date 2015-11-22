@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.3">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>256</x>
+      <y>112</y>
+      <w>416</w>
+      <h>440</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;component&gt;&gt;
+symbol=component
+
+System Administration</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>192</x>
+      <y>328</y>
+      <w>72</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=)-</panel_attributes>
+    <additional_attributes>20.0;20.0;70.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>256</x>
+      <y>336</y>
+      <w>136</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+m2=&lt;&lt;delegate&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;150.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>360</x>
+      <y>224</y>
+      <w>72</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=)-</panel_attributes>
+    <additional_attributes>20.0;20.0;70.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>360</x>
+      <y>328</y>
+      <w>72</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=)-</panel_attributes>
+    <additional_attributes>20.0;20.0;70.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>328</x>
+      <y>432</y>
+      <w>104</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=)-</panel_attributes>
+    <additional_attributes>20.0;20.0;110.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>248</x>
+      <y>232</y>
+      <w>136</w>
+      <h>128</h>
+    </coordinates>
+    <panel_attributes>lt=[]&lt;.
+m2=&lt;&lt;delegate&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;140.0;150.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>256</x>
+      <y>344</y>
+      <w>160</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+m2=&lt;&lt;delegate&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;100.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>8</x>
+      <y>296</y>
+      <w>160</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;component&gt;&gt;
+
+symbol=component
+Data Access
+Utilities</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>160</x>
+      <y>336</y>
+      <w>48</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=()-</panel_attributes>
+    <additional_attributes>40.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>416</x>
+      <y>192</y>
+      <w>176</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;component&gt;&gt;
+
+symbol=component
+Zone Management</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>416</x>
+      <y>296</y>
+      <w>176</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;component&gt;&gt;
+symbol=component
+
+Driver Management</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>416</x>
+      <y>400</y>
+      <w>176</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;component&gt;&gt;
+symbol=component
+
+Service Statistics</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
