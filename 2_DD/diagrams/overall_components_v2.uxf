@@ -135,10 +135,10 @@ System</panel_attributes>
       <x>444</x>
       <y>108</y>
       <w>108</w>
-      <h>150</h>
+      <h>162</h>
     </coordinates>
     <panel_attributes>lt=&lt;[]-(()-[]&gt;</panel_attributes>
-    <additional_attributes>18;18;96;18;96;138</additional_attributes>
+    <additional_attributes>18;18;96;18;96;150</additional_attributes>
   </element>
   <element>
     <type>com.baselet.element.old.element.Relation</type>
