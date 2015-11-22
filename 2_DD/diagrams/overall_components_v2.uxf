@@ -2,19 +2,6 @@
 <diagram program="umlet" version="13.3">
   <zoom_level>6</zoom_level>
   <element>
-    <type>com.baselet.element.old.element.Component</type>
-    <coordinates>
-      <x>42</x>
-      <y>228</y>
-      <w>198</w>
-      <h>102</h>
-    </coordinates>
-    <panel_attributes> 
-Communication
-System</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
     <type>com.baselet.element.old.element.Relation</type>
     <coordinates>
       <x>162</x>
@@ -304,6 +291,22 @@ symbol=component
 
 Taxi Driver
 Application</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>42</x>
+      <y>228</y>
+      <w>198</w>
+      <h>102</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;component&gt;&gt;
+symbol=component
+
+
+Communication
+System</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
