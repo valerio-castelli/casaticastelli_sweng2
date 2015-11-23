@@ -386,7 +386,7 @@ m2=   &lt;&lt;delegate&gt;&gt;</panel_attributes>
     </coordinates>
     <panel_attributes>lt=[]&lt;.
 m2=&lt;&lt;delegate&gt;&gt;</panel_attributes>
-    <additional_attributes>200.0;10.0;140.0;10.0;140.0;140.0;10.0;140.0</additional_attributes>
+    <additional_attributes>200.0;10.0;160.0;10.0;160.0;140.0;10.0;140.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -410,7 +410,7 @@ m2=&lt;&lt;delegate&gt;&gt;</panel_attributes>
     </coordinates>
     <panel_attributes>lt=[]&lt;.
 m2=&lt;&lt;delegate&gt;&gt;</panel_attributes>
-    <additional_attributes>200.0;140.0;140.0;140.0;140.0;10.0;10.0;10.0</additional_attributes>
+    <additional_attributes>200.0;140.0;160.0;140.0;160.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -422,7 +422,7 @@ m2=&lt;&lt;delegate&gt;&gt;</panel_attributes>
     </coordinates>
     <panel_attributes>lt=&lt;.
 m2=&lt;&lt;delegate&gt;&gt;</panel_attributes>
-    <additional_attributes>190.0;270.0;140.0;270.0;140.0;10.0;10.0;10.0</additional_attributes>
+    <additional_attributes>190.0;270.0;160.0;270.0;160.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
