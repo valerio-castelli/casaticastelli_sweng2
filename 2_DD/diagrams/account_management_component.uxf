@@ -20,11 +20,11 @@ Account Management</panel_attributes>
     <coordinates>
       <x>276</x>
       <y>408</y>
-      <w>96</w>
+      <w>84</w>
       <h>60</h>
     </coordinates>
     <panel_attributes>lt=)-</panel_attributes>
-    <additional_attributes>20.0;20.0;60.0;20.0</additional_attributes>
+    <additional_attributes>20.0;20.0;50.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
