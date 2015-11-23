@@ -1,0 +1,68 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdftex 2015.11.21)  23 NOV 2015 15:36
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**/Users/Valerio/GitHub/casaticastelli_sweng2/2_DD/latex_files/chapters/introduction.tex
+(/Users/Valerio/GitHub/casaticastelli_sweng2/2_DD/latex_files/chapters/introduction.tex
+/Users/Valerio/GitHub/casaticastelli_sweng2/2_DD/latex_files/chapters/introduction.tex:1: Undefined control sequence.
+l.1 \chapter
+            {Introduction}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/Valerio/GitHub/casaticastelli_sweng2/2_DD/latex_files/chapters/introduction.tex:3: Undefined control sequence.
+l.3 \section
+            {Purpose}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/Valerio/GitHub/casaticastelli_sweng2/2_DD/latex_files/chapters/introduction.tex:6: Undefined control sequence.
+l.6 \section
+            {Scope}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/Valerio/GitHub/casaticastelli_sweng2/2_DD/latex_files/chapters/introduction.tex:8: Undefined control sequence.
+l.8 \section
+            {Definitions, Acronyms, Abbreviations}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/Valerio/GitHub/casaticastelli_sweng2/2_DD/latex_files/chapters/introduction.tex:10: Undefined control sequence.
+l.10 \section
+             {Reference Documents}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/Valerio/GitHub/casaticastelli_sweng2/2_DD/latex_files/chapters/introduction.tex:12: Undefined control sequence.
+l.12 \section
+             {Document Structure}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+)
+! Emergency stop.
+<*> .../2_DD/latex_files/chapters/introduction.tex
+                                                  
+*** (job aborted, no legal \end found)
+
+!  ==> Fatal error occurred, no output PDF file produced!
