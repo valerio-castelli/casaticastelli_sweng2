@@ -1,6 +1,31 @@
 \chapter{Architectural Design}
   
 \section{Overview}
+In the following paragraphs we present a general overview of how the system is architected, with specific focus on the distinction between logically separated layers.
+
+Specifically, myTaxiService has been envisioned from the ground up to be fully scalable and easily deployable on any number of servers. This characteristic is not only desirable, but actually fundamental for the system to fully accomplish the tasks it's been designed for. In order to guarantee this level of flexibility and modularity, we have settled for a system architecture that inherently enables a wide range of hardware configurations for all kinds of workloads.
+
+The system architecture is thus logically organized in a set of interplaying software layers, whose detailed description is hereby presented.
+
+\begin{figure}[H]
+\centering
+\makebox[\columnwidth]{\includegraphics[width=300pt,keepaspectratio]{images/overall_architecture.png}}
+\end{figure}
+\vspace{5mm}
+The lowest layer of the architecture is composed by the relational \textbf{Database Management System (DBMS)} that supports all data storage operations. This component fully supports ACID distributed transactions and is meant to be run inside a Demilitarized Zone (DMZ) which is separated from the rest of the system for security reasons. (N.B. questo va messo qui?)
+In order to provide a higher level of abstraction to all components that need access to data and to be as platform agnostic as possible, the DBMS interface is not directly exposed to the classes that implements the business logic of the system. Instead, an intermediate \textbf{Data Layer} is responsible of performing queries on the DBMS while exposing a more flexible, customized interface to the upper layers.
+
+The \textbf{Business Layer} implements all core functionalities of the system. In particular, all operations related to handling taxi requests and reservations, taxi availability and zone management are performed by components of this layer. Data is stored and retrieved using the APIs exposed by the Data Layer. Core functionalities are exposed to clients through a unified Application Façade that allows fine-grained tuning of which operations can be invoked from outside the central system.
+
+The Business Layer also depends on an external \textbf{Mapping Service} for the implementation of reverse geocoding and waiting time estimation operations. This external service is directly invoked by classes of the Business Layer by using a public API provided by the Mapping Service itself. 
+
+However, not every functionality exposed by the Application Façade may actually be made publicly available to every client. In principle, several levels of permissions could be offered to third parties while maintaining control over private APIs which should only be used by "official clients". Read-only reporting functionalities, for example, could be made available to any requesting party, while more critical operations could be offered only to selected developers after having verified certain requirements are satisfied. Furthermore, specific sets of APIs could be made available only to approved plugins and not be offered to remote services. For this reason, the \textbf{Services Layer} provides a comprehensive interface to all kinds of third party services and plugins by carefully defining which methods are available for remote and local invocation, what protocols should be followed or invoking them and what kind of messages can be exchanged between a remote component and the central system.
+
+While locally invokable APIs are made available only to plugins, remotely invokable APIs are also offered to components living outside the perimeter of the central system. The \textbf{Message Broker and Notification System} is precisely concerned with guaranteeing an efficient and reliable communication channel with these remote entities by supporting message queues, publish/subscribe communications and dynamic, asynchronous event notifications.
+
+The \textbf{Web Presentation Layer} is responsible for the implementation of the web application. It generates the dynamic web pages, offers them to the client via a web server, accepts requests and forwards them to the business layer by means of the communication layer and of the services layer. 
+
+Finally, the \textbf{Mobile Applications} let users access the functionalities offered by the system on their smartphones and tables in a native way. As for the web application, they interact with the central system using the communication layer and the services layer.
   
 \section{High level components and their interaction}
 
