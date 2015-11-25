@@ -1,7 +1,7 @@
 \chapter{Architectural Design}
   
 \section{Overview}
-In the following paragraphs we present a general overview of how the system is architected, with specific focus on the distinction between logically separated layers.
+In the following paragraphs we'll present a general overview of how the system is architected, with specific focus on the distinction between logically separated layers.
 
 Specifically, myTaxiService has been envisioned from the ground up to be fully scalable and easily deployable on any number of servers. This characteristic is not only desirable, but actually fundamental for the system to fully accomplish the tasks it's been designed for. In order to guarantee this level of flexibility and modularity, we have settled for a system architecture that inherently enables a wide range of hardware configurations for all kinds of workloads.
 
@@ -19,17 +19,55 @@ The \textbf{Business Layer} implements all core functionalities of the system. I
 
 The Business Layer also depends on an external \textbf{Mapping Service} for the implementation of reverse geocoding and waiting time estimation operations. This external service is directly invoked by classes of the Business Layer by using a public API provided by the Mapping Service itself. 
 
-However, not every functionality exposed by the Application Façade may actually be made publicly available to every client. In principle, several levels of permissions could be offered to third parties while maintaining control over private APIs which should only be used by "official clients". Read-only reporting functionalities, for example, could be made available to any requesting party, while more critical operations could be offered only to selected developers after having verified certain requirements are satisfied. Furthermore, specific sets of APIs could be made available only to approved plugins and not be offered to remote services. For this reason, the \textbf{Services Layer} provides a comprehensive interface to all kinds of third party services and plugins by carefully defining which methods are available for remote and local invocation, what protocols should be followed or invoking them and what kind of messages can be exchanged between a remote component and the central system.
+However, not every functionality exposed by the Application Façade may actually be made publicly available to every client. In principle, several levels of permissions could be offered to third parties while maintaining control over private APIs which should only be used by "official clients". Read-only reporting functionalities, for example, could be made available to any requesting party, while more critical operations could be offered only to selected developers after having verified certain requirements are satisfied. Furthermore, specific sets of APIs could be made available only to approved plugins and not be offered to remote services. For this reason, the \textbf{Services Layer} provides a comprehensive interface to all kinds of third party services and plugins by carefully defining which methods are available for remote and local invocation, what protocols should be followed for invoking them and what kind of messages can be exchanged between a remote component and the central system.
 
 While locally invokable APIs are made available only to plugins, remotely invokable APIs are also offered to components living outside the perimeter of the central system. The \textbf{Message Broker and Notification System} is precisely concerned with guaranteeing an efficient and reliable communication channel with these remote entities by supporting message queues, publish/subscribe communications and dynamic, asynchronous event notifications.
 
 The \textbf{Web Presentation Layer} is responsible for the implementation of the web application. It generates the dynamic web pages, offers them to the client via a web server, accepts requests and forwards them to the business layer by means of the communication layer and of the services layer. 
 
-Finally, the \textbf{Mobile Applications} let users access the functionalities offered by the system on their smartphones and tables in a native way. As for the web application, they interact with the central system using the communication layer and the services layer.
+Finally, the \textbf{Mobile Applications} let users access the functionalities offered by the system on their smartphones and tablets in a native way. As for the web application, they interact with the central system using the communication layer and the services layer.
   
-\section{High level components and their interaction}
+\section{High level components and their interactions}
+The purpose of this section is to present the main components in which myTaxiService is divided and the relations between them.
+
+In particular, it should be noted that the components discussed here are very abstract clusters of functionalities which do not directly map to any specific module in the final system. Instead, they are intended as an useful representation to show how the main functionalities of the system are grouped together and interact with each other. Further details on how these components are realized in the actual system will be discussed with greater depth in the Component view subsection.
+
+A schematic representation of the component structure of the system is the following.
+\begin{figure}[H]
+\centering
+\makebox[\columnwidth]{\includegraphics[width=300pt,keepaspectratio]{images/overall_components_v2.png}}
+\end{figure}
+
+The \textbf{Account Management} component is responsible for all operations related to user accounts. More specifically:
+	\begin{itemize}
+		\item It implements the passenger registration process
+		\item It implements the login procedure for all users 
+		\item It supports operations on existing accounts, including settings management and password retrieval operations
+	\end{itemize}
+
+The \textbf{Taxi Management System} is the single most important component in the system. It is responsible for:
+	\begin{itemize}
+		\item Maintaining the availability status of each taxi updated
+		\item Managing the taxi queue associated with each zone in the city
+		\item Accepting and managing taxi reservations
+		\item Fulfilling taxi requests by selecting the first available taxi in the corresponding taxi zone  
+	\end{itemize}
+	
+The \textbf{System Administration} components offers system configuration and monitoring functionalities. It enables the insertion, update and deletion of taxis and taxi drivers and the definition of the boundaries of the zones in which the city is divided. It also lets administrators perform queries to obtain system statistics including uptime, number of served requests per day and other key performance indicators. 
+
+The \textbf{Database Management System (DBMS)} is the component responsible for storing and retrieving data in a persistent, reliable way. It should be noted that this component will not be implemented from scratch; instead, a commercial solution will be used.
+
+The \textbf{Data Access Utilities} component provides an abstraction layer to all those components that need access to data stored in the DBMS. 
+
+The \textbf{Mapping Service} component 
+
+The \textbf{Communication System} is the component responsible for handling all communications, notifications and invocations between the central system and remote applications and services.
+
+The \textbf{Web Server} component 
 
 \section{Component view}
+In this section, we'll provide a more detailed view at those components that will need to be developed as part of myTaxiService.
+
 
 \section{Deployment view}
 
