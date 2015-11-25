@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.2)  18 NOV 2015 09:23
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.2)  25 NOV 2015 20:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -312,7 +312,22 @@ Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
 \c@LT@tables=\count120
 \c@LT@chunks=\count121
 \LT@p@ftn=\toks21
-)) (./2_DD.aux)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2013/12/03 3.9h The Babel package
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2012/08/20 v3.3p English support from the babel system
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2013/12/03 3.9h Babel common definitions
+\babel@savecnt=\count122
+\U@D=\dimen118
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+))) (./2_DD.aux)
 \openout1 = `2_DD.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
@@ -338,7 +353,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count122
+\c@section@level=\count123
 )
 LaTeX Info: Redefining \ref on input line 3.
 LaTeX Info: Redefining \pageref on input line 3.
@@ -348,38 +363,38 @@ LaTeX Info: Redefining \nameref on input line 3.
 \@outlinefile=\write3
 \openout3 = `2_DD.out'.
 
-\c@lstlisting=\count123
+\c@lstlisting=\count124
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count124
-\scratchdimen=\dimen118
+\scratchcounter=\count125
+\scratchdimen=\dimen119
 \scratchbox=\box39
-\nofMPsegments=\count125
-\nofMParguments=\count126
+\nofMPsegments=\count126
+\nofMParguments=\count127
 \everyMPshowfont=\toks22
-\MPscratchCnt=\count127
-\MPscratchDim=\dimen119
-\MPnumerator=\count128
-\makeMPintoPDFobject=\count129
+\MPscratchCnt=\count128
+\MPscratchDim=\dimen120
+\MPnumerator=\count129
+\makeMPintoPDFobject=\count130
 \everyMPtoPDFconversion=\toks23
-) (./various/title_page.tex
-<various/polimi_logo.png, id=83, 419.31656pt x 417.81094pt>
-File: various/polimi_logo.png Graphic file (type png)
+) (./title/title_page.tex
+<title/polimi_logo.png, id=75, 419.31656pt x 417.81094pt>
+File: title/polimi_logo.png Graphic file (type png)
 
-<use various/polimi_logo.png>
-Package pdftex.def Info: various/polimi_logo.png used on input line 3.
+<use title/polimi_logo.png>
+Package pdftex.def Info: title/polimi_logo.png used on input line 3.
 (pdftex.def)             Requested size: 150.0pt x 149.4619pt.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./various/polimi_logo.png>
-]) (./2_DD.toc
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./title/polimi_logo.png>])
+ (./2_DD.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 2.
+(Font)              <10.95> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 2.
+(Font)              <8> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 2.
+(Font)              <6> on input line 3.
 )
 \tf@toc=\write4
 \openout4 = `2_DD.toc'.
@@ -393,60 +408,173 @@ l.7 \tableofcontents
 
 ] (./chapters/introduction.tex
 Chapter 1.
-) (./chapters/architectural_design.tex [1
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 20.
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 20.
+ [1
 
 
-]
+])
+(./chapters/architectural_design.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[2]
 Chapter 2.
-) (./chapters/others.tex [2
+<images/overall_architecture.png, id=117, 625.33624pt x 705.63625pt>
+File: images/overall_architecture.png Graphic file (type png)
+
+<use images/overall_architecture.png>
+Package pdftex.def Info: images/overall_architecture.png used on input line 12.
+
+(pdftex.def)             Requested size: 300.0pt x 338.52927pt.
+ [3
 
 ]
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no § in font cmr10!
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[4 <./images/overall_architecture.png>]
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no § in font cmr10!
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[5] <images/overall_components_v2.png, id=133, 1465.475pt x 682.55pt>
+File: images/overall_components_v2.png Graphic file (type png)
+
+<use images/overall_components_v2.png>
+Package pdftex.def Info: images/overall_components_v2.png used on input line 38
+.
+(pdftex.def)             Requested size: 300.0pt x 139.72577pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[6 <./images/overall_components_v2.png (PNG copy)>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[7] <images/taxi_mgmt_component_v2.png, id=142, 1375.1375pt x 1204.5pt>
+File: images/taxi_mgmt_component_v2.png Graphic file (type png)
+
+<use images/taxi_mgmt_component_v2.png>
+Package pdftex.def Info: images/taxi_mgmt_component_v2.png used on input line 8
+3.
+(pdftex.def)             Requested size: 300.0pt x 262.76694pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[8 <./images/taxi_mgmt_component_v2.png (PNG copy)>]
+<images/account_management_component.png, id=147, 1375.1375pt x 702.625pt>
+File: images/account_management_component.png Graphic file (type png)
+
+<use images/account_management_component.png>
+Package pdftex.def Info: images/account_management_component.png used on input 
+line 96.
+(pdftex.def)             Requested size: 300.0pt x 153.2807pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[9 <./images/account_management_component.png (PNG copy)>]
+<images/sysadmin_component.png, id=152, 873.2625pt x 592.2125pt>
+File: images/sysadmin_component.png Graphic file (type png)
+
+<use images/sysadmin_component.png>
+Package pdftex.def Info: images/sysadmin_component.png used on input line 108.
+(pdftex.def)             Requested size: 300.0pt x 203.44603pt.
+) (./chapters/others.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[10 <./images/sysadmin_component.png (PNG copy)>]
 Chapter 3.
-[3
+[11
 
 ]
 Chapter 4.
-[4
+[12
 
 ]
 Chapter 5.
-[5
+[13
 
 ]
 Chapter 6.
-[6
+[14
 
 ]
 Appendix A.
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 15.
- [7
+ [15
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 15.
  (./2_DD.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 15.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 15.
-Package rerunfilecheck Info: File `2_DD.out' has not changed.
-(rerunfilecheck)             Checksum: B5F6C6A73B50736D093B249BB3938EF4;1244.
+
+
+Package rerunfilecheck Warning: File `2_DD.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `2_DD.out':
+(rerunfilecheck)             Before: 0BE8434D5BA770E71A54161902AF5941;1093
+(rerunfilecheck)             After:  7BBE5F4BFF98EB1A566D28A3EEDE1CAC;1245.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 15.
  ) 
 Here is how much of TeX's memory you used:
- 7553 strings out of 494967
- 111536 string characters out of 6179868
- 196790 words of memory out of 5000000
- 10654 multiletter control sequences out of 15000+600000
+ 7967 strings out of 494967
+ 117413 string characters out of 6179868
+ 207130 words of memory out of 5000000
+ 11037 multiletter control sequences out of 15000+600000
  9705 words of font info for 34 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
- 32i,6n,43p,244b,360s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 32i,12n,43p,1081b,402s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on 2_DD.pdf (9 pages, 146246 bytes).
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on 2_DD.pdf (17 pages, 409636 bytes).
 PDF statistics:
- 172 PDF objects out of 1000 (max. 8388607)
- 30 named destinations out of 1000 (max. 500000)
- 166 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 212 PDF objects out of 1000 (max. 8388607)
+ 38 named destinations out of 1000 (max. 500000)
+ 175 words of extra memory for PDF output out of 10000 (max. 10000000)
 
