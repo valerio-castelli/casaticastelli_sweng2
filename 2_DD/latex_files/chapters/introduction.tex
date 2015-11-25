@@ -3,28 +3,56 @@
 \section{Purpose}
 This document represents the Software Design Description (SDD), also simply called Design Document, for myTaxiService.
 
-The purpose of this document is to give all the interested parties a closer look at how myTaxiService is designed and architected, with a particular emphasis on what design decisions the development team has made and the rationale behind them.
-
+The purpose of this document is to share with all the interested parties a more detailed description of how myTaxiService is designed and architected, with a particular emphasis on what design decisions the development team has made and the rationale behind them.
 
 \section{Scope}
+One of the key decisions a software engineer must make while designing a system is between which software components should be actually developed and implemented, and which can be taken for granted as already existing on the market. 
+
+This decision has an obvious impact on what a design document should describe and what components are instead left out of the analysis and simply considered ready to be used.
+
+For this reason, throughout this document we will mainly focus on the peculiar characteristics of myTaxiService and provide explanations, diagrams and descriptions for those software components that are specific to this project. On the other hand, we will assume to be able to use a few commercial components for the most common tasks. This is done for a couple of practical reasons: firstly, it allows us to focus on the critical aspects of the project and thus to save budget; and secondly, it lets us leverage a set of well-tested, robust and scalable components that are specifically design and optimized to accomplish certain tasks, thus obtaining a result which is better than anything we could design from scratch to implement the same functionalities. We will clearly annotate which components will need to be developed as parts of our system and which ones will be obtained from a third party.
+
 
 \section{Definitions, Acronyms, Abbreviations}
+\subsection{Definitions}
+Here we present a list of significant, context-specific terms used in the document. 
+\begin{itemize}
+	\item ACID properties: set of properties of transactions in a relational database management system. Stands for Atomicity, Consistency, Isolation and Durability.
+\end{itemize}
+\subsection{Acronyms}
+\begin{itemize}
+	\item SDD: Software Design Description.
+	\item DD: Design Document. Used as a synonym of SDD.
+	\item DMZ: Demilitarized Zone.
+	\item DBMS: Database Management System.
+	\item API: Application Programming Interface.
+	\item RASD: Requirement Analysis and Specification Document.
+	\item KPI: Key Performance Indicator.
+\end{itemize}
+\subsection{Abbreviations}
+No abbreviations other than the acronyms are used in this document.
 
 \section{Reference Documents}
-  
+\begin{itemize}
+	\item Assignment document: Assignments 1 and 2 (RASD and DD).pdf
+	\item Template for the Design Document (Structure of the design document.pdf)
+ 	\item IEEE Systems and software engineering — Architecture description (ISO/IEC/IEEE 42010, first edition)
+ 	\item IEEE Standard for Information Technology —Systems Design — Software Design Descriptions (IEEE Std 1016™-2009)
+\end{itemize} 
+ 
 \section{Document Structure}
-In order to let stakeholders easily navigate through the document and find all the relevant information, we will now briefly discuss its structure and give a short description of each section.
+In order to let stakeholders easily navigate through the document, we will now briefly discuss its structure and give a short description of each section.
 
 In the Architectural Design section, we will go in depth describing how the system is designed from different point of views. In particular, we will provide: 
 	\begin{itemize}
 	\item A general overview of how the system is architected from a high level point of view
-	\item A description of the main components that make up the system, their inner structure and the relations between them
+	\item A description of the main components that make up the system, their inner structure and how they interact with each other
 	\item A view of how the components of the system are actually deployed on the physical infrastructure 
 	\item A detailed view of the normal runtime conditions in which the system operates, with sequence diagrams of the main tasks
-	\item A list of the significant architectural styles and patterns that have been chosen to implement the system
+	\item A list of the significant architectural styles and patterns that have been chosen to design the system
 	\end{itemize}
 	
-In the Algorithm Design section, we will focus on defining the most relevant and critical algorithms that drive the system operations. In particular, for each of them we will provide a short pseudo-code representation outlining their key steps. 
+In the Algorithm Design section, we will focus on defining the most relevant and critical algorithms that drive the system operations. In particular, for each of them we will outline the key steps using a short pseudo-code representation.
 
 In the User Interface Design, we will mainly reference the existing UI sketches that were already defined in the RASD and further refine them. 
 

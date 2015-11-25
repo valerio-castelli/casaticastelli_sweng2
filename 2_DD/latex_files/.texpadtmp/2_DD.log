@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.21)  25 NOV 2015 19:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.21)  25 NOV 2015 21:37
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -271,8 +271,19 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \c@LT@tables=\count120
 \c@LT@chunks=\count121
 \LT@p@ftn=\toks21
-))
-(/Users/Valerio/GitHub/casaticastelli_sweng2/2_DD/latex_files/.texpadtmp/2_DD.aux)
+) (/usr/local/texlive/2015/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2014/09/25 3.9l The Babel package
+(/usr/local/texlive/2015/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2012/08/20 v3.3p English support from the babel system
+ (/usr/local/texlive/2015/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2014/09/25 3.9l Babel common definitions
+\babel@savecnt=\count122
+\U@D=\dimen120
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+))) (/Users/Valerio/GitHub/casaticastelli_sweng2/2_DD/latex_files/.texpadtmp/2_DD.aux)
 \openout1 = `2_DD.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
@@ -296,7 +307,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
  (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count122
+\c@section@level=\count123
 )
 LaTeX Info: Redefining \ref on input line 3.
 LaTeX Info: Redefining \pageref on input line 3.
@@ -305,21 +316,21 @@ LaTeX Info: Redefining \nameref on input line 3.
 \@outlinefile=\write3
 \openout3 = `2_DD.out'.
 
-\c@lstlisting=\count123
+\c@lstlisting=\count124
  (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count124
-\scratchdimen=\dimen120
+\scratchcounter=\count125
+\scratchdimen=\dimen121
 \scratchbox=\box39
-\nofMPsegments=\count125
-\nofMParguments=\count126
+\nofMPsegments=\count126
+\nofMParguments=\count127
 \everyMPshowfont=\toks22
-\MPscratchCnt=\count127
-\MPscratchDim=\dimen121
-\MPnumerator=\count128
-\makeMPintoPDFobject=\count129
+\MPscratchCnt=\count128
+\MPscratchDim=\dimen122
+\MPnumerator=\count129
+\makeMPintoPDFobject=\count130
 \everyMPtoPDFconversion=\toks23
-) (./title/title_page.tex <title/polimi_logo.png, id=84, 419.31656pt x 417.81094pt>
+) (./title/title_page.tex <title/polimi_logo.png, id=96, 419.31656pt x 417.81094pt>
 File: title/polimi_logo.png Graphic file (type png)
  <use title/polimi_logo.png>
 Package pdftex.def Info: title/polimi_logo.png used on input line 3.
@@ -328,11 +339,11 @@ Package pdftex.def Info: title/polimi_logo.png used on input line 3.
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./title/polimi_logo.png>]) (/Users/Valerio/GitHub/casaticastelli_sweng2/2_DD/latex_files/.texpadtmp/2_DD.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 2.
+(Font)              <10.95> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 2.
+(Font)              <8> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 2.
+(Font)              <6> on input line 3.
 )
 \tf@toc=\write4
 \openout4 = `2_DD.toc'.
@@ -345,45 +356,56 @@ l.7 \tableofcontents
 
 ] (./chapters/introduction.tex
 Chapter 1.
+[1
+
+
+]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 20.
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 20.
- [1
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ” in font cmr10!
 
+Overfull \hbox (54.51639pt too wide) in paragraph at lines 39--40
+[]\OT1/cmr/m/n/10.95 IEEE Sys-tems and soft-ware en-gi-neer-ing  Ar-chi-tec-ture de-scrip-tion (ISO/IEC/IEEE
+ []
 
-]) (./chapters/architectural_design.tex
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ” in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ” in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no „ in font cmr10!
+Missing character: There is no ¢ in font cmr10!
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2]
+[2]) (./chapters/architectural_design.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[3]
 Chapter 2.
-<images/overall_architecture.png, id=128, 625.33624pt x 705.63625pt>
+<images/overall_architecture.png, id=147, 625.33624pt x 705.63625pt>
 File: images/overall_architecture.png Graphic file (type png)
  <use images/overall_architecture.png>
 Package pdftex.def Info: images/overall_architecture.png used on input line 12.
 (pdftex.def)             Requested size: 300.0pt x 338.52927pt.
- [3
+ [4
 
 ]
-Overfull \hbox (12.12367pt too wide) in paragraph at lines 15--17
-[]\OT1/cmr/m/n/10.95 The low-est layer of the ar-chi-tec-ture is com-posed by the re-la-tional \OT1/cmr/bx/n/10.95 Database
- []
-
-Missing character: There is no Ã in font cmr10!
-Missing character: There is no § in font cmr10!
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[4 <./images/overall_architecture.png>]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no § in font cmr10!
 
@@ -393,7 +415,17 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[5] <images/overall_components_v2.png, id=144, 1465.475pt x 682.55pt>
+[5 <./images/overall_architecture.png>]
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no § in font cmr10!
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[6] <images/overall_components_v2.png, id=164, 1465.475pt x 682.55pt>
 File: images/overall_components_v2.png Graphic file (type png)
  <use images/overall_components_v2.png>
 Package pdftex.def Info: images/overall_components_v2.png used on input line 38.
@@ -405,14 +437,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[6 <./images/overall_components_v2.png (PNG copy)>]
+[7 <./images/overall_components_v2.png (PNG copy)>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[7] <images/taxi_mgmt_component_v2.png, id=153, 1375.1375pt x 1204.5pt>
+[8] <images/taxi_mgmt_component_v2.png, id=173, 1375.1375pt x 1204.5pt>
 File: images/taxi_mgmt_component_v2.png Graphic file (type png)
  <use images/taxi_mgmt_component_v2.png>
 Package pdftex.def Info: images/taxi_mgmt_component_v2.png used on input line 83.
@@ -424,7 +456,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[8 <./images/taxi_mgmt_component_v2.png (PNG copy)>] <images/account_management_component.png, id=159, 1375.1375pt x 702.625pt>
+[9 <./images/taxi_mgmt_component_v2.png (PNG copy)>] <images/account_management_component.png, id=178, 1375.1375pt x 702.625pt>
 File: images/account_management_component.png Graphic file (type png)
  <use images/account_management_component.png>
 Package pdftex.def Info: images/account_management_component.png used on input line 96.
@@ -436,7 +468,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[9 <./images/account_management_component.png (PNG copy)>] <images/sysadmin_component.png, id=164, 873.2625pt x 592.2125pt>
+[10 <./images/account_management_component.png (PNG copy)>] <images/sysadmin_component.png, id=183, 873.2625pt x 592.2125pt>
 File: images/sysadmin_component.png Graphic file (type png)
  <use images/sysadmin_component.png>
 Package pdftex.def Info: images/sysadmin_component.png used on input line 108.
@@ -448,27 +480,27 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10 <./images/sysadmin_component.png (PNG copy)>]
+[11 <./images/sysadmin_component.png (PNG copy)>]
 Chapter 3.
-[11
-
-]
-Chapter 4.
 [12
 
 ]
-Chapter 5.
+Chapter 4.
 [13
 
 ]
-Chapter 6.
+Chapter 5.
 [14
+
+]
+Chapter 6.
+[15
 
 ]
 Appendix A.
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 15.
- [15
+ [16
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 15.
@@ -476,22 +508,22 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 15.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 15.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 15.
 Package rerunfilecheck Info: File `2_DD.out' has not changed.
-(rerunfilecheck)             Checksum: B5F6C6A73B50736D093B249BB3938EF4;1244.
+(rerunfilecheck)             Checksum: 7BBE5F4BFF98EB1A566D28A3EEDE1CAC;1245.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 15.
  ) 
 Here is how much of TeX's memory you used:
- 7611 strings out of 493089
- 114378 string characters out of 6134841
- 203426 words of memory out of 5000000
- 10953 multiletter control sequences out of 15000+600000
- 9705 words of font info for 34 fonts, out of 8000000 for 9000
+ 8001 strings out of 493089
+ 119434 string characters out of 6134841
+ 215435 words of memory out of 5000000
+ 11325 multiletter control sequences out of 15000+600000
+ 10012 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 32i,12n,43p,1081b,390s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 32i,12n,43p,1081b,402s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on /Users/Valerio/GitHub/casaticastelli_sweng2/2_DD/latex_files/.texpadtmp/2_DD.pdf (17 pages, 390583 bytes).
+Output written on /Users/Valerio/GitHub/casaticastelli_sweng2/2_DD/latex_files/.texpadtmp/2_DD.pdf (18 pages, 393623 bytes).
 PDF statistics:
- 223 PDF objects out of 1000 (max. 8388607)
- 189 compressed objects within 2 object streams
- 38 named destinations out of 1000 (max. 500000)
- 191 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 243 PDF objects out of 1000 (max. 8388607)
+ 207 compressed objects within 3 object streams
+ 42 named destinations out of 1000 (max. 500000)
+ 215 words of extra memory for PDF output out of 10000 (max. 10000000)
 
