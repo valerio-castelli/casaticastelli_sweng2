@@ -8,13 +8,13 @@
 \contentsline {section}{\numberline {2.1}Overview}{3}{section.2.1}
 \contentsline {section}{\numberline {2.2}High level components and their interactions}{5}{section.2.2}
 \contentsline {section}{\numberline {2.3}Component view}{7}{section.2.3}
-\contentsline {section}{\numberline {2.4}Deployment view}{7}{section.2.4}
-\contentsline {section}{\numberline {2.5}Runtime view}{7}{section.2.5}
-\contentsline {section}{\numberline {2.6}Component interfaces}{7}{section.2.6}
-\contentsline {section}{\numberline {2.7}Selected architectural styles and patterns}{7}{section.2.7}
-\contentsline {section}{\numberline {2.8}Other design decisions}{7}{section.2.8}
-\contentsline {chapter}{\numberline {3}Algorithm Design}{8}{chapter.3}
-\contentsline {chapter}{\numberline {4}User Interface Design}{9}{chapter.4}
-\contentsline {chapter}{\numberline {5}Requirements Traceability}{10}{chapter.5}
-\contentsline {chapter}{\numberline {6}References}{11}{chapter.6}
-\contentsline {chapter}{Appendix \numberline {A}Hours of work}{12}{Appendix.1.A}
+\contentsline {section}{\numberline {2.4}Deployment view}{10}{section.2.4}
+\contentsline {section}{\numberline {2.5}Runtime view}{10}{section.2.5}
+\contentsline {section}{\numberline {2.6}Component interfaces}{10}{section.2.6}
+\contentsline {section}{\numberline {2.7}Selected architectural styles and patterns}{10}{section.2.7}
+\contentsline {section}{\numberline {2.8}Other design decisions}{10}{section.2.8}
+\contentsline {chapter}{\numberline {3}Algorithm Design}{11}{chapter.3}
+\contentsline {chapter}{\numberline {4}User Interface Design}{12}{chapter.4}
+\contentsline {chapter}{\numberline {5}Requirements Traceability}{13}{chapter.5}
+\contentsline {chapter}{\numberline {6}References}{14}{chapter.6}
+\contentsline {chapter}{Appendix \numberline {A}Hours of work}{15}{Appendix.1.A}
