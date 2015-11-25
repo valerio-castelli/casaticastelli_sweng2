@@ -1,2 +1,0 @@
-To export clean pdf, select Export As >> Advanced >> PDF (an leave unchange the other field), and export
-Be sure that the page is already oriented in the correct way (Portrait or Landscape) *before* exporting
