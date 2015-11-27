@@ -53,28 +53,32 @@ The \textbf{Taxi Management System} is the single most important component in th
 		\item Fulfilling taxi requests by selecting the first available taxi in the corresponding taxi zone  
 	\end{itemize}
 	
-The \textbf{System Administration} components offers system configuration and monitoring functionalities. It enables the insertion, update and deletion of taxis and taxi drivers and the definition of the boundaries of the zones in which the city is divided. It also lets administrators perform queries to obtain system statistics including uptime, number of served requests per day and other key performance indicators. 
+The \textbf{System Administration} component offers system configuration and monitoring functionalities. It enables the insertion, update and deletion of taxis and taxi drivers and the definition of the boundaries of the zones in which the city is divided. It also lets administrators perform queries to obtain system statistics including uptime, number of served requests per day and other key performance indicators. The user interface for interacting with this component is provided by a web application. 
 
 The \textbf{Database Management System (DBMS)} is the component responsible for storing and retrieving data in a persistent, reliable way. It should be noted that this component will not be implemented from scratch; instead, a commercial solution will be used.
 
 The \textbf{Data Access Utilities} component provides an abstraction layer to all those components that need to store data into the DBMS or retrieve data from it.
 
-The \textbf{Mapping Service} component is provided by a third party and is accessed via a publicly available API. It is used to perform reverse geocoding and to compute the ETA.  
+The \textbf{Mapping Service} component is provided by a third party and is accessed via a publicly available API. It is used to perform reverse geocoding and to compute the ETA of the taxi assigned to a certain request.
 
-The \textbf{Communication System} is the component responsible for handling all communications, notifications and invocations between the central system and remote applications and services.
+The \textbf{Remote Services Interfaces} component provides external applications and clients a way to invoke the services offered by the central system. Specifically, it implements a platform-independent, SOAP-based web service which exposes the full set of remotely invokable methods defined by the public API specification of myTaxiService.
 
-The \textbf{Web Server} is the component that provides the web application functionality. 
+The \textbf{Notification System} component implements an event-based mechanism to notify remote applications and clients of specific changes in the status of the central system. In particular, this is employed to let users known when the system has assigned a taxi to their reservation.
+
+As for how the system can be accessed by its users, the \textbf{Taxi Driver Application} and the \textbf{Passenger Application} provide a way for taxi drivers and passenger respectively to interact with the system through their smartphones, while the \textbf{Passenger Web Application} allows passengers perform their operations through a web browser. Finally, administrators can access the system using the aforementioned \textbf{Administration Web Application}.
+
+
 
 \section{Component view}
 In this section, we'll provide a more detailed description of the most significant components that must be developed as part of myTaxiService.
 
-It should be noted that, when multiple operations or tasks are managed by a certain sub-component, not all of them will be explicitly mentioned in this section. This is because, at this level of detail, we want to put the focus on the primary goal of every sub-component; an exhaustive description of the functionalities mapped to each sub-component will be presented in the Requirements Traceability section of this document. 
+It should be noted that, when multiple operations or tasks are managed by a certain sub-component, not all of them will be explicitly mentioned in this section. This is because, at this level of detail, we want to put the focus on the primary goal of every sub-component; an exhaustive description of the functionalities implemented by each sub-component will be presented in the Requirements Traceability section of this document. 
 
 The first component that we'll examine is the \textbf{Taxi Management System}. As we already mentioned, this component is primarily responsible for all operations related to taxi management. Although it may appear to be an atomic component, it is in fact composed of three different sub-components, each of them dedicated to handling a specific subset of operations:
 	\begin{itemize}
-		\item The \textbf{Reservation Management} sub-component performs all the activities related to reservation handling. In particular, it is able to receive a request for a new reservation, store it into an internal queue and periodically look for reservations that have come to expiration (?). Once such a reservation is found, it creates a request for it and transfers the computation to the Request Manager.
-		\item The \textbf{Request Management} sub-component performs all the activities related to request handling. In particular, it is able to receive a new taxi request (either from an end user or from the reservation manager), retrieve the associated geographical coordinates through invocation of the Mapping Service API if the request only contains the meeting address, and use them to discover the zone from which the request is coming by invocation of an appropriate method of the Location Management. It then forwards the necessary information to the Taxi Management component.
-		\item The \textbf{Location Management} sub-component is essentially responsible for computing the association between a graphical coordinate and the zone it belongs to.
+		\item The \textbf{Reservation Management} sub-component performs all the activities related to reservation handling. In particular, it is able to receive a request for a new reservation, store it into an internal queue and periodically look for reservations that have come to expiration. Once such a reservation is found, it creates a request for it and transfers the computation to the Request Manager.
+		\item The \textbf{Request Management} sub-component performs all the activities related to request handling. In particular, it is able to receive a new taxi request (either from an end user or from the reservation manager), retrieve the associated geographical coordinates through invocation of the Mapping Service API if the request only contains the meeting address, and use them to discover the zone from which the request is coming by invocation of an appropriate method of the Location Management sub-component. It then forwards the necessary information to the Taxi Management sub-component.
+		\item The \textbf{Location Management} sub-component is essentially responsible for checking if the geographical coordinates of a certain place are inside the city and, if they are, it computes the zone they belong to. 
 		\item The \textbf{Taxi Management} sub-component implements the methods to allocate a suitable taxi to a given request, keep the taxis' statuses updated and manage the zones' queues accordingly to the requirements which have been defined in the RASD.
 	\end{itemize}
 	
@@ -96,18 +100,20 @@ The second component that we'll examine is the \textbf{Account Management} compo
 \makebox[\columnwidth]{\includegraphics[width=300pt,keepaspectratio]{pdfs/account_management_component.pdf}}
 \end{figure}
 
-The third component that we'll examine is the \textbf{System Administration} component. As we already mentioned, this component is primarily responsible for all operations related to system configuration and monitoring functionalities. More specifically, this component is divided into three sub-components, each related to a different kind of operation:	
+The third component that we'll examine is the \textbf{System Administration} component. As we already mentioned, this component is primarily responsible for all operations related to system configuration and monitoring functionalities. More specifically, this component is divided into five sub-components, each related to a different kind of operation:	
 	\begin{itemize}
+		\item The \textbf{API Permissions Management} sub-component give administrators fine-grained control over which APIs can be publicly accessed and what level of permissions is required to invoke them. More specifically, for each method exposed by the Remote Services Interface component it defines a visibility level that can be either "public" or "restricted". If the method is marked as "restricted", it also allows specifying a specific private key that must be held by the invoking application in order for the invocation to be successful. 
 		\item The \textbf{Zone Division Management} sub-component implements all the methods for inserting and updating the zone division of the city. In particular, it allows insertion of new taxi zones and deletion or modification of existing ones. It also performs all the necessary checks to ensure that zone consistency is preserved: in particular, this means that overlapping zones won't be accepted. For security reasons, this component verifies that its methods are only invoked by a user with a sufficient level of privileges.
 		\item The \textbf{Taxi Driver Management} sub-component implements all the methods for inserting and updating information about taxi drivers and the related taxis in the system. In particular, it allows insertion of new taxi drivers and taxis and deletion or modification of existing ones. It also performs all the necessary checks to ensure that information consistency is preserved. in particular, this includes validation of taxi driver licenses and taxi plates and enforces the one-to-one correspondence between a taxi driver and its taxi. For security reasons, this component verifies that its methods are only invoked by a user with a sufficient level of privileges.
-		\item The \textbf{Service Statistics} sub-components is focused on offering a set of key performance indicators (KPI) about the system operational status to all interested parties with sufficient privileges. This information can include uptime, number of served requests per day, average waiting time and other indicators. 
+		\item The \textbf{Service Statistics} sub-components is focused on offering a set of Key Performance Indicators (KPI) about the system operational status to all interested parties with sufficient privileges. This information can include uptime, number of served requests per day, average waiting time and other indicators. 
+		\item The \textbf{Plugin Management} sub-component let administrators install, enable, disable and remove plugins. It also gives administrators a list of all permissions required by each plugin to work and allows them to selectively grant and revoke them.
 	\end{itemize}
 	
 \begin{figure}[H]
 \centering
 \makebox[\columnwidth]{\includegraphics[width=300pt,keepaspectratio]{pdfs/sysadmin_component.pdf}}
 \end{figure}
-
+\pagebreak
 \section{Deployment view}
 The main purpose of this section is to show how the various components of the system are actually deployed on the hardware infrastructure.
 
@@ -149,5 +155,10 @@ The next pictures in this section depict the flow of events (in particular metho
 \section{Component interfaces}
 
 \section{Selected architectural styles and patterns}
+SOA
+Layered Architecture
+N-tier
+Publish/Subscribe (for notifications)
+
 
 \section{Other design decisions}

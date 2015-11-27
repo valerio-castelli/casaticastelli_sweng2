@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.21)  27 NOV 2015 18:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.21)  27 NOV 2015 19:47
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -630,6 +630,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [7 <./pdfs/overall_components.pdf>]
+Overfull \hbox (0.36717pt too wide) in paragraph at lines 66--67
+[]\OT1/cmr/m/n/10.95 The \OT1/cmr/bx/n/10.95 No-ti-fi-ca-tion Sys-tem \OT1/cmr/m/n/10.95 com-po-nent im-ple-ments an event-based mech-
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -639,7 +643,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [8] <pdfs/taxi_mgmt_component.pdf, id=179, 1375.1375pt x 1204.5pt>
 File: pdfs/taxi_mgmt_component.pdf Graphic file (type pdf)
  <use pdfs/taxi_mgmt_component.pdf>
-Package pdftex.def Info: pdfs/taxi_mgmt_component.pdf used on input line 83.
+Package pdftex.def Info: pdfs/taxi_mgmt_component.pdf used on input line 87.
 (pdftex.def)             Requested size: 300.0pt x 262.76694pt.
 
 
@@ -658,7 +662,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [10 <./pdfs/taxi_mgmt_component.pdf>] <pdfs/account_management_component.pdf, id=192, 1375.1375pt x 702.625pt>
 File: pdfs/account_management_component.pdf Graphic file (type pdf)
  <use pdfs/account_management_component.pdf>
-Package pdftex.def Info: pdfs/account_management_component.pdf used on input line 96.
+Package pdftex.def Info: pdfs/account_management_component.pdf used on input line 100.
 (pdftex.def)             Requested size: 300.0pt x 153.2807pt.
 
 
@@ -667,11 +671,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[11 <./pdfs/account_management_component.pdf>] <pdfs/sysadmin_component.pdf, id=202, 873.2625pt x 592.2125pt>
+[11 <./pdfs/account_management_component.pdf>] <pdfs/sysadmin_component.pdf, id=202, 873.2625pt x 782.925pt>
 File: pdfs/sysadmin_component.pdf Graphic file (type pdf)
  <use pdfs/sysadmin_component.pdf>
-Package pdftex.def Info: pdfs/sysadmin_component.pdf used on input line 108.
-(pdftex.def)             Requested size: 300.0pt x 203.44603pt.
+Package pdftex.def Info: pdfs/sysadmin_component.pdf used on input line 114.
+(pdftex.def)             Requested size: 300.0pt x 268.96255pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -679,37 +683,44 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[12 <./pdfs/sysadmin_component.pdf>] <pdfs/deployment.pdf, id=211, 3252.15pt x 983.675pt>
+[12 <./pdfs/sysadmin_component.pdf>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[13] <pdfs/deployment.pdf, id=215, 3252.15pt x 983.675pt>
 File: pdfs/deployment.pdf Graphic file (type pdf)
  <use pdfs/deployment.pdf>
-Package pdftex.def Info: pdfs/deployment.pdf used on input line 127.
+Package pdftex.def Info: pdfs/deployment.pdf used on input line 133.
 (pdftex.def)             Requested size: 3252.1421pt x 983.6726pt.
 File: pdfs/deployment.pdf Graphic file (type pdf)
  <use pdfs/deployment.pdf>
-Package pdftex.def Info: pdfs/deployment.pdf used on input line 127.
+Package pdftex.def Info: pdfs/deployment.pdf used on input line 133.
 (pdftex.def)             Requested size: 3252.1421pt x 983.6726pt.
- <pdfs/deployment.pdf, id=214, page=1, 3252.15pt x 983.675pt>
+ <pdfs/deployment.pdf, id=218, page=1, 3252.15pt x 983.675pt>
 File: pdfs/deployment.pdf Graphic file (type pdf)
  <use pdfs/deployment.pdf, page 1>
-Package pdftex.def Info: pdfs/deployment.pdf, page1 used on input line 127.
+Package pdftex.def Info: pdfs/deployment.pdf, page1 used on input line 133.
 (pdftex.def)             Requested size: 3252.1421pt x 983.6726pt.
 File: pdfs/deployment.pdf Graphic file (type pdf)
  <use pdfs/deployment.pdf, page 1>
-Package pdftex.def Info: pdfs/deployment.pdf, page1 used on input line 127.
+Package pdftex.def Info: pdfs/deployment.pdf, page1 used on input line 133.
 (pdftex.def)             Requested size: 3089.52507pt x 934.48596pt.
 File: pdfs/deployment.pdf Graphic file (type pdf)
  <use pdfs/deployment.pdf, page 1>
-Package pdftex.def Info: pdfs/deployment.pdf, page1 used on input line 127.
+Package pdftex.def Info: pdfs/deployment.pdf, page1 used on input line 133.
 (pdftex.def)             Requested size: 3089.52507pt x 934.48596pt.
 File: pdfs/deployment.pdf Graphic file (type pdf)
  <use pdfs/deployment.pdf, page 1>
-Package pdftex.def Info: pdfs/deployment.pdf, page1 used on input line 127.
+Package pdftex.def Info: pdfs/deployment.pdf, page1 used on input line 133.
 (pdftex.def)             Requested size: 3089.52507pt x 934.48596pt.
 File: pdfs/deployment.pdf Graphic file (type pdf)
  <use pdfs/deployment.pdf, page 1>
-Package pdftex.def Info: pdfs/deployment.pdf, page1 used on input line 127.
+Package pdftex.def Info: pdfs/deployment.pdf, page1 used on input line 133.
 (pdftex.def)             Requested size: 3089.52507pt x 934.48596pt.
- [13
+ [14
 
  <./pdfs/deployment.pdf>]
 
@@ -718,39 +729,39 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[14
+[15
 
-] <pdfs/runtime.pdf, id=230, 3252.15pt x 1134.2375pt>
+] <pdfs/runtime.pdf, id=234, 3252.15pt x 1134.2375pt>
 File: pdfs/runtime.pdf Graphic file (type pdf)
  <use pdfs/runtime.pdf>
-Package pdftex.def Info: pdfs/runtime.pdf used on input line 145.
+Package pdftex.def Info: pdfs/runtime.pdf used on input line 151.
 (pdftex.def)             Requested size: 3252.1421pt x 1134.23474pt.
 File: pdfs/runtime.pdf Graphic file (type pdf)
  <use pdfs/runtime.pdf>
-Package pdftex.def Info: pdfs/runtime.pdf used on input line 145.
+Package pdftex.def Info: pdfs/runtime.pdf used on input line 151.
 (pdftex.def)             Requested size: 3252.1421pt x 1134.23474pt.
- <pdfs/runtime.pdf, id=233, page=1, 3252.15pt x 1134.2375pt>
+ <pdfs/runtime.pdf, id=237, page=1, 3252.15pt x 1134.2375pt>
 File: pdfs/runtime.pdf Graphic file (type pdf)
  <use pdfs/runtime.pdf, page 1>
-Package pdftex.def Info: pdfs/runtime.pdf, page1 used on input line 145.
+Package pdftex.def Info: pdfs/runtime.pdf, page1 used on input line 151.
 (pdftex.def)             Requested size: 3252.1421pt x 1134.23474pt.
 File: pdfs/runtime.pdf Graphic file (type pdf)
  <use pdfs/runtime.pdf, page 1>
-Package pdftex.def Info: pdfs/runtime.pdf, page1 used on input line 145.
+Package pdftex.def Info: pdfs/runtime.pdf, page1 used on input line 151.
 (pdftex.def)             Requested size: 3089.52507pt x 1077.51953pt.
 File: pdfs/runtime.pdf Graphic file (type pdf)
  <use pdfs/runtime.pdf, page 1>
-Package pdftex.def Info: pdfs/runtime.pdf, page1 used on input line 145.
+Package pdftex.def Info: pdfs/runtime.pdf, page1 used on input line 151.
 (pdftex.def)             Requested size: 3089.52507pt x 1077.51953pt.
 File: pdfs/runtime.pdf Graphic file (type pdf)
  <use pdfs/runtime.pdf, page 1>
-Package pdftex.def Info: pdfs/runtime.pdf, page1 used on input line 145.
+Package pdftex.def Info: pdfs/runtime.pdf, page1 used on input line 151.
 (pdftex.def)             Requested size: 3089.52507pt x 1077.51953pt.
 File: pdfs/runtime.pdf Graphic file (type pdf)
  <use pdfs/runtime.pdf, page 1>
-Package pdftex.def Info: pdfs/runtime.pdf, page1 used on input line 145.
+Package pdftex.def Info: pdfs/runtime.pdf, page1 used on input line 151.
 (pdftex.def)             Requested size: 3089.52507pt x 1077.51953pt.
- [15
+ [16
 
  <./pdfs/runtime.pdf>]) (./chapters/others.tex
 
@@ -759,29 +770,29 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16
-
-]
-Chapter 3.
 [17
 
 ]
-Chapter 4.
+Chapter 3.
 [18
 
 ]
-Chapter 5.
+Chapter 4.
 [19
 
 ]
-Chapter 6.
+Chapter 5.
 [20
+
+]
+Chapter 6.
+[21
 
 ]
 Appendix A.
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 15.
- [21
+ [22
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 15.
@@ -793,18 +804,18 @@ Package rerunfilecheck Info: File `2_DD.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 15.
  ) 
 Here is how much of TeX's memory you used:
- 8383 strings out of 493089
- 123183 string characters out of 6134841
+ 8384 strings out of 493089
+ 123190 string characters out of 6134841
  218716 words of memory out of 5000000
  11683 multiletter control sequences out of 15000+600000
  10012 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,21n,48p,1081b,509s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on /Users/Valerio/GitHub/casaticastelli_sweng2/2_DD/latex_files/.texpadtmp/2_DD.pdf (23 pages, 314196 bytes).
+Output written on /Users/Valerio/GitHub/casaticastelli_sweng2/2_DD/latex_files/.texpadtmp/2_DD.pdf (24 pages, 316446 bytes).
 PDF statistics:
- 308 PDF objects out of 1000 (max. 8388607)
- 259 compressed objects within 3 object streams
- 47 named destinations out of 1000 (max. 500000)
+ 312 PDF objects out of 1000 (max. 8388607)
+ 262 compressed objects within 3 object streams
+ 48 named destinations out of 1000 (max. 500000)
  255 words of extra memory for PDF output out of 10000 (max. 10000000)
 
