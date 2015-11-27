@@ -9,7 +9,7 @@ The system architecture is thus logically organized in a set of interplaying sof
 
 \begin{figure}[H]
 \centering
-\makebox[\columnwidth]{\includegraphics[width=300pt,keepaspectratio]{images/overall_architecture.png}}
+\makebox[\columnwidth]{\includegraphics[width=350pt,keepaspectratio]{pdfs/overall_architecture.pdf}}
 \end{figure}
 \vspace{5mm}
 The lowest layer of the architecture is composed by the relational \textbf{Data-base Management System (DBMS)} that supports all data storage operations. This component fully supports ACID distributed transactions and is meant to be run inside a Demilitarized Zone (DMZ) which is separated from the rest of the system for security reasons. (N.B. questo va messo qui?)
@@ -35,7 +35,7 @@ In particular, it should be noted that the components discussed here are very ab
 A schematic representation of the component structure of the system is the following.
 \begin{figure}[H]
 \centering
-\makebox[\columnwidth]{\includegraphics[width=300pt,keepaspectratio]{images/overall_components_v2.png}}
+\makebox[\columnwidth]{\includegraphics[width=300pt,keepaspectratio]{pdfs/overall_components.pdf}}
 \end{figure}
 
 The \textbf{Account Management} component is responsible for all operations related to user accounts. More specifically:
@@ -80,7 +80,7 @@ The first component that we'll examine is the \textbf{Taxi Management System}. A
 	
 \begin{figure}[H]
 \centering
-\makebox[\columnwidth]{\includegraphics[width=300pt,keepaspectratio]{images/taxi_mgmt_component_v2.png}}
+\makebox[\columnwidth]{\includegraphics[width=300pt,keepaspectratio]{pdfs/taxi_mgmt_component.pdf}}
 \end{figure}
 
 The second component that we'll examine is the \textbf{Account Management} component. As we already mentioned, this component is primarily responsible for all operations related to user accounts handling. More specifically, this component is divided into four sub-components, each related to a different kind of operation:
@@ -93,7 +93,7 @@ The second component that we'll examine is the \textbf{Account Management} compo
 
 \begin{figure}[H]
 \centering
-\makebox[\columnwidth]{\includegraphics[width=300pt,keepaspectratio]{images/account_management_component.png}}
+\makebox[\columnwidth]{\includegraphics[width=300pt,keepaspectratio]{pdfs/account_management_component.pdf}}
 \end{figure}
 
 The third component that we'll examine is the \textbf{System Administration} component. As we already mentioned, this component is primarily responsible for all operations related to system configuration and monitoring functionalities. More specifically, this component is divided into three sub-components, each related to a different kind of operation:	
@@ -105,12 +105,19 @@ The third component that we'll examine is the \textbf{System Administration} com
 	
 \begin{figure}[H]
 \centering
-\makebox[\columnwidth]{\includegraphics[width=300pt,keepaspectratio]{images/sysadmin_component.png}}
+\makebox[\columnwidth]{\includegraphics[width=300pt,keepaspectratio]{pdfs/sysadmin_component.pdf}}
 \end{figure}
 
 \section{Deployment view}
+\begin{landscape}
+\includepdf[scale=0.95,angle=90]{pdfs/deployment.pdf}
+\end{landscape}
 
 \section{Runtime view}
+\begin{landscape}
+\includepdf[scale=0.95,angle=90]{pdfs/runtime.pdf}
+\end{landscape}
+
 
 \section{Component interfaces}
 
