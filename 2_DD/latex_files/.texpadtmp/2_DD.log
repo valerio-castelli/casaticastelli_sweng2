@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.21)  27 NOV 2015 16:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.21)  27 NOV 2015 17:47
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -490,32 +490,32 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [12 <./pdfs/sysadmin_component.pdf>] <pdfs/deployment.pdf, id=210, 3252.15pt x 983.675pt>
 File: pdfs/deployment.pdf Graphic file (type pdf)
  <use pdfs/deployment.pdf>
-Package pdftex.def Info: pdfs/deployment.pdf used on input line 113.
+Package pdftex.def Info: pdfs/deployment.pdf used on input line 127.
 (pdftex.def)             Requested size: 3252.1421pt x 983.6726pt.
 File: pdfs/deployment.pdf Graphic file (type pdf)
  <use pdfs/deployment.pdf>
-Package pdftex.def Info: pdfs/deployment.pdf used on input line 113.
+Package pdftex.def Info: pdfs/deployment.pdf used on input line 127.
 (pdftex.def)             Requested size: 3252.1421pt x 983.6726pt.
  <pdfs/deployment.pdf, id=213, page=1, 3252.15pt x 983.675pt>
 File: pdfs/deployment.pdf Graphic file (type pdf)
  <use pdfs/deployment.pdf, page 1>
-Package pdftex.def Info: pdfs/deployment.pdf, page1 used on input line 113.
+Package pdftex.def Info: pdfs/deployment.pdf, page1 used on input line 127.
 (pdftex.def)             Requested size: 3252.1421pt x 983.6726pt.
 File: pdfs/deployment.pdf Graphic file (type pdf)
  <use pdfs/deployment.pdf, page 1>
-Package pdftex.def Info: pdfs/deployment.pdf, page1 used on input line 113.
+Package pdftex.def Info: pdfs/deployment.pdf, page1 used on input line 127.
 (pdftex.def)             Requested size: 3089.52507pt x 934.48596pt.
 File: pdfs/deployment.pdf Graphic file (type pdf)
  <use pdfs/deployment.pdf, page 1>
-Package pdftex.def Info: pdfs/deployment.pdf, page1 used on input line 113.
+Package pdftex.def Info: pdfs/deployment.pdf, page1 used on input line 127.
 (pdftex.def)             Requested size: 3089.52507pt x 934.48596pt.
 File: pdfs/deployment.pdf Graphic file (type pdf)
  <use pdfs/deployment.pdf, page 1>
-Package pdftex.def Info: pdfs/deployment.pdf, page1 used on input line 113.
+Package pdftex.def Info: pdfs/deployment.pdf, page1 used on input line 127.
 (pdftex.def)             Requested size: 3089.52507pt x 934.48596pt.
 File: pdfs/deployment.pdf Graphic file (type pdf)
  <use pdfs/deployment.pdf, page 1>
-Package pdftex.def Info: pdfs/deployment.pdf, page1 used on input line 113.
+Package pdftex.def Info: pdfs/deployment.pdf, page1 used on input line 127.
 (pdftex.def)             Requested size: 3089.52507pt x 934.48596pt.
  [13
 
@@ -531,32 +531,32 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 ] <pdfs/runtime.pdf, id=229, 3252.15pt x 1134.2375pt>
 File: pdfs/runtime.pdf Graphic file (type pdf)
  <use pdfs/runtime.pdf>
-Package pdftex.def Info: pdfs/runtime.pdf used on input line 118.
+Package pdftex.def Info: pdfs/runtime.pdf used on input line 141.
 (pdftex.def)             Requested size: 3252.1421pt x 1134.23474pt.
 File: pdfs/runtime.pdf Graphic file (type pdf)
  <use pdfs/runtime.pdf>
-Package pdftex.def Info: pdfs/runtime.pdf used on input line 118.
+Package pdftex.def Info: pdfs/runtime.pdf used on input line 141.
 (pdftex.def)             Requested size: 3252.1421pt x 1134.23474pt.
  <pdfs/runtime.pdf, id=232, page=1, 3252.15pt x 1134.2375pt>
 File: pdfs/runtime.pdf Graphic file (type pdf)
  <use pdfs/runtime.pdf, page 1>
-Package pdftex.def Info: pdfs/runtime.pdf, page1 used on input line 118.
+Package pdftex.def Info: pdfs/runtime.pdf, page1 used on input line 141.
 (pdftex.def)             Requested size: 3252.1421pt x 1134.23474pt.
 File: pdfs/runtime.pdf Graphic file (type pdf)
  <use pdfs/runtime.pdf, page 1>
-Package pdftex.def Info: pdfs/runtime.pdf, page1 used on input line 118.
+Package pdftex.def Info: pdfs/runtime.pdf, page1 used on input line 141.
 (pdftex.def)             Requested size: 3089.52507pt x 1077.51953pt.
 File: pdfs/runtime.pdf Graphic file (type pdf)
  <use pdfs/runtime.pdf, page 1>
-Package pdftex.def Info: pdfs/runtime.pdf, page1 used on input line 118.
+Package pdftex.def Info: pdfs/runtime.pdf, page1 used on input line 141.
 (pdftex.def)             Requested size: 3089.52507pt x 1077.51953pt.
 File: pdfs/runtime.pdf Graphic file (type pdf)
  <use pdfs/runtime.pdf, page 1>
-Package pdftex.def Info: pdfs/runtime.pdf, page1 used on input line 118.
+Package pdftex.def Info: pdfs/runtime.pdf, page1 used on input line 141.
 (pdftex.def)             Requested size: 3089.52507pt x 1077.51953pt.
 File: pdfs/runtime.pdf Graphic file (type pdf)
  <use pdfs/runtime.pdf, page 1>
-Package pdftex.def Info: pdfs/runtime.pdf, page1 used on input line 118.
+Package pdftex.def Info: pdfs/runtime.pdf, page1 used on input line 141.
 (pdftex.def)             Requested size: 3089.52507pt x 1077.51953pt.
  [15
 
@@ -607,9 +607,9 @@ Here is how much of TeX's memory you used:
  11339 multiletter control sequences out of 15000+600000
  10012 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,21n,48p,1081b,511s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,21n,48p,1081b,509s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on /Users/Valerio/GitHub/casaticastelli_sweng2/2_DD/latex_files/.texpadtmp/2_DD.pdf (23 pages, 303538 bytes).
+Output written on /Users/Valerio/GitHub/casaticastelli_sweng2/2_DD/latex_files/.texpadtmp/2_DD.pdf (23 pages, 305927 bytes).
 PDF statistics:
  304 PDF objects out of 1000 (max. 8388607)
  256 compressed objects within 3 object streams

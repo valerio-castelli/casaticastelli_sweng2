@@ -109,11 +109,34 @@ The third component that we'll examine is the \textbf{System Administration} com
 \end{figure}
 
 \section{Deployment view}
+The main purpose of this section is to show how the various components of the system are actually deployed on the hardware infrastructure.
+
+The design of the hardware architecture was mostly influenced by these concerns: 
+\begin{itemize}
+	\item It had to be sufficiently reliable, available and scalable with respect to the non-functional requirements stated in the RASD
+	\item It had to be compatible with the limited financial resources of a city administration 
+	\item It had to be manageable by the city administration staff 
+\end{itemize} 
+
+For these reasons we have decided to avoid implementing a custom server farm specifically for this project. Instead, we have chosen to deploy myTaxiService on a third-party cloud infrastructure offered as a Platform as a Service.
+
+The following diagram describes which are the most important devices and how software components are deployed on them.
+
+It should be noted that, for readability reasons, we have explicitly depicted only a single instance of each hardware component despite the fact that they are actually arranged in replicated clusters. A load balancer is used to redistribute the workload across the instances.
 \begin{landscape}
 \includepdf[scale=0.95,angle=90]{pdfs/deployment.pdf}
 \end{landscape}
 
 \section{Runtime view}
+The main purpose of this section is to show how the various components of the system interact with each other in some real world scenarios.
+
+The first picture represents a snapshot of the system during its execution. In this scenario Alice is a passenger who has requested a taxi using the passenger mobile application installed on her smartphone, Bob is a taxi driver who has marked himself as available, Charles and Diana are two administrators that are performing queries on the system. The diagram clearly shows the set of processes and threads running on all the devices; in particular:
+\begin{itemize}
+	\item The Taxi Management Server is running a single Taxi Management System Process that is responsible of different threads, one for every kind of taxi-related operation. For example, the Request Manager thread is shown controlling a set of taxi requests, including Alice's; the Reservation Manager thread is shown controlling a set of taxi reservations; and the Taxi Manager Thread is shown managing the taxi queues of the different zones and the list of unavailable, out-of-city and currently riding taxis.
+	\item The Account Manager Server is running a single Account Management process that contains a list of all active user accounts. In particular, in the picture it is shown containing Alice's, Bob's, Charles' and Diana's accounts.
+\end{itemize}
+
+The next pictures in this section depict the flow of events (in particular method invocations) for the most important operations in the form of sequence diagrams. 
 \begin{landscape}
 \includepdf[scale=0.95,angle=90]{pdfs/runtime.pdf}
 \end{landscape}
