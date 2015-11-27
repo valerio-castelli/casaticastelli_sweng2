@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.3">
+  <zoom_level>7</zoom_level>
+  <element>
+    <id>UMLDeployment</id>
+    <coordinates>
+      <x>42</x>
+      <y>119</y>
+      <w>238</w>
+      <h>315</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;device&gt;&gt;
+:Taxi Manager Server
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLDeployment</id>
+    <coordinates>
+      <x>63</x>
+      <y>161</y>
+      <w>189</w>
+      <h>266</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;execution environment&gt;&gt;
+:Application Server</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>77</x>
+      <y>203</y>
+      <w>154</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+
+:ReservationManager.jar</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>77</x>
+      <y>259</y>
+      <w>154</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+
+:RequestManager.jar</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>77</x>
+      <y>315</y>
+      <w>154</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+
+:LocationManager.jar</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>77</x>
+      <y>371</y>
+      <w>154</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+
+:TaxiManager.jar</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>490</x>
+      <y>84</y>
+      <w>168</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+
+:PassengerRegistration.jar</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>490</x>
+      <y>140</y>
+      <w>168</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+
+:Login.jar</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>490</x>
+      <y>196</y>
+      <w>168</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+
+:PasswordRetrieval.jar</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>490</x>
+      <y>252</y>
+      <w>168</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+
+:SettingsManager.jar</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLDeployment</id>
+    <coordinates>
+      <x>476</x>
+      <y>42</y>
+      <w>203</w>
+      <h>266</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;execution environment&gt;&gt;
+:Application Server</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLDeployment</id>
+    <coordinates>
+      <x>455</x>
+      <y>0</y>
+      <w>238</w>
+      <h>315</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;device&gt;&gt;
+:Account Manager Server
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
