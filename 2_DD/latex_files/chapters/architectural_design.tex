@@ -134,6 +134,10 @@ The first picture represents a snapshot of the system during its execution. In t
 \begin{itemize}
 	\item The Taxi Management Server is running a single Taxi Management System Process that is responsible of different threads, one for every kind of taxi-related operation. For example, the Request Manager thread is shown controlling a set of taxi requests, including Alice's; the Reservation Manager thread is shown controlling a set of taxi reservations; and the Taxi Manager Thread is shown managing the taxi queues of the different zones and the list of unavailable, out-of-city and currently riding taxis.
 	\item The Account Manager Server is running a single Account Management process that contains a list of all active user accounts. In particular, in the picture it is shown containing Alice's, Bob's, Charles' and Diana's accounts.
+	\item The System Administration Server is running a single System Administration process that is responsible of different threads, one for every administrative transaction operated on the system. Specifically, the picture shows the Statistics Evaluation thread invoked to satisfy Charles' query and the Taxi Drivers Management thread invoked to satisfy Diana's request.
+	\item The Communication Services Server is running an instance of the Remote Services Interface servlet to expose the key functionalities of the system to remote clients and an instance of the Notification System.
+	\item The Web Application Servers are running instances of the Passenger Web Application presentation logic and of the Administration Web Application presentation logic.
+	\item The Load Balancing nodes are running instances of the Apache Web Server to redirect HTTP requests to different instances of the business logic nodes.
 \end{itemize}
 
 The next pictures in this section depict the flow of events (in particular method invocations) for the most important operations in the form of sequence diagrams. 
