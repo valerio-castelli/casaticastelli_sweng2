@@ -111,10 +111,10 @@
       <x>618</x>
       <y>156</y>
       <w>108</w>
-      <h>72</h>
+      <h>78</h>
     </coordinates>
     <panel_attributes>lt=&lt;[]-(()-[]&gt;</panel_attributes>
-    <additional_attributes>18;18;96;18;96;60</additional_attributes>
+    <additional_attributes>18;18;96;18;96;66</additional_attributes>
   </element>
   <element>
     <type>com.baselet.element.old.element.Relation</type>
@@ -319,13 +319,13 @@ Web Application</panel_attributes>
     <type>com.baselet.element.old.element.Relation</type>
     <coordinates>
       <x>246</x>
-      <y>114</y>
+      <y>108</y>
       <w>30</w>
-      <h>90</h>
+      <h>96</h>
     </coordinates>
     <panel_attributes>lt=&lt;[]-(()-[]&gt;
 </panel_attributes>
-    <additional_attributes>18;18;18;78</additional_attributes>
+    <additional_attributes>18;18;18;84</additional_attributes>
   </element>
   <element>
     <type>com.baselet.element.old.element.Relation</type>
@@ -353,13 +353,13 @@ Web Application</panel_attributes>
     <type>com.baselet.element.old.element.Relation</type>
     <coordinates>
       <x>336</x>
-      <y>114</y>
+      <y>108</y>
       <w>30</w>
-      <h>90</h>
+      <h>96</h>
     </coordinates>
     <panel_attributes>lt=&lt;[]-(()-[]&gt;
 </panel_attributes>
-    <additional_attributes>18;18;18;78</additional_attributes>
+    <additional_attributes>18;18;18;84</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
