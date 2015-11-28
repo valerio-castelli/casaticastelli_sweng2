@@ -1,0 +1,87 @@
+@startuml
+
+title sd_request
+
+activate PassengerApp
+PassengerApp ->> RemoteServiceInterface: requestTaxi(clientId, GPS)
+
+activate RemoteServiceInterface
+PassengerApp <<-- RemoteServiceInterface
+RemoteServiceInterface ->> RequestManagement: requestTaxi(id, GPS)
+
+activate RequestManagement
+RemoteServiceInterface <<-- RequestManagement
+
+deactivate RemoteServiceInterface
+RequestManagement -> DataAccessUtilities: write(id, status)
+
+activate DataAccessUtilities
+DataAccessUtilities -> DBMS: query()
+
+activate DBMS
+DataAccessUtilities <-- DBMS
+
+deactivate DBMS
+RequestManagement <-- DataAccessUtilities
+
+deactivate DataAccessUtilities
+RequestManagement -> LocationManagement: getZone(GPS)
+
+activate LocationManagement
+LocationManagement -> MappingService: convert(GPS)
+
+activate MappingService
+LocationManagement <-- MappingService: zone
+
+deactivate MappingService
+LocationManagement --> RequestManagement: zone
+
+deactivate LocationManagement
+loop until a taxi driver accepts the call
+	RequestManagement -> TaxiManagement: getFirstAvailableTaxiDriverInQueue(zone)
+	TaxiManagement -> TaxiManagement: popTaxiDriver() 
+	RequestManagement <-- TaxiManagement: taxiDriver
+	RequestManagement ->> RemoteServiceInterface: sendNotification()
+	
+	activate RemoteServiceInterface
+	RequestManagement <<-- RemoteServiceInterface
+	RemoteServiceInterface ->> TaxiDriverApp: sendNotification()
+	RemoteServiceInterface <<-- TaxiDriverApp
+	
+	deactivate RemoteServiceInterface
+	alt accept ride
+		TaxiDriverApp ->> RemoteServiceInterface: acceptRide()
+		
+		activate RemoteServiceInterface
+		RemoteServiceInterface -->> TaxiDriverApp
+		RemoteServiceInterface ->> RequestManagement: acceptRide()
+		RequestManagement -> TaxiManagement: rideAccepted()
+		TaxiManagement -> TaxiManagement: setUnavailable(taxiDriver)
+		RequestManagement <-- TaxiManagement
+		RequestManagement -> DBMS: //write
+		
+		deactivate RemoteServiceInterface
+	else reject ride
+		TaxiDriverApp ->> RemoteServiceInterface: refuseRide()
+		
+		activate RemoteServiceInterface
+		RemoteServiceInterface -->> TaxiDriverApp
+		RemoteServiceInterface ->> RequestManagement: refuseRide()
+		RequestManagement -> TaxiManagement: rideRefused()
+		TaxiManagement -> TaxiManagement: pushTaxiDriver(zone)
+		RequestManagement <-- TaxiManagement
+		RequestManagement -> DBMS: //write
+		
+		deactivate RemoteServiceInterface
+	end
+end
+RequestManagement -> RequestManagement: generateSecretCode()
+RequestManagement -> DBMS: //write
+RequestManagement ->> RemoteServiceInterface: sendNotification()
+RequestManagement <<-- RemoteServiceInterface
+RemoteServiceInterface ->> TaxiDriverApp: confirmRide(secretCode)
+RemoteServiceInterface <<-- TaxiDriverApp
+RemoteServiceInterface ->> PassengerApp: confirmRide(secretCode)
+RemoteServiceInterface <<-- PassengerApp
+deactivate PassengerApp
+@enduml

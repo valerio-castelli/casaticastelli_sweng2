@@ -1,0 +1,26 @@
+@startuml
+
+title sd_reservation
+
+PassengerApp ->> RemoteServicesInterface: requestTaxiReservation() //data??
+PassengerApp <<-- RemoteServicesInterface
+RemoteServicesInterface -> ReservationManagement: requestTaxiReservation()
+ReservationManagement -> ReservationManagement: checkDate() // put an alt immediately after?
+ReservationManagement -> LocationManagement: getZone(address) // mapping service?
+LocationManagement -> ReservationManagement:
+
+alt correct data
+
+ReservationManagement -> DataAccessUtilities: write()
+DataAccessUtilities -> DBMS: query()
+DataAccessUtilities <-- DBMS
+ReservationManagement <-- DataAccessUtilities
+RemoteServicesInterface <<- ReservationManagement: confirm()
+PassengerApp <<- RemoteServicesInterface
+
+else wrong data
+RemoteServicesInterface <<- ReservationManagement: error()
+PassengerApp <<- RemoteServicesInterface
+
+end
+@enduml 

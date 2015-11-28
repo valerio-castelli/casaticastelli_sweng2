@@ -1,0 +1,15 @@
+@startuml
+Driver -> Comm: update(status) // status == available or unavailable? or two separate sd? // GPS?
+Comm -> TaxiMan
+alt status == available
+	Taximan -> LocationMan: getZone()
+	Taximan <-- LocationMan: zone
+	TaxiMan -> TaxiMan: changeStatus
+	TaxiMan -> TaxiMan: push
+else
+Taximan -> LocationMan: getZone()
+	Taximan <-- LocationMan: zone
+	TaxiMan -> TaxiMan: remove
+	TaxiMan -> TaxiMan: changeStatus 
+end
+@enduml

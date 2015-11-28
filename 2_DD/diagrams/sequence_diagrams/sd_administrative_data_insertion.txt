@@ -1,0 +1,8 @@
+@startuml
+browser -> webadm: askForm()
+browser <- webadm
+browser -> webadm: 
+webadm ->> remote: get
+remote ->> systemadm
+
+@enduml
