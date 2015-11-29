@@ -103,6 +103,18 @@ For sake of readability, we will use the notation \textbf{req. x.y} to make refe
 
 \section{Quality Requirements}
 
+In this section we will describe in detail how myTaxiService has been designed to guarantee certain important Quality of Service (QoS) attributes.
+
+In particular, we will focus on Performance, Reliability, Availability, Security and Portability requirements.
+
+The usage of a Platform as a Service (PaaS) cloud infrastructure, combined with the n-tier and multi-layered software architecture we have chosen to adopt, provides myTaxiService a great level of performance. Specifically, the division of myTaxiService in a plethora of components implementing functionalities at different levels of abstraction and running on separate machines enables us to scale the hardware infrastructure as needed to achieve exactly the level of performance required. Concurrency requirements, for example, are satisfied by accurate load-balancing of requests across multiple servers running different instances of the same core services, in order to achieve a high level of parallelism and be able to serve as many requests as needed, with the option to increase the capabilities of the system in the future by renting more computation capabilities. 
+
+The same n-tier infrastructure also let us achieve satisfying levels of availability and reliability, as the system components are distributed across several servers, possibly housed in different server farms by the cloud provider. Because of the way the PaaS cloud is designed, in case of failures requests can be smoothly transitioned from a server to another one without any interruption in the system operation; also, data is backed up across different locations, to provide a great level of resilience to natural disasters.
+
+Security is achieved through both system-level and hardware-level measures. At the system level, the Account Manager and the System Administration components are responsible for checking that methods can only be invoked by authorized personnel. Furthermore, APIs are exposed via the Remote Services Interface in a way that prevents SQL injection attacks to take place and are invoked via secure token and encryption mechanisms to prevent man-in-the-middle attacks. DDoS attacks are mitigated by the presence of multiple load-balancers to redistribute requests across all the servers and thus minimize the possibility of a server going down due to the excessive amount of requests; a hardware firewall is also positioned at the boundaries of the central system to limit the number of ports that are publicly exposed and to temporarily ban IP addresses that are performing an excessive amount of requests in an attempt to block DDoS attacks. Other firewalls are positioned to separate the Communication Services Server from the servers providing the core functionalities of the system (Taxi Management, Account Management, System Administration and Database) and to separate the Database Server from everything else. All passwords are encrypted at the software level before being stored in the DBMS; to achieve better security, disks are physically encrypted at the hardware-level.
+
+Finally, portability is achieved by exposing APIs using an open, standard web service mechanism based on SOAP. This allows the system to be invoked from any platform which can access the internet without restricting it to any particular operating system, hardware vendor or programming language. 
+
 \chapter{References}
 
 \begin{appendices}
