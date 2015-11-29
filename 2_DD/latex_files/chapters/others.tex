@@ -25,7 +25,30 @@ For sake of readability, we will use the notation \textbf{req. x.y} to make refe
 	\item Req. 4.8 and 4.11 are handled by the Taxi Management sub-component
 	\end{itemize}
 	\item The \textbf{Notification System} component, which provides to the central system the dispatch mechanism it needs for sending notifications to the taxi driver application. This component is essentially involved in satisfying reqs. 4.6, 4.8 and 4.11.
-	\end{itemize}\end{itemize}
+	\end{itemize}
+	\item \textbf{Goal 5} requires the allocation and distribution of taxis to be managed fairly and consistently. This is achieved by an interplay of components: 
+	\begin{itemize}
+	\item The \textbf{Taxi Management System} is the key component that concurs to the fulfillment of the goal. More specifically, reqs. 5.1 to 5.10 are handled by the Taxi Management sub-component, with the aid of the Location Management sub-component as for those requirements that involve checking whether the taxi driver is still inside the city or not. 
+	\item The \textbf{Taxi Driver Application} component is crucial in fulfilling reqs 5.11 and 5.12 by providing an appropriate management of the UI to prevent incorrect availability assignments and by sending the GPS coordinates of the taxi driver to the central system with a given frequency.
+	\item The \textbf{Remote Services Interface} component, which enables the taxi driver application to request services to the central system and thus provides the necessary callbacks to satisfy req. 5.12. 	
+	\end{itemize}
+	\item \textbf{Goal 6} is related to the ability of a taxi driver to receive, accept and refuse ride requests. This involves:
+	\begin{itemize}
+	\item The \textbf{Taxi Management System} component, which is responsible of fulfilling reqs. 6.1, 6.2, and 6.4 to 6.6 by means of the Taxi Management sub-component.
+	\item The \textbf{Mapping Service} component, which provides the reverse-geocoding capability to fulfill req. 6.2 and the map data to fulfill req. 6.8.
+	\item The \textbf{Taxi Driver Application} component, which is responsible of fulfilling reqs. 6.1, 6.3, 6.7 and 6.8 by providing to the taxi driver an appropriate UI.
+	\item The \textbf{Notification System} component, which provides to the central system the dispatch mechanism it needs for sending notifications to the taxi driver application and fulfill req 6.1.
+	\item The \textbf{Remote Services Interface} component, which enables the taxi driver application to request services to the central system and thus provides the necessary callbacks to satisfy reqs. 6.4 and 6.5.
+	\end{itemize}
+	\item \textbf{Goal 7} gives a taxi driver the ability to drop a request if the passenger doesn't show up. In order for this functionality to work correctly, several components should cooperate:
+	\begin{itemize}
+	\item The \textbf{Taxi Driver Application} component, which provides a suitable UI to drop the request (req. 7.1) and retrieves the current GPS location fo the taxi driver in order to let the central system check if it matches the agreed meeting point (req. 7.2).
+	\item The \textbf{Taxi Management System} component, which is responsible of satisfying all the three requirements related to this goal, in particular my means of the Taxi Management and Request Management sub-components.
+	\item The \textbf{Passenger Application} component, which is responsible of implementing a suitable UI view to notify a user that his request has been dropped (req. 7.3).
+	\item The \textbf{Notification System} component, which provides to the central system the dispatch mechanism it needs for sending notifications to both the taxi driver application and the passenger application and fulfill req 7.3.
+	\item The \textbf{Remote Services Interface} component, which enables the taxi driver application to request services to the central system and thus provides the necessary callbacks to satisfy reqs. 7.1 and 7.2.
+	\end{itemize}
+	\end{itemize}
 
 \section{Quality Requirements}
 
