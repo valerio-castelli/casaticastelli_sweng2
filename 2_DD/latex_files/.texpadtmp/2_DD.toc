@@ -20,5 +20,7 @@
 \contentsline {chapter}{\numberline {3}Algorithm Design}{19}{chapter.3}
 \contentsline {chapter}{\numberline {4}User Interface Design}{20}{chapter.4}
 \contentsline {chapter}{\numberline {5}Requirements Traceability}{21}{chapter.5}
-\contentsline {chapter}{\numberline {6}References}{22}{chapter.6}
-\contentsline {chapter}{Appendix \numberline {A}Hours of work}{23}{Appendix.1.A}
+\contentsline {section}{\numberline {5.1}Functional Requirements}{21}{section.5.1}
+\contentsline {section}{\numberline {5.2}Quality Requirements}{22}{section.5.2}
+\contentsline {chapter}{\numberline {6}References}{23}{chapter.6}
+\contentsline {chapter}{Appendix \numberline {A}Hours of work}{24}{Appendix.1.A}

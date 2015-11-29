@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.21)  28 NOV 2015 18:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.21)  29 NOV 2015 12:52
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -497,7 +497,14 @@ Now handling font encoding PD1 ...
    defining Unicode char U+2026 (decimal 8230)
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
-))) (/Users/Valerio/GitHub/casaticastelli_sweng2/2_DD/latex_files/.texpadtmp/2_DD.aux)
+)) (/usr/local/texlive/2015/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\labelindent=\skip62
+\enit@outerparindent=\dimen121
+\enit@toks=\toks24
+\enit@inbox=\box38
+\enitdp@description=\count123
+)) (/Users/Valerio/GitHub/casaticastelli_sweng2/2_DD/latex_files/.texpadtmp/2_DD.aux)
 \openout1 = `2_DD.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
@@ -514,14 +521,14 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
-\AtBeginShipoutBox=\box38
+\AtBeginShipoutBox=\box39
 Package hyperref Info: Link coloring OFF on input line 3.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
  (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count123
+\c@section@level=\count124
 )
 LaTeX Info: Redefining \ref on input line 3.
 LaTeX Info: Redefining \pageref on input line 3.
@@ -530,21 +537,21 @@ LaTeX Info: Redefining \nameref on input line 3.
 \@outlinefile=\write3
 \openout3 = `2_DD.out'.
 
-\c@lstlisting=\count124
+\c@lstlisting=\count125
  (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count125
-\scratchdimen=\dimen121
-\scratchbox=\box39
-\nofMPsegments=\count126
-\nofMParguments=\count127
-\everyMPshowfont=\toks24
-\MPscratchCnt=\count128
-\MPscratchDim=\dimen122
-\MPnumerator=\count129
-\makeMPintoPDFobject=\count130
-\everyMPtoPDFconversion=\toks25
-) (./title/title_page.tex <title/polimi_logo.png, id=96, 419.31656pt x 417.81094pt>
+\scratchcounter=\count126
+\scratchdimen=\dimen122
+\scratchbox=\box40
+\nofMPsegments=\count127
+\nofMParguments=\count128
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count129
+\MPscratchDim=\dimen123
+\MPnumerator=\count130
+\makeMPintoPDFobject=\count131
+\everyMPtoPDFconversion=\toks26
+) (./title/title_page.tex <title/polimi_logo.png, id=104, 419.31656pt x 417.81094pt>
 File: title/polimi_logo.png Graphic file (type png)
  <use title/polimi_logo.png>
 Package pdftex.def Info: title/polimi_logo.png used on input line 3.
@@ -596,7 +603,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [3]
 Chapter 2.
-<pdfs/overall_architecture.pdf, id=148, 626.34pt x 706.64pt>
+<pdfs/overall_architecture.pdf, id=159, 626.34pt x 706.64pt>
 File: pdfs/overall_architecture.pdf Graphic file (type pdf)
  <use pdfs/overall_architecture.pdf>
 Package pdftex.def Info: pdfs/overall_architecture.pdf used on input line 12.
@@ -617,7 +624,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[6] <pdfs/overall_components.pdf, id=166, 1244.65pt x 1023.825pt>
+[6] <pdfs/overall_components.pdf, id=176, 1244.65pt x 1023.825pt>
 File: pdfs/overall_components.pdf Graphic file (type pdf)
  <use pdfs/overall_components.pdf>
 Package pdftex.def Info: pdfs/overall_components.pdf used on input line 38.
@@ -640,7 +647,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[8] <pdfs/taxi_mgmt_component.pdf, id=179, 1375.1375pt x 1204.5pt>
+[8] <pdfs/taxi_mgmt_component.pdf, id=189, 1375.1375pt x 1204.5pt>
 File: pdfs/taxi_mgmt_component.pdf Graphic file (type pdf)
  <use pdfs/taxi_mgmt_component.pdf>
 Package pdftex.def Info: pdfs/taxi_mgmt_component.pdf used on input line 87.
@@ -659,7 +666,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10 <./pdfs/taxi_mgmt_component.pdf>] <pdfs/account_management_component.pdf, id=192, 1375.1375pt x 702.625pt>
+[10 <./pdfs/taxi_mgmt_component.pdf>] <pdfs/account_management_component.pdf, id=202, 1375.1375pt x 702.625pt>
 File: pdfs/account_management_component.pdf Graphic file (type pdf)
  <use pdfs/account_management_component.pdf>
 Package pdftex.def Info: pdfs/account_management_component.pdf used on input line 100.
@@ -671,7 +678,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[11 <./pdfs/account_management_component.pdf>] <pdfs/sysadmin_component.pdf, id=202, 873.2625pt x 782.925pt>
+[11 <./pdfs/account_management_component.pdf>] <pdfs/sysadmin_component.pdf, id=212, 873.2625pt x 782.925pt>
 File: pdfs/sysadmin_component.pdf Graphic file (type pdf)
  <use pdfs/sysadmin_component.pdf>
 Package pdftex.def Info: pdfs/sysadmin_component.pdf used on input line 114.
@@ -690,7 +697,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[13] <pdfs/deployment.pdf, id=215, 3252.15pt x 983.675pt>
+[13] <pdfs/deployment.pdf, id=225, 3252.15pt x 983.675pt>
 File: pdfs/deployment.pdf Graphic file (type pdf)
  <use pdfs/deployment.pdf>
 Package pdftex.def Info: pdfs/deployment.pdf used on input line 133.
@@ -699,7 +706,7 @@ File: pdfs/deployment.pdf Graphic file (type pdf)
  <use pdfs/deployment.pdf>
 Package pdftex.def Info: pdfs/deployment.pdf used on input line 133.
 (pdftex.def)             Requested size: 3252.1421pt x 983.6726pt.
- <pdfs/deployment.pdf, id=218, page=1, 3252.15pt x 983.675pt>
+ <pdfs/deployment.pdf, id=228, page=1, 3252.15pt x 983.675pt>
 File: pdfs/deployment.pdf Graphic file (type pdf)
  <use pdfs/deployment.pdf, page 1>
 Package pdftex.def Info: pdfs/deployment.pdf, page1 used on input line 133.
@@ -731,7 +738,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [15
 
-] <pdfs/runtime.pdf, id=234, 3252.15pt x 1134.2375pt>
+] <pdfs/runtime.pdf, id=244, 3252.15pt x 1134.2375pt>
 File: pdfs/runtime.pdf Graphic file (type pdf)
  <use pdfs/runtime.pdf>
 Package pdftex.def Info: pdfs/runtime.pdf used on input line 151.
@@ -740,7 +747,7 @@ File: pdfs/runtime.pdf Graphic file (type pdf)
  <use pdfs/runtime.pdf>
 Package pdftex.def Info: pdfs/runtime.pdf used on input line 151.
 (pdftex.def)             Requested size: 3252.1421pt x 1134.23474pt.
- <pdfs/runtime.pdf, id=237, page=1, 3252.15pt x 1134.2375pt>
+ <pdfs/runtime.pdf, id=247, page=1, 3252.15pt x 1134.2375pt>
 File: pdfs/runtime.pdf Graphic file (type pdf)
  <use pdfs/runtime.pdf, page 1>
 Package pdftex.def Info: pdfs/runtime.pdf, page1 used on input line 151.
@@ -789,17 +796,29 @@ Chapter 4.
 
 ]
 Chapter 5.
+
+Overfull \hbox (0.93993pt too wide) in paragraph at lines 16--17
+[]\OT1/cmr/m/n/10.95 The \OT1/cmr/bx/n/10.95 Ad-min-is-tra-tion Web Ap-pli-ca-tion \OT1/cmr/m/n/10.95 com-po-nent, which pro-
+ []
+
 [21
 
 ]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[22]
 Chapter 6.
-[22
+[23
 
 ]
 Appendix A.
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 15.
- [23
+ [24
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 15.
@@ -811,18 +830,18 @@ Package rerunfilecheck Info: File `2_DD.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 15.
  ) 
 Here is how much of TeX's memory you used:
- 8385 strings out of 493089
- 123197 string characters out of 6134841
- 219716 words of memory out of 5000000
- 11683 multiletter control sequences out of 15000+600000
+ 8669 strings out of 493089
+ 127972 string characters out of 6134841
+ 226087 words of memory out of 5000000
+ 11960 multiletter control sequences out of 15000+600000
  10012 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,21n,48p,1081b,509s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,21n,48p,1081b,613s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on /Users/Valerio/GitHub/casaticastelli_sweng2/2_DD/latex_files/.texpadtmp/2_DD.pdf (25 pages, 319229 bytes).
+Output written on /Users/Valerio/GitHub/casaticastelli_sweng2/2_DD/latex_files/.texpadtmp/2_DD.pdf (26 pages, 323805 bytes).
 PDF statistics:
- 318 PDF objects out of 1000 (max. 8388607)
- 267 compressed objects within 3 object streams
- 49 named destinations out of 1000 (max. 500000)
- 255 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 332 PDF objects out of 1000 (max. 8388607)
+ 280 compressed objects within 3 object streams
+ 52 named destinations out of 1000 (max. 500000)
+ 271 words of extra memory for PDF output out of 10000 (max. 10000000)
 
