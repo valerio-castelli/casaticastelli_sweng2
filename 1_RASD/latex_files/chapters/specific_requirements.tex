@@ -204,6 +204,7 @@ Requirements:
 \begin{itemize}
 \item A taxi driver who has terminated a ride should be able to notify the system that the ride has ended.
 \item A taxi driver should be able to notify that he's terminated a ride only after the system has checked that the meeting point has actually been reached within a given level of precision.
+\item A taxi driver should be able to notify that he's terminated a ride only after the system has checked that the destination point has actually been reached within a given level of precision.
 \item When the system receives the notification that a driver has terminated a ride and the driver is still outside the city, the system should set its status as ``out of the city'' and move its code to the out of city list.
 \item When the system receives the notification that a driver has terminated a ride and the driver is inside the city, the system should mark its taxi as available and assign it to the queue of the zone he is in.
 \end{itemize}
@@ -218,9 +219,11 @@ Requirements:
 \item The system should provide a way for passengers to request a ride.
 \begin{itemize}
 \item The mobile application should be able to detect the passenger's GPS location and use it as the source point of a ride request.
-\item The mobile application should allow the passenger to enter an address as the source point of a ride request.
-\item The web application should allow the passenger to enter an address as the source point of a ride request.
+\item The mobile application should allow the passenger to enter an address as the source point and as the destination point of a ride request.
+\item The web application should allow the passenger to enter an address as the source point and as the destination point of a ride request
 \end{itemize}
+\item If the GPS location of the passenger is not used as the source point of a ride request, the system should verify that the source address field is filled with a valid address.
+\item The system should verify that the destination address field is filled with a valid address.
 \item If it's not possible to retrieve the GPS location of the passenger (either because there is no satellite coverage or because the authorization to use location services has been refused), the system should notify the passenger that it's unable to automatically locate his position.
 \item If it's not possible to establish an internet connection to the central system, the mobile application should notify the passenger that it's unable to operate correctly.
 \item In case the internet connection goes down at any point during the request process, the mobile application should abort the process and notify the passenger that the request could not be completed.
@@ -254,6 +257,7 @@ Requirements:
 \item The mobile application should allow the passenger to enter the source and destination addresses for the ride and the meeting time.
 \item The web application should allow the passenger to enter the source and destination addresses for the ride and the meeting time.
 \end{itemize}
+\item The system should verify that both the source address field and the destination address field are filled with a valid address.
 \item If it's not possible to establish an internet connection to the central system, the mobile application should notify the passenger that it's unable to operate correctly.
 \item In case the internet connection goes down at any point during the reservation process, the mobile application should abort the process and notify the passenger that the request could not be completed.
 \item The system should provide a way for logged in passengers to review their active reservations.

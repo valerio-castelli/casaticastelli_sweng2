@@ -48,6 +48,14 @@ For sake of readability, we will use the notation \textbf{req. x.y} to make refe
 	\item The \textbf{Notification System} component, which provides to the central system the dispatch mechanism it needs for sending notifications to both the taxi driver application and the passenger application and fulfill req 7.3.
 	\item The \textbf{Remote Services Interface} component, which enables the taxi driver application to request services to the central system and thus provides the necessary callbacks to satisfy reqs. 7.1 and 7.2.
 	\end{itemize}
+	\item \textbf{Goal 7} gives a taxi driver the ability to notify the central system when he has completed a ride. In order for this functionality to work correctly, several components should cooperate:
+	\begin{itemize}
+	\item The \textbf{Taxi Driver Application} component, which provides a suitable UI to mark the end of the ride (req. 8.1) and retrieves the current GPS location fo the taxi driver in order to let the central system check if it matches the agreed meeting point (req. 8.2) and, if specified in the request, the destination point (req. 8.3).
+	\item The \textbf{Taxi Management System} component, which is responsible of satisfying all the three requirements related to this goal, in particular my means of the Taxi Management and Request Management sub-components.
+	\item The \textbf{Passenger Application} component, which is responsible of implementing a suitable UI view to notify a user that his request has been dropped (req. 7.3).
+	\item The \textbf{Notification System} component, which provides to the central system the dispatch mechanism it needs for sending notifications to both the taxi driver application and the passenger application and fulfill req 7.3.
+	\item The \textbf{Remote Services Interface} component, which enables the taxi driver application to request services to the central system and thus provides the necessary callbacks to satisfy reqs. 7.1 and 7.2.
+	\end{itemize}
 	\end{itemize}
 
 \section{Quality Requirements}
