@@ -52,12 +52,12 @@
     <coordinates>
       <x>384</x>
       <y>264</y>
-      <w>132</w>
+      <w>288</w>
       <h>306</h>
     </coordinates>
     <panel_attributes>lt=&lt;[]-(()-[]&gt;
 </panel_attributes>
-    <additional_attributes>120;18;84;18;84;294;18;294</additional_attributes>
+    <additional_attributes>252;18;276;18;276;294;84;294;18;294</additional_attributes>
   </element>
   <element>
     <type>com.baselet.element.old.element.Relation</type>
@@ -238,7 +238,7 @@ Service</panel_attributes>
     <panel_attributes>&lt;&lt;component&gt;&gt;
 symbol=component
 
-Passenger
+Taxi Driver
 Application</panel_attributes>
     <additional_attributes/>
   </element>
@@ -253,7 +253,7 @@ Application</panel_attributes>
     <panel_attributes>&lt;&lt;component&gt;&gt;
 symbol=component
 
-Taxi Driver
+Passenger
 Application</panel_attributes>
     <additional_attributes/>
   </element>
@@ -376,5 +376,16 @@ symbol=component
 Notification
 System</panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>426</x>
+      <y>384</y>
+      <w>90</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;[]-(()-[]&gt;</panel_attributes>
+    <additional_attributes>18;18;78;18</additional_attributes>
   </element>
 </diagram>

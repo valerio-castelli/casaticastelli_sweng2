@@ -44,17 +44,60 @@ For sake of readability, we will use the notation \textbf{req. x.y} to make refe
 	\begin{itemize}
 	\item The \textbf{Taxi Driver Application} component, which provides a suitable UI to drop the request (req. 7.1) and retrieves the current GPS location fo the taxi driver in order to let the central system check if it matches the agreed meeting point (req. 7.2).
 	\item The \textbf{Taxi Management System} component, which is responsible of satisfying all the three requirements related to this goal, in particular my means of the Taxi Management and Request Management sub-components.
-	\item The \textbf{Passenger Application} component, which is responsible of implementing a suitable UI view to notify a user that his request has been dropped (req. 7.3).
+	\item The \textbf{Passenger Application} component, which is responsible of implementing a suitable UI view to notify a passenger that his request has been dropped (req. 7.3).
 	\item The \textbf{Notification System} component, which provides to the central system the dispatch mechanism it needs for sending notifications to both the taxi driver application and the passenger application and fulfill req 7.3.
 	\item The \textbf{Remote Services Interface} component, which enables the taxi driver application to request services to the central system and thus provides the necessary callbacks to satisfy reqs. 7.1 and 7.2.
 	\end{itemize}
-	\item \textbf{Goal 7} gives a taxi driver the ability to notify the central system when he has completed a ride. In order for this functionality to work correctly, several components should cooperate:
+	\item \textbf{Goal 8} gives a taxi driver the ability to notify the central system when he has completed a ride. In order for this functionality to work correctly, several components should cooperate:
 	\begin{itemize}
-	\item The \textbf{Taxi Driver Application} component, which provides a suitable UI to mark the end of the ride (req. 8.1) and retrieves the current GPS location fo the taxi driver in order to let the central system check if it matches the agreed meeting point (req. 8.2) and, if specified in the request, the destination point (req. 8.3).
-	\item The \textbf{Taxi Management System} component, which is responsible of satisfying all the three requirements related to this goal, in particular my means of the Taxi Management and Request Management sub-components.
-	\item The \textbf{Passenger Application} component, which is responsible of implementing a suitable UI view to notify a user that his request has been dropped (req. 7.3).
-	\item The \textbf{Notification System} component, which provides to the central system the dispatch mechanism it needs for sending notifications to both the taxi driver application and the passenger application and fulfill req 7.3.
-	\item The \textbf{Remote Services Interface} component, which enables the taxi driver application to request services to the central system and thus provides the necessary callbacks to satisfy reqs. 7.1 and 7.2.
+	\item The \textbf{Taxi Driver Application} component, which provides a suitable UI to mark the end of the ride (req. 8.1) and retrieves the current GPS location fo the taxi driver in order to let the central system check if it matches the agreed meeting point (req. 8.2) and the destination point (req. 8.3).
+	\item The \textbf{Taxi Management System} component, which is responsible of satisfying all the five requirements related to this goal, in particular my means of the Taxi Management and Request Management sub-components. Also, the Location Management sub-component is specifically employed to satisfy req. 8.4 and 8.5.
+	\item The \textbf{Remote Services Interface} component, which enables the taxi driver application to request services to the central system and thus provides the necessary callbacks to satisfy reqs. 8.1 to 8.3.
+	\end{itemize}
+	\item \textbf{Goal 9} is arguably one of the most important functionalities of the system, as it is related to the ability of passengers to request taxi rides. As such, it involves many different components:
+	\begin{itemize}
+		\item The \textbf{Taxi Management System} component, which implements all the backend business logic to handle taxi requests. In particular:
+		\begin{itemize}
+		\item Reqs. 9.3 and 9.4 are handled by the Request Management and the Location Management sub-components.
+		\item Req. 9.8 is handled by the Location Management sub-component, which is responsible for computing the taxi zone associated with a certain location.
+		\item Req. 9.9 to 9.14 are handled by the Taxi Management sub-component and, for those operations involving the status of a pending request, by the Request Management sub-component.
+		\end{itemize}
+		\item The \textbf{Mapping Service} component, which is used to calculate the ETA for req. 9.10 and to perform the reverse-geocode location needed to fulfill reqs. 9.3, 9.4 and also 9.8 if the location is an address.
+		\item The \textbf{Passenger Application} component, which provides a suitable UI to fulfill reqs. 9.1, 9.2.1, 9.2.2, 9.5 to 9.7 and 9.10.
+		\item The \textbf{Passenger Web Application} component, which provides a suitable UI to fulfill reqs. 9.1, 9.2.3 and 9.10.
+		\item The \textbf{Taxi Driver Application} component, which provides a suitable UI to alert the taxi driver he has been moved to the last position of its zone queue after refusing a request (req. 9.11).
+		\item The \textbf{Remote Services Interface} component, which enables the passenger applications (web and mobile) to request services to the central system and thus provides the necessary callbacks to satisfy req 9.2.
+		\item The \textbf{Notification System} component, which provides to the central system the dispatch mechanism it needs for sending notifications to both the taxi driver application and the passenger applications and fulfill reqs 9.10 to 9.12 and 9.14.
+	\end{itemize}
+	\item \textbf{Goal 10} requires the system to offer passengers a way to register. This goal is satisfied by an interplay of four components:
+	\begin{itemize}
+		\item The \textbf{Account Management} component, specifically the Passenger Registration sub-component, is responsible of offering the backend services that enables passenger registration and validation of the required data. 
+		\item The \textbf{Passenger Web Application} component, which provides the registration entry form.
+		\item The \textbf{Remote Services Interface} component, which enables the passenger web application to request services to the central system and thus provides the necessary callbacks to invoke the registration procedure.
+		\item The \textbf{Notification System} component, which lets the central system send a notification containing the result of the registration process to the passenger web application.
+	\end{itemize}
+	\item \textbf{Goal 11} is arguably one of the most important functionalities of the system, as it is related to the ability of passengers to reserve taxi rides. As such, it involves many different components:
+	\begin{itemize}
+		\item The \textbf{Account Management} component, which is responsible for providing the required authentication capability using its Login sub-component and for maintaining the association between a passenger and its requests (req. 11.1).
+		\item The \textbf{Taxi Management System} component, which implements all the backend business logic to handle taxi reservations. In particular:
+		\begin{itemize}
+		\item Reqs. 11.3 is handled by the Reservation Management and the Location Management sub-components.
+		\item Reqs. 11.6 to 11.15 are handled by the Reservation Management sub-component.
+		\item Req. 11.10 is handled by the Location Management sub-component, which is responsible for computing the taxi zone associated with a certain location.
+		\item Req. 11.10 is also handled by the Request Management sub-component, which is used to associate a reservation to a taxi request. 
+		\item Req. 11.10, 11.14 and 11.15 are handled by the Taxi Management sub-component.
+		\end{itemize}	
+		\item The \textbf{Passenger Application} component, which provides a suitable UI to fulfill reqs. 11.1, 11.2.1, 11.4 to 11.7, 11.11 to 11.13 and 11.15.
+		\item The \textbf{Passenger Web Application} component, which provides a suitable UI to fulfill reqs. 11.1, 11.2.2, 11.6, 11.7, 11.11 to 11.13 and 11.15.
+		\item The \textbf{Taxi Driver Application} component, which provides a suitable UI to notify a taxi driver that he has been assigned a taxi request, as in goal 9.
+		\item The \textbf{Remote Services Interface} component, which enables the passenger applications (web and mobile) to request services to the central system and thus provides the necessary callbacks to satisfy req 11.2.
+		\item The \textbf{Notification System} component, which provides to the central system the dispatch mechanism it needs for sending notifications to both the taxi driver application and the passenger applications and fulfill reqs 11.9, 11.14 and 11.15.
+		\end{itemize}
+	\item \textbf{Goal 12} is related to the generation and validation of the security code associated to each ride. This involves:
+	\begin{itemize}
+	\item The \textbf{Taxi Management System} component, in particular the Taxi Management and Request Management sub-components which are responsible for the generation of the security number (req. 12.1).
+	\item The \textbf{Notification System} component, which is used to send the security number to both the taxi driver application and the passenger application (either the web app or the mobile app, depending on the case) in order to satisfy reqs. 12.2 and 12.3.
+	\item The \textbf{Taxi Driver Application}, {Passenger Application} and {Passenger Web Application} components, which implement a suitable UI to show the received security number.
 	\end{itemize}
 	\end{itemize}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.21)  29 NOV 2015 13:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.21)  29 NOV 2015 15:28
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -818,14 +818,48 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [23]
+Overfull \hbox (19.77887pt too wide) in paragraph at lines 62--63
+[]\OT1/cmr/m/n/10.95 Req. 9.8 is han-dled by the Lo-ca-tion Man-age-ment sub-component,
+ []
+
+
+Overfull \hbox (4.24606pt too wide) in paragraph at lines 63--64
+\OT1/cmr/m/n/10.95 pend-ing re-quest, by the Re-quest Man-age-ment sub-component. 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[24]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[25]
+Overfull \hbox (10.56667pt too wide) in paragraph at lines 98--99
+\OT1/cmr/m/n/10.95 Taxi Man-age-ment and Re-quest Man-age-ment sub-components which
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[26]
 Chapter 6.
-[24
+[27
 
 ]
 Appendix A.
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 15.
- [25
+ [28
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 15.
@@ -837,18 +871,18 @@ Package rerunfilecheck Info: File `2_DD.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 15.
  ) 
 Here is how much of TeX's memory you used:
- 8670 strings out of 493089
- 127979 string characters out of 6134841
+ 8673 strings out of 493089
+ 128000 string characters out of 6134841
  226087 words of memory out of 5000000
  11960 multiletter control sequences out of 15000+600000
  10012 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,21n,48p,1081b,613s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,21n,48p,1081b,619s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on /Users/Valerio/GitHub/casaticastelli_sweng2/2_DD/latex_files/.texpadtmp/2_DD.pdf (27 pages, 326890 bytes).
+Output written on /Users/Valerio/GitHub/casaticastelli_sweng2/2_DD/latex_files/.texpadtmp/2_DD.pdf (30 pages, 333877 bytes).
 PDF statistics:
- 336 PDF objects out of 1000 (max. 8388607)
- 283 compressed objects within 3 object streams
- 53 named destinations out of 1000 (max. 500000)
+ 349 PDF objects out of 1000 (max. 8388607)
+ 293 compressed objects within 3 object streams
+ 56 named destinations out of 1000 (max. 500000)
  271 words of extra memory for PDF output out of 10000 (max. 10000000)
 
