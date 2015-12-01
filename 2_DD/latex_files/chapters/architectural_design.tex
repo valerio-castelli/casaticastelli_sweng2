@@ -167,3 +167,22 @@ In this section we're going to highlight the main architectural styles and patte
 \end{itemize}
 
 \section{Other design decisions}
+The main infrastructure of the system, which comprises the Remote Services Interface, the Taxi Management System, the System Administration, the Account Management and the Data Access Utilities components will be implemented using the Java Enterprise Edition platform. This design decision has been taken due to the several advantages that this platform has over competing solutions:
+\begin{itemize}
+	\item It supports multi-tiered applications
+	\item It is highly reliable, thanks to its ability to automatically manage multiple instances of the same component
+	\item It supports interoperability with different platforms by using SOAP to expose web services to remote clients 
+	\item Applications are run inside a managed environment which provides support for reliable database transactions, secure network communications and authentication protocols, thus enabling developers to concentrate their efforts on the peculiar functionalities of myTaxiService
+	\item There are many highly efficient and robust application servers which support load balancing
+\end{itemize}
+
+As for the mobile applications, we have decided to use the native libraries offered by each mobile platform in order to achieve a better look \& feel and greater performance. This decision comes at the expense of portability of the mobile application code. However, this doesn't actually represent a problem, for three main reasons:
+\begin{itemize}
+	\item The amount of code contained in each mobile application is extremely small compared to the whole code base of the project, since it's only related to presentation functionalities
+	\item All the application logic is already performed on the server and is exposed to mobile applications via standard SOAP web services, which are accessible by any platform without the need to reuse code on the client side
+	\item The look \& feel of each platform is peculiar and would require specific libraries to be achieved anyway 
+\end{itemize}
+
+The web applications will be implemented using HTML5 technology, in order to be as standard-compliant as possible.
+
+No specific choice has been made as for the DBMS, except for the fact that it will need to be a relational database management system with support for distributed data storage.

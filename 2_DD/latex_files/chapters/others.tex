@@ -1,6 +1,26 @@
 \chapter{Algorithm Design}
 
 \chapter{User Interface Design}
+One of the main concerns with designing an Information System is how to make it as functional and user-friendly as possible. The simplicity and clarity of the user interface is crucial in making sure that the system can actually be employed by the intended user base in an efficient way; in increases user satisfaction with the services and reduces the need to have a support staff. 
+For this reason, we have designed the User Interfaces of our client applications in accordance to the main principles of UI Design outlined by Jef Raskin in his book "The Humane Interface", as referenced at the beginning of this document. 
+
+Another important aspect that we have considered while designing the UI of our client applications is related to the adaptability of the UI to different screens and device form factors. 
+
+In order to satisfy this requirement, the mobile applications have been designed to natively support both smartphones and tablets. More specifically, this implies that each mobile application actually includes two different user interfaces, each uniquely optimized and tailored to the specific kind of device being used. To keep the user experience consistent across devices, the two UIs are built around the same design language and share many visual traits. 
+
+Furthermore, the mobile applications UIs have been designed to be resolution independent. In particular, we have chosen an interface design which can be easily displayed on screen sizes between 3" and 6" (when used on a mobile phone) and between 7" and 12" (when used on a tablet); this requirement will be effectively satisfied in the implementation phase by making usage of appropriate libraries that support vector graphics, proportional spacing and scaling functionalities.
+
+Both the Passenger Web Application and the Administration Web Application components have to be implemented to properly address dynamic web page resizing by proportionally scaling header, footer and side bars to the amount of available space without stretching individual components and forms. Furthermore, they have to be offered both in a desktop version and in a mobile-friendly version; for simplicity, in the sketches only the desktop version is shown, with the mobile-friendly version closely resembling their application counterparts. 
+
+In addition, both the mobile applications and the web applications are implemented to be accessible by blind people. This requirement is translated differently for the two kinds of application:
+	\begin{itemize}
+	\item The Web Applications must use standard HTML components and include the appropriate tags to be interpreted by screen reader software in a meaningful way
+	\item The Mobile Applications must implement appropriate voice description APIs offered by the platform they're running on (as VoiceOver in iOS)
+	\end{itemize}
+
+Many detailed mockups regarding the Taxi Driver Mobile Application, the Passenger Mobile Application and the Passenger Web Application have already been included in the RASD, so we will not not include them again in this document. 
+However, we are including a few mockups of the Administration Web Application. 
+
 
 \chapter{Requirements Traceability}
 In this section we'll specifically cover in detail how the requirements identified in the SRS document are satisfied by our myTaxiService architecture. 
@@ -120,5 +140,7 @@ Finally, portability is achieved by exposing APIs using an open, standard web se
 \begin{appendices}
 
 \chapter{Hours of work}
+To redact this document, we spent 40 hours per person.
+
 
 \end{appendices}
