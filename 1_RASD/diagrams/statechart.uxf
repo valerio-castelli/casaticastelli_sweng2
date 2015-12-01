@@ -38,7 +38,7 @@
     <id>UMLState</id>
     <coordinates>
       <x>140</x>
-      <y>510</y>
+      <y>530</y>
       <w>100</w>
       <h>50</h>
     </coordinates>
@@ -50,7 +50,7 @@ riding</panel_attributes>
     <id>UMLState</id>
     <coordinates>
       <x>720</x>
-      <y>510</y>
+      <y>530</y>
       <w>100</w>
       <h>50</h>
     </coordinates>
@@ -96,12 +96,12 @@ lt=-&gt;</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>230</x>
-      <y>410</y>
+      <y>520</y>
       <w>230</w>
-      <h>150</h>
+      <h>60</h>
     </coordinates>
     <panel_attributes>lt=-&gt;</panel_attributes>
-    <additional_attributes>210.0;10.0;210.0;130.0;10.0;130.0</additional_attributes>
+    <additional_attributes>210.0;10.0;210.0;40.0;10.0;40.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -109,44 +109,43 @@ lt=-&gt;</panel_attributes>
       <x>190</x>
       <y>390</y>
       <w>250</w>
-      <h>140</h>
+      <h>160</h>
     </coordinates>
     <panel_attributes>lt=-&gt;</panel_attributes>
-    <additional_attributes>10.0;120.0;10.0;10.0;230.0;10.0</additional_attributes>
+    <additional_attributes>10.0;140.0;10.0;10.0;230.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>190</x>
-      <y>550</y>
+      <y>570</y>
       <w>600</w>
-      <h>90</h>
+      <h>70</h>
     </coordinates>
     <panel_attributes>lt=-&gt;</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;70.0;580.0;70.0;580.0;10.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0;580.0;50.0;580.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>490</x>
-      <y>390</y>
-      <w>140</w>
+      <y>410</y>
+      <w>30</w>
       <h>90</h>
     </coordinates>
-    <panel_attributes>lt=-&gt;
-self</panel_attributes>
-    <additional_attributes>10.0;30.0;10.0;70.0;120.0;70.0;120.0;10.0;30.0;10.0</additional_attributes>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>460</x>
-      <y>410</y>
-      <w>280</w>
-      <h>150</h>
+      <x>510</x>
+      <y>390</y>
+      <w>230</w>
+      <h>170</h>
     </coordinates>
     <panel_attributes>lt=-&gt;</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;130.0;260.0;130.0</additional_attributes>
+    <additional_attributes>10.0;10.0;140.0;10.0;140.0;150.0;210.0;150.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -154,10 +153,10 @@ self</panel_attributes>
       <x>510</x>
       <y>370</y>
       <w>260</w>
-      <h>160</h>
+      <h>180</h>
     </coordinates>
     <panel_attributes>lt=-&gt;</panel_attributes>
-    <additional_attributes>240.0;140.0;240.0;10.0;10.0;10.0</additional_attributes>
+    <additional_attributes>240.0;160.0;240.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -165,9 +164,43 @@ self</panel_attributes>
       <x>510</x>
       <y>190</y>
       <w>300</w>
-      <h>340</h>
+      <h>360</h>
     </coordinates>
     <panel_attributes>lt=-&gt;</panel_attributes>
-    <additional_attributes>280.0;320.0;280.0;10.0;10.0;10.0</additional_attributes>
+    <additional_attributes>280.0;340.0;280.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>420</x>
+      <y>480</y>
+      <w>100</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Pending
+Confirmation</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>430</x>
+      <y>410</y>
+      <w>30</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>490</x>
+      <y>520</y>
+      <w>250</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0;230.0;40.0</additional_attributes>
   </element>
 </diagram>

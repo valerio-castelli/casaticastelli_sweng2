@@ -1,6 +1,15 @@
 \begin{itemize}
 	\item Version 1.1:
 	\begin{itemize}
+	\item Modified Goal 5 to update the following requirement:
+	\begin{itemize}
+	\item The system must be able to distinguish the different states in which a taxi could be: that is available, unavailable, currently on a ride, out of the city, pending confirmation.
+	\end{itemize}
+	\item Modified Goal 5 to insert the following new requirements:
+	\begin{itemize}
+		\item When a request is forwarded to a taxi, its status becomes "pending confirmation". 
+		\item A taxi whose status is "pending confirmation" should not be considered as available for the assignment of a new request.
+	\end{itemize}
 	\item Modified Goal 8 to include the following requirement: 
 	\begin{itemize}
 	\item A taxi driver should be able to notify that he's terminated a ride only after the system has checked that the meeting point has actually been reached within a given level of precision.
@@ -14,11 +23,14 @@
 	\begin{itemize}
 	\item If the GPS location of the passenger is not used as the source point of a ride request, the system should verify that the source address field is filled with a valid address.
 	\item The system should verify that the destination address field is filled with a valid address.
+	\item If the system is not able to find any available taxi in the queue of the specified zone but there is at least one taxi in that zone whose status is "pending confirmation", the system will put the request on hold in a pending queue. 
+	\item For each request in the pending queue, the system will try a reschedule up to 10 times.
 	\end{itemize}
 	\item Modified Goal 11 to insert the following new requirement:
 	\begin{itemize}
 	\item The system should verify that both the source address field and the destination address field are filled with a valid address.
 	\end{itemize}
+	\item Updated Statechart for Taxi Status Updates.
 	\end{itemize}
 	\item Version 1.0: initial release.
 \end{itemize}

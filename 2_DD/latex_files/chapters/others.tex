@@ -28,9 +28,9 @@ For sake of readability, we will use the notation \textbf{req. x.y} to make refe
 	\end{itemize}
 	\item \textbf{Goal 5} requires the allocation and distribution of taxis to be managed fairly and consistently. This is achieved by an interplay of components: 
 	\begin{itemize}
-	\item The \textbf{Taxi Management System} is the key component that concurs to the fulfillment of the goal. More specifically, reqs. 5.1 to 5.10 are handled by the Taxi Management sub-component, with the aid of the Location Management sub-component as for those requirements that involve checking whether the taxi driver is still inside the city or not. 
-	\item The \textbf{Taxi Driver Application} component is crucial in fulfilling reqs 5.11 and 5.12 by providing an appropriate management of the UI to prevent incorrect availability assignments and by sending the GPS coordinates of the taxi driver to the central system with a given frequency.
-	\item The \textbf{Remote Services Interface} component, which enables the taxi driver application to request services to the central system and thus provides the necessary callbacks to satisfy req. 5.12. 	
+	\item The \textbf{Taxi Management System} is the key component that concurs to the fulfillment of the goal. More specifically, reqs. 5.1 to 5.12 are handled by the Taxi Management sub-component, with the aid of the Location Management sub-component as for those requirements that involve checking whether the taxi driver is still inside the city or not. 
+	\item The \textbf{Taxi Driver Application} component is crucial in fulfilling reqs 5.13 and 5.14 by providing an appropriate management of the UI to prevent incorrect availability assignments and by sending the GPS coordinates of the taxi driver to the central system with a given frequency.
+	\item The \textbf{Remote Services Interface} component, which enables the taxi driver application to request services to the central system and thus provides the necessary callbacks to satisfy req. 5.14. 	
 	\end{itemize}
 	\item \textbf{Goal 6} is related to the ability of a taxi driver to receive, accept and refuse ride requests. This involves:
 	\begin{itemize}
@@ -60,14 +60,14 @@ For sake of readability, we will use the notation \textbf{req. x.y} to make refe
 		\begin{itemize}
 		\item Reqs. 9.3 and 9.4 are handled by the Request Management and the Location Management sub-components.
 		\item Req. 9.8 is handled by the Location Management sub-component, which is responsible for computing the taxi zone associated with a certain location.
-		\item Req. 9.9 to 9.14 are handled by the Taxi Management sub-component and, for those operations involving the status of a pending request, by the Request Management sub-component.
+		\item Req. 9.9 to 9.16 are handled by the Taxi Management sub-component and, for those operations involving the status of a pending request, by the Request Management sub-component.
 		\end{itemize}
 		\item The \textbf{Mapping Service} component, which is used to calculate the ETA for req. 9.10 and to perform the reverse-geocode location needed to fulfill reqs. 9.3, 9.4 and also 9.8 if the location is an address.
 		\item The \textbf{Passenger Application} component, which provides a suitable UI to fulfill reqs. 9.1, 9.2.1, 9.2.2, 9.5 to 9.7 and 9.10.
 		\item The \textbf{Passenger Web Application} component, which provides a suitable UI to fulfill reqs. 9.1, 9.2.3 and 9.10.
 		\item The \textbf{Taxi Driver Application} component, which provides a suitable UI to alert the taxi driver he has been moved to the last position of its zone queue after refusing a request (req. 9.11).
 		\item The \textbf{Remote Services Interface} component, which enables the passenger applications (web and mobile) to request services to the central system and thus provides the necessary callbacks to satisfy req 9.2.
-		\item The \textbf{Notification System} component, which provides to the central system the dispatch mechanism it needs for sending notifications to both the taxi driver application and the passenger applications and fulfill reqs 9.10 to 9.12 and 9.14.
+		\item The \textbf{Notification System} component, which provides to the central system the dispatch mechanism it needs for sending notifications to both the taxi driver application and the passenger applications and fulfill reqs 9.10 to 9.12 and 9.16.
 	\end{itemize}
 	\item \textbf{Goal 10} requires the system to offer passengers a way to register. This goal is satisfied by an interplay of four components:
 	\begin{itemize}
