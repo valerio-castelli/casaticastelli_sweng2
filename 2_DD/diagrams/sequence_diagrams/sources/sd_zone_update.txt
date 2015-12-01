@@ -1,0 +1,56 @@
+@startuml
+
+title sd_zone_update
+
+[-> webadm: askZoneManagementUpdateForm()
+
+activate webadm
+webadm ->> RemoteServicesInterface: askZoneManagementUpdateForm()
+
+activate RemoteServicesInterface
+webadm <<-- RemoteServicesInterface
+RemoteServicesInterface ->> ZoneManagement: askZoneManagementUpdateForm()
+
+activate ZoneManagement
+RemoteServicesInterface <<-- ZoneManagement
+
+deactivate RemoteServicesInterface
+ZoneManagement -> NotificationSystem: sendZoneUpdateForm()
+
+activate NotificationSystem
+ZoneManagement <<-- NotificationSystem
+
+deactivate ZoneManagement
+NotificationSystem ->> webadm: sendZoneUpdateForm()
+NotificationSystem <<-- webadm
+
+deactivate NotificationSystem
+
+[<- webadm: showForm()
+[-> webadm: insertData()
+
+webadm ->> RemoteServicesInterface: sendData(data)
+
+activate RemoteServicesInterface
+webadm <<-- RemoteServicesInterface
+RemoteServicesInterface ->> ZoneManagement: sendData(data)
+
+activate ZoneManagement
+RemoteServicesInterface <<-- ZoneManagement: sendData(data)
+
+deactivate RemoteServicesInterface
+loop until confirmation or exit // where to require confirmation psw?
+	ZoneManagement -> ZoneManagement: checkZonesConsistency(data)
+	alt ok
+		ZoneManagement -> dataaccess: write
+		dataaccess -> DBMS: write()
+		ZoneManagement <- browser: ok
+	else wrong
+		ZoneManagement <- browser: wrong
+	end
+end
+
+deactivate webadm
+deactivate ZoneManagement
+	
+@enduml

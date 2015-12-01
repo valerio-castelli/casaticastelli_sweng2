@@ -1,10 +1,13 @@
 @startuml
 Driver -> Comm: drop(????)
 Comm -> Request: send
+alt
 Request -> TaxiMan: changeDriverStatus
 TaxiMan -> TaxiMan: updateStatus(Driver)
 Request <-- TaxiMan
 Request -> DBMS: write
+TaxiMan -> DBMS: write
 Request -> Passanger: callDropped()
+end
 
 @enduml

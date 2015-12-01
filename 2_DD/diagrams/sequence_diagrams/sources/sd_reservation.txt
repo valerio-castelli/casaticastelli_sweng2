@@ -1,0 +1,53 @@
+@startuml
+
+title sd_reservation
+
+activate PassengerApp
+PassengerApp ->> RemoteServicesInterface: reserveTaxi(origin, destination, date, time)
+
+activate RemoteServicesInterface
+PassengerApp <<-- RemoteServicesInterface
+RemoteServicesInterface ->> ReservationManagement: reserveTaxi(origin, destination, date, time)
+
+activate ReservationManagement
+RemoteServicesInterface <<-- ReservationManagement:
+
+deactivate RemoteServicesInterface
+ReservationManagement -> ReservationManagement: checkDataConsistency()
+
+alt correct data
+	ReservationManagement -> DataAccessUtilities: insertNewReservation(...)
+	
+	activate DataAccessUtilities
+	DataAccessUtilities -> DBMS: insert(...)
+	
+	activate DBMS
+	DataAccessUtilities <-- DBMS
+	
+	deactivate DBMS
+	ReservationManagement <-- DataAccessUtilities
+	
+	deactivate DataAccessUtilities
+	NotificationSystem <<- ReservationManagement: confirm()
+	
+	activate NotificationSystem
+	ReservationManagement <<-- NotificationSystem
+	PassengerApp <<- NotificationSystem: confirm()
+	PassengerApp -->> NotificationSystem
+	
+	deactivate NotificationSystem
+else wrong data
+
+	ReservationManagement ->> NotificationSystem: error()
+	
+	activate NotificationSystem
+	ReservationManagement <<-- NotificationSystem
+	PassengerApp <<- NotificationSystem: error()
+	PassengerApp -->> NotificationSystem
+	
+	deactivate NotificationSystem
+end
+
+deactivate PassengerApp
+deactivate ReservationManagement
+@enduml 

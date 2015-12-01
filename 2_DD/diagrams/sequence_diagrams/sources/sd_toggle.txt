@@ -1,0 +1,52 @@
+@startuml
+
+title sd_toggle
+
+activate TaxiDriverApp
+TaxiDriverApp ->> RemoteServicesInterface: togglePressed(taxiDriverId)
+
+activate RemoteServicesInterface
+TaxiDriverApp <<-- RemoteServicesInterface
+RemoteServicesInterface ->> TaxiManagement: togglePressed(taxiDriverId)
+
+activate TaxiManagement
+RemoteServicesInterface <<-- TaxiManagement
+
+deactivate RemoteServicesInterface
+TaxiManagement -> TaxiManagement: checkStatus(taxiDriverId)
+alt status == available
+	TaxiManagement -> TaxiManagement: removeTaxiFromZoneQueue(taxiDriverId)
+	TaxiManagement -> TaxiManagement: setUnavailable(taxiDriverId)
+else status == unavailable
+	TaxiManagement -> TaxiManagement: getTaxiDriverLocation(taxiDriverId) 
+	TaxiManagement -> LocationManagement: isTaxiDriverInsideCity(GPS)
+	
+	activate LocationManagement
+	alt true
+		TaxiManagement <-- LocationManagement: true
+		TaxiManagement -> TaxiManagement: setUnavailable(taxiDriverId)
+		TaxiManagement ->> NotificationSystem: confirm()
+		
+		activate NotificationSystem
+		TaxiManagement <<-- NotificationSystem
+		NotificationSystem ->> TaxiDriverApp: confirm()
+		NotificationSystem <<-- TaxiDriverApp
+		
+		deactivate NotificationSystem
+	else false
+		TaxiManagement <-- LocationManagement: false
+		TaxiManagement ->> NotificationSystem: reject()
+		
+		activate NotificationSystem
+		TaxiManagement <<-- NotificationSystem
+		NotificationSystem ->> TaxiDriverApp: reject()
+		NotificationSystem <<-- TaxiDriverApp
+		
+		deactivate NotificationSystem
+	end
+	
+	deactivate LocationManagement
+	deactivate TaxiManagement
+	deactivate TaxiDriverApp
+end
+@enduml

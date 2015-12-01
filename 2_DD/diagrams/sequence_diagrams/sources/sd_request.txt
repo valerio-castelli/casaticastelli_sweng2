@@ -1,0 +1,105 @@
+@startuml
+
+title sd_request
+
+activate PassengerApp
+PassengerApp ->> RemoteServiceInterface: requestTaxi(passengerId, passengerGPS)
+
+activate RemoteServiceInterface
+PassengerApp <<-- RemoteServiceInterface
+RemoteServiceInterface ->> RequestManagement: requestTaxi(passengerID, passengerGPS)
+
+activate RequestManagement
+RemoteServiceInterface <<-- RequestManagement
+
+deactivate RemoteServiceInterface
+RequestManagement -> LocationManagement: getZone(passengerGPS)
+
+activate LocationManagement
+LocationManagement --> RequestManagement: zone
+
+deactivate LocationManagement
+RequestManagement -> TaxiManagement: existsAvailableTaxiDriver(zone)
+
+activate TaxiManagement
+loop until a taxi driver accepts the call, or there are no more taxi drivers left
+	TaxiManagement -> TaxiManagement: popTaxiDriver(zone)
+	
+	activate TaxiManagement
+	
+	deactivate TaxiManagement
+	TaxiManagement -> TaxiManagement: setPending(taxiDriver)
+	
+	activate TaxiManagement
+	
+	deactivate TaxiManagement
+	TaxiManagement ->> NotificationSystem: notifyCallRequest()
+	
+	activate NotificationSystem
+	TaxiManagement <<-- NotificationSystem
+	NotificationSystem ->> TaxiDriverApp: notifyCallRequest()
+	
+	activate TaxiDriverApp
+	NotificationSystem <<-- TaxiDriverApp
+	
+	deactivate NotificationSystem
+	alt accept ride
+		TaxiDriverApp ->> RemoteServiceInterface: acceptRide()
+		
+		activate RemoteServiceInterface
+		RemoteServiceInterface -->> TaxiDriverApp
+		RemoteServiceInterface ->> TaxiManagement: acceptRide()
+		RemoteServiceInterface <<-- TaxiManagement
+		
+		deactivate RemoteServiceInterface
+		TaxiManagement -> TaxiManagement: setCurrentlyRiding(taxiDriver)
+		TaxiManagement -> MappingService: computeETA(GPS, taxiDriverGPS)
+		
+		activate MappingService
+		TaxiManagement <-- MappingService: ETA
+		
+		deactivate MappingService
+		
+		TaxiManagement --> RequestManagement: true
+		
+	else reject ride or taxi driver doesn't reply on time
+		TaxiDriverApp ->> RemoteServiceInterface: refuseRide()
+		
+		activate RemoteServiceInterface
+		RemoteServiceInterface -->> TaxiDriverApp
+		RemoteServiceInterface ->> TaxiManagement: rideRefused()
+		RemoteServiceInterface <<-- TaxiManagement
+		
+		deactivate RemoteServiceInterface
+		TaxiManagement -> TaxiManagement: pushTaxiDriver(zone)
+		RequestManagement <-- TaxiManagement: false
+	end
+end
+alt a taxi driver accepted
+	RequestManagement -> TaxiManagement: getAvailableTaxiDriver()
+	RequestManagement <-- TaxiManagement: taxiDriver
+	RequestManagement -> TaxiManagement: getETA()
+	RequestManagement <-- TaxiManagement: ETA
+	RequestManagement -> RequestManagement: generateSecretCode()
+	RequestManagement ->> NotificationSystem: notifyRequestConfirmation(secretCode)
+	
+	activate NotificationSystem
+	RequestManagement <<-- NotificationSystem
+	NotificationSystem ->> TaxiDriverApp: confirmRide(secretCode)
+	NotificationSystem <<-- TaxiDriverApp
+	
+	deactivate TaxiDriverApp
+	NotificationSystem ->> PassengerApp: confirmRide(secretCode)
+	NotificationSystem <<-- PassengerApp
+else no taxi driver accepted
+	NotificationSystem ->> NotificationSystem: notifyRequestRejection()
+	NotificationSystem ->> PassengerApp: notifyRequestRejection()
+	NotificationSystem <<-- PassengerApp
+end
+
+deactivate PassengerApp
+deactivate RequestManagement
+deactivate LocationManagement
+deactivate TaxiManagement
+deactivate NotificationSystem
+@enduml

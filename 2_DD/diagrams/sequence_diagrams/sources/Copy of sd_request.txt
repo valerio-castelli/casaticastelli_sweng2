@@ -3,20 +3,20 @@
 title sd_request
 
 activate PassengerApp
-PassengerApp ->> RemoteServiceInterface: requestTaxi(clientId, GPS)
+PassengerApp ->> RemoteServiceInterface: requestTaxi(clientId, address)
 
 activate RemoteServiceInterface
 PassengerApp <<-- RemoteServiceInterface
-RemoteServiceInterface ->> RequestManagement: requestTaxi(id, GPS)
+RemoteServiceInterface ->> RequestManagement: requestTaxi(clientId, address)
 
 activate RequestManagement
 RemoteServiceInterface <<-- RequestManagement
 
 deactivate RemoteServiceInterface
-RequestManagement -> DataAccessUtilities: write(id, status)
+RequestManagement -> DataAccessUtilities: logPendingRequest(clientId)
 
 activate DataAccessUtilities
-DataAccessUtilities -> DBMS: query()
+DataAccessUtilities -> DBMS: insert(...)
 
 activate DBMS
 DataAccessUtilities <-- DBMS
@@ -25,13 +25,13 @@ deactivate DBMS
 RequestManagement <-- DataAccessUtilities
 
 deactivate DataAccessUtilities
-RequestManagement -> LocationManagement: getZone(GPS)
+RequestManagement -> LocationManagement: getZone(address)
 
 activate LocationManagement
-LocationManagement -> MappingService: convert(GPS)
+LocationManagement -> MappingService: convert(address)
 
 activate MappingService
-LocationManagement <-- MappingService: zone
+LocationManagement <-- MappingService: location
 
 deactivate MappingService
 LocationManagement --> RequestManagement: zone

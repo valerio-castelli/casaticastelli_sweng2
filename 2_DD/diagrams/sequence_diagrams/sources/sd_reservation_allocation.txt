@@ -1,0 +1,18 @@
+@startuml
+
+title sd_reservation_allocation
+
+ReservationManagement -> ReservationManagement: checkReservations()
+alt no reservation to be allocated
+	
+else some reservation must be allocated
+	loop for all reservations to be allocated
+		|||
+		loop ...
+			|||
+			ref over ReservationManagement: sd_allocate
+			ReservationManagement -> ReservationManagement: setReservationAsDone() // DB?
+		end		
+	end
+end
+@enduml

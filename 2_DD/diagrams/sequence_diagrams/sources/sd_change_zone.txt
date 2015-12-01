@@ -1,0 +1,15 @@
+@startuml
+TaxiDriverApp ->> comm: sendGPS(taxiId, GPS)
+comm ->> TaxiManager: sendGPS(taxiId, GPS)
+TaxiManager -> LocationManagement: isInside()
+TaxiManager -> LocationManagement: getZone(GPS)if outsidecity???
+LocationManagement -> MappingService:  //necessary?
+
+alt changed zone
+	TaxiManager -> TaxiManager: updateZone() //DB?
+	
+else unchanged zone
+	|||
+
+end
+@enduml

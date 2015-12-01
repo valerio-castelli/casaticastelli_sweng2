@@ -1,0 +1,26 @@
+@startuml
+
+title sd_show_reservations
+
+activate PassengerApp
+PassengerApp ->> RemoteServicesInterface: getReservationList(passengerId)
+
+activate RemoteServicesInterface
+PassengerApp <<-- RemoteServicesInterface
+RemoteServicesInterface ->> ReservationManagement: getReservationList(passengerId)
+
+activate ReservationManagement
+RemoteServicesInterface <<-- ReservationManagement
+ReservationManagement ->> NotificationSystem: sendReservationList()
+
+activate NotificationSystem
+ReservationManagement <<-- NotificationSystem
+NotificationSystem ->> PassengerApp: sendReservationList()
+NotificationSystem <<-- PassengerApp
+
+deactivate NotificationSystem
+deactivate PassengerApp
+deactivate RemoteServicesInterface
+deactivate ReservationManagement
+
+@enduml

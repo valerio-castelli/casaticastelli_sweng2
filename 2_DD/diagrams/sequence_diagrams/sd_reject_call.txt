@@ -1,9 +1,0 @@
-@startuml
-
-title differnce with drop call!!!!!!!
-
-comm -> TaxiDriverApp: sendCall()
-TaxiDriverApp -> TaxiDriverApp: drop()
-TaxiDriverApp -> comm: notifyDrop()
-
-@enduml

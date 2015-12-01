@@ -1,8 +1,0 @@
-@startuml
-
-PassApp -> WebApp
-WebApp -> ReservationManagement
-WebApp <-- ReservationManagement
-PassApp <-- WebApp
-
-@enduml
