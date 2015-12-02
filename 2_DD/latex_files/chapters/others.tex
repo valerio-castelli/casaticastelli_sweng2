@@ -13,7 +13,7 @@ public boolean requestTaxi(passengerID, address){
 }
 
 public boolean requestTaxi(passengerID, passengerGPS){
-	/* We create a new request and write it into the database */
+	// We create a new request and write it into the database 
 	Request request = new Request(passengerID, passengerGPS);
 	dataAccessUtilities.writeToDB(request);
 	/* We compute the zone of the source */
@@ -74,6 +74,7 @@ private void setPending(td){
 
 private void setCurrentlyRiding(td, request){
 	td.setStatus(currentlyRiding);
+	moveTaxiToCurrentlyRidingList(td);
 	td.associateRequest(request);
 	dataAccessUtilities.updateTaxiStatus(td.getStatus());
 }
@@ -137,6 +138,71 @@ public class ReservationManagement{
 		return false; 
 	}
 }	
+\end{lstlisting}
+
+The third algorithm we will focus on is the one that manages the behavior of the availability toggle for taxi drivers. The main algorithm is described by the togglePressed(taxiDriverId) method of the TaxiManagement component.
+\begin{lstlisting}
+public class TaxiManagement{
+
+	public void togglePressed(taxiDriverId){
+		TaxiStatus status = checkStatus(taxiDriverId);
+		switch(status){
+			case TaxiStatusAvailable:{
+				remoteTaxiFromZoneQueue(taxiDriverId);
+				setUnavailable(taxiDriverId);
+				break;
+			}
+			case TaxiStatusOutsideCity:{
+				remoteTaxiFromOutsideCityList(taxiDriverId);
+				setUnavailable(taxiDriverId);
+				break;
+			}
+			case TaxiStatusCurrentlyRiding:{
+			/* A taxi cannot change his status while on a ride */
+			notificationSystem.rejectAvailabilityChange(taxiDriverId);
+			}
+			case TaxiStatusPending:{
+			/* A taxi cannot change his status while he's got a pending request */
+			notificationSystem.rejectAvailabilityChange(taxiDriverId);
+			}
+			case TaxiStatusUnavailable:{
+				Location l = getTaxiDriverLocation(taxiDriverId);
+				if (locationManagement.isLocationInsideCity(l)){
+					setAvailable(taxiDriverId);
+					notificationSystem.confirmAvailability(taxiDriverId);
+				}
+				else 
+					notificationSystem.rejectAvailabilityChange(taxiDriverId);
+				break;
+			}
+		}
+	}
+
+	private TaxiStatus checkStatus(taxiDriverId){
+		/* We have to get the corresponding taxi */
+		/* First look through the zones to see if the driver is available */
+		for (int zone = 0; z < zoneNumber; z++){
+			for (int n = 0; n < getZoneQueue(zone).getSize(); n++)
+				if (getZoneQueue(zone).get(n).getDriverId == taxiDriverId)
+					// May be pending or available
+					return getZoneQueue(zone).get(n).getStatus();
+		}
+		/* If not, is he outside city? */
+		for (int n = 0; n < outsideCityList.getSize(); n++)
+			if (outsideCityList.get(n).getDriverId == taxiDriverId)
+				return TaxiStatusOutsideCity;
+		/* If not, is he on a ride? */
+		for (int n = 0; n < currentlyRidingList.getSize(); n++)
+			if (currentlyRidingList.get(n).getDriverId == taxiDriverId)
+				return TaxiStatusCurrentlyRiding;
+		/* If not, is he unavailable ? */
+		for (int n = 0; n < unavailabilityList.getSize(); n++)
+			if (unavailabilityList.get(n).getDriverId == taxiDriverId)
+				return TaxiStatusUnavailable;
+		/* If we still haven't found him, we have a serious problem */
+		throw new TaxiNotFoundException();		
+	}
+}
 \end{lstlisting}
 
 
