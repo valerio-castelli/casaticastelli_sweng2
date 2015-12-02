@@ -3,7 +3,7 @@ In this section we will give an overall description of the main algorithms neces
 
 Each algorithm will be explained using a pseudo-code notation inherited from the Java programming language; for the sake of simplicity, we will assume to have a class for each sub-component, even though in the real implementation the code will be split among multiple helper classes.
 
-The first algorithm we will focus on is the Taxi Request processing algorithm, which takes a Taxi Request in input and performs the necessary operations to handle it. The main algorithm is described by the requestTaxi method of the RequestManagement component.
+The first algorithm we will focus on is the Taxi Request processing algorithm, which takes a Taxi Request in input and performs the necessary operations to handle it. The main algorithm is described by the requestTaxi(...) method of the RequestManagement component.
 
 \begin{lstlisting}
 public class RequestManagement{ 
@@ -12,17 +12,17 @@ public boolean requestTaxi(passengerID, address){
 	return requestTaxi(passengerId, l);
 }
 
-public boolean requestTaxi(passengerID, passengerGPS){
+public boolean requestTaxi(passengerID, passengerLocation){
 	// We create a new request and write it into the database 
-	Request request = new Request(passengerID, passengerGPS);
+	Request request = new Request(passengerID, passengerLocation);
 	dataAccessUtilities.writeToDB(request);
 	/* We compute the zone of the source */
-	Zone z = locationManagement.getZone(passengerGPS);
+	Zone z = locationManagement.getZone(passengerLocation);
 	/* Is there an available taxi? */
 	if (taxiManagement.existsAvailableTaxiDriver(zone)){
 		/* If so, get it and compute the ETA and the secret code */
 		TaxiDriver td = taxiManagement.getAvailableTaxiDriver();
-		int ETA = taxiManagement.getETA(td, passengerGPS);
+		int ETA = taxiManagement.getETA(td, passengerLocation);
 		String secretCode = generateSecretCode();
 		/* We notify it to the taxi driver and to the passenger*/
 		notificationSystem.notifyRequestConfirmation(td, request, secretCode);
@@ -53,6 +53,13 @@ public class TaxiManagement{
 private boolean accepted;
 private boolean answered;
 
+private void notifyQueueUpdateToTaxis(zone){
+	ZoneQueue queue = getZoneQueue(zone);
+	for (int i = 0; i<queue.getSize(); i++)
+		notificationSystem.notifyQueueUpdate(queue.get(n), n, queue.getSize());
+}
+
+
 public void acceptRide(td, request){
 	answered = true;
 	accepted = true;
@@ -63,8 +70,8 @@ public void rideRefused(td, request){
 	accepted = false;
 }
 
-public int getETA(passengerGPS){
-	return mappingService.computeETA(passengerGPS, td.getLocation());
+public int getETA(passengerLocation){
+	return mappingService.computeETA(passengerLocation, td.getLocation());
 }
 
 private void setPending(td){
@@ -98,6 +105,8 @@ public boolean existsAvailableTaxiDriver(zone){
 			enqueueTaxiDriver(zone, td);
 		else
 			setCurrentlyRiding(td, request);
+		/* In both cases, we have to notify other drivers of the update of the queue */
+		notifyQueueUpdateToTaxis(zone);
 	}
 	return accepted;
 }
@@ -105,7 +114,7 @@ public boolean existsAvailableTaxiDriver(zone){
 }	
 \end{lstlisting}
 
-The second algorithm we will focus on is the Taxi Reservation processing algorithm, which takes a Taxi Reservation in input and performs the necessary operations to handle it. The main algorithm is described by the reserveTaxi method of the ReservationManagement component.
+The second algorithm we will focus on is the Taxi Reservation processing algorithm, which takes a Taxi Reservation in input and performs the necessary operations to handle it. The main algorithm is described by the reserveTaxi(...) method of the ReservationManagement component.
 
 \begin{lstlisting}
 public class ReservationManagement{
@@ -146,14 +155,17 @@ public class TaxiManagement{
 
 	public void togglePressed(taxiDriverId){
 		TaxiStatus status = checkStatus(taxiDriverId);
+		Zone zone = locationManagement.getZone(taxiDriverId);
 		switch(status){
 			case TaxiStatusAvailable:{
-				remoteTaxiFromZoneQueue(taxiDriverId);
+				removeTaxiFromZoneQueue(taxiDriverId);
 				setUnavailable(taxiDriverId);
+				notifyQueueUpdateToTaxis(zone);
 				break;
 			}
 			case TaxiStatusOutsideCity:{
 				remoteTaxiFromOutsideCityList(taxiDriverId);
+				notifyQueueUpdateToTaxis(zone);
 				setUnavailable(taxiDriverId);
 				break;
 			}
@@ -169,6 +181,7 @@ public class TaxiManagement{
 				Location l = getTaxiDriverLocation(taxiDriverId);
 				if (locationManagement.isLocationInsideCity(l)){
 					setAvailable(taxiDriverId);
+					notifyQueueUpdateToTaxis(zone);
 					notificationSystem.confirmAvailability(taxiDriverId);
 				}
 				else 
@@ -209,22 +222,24 @@ public class TaxiManagement{
 }
 \end{lstlisting}
 
-The fourth algorithm we will focus on is the one that manages the transition of a taxi from a zone to another. The main algorithm is described by the sendGPS(taxiId,GPS) method of the TaxiManagement component.
+The fourth algorithm we will focus on is the one that manages the transition of a taxi from a zone to another. The main algorithm is described by the sendCurrentLocation(taxiId,currentLocation) method of the TaxiManagement component.
 
 \begin{lstlisting}
 public class TaxiManagement{
 	
-	public void sendGPS(taxiId,GPS){
+	public void sendCurrentLocation(taxiId,currentLocation){
 		Taxi taxi = getTaxiById(taxiDriverId);
 		TaxiStatus status = checkStatus(taxiDriverId);
+		Zone oldZone = locationManagement.getZone(taxi.getLocation());
 		/* The zone change has an impact only if the taxi is available */
 		if (status==TaxiStatusAvailable){
-			if (locationManagement.isLocationInsideCity(GPS)){
+			if (locationManagement.isLocationInsideCity(currentLocation)){
 				/* If it's inside the city, it should change zone */
-				Zone newZone = locationManagement.getZone(GPS);
-				Zone oldZone = locationManagement.getZone(taxi.getLocation());
+				Zone newZone = locationManagement.getZone(currentLocation);
 				if (oldZone!=newZone)){
 					updateZone(taxi,newZone);
+					/* We have to notify the other drivers in the new zone of the change */
+					notifyQueueUpdateToTaxis(newZone);
 					dataAccessUtilities.updateQueues();
 				}
 			}
@@ -233,7 +248,23 @@ public class TaxiManagement{
 				setOutsideCity(taxiId);
 				dataAccessUtilities.updateQueues();
 			}
+			/* We have to notify the other drivers in the old zone of the change */
+			notifyQueueUpdateToTaxis(oldZone);
 		}
+	else if (status==TaxiStatusOutsideCity){
+		/* Are we getting inside the city? */
+		if (locationManagement.isLocationInsideCity(currentLocation)){
+			/* If so, we have to compute the zone in which we have entered */
+			Zone newZone = locationManagement.getZone(currentLocation);
+				setAvailable(taxi);
+				updateZone(taxi,newZone);
+				/* We have to notify the other drivers in the new zone of the change */
+				notifyQueueUpdateToTaxis(newZone);
+				dataAccessUtilities.updateQueues();
+				
+		}
+		/* Otherwise we don't really care */
+	}
 	}
 	
 }

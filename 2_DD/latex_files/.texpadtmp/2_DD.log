@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.21)  2 DEC 2015 21:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.21)  2 DEC 2015 21:55
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -802,6 +802,13 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
 [20
 
 ]
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 58.
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omlcmr.fd
+File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <9> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 58.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -809,13 +816,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [21]
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 87.
- (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omlcmr.fd
-File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <9> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 87.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -844,8 +844,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [25]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[26]
 Chapter 4.
-[26
+[27
 
 ]
 
@@ -854,23 +861,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[27]
+[28]
 Chapter 5.
 
-Overfull \hbox (0.93993pt too wide) in paragraph at lines 275--276
+Overfull \hbox (0.93993pt too wide) in paragraph at lines 306--307
 []\OT1/cmr/m/n/10.95 The \OT1/cmr/bx/n/10.95 Ad-min-is-tra-tion Web Ap-pli-ca-tion \OT1/cmr/m/n/10.95 com-po-nent, which pro-
  []
 
-[28
+[29
 
 ]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[29]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -878,12 +878,19 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [30]
-Overfull \hbox (19.77887pt too wide) in paragraph at lines 321--322
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[31]
+Overfull \hbox (19.77887pt too wide) in paragraph at lines 352--353
 []\OT1/cmr/m/n/10.95 Req. 9.8 is han-dled by the Lo-ca-tion Man-age-ment sub-component,
  []
 
 
-Overfull \hbox (4.24606pt too wide) in paragraph at lines 322--323
+Overfull \hbox (4.24606pt too wide) in paragraph at lines 353--354
 \OT1/cmr/m/n/10.95 pend-ing re-quest, by the Re-quest Man-age-ment sub-component. 
  []
 
@@ -893,15 +900,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[31]
+[32]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[32]
-Overfull \hbox (10.56667pt too wide) in paragraph at lines 357--358
+[33]
+Overfull \hbox (10.56667pt too wide) in paragraph at lines 388--389
 \OT1/cmr/m/n/10.95 Taxi Man-age-ment and Re-quest Man-age-ment sub-components which
  []
 
@@ -911,22 +918,22 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[33]
+[34]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[34]
+[35]
 Chapter 6.
-[35
+[36
 
 ]
 Appendix A.
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 15.
- [36
+ [37
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 15.
@@ -938,18 +945,18 @@ Package rerunfilecheck Info: File `2_DD.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 15.
  ) 
 Here is how much of TeX's memory you used:
- 9413 strings out of 493089
- 137102 string characters out of 6134841
- 476033 words of memory out of 5000000
- 12461 multiletter control sequences out of 15000+600000
+ 9449 strings out of 493089
+ 137677 string characters out of 6134841
+ 453033 words of memory out of 5000000
+ 12465 multiletter control sequences out of 15000+600000
  10924 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,21n,48p,1418b,1893s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-Output written on /Users/Valerio/GitHub/casaticastelli_sweng2/2_DD/latex_files/.texpadtmp/2_DD.pdf (38 pages, 419266 bytes).
+Output written on /Users/Valerio/GitHub/casaticastelli_sweng2/2_DD/latex_files/.texpadtmp/2_DD.pdf (39 pages, 424590 bytes).
 PDF statistics:
- 671 PDF objects out of 1000 (max. 8388607)
- 600 compressed objects within 6 object streams
- 285 named destinations out of 1000 (max. 500000)
+ 713 PDF objects out of 1000 (max. 8388607)
+ 640 compressed objects within 7 object streams
+ 317 named destinations out of 1000 (max. 500000)
  271 words of extra memory for PDF output out of 10000 (max. 10000000)
 
