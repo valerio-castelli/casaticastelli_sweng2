@@ -240,12 +240,14 @@ public class TaxiManagement{
 					updateZone(taxi,newZone);
 					/* We have to notify the other drivers in the new zone of the change */
 					notifyQueueUpdateToTaxis(newZone);
+					notificationManager.notifyZoneChanged(taxiId,newZone);
 					dataAccessUtilities.updateQueues();
 				}
 			}
 			else{
 				/* Otherwise it should be set as "out of city" */
 				setOutsideCity(taxiId);
+				notificationManager.notifyExitedCity(taxiId);
 				dataAccessUtilities.updateQueues();
 			}
 			/* We have to notify the other drivers in the old zone of the change */
@@ -260,11 +262,17 @@ public class TaxiManagement{
 				updateZone(taxi,newZone);
 				/* We have to notify the other drivers in the new zone of the change */
 				notifyQueueUpdateToTaxis(newZone);
+				notificationManager.notifyEnteredCity(taxiId,newZone);
 				dataAccessUtilities.updateQueues();
 				
 		}
 		/* Otherwise we don't really care */
 	}
+	updateTaxiLocation(taxi,currentLocation);
+	}
+	
+	private void updateTaxiLocation(taxi,currentLocation){
+		taxi.setLocation(currentLocation);
 	}
 	
 }
