@@ -1,13 +1,65 @@
 @startuml
-Driver -> Comm: drop(????)
-Comm -> Request: send
-alt
-Request -> TaxiMan: changeDriverStatus
-TaxiMan -> TaxiMan: updateStatus(Driver)
-Request <-- TaxiMan
-Request -> DBMS: write
-TaxiMan -> DBMS: write
-Request -> Passanger: callDropped()
+
+title sd_drop_call
+
+activate TaxiDriverApp
+TaxiDriverApp ->> RemoteServicesInterface: dropRequest(taxiId) //taxi driver that presses the button????????
+
+activate RemoteServicesInterface
+TaxiDriverApp <<-- RemoteServicesInterface
+RemoteServicesInterface ->> RequestManagement: dropRequest(taxiId)
+
+activate RequestManagement
+RemoteServicesInterface <<-- RequestManagement
+
+deactivate RemoteServicesInterface
+RequestManagement -> RequestManagement: checkTaxiDriverLocation(taxiId) // can this component do it by itself??????
+
+activate RequestManagement
+deactivate RequestManagement
+alt taxi driver has reached the meeting location
+	RequestManagement -> TaxiManagement: changeDriverStatus() // bad name!!!!!!
+	
+	activate TaxiManagement
+	TaxiManagement -> TaxiManagement: updateStatus(taxiId) //set as...???????????to other things???????
+	
+	activate TaxiManagement
+	deactivate TaxiManagement
+	RequestManagement <-- TaxiManagement
+	RequestManagement -> DataAccessUtilities: update(...)
+	
+	activate DataAccessUtilities
+	DataAccessUtilities -> DBMS: update(...)
+	
+	activate DBMS
+	DataAccessUtilities <-- DBMS
+	
+	deactivate DBMS
+	RequestManagement <-- DataAccessUtilities
+	
+	deactivate DataAccessUtilities
+	RequestManagement ->> NotificationSystem: callDropped()
+	
+	activate NotificationSystem
+	RequestManagement <<-- NotificationSystem
+	NotificationSystem ->> PassangerApp: callDropped()
+	
+	activate PassangerApp
+	NotificationSystem <<-- PassangerApp
+	
+	deactivate PassangerApp
+	NotificationSystem ->> TaxiDriverApp: callDropped()
+	NotificationSystem <<-- TaxiDriverApp
+else
+	RequestManagement ->> NotificationSystem: dropRejected()
+	RequestManagement <<-- NotificationSystem
+	NotificationSystem ->> TaxiDriverApp: dropRejected()
+	NotificationSystem <<-- TaxiDriverApp
 end
+
+deactivate NotificationSystem
+deactivate TaxiDriverApp
+deactivate RequestManagement
+deactivate TaxiManagement
 
 @enduml

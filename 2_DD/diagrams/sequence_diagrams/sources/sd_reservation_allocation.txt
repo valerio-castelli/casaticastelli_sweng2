@@ -8,10 +8,22 @@ alt no reservation to be allocated
 else some reservation must be allocated
 	loop for all reservations to be allocated
 		|||
-		loop ...
+		loop try every two minutes, up to 10 times
 			|||
-			ref over ReservationManagement: sd_allocate
-			ReservationManagement -> ReservationManagement: setReservationAsDone() // DB?
+			ref over ReservationManagement, DataAccessUtilities, DBMS: sd_allocate
+			ReservationManagement -> ReservationManagement: setReservationAsDone()
+			ReservationManagement -> DataAccessUtilities: updateReservationList(...)
+			
+			activate DataAccessUtilities
+			DataAccessUtilities -> DBMS: update(...)
+			
+			activate DBMS
+			DataAccessUtilities <-- DBMS
+			
+			deactivate DBMS
+			ReservationManagement <-- DataAccessUtilities
+			
+			deactivate DataAccessUtilities
 		end		
 	end
 end

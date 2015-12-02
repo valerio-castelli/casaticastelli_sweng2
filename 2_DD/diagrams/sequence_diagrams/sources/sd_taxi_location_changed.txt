@@ -1,0 +1,139 @@
+@startuml
+
+title sd_taxi_location_changed //change location in any case!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+activate TaxiDriverApp
+TaxiDriverApp ->> RemoteServicesInterface: sendCurrentLocation(taxiId, currentLocation)
+
+activate RemoteServicesInterface
+TaxiDriverApp <<-- RemoteServicesInterface
+RemoteServicesInterface ->> TaxiManagement: sendCurrentLocation(taxiId, currentLocation)
+
+activate TaxiManagement
+RemoteServicesInterface <<-- TaxiManagement
+
+deactivate RemoteServicesInterface
+TaxiManagement -> TaxiManagement: checkTaxiStatus(taxiId)
+
+activate TaxiManagement
+deactivate TaxiManagement
+alt status == available
+	TaxiManagement -> LocationManagement: isTaxiDriverInsideCity(taxiId, currentLocation)
+	
+	activate LocationManagement
+	TaxiManagement <-- LocationManagement: result
+	
+	deactivate LocationManagement
+	alt inside city
+		TaxiManagement -> LocationManagement: getZone(currentLocation)
+		
+		activate LocationManagement
+		TaxiManagement <-- LocationManagement: newZone
+		TaxiManagement -> LocationManagement: getZone(previousLocation)
+		TaxiManagement <-- LocationManagement: oldZone
+		
+		deactivate LocationManagement
+		alt newZone == oldZone (i.e., the taxi driver changed zone)
+			TaxiManagement -> TaxiManagement: updateZone(taxiId, zone)
+			
+			activate TaxiManagement
+			deactivate TaxiManagement
+			TaxiManagement -> DataAccessUtilities: updateQueues(...)
+			
+			activate DataAccessUtilities
+			DataAccessUtilities -> DBMS: update(...)
+			
+			activate DBMS
+			DataAccessUtilities <-- DBMS
+			
+			deactivate DBMS
+			TaxiManagement <-- DataAccessUtilities
+			
+			deactivate DataAccessUtilities
+			TaxiManagement ->> NotificationSystem: notifyZoneChanged(taxiId,newZone)
+
+			activate NotificationSystem
+			TaxiManagement <<-- NotificationSystem
+			NotificationSystem ->> TaxiDriverApp: notifyZoneChanged(taxiId,newZone)
+			NotificationSystem <<-- TaxiDriverApp
+			
+			deactivate NotificationSystem
+		end
+	else outside city
+		TaxiManagement -> TaxiManagement: setOutsideCity(taxiId)
+		
+		activate TaxiManagement
+		deactivate TaxiManagement
+		TaxiManagement -> DataAccessUtilities: updateQueues(...)
+			
+		activate DataAccessUtilities
+		DataAccessUtilities -> DBMS: update(...)
+		
+		activate DBMS
+		DataAccessUtilities <-- DBMS
+		
+		deactivate DBMS
+		TaxiManagement <-- DataAccessUtilities
+		
+		deactivate DataAccessUtilities
+		TaxiManagement ->> NotificationSystem: notifyExitedCity(taxiId)
+
+		activate NotificationSystem
+		TaxiManagement <<-- NotificationSystem
+		NotificationSystem ->> TaxiDriverApp: notifyExitedCity(taxiId);
+		NotificationSystem <<-- TaxiDriverApp
+		
+		deactivate NotificationSystem
+	end
+else status == outside_city
+	TaxiManagement -> LocationManagement: isTaxiDriverInsideCity(taxiId, currentLocation)
+	
+	activate LocationManagement
+	TaxiManagement <-- LocationManagement: result
+	
+	deactivate LocationManagement
+	alt inside city
+		TaxiManagement -> LocationManagement: getZone(currentLocation)
+		
+		activate LocationManagement
+		TaxiManagement <-- LocationManagement: zone
+		
+		deactivate LocationManagement
+		TaxiManagement -> TaxiManagement: addToZoneQueue(taxiId, zone)
+		
+		activate TaxiManagement
+		deactivate TaxiManagement
+		TaxiManagement -> TaxiManagement: setAvailable(taxiId)
+		
+		activate TaxiManagement
+		deactivate TaxiManagement
+		TaxiManagement -> DataAccessUtilities: updateQueues(...)
+		
+		activate DataAccessUtilities
+		DataAccessUtilities -> DBMS: update(...)
+		
+		activate DBMS
+		DataAccessUtilities <-- DBMS
+		
+		deactivate DBMS
+		TaxiManagement <-- DataAccessUtilities
+		
+		deactivate DataAccessUtilities
+		TaxiManagement ->> NotificationSystem: notifyEnteredCity(taxiId,newZone)
+
+		activate NotificationSystem
+		TaxiManagement <<-- NotificationSystem
+		NotificationSystem ->> TaxiDriverApp: notifyEnteredCity(taxiId,newZone)
+		NotificationSystem <<-- TaxiDriverApp
+		
+		deactivate NotificationSystem
+	end
+end
+
+deactivate TaxiDriverApp
+TaxiManagement -> TaxiManagement: updateLocation(currentLocation) //write here on the DB?????? remove all other writes??????
+
+activate TaxiManagement
+deactivate TaxiManagement
+deactivate TaxiManagement
+@enduml

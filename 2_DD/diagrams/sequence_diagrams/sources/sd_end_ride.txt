@@ -1,31 +1,57 @@
 @startuml
-TaxiDriverApp -> comm: endRide(taxiDriverId, GPS)
-comm -> taxiMan:
 
-taxiMan -> taxiMan: checkEndRideFunctionalityIsAllowed(taxiDriverId)
+title sd_end_ride
 
-alt  very wrong
+activate TaxiDriverApp
+TaxiDriverApp ->> RemoteServicesInterface: endRide(taxiDriverId, GPS) //taxi driver actor???????
 
+activate RemoteServicesInterface
+TaxiDriverApp <<-- RemoteServicesInterface
+RemoteServicesInterface ->> TaxiManagement: endRide(taxiDriverId, GPS)
 
+activate TaxiManagement
+RemoteServicesInterface <<-- TaxiManagement
+
+deactivate RemoteServicesInterface
+TaxiManagement -> TaxiManagement: checkEndRideFunctionalityIsAllowed(taxiDriverId)
+alt very wrong // comunicare all'utetne l'errore!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 else ok
-
-
-
-taxiMan -> LocationManager: TaxiDriverIsInsideCity(GPS)
-
-
-alt taxi driver inside city
-	taxiMan <-- LocationManager: true
-	taxiMan -> taxiMan: setAvailable(taxiDriverId)
-	taxiMan -> LocationManager: getCurrentZone(GPS);
-	taxiMan <-- LocationManager: zone
-	taxiMan -> taxiMan: push(zone, taxiDriverId) //??
-else
-	taxiMan <-- LocationManager: false
-	taxiMan -> taxiMan: setOutOfCity(taxiDriverId) //??
+	TaxiManagement -> LocationManagement: TaxiDriverIsInsideCity(GPS) //????????????????????
+	
+	activate LocationManagement
+	alt taxi driver inside city
+		TaxiManagement <-- LocationManagement: true
+		TaxiManagement -> TaxiManagement: setAvailable(taxiDriverId)
+		TaxiManagement -> LocationManagement: getCurrentZone(GPS)
+		TaxiManagement <-- LocationManagement: zone
+		TaxiManagement -> TaxiManagement: push(zone, taxiDriverId) //bad name!!!!!!!!!!!!
+	else
+		TaxiManagement <-- LocationManagement: false
+		TaxiManagement -> TaxiManagement: setOutOfCity(taxiDriverId) //??
 end
-taxiMan -> DBMS: write
-taxiMan ->> comm: confirm()
-comm ->> TaxiDriverApp: confirm()
+
+deactivate LocationManagement
+TaxiManagement -> DataAccessUtilities: update(...)
+
+activate DataAccessUtilities
+DataAccessUtilities -> DBMS
+
+activate DBMS
+DataAccessUtilities <-- DBMS: update(...)
+
+deactivate DBMS
+TaxiManagement <-- DataAccessUtilities
+
+deactivate DataAccessUtilities
+TaxiManagement ->> NotificationSystem: confirm()
+
+activate NotificationSystem
+TaxiManagement <<-- NotificationSystem
+
+deactivate TaxiManagement
+NotificationSystem ->> TaxiDriverApp: confirm()
+NotificationSystem <<-- TaxiDriverApp
+
+deactivate NotificationSystem
 end
 @enduml

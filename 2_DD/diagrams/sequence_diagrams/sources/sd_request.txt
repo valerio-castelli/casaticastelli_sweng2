@@ -23,7 +23,7 @@ RequestManagement -> TaxiManagement: existsAvailableTaxiDriver(zone)
 
 activate TaxiManagement
 loop until a taxi driver accepts the call, or there are no more taxi drivers left
-	TaxiManagement -> TaxiManagement: popTaxiDriver(zone)
+	TaxiManagement -> TaxiManagement: dequeueTaxiDriver(zone)
 	
 	activate TaxiManagement
 	
@@ -53,14 +53,6 @@ loop until a taxi driver accepts the call, or there are no more taxi drivers lef
 		
 		deactivate RemoteServiceInterface
 		TaxiManagement -> TaxiManagement: setCurrentlyRiding(taxiDriver)
-		TaxiManagement -> MappingService: computeETA(GPS, taxiDriverGPS)
-		
-		activate MappingService
-		TaxiManagement <-- MappingService: ETA
-		
-		deactivate MappingService
-		
-		TaxiManagement --> RequestManagement: true
 		
 	else reject ride or taxi driver doesn't reply on time
 		TaxiDriverApp ->> RemoteServiceInterface: refuseRide()
@@ -71,14 +63,21 @@ loop until a taxi driver accepts the call, or there are no more taxi drivers lef
 		RemoteServiceInterface <<-- TaxiManagement
 		
 		deactivate RemoteServiceInterface
-		TaxiManagement -> TaxiManagement: pushTaxiDriver(zone)
-		RequestManagement <-- TaxiManagement: false
+		TaxiManagement -> TaxiManagement: enqueueTaxiDriver(zone)
+		
 	end
 end
-alt a taxi driver accepted
+TaxiManagement --> RequestManagement: result
+alt result == true (i.e., a taxi driver accepted)
 	RequestManagement -> TaxiManagement: getAvailableTaxiDriver()
 	RequestManagement <-- TaxiManagement: taxiDriver
-	RequestManagement -> TaxiManagement: getETA()
+	RequestManagement -> TaxiManagement: getETA(passengerGPS)
+	TaxiManagement -> MappingService: computeETA(passengerGPS, taxiDriverGPS)
+		
+	activate MappingService
+	TaxiManagement <-- MappingService: ETA
+		
+	deactivate MappingService
 	RequestManagement <-- TaxiManagement: ETA
 	RequestManagement -> RequestManagement: generateSecretCode()
 	RequestManagement ->> NotificationSystem: notifyRequestConfirmation(secretCode)
@@ -91,8 +90,7 @@ alt a taxi driver accepted
 	deactivate TaxiDriverApp
 	NotificationSystem ->> PassengerApp: confirmRide(secretCode)
 	NotificationSystem <<-- PassengerApp
-else no taxi driver accepted
-	NotificationSystem ->> NotificationSystem: notifyRequestRejection()
+else result == false (i.e., no taxi driver accepted)
 	NotificationSystem ->> PassengerApp: notifyRequestRejection()
 	NotificationSystem <<-- PassengerApp
 end

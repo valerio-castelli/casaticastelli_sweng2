@@ -1,6 +1,6 @@
 @startuml
 
-title sd_reservation
+title sd_reserve
 
 activate PassengerApp
 PassengerApp ->> RemoteServicesInterface: reserveTaxi(origin, destination, date, time)
@@ -38,11 +38,11 @@ alt correct data
 	deactivate NotificationSystem
 else wrong data
 
-	ReservationManagement ->> NotificationSystem: error()
+	ReservationManagement ->> NotificationSystem: error(...)
 	
 	activate NotificationSystem
 	ReservationManagement <<-- NotificationSystem
-	PassengerApp <<- NotificationSystem: error()
+	PassengerApp <<- NotificationSystem: error(...)
 	PassengerApp -->> NotificationSystem
 	
 	deactivate NotificationSystem

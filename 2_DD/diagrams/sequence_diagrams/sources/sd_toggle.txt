@@ -1,8 +1,10 @@
 @startuml
 
-title sd_toggle
+title sd_toggle //do not separate cases?????????
 
 activate TaxiDriverApp
+
+[-> TaxiDriverApp: //toggle button pressed//
 TaxiDriverApp ->> RemoteServicesInterface: togglePressed(taxiDriverId)
 
 activate RemoteServicesInterface
@@ -14,17 +16,61 @@ RemoteServicesInterface <<-- TaxiManagement
 
 deactivate RemoteServicesInterface
 TaxiManagement -> TaxiManagement: checkStatus(taxiDriverId)
+
+activate TaxiManagement
+deactivate TaxiManagement
 alt status == available
 	TaxiManagement -> TaxiManagement: removeTaxiFromZoneQueue(taxiDriverId)
+	
+	activate TaxiManagement
+	deactivate TaxiManagement
 	TaxiManagement -> TaxiManagement: setUnavailable(taxiDriverId)
+	TaxiManagement -> DataAccessUtilities: updateState(...)
+	
+	activate DataAccessUtilities
+	DataAccessUtilities -> DBMS: update(...)
+	
+	activate DBMS
+	DataAccessUtilities <-- DBMS
+	
+	deactivate DBMS
+	TaxiManagement <-- DataAccessUtilities
+	
+	deactivate DataAccessUtilities
+	TaxiManagement ->> NotificationSystem: confirm()
+		
+	activate NotificationSystem
+	TaxiManagement <<-- NotificationSystem
+	NotificationSystem ->> TaxiDriverApp: confirm()
+	NotificationSystem <<-- TaxiDriverApp
+		
+	deactivate NotificationSystem
 else status == unavailable
 	TaxiManagement -> TaxiManagement: getTaxiDriverLocation(taxiDriverId) 
+	
+	activate TaxiManagement
+	deactivate TaxiManagement
 	TaxiManagement -> LocationManagement: isTaxiDriverInsideCity(GPS)
 	
 	activate LocationManagement
 	alt true
 		TaxiManagement <-- LocationManagement: true
 		TaxiManagement -> TaxiManagement: setUnavailable(taxiDriverId)
+		
+		activate TaxiManagement
+		deactivate TaxiManagement
+		TaxiManagement -> DataAccessUtilities: updateState(...)
+	
+		activate DataAccessUtilities
+		DataAccessUtilities -> DBMS: update(...)
+	
+		activate DBMS
+		DataAccessUtilities <-- DBMS
+	
+		deactivate DBMS
+		TaxiManagement <-- DataAccessUtilities
+	
+		deactivate DataAccessUtilities
 		TaxiManagement ->> NotificationSystem: confirm()
 		
 		activate NotificationSystem

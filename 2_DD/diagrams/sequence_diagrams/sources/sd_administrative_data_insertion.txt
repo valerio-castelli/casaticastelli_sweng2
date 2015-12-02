@@ -1,4 +1,6 @@
 @startuml
+
+title //who produce the form??? just send data to dbms, and not to other components??
 browser -> webadm: askForm()
 browser <- webadm
 browser -> webadm: 

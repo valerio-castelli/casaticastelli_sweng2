@@ -11,11 +11,15 @@ RemoteServicesInterface ->> ReservationManagement: getReservationList(passengerI
 
 activate ReservationManagement
 RemoteServicesInterface <<-- ReservationManagement
-ReservationManagement ->> NotificationSystem: sendReservationList()
+ReservationManagement -> ReservationManagement: retrieveReservationList(passengerId)
+
+activate ReservationManagement
+deactivate ReservationManagement
+ReservationManagement ->> NotificationSystem: sendReservationList(list)
 
 activate NotificationSystem
 ReservationManagement <<-- NotificationSystem
-NotificationSystem ->> PassengerApp: sendReservationList()
+NotificationSystem ->> PassengerApp: sendReservationList(list)
 NotificationSystem <<-- PassengerApp
 
 deactivate NotificationSystem

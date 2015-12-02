@@ -2,14 +2,14 @@
 
 title sd_zone_update
 
-[-> webadm: askZoneManagementUpdateForm()
+[-> AdministrationWebApp: //open zone update form//
 
-activate webadm
-webadm ->> RemoteServicesInterface: askZoneManagementUpdateForm()
+activate AdministrationWebApp
+AdministrationWebApp ->> RemoteServicesInterface: askZoneManagementUpdateForm(adminId) // no "ask form", but "ask list"????????????
 
 activate RemoteServicesInterface
-webadm <<-- RemoteServicesInterface
-RemoteServicesInterface ->> ZoneManagement: askZoneManagementUpdateForm()
+AdministrationWebApp <<-- RemoteServicesInterface
+RemoteServicesInterface ->> ZoneManagement: askZoneManagementUpdateForm(adminId)
 
 activate ZoneManagement
 RemoteServicesInterface <<-- ZoneManagement
@@ -21,36 +21,86 @@ activate NotificationSystem
 ZoneManagement <<-- NotificationSystem
 
 deactivate ZoneManagement
-NotificationSystem ->> webadm: sendZoneUpdateForm()
-NotificationSystem <<-- webadm
+NotificationSystem ->> AdministrationWebApp: sendZoneUpdateForm()
+NotificationSystem <<-- AdministrationWebApp
 
 deactivate NotificationSystem
 
-[<- webadm: showForm()
-[-> webadm: insertData()
+[<- AdministrationWebApp: //show form//
+[-> AdministrationWebApp: //data insertion//
 
-webadm ->> RemoteServicesInterface: sendData(data)
+AdministrationWebApp ->> RemoteServicesInterface: sendData(data)
 
 activate RemoteServicesInterface
-webadm <<-- RemoteServicesInterface
+AdministrationWebApp <<-- RemoteServicesInterface
 RemoteServicesInterface ->> ZoneManagement: sendData(data)
 
 activate ZoneManagement
 RemoteServicesInterface <<-- ZoneManagement: sendData(data)
 
 deactivate RemoteServicesInterface
-loop until confirmation or exit // where to require confirmation psw?
+loop until confirmation or exit
 	ZoneManagement -> ZoneManagement: checkZonesConsistency(data)
-	alt ok
-		ZoneManagement -> dataaccess: write
-		dataaccess -> DBMS: write()
-		ZoneManagement <- browser: ok
-	else wrong
-		ZoneManagement <- browser: wrong
+	alt correct data
+		ZoneManagement ->> NotificationSystem: askPassword()
+		
+		activate NotificationSystem
+		ZoneManagement <<-- NotificationSystem
+		NotificationSystem ->> AdministrationWebApp: askPassword()
+		NotificationSystem <<-- AdministrationWebApp
+		
+		deactivate NotificationSystem
+		[<- AdministrationWebApp: askPassword()
+		[-> AdministrationWebApp: insertPassword(psw)
+		AdministrationWebApp --> RemoteServicesInterface: sendPassword(adminId, psw)
+		AdministrationWebApp <<-- RemoteServicesInterface
+		RemoteServicesInterface ->> ZoneManagement: sendPassword(adminId, psw)
+		RemoteServicesInterface <<-- ZoneManagement
+		ZoneManagement -> ZoneManagement: ckeckPassword(psw)
+		alt password confirmed
+			ZoneManagement -> DataAccessUtilities: updateZone(...)
+			
+			activate DataAccessUtilities
+			DataAccessUtilities -> DBMS: update(...)
+			
+			activate DBMS
+			DataAccessUtilities <-- DBMS
+			
+			deactivate DBMS
+			ZoneManagement <-- DataAccessUtilities
+			
+			deactivate DataAccessUtilities
+			ZoneManagement ->> NotificationSystem: confirm()
+			
+			activate NotificationSystem
+			ZoneManagement <<-- NotificationSystem
+			NotificationSystem ->> AdministrationWebApp: confirm()
+			NotificationSystem <<-- AdministrationWebApp
+			
+			deactivate NotificationSystem
+		else password rejected
+			ZoneManagement ->> NotificationSystem: reject()
+			
+			activate NotificationSystem
+			ZoneManagement <<-- NotificationSystem
+			NotificationSystem ->> AdministrationWebApp: reject()
+			NotificationSystem <<-- AdministrationWebApp
+			
+			deactivate NotificationSystem
+		end
+	else wrong data
+		ZoneManagement ->> NotificationSystem: dataError(...)
+			
+			activate NotificationSystem
+			ZoneManagement <<-- NotificationSystem
+			NotificationSystem ->> AdministrationWebApp: dataError(...)
+			NotificationSystem <<-- AdministrationWebApp
+			
+			deactivate NotificationSystem
 	end
 end
 
-deactivate webadm
+deactivate AdministrationWebApp
 deactivate ZoneManagement
 	
 @enduml
