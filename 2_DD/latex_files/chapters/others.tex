@@ -5,7 +5,7 @@ Each algorithm will be explained using a pseudo-code notation inherited from the
 
 The first algorithm we will focus on is the Taxi Request processing algorithm, which takes a Taxi Request in input and performs the necessary operations to handle it. The main algorithm is described by the requestTaxi method of the RequestManagement component.
 
-\begin{lstlisting}[language=Java]
+\begin{lstlisting}
 public class RequestManagement{ 
 public boolean requestTaxi(passengerID, address){
 	Location l = locationManagement.getLocation(address);
@@ -106,7 +106,7 @@ public boolean existsAvailableTaxiDriver(zone){
 
 The second algorithm we will focus on is the Taxi Reservation processing algorithm, which takes a Taxi Reservation in input and performs the necessary operations to handle it. The main algorithm is described by the reserveTaxi method of the ReservationManagement component.
 
-\begin{lstlisting}[language=Java]
+\begin{lstlisting}
 public class ReservationManagement{
 
 	public boolean reserveTaxi(passengerID, origin, destination, date, time){
