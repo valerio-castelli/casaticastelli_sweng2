@@ -18,9 +18,9 @@
 \contentsline {section}{\numberline {2.7}Selected architectural styles and patterns}{17}{section.2.7}
 \contentsline {section}{\numberline {2.8}Other design decisions}{18}{section.2.8}
 \contentsline {chapter}{\numberline {3}Algorithm Design}{20}{chapter.3}
-\contentsline {chapter}{\numberline {4}User Interface Design}{25}{chapter.4}
-\contentsline {chapter}{\numberline {5}Requirements Traceability}{27}{chapter.5}
-\contentsline {section}{\numberline {5.1}Functional Requirements}{27}{section.5.1}
-\contentsline {section}{\numberline {5.2}Quality Requirements}{32}{section.5.2}
-\contentsline {chapter}{\numberline {6}References}{34}{chapter.6}
-\contentsline {chapter}{Appendix \numberline {A}Hours of work}{35}{Appendix.1.A}
+\contentsline {chapter}{\numberline {4}User Interface Design}{26}{chapter.4}
+\contentsline {chapter}{\numberline {5}Requirements Traceability}{28}{chapter.5}
+\contentsline {section}{\numberline {5.1}Functional Requirements}{28}{section.5.1}
+\contentsline {section}{\numberline {5.2}Quality Requirements}{33}{section.5.2}
+\contentsline {chapter}{\numberline {6}References}{35}{chapter.6}
+\contentsline {chapter}{Appendix \numberline {A}Hours of work}{36}{Appendix.1.A}

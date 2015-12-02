@@ -178,33 +178,66 @@ public class TaxiManagement{
 		}
 	}
 
-	private TaxiStatus checkStatus(taxiDriverId){
+	private getTaxiById(taxiDriverId){
 		/* We have to get the corresponding taxi */
 		/* First look through the zones to see if the driver is available */
 		for (int zone = 0; z < zoneNumber; z++){
 			for (int n = 0; n < getZoneQueue(zone).getSize(); n++)
 				if (getZoneQueue(zone).get(n).getDriverId == taxiDriverId)
-					// May be pending or available
-					return getZoneQueue(zone).get(n).getStatus();
+					return getZoneQueue(zone).get(n);
 		}
 		/* If not, is he outside city? */
 		for (int n = 0; n < outsideCityList.getSize(); n++)
 			if (outsideCityList.get(n).getDriverId == taxiDriverId)
-				return TaxiStatusOutsideCity;
+				return outsideCityList.get(n);
 		/* If not, is he on a ride? */
 		for (int n = 0; n < currentlyRidingList.getSize(); n++)
 			if (currentlyRidingList.get(n).getDriverId == taxiDriverId)
-				return TaxiStatusCurrentlyRiding;
+				return currentlyRidingList.get(n);
 		/* If not, is he unavailable ? */
 		for (int n = 0; n < unavailabilityList.getSize(); n++)
 			if (unavailabilityList.get(n).getDriverId == taxiDriverId)
-				return TaxiStatusUnavailable;
+				return unavailabilityList.get(n);
 		/* If we still haven't found him, we have a serious problem */
 		throw new TaxiNotFoundException();		
+	}
+
+	private TaxiStatus checkStatus(taxiDriverId){
+		Taxi taxi = getTaxiById(taxiDriverId);
+		return taxi.getStatus();
 	}
 }
 \end{lstlisting}
 
+The fourth algorithm we will focus on is the one that manages the transition of a taxi from a zone to another. The main algorithm is described by the sendGPS(taxiId,GPS) method of the TaxiManagement component.
+
+\begin{lstlisting}
+public class TaxiManagement{
+	
+	public void sendGPS(taxiId,GPS){
+		Taxi taxi = getTaxiById(taxiDriverId);
+		TaxiStatus status = checkStatus(taxiDriverId);
+		/* The zone change has an impact only if the taxi is available */
+		if (status==TaxiStatusAvailable){
+			if (locationManagement.isLocationInsideCity(GPS)){
+				/* If it's inside the city, it should change zone */
+				Zone newZone = locationManagement.getZone(GPS);
+				Zone oldZone = locationManagement.getZone(taxi.getLocation());
+				if (oldZone!=newZone)){
+					updateZone(taxi,newZone);
+					dataAccessUtilities.updateQueues();
+				}
+			}
+			else{
+				/* Otherwise it should be set as "out of city" */
+				setOutsideCity(taxiId);
+				dataAccessUtilities.updateQueues();
+			}
+		}
+	}
+	
+}
+\end{lstlisting}
 
 \chapter{User Interface Design}
 One of the main concerns with designing an Information System is how to make it as functional and user-friendly as possible. The simplicity and clarity of the user interface is crucial in making sure that the system can actually be employed by the intended user base in an efficient way; in increases user satisfaction with the services and reduces the need to have a support staff. 
