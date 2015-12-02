@@ -1,4 +1,144 @@
 \chapter{Algorithm Design}
+In this section we will give an overall description of the main algorithms necessary for myTaxiService to work. 
+
+Each algorithm will be explained using a pseudo-code notation inherited from the Java programming language; for the sake of simplicity, we will assume to have a class for each sub-component, even though in the real implementation the code will be split among multiple helper classes.
+
+The first algorithm we will focus on is the Taxi Request processing algorithm, which takes a Taxi Request in input and performs the necessary operations to handle it. The main algorithm is described by the requestTaxi method of the RequestManagement component.
+
+\begin{lstlisting}[language=Java]
+public class RequestManagement{ 
+public boolean requestTaxi(passengerID, address){
+	Location l = locationManagement.getLocation(address);
+	return requestTaxi(passengerId, l);
+}
+
+public boolean requestTaxi(passengerID, passengerGPS){
+	/* We create a new request and write it into the database */
+	Request request = new Request(passengerID, passengerGPS);
+	dataAccessUtilities.writeToDB(request);
+	/* We compute the zone of the source */
+	Zone z = locationManagement.getZone(passengerGPS);
+	/* Is there an available taxi? */
+	if (taxiManagement.existsAvailableTaxiDriver(zone)){
+		/* If so, get it and compute the ETA and the secret code */
+		TaxiDriver td = taxiManagement.getAvailableTaxiDriver();
+		int ETA = taxiManagement.getETA(td, passengerGPS);
+		String secretCode = generateSecretCode();
+		/* We notify it to the taxi driver and to the passenger*/
+		notificationSystem.notifyRequestConfirmation(td, request, secretCode);
+		notificationSystem.notifyRequestConfirmation(passenger, request, secretCode)
+	}
+	else
+		/* Otherwise we reject the request */
+			notificationSystem.notifyRequestRejection(passenger);
+	/* Finally we update the status of the request in the database */
+	dataAccessUtilities.updateDB(request);	
+}
+}
+
+public class LocationManagement{
+public Location getLocation(address){
+	return mappingService.getLocation(address);
+}
+}
+
+public class RemoteServicesInterface{
+public void acceptRide(td, request){
+	taxiManagement.acceptRide(td, request);
+}
+}
+
+public class TaxiManagement{
+
+private boolean accepted;
+private boolean answered;
+
+public void acceptRide(td, request){
+	answered = true;
+	accepted = true;
+}
+
+public void rideRefused(td, request){
+	answered = true;
+	accepted = false;
+}
+
+public int getETA(passengerGPS){
+	return mappingService.computeETA(passengerGPS, td.getLocation());
+}
+
+private void setPending(td){
+	td.setStatus(pending);
+	dataAccessUtilities.updateTaxiStatus(td.getStatus());
+}
+
+private void setCurrentlyRiding(td, request){
+	td.setStatus(currentlyRiding);
+	td.associateRequest(request);
+	dataAccessUtilities.updateTaxiStatus(td.getStatus());
+}
+
+public boolean existsAvailableTaxiDriver(zone){
+	
+	ZoneQueue zoneQueue = getZoneQueue(zone);
+	accepted = false;
+	answered = false;	
+	while (!accepted && zoneQueue.getSize() > 0)
+	{
+		/* We pop the first available taxi */
+		TaxiDriver td = dequeueTaxiDriver(zone);
+		/* We set it as pending */
+		setPending(td);
+		/* And notify him the request */
+		notificationSystem.notifyCallRequest(td, request);
+		/* Wait for the answer, or timeout */
+		waitUntil(answered || timeout);
+		if (!accepted)
+			enqueueTaxiDriver(zone, td);
+		else
+			setCurrentlyRiding(td, request);
+	}
+	return accepted;
+}
+
+}	
+\end{lstlisting}
+
+The second algorithm we will focus on is the Taxi Reservation processing algorithm, which takes a Taxi Reservation in input and performs the necessary operations to handle it. The main algorithm is described by the reserveTaxi method of the ReservationManagement component.
+
+\begin{lstlisting}[language=Java]
+public class ReservationManagement{
+
+	public boolean reserveTaxi(passengerID, origin, destination, date, time){
+		/* Verifies that inserted data are consistent and valid */
+		boolean consistency = checkDataConsistency(passengerID, origin, destination, date, time);
+		if (consistency){
+			/* Allocate the reservation and store it into the database */
+			Reservation reservation = new Reservation(origin, destination, date, time);
+			insertNewReservation(reservation);
+			/* Notify the passenger that the reservation has been registered */
+			notificationSystem.confirmReservation(passengerID, reservation);
+		}
+		else
+			/* Data is inconsistent, notify error */
+			notificationSystem.notifyErrorInReservation(passengerID);
+		return consistency;
+	}
+	
+	private insertNewReservation(reservation){
+		dataAccessUtilities.insertReservation(reservation);
+	}
+	
+	public boolean checkDataConsistency(origin, destination, date, time){
+		Location origin_l = locationManagement.getLocation(address);
+		if (locationManagement.isLocationInsideCity(origin_l) && 
+		(timeInterval(currentDateTime(),createDateTime(date,time)) between 2 hours and 15 days))
+			return true;
+		return false; 
+	}
+}	
+\end{lstlisting}
+
 
 \chapter{User Interface Design}
 One of the main concerns with designing an Information System is how to make it as functional and user-friendly as possible. The simplicity and clarity of the user interface is crucial in making sure that the system can actually be employed by the intended user base in an efficient way; in increases user satisfaction with the services and reduces the need to have a support staff. 
