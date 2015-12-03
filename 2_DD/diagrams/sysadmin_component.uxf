@@ -4,7 +4,7 @@
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>264</x>
+      <x>272</x>
       <y>48</y>
       <w>416</w>
       <h>592</h>
@@ -18,7 +18,7 @@ System Administration</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>200</x>
+      <x>208</x>
       <y>352</y>
       <w>72</w>
       <h>40</h>
@@ -29,7 +29,7 @@ System Administration</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>264</x>
+      <x>272</x>
       <y>360</y>
       <w>144</w>
       <h>32</h>
@@ -41,7 +41,7 @@ m2=&lt;&lt;delegate&gt;&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>376</x>
+      <x>384</x>
       <y>248</y>
       <w>64</w>
       <h>40</h>
@@ -52,7 +52,7 @@ m2=&lt;&lt;delegate&gt;&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>376</x>
+      <x>384</x>
       <y>352</y>
       <w>64</w>
       <h>40</h>
@@ -63,7 +63,7 @@ m2=&lt;&lt;delegate&gt;&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>376</x>
+      <x>384</x>
       <y>456</y>
       <w>64</w>
       <h>40</h>
@@ -74,7 +74,7 @@ m2=&lt;&lt;delegate&gt;&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>256</x>
+      <x>264</x>
       <y>256</y>
       <w>152</w>
       <h>128</h>
@@ -86,7 +86,7 @@ m2=&lt;&lt;delegate&gt;&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>264</x>
+      <x>272</x>
       <y>360</y>
       <w>144</w>
       <h>136</h>
@@ -98,7 +98,7 @@ m2=&lt;&lt;delegate&gt;&gt;</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>16</x>
+      <x>0</x>
       <y>320</y>
       <w>160</w>
       <h>88</h>
@@ -113,18 +113,18 @@ Utilities</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>168</x>
+      <x>152</x>
       <y>360</y>
-      <w>48</w>
+      <w>72</w>
       <h>24</h>
     </coordinates>
     <panel_attributes>lt=()-</panel_attributes>
-    <additional_attributes>40.0;10.0;10.0;10.0</additional_attributes>
+    <additional_attributes>70.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>424</x>
+      <x>432</x>
       <y>216</y>
       <w>176</w>
       <h>88</h>
@@ -139,7 +139,7 @@ Management</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>424</x>
+      <x>432</x>
       <y>320</y>
       <w>176</w>
       <h>88</h>
@@ -154,7 +154,7 @@ Management</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>424</x>
+      <x>432</x>
       <y>424</y>
       <w>176</w>
       <h>88</h>
@@ -168,7 +168,7 @@ Service Statistics</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>424</x>
+      <x>432</x>
       <y>528</y>
       <w>176</w>
       <h>88</h>
@@ -182,7 +182,7 @@ Plugin Management</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>424</x>
+      <x>432</x>
       <y>112</y>
       <w>176</w>
       <h>88</h>
@@ -197,7 +197,7 @@ Management</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>376</x>
+      <x>384</x>
       <y>136</y>
       <w>64</w>
       <h>40</h>
@@ -208,7 +208,7 @@ Management</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>376</x>
+      <x>384</x>
       <y>560</y>
       <w>64</w>
       <h>40</h>
@@ -219,7 +219,7 @@ Management</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>264</x>
+      <x>272</x>
       <y>360</y>
       <w>144</w>
       <h>240</h>
@@ -231,7 +231,7 @@ m2=&lt;&lt;delegate&gt;&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>256</x>
+      <x>264</x>
       <y>144</y>
       <w>152</w>
       <h>240</h>
@@ -239,5 +239,16 @@ m2=&lt;&lt;delegate&gt;&gt;</panel_attributes>
     <panel_attributes>lt=[]&lt;.
 m2=&lt;&lt;delegate&gt;&gt;</panel_attributes>
     <additional_attributes>10.0;280.0;50.0;280.0;50.0;10.0;170.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>168</x>
+      <y>336</y>
+      <w>96</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>IDataAccess</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>
