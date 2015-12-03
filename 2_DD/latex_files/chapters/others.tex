@@ -19,9 +19,9 @@ public boolean requestTaxi(passengerID, passengerLocation){
 	/* We compute the zone of the source */
 	Zone z = locationManagement.getZone(passengerLocation);
 	/* Is there an available taxi? */
-	if (taxiManagement.existsAvailableTaxiDriver(zone)){
+	if (taxiManagement.existsAvailableTaxiDriver(request, zone)){
 		/* If so, get it and compute the ETA and the secret code */
-		TaxiDriver td = taxiManagement.getAvailableTaxiDriver();
+		TaxiDriver td = taxiManagement.getAvailableTaxiDriver(request, zone);
 		int ETA = taxiManagement.getETA(td, passengerLocation);
 		String secretCode = generateSecretCode();
 		/* We notify it to the taxi driver and to the passenger*/
@@ -52,6 +52,8 @@ public class TaxiManagement{
 
 private boolean accepted;
 private boolean answered;
+/* We keep a list of already checked taxis 
+private SortedMap checkedTaxi = new SortedMap();
 
 private void notifyQueueUpdateToTaxis(zone){
 	ZoneQueue queue = getZoneQueue(zone);
@@ -86,23 +88,48 @@ private void setCurrentlyRiding(td, request){
 	dataAccessUtilities.updateTaxiStatus(td.getStatus());
 }
 
+/* Callback invoked by the zone queue update method when a new taxi
+driver is inserted in the zone queue */
+public void callbackNotifyAddedTaxi(TaxiDriver td){
+	if (!checkedTaxi.contains(td))
+		checkedTaxi.add(td, UNCHECKED);
+}
+
+/* Callback invoked by the zone queue update method when a taxi
+driver is removed from the zone queue */
+public void callbackNotifyRemovedTaxi(TaxiDriver td){
+	if (checkedTaxi.getValue(td)==UNCHECKED)
+		checkedTaxi.remove(td);
+}
+
+/* The queue is frozen while I'm filling the hashmap */
+private synchronized void initializeHashMap(ZoneQueue queue){
+	for (int i = 0; i < zoneQueue.getSize(); i++)
+		checkedTaxi.add(zoneQueue.get(i), UNCHECKED);		
+}
+
 public boolean existsAvailableTaxiDriver(zone){
 	
 	ZoneQueue zoneQueue = getZoneQueue(zone);
+	zoneQueue.addObserver(this);
 	accepted = false;
-	answered = false;	
-	while (!accepted && zoneQueue.getSize() > 0)
+	answered = false;
+	/* While there are still taxis to be checked and nobody has accepted */
+	for (int i = 0; !accepted && (i < checkedTaxi.getSize()); i++)	
 	{
 		/* We pop the first available taxi */
-		TaxiDriver td = dequeueTaxiDriver(zone);
+		TaxiDriver td = checkedTaxi.get(i);
+		zoneQueue.remove(td);
 		/* We set it as pending */
 		setPending(td);
 		/* And notify him the request */
 		notificationSystem.notifyCallRequest(td, request);
 		/* Wait for the answer, or timeout */
 		waitUntil(answered || timeout);
-		if (!accepted)
-			enqueueTaxiDriver(zone, td);
+		if (!accepted){
+			zoneQueue.enqueue(td);
+			checkedTaxi.setValueForKey(i, CHECKED);
+		}
 		else
 			setCurrentlyRiding(td, request);
 		/* In both cases, we have to notify other drivers of the update of the queue */

@@ -3,23 +3,23 @@
 title sd_request
 
 activate PassengerApp
-PassengerApp ->> RemoteServiceInterface: requestTaxi(passengerId, passengerGPS)
+PassengerApp ->> RemoteServiceInterface: requestTaxi(passengerId, passengerLocation)
 
 activate RemoteServiceInterface
 PassengerApp <<-- RemoteServiceInterface
-RemoteServiceInterface ->> RequestManagement: requestTaxi(passengerID, passengerGPS)
+RemoteServiceInterface ->> RequestManagement: requestTaxi(passengerID, passengerLocation)
 
 activate RequestManagement
 RemoteServiceInterface <<-- RequestManagement
 
 deactivate RemoteServiceInterface
-RequestManagement -> LocationManagement: getZone(passengerGPS)
+RequestManagement -> LocationManagement: getZone(passengerLocation)
 
 activate LocationManagement
 LocationManagement --> RequestManagement: zone
 
 deactivate LocationManagement
-RequestManagement -> TaxiManagement: existsAvailableTaxiDriver(zone)
+RequestManagement -> TaxiManagement: existsAvailableTaxiDriver(request, zone)
 
 activate TaxiManagement
 loop until a taxi driver accepts the call, or there are no more taxi drivers left
@@ -69,10 +69,10 @@ loop until a taxi driver accepts the call, or there are no more taxi drivers lef
 end
 TaxiManagement --> RequestManagement: result
 alt result == true (i.e., a taxi driver accepted)
-	RequestManagement -> TaxiManagement: getAvailableTaxiDriver()
+	RequestManagement -> TaxiManagement: getAvailableTaxiDriver(request, zone)
 	RequestManagement <-- TaxiManagement: taxiDriver
-	RequestManagement -> TaxiManagement: getETA(passengerGPS)
-	TaxiManagement -> MappingService: computeETA(passengerGPS, taxiDriverGPS)
+	RequestManagement -> TaxiManagement: getETA(taxiDriver, passengerLocation)
+	TaxiManagement -> MappingService: computeETA(passengerLocation, taxiDriverLocation)
 		
 	activate MappingService
 	TaxiManagement <-- MappingService: ETA
@@ -80,7 +80,7 @@ alt result == true (i.e., a taxi driver accepted)
 	deactivate MappingService
 	RequestManagement <-- TaxiManagement: ETA
 	RequestManagement -> RequestManagement: generateSecretCode()
-	RequestManagement ->> NotificationSystem: notifyRequestConfirmation(secretCode)
+	RequestManagement ->> NotificationSystem: notifyRequestConfirmation(taxiDriver, request, secretCode)
 	
 	activate NotificationSystem
 	RequestManagement <<-- NotificationSystem
@@ -88,10 +88,17 @@ alt result == true (i.e., a taxi driver accepted)
 	NotificationSystem <<-- TaxiDriverApp
 	
 	deactivate TaxiDriverApp
+	deactivate NotificationSystem
+	RequestManagement —> NotificationSystem: notifyRequestConfirmation(passenger, request, secretCode)
+
+	activate NotificationSystem
+	RequestManagement <<-- NotificationSystem
 	NotificationSystem ->> PassengerApp: confirmRide(secretCode)
 	NotificationSystem <<-- PassengerApp
+	deactivate NotificationSystem
+
 else result == false (i.e., no taxi driver accepted)
-	NotificationSystem ->> PassengerApp: notifyRequestRejection()
+	NotificationSystem ->> PassengerApp: notifyRequestRejection(passenger)
 	NotificationSystem <<-- PassengerApp
 end
 
