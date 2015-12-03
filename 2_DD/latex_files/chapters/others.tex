@@ -2,8 +2,32 @@
 In this section we will give an overall description of the main algorithms necessary for myTaxiService to work. 
 
 Each algorithm will be explained using a pseudo-code notation inherited from the Java programming language; for the sake of simplicity, we will assume to have a class for each sub-component, even though in the real implementation the code will be split among multiple helper classes.
-
+\vspace{5px}
+\linebreak
 The first algorithm we will focus on is the Taxi Request processing algorithm, which takes a Taxi Request in input and performs the necessary operations to handle it. The main algorithm is described by the requestTaxi(...) method of the RequestManagement component.
+
+The most critical aspect of the algorithm is the proper management of the queues in a concurrent environment. In fact, every request is processed independently in a different thread for efficiency reasons: this means that accesses to queues must be managed in a way that ensures proper and consistent sorting of taxis.
+
+This is achieved by using an additional mapping data structure in each thread that associates to every taxi contained in the queue of the interested zone a special checked/unchecked status. 
+At the beginning of the requestTaxi() method, all taxis in the interested zone are inserted in the map with an unchecked status. A taxi is then considered checked if the algorithm has already considered it for the given request and the taxi driver has refused it; this way, it won't be considered again for the same request. 
+
+In order to keep this map data structure updated with respect to the insertion and removal of taxis in/from the interested zone queue, an instance of the observer design pattern is implemented between the TaxiManagement component and the zone queue object. Specifically, the thread responsible of a specific request registers itself as an observer of the interested zone queue object by exposing a couple of callbacks that are called every time a taxi is inserted or removed in/from the zone queue. The behavior of these callbacks is designed to keep the internal thread data structure consistent with the behavior of a queue; more specifically:
+\begin{itemize}
+	\item When a taxi is removed from the original zone queue, it is removed from the map only if it hasn't already been checked. In fact, to guarantee convergence the algorithm must remember the taxis that have already been checked. If the taxi is still marked as unchecked, then it can be safely removed; in this case, two scenarios are possible:
+	\begin{enumerate}
+	\item The taxi has been removed because it's become unavailable or it has gone out of the zone. 
+	\item The taxi has been selected to serve another request.	\end{enumerate}
+	In both cases, it is correct to remove the taxi from the map, since it wouldn't be available to serve our request anyway. The removal of the taxi from the map allows the system to insert it back later on if it becomes available again.
+	\item When a taxi is added to the original zone queue, it is added to the map only if it hasn't already been stored inside it. In this way, a taxi can be stored in the map only if one of these two conditions holds:
+	\begin{enumerate}
+		\item The taxi is coming from another zone. In this case, it represents a new taxi for us that wasn't previously available for selection. 
+		\item The taxi was already present in our zone, it had been selected to serve another request but has refused to serve it. In this case, the taxi could still choose to serve our request, so it must be considered for selection. 
+	\end{enumerate}
+	In both cases, the taxi is added into the last position of the map. This is consistent with the specifications, as it will respect the priority order of the queue and will allow the system to consider more taxis as they become suitable for selection. 
+\end{itemize}
+It should be noted that this add/remove policy ensures that no taxi is ever considered twice for the same request: even if it is taken from the pool to serve another request, if it had already been considered for this one his checked status will be kept and this will avoid multiple checks of the same taxi.
+
+In the end, this guarantees that the algorithm converges in at most N iterations, N being the total number of taxis in the system (if they are all available and present inside the same zone, and all of them refuse the call). 
 
 \begin{lstlisting}
 public class RequestManagement{ 
@@ -52,7 +76,7 @@ public class TaxiManagement{
 
 private boolean accepted;
 private boolean answered;
-/* We keep a list of already checked taxis 
+/* We keep a list of already checked taxis */
 private SortedMap checkedTaxi = new SortedMap();
 
 private void notifyQueueUpdateToTaxis(zone){
@@ -88,8 +112,7 @@ private void setCurrentlyRiding(td, request){
 	dataAccessUtilities.updateTaxiStatus(td.getStatus());
 }
 
-/* Callback invoked by the zone queue update method when a new taxi
-driver is inserted in the zone queue */
+/* Callback invoked by the zone queue update method when a new taxi driver is inserted in the zone queue */
 public void callbackNotifyAddedTaxi(TaxiDriver td){
 	if (!checkedTaxi.contains(td))
 		checkedTaxi.add(td, UNCHECKED);
