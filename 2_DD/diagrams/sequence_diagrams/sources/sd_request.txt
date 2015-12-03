@@ -89,7 +89,7 @@ alt result == true (i.e., a taxi driver accepted)
 	
 	deactivate TaxiDriverApp
 	deactivate NotificationSystem
-	RequestManagement —> NotificationSystem: notifyRequestConfirmation(passenger, request, secretCode)
+	RequestManagement -> NotificationSystem: notifyRequestConfirmation(passenger, request, secretCode)
 
 	activate NotificationSystem
 	RequestManagement <<-- NotificationSystem

@@ -1,10 +1,102 @@
 @startuml
 
-title //who produce the form??? just send data to dbms, and not to other components??
-browser -> webadm: askForm()
-browser <- webadm
-browser -> webadm: 
-webadm ->> remote: get
-remote ->> systemadm
+title sd_administrative_data_insertion //who produce the form??? just send data to dbms, and not to other components?? and who checks the data???
+
+loop until confirmation or exit
+	
+	activate AdministrationWebApp
+	AdministrationWebApp -> RemoteServicesInterface: sendData(data)
+
+	activate RemoteServicesInterface
+	RemoteServicesInterface -> ZoneManagement: sendData(data)
+	
+	activate ZoneManagement
+	ZoneManagement -> ZoneManagement: checkDataConsistency(data)
+	
+	activate ZoneManagement
+	deactivate ZoneManagement
+	alt correct zones data
+		ZoneManagement --> RemoteServicesInterface: ok
+		
+		deactivate ZoneManagement
+		RemoteServicesInterface -> DriverManagement: sendData(data)
+		
+		activate DriverManagement
+		DriverManagement -> DriverManagement: checkDataConsistency(data)
+		
+		activate DriverManagement
+		deactivate DriverManagement
+		alt correct taxi drivers data
+		RemoteServicesInterface <-- DriverManagement: ok
+		
+		deactivate DriverManagement
+		RemoteServicesInterface --> AdministrationWebApp: dataConfirmedMessage
+		RemoteServicesInterface <- AdministrationWebApp: sendPassowrkd(adminId, psw)
+		RemoteServicesInterface -> PermissionManagament: checkPassword(adminId, psw)
+			
+		activate PermissionManagament
+		PermissionManagament -> PermissionManagament: ckeckPassword(adminId, psw)
+		
+		activate PermissionManagament
+		deactivate PermissionManagament
+		alt password confirmed
+			PermissionManagament --> RemoteServicesInterface: ok
+			RemoteServicesInterface -> ZoneManagement: insertZones(data)
+			
+			activate ZoneManagement
+			ZoneManagement -> DataAccessUtilities: insertZones(...)
+			
+			activate DataAccessUtilities
+			DataAccessUtilities -> DBMS: insert(...)
+			
+			activate DBMS
+			DataAccessUtilities <-- DBMS
+			
+			deactivate DBMS
+			ZoneManagement <-- DataAccessUtilities
+			
+			deactivate DataAccessUtilities
+			RemoteServicesInterface <-- ZoneManagement
+			
+			deactivate ZoneManagement
+			RemoteServicesInterface -> DriverManagement: insertTaxiDrivers(data)
+			
+			activate DriverManagement
+			DriverManagement -> DataAccessUtilities: insertTaxiDrivers(...)
+			
+			activate DataAccessUtilities
+			DataAccessUtilities -> DBMS: insert(...)
+			
+			activate DBMS
+			DataAccessUtilities <-- DBMS
+			
+			deactivate DBMS
+			DriverManagement <-- DataAccessUtilities
+			
+			deactivate DataAccessUtilities
+			RemoteServicesInterface <-- DriverManagement
+			
+			deactivate DriverManagement
+			RemoteServicesInterface --> AdministrationWebApp: passwordConfirmedMessage
+		else password rejected
+			PermissionManagament --> RemoteServicesInterface: wrong
+			RemoteServicesInterface --> AdministrationWebApp: passwordRejectedMessage
+		end
+			
+		deactivate PermissionManagament
+		else wrong taxi drivers data
+			DriverManagement --> RemoteServicesInterface: errorDescription
+			RemoteServicesInterface --> AdministrationWebApp: errorDescription
+		end
+	else wrong zones data
+		ZoneManagement --> RemoteServicesInterface: errorDescription
+		RemoteServicesInterface --> AdministrationWebApp: errorDescription
+	end
+	
+	deactivate RemoteServicesInterface
+end
+
+deactivate AdministrationWebApp
+deactivate ZoneManagement
 
 @enduml

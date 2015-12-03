@@ -27,7 +27,7 @@ NotificationSystem <<-- AdministrationWebApp
 deactivate NotificationSystem
 
 [<- AdministrationWebApp: //show form//
-[-> AdministrationWebApp: //data insertion//
+[-> AdministrationWebApp: //data insertion// //inside loop!!!!!! or data are insertend only once, even if incorrect!!!!!!!!
 
 AdministrationWebApp ->> RemoteServicesInterface: sendData(data)
 
@@ -36,7 +36,7 @@ AdministrationWebApp <<-- RemoteServicesInterface
 RemoteServicesInterface ->> ZoneManagement: sendData(data)
 
 activate ZoneManagement
-RemoteServicesInterface <<-- ZoneManagement: sendData(data)
+RemoteServicesInterface <<-- ZoneManagement
 
 deactivate RemoteServicesInterface
 loop until confirmation or exit
