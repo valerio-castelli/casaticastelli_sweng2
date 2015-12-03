@@ -579,23 +579,23 @@ Invocation</panel_attributes>
   <element>
     <id>Text</id>
     <coordinates>
-      <x>847</x>
+      <x>875</x>
       <y>147</y>
-      <w>168</w>
+      <w>133</w>
       <h>21</h>
     </coordinates>
-    <panel_attributes>INotificationManagement</panel_attributes>
+    <panel_attributes>INotificationSystem</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Text</id>
     <coordinates>
-      <x>868</x>
+      <x>847</x>
       <y>273</y>
-      <w>147</w>
+      <w>168</w>
       <h>21</h>
     </coordinates>
-    <panel_attributes>IAccountManagement</panel_attributes>
+    <panel_attributes>ITaxiManagementSystem</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
