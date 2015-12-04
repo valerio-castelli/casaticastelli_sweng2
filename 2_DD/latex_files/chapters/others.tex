@@ -36,27 +36,41 @@ public boolean requestTaxi(passengerID, address){
 	return requestTaxi(passengerId, l);
 }
 
-public boolean requestTaxi(passengerID, passengerLocation){
-	// We create a new request and write it into the database 
-	Request request = new Request(passengerID, passengerLocation);
-	dataAccessUtilities.writeToDB(request);
-	/* We compute the zone of the source */
-	Zone z = locationManagement.getZone(passengerLocation);
-	/* Is there an available taxi? */
-	if (taxiManagement.existsAvailableTaxiDriver(request, zone)){
-		/* If so, get it and compute the ETA and the secret code */
-		TaxiDriver td = taxiManagement.getAvailableTaxiDriver(request, zone);
-		int ETA = taxiManagement.getETA(td, passengerLocation);
-		String secretCode = generateSecretCode();
-		/* We notify it to the taxi driver and to the passenger*/
-		notificationSystem.notifyRequestConfirmation(td, request, secretCode);
-		notificationSystem.notifyRequestConfirmation(passenger, request, secretCode)
+public boolean requestTaxi(passengerID, passengerLocation, destination){
+	boolean consistency = checkDataConsistency(passengerID, passengerLocation, destination);
+	if (consistency){
+		// We create a new request and write it into the database 
+		Request request = new Request(passengerID, passengerLocation);
+		dataAccessUtilities.writeToDB(request);
+		/* We compute the zone of the source */
+		Zone z = locationManagement.getZone(passengerLocation);
+		/* Is there an available taxi? */
+		if (taxiManagement.existsAvailableTaxiDriver(request, zone)){
+			/* If so, get it and compute the ETA and the secret code */
+			TaxiDriver td = taxiManagement.getAvailableTaxiDriver(request);
+			int ETA = taxiManagement.getETA(td, passengerLocation);
+			String secretCode = generateSecretCode();
+			/* We notify it to the taxi driver and to the passenger*/
+			notificationSystem.notifyRequestConfirmation(td, request, secretCode);
+			notificationSystem.notifyRequestConfirmation(passenger, request, secretCode)
+	}
+		else
+			/* Otherwise we reject the request */
+				notificationSystem.notifyRequestRejection(passenger);
+		/* Finally we update the status of the request in the database */
+		dataAccessUtilities.updateDB(request);	
 	}
 	else
-		/* Otherwise we reject the request */
-			notificationSystem.notifyRequestRejection(passenger);
-	/* Finally we update the status of the request in the database */
-	dataAccessUtilities.updateDB(request);	
+		/* Data is inconsistent, notify error */
+		notificationSystem.notifyErrorInRequest(passengerID);
+	return consistency;
+}
+
+private boolean checkDataConsistency(origin, destination){
+	Location origin_l = locationManagement.getLocation(address);
+	if (locationManagement.isLocationInsideCity(origin_l) 
+		return true;
+	return false; 
 }
 }
 
@@ -190,7 +204,7 @@ public class ReservationManagement{
 		dataAccessUtilities.insertReservation(reservation);
 	}
 	
-	public boolean checkDataConsistency(origin, destination, date, time){
+	private boolean checkDataConsistency(origin, destination, date, time){
 		Location origin_l = locationManagement.getLocation(address);
 		if (locationManagement.isLocationInsideCity(origin_l) && 
 		(timeInterval(currentDateTime(),createDateTime(date,time)) between 2 hours and 15 days))
@@ -315,8 +329,7 @@ public class TaxiManagement{
 			/* If so, we have to compute the zone in which we have entered */
 			Zone newZone = locationManagement.getZone(currentLocation);
 				setAvailable(taxi);
-				// should be enqueue? 
-				updateZone(taxi,newZone);
+				enqueueTaxiDriver(taxi,newZone);
 				/* We have to notify the other drivers in the new zone of the change */
 				notifyQueueUpdateToTaxis(newZone);
 				dataAccessUtilities.updateQueues();

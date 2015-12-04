@@ -153,7 +153,45 @@ The next pictures in this section depict the flow of events (in particular metho
 
 
 \section{Component interfaces}
-In this section we're going to describe the main 
+In this section we're going to describe the interfaces through which the various components of the system communicate. For each interface we'll provide a summary and a description of the main exposed methods. 
+
+It should be noted that, in order to provide a greater level of detail, we will actually distinguish between the various interfaces exposed by each subcomponent of every single component instead of limiting ourselves to the highest level components. 
+
+In the implementation phase, many of these interfaces will actually be further specialized in different classes as needed.
+\linebreak
+\linebreak
+	The ITaxiManagementSystem interface is actually an umbrella interface which covers the following different sub-interfaces: 
+	\begin{itemize}
+	\item The IReservationManagement interface, which represents the way components can interact with the ReservationManagement sub-component. It exposes the following methods:
+	\begin{itemize}
+	\item reserveTaxi(passengerId, origin, destination, date, time): schedules a new reservation.
+	\item getReservationList(passengerId): returns the list of reservations placed by a passenger.
+	\end{itemize}
+	\item The IRequestManagement interface, which represents the way components can interact with the RequestManagement sub-component. It exposes the following methods:
+	\begin{itemize}
+	\item dropRequest(taxiId): entry point for requesting a call drop operation.
+	\item requestTaxi(passengerId, passengerLocation, destination): N.B. THIS SHOULD BE CORRECTED implements the necessary operations to request a taxi.
+	\end{itemize}
+	\item The ILocationManagement interface, which represents the way components can interact with the LocationManagement sub-component. It exposes the following methods:
+	\begin{itemize}
+	\item checkTaxiDriverLocation(currentLocation, meetingPoint, destinationPoint): verifies that the taxi driver has effectively reached both the meeting point and the destination point. N.B. TO BE CHECKED FOR CONSISTENCY
+	
+	\item isLocationInsideCity(location): returns true if the location belongs to the city area, false otherwise.
+	\item getZone(location): if the location belongs to the city, returns the zone to which it belongs, otherwise it raises an exception.
+	\end{itemize}
+	The ITaxiManagement interface, which represents the way components can interact with the TaxiManagement sub-component. It exposes the following methods:
+	\begin{itemize}
+	\item taxiDriverDroppedRequest(taxiId): verifies if the taxi driver is allowed to drop the request and, if so, performs the necessary operations to drop it.
+	\item endRide(taxiId, currentLocation): performs the necessary operations to register that the driver has ended a ride.
+	\item acceptRide(taxiDriver, request): registers that the driver has accepted to serve the specified request.
+	\item refuseRide(taxiDriver, request): registers that the driver has refused to serve the specified request.
+	\item existsAvailableTaxiDriver(request, zone): verifies if there is a taxi driver able to serve the given request and, if so, contacts him and waits for his response; if no taxi driver is available to serve the request, it returns false.
+	\item getAvailableTaxiDriver(request): it returns the taxi driver that has been associated to the given request.
+	\item getETA(taxiDriver, passengerLocation): returns the estimated time of arrival (ETA) of the taxi driver to the given location.
+	\item sendCurrentLocation(taxiId, location): updates the current location of a taxi and performs the necessary update operations to the queues. 
+	\item togglePressed(taxiDriverId): updates the availability status of a taxi driver given its previous availability status and the position of the availability toggle.
+	\end{itemize}
+	\end{itemize}
 
 \section{Selected architectural styles and patterns}
 While designing the software architecture for myTaxiService we looked at all the possible options that enabled us both to satisfy current functional and non-functional requirements and to have enough flexibility for future needs and updates.

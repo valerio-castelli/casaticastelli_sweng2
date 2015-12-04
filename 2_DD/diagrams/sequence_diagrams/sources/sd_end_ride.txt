@@ -22,7 +22,7 @@ else ok
 	alt taxi driver inside city
 		TaxiManagement <-- LocationManagement: true
 		TaxiManagement -> TaxiManagement: setAvailable(taxiDriverId)
-		TaxiManagement -> LocationManagement: getCurrentZone(currentLocation)
+		TaxiManagement -> LocationManagement: getZone(currentLocation)
 		TaxiManagement <-- LocationManagement: zone
 		TaxiManagement -> TaxiManagement: dequeue(zone, taxiDriverId)
 	else

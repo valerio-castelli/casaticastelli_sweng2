@@ -3,16 +3,19 @@
 title sd_request
 
 activate PassengerApp
-PassengerApp ->> RemoteServiceInterface: requestTaxi(passengerId, passengerLocation)
+PassengerApp ->> RemoteServiceInterface: requestTaxi(passengerId, passengerLocation, destination)
 
 activate RemoteServiceInterface
 PassengerApp <<-- RemoteServiceInterface
-RemoteServiceInterface ->> RequestManagement: requestTaxi(passengerId, passengerLocation)
+RemoteServiceInterface ->> RequestManagement: requestTaxi(passengerId, passengerLocation, destination)
 
 activate RequestManagement
 RemoteServiceInterface <<-- RequestManagement
 
 deactivate RemoteServiceInterface
+RequestManagement -> RequestManagement: checkDataConsistency(passengerLocation, destination)
+alt correct data
+
 RequestManagement -> LocationManagement: getZone(passengerLocation)
 
 activate LocationManagement
@@ -69,7 +72,7 @@ loop until a taxi driver accepts the call, or there are no more taxi drivers lef
 end
 TaxiManagement --> RequestManagement: result
 alt result == true (i.e., a taxi driver accepted)
-	RequestManagement -> TaxiManagement: getAvailableTaxiDriver(request, zone)
+	RequestManagement -> TaxiManagement: getAvailableTaxiDriver(request)
 	RequestManagement <-- TaxiManagement: taxiDriver
 	RequestManagement -> TaxiManagement: getETA(taxiDriver, passengerLocation)
 	TaxiManagement -> MappingService: computeETA(passengerLocation, taxiDriverLocation)
@@ -101,10 +104,22 @@ else result == false (i.e., no taxi driver accepted)
 	NotificationSystem ->> PassengerApp: notifyRequestRejection(passenger)
 	NotificationSystem <<-- PassengerApp
 end
-
-deactivate PassengerApp
-deactivate RequestManagement
 deactivate LocationManagement
 deactivate TaxiManagement
 deactivate NotificationSystem
+
+else wrong data
+	RequestManagement ->> NotificationSystem: notifyErrorInRequest(passengerId)
+	
+	activate NotificationSystem
+	RequestManagement <<-- NotificationSystem
+	PassengerApp <<- NotificationSystem: notifyErrorInRequest(passengerId)
+	PassengerApp -->> NotificationSystem
+	
+	deactivate NotificationSystem
+	
+end
+
+deactivate PassengerApp
+deactivate RequestManagement
 @enduml
