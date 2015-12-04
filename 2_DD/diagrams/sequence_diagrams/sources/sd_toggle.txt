@@ -5,16 +5,12 @@ title sd_toggle
 activate TaxiDriverApp
 
 [-> TaxiDriverApp: //toggle button pressed//
-TaxiDriverApp ->> RemoteServicesInterface: togglePressed(taxiDriverId)
+TaxiDriverApp -> RemoteServicesInterface: togglePressed(taxiDriverId)
 
 activate RemoteServicesInterface
-TaxiDriverApp <<-- RemoteServicesInterface
-RemoteServicesInterface ->> TaxiManagement: togglePressed(taxiDriverId)
+RemoteServicesInterface -> TaxiManagement: togglePressed(taxiDriverId)
 
 activate TaxiManagement
-RemoteServicesInterface <<-- TaxiManagement
-
-deactivate RemoteServicesInterface
 TaxiManagement -> TaxiManagement: checkStatus(taxiDriverId)
 
 activate TaxiManagement
@@ -37,7 +33,10 @@ alt status == available
 	DataAccessUtilities <-- DBMS
 	
 	deactivate DBMS
-	TaxiManagement -> DataAccessUtilities: updateTaxiStatus(taxiDriverId, TaxiStatusAvailable)
+	TaxiManagement <-- DataAccessUtilities
+	
+	deactivate DataAccessUtilities
+	TaxiManagement -> DataAccessUtilities: updateTaxiStatus(taxiDriverId, TaxiStatusUnavailable)
 	
 	activate DataAccessUtilities
 	DataAccessUtilities -> DBMS: update(...)
@@ -49,14 +48,8 @@ alt status == available
 	TaxiManagement <-- DataAccessUtilities
 	
 	deactivate DataAccessUtilities
-	TaxiManagement ->> NotificationSystem: confirm()
-		
-	activate NotificationSystem
-	TaxiManagement <<-- NotificationSystem
-	NotificationSystem ->> TaxiDriverApp: confirm()
-	NotificationSystem <<-- TaxiDriverApp
-		
-	deactivate NotificationSystem
+	TaxiManagement --> RemoteServicesInterface
+	RemoteServicesInterface --> TaxiDriverApp
 else status == unavailable
 	TaxiManagement -> TaxiManagement: getTaxiDriverLocation(taxiDriverId) 
 	
@@ -73,17 +66,28 @@ else status == unavailable
 		deactivate TaxiManagement
 		TaxiManagement -> DataAccessUtilities: updateQueues()
 	
-		activate DataAccessUtilities
-		DataAccessUtilities -> DBMS: update(...)
-		
-		activate DBMS
-		DataAccessUtilities <-- DBMS
-		
-		deactivate DBMS
-		TaxiManagement -> DataAccessUtilities: updateTaxiStatus(taxiDriverId, TaxiStatusAvailable)
-		TaxiManagement <-- DataAccessUtilities
+	activate DataAccessUtilities
+	DataAccessUtilities -> DBMS: update(...)
 	
-		deactivate DataAccessUtilities
+	activate DBMS
+	DataAccessUtilities <-- DBMS
+	
+	deactivate DBMS
+	TaxiManagement <-- DataAccessUtilities
+	
+	deactivate DataAccessUtilities
+	TaxiManagement -> DataAccessUtilities: updateTaxiStatus(taxiDriverId, TaxiStatusAvailable)
+	
+	activate DataAccessUtilities
+	DataAccessUtilities -> DBMS: update(...)
+	
+	activate DBMS
+	DataAccessUtilities <-- DBMS
+	
+	deactivate DBMS
+	TaxiManagement <-- DataAccessUtilities
+	
+	deactivate DataAccessUtilities
 		TaxiManagement ->> NotificationSystem: confirmAvailability(taxiDriverId)
 		
 		activate NotificationSystem
@@ -103,9 +107,49 @@ else status == unavailable
 		
 		deactivate NotificationSystem
 	end
+else status == outside_city
+	TaxiManagement -> TaxiManagement: removeTaxiFromOutsideCityList(taxiDriverId)
 	
-	deactivate LocationManagement
+	activate TaxiManagement
 	deactivate TaxiManagement
-	deactivate TaxiDriverApp
+	TaxiManagement -> TaxiManagement: setUnavailable(taxiDriverId)
+	
+	activate TaxiManagement
+	deactivate TaxiManagement
+	TaxiManagement -> DataAccessUtilities: updateQueues()
+	
+	activate DataAccessUtilities
+	DataAccessUtilities -> DBMS: update(...)
+	
+	activate DBMS
+	DataAccessUtilities <-- DBMS
+	
+	deactivate DBMS
+	TaxiManagement <-- DataAccessUtilities
+	
+	deactivate DataAccessUtilities
+	TaxiManagement -> DataAccessUtilities: updateTaxiStatus(taxiDriverId, TaxiStatusUnavailable)
+	
+	activate DataAccessUtilities
+	DataAccessUtilities -> DBMS: update(...)
+	
+	activate DBMS
+	DataAccessUtilities <-- DBMS
+	
+	deactivate DBMS
+	TaxiManagement <-- DataAccessUtilities
+	
+	deactivate DataAccessUtilities
+	TaxiManagement ->> NotificationSystem: confirm()
+		
+	activate NotificationSystem
+	TaxiManagement <<-- NotificationSystem
+	NotificationSystem ->> TaxiDriverApp: confirm()
+	NotificationSystem <<-- TaxiDriverApp
+		
+	deactivate NotificationSystem
 end
+deactivate LocationManagement
+deactivate TaxiManagement
+deactivate TaxiDriverApp
 @enduml

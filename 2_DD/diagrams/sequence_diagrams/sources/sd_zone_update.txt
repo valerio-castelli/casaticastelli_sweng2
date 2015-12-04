@@ -29,30 +29,25 @@ loop until confirmation or exit
 	activate ZoneManagement
 
 	ZoneManagement -> ZoneManagement: checkZonesConsistency(data)
+	ZoneManagement --> RemoteServicesInterface: result
+	
+	deactivate ZoneManagement
 	alt correct data
-		ZoneManagement --> RemoteServicesInterface: confirmationMessage
-		RemoteServicesInterface --> AdministrationWebApp: confirmationMessage
+		RemoteServicesInterface --> AdministrationWebApp: confirm
 		
-		[<- AdministrationWebApp: //show confirmation//
+		[<-- AdministrationWebApp: //show confirmation//
 		[-> AdministrationWebApp: //insert password//
+		AdministrationWebApp -> RemoteServicesInterface: sendPassword(adminId, psw)
+		RemoteServicesInterface -> PermissionManagament: sendPassword(adminId, psw)
+			
+		activate PermissionManagament
+		PermissionManagament -> PermissionManagament: checkPassword(adminId, psw)
+		RemoteServicesInterface <-- PermissionManagament
 		
-		AdministrationWebApp -> RemoteServicesInterface: sendPassword(psw)
-		RemoteServicesInterface -> ZoneManagement: sendPassword(psw)
-		
-		ZoneManagement <<-- NotificationSystem
-		NotificationSystem ->> AdministrationWebApp: askPassword()
-		NotificationSystem <<-- AdministrationWebApp
-		
-		deactivate NotificationSystem
-		[<- AdministrationWebApp: askPassword()
-		[-> AdministrationWebApp: insertPassword(psw)
-		AdministrationWebApp --> RemoteServicesInterface: sendPassword(adminId, psw)
-		AdministrationWebApp <<-- RemoteServicesInterface
-		RemoteServicesInterface ->> ZoneManagement: sendPassword(adminId, psw)
-		RemoteServicesInterface <<-- ZoneManagement
-		ZoneManagement -> ZoneManagement: ckeckPassword(psw)
+		deactivate PermissionManagament
 		alt password confirmed
-			ZoneManagement -> DataAccessUtilities: updateZone(...)
+			RemoteServicesInterface -> ZoneManagement: updateZone(data)
+			ZoneManagement -> DataAccessUtilities: updateZone(data)
 			
 			activate DataAccessUtilities
 			DataAccessUtilities -> DBMS: update(...)
@@ -64,37 +59,21 @@ loop until confirmation or exit
 			ZoneManagement <-- DataAccessUtilities
 			
 			deactivate DataAccessUtilities
-			ZoneManagement ->> NotificationSystem: confirm()
-			
-			activate NotificationSystem
-			ZoneManagement <<-- NotificationSystem
-			NotificationSystem ->> AdministrationWebApp: confirm()
-			NotificationSystem <<-- AdministrationWebApp
-			
-			deactivate NotificationSystem
+			RemoteServicesInterface <-- ZoneManagement
+			RemoteServicesInterface --> AdministrationWebApp: confirm
+			[<-- AdministrationWebApp: //show confirmation//
 		else password rejected
-			ZoneManagement ->> NotificationSystem: reject()
-			
-			activate NotificationSystem
-			ZoneManagement <<-- NotificationSystem
-			NotificationSystem ->> AdministrationWebApp: reject()
-			NotificationSystem <<-- AdministrationWebApp
-			
-			deactivate NotificationSystem
+			RemoteServicesInterface --> AdministrationWebApp: reject
+			[<-- AdministrationWebApp: //show password error//
 		end
-	else wrong data
-		ZoneManagement ->> NotificationSystem: dataError(...)
-			
-			activate NotificationSystem
-			ZoneManagement <<-- NotificationSystem
-			NotificationSystem ->> AdministrationWebApp: dataError(...)
-			NotificationSystem <<-- AdministrationWebApp
-			
-			deactivate NotificationSystem
+	else wrong data	
+		RemoteServicesInterface --> AdministrationWebApp: dataError
+		[<-- AdministrationWebApp: //show data error//
 	end
 end
 
 deactivate AdministrationWebApp
+deactivate RemoteServicesInterface
 deactivate ZoneManagement
 	
 @enduml

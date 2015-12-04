@@ -35,7 +35,7 @@ loop until confirmation or exit
 		RemoteServicesInterface -> PermissionManagament: checkPassword(adminId, psw)
 			
 		activate PermissionManagament
-		PermissionManagament -> PermissionManagament: checkPassword(adminId, psw)
+		PermissionManagament -> PermissionManagament: sendPassword(adminId, psw)
 		
 		activate PermissionManagament
 		deactivate PermissionManagament
