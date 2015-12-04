@@ -91,7 +91,7 @@ public void acceptRide(td, request){
 	accepted = true;
 }
 
-public void rideRefused(td, request){
+public void refuseRide(td, request){
 	answered = true;
 	accepted = false;
 }
@@ -134,6 +134,7 @@ private synchronized void initializeHashMap(ZoneQueue queue){
 public boolean existsAvailableTaxiDriver(zone){
 	
 	ZoneQueue zoneQueue = getZoneQueue(zone);
+	initializeHashMap(zoneQueue);
 	zoneQueue.addObserver(this);
 	accepted = false;
 	answered = false;
@@ -210,13 +211,17 @@ public class TaxiManagement{
 			case TaxiStatusAvailable:{
 				removeTaxiFromZoneQueue(taxiDriverId);
 				setUnavailable(taxiDriverId);
+				dataAccessUtilities.updateQueues();
+				dataAccessUtilities.updateTaxiStatus(taxiDriverId, TaxiStatusAvailable);
 				notifyQueueUpdateToTaxis(zone);
 				break;
 			}
 			case TaxiStatusOutsideCity:{
 				remoteTaxiFromOutsideCityList(taxiDriverId);
-				notifyQueueUpdateToTaxis(zone);
 				setUnavailable(taxiDriverId);
+				dataAccessUtilities.updateQueues();
+				dataAccessUtilities.updateTaxiStatus(taxiDriverId, TaxiStatusAvailable);
+				notifyQueueUpdateToTaxis(zone);
 				break;
 			}
 			case TaxiStatusCurrentlyRiding:{
@@ -290,15 +295,16 @@ public class TaxiManagement{
 					updateZone(taxi,newZone);
 					/* We have to notify the other drivers in the new zone of the change */
 					notifyQueueUpdateToTaxis(newZone);
-					notificationManager.notifyZoneChanged(taxiId,newZone);
 					dataAccessUtilities.updateQueues();
+					
+				notificationManager.notifyZoneChanged(taxiId,newZone);
 				}
 			}
 			else{
 				/* Otherwise it should be set as "out of city" */
 				setOutsideCity(taxiId);
-				notificationManager.notifyExitedCity(taxiId);
 				dataAccessUtilities.updateQueues();
+				notificationManager.notifyExitedCity(taxiId);
 			}
 			/* We have to notify the other drivers in the old zone of the change */
 			notifyQueueUpdateToTaxis(oldZone);
@@ -309,11 +315,12 @@ public class TaxiManagement{
 			/* If so, we have to compute the zone in which we have entered */
 			Zone newZone = locationManagement.getZone(currentLocation);
 				setAvailable(taxi);
+				// should be enqueue? 
 				updateZone(taxi,newZone);
 				/* We have to notify the other drivers in the new zone of the change */
 				notifyQueueUpdateToTaxis(newZone);
-				notificationManager.notifyEnteredCity(taxiId,newZone);
 				dataAccessUtilities.updateQueues();
+				notificationManager.notifyEnteredCity(taxiId,newZone);
 				
 		}
 		/* Otherwise we don't really care */
