@@ -62,11 +62,11 @@ alt taxi driver has reached the meeting location
 	RequestManagement <-- DataAccessUtilities
 	
 	deactivate DataAccessUtilities
-	RequestManagement ->> NotificationSystem: callDropped()
+	RequestManagement ->> NotificationSystem: notifyCallDropped(passengerId)
 	
 	activate NotificationSystem
 	RequestManagement <<-- NotificationSystem
-	NotificationSystem ->> PassangerApp: callDropped()
+	NotificationSystem ->> PassangerApp: notifyCallDropped(passengerId)
 	
 	activate PassangerApp
 	NotificationSystem <<-- PassangerApp
