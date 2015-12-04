@@ -170,12 +170,11 @@ In the implementation phase, many of these interfaces will actually be further s
 	\item The IRequestManagement interface, which represents the way components can interact with the RequestManagement sub-component. It exposes the following methods:
 	\begin{itemize}
 	\item dropRequest(taxiId): entry point for requesting a call drop operation.
-	\item requestTaxi(passengerId, passengerLocation, destination): N.B. THIS SHOULD BE CORRECTED implements the necessary operations to request a taxi.
+	\item requestTaxi(passengerId, passengerLocation, destination): implements the necessary operations to request a taxi.
 	\end{itemize}
 	\item The ILocationManagement interface, which represents the way components can interact with the LocationManagement sub-component. It exposes the following methods:
 	\begin{itemize}
-	\item checkTaxiDriverLocation(currentLocation, meetingPoint, destinationPoint): verifies that the taxi driver has effectively reached both the meeting point and the destination point. N.B. TO BE CHECKED FOR CONSISTENCY
-	
+	\item checkTaxiDriverLocation(currentLocation, meetingPoint): verifies that the taxi driver has effectively reached both the meeting point.
 	\item isLocationInsideCity(location): returns true if the location belongs to the city area, false otherwise.
 	\item getZone(location): if the location belongs to the city, returns the zone to which it belongs, otherwise it raises an exception.
 	\end{itemize}

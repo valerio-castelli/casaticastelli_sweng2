@@ -13,7 +13,9 @@ activate RequestManagement
 RemoteServicesInterface <<-- RequestManagement
 
 deactivate RemoteServicesInterface
-RequestManagement -> LocationManagement: checkTaxiDriverLocation(currentLocation, meetingPoint, destinationPoint)
+RequestManagement -> RequestManagement: getRequestForTaxi(taxiId)
+RequestManagement -> RequestManagement: getMeetingPointForRequest(request)
+RequestManagement -> LocationManagement: checkTaxiDriverLocation(currentLocation, meetingPoint)
 
 activate LocationManagement
 LocationManagement --> RequestManagement: result
