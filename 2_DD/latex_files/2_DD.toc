@@ -5,21 +5,18 @@
 \contentsline {section}{\numberline {1.3}Definitions, Acronyms, Abbreviations}{2}{section.1.3}
 \contentsline {subsection}{\numberline {1.3.1}Definitions}{2}{subsection.1.3.1}
 \contentsline {subsection}{\numberline {1.3.2}Acronyms}{2}{subsection.1.3.2}
-\contentsline {subsection}{\numberline {1.3.3}Abbreviations}{2}{subsection.1.3.3}
-\contentsline {section}{\numberline {1.4}Reference Documents}{2}{section.1.4}
+\contentsline {subsection}{\numberline {1.3.3}Abbreviations}{3}{subsection.1.3.3}
+\contentsline {section}{\numberline {1.4}Reference Documents}{3}{section.1.4}
 \contentsline {section}{\numberline {1.5}Document Structure}{3}{section.1.5}
-\contentsline {chapter}{\numberline {2}Architectural Design}{4}{chapter.2}
-\contentsline {section}{\numberline {2.1}Overview}{4}{section.2.1}
+\contentsline {chapter}{\numberline {2}Architectural Design}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Overview}{5}{section.2.1}
 \contentsline {section}{\numberline {2.2}High level components and their interactions}{7}{section.2.2}
 \contentsline {section}{\numberline {2.3}Component view}{9}{section.2.3}
-\contentsline {section}{\numberline {2.4}Deployment view}{13}{section.2.4}
-\contentsline {section}{\numberline {2.5}Runtime view}{15}{section.2.5}
-\contentsline {section}{\numberline {2.6}Component interfaces}{29}{section.2.6}
-\contentsline {section}{\numberline {2.7}Selected architectural styles and patterns}{34}{section.2.7}
-\contentsline {section}{\numberline {2.8}Other design decisions}{35}{section.2.8}
-\contentsline {chapter}{\numberline {3}Algorithm Design}{37}{chapter.3}
-\contentsline {chapter}{\numberline {4}User Interface Design}{46}{chapter.4}
-\contentsline {chapter}{\numberline {5}Requirements Traceability}{50}{chapter.5}
-\contentsline {section}{\numberline {5.1}Functional Requirements}{50}{section.5.1}
-\contentsline {section}{\numberline {5.2}Quality Requirements}{55}{section.5.2}
-\contentsline {chapter}{Appendix \numberline {A}Hours of work}{57}{Appendix.1.A}
+\contentsline {section}{\numberline {2.4}Deployment view}{14}{section.2.4}
+\contentsline {section}{\numberline {2.5}Runtime view}{16}{section.2.5}
+\contentsline {section}{\numberline {2.6}Component interfaces}{30}{section.2.6}
+\contentsline {section}{\numberline {2.7}Selected architectural styles and patterns}{35}{section.2.7}
+\contentsline {section}{\numberline {2.8}Other design decisions}{36}{section.2.8}
+\contentsline {chapter}{\numberline {3}Algorithm Design}{38}{chapter.3}
+\contentsline {chapter}{\numberline {4}User Interface Design}{47}{chapter.4}
+\contentsline {chapter}{Appendix \numberline {A}Hours of work}{51}{Appendix.1.A}
