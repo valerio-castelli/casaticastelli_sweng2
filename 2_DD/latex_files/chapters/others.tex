@@ -416,7 +416,8 @@ For sake of readability, we will use the notation \textbf{req. x.y} to make refe
 	\item Reqs 4.9 and 4.10 are handled by the Taxi Management sub-component by moving the taxi to the unavailability list and setting its status to unavailable
 	\item Req. 4.8 and 4.11 are handled by the Taxi Management sub-component
 	\end{itemize}
-	\item The \textbf{Notification System} component, which provides to the central system the dispatch mechanism it needs for sending notifications to the taxi driver application. This component is essentially involved in satisfying reqs. 4.6, 4.8 and 4.11.
+	\item The \textbf{Remote Services Interfaces} component, which provides a way for the remote application to communicate with the central system. This component is used to satisfy requirement 4.6.
+	\item The \textbf{Notification System} component, which provides to the central system the dispatch mechanism it needs for sending notifications to the taxi driver application. This component is essentially involved in satisfying reqs. 4.8 and 4.11.
 	\end{itemize}
 	\item \textbf{Goal 5} requires the allocation and distribution of taxis to be managed fairly and consistently. This is achieved by an interplay of components: 
 	\begin{itemize}
@@ -510,6 +511,6 @@ Finally, portability is achieved by exposing APIs using an open, standard web se
 \begin{appendices}
 
 \chapter{Hours of work}
-To redact this document, we spent 50 hours per person.
+To redact this document, we spent 52 hours per person.
 
 \end{appendices}
