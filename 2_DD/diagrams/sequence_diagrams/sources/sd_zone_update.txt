@@ -5,46 +5,40 @@ title sd_zone_update
 [-> AdministrationWebApp: //open zone update form//
 
 activate AdministrationWebApp
-AdministrationWebApp ->> RemoteServicesInterface: askZoneManagementUpdateForm(adminId) // no "ask form", but "ask list"????????????
+AdministrationWebApp -> RemoteServicesInterface: askZoneList(adminId)
 
 activate RemoteServicesInterface
-AdministrationWebApp <<-- RemoteServicesInterface
-RemoteServicesInterface ->> ZoneManagement: askZoneManagementUpdateForm(adminId)
+RemoteServicesInterface -> ZoneManagement: askZoneList(adminId)
 
 activate ZoneManagement
-RemoteServicesInterface <<-- ZoneManagement
-
-deactivate RemoteServicesInterface
-ZoneManagement -> NotificationSystem: sendZoneUpdateForm()
-
-activate NotificationSystem
-ZoneManagement <<-- NotificationSystem
+ZoneManagement --> RemoteServicesInterface: zoneList
 
 deactivate ZoneManagement
-NotificationSystem ->> AdministrationWebApp: sendZoneUpdateForm()
-NotificationSystem <<-- AdministrationWebApp
-
-deactivate NotificationSystem
-
-[<- AdministrationWebApp: //show form//
-[-> AdministrationWebApp: //data insertion// //inside loop!!!!!! or data are insertend only once, even if incorrect!!!!!!!!
-
-AdministrationWebApp ->> RemoteServicesInterface: sendData(data)
-
-activate RemoteServicesInterface
-AdministrationWebApp <<-- RemoteServicesInterface
-RemoteServicesInterface ->> ZoneManagement: sendData(data)
-
-activate ZoneManagement
-RemoteServicesInterface <<-- ZoneManagement
+RemoteServicesInterface --> AdministrationWebApp: zoneList
 
 deactivate RemoteServicesInterface
+[<- AdministrationWebApp: //show form//
+
 loop until confirmation or exit
+	[-> AdministrationWebApp: //data insertion//
+	AdministrationWebApp -> RemoteServicesInterface: sendData(data)
+
+	activate RemoteServicesInterface
+	RemoteServicesInterface -> ZoneManagement: sendData(data)
+
+	activate ZoneManagement
+
 	ZoneManagement -> ZoneManagement: checkZonesConsistency(data)
 	alt correct data
-		ZoneManagement ->> NotificationSystem: askPassword()
+		ZoneManagement --> RemoteServicesInterface: confirmationMessage
+		RemoteServicesInterface --> AdministrationWebApp: confirmationMessage
 		
-		activate NotificationSystem
+		[<- AdministrationWebApp: //show confirmation//
+		[-> AdministrationWebApp: //insert password//
+		
+		AdministrationWebApp -> RemoteServicesInterface: sendPassword(psw)
+		RemoteServicesInterface -> ZoneManagement: sendPassword(psw)
+		
 		ZoneManagement <<-- NotificationSystem
 		NotificationSystem ->> AdministrationWebApp: askPassword()
 		NotificationSystem <<-- AdministrationWebApp

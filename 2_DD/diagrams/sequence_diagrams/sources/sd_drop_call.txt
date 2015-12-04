@@ -3,7 +3,7 @@
 title sd_drop_call
 
 activate TaxiDriverApp
-TaxiDriverApp ->> RemoteServicesInterface: dropRequest(taxiId) //taxi driver that presses the button????????
+TaxiDriverApp ->> RemoteServicesInterface: dropRequest(taxiId)
 
 activate RemoteServicesInterface
 TaxiDriverApp <<-- RemoteServicesInterface
@@ -13,18 +13,44 @@ activate RequestManagement
 RemoteServicesInterface <<-- RequestManagement
 
 deactivate RemoteServicesInterface
-RequestManagement -> RequestManagement: checkTaxiDriverLocation(taxiId) // can this component do it by itself??????
+RequestManagement -> LocationManagement: checkTaxiDriverLocation(currentLocation, meetingPoint, destinationPoint)
 
-activate RequestManagement
-deactivate RequestManagement
+activate LocationManagement
+LocationManagement --> RequestManagement: result
+
+deactivate LocationManagement
 alt taxi driver has reached the meeting location
-	RequestManagement -> TaxiManagement: changeDriverStatus() // bad name!!!!!!
+	RequestManagement -> TaxiManagement: taxiDriverDroppedRequest(taxiId)
 	
 	activate TaxiManagement
-	TaxiManagement -> TaxiManagement: updateStatus(taxiId) //set as...???????????to other things???????
+	TaxiManagement -> LocationManagement: isLocationInsideCity(currentLocation)
 	
-	activate TaxiManagement
-	deactivate TaxiManagement
+	activate LocationManagement
+	TaxiManagement <-- LocationManagement
+	
+	deactivate LocationManagement
+	alt taxi driver inside 
+		TaxiManagement -> TaxiManagement: setAvailable(taxiId)
+		
+		activate TaxiManagement
+		deactivate TaxiManagement
+		
+		TaxiManagement -> LocationManagement: getZone(currentLocation)
+	
+		activate LocationManagement
+		TaxiManagement <-- LocationManagement: zone
+		
+		deactivate LocationManagement
+		TaxiManagement -> TaxiManagement: enqueue(zone, taxiId)
+		
+		activate TaxiManagement
+		deactivate TaxiManagement
+	else taxi driver outside city
+		TaxiManagement -> TaxiManagement: setOutsideCity(taxiId)
+		
+		activate TaxiManagement
+		deactivate TaxiManagement
+	end
 	RequestManagement <-- TaxiManagement
 	RequestManagement -> DataAccessUtilities: update(...)
 	

@@ -1,6 +1,6 @@
 @startuml
 
-title sd_taxi_location_changed //change location in any case!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+title sd_taxi_location_changed
 
 activate TaxiDriverApp
 TaxiDriverApp ->> RemoteServicesInterface: sendCurrentLocation(taxiId, currentLocation)
@@ -131,7 +131,7 @@ else status == outside_city
 end
 
 deactivate TaxiDriverApp
-TaxiManagement -> TaxiManagement: updateLocation(currentLocation) //write here on the DB?????? remove all other writes??????
+TaxiManagement -> TaxiManagement: updateTaxiLocation(taxiId, currentLocation)
 
 activate TaxiManagement
 deactivate TaxiManagement

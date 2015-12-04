@@ -1,6 +1,6 @@
 @startuml
 
-title sd_toggle //do not separate cases?????????
+title sd_toggle
 
 activate TaxiDriverApp
 

@@ -1,6 +1,6 @@
 @startuml
 
-title sd_administrative_data_insertion //who produce the form??? just send data to dbms, and not to other components?? and who checks the data???
+title sd_administrative_data_insertion
 
 loop until confirmation or exit
 	
@@ -31,11 +31,11 @@ loop until confirmation or exit
 		
 		deactivate DriverManagement
 		RemoteServicesInterface --> AdministrationWebApp: dataConfirmedMessage
-		RemoteServicesInterface <- AdministrationWebApp: sendPassowrkd(adminId, psw)
+		RemoteServicesInterface <- AdministrationWebApp: sendPassword(adminId, psw)
 		RemoteServicesInterface -> PermissionManagament: checkPassword(adminId, psw)
 			
 		activate PermissionManagament
-		PermissionManagament -> PermissionManagament: ckeckPassword(adminId, psw)
+		PermissionManagament -> PermissionManagament: checkPassword(adminId, psw)
 		
 		activate PermissionManagament
 		deactivate PermissionManagament
