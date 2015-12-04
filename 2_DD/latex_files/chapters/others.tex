@@ -412,8 +412,8 @@ For sake of readability, we will use the notation \textbf{req. x.y} to make refe
 	\item The \textbf{Taxi Driver Application} component, which provides taxi drivers the ability to interact with the central system to notify a change in their availability status. In particular, this component is responsible for reqs. 4.1 to 4.6 and reqs. 4.8, 4.11.
 	\item The \textbf{Taxi Management System} component, which provides the backend business logic to handle the update operations. In particular:
 	\begin{itemize}
-	\item Req. 4.6 and 4.7 is handled by the Location Management sub-component for the zone computation part and by the Taxi Management sub-component for the update operation on taxi queues
-	\item Reqs 4.9 and 4.10 are handled by the Taxi Management sub-component by moving the taxi to the unavailability list and setting its status to "unavailable"
+	\item Req. 4.6 and 4.7 are handled by the Location Management sub-component for the zone computation part and by the Taxi Management sub-component for the update operation on taxi queues
+	\item Reqs 4.9 and 4.10 are handled by the Taxi Management sub-component by moving the taxi to the unavailability list and setting its status to unavailable
 	\item Req. 4.8 and 4.11 are handled by the Taxi Management sub-component
 	\end{itemize}
 	\item The \textbf{Notification System} component, which provides to the central system the dispatch mechanism it needs for sending notifications to the taxi driver application. This component is essentially involved in satisfying reqs. 4.6, 4.8 and 4.11.
