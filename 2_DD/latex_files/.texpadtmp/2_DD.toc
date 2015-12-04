@@ -14,13 +14,13 @@
 \contentsline {section}{\numberline {2.3}Component view}{9}{section.2.3}
 \contentsline {section}{\numberline {2.4}Deployment view}{13}{section.2.4}
 \contentsline {section}{\numberline {2.5}Runtime view}{15}{section.2.5}
-\contentsline {section}{\numberline {2.6}Component interfaces}{17}{section.2.6}
-\contentsline {section}{\numberline {2.7}Selected architectural styles and patterns}{20}{section.2.7}
-\contentsline {section}{\numberline {2.8}Other design decisions}{21}{section.2.8}
-\contentsline {chapter}{\numberline {3}Algorithm Design}{23}{chapter.3}
-\contentsline {chapter}{\numberline {4}User Interface Design}{32}{chapter.4}
-\contentsline {chapter}{\numberline {5}Requirements Traceability}{34}{chapter.5}
-\contentsline {section}{\numberline {5.1}Functional Requirements}{34}{section.5.1}
-\contentsline {section}{\numberline {5.2}Quality Requirements}{39}{section.5.2}
-\contentsline {chapter}{\numberline {6}References}{41}{chapter.6}
-\contentsline {chapter}{Appendix \numberline {A}Hours of work}{42}{Appendix.1.A}
+\contentsline {section}{\numberline {2.6}Component interfaces}{28}{section.2.6}
+\contentsline {section}{\numberline {2.7}Selected architectural styles and patterns}{32}{section.2.7}
+\contentsline {section}{\numberline {2.8}Other design decisions}{33}{section.2.8}
+\contentsline {chapter}{\numberline {3}Algorithm Design}{35}{chapter.3}
+\contentsline {chapter}{\numberline {4}User Interface Design}{44}{chapter.4}
+\contentsline {chapter}{\numberline {5}Requirements Traceability}{48}{chapter.5}
+\contentsline {section}{\numberline {5.1}Functional Requirements}{48}{section.5.1}
+\contentsline {section}{\numberline {5.2}Quality Requirements}{53}{section.5.2}
+\contentsline {chapter}{\numberline {6}References}{55}{chapter.6}
+\contentsline {chapter}{Appendix \numberline {A}Hours of work}{56}{Appendix.1.A}

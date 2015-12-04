@@ -146,11 +146,51 @@ The first picture represents a snapshot of the system during its execution. In t
 	\item The Load Balancing nodes are running instances of the Apache Web Server to redirect HTTP requests to different instances of the business logic nodes.
 \end{itemize}
 
-The next pictures in this section depict the flow of events (in particular method invocations) for the most important operations in the form of sequence diagrams. 
+All the other pictures depict the flow of events (in particular method invocations) for the most important operations in the form of sequence diagrams. 
+
 \begin{landscape}
 \includepdf[scale=0.95,angle=90]{pdfs/runtime.pdf}
 \end{landscape}
 
+\begin{landscape}
+\includepdf[scale=0.95,angle=90]{pdfs/sequence/sd_administrative_data_insertion.pdf}
+\end{landscape}
+
+\begin{landscape}
+\includepdf[scale=0.95,angle=90]{pdfs/sequence/sd_reserve.pdf}
+\end{landscape}
+
+\begin{landscape}
+\includepdf[scale=0.95,angle=90]{pdfs/sequence/sd_reservation_allocation.pdf}
+\end{landscape}
+
+\begin{landscape}
+\includepdf[scale=0.95,angle=90]{pdfs/sequence/sd_request.pdf}
+\end{landscape}
+
+\begin{landscape}
+\includepdf[scale=0.95,angle=90]{pdfs/sequence/sd_allocate.pdf}
+\end{landscape}
+
+\begin{landscape}
+\includepdf[scale=0.95,angle=90]{pdfs/sequence/sd_show_reservations.pdf}
+\end{landscape}
+
+\begin{landscape}
+\includepdf[scale=0.95,angle=90]{pdfs/sequence/sd_zone_update.pdf}
+\end{landscape}
+
+\begin{landscape}
+\includepdf[scale=0.95,angle=90]{pdfs/sequence/sd_drop_call.pdf}
+\end{landscape}
+
+\begin{landscape}
+\includepdf[scale=0.95,angle=90]{pdfs/sequence/sd_end_ride.pdf}
+\end{landscape}
+
+\includepdf[scale=0.95]{pdfs/sequence/sd_taxi_location_changed.pdf}
+
+\includepdf[scale=0.95]{pdfs/sequence/sd_toggle.pdf}
 
 \section{Component interfaces}
 In this section we're going to describe the interfaces through which the various components of the system communicate. For each interface we'll provide a summary and a description of the main exposed methods. 
@@ -158,27 +198,25 @@ In this section we're going to describe the interfaces through which the various
 It should be noted that, in order to provide a greater level of detail, we will actually distinguish between the various interfaces exposed by each subcomponent of every single component instead of limiting ourselves to the highest level components. 
 
 In the implementation phase, many of these interfaces will actually be further specialized in different classes as needed.
-\linebreak
-\linebreak
-	The ITaxiManagementSystem interface is actually an umbrella interface which covers the following different sub-interfaces: 
+The \textbf{ITaxiManagementSystem} interface is actually an umbrella interface which covers the following different sub-interfaces: 
 	\begin{itemize}
-	\item The IReservationManagement interface, which represents the way components can interact with the ReservationManagement sub-component. It exposes the following methods:
+	\item The \textbf{IReservationManagement} interface, which represents the way components can interact with the ReservationManagement sub-component. It exposes the following methods:
 	\begin{itemize}
 	\item reserveTaxi(passengerId, origin, destination, date, time): schedules a new reservation.
 	\item getReservationList(passengerId): returns the list of reservations placed by a passenger.
 	\end{itemize}
-	\item The IRequestManagement interface, which represents the way components can interact with the RequestManagement sub-component. It exposes the following methods:
+	\item The \textbf{IRequestManagement} interface, which represents the way components can interact with the RequestManagement sub-component. It exposes the following methods:
 	\begin{itemize}
 	\item dropRequest(taxiId): entry point for requesting a call drop operation.
 	\item requestTaxi(passengerId, passengerLocation, destination): implements the necessary operations to request a taxi.
 	\end{itemize}
-	\item The ILocationManagement interface, which represents the way components can interact with the LocationManagement sub-component. It exposes the following methods:
+	\item The \textbf{ILocationManagement} interface, which represents the way components can interact with the LocationManagement sub-component. It exposes the following methods:
 	\begin{itemize}
 	\item checkTaxiDriverLocation(currentLocation, meetingPoint): verifies that the taxi driver has effectively reached both the meeting point.
 	\item isLocationInsideCity(location): returns true if the location belongs to the city area, false otherwise.
 	\item getZone(location): if the location belongs to the city, returns the zone to which it belongs, otherwise it raises an exception.
 	\end{itemize}
-	The ITaxiManagement interface, which represents the way components can interact with the TaxiManagement sub-component. It exposes the following methods:
+	The \textbf{ITaxiManagement} interface, which represents the way components can interact with the TaxiManagement sub-component. It exposes the following methods:
 	\begin{itemize}
 	\item taxiDriverDroppedRequest(taxiId): verifies if the taxi driver is allowed to drop the request and, if so, performs the necessary operations to drop it.
 	\item endRide(taxiId, currentLocation): performs the necessary operations to register that the driver has ended a ride.
@@ -192,36 +230,45 @@ In the implementation phase, many of these interfaces will actually be further s
 	\end{itemize}
 	\end{itemize}
 
-For the same reason, the ISystemAdministration interface actually comprises many different interfaces, one for each sub-component of System Administration:
+For the same reason, the \textbf{ISystemAdministration} interface actually comprises many different interfaces, one for each sub-component of System Administration:
 \begin{itemize}
-	\item The IAPIPermissionsManagement interface, which represents the way components can interact with the API Permissions Management sub-component. It exposes the following methods:
+	\item The \textbf{IAPIPermissionsManagement} interface, which represents the way components can interact with the API Permissions Management sub-component. It exposes the following methods:
 	\begin{itemize}
 	\item checkPassword(adminId, password): verifies that the logged in user is an administrator and that the security password to enable the usage of a certain critical functionality is correct.
 	\item verifyPermission(appId, operation): verifies that the remote application associated with the appId security token has sufficient privileges to execute the desired operation.
 	\end{itemize}
-	\item The IZoneDivisionManagement interface, which represents the way components can interact with the Zone Division Management sub-component. It exposes the following methods:
+	\item The \textbf{IZoneDivisionManagement} interface, which represents the way components can interact with the Zone Division Management sub-component. It exposes the following methods:
 	\begin{itemize}
 	\item sendData(data): receives a set of candidate zones that will have to be checked for consistency.
 	\item insertZones(data): receives a set of candidate zones that have already been checked for consistency and inserts them inside the database.
 	\item updateZones(data): updates the data associated with the specified zones inside the database; if a zone doesn't exist yet it is added, while if a zone is marked as ready for deletion it is removed.
 	\item askZoneList(adminId): returns the set of zones stored in the database. 
 	\end{itemize}
-	\item The ITaxiDriverManagement interface, which represents the way components can interact with the Taxi Driver Management sub-component. It exposes the following methods:
+	\item The \textbf{ITaxiDriverManagement} interface, which represents the way components can interact with the Taxi Driver Management sub-component. It exposes the following methods:
 	\begin{itemize}
 	\item sendData(data): receives a set of candidate taxi driver data items that will have to be checked for consistency. The actual set of data attributes is described in depth in the RASD.
 	\item insertZones(data): receives a set of candidate taxi driver data items that have already been checked for consistency and inserts them inside the database.The actual set of data attributes is described in depth in the RASD.
 	\item askDriverList(adminId): returns the set of taxi drivers stored in the database.
 	\item updateDrivers(data): updates the data associated with the specified taxi drivers inside the database; if a taxi driver doesn't exist yet it is added, while if a taxi driver is marked as ready for deletion it is removed.
 	\end{itemize}
-	\item The IServiceStatistics interface, which represents the way components can interact with the Service Statistics sub-component. 
-	\item The IPluginManagement interface, which represents the way components can interact with the Plugin Management sub-component. 
+	\item The \textbf{IServiceStatistics} interface, which represents the way components can interact with the Service Statistics sub-component. 
+	\item The \textbf{IPluginManagement} interface, which represents the way components can interact with the Plugin Management sub-component. 
 \end{itemize}
 
-As for the AccountManagement component, access to its functionalities is made possible by the IAccountManagement interface. Much like previous components, actual operations are carried out using the interfaces exposed by its sub-components, which are the IPassengerRegistration, ILogin, IPasswordRetrieval and ISettingsManagement interfaces. Specific methods for these components haven't been defined at this stage.
-
-Functionalities offered by the Data Access Utilities component are offered through its IDataAccess interface, which exposes a set of methods through which components can easily access the database both for read and write operations. Update, insert, delete and select queries are directly supported and exposed for each kind of key data type; a few examples of these methods can be identified in the sequence diagrams.
-
-
+As for the AccountManagement component, access to its functionalities is made possible by the \textbf{IAccountManagement} interface. Much like previous components, actual operations are carried out using the interfaces exposed by its sub-components, which are the \textbf{IPassengerRegistration}, \textbf{ILogin}, \textbf{IPasswordRetrieval} and \textbf{ISettingsManagement} interfaces. Specific methods for these components haven't been defined at this stage.
+Functionalities offered by the Data Access Utilities component are offered through its \textbf{IDataAccess} interface, which exposes a set of methods through which components can easily access the database both for read and write operations. Update, insert, delete and select queries are directly supported and exposed for each kind of key data type; a few examples of these methods can be identified in the sequence diagrams.
+The \textbf{INotificationSystem} interface let components request all sort of notification services. In particular, it allows both unicast and multicast notifications via the following methods:
+\begin{itemize}
+\item notifyCallRequest(taxiDriver, request): notifies a taxi driver that he’s been assigned a request.
+\item notifyRequestConfirmation(user, request, secretCode): notifies a user (which can be a taxi driver or a passenger) that the specified request has been successfully handled and gives him the corresponding security code.
+\item notifyRequestRejection(passengerId): notifies the passenger that his request has been rejected.
+\item notifyCallDropped(passengerId): notifies the passenger that his request has been dropped.
+\item notifyErrorInRequest(passengerId): notifies the passenger that his request could not be fulfilled because the required data has been found inconsistent. 
+\item notifyZoneChanged(taxiId, newZone): sends a notification to the taxi driver identified by taxiId to alert him that his zone has changed. 
+\item notifyExitedCity(taxiId): sends a notification to the taxi driver identified by taxiId to alert him that he has exited the city.
+\item notifyEnteredCity(taxiId): sends a notification to the taxi driver identified by taxiId to alert him that he has entered the city.
+\item notifyQueueUpdate(taxiId, position, queueSize):  sends a notification to the taxi driver identified by taxiId to alert him that the status of his queue has changed; specifically, it sends him his current position in the queue and the total number of taxis queuing in his zone.
+\end{itemize}
 
 \section{Selected architectural styles and patterns}
 While designing the software architecture for myTaxiService we looked at all the possible options that enabled us both to satisfy current functional and non-functional requirements and to have enough flexibility for future needs and updates.
