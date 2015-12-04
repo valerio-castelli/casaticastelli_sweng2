@@ -16,8 +16,23 @@ loop until a taxi driver accepts the call, or there are no more taxi drivers lef
 	TaxiManagement -> TaxiManagement: dequeueTaxiDriver(zone)
 	
 	activate TaxiManagement
-	
 	deactivate TaxiManagement
+	
+	loop for all taxi driver in zone queue
+
+	TaxiManagement ->> NotificationSystem: notifyQueueUpdate(taxiId, position, queueSize)
+	
+	activate NotificationSystem
+	TaxiManagement <<-- NotificationSystem
+	
+	NotificationSystem ->> TaxiDriverApp: notifyQueueUpdate(taxiId, position, queueSize)
+	
+	activate TaxiDriverApp
+	NotificationSystem <<-- TaxiDriverApp
+	
+	deactivate TaxiDriverApp
+	deactivate NotificationSystem
+end
 	TaxiManagement -> TaxiManagement: setPending(taxiDriver)
 	
 	activate TaxiManagement
@@ -55,6 +70,21 @@ loop until a taxi driver accepts the call, or there are no more taxi drivers lef
 		
 		deactivate RemoteServiceInterface
 		TaxiManagement -> TaxiManagement: enqueueTaxiDriver(taxiDriver, zone)
+		
+		loop for all taxi driver in zone queue
+			TaxiManagement ->> NotificationSystem: notifyQueueUpdate(taxiId, position, queueSize)
+			
+			activate NotificationSystem
+			TaxiManagement <<-- NotificationSystem
+			
+			NotificationSystem ->> TaxiDriverApp: notifyQueueUpdate(taxiId, position, queueSize)
+			
+			activate TaxiDriverApp
+			NotificationSystem <<-- TaxiDriverApp
+			
+			deactivate TaxiDriverApp
+			deactivate NotificationSystem
+		end
 	end
 	
 	deactivate TaxiDriverApp

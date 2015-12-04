@@ -26,7 +26,22 @@ alt ok
 		TaxiManagement <-- LocationManagement: zone
 		
 		deactivate LocationManagement
-		TaxiManagement -> TaxiManagement: dequeue(zone, taxiDriverId)
+		TaxiManagement -> TaxiManagement: enqueue(zone, taxiDriverId)
+		
+		loop for all taxi driver in zone queue
+			TaxiManagement ->> NotificationSystem: notifyQueueUpdate(taxiId, position, queueSize)
+			
+			activate NotificationSystem
+			TaxiManagement <<-- NotificationSystem
+			
+			NotificationSystem ->> TaxiDriverApp: notifyQueueUpdate(taxiId, position, queueSize)
+			
+			activate TaxiDriverApp
+			NotificationSystem <<-- TaxiDriverApp
+			
+			deactivate TaxiDriverApp
+			deactivate NotificationSystem
+		end
 	else
 		TaxiManagement -> TaxiManagement: setOutsideCity(taxiDriverId)
 	end

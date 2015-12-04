@@ -41,6 +41,21 @@ alt taxi driver has reached the meeting location
 		deactivate LocationManagement
 		TaxiManagement -> TaxiManagement: enqueue(zone, taxiId)
 		
+		loop for all taxi driver in zone queue
+			TaxiManagement ->> NotificationSystem: notifyQueueUpdate(taxiId, position, queueSize)
+			
+			activate NotificationSystem
+			TaxiManagement <<-- NotificationSystem
+			
+			NotificationSystem ->> TaxiDriverApp: notifyQueueUpdate(taxiId, position, queueSize)
+			
+			activate TaxiDriverApp
+			NotificationSystem <<-- TaxiDriverApp
+			
+			deactivate TaxiDriverApp
+			deactivate NotificationSystem
+		end
+		
 		activate TaxiManagement
 		deactivate TaxiManagement
 	else taxi driver outside city

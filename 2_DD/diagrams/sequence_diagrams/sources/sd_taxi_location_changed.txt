@@ -58,6 +58,22 @@ alt status == available
 			NotificationSystem <<-- TaxiDriverApp
 			
 			deactivate NotificationSystem
+			
+					loop for all taxi driver in zone queue
+			TaxiManagement ->> NotificationSystem: notifyQueueUpdate(taxiId, position, queueSize)
+			
+			activate NotificationSystem
+			TaxiManagement <<-- NotificationSystem
+			
+			NotificationSystem ->> TaxiDriverApp: notifyQueueUpdate(taxiId, position, queueSize)
+			
+			activate TaxiDriverApp
+			NotificationSystem <<-- TaxiDriverApp
+			
+			deactivate TaxiDriverApp
+			deactivate NotificationSystem
+		end
+			
 		end
 	else outside city
 		TaxiManagement -> TaxiManagement: setOutsideCity(taxiId)
@@ -84,6 +100,22 @@ alt status == available
 		NotificationSystem <<-- TaxiDriverApp
 		
 		deactivate NotificationSystem
+		
+		loop for all taxi driver in zone queue
+			TaxiManagement ->> NotificationSystem: notifyQueueUpdate(taxiId, position, queueSize)
+			
+			activate NotificationSystem
+			TaxiManagement <<-- NotificationSystem
+			
+			NotificationSystem ->> TaxiDriverApp: notifyQueueUpdate(taxiId, position, queueSize)
+			
+			activate TaxiDriverApp
+			NotificationSystem <<-- TaxiDriverApp
+			
+			deactivate TaxiDriverApp
+			deactivate NotificationSystem
+		end
+		
 	end
 else status == outside_city
 	TaxiManagement -> LocationManagement: isLocationInsideCity(taxiId, currentLocation)
@@ -101,8 +133,20 @@ else status == outside_city
 		deactivate LocationManagement
 		TaxiManagement -> TaxiManagement: enqueue(taxiId, zone)
 		
-		activate TaxiManagement
-		deactivate TaxiManagement
+		loop for all taxi driver in zone queue
+			TaxiManagement ->> NotificationSystem: notifyQueueUpdate(taxiId, position, queueSize)
+			
+			activate NotificationSystem
+			TaxiManagement <<-- NotificationSystem
+			
+			NotificationSystem ->> TaxiDriverApp: notifyQueueUpdate(taxiId, position, queueSize)
+			
+			activate TaxiDriverApp
+			NotificationSystem <<-- TaxiDriverApp
+			
+			deactivate TaxiDriverApp
+			deactivate NotificationSystem
+		end
 		TaxiManagement -> TaxiManagement: setAvailable(taxiId)
 		
 		activate TaxiManagement

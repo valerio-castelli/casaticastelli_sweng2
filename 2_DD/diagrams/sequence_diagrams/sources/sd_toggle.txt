@@ -24,6 +24,21 @@ alt status == available
 	
 	activate TaxiManagement
 	deactivate TaxiManagement
+	
+					loop for all taxi driver in zone queue
+			TaxiManagement ->> NotificationSystem: notifyQueueUpdate(taxiId, position, queueSize)
+			
+			activate NotificationSystem
+			TaxiManagement <<-- NotificationSystem
+			
+			NotificationSystem ->> TaxiDriverApp: notifyQueueUpdate(taxiId, position, queueSize)
+			
+			activate TaxiDriverApp
+			NotificationSystem <<-- TaxiDriverApp
+			
+			deactivate TaxiDriverApp
+			deactivate NotificationSystem
+		end
 	TaxiManagement -> DataAccessUtilities: updateQueues()
 	
 	activate DataAccessUtilities
@@ -66,6 +81,21 @@ else status == unavailable
 		
 		activate TaxiManagement
 		deactivate TaxiManagement
+		
+						loop for all taxi driver in zone queue
+			TaxiManagement ->> NotificationSystem: notifyQueueUpdate(taxiId, position, queueSize)
+			
+			activate NotificationSystem
+			TaxiManagement <<-- NotificationSystem
+			
+			NotificationSystem ->> TaxiDriverApp: notifyQueueUpdate(taxiId, position, queueSize)
+			
+			activate TaxiDriverApp
+			NotificationSystem <<-- TaxiDriverApp
+			
+			deactivate TaxiDriverApp
+			deactivate NotificationSystem
+		end
 		TaxiManagement -> DataAccessUtilities: updateQueues()
 	
 	activate DataAccessUtilities
@@ -105,6 +135,21 @@ else status == outside_city
 	
 	activate TaxiManagement
 	deactivate TaxiManagement
+	
+				loop for all taxi driver in zone queue
+			TaxiManagement ->> NotificationSystem: notifyQueueUpdate(taxiId, position, queueSize)
+			
+			activate NotificationSystem
+			TaxiManagement <<-- NotificationSystem
+			
+			NotificationSystem ->> TaxiDriverApp: notifyQueueUpdate(taxiId, position, queueSize)
+			
+			activate TaxiDriverApp
+			NotificationSystem <<-- TaxiDriverApp
+			
+			deactivate TaxiDriverApp
+			deactivate NotificationSystem
+		end
 	TaxiManagement -> DataAccessUtilities: updateQueues()
 	
 	activate DataAccessUtilities

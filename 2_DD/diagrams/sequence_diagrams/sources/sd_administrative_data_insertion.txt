@@ -5,7 +5,7 @@ title sd_administrative_data_insertion
 loop until confirmation or exit
 	
 	activate AdministrationWebApp
-	AdministrationWebApp -> RemoteServicesInterface: sendData(data)
+	AdministrationWebApp -> RemoteServicesInterface: sendSetupData(data)
 
 	activate RemoteServicesInterface
 	RemoteServicesInterface -> ZoneManagement: sendData(data)

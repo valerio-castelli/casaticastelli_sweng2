@@ -21,10 +21,10 @@ deactivate RemoteServicesInterface
 
 loop until confirmation or exit
 	[-> AdministrationWebApp: //data insertion//
-	AdministrationWebApp -> RemoteServicesInterface: sendData(data)
+	AdministrationWebApp -> RemoteServicesInterface: sendZoneData(data)
 
 	activate RemoteServicesInterface
-	RemoteServicesInterface -> ZoneManagement: sendData(data)
+	RemoteServicesInterface -> ZoneManagement: sendZoneData(data)
 
 	activate ZoneManagement
 
