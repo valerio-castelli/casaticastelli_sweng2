@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.21)  4 DEC 2015 23:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.21)  4 DEC 2015 23:49
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1053,7 +1053,7 @@ Package pdftex.def Info: pdfs/sequence/sd_drop_call.pdf, page1 used on input lin
  [26
 
 
- <./pdfs/sequence/sd_drop_call.pdf>] <pdfs/sequence/sd_end_ride.pdf, id=976, 845.1575pt x 597.23125pt>
+ <./pdfs/sequence/sd_drop_call.pdf>] <pdfs/sequence/sd_end_ride.pdf, id=980, 845.1575pt x 597.23125pt>
 File: pdfs/sequence/sd_end_ride.pdf Graphic file (type pdf)
  <use pdfs/sequence/sd_end_ride.pdf>
 Package pdftex.def Info: pdfs/sequence/sd_end_ride.pdf used on input line 204.
@@ -1062,7 +1062,7 @@ File: pdfs/sequence/sd_end_ride.pdf Graphic file (type pdf)
  <use pdfs/sequence/sd_end_ride.pdf>
 Package pdftex.def Info: pdfs/sequence/sd_end_ride.pdf used on input line 204.
 (pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
- <pdfs/sequence/sd_end_ride.pdf, id=979, page=1, 845.1575pt x 597.23125pt>
+ <pdfs/sequence/sd_end_ride.pdf, id=983, page=1, 845.1575pt x 597.23125pt>
 File: pdfs/sequence/sd_end_ride.pdf Graphic file (type pdf)
  <use pdfs/sequence/sd_end_ride.pdf, page 1>
 Package pdftex.def Info: pdfs/sequence/sd_end_ride.pdf, page1 used on input line 204.
@@ -1086,7 +1086,7 @@ Package pdftex.def Info: pdfs/sequence/sd_end_ride.pdf, page1 used on input line
  [27
 
 
- <./pdfs/sequence/sd_end_ride.pdf>] <pdfs/sequence/sd_taxi_location_changed.pdf, id=1066, 597.23125pt x 845.1575pt>
+ <./pdfs/sequence/sd_end_ride.pdf>] <pdfs/sequence/sd_taxi_location_changed.pdf, id=1070, 597.23125pt x 845.1575pt>
 File: pdfs/sequence/sd_taxi_location_changed.pdf Graphic file (type pdf)
  <use pdfs/sequence/sd_taxi_location_changed.pdf>
 Package pdftex.def Info: pdfs/sequence/sd_taxi_location_changed.pdf used on input line 207.
@@ -1095,7 +1095,7 @@ File: pdfs/sequence/sd_taxi_location_changed.pdf Graphic file (type pdf)
  <use pdfs/sequence/sd_taxi_location_changed.pdf>
 Package pdftex.def Info: pdfs/sequence/sd_taxi_location_changed.pdf used on input line 207.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
- <pdfs/sequence/sd_taxi_location_changed.pdf, id=1069, page=1, 597.23125pt x 845.1575pt>
+ <pdfs/sequence/sd_taxi_location_changed.pdf, id=1073, page=1, 597.23125pt x 845.1575pt>
 File: pdfs/sequence/sd_taxi_location_changed.pdf Graphic file (type pdf)
  <use pdfs/sequence/sd_taxi_location_changed.pdf, page 1>
 Package pdftex.def Info: pdfs/sequence/sd_taxi_location_changed.pdf, page1 used on input line 207.
@@ -1118,7 +1118,7 @@ Package pdftex.def Info: pdfs/sequence/sd_taxi_location_changed.pdf, page1 used 
 (pdftex.def)             Requested size: 567.36647pt x 802.89508pt.
  [28
 
- <./pdfs/sequence/sd_taxi_location_changed.pdf>] <pdfs/sequence/sd_toggle.pdf, id=1243, 597.23125pt x 845.1575pt>
+ <./pdfs/sequence/sd_taxi_location_changed.pdf>] <pdfs/sequence/sd_toggle.pdf, id=1247, 597.23125pt x 845.1575pt>
 File: pdfs/sequence/sd_toggle.pdf Graphic file (type pdf)
  <use pdfs/sequence/sd_toggle.pdf>
 Package pdftex.def Info: pdfs/sequence/sd_toggle.pdf used on input line 209.
@@ -1127,7 +1127,7 @@ File: pdfs/sequence/sd_toggle.pdf Graphic file (type pdf)
  <use pdfs/sequence/sd_toggle.pdf>
 Package pdftex.def Info: pdfs/sequence/sd_toggle.pdf used on input line 209.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
- <pdfs/sequence/sd_toggle.pdf, id=1246, page=1, 597.23125pt x 845.1575pt>
+ <pdfs/sequence/sd_toggle.pdf, id=1250, page=1, 597.23125pt x 845.1575pt>
 File: pdfs/sequence/sd_toggle.pdf Graphic file (type pdf)
  <use pdfs/sequence/sd_toggle.pdf, page 1>
 Package pdftex.def Info: pdfs/sequence/sd_toggle.pdf, page1 used on input line 209.
@@ -1305,7 +1305,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 Chapter 4.
 [47
 
-] <images/sketches/Admin_Home.png, id=1815, 875.27pt x 512.91624pt>
+] <images/sketches/Admin_Home.png, id=1819, 875.27pt x 512.91624pt>
 File: images/sketches/Admin_Home.png Graphic file (type png)
  <use images/sketches/Admin_Home.png>
 Package pdftex.def Info: images/sketches/Admin_Home.png used on input line 25.
@@ -1317,12 +1317,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[48 <./images/sketches/Admin_Home.png>] <images/sketches/Admin_Insert_Taxi_Driver.png, id=1822, 875.27pt x 512.91624pt>
+[48 <./images/sketches/Admin_Home.png>] <images/sketches/Admin_Insert_Taxi_Driver.png, id=1826, 875.27pt x 512.91624pt>
 File: images/sketches/Admin_Insert_Taxi_Driver.png Graphic file (type png)
  <use images/sketches/Admin_Insert_Taxi_Driver.png>
 Package pdftex.def Info: images/sketches/Admin_Insert_Taxi_Driver.png used on input line 31.
 (pdftex.def)             Requested size: 450.0pt x 263.70479pt.
- <images/sketches/Admin_Taxi_Drivers_List.png, id=1823, 875.27pt x 512.91624pt>
+ <images/sketches/Admin_Taxi_Drivers_List.png, id=1827, 875.27pt x 512.91624pt>
 File: images/sketches/Admin_Taxi_Drivers_List.png Graphic file (type png)
  <use images/sketches/Admin_Taxi_Drivers_List.png>
 Package pdftex.def Info: images/sketches/Admin_Taxi_Drivers_List.png used on input line 37.
@@ -1334,7 +1334,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[49 <./images/sketches/Admin_Insert_Taxi_Driver.png> <./images/sketches/Admin_Taxi_Drivers_List.png>] <images/sketches/Admin_Zone_Update.png, id=1831, 875.27pt x 512.91624pt>
+[49 <./images/sketches/Admin_Insert_Taxi_Driver.png> <./images/sketches/Admin_Taxi_Drivers_List.png>] <images/sketches/Admin_Zone_Update.png, id=1835, 875.27pt x 512.91624pt>
 File: images/sketches/Admin_Zone_Update.png Graphic file (type png)
  <use images/sketches/Admin_Zone_Update.png>
 Package pdftex.def Info: images/sketches/Admin_Zone_Update.png used on input line 44.
@@ -1434,9 +1434,9 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  41i,21n,48p,1433b,1891s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-Output written on /Users/Valerio/GitHub/casaticastelli_sweng2/2_DD/latex_files/.texpadtmp/2_DD.pdf (60 pages, 2131892 bytes).
+Output written on /Users/Valerio/GitHub/casaticastelli_sweng2/2_DD/latex_files/.texpadtmp/2_DD.pdf (60 pages, 2133322 bytes).
 PDF statistics:
- 1991 PDF objects out of 2073 (max. 8388607)
+ 1995 PDF objects out of 2073 (max. 8388607)
  786 compressed objects within 8 object streams
  395 named destinations out of 1000 (max. 500000)
  503 words of extra memory for PDF output out of 10000 (max. 10000000)
