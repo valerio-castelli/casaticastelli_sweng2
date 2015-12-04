@@ -15,10 +15,11 @@ loop until confirmation or exit
 	
 	activate ZoneManagement
 	deactivate ZoneManagement
-	alt correct zones data
-		ZoneManagement --> RemoteServicesInterface: ok
+	ZoneManagement --> RemoteServicesInterface: result
 		
-		deactivate ZoneManagement
+	deactivate ZoneManagement
+	alt correct zones data
+		
 		RemoteServicesInterface -> DriverManagement: sendData(data)
 		
 		activate DriverManagement
@@ -26,70 +27,68 @@ loop until confirmation or exit
 		
 		activate DriverManagement
 		deactivate DriverManagement
+		RemoteServicesInterface <-- DriverManagement: result
 		alt correct taxi drivers data
-		RemoteServicesInterface <-- DriverManagement: ok
-		
-		deactivate DriverManagement
-		RemoteServicesInterface --> AdministrationWebApp: dataConfirmedMessage
-		RemoteServicesInterface <- AdministrationWebApp: sendPassword(adminId, psw)
-		RemoteServicesInterface -> PermissionManagament: checkPassword(adminId, psw)
 			
-		activate PermissionManagament
-		PermissionManagament -> PermissionManagament: sendPassword(adminId, psw)
-		
-		activate PermissionManagament
-		deactivate PermissionManagament
-		alt password confirmed
-			PermissionManagament --> RemoteServicesInterface: ok
-			RemoteServicesInterface -> ZoneManagement: insertZones(data)
-			
-			activate ZoneManagement
-			ZoneManagement -> DataAccessUtilities: insertZones(...)
-			
-			activate DataAccessUtilities
-			DataAccessUtilities -> DBMS: insert(...)
-			
-			activate DBMS
-			DataAccessUtilities <-- DBMS
-			
-			deactivate DBMS
-			ZoneManagement <-- DataAccessUtilities
-			
-			deactivate DataAccessUtilities
-			RemoteServicesInterface <-- ZoneManagement
-			
-			deactivate ZoneManagement
-			RemoteServicesInterface -> DriverManagement: insertTaxiDrivers(data)
-			
-			activate DriverManagement
-			DriverManagement -> DataAccessUtilities: insertTaxiDrivers(...)
-			
-			activate DataAccessUtilities
-			DataAccessUtilities -> DBMS: insert(...)
-			
-			activate DBMS
-			DataAccessUtilities <-- DBMS
-			
-			deactivate DBMS
-			DriverManagement <-- DataAccessUtilities
-			
-			deactivate DataAccessUtilities
-			RemoteServicesInterface <-- DriverManagement
 			
 			deactivate DriverManagement
-			RemoteServicesInterface --> AdministrationWebApp: passwordConfirmedMessage
-		else password rejected
-			PermissionManagament --> RemoteServicesInterface: wrong
-			RemoteServicesInterface --> AdministrationWebApp: passwordRejectedMessage
-		end
+			RemoteServicesInterface --> AdministrationWebApp: dataConfirmed
+			RemoteServicesInterface <- AdministrationWebApp: sendPassword(adminId, psw)
+			RemoteServicesInterface -> PermissionManagament: checkPassword(adminId, psw)
+				
+			activate PermissionManagament
+			PermissionManagament -> PermissionManagament: sendPassword(adminId, psw)
 			
-		deactivate PermissionManagament
+			activate PermissionManagament
+			deactivate PermissionManagament
+			PermissionManagament --> RemoteServicesInterface: result
+			
+			deactivate PermissionManagament
+			alt password confirmed
+				RemoteServicesInterface -> ZoneManagement: insertZones(data)
+				
+				activate ZoneManagement
+				ZoneManagement -> DataAccessUtilities: insertZones(...)
+				
+				activate DataAccessUtilities
+				DataAccessUtilities -> DBMS: insert(...)
+				
+				activate DBMS
+				DataAccessUtilities <-- DBMS
+				
+				deactivate DBMS
+				ZoneManagement <-- DataAccessUtilities
+				
+				deactivate DataAccessUtilities
+				RemoteServicesInterface <-- ZoneManagement
+				
+				deactivate ZoneManagement
+				RemoteServicesInterface -> DriverManagement: insertTaxiDrivers(data)
+				
+				activate DriverManagement
+				DriverManagement -> DataAccessUtilities: insertTaxiDrivers(...)
+				
+				activate DataAccessUtilities
+				DataAccessUtilities -> DBMS: insert(...)
+				
+				activate DBMS
+				DataAccessUtilities <-- DBMS
+				
+				deactivate DBMS
+				DriverManagement <-- DataAccessUtilities
+				
+				deactivate DataAccessUtilities
+				RemoteServicesInterface <-- DriverManagement
+				
+				deactivate DriverManagement
+				RemoteServicesInterface --> AdministrationWebApp: passwordConfirmedMessage
+			else password rejected
+				RemoteServicesInterface --> AdministrationWebApp: passwordRejectedMessage
+			end
 		else wrong taxi drivers data
-			DriverManagement --> RemoteServicesInterface: errorDescription
 			RemoteServicesInterface --> AdministrationWebApp: errorDescription
 		end
 	else wrong zones data
-		ZoneManagement --> RemoteServicesInterface: errorDescription
 		RemoteServicesInterface --> AdministrationWebApp: errorDescription
 	end
 	

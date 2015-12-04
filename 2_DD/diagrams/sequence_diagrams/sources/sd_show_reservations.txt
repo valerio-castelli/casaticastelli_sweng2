@@ -3,28 +3,23 @@
 title sd_show_reservations
 
 activate PassengerApp
-PassengerApp ->> RemoteServicesInterface: getReservationList(passengerId)
+PassengerApp -> RemoteServicesInterface: getReservationList(passengerId)
 
 activate RemoteServicesInterface
-PassengerApp <<-- RemoteServicesInterface
-RemoteServicesInterface ->> ReservationManagement: getReservationList(passengerId)
+
+RemoteServicesInterface -> ReservationManagement: getReservationList(passengerId)
 
 activate ReservationManagement
-RemoteServicesInterface <<-- ReservationManagement
+
 ReservationManagement -> ReservationManagement: retrieveReservationList(passengerId)
 
 activate ReservationManagement
 deactivate ReservationManagement
-ReservationManagement ->> NotificationSystem: sendReservationList(list)
+RemoteServicesInterface <-- ReservationManagement: list
+deactivate ReservationManagement
 
-activate NotificationSystem
-ReservationManagement <<-- NotificationSystem
-NotificationSystem ->> PassengerApp: sendReservationList(list)
-NotificationSystem <<-- PassengerApp
-
-deactivate NotificationSystem
+PassengerApp <-- RemoteServicesInterface: list
 deactivate PassengerApp
 deactivate RemoteServicesInterface
-deactivate ReservationManagement
 
 @enduml

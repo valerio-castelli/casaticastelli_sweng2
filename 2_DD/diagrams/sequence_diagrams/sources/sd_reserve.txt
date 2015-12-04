@@ -3,16 +3,13 @@
 title sd_reserve
 
 activate PassengerApp
-PassengerApp ->> RemoteServicesInterface: reserveTaxi(passengerId, origin, destination, date, time)
+PassengerApp -> RemoteServicesInterface: reserveTaxi(passengerId, origin, destination, date, time)
 
 activate RemoteServicesInterface
-PassengerApp <<-- RemoteServicesInterface
-RemoteServicesInterface ->> ReservationManagement: reserveTaxi(passengerId, origin, destination, date, time)
+RemoteServicesInterface -> ReservationManagement: reserveTaxi(passengerId, origin, destination, date, time)
 
 activate ReservationManagement
-RemoteServicesInterface <<-- ReservationManagement:
 
-deactivate RemoteServicesInterface
 ReservationManagement -> ReservationManagement: checkDataConsistency(origin, destination, date, time)
 
 alt correct data
@@ -28,26 +25,14 @@ alt correct data
 	ReservationManagement <-- DataAccessUtilities
 	
 	deactivate DataAccessUtilities
-	NotificationSystem <<- ReservationManagement: confirmReservation(passengerId, reservation)
-	
-	activate NotificationSystem
-	ReservationManagement <<-- NotificationSystem
-	PassengerApp <<- NotificationSystem: confirmReservation(passengerId, reservation)
-	PassengerApp -->> NotificationSystem
-	
-	deactivate NotificationSystem
+	RemoteServicesInterface <-- ReservationManagement: confirmReservation
+	PassengerApp <-- RemoteServicesInterface: confirmReservation
 else wrong data
-
-	ReservationManagement ->> NotificationSystem: notifyErrorInReservation(passengerId)
-	
-	activate NotificationSystem
-	ReservationManagement <<-- NotificationSystem
-	PassengerApp <<- NotificationSystem: notifyErrorInReservation(passengerId)
-	PassengerApp -->> NotificationSystem
-	
-	deactivate NotificationSystem
+	ReservationManagement --> RemoteServicesInterface: errorInReservation
+	PassengerApp <-- RemoteServicesInterface: errorInReservation
 end
 
+deactivate RemoteServicesInterface
 deactivate PassengerApp
 deactivate ReservationManagement
 @enduml 

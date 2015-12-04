@@ -3,16 +3,12 @@
 title sd_drop_call
 
 activate TaxiDriverApp
-TaxiDriverApp ->> RemoteServicesInterface: dropRequest(taxiId)
+TaxiDriverApp -> RemoteServicesInterface: dropRequest(taxiId)
 
 activate RemoteServicesInterface
-TaxiDriverApp <<-- RemoteServicesInterface
-RemoteServicesInterface ->> RequestManagement: dropRequest(taxiId)
+RemoteServicesInterface -> RequestManagement: dropRequest(taxiId)
 
 activate RequestManagement
-RemoteServicesInterface <<-- RequestManagement
-
-deactivate RemoteServicesInterface
 RequestManagement -> RequestManagement: getRequestForTaxi(taxiId)
 RequestManagement -> RequestManagement: getMeetingPointForRequest(request)
 RequestManagement -> LocationManagement: checkTaxiDriverLocation(currentLocation, meetingPoint)
@@ -76,16 +72,15 @@ alt taxi driver has reached the meeting location
 	NotificationSystem <<-- PassangerApp
 	
 	deactivate PassangerApp
-	NotificationSystem ->> TaxiDriverApp: callDropped()
-	NotificationSystem <<-- TaxiDriverApp
+	deactivate NotificationSystem
+	RequestManagement --> RemoteServicesInterface: ok
+	RemoteServicesInterface --> TaxiDriverApp: ok
 else
-	RequestManagement ->> NotificationSystem: dropRejected()
-	RequestManagement <<-- NotificationSystem
-	NotificationSystem ->> TaxiDriverApp: dropRejected()
-	NotificationSystem <<-- TaxiDriverApp
+	RequestManagement --> RemoteServicesInterface: notAllowed
+	RemoteServicesInterface --> TaxiDriverApp: notAllowed
 end
 
-deactivate NotificationSystem
+deactivate RemoteServicesInterface
 deactivate TaxiDriverApp
 deactivate RequestManagement
 deactivate TaxiManagement

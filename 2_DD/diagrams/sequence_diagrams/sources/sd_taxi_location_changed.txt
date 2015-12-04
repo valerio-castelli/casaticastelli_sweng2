@@ -80,7 +80,7 @@ alt status == available
 
 		activate NotificationSystem
 		TaxiManagement <<-- NotificationSystem
-		NotificationSystem ->> TaxiDriverApp: notifyExitedCity(taxiId);
+		NotificationSystem ->> TaxiDriverApp: notifyExitedCity(taxiId)
 		NotificationSystem <<-- TaxiDriverApp
 		
 		deactivate NotificationSystem
@@ -135,5 +135,18 @@ TaxiManagement -> TaxiManagement: updateTaxiLocation(taxiId, currentLocation)
 
 activate TaxiManagement
 deactivate TaxiManagement
+TaxiManagement -> DataAccessUtilities: updateLocation(taxiId, currentLocation)
+			
+activate DataAccessUtilities
+DataAccessUtilities -> DBMS: update(...)
+		
+activate DBMS
+DataAccessUtilities <-- DBMS
+		
+deactivate DBMS		
+TaxiManagement <-- DataAccessUtilities
+
+deactivate DataAccessUtilities
+
 deactivate TaxiManagement
 @enduml

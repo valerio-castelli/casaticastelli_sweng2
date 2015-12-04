@@ -3,55 +3,54 @@
 title sd_end_ride
 
 activate TaxiDriverApp
-TaxiDriverApp ->> RemoteServicesInterface: endRide(taxiDriverId, currentLocation)
+TaxiDriverApp -> RemoteServicesInterface: endRide(taxiDriverId, currentLocation)
 
 activate RemoteServicesInterface
-TaxiDriverApp <<-- RemoteServicesInterface
-RemoteServicesInterface ->> TaxiManagement: endRide(taxiDriverId, currentLocation)
+RemoteServicesInterface -> TaxiManagement: endRide(taxiDriverId, currentLocation)
 
 activate TaxiManagement
-RemoteServicesInterface <<-- TaxiManagement
-
-deactivate RemoteServicesInterface
 TaxiManagement -> TaxiManagement: checkEndRideFunctionalityIsAllowed(taxiDriverId)
-alt very wrong // comunicare all'utetne l'errore!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-else ok
+alt ok
 	TaxiManagement -> LocationManagement: isLocationInsideCity(currentLocation)
 	
 	activate LocationManagement
+	TaxiManagement <-- LocationManagement: result
+	
+	deactivate LocationManagement
 	alt taxi driver inside city
-		TaxiManagement <-- LocationManagement: true
+		
 		TaxiManagement -> TaxiManagement: setAvailable(taxiDriverId)
 		TaxiManagement -> LocationManagement: getZone(currentLocation)
+		
+		activate LocationManagement
 		TaxiManagement <-- LocationManagement: zone
+		
+		deactivate LocationManagement
 		TaxiManagement -> TaxiManagement: dequeue(zone, taxiDriverId)
 	else
-		TaxiManagement <-- LocationManagement: false
 		TaxiManagement -> TaxiManagement: setOutsideCity(taxiDriverId)
+	end
+	TaxiManagement -> DataAccessUtilities: update(...)
+
+	activate DataAccessUtilities
+	DataAccessUtilities -> DBMS: update(...)
+	
+	activate DBMS
+	DataAccessUtilities <-- DBMS
+	
+	deactivate DBMS
+	TaxiManagement <-- DataAccessUtilities
+	
+	deactivate DataAccessUtilities
+	TaxiManagement --> RemoteServicesInterface: ok
+	RemoteServicesInterface --> TaxiDriverApp: ok
+else ko
+	TaxiManagement --> RemoteServicesInterface: notAllowed
+	RemoteServicesInterface --> TaxiDriverApp: notAllowed
 end
-
-deactivate LocationManagement
-TaxiManagement -> DataAccessUtilities: update(...)
-
-activate DataAccessUtilities
-DataAccessUtilities -> DBMS
-
-activate DBMS
-DataAccessUtilities <-- DBMS: update(...)
-
-deactivate DBMS
-TaxiManagement <-- DataAccessUtilities
-
-deactivate DataAccessUtilities
-TaxiManagement ->> NotificationSystem: confirm()
-
-activate NotificationSystem
-TaxiManagement <<-- NotificationSystem
 
 deactivate TaxiManagement
-NotificationSystem ->> TaxiDriverApp: confirm()
-NotificationSystem <<-- TaxiDriverApp
+deactivate RemoteServicesInterface
+deactivate TaxiDriverApp
 
-deactivate NotificationSystem
-end
 @enduml
