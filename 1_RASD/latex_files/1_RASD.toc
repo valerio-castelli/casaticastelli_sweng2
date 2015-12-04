@@ -34,27 +34,27 @@
 \contentsline {subsection}{\numberline {3.2.4}Goal 4}{22}{subsection.3.2.4}
 \contentsline {subsection}{\numberline {3.2.5}Goal 5}{23}{subsection.3.2.5}
 \contentsline {subsection}{\numberline {3.2.6}Goal 6}{24}{subsection.3.2.6}
-\contentsline {subsection}{\numberline {3.2.7}Goal 7}{24}{subsection.3.2.7}
+\contentsline {subsection}{\numberline {3.2.7}Goal 7}{25}{subsection.3.2.7}
 \contentsline {subsection}{\numberline {3.2.8}Goal 8}{25}{subsection.3.2.8}
 \contentsline {subsection}{\numberline {3.2.9}Goal 9}{25}{subsection.3.2.9}
-\contentsline {subsection}{\numberline {3.2.10}Goal 10}{26}{subsection.3.2.10}
+\contentsline {subsection}{\numberline {3.2.10}Goal 10}{27}{subsection.3.2.10}
 \contentsline {subsection}{\numberline {3.2.11}Goal 11}{27}{subsection.3.2.11}
 \contentsline {subsection}{\numberline {3.2.12}Goal 12}{28}{subsection.3.2.12}
-\contentsline {section}{\numberline {3.3}Performance Requirements}{28}{section.3.3}
-\contentsline {section}{\numberline {3.4}Design Constraints}{28}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Standard compliance}{28}{subsection.3.4.1}
+\contentsline {section}{\numberline {3.3}Performance Requirements}{29}{section.3.3}
+\contentsline {section}{\numberline {3.4}Design Constraints}{29}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Standard compliance}{29}{subsection.3.4.1}
 \contentsline {section}{\numberline {3.5}Software System Attributes}{29}{section.3.5}
 \contentsline {subsection}{\numberline {3.5.1}Reliability}{29}{subsection.3.5.1}
 \contentsline {subsection}{\numberline {3.5.2}Availability}{29}{subsection.3.5.2}
-\contentsline {subsection}{\numberline {3.5.3}Security}{29}{subsection.3.5.3}
+\contentsline {subsection}{\numberline {3.5.3}Security}{30}{subsection.3.5.3}
 \contentsline {subsection}{\numberline {3.5.4}Portability}{30}{subsection.3.5.4}
 \contentsline {section}{\numberline {3.6}Scenarios}{30}{section.3.6}
 \contentsline {subsection}{\numberline {3.6.1}Scenario 1}{30}{subsection.3.6.1}
-\contentsline {subsection}{\numberline {3.6.2}Scenario 2}{30}{subsection.3.6.2}
+\contentsline {subsection}{\numberline {3.6.2}Scenario 2}{31}{subsection.3.6.2}
 \contentsline {subsection}{\numberline {3.6.3}Scenario 3}{31}{subsection.3.6.3}
-\contentsline {subsection}{\numberline {3.6.4}Scenario 4}{31}{subsection.3.6.4}
+\contentsline {subsection}{\numberline {3.6.4}Scenario 4}{32}{subsection.3.6.4}
 \contentsline {subsection}{\numberline {3.6.5}Scenario 5}{32}{subsection.3.6.5}
-\contentsline {subsection}{\numberline {3.6.6}Scenario 6}{32}{subsection.3.6.6}
+\contentsline {subsection}{\numberline {3.6.6}Scenario 6}{33}{subsection.3.6.6}
 \contentsline {subsection}{\numberline {3.6.7}Scenario 7}{33}{subsection.3.6.7}
 \contentsline {chapter}{Appendix \numberline {A}Use cases}{34}{Appendix.1.A}
 \contentsline {section}{\numberline {A.1}Request a taxi}{34}{section.1.A.1}
@@ -75,4 +75,5 @@
 \contentsline {section}{\numberline {B.4}Sequence diagram}{49}{section.1.B.4}
 \contentsline {section}{\numberline {B.5}State chart diagram}{51}{section.1.B.5}
 \contentsline {chapter}{Appendix \numberline {C}Alloy}{52}{Appendix.1.C}
-\contentsline {chapter}{Appendix \numberline {D}Hours of work}{67}{Appendix.1.D}
+\contentsline {chapter}{Appendix \numberline {D}Changelog}{67}{Appendix.1.D}
+\contentsline {chapter}{Appendix \numberline {E}Hours of work}{69}{Appendix.1.E}
