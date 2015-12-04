@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.21)  4 DEC 2015 22:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.21)  4 DEC 2015 23:43
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1224,7 +1224,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[36]) (./chapters/others.tex
+[36]) (./chapters/algorithm_design.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1294,7 +1294,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[45]
+[45]) (./chapters/user_interface_design.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1308,7 +1308,7 @@ Chapter 4.
 ] <images/sketches/Admin_Home.png, id=1815, 875.27pt x 512.91624pt>
 File: images/sketches/Admin_Home.png Graphic file (type png)
  <use images/sketches/Admin_Home.png>
-Package pdftex.def Info: images/sketches/Admin_Home.png used on input line 375.
+Package pdftex.def Info: images/sketches/Admin_Home.png used on input line 25.
 (pdftex.def)             Requested size: 450.0pt x 263.70479pt.
 
 
@@ -1320,12 +1320,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [48 <./images/sketches/Admin_Home.png>] <images/sketches/Admin_Insert_Taxi_Driver.png, id=1822, 875.27pt x 512.91624pt>
 File: images/sketches/Admin_Insert_Taxi_Driver.png Graphic file (type png)
  <use images/sketches/Admin_Insert_Taxi_Driver.png>
-Package pdftex.def Info: images/sketches/Admin_Insert_Taxi_Driver.png used on input line 381.
+Package pdftex.def Info: images/sketches/Admin_Insert_Taxi_Driver.png used on input line 31.
 (pdftex.def)             Requested size: 450.0pt x 263.70479pt.
  <images/sketches/Admin_Taxi_Drivers_List.png, id=1823, 875.27pt x 512.91624pt>
 File: images/sketches/Admin_Taxi_Drivers_List.png Graphic file (type png)
  <use images/sketches/Admin_Taxi_Drivers_List.png>
-Package pdftex.def Info: images/sketches/Admin_Taxi_Drivers_List.png used on input line 387.
+Package pdftex.def Info: images/sketches/Admin_Taxi_Drivers_List.png used on input line 37.
 (pdftex.def)             Requested size: 450.0pt x 263.70479pt.
 
 
@@ -1337,9 +1337,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [49 <./images/sketches/Admin_Insert_Taxi_Driver.png> <./images/sketches/Admin_Taxi_Drivers_List.png>] <images/sketches/Admin_Zone_Update.png, id=1831, 875.27pt x 512.91624pt>
 File: images/sketches/Admin_Zone_Update.png Graphic file (type png)
  <use images/sketches/Admin_Zone_Update.png>
-Package pdftex.def Info: images/sketches/Admin_Zone_Update.png used on input line 394.
+Package pdftex.def Info: images/sketches/Admin_Zone_Update.png used on input line 44.
 (pdftex.def)             Requested size: 450.0pt x 263.70479pt.
-
+) (./chapters/requirements_traceability.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1349,7 +1349,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [50 <./images/sketches/Admin_Zone_Update.png>]
 Chapter 5.
 
-Overfull \hbox (0.93993pt too wide) in paragraph at lines 408--409
+Overfull \hbox (0.93993pt too wide) in paragraph at lines 12--13
 []\OT1/cmr/m/n/10.95 The \OT1/cmr/bx/n/10.95 Ad-min-is-tra-tion Web Ap-pli-ca-tion \OT1/cmr/m/n/10.95 com-po-nent, which pro-
  []
 
@@ -1370,12 +1370,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [53]
-Overfull \hbox (19.77887pt too wide) in paragraph at lines 455--456
+Overfull \hbox (19.77887pt too wide) in paragraph at lines 59--60
 []\OT1/cmr/m/n/10.95 Req. 9.8 is han-dled by the Lo-ca-tion Man-age-ment sub-component,
  []
 
 
-Overfull \hbox (4.24606pt too wide) in paragraph at lines 456--457
+Overfull \hbox (4.24606pt too wide) in paragraph at lines 60--61
 \OT1/cmr/m/n/10.95 pend-ing re-quest, by the Re-quest Man-age-ment sub-component. 
  []
 
@@ -1393,7 +1393,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [55]
-Overfull \hbox (10.56667pt too wide) in paragraph at lines 491--492
+Overfull \hbox (10.56667pt too wide) in paragraph at lines 95--96
 \OT1/cmr/m/n/10.95 Taxi Man-age-ment and Re-quest Man-age-ment sub-components which
  []
 
@@ -1403,7 +1403,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[56]
+[56]) (./chapters/appendix.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1413,28 +1413,28 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [57]
 Appendix A.
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 15.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 21.
  [58
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 15.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 21.
  (/Users/Valerio/GitHub/casaticastelli_sweng2/2_DD/latex_files/.texpadtmp/2_DD.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 15.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 15.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 21.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 21.
 Package rerunfilecheck Info: File `2_DD.out' has not changed.
 (rerunfilecheck)             Checksum: 26009D9C8C5B418A3AAF3189055C365A;1530.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 15.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 21.
  ) 
 Here is how much of TeX's memory you used:
- 9670 strings out of 493089
- 143494 string characters out of 6134841
+ 9678 strings out of 493089
+ 143762 string characters out of 6134841
  460033 words of memory out of 5000000
  12580 multiletter control sequences out of 15000+600000
  10924 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,21n,48p,1418b,1891s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,21n,48p,1433b,1891s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-Output written on /Users/Valerio/GitHub/casaticastelli_sweng2/2_DD/latex_files/.texpadtmp/2_DD.pdf (60 pages, 2130855 bytes).
+Output written on /Users/Valerio/GitHub/casaticastelli_sweng2/2_DD/latex_files/.texpadtmp/2_DD.pdf (60 pages, 2131892 bytes).
 PDF statistics:
  1991 PDF objects out of 2073 (max. 8388607)
  786 compressed objects within 8 object streams
