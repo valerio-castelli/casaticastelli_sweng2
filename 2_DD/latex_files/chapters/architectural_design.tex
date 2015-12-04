@@ -270,6 +270,24 @@ The \textbf{INotificationSystem} interface let components request all sort of no
 \item notifyQueueUpdate(taxiId, position, queueSize):  sends a notification to the taxi driver identified by taxiId to alert him that the status of his queue has changed; specifically, it sends him his current position in the queue and the total number of taxis queuing in his zone.
 \end{itemize}
 
+Finally, the \textbf{IRemoteServices} interface let remote applications invoke a specific service offered by the central system. In particular, the following methods are exposed: 
+\begin{itemize}
+	\item sendSetupData(data): receives the initialization data for the system, which is made of tuples containing zone configuration data and taxi drivers data.
+	\item sendZoneData(data): receives a set of candidate zones.
+	\item sendTaxiData(data): receives a set of candidate taxi drivers.
+	\item sendPassword(adminId, password): receives the security password required to perform critical operations and performs the necessary validation procedures.
+	\item askZoneList(adminId): returns the list of all stored zones.
+	\item acceptRide(taxiDriver, request): notifies the central system that the specified taxiDriver has accepted the specified request.
+	\item refuseRide(taxiDriver, request): notifies the central system that the specified taxiDriver has refused the specified request.
+	\item dropRequest(taxiId): allows a taxi driver to request a call drop operation.
+	\item endRide(taxiDriverId, currentLocation): notifies the central system that the specified taxiDriver has ended his currently assigned ride, and also provides his current location.
+	\item requestTaxi(passengerId, passengerLocation, destination): allows a passenger to request a taxi at his current location for a specified destination.
+	\item reserveTaxi(passengerId, origin, destination, date, time): allows a passenger to reserve a taxi for a journey going from the specified origin to the specified destination, with pickup scheduled at the given date and time.
+	\item getReservationList(passengerId): returns the list of reservations placed by the specified passenger.
+	\item sendCurrentLocation(taxiId, location): lets the taxi driver application periodically notify his new coordinates.
+	\item togglePressed(taxiDriverId): notifies the central system that the specified taxi driver has switched the availability toggle in his mobile application.
+\end{itemize}
+
 \section{Selected architectural styles and patterns}
 While designing the software architecture for myTaxiService we looked at all the possible options that enabled us both to satisfy current functional and non-functional requirements and to have enough flexibility for future needs and updates.
 
