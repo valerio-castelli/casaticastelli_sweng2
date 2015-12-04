@@ -10,8 +10,8 @@
 \contentsline {section}{\numberline {1.5}Document Structure}{3}{section.1.5}
 \contentsline {chapter}{\numberline {2}Architectural Design}{4}{chapter.2}
 \contentsline {section}{\numberline {2.1}Overview}{4}{section.2.1}
-\contentsline {section}{\numberline {2.2}High level components and their interactions}{7}{section.2.2}
-\contentsline {section}{\numberline {2.3}Component view}{9}{section.2.3}
+\contentsline {section}{\numberline {2.2}High level components and their interactions}{6}{section.2.2}
+\contentsline {section}{\numberline {2.3}Component view}{8}{section.2.3}
 \contentsline {section}{\numberline {2.4}Deployment view}{13}{section.2.4}
 \contentsline {section}{\numberline {2.5}Runtime view}{15}{section.2.5}
 \contentsline {section}{\numberline {2.6}Component interfaces}{29}{section.2.6}
