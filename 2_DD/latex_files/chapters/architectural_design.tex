@@ -192,6 +192,37 @@ In the implementation phase, many of these interfaces will actually be further s
 	\end{itemize}
 	\end{itemize}
 
+For the same reason, the ISystemAdministration interface actually comprises many different interfaces, one for each sub-component of System Administration:
+\begin{itemize}
+	\item The IAPIPermissionsManagement interface, which represents the way components can interact with the API Permissions Management sub-component. It exposes the following methods:
+	\begin{itemize}
+	\item checkPassword(adminId, password): verifies that the logged in user is an administrator and that the security password to enable the usage of a certain critical functionality is correct.
+	\item verifyPermission(appId, operation): verifies that the remote application associated with the appId security token has sufficient privileges to execute the desired operation.
+	\end{itemize}
+	\item The IZoneDivisionManagement interface, which represents the way components can interact with the Zone Division Management sub-component. It exposes the following methods:
+	\begin{itemize}
+	\item sendData(data): receives a set of candidate zones that will have to be checked for consistency.
+	\item insertZones(data): receives a set of candidate zones that have already been checked for consistency and inserts them inside the database.
+	\item updateZones(data): updates the data associated with the specified zones inside the database; if a zone doesn't exist yet it is added, while if a zone is marked as ready for deletion it is removed.
+	\item askZoneList(adminId): returns the set of zones stored in the database. 
+	\end{itemize}
+	\item The ITaxiDriverManagement interface, which represents the way components can interact with the Taxi Driver Management sub-component. It exposes the following methods:
+	\begin{itemize}
+	\item sendData(data): receives a set of candidate taxi driver data items that will have to be checked for consistency. The actual set of data attributes is described in depth in the RASD.
+	\item insertZones(data): receives a set of candidate taxi driver data items that have already been checked for consistency and inserts them inside the database.The actual set of data attributes is described in depth in the RASD.
+	\item askDriverList(adminId): returns the set of taxi drivers stored in the database.
+	\item updateDrivers(data): updates the data associated with the specified taxi drivers inside the database; if a taxi driver doesn't exist yet it is added, while if a taxi driver is marked as ready for deletion it is removed.
+	\end{itemize}
+	\item The IServiceStatistics interface, which represents the way components can interact with the Service Statistics sub-component. 
+	\item The IPluginManagement interface, which represents the way components can interact with the Plugin Management sub-component. 
+\end{itemize}
+
+As for the AccountManagement component, access to its functionalities is made possible by the IAccountManagement interface. Much like previous components, actual operations are carried out using the interfaces exposed by its sub-components, which are the IPassengerRegistration, ILogin, IPasswordRetrieval and ISettingsManagement interfaces. Specific methods for these components haven't been defined at this stage.
+
+Functionalities offered by the Data Access Utilities component are offered through its IDataAccess interface, which exposes a set of methods through which components can easily access the database both for read and write operations. Update, insert, delete and select queries are directly supported and exposed for each kind of key data type; a few examples of these methods can be identified in the sequence diagrams.
+
+
+
 \section{Selected architectural styles and patterns}
 While designing the software architecture for myTaxiService we looked at all the possible options that enabled us both to satisfy current functional and non-functional requirements and to have enough flexibility for future needs and updates.
 
