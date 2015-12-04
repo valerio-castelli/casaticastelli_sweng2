@@ -25,7 +25,19 @@ alt status == available
 	activate TaxiManagement
 	deactivate TaxiManagement
 	TaxiManagement -> TaxiManagement: setUnavailable(taxiDriverId)
-	TaxiManagement -> DataAccessUtilities: updateState(...)
+	
+	activate TaxiManagement
+	deactivate TaxiManagement
+	TaxiManagement -> DataAccessUtilities: updateQueues()
+	
+	activate DataAccessUtilities
+	DataAccessUtilities -> DBMS: update(...)
+	
+	activate DBMS
+	DataAccessUtilities <-- DBMS
+	
+	deactivate DBMS
+	TaxiManagement -> DataAccessUtilities: updateTaxiStatus(taxiDriverId, TaxiStatusAvailable)
 	
 	activate DataAccessUtilities
 	DataAccessUtilities -> DBMS: update(...)
@@ -50,42 +62,43 @@ else status == unavailable
 	
 	activate TaxiManagement
 	deactivate TaxiManagement
-	TaxiManagement -> LocationManagement: isTaxiDriverInsideCity(GPS)
+	TaxiManagement -> LocationManagement: isLocationInsideCity(currentLocation)
 	
 	activate LocationManagement
 	alt true
 		TaxiManagement <-- LocationManagement: true
-		TaxiManagement -> TaxiManagement: setUnavailable(taxiDriverId)
+		TaxiManagement -> TaxiManagement: setAvailable(taxiDriverId)
 		
 		activate TaxiManagement
 		deactivate TaxiManagement
-		TaxiManagement -> DataAccessUtilities: updateState(...)
+		TaxiManagement -> DataAccessUtilities: updateQueues()
 	
 		activate DataAccessUtilities
 		DataAccessUtilities -> DBMS: update(...)
-	
+		
 		activate DBMS
 		DataAccessUtilities <-- DBMS
-	
+		
 		deactivate DBMS
+		TaxiManagement -> DataAccessUtilities: updateTaxiStatus(taxiDriverId, TaxiStatusAvailable)
 		TaxiManagement <-- DataAccessUtilities
 	
 		deactivate DataAccessUtilities
-		TaxiManagement ->> NotificationSystem: confirm()
+		TaxiManagement ->> NotificationSystem: confirmAvailability(taxiDriverId)
 		
 		activate NotificationSystem
 		TaxiManagement <<-- NotificationSystem
-		NotificationSystem ->> TaxiDriverApp: confirm()
+		NotificationSystem ->> TaxiDriverApp: confirmAvailability(taxiDriverId)
 		NotificationSystem <<-- TaxiDriverApp
 		
 		deactivate NotificationSystem
 	else false
 		TaxiManagement <-- LocationManagement: false
-		TaxiManagement ->> NotificationSystem: reject()
+		TaxiManagement ->> NotificationSystem: rejectAvailabilityChange(taxiDriverId)
 		
 		activate NotificationSystem
 		TaxiManagement <<-- NotificationSystem
-		NotificationSystem ->> TaxiDriverApp: reject()
+		NotificationSystem ->> TaxiDriverApp: rejectAvailabilityChange(taxiDriverId)
 		NotificationSystem <<-- TaxiDriverApp
 		
 		deactivate NotificationSystem

@@ -18,7 +18,7 @@ TaxiManagement -> TaxiManagement: checkTaxiStatus(taxiId)
 activate TaxiManagement
 deactivate TaxiManagement
 alt status == available
-	TaxiManagement -> LocationManagement: isTaxiDriverInsideCity(taxiId, currentLocation)
+	TaxiManagement -> LocationManagement: isLocationInsideCity(currentLocation)
 	
 	activate LocationManagement
 	TaxiManagement <-- LocationManagement: result
@@ -86,7 +86,7 @@ alt status == available
 		deactivate NotificationSystem
 	end
 else status == outside_city
-	TaxiManagement -> LocationManagement: isTaxiDriverInsideCity(taxiId, currentLocation)
+	TaxiManagement -> LocationManagement: isLocationInsideCity(taxiId, currentLocation)
 	
 	activate LocationManagement
 	TaxiManagement <-- LocationManagement: result
@@ -99,7 +99,7 @@ else status == outside_city
 		TaxiManagement <-- LocationManagement: zone
 		
 		deactivate LocationManagement
-		TaxiManagement -> TaxiManagement: addToZoneQueue(taxiId, zone)
+		TaxiManagement -> TaxiManagement: enqueue(taxiId, zone)
 		
 		activate TaxiManagement
 		deactivate TaxiManagement

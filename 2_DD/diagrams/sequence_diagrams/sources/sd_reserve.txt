@@ -3,20 +3,20 @@
 title sd_reserve
 
 activate PassengerApp
-PassengerApp ->> RemoteServicesInterface: reserveTaxi(origin, destination, date, time)
+PassengerApp ->> RemoteServicesInterface: reserveTaxi(passengerId, origin, destination, date, time)
 
 activate RemoteServicesInterface
 PassengerApp <<-- RemoteServicesInterface
-RemoteServicesInterface ->> ReservationManagement: reserveTaxi(origin, destination, date, time)
+RemoteServicesInterface ->> ReservationManagement: reserveTaxi(passengerId, origin, destination, date, time)
 
 activate ReservationManagement
 RemoteServicesInterface <<-- ReservationManagement:
 
 deactivate RemoteServicesInterface
-ReservationManagement -> ReservationManagement: checkDataConsistency()
+ReservationManagement -> ReservationManagement: checkDataConsistency(origin, destination, date, time)
 
 alt correct data
-	ReservationManagement -> DataAccessUtilities: insertNewReservation(...)
+	ReservationManagement -> DataAccessUtilities: insertNewReservation(reservation)
 	
 	activate DataAccessUtilities
 	DataAccessUtilities -> DBMS: insert(...)
@@ -28,21 +28,21 @@ alt correct data
 	ReservationManagement <-- DataAccessUtilities
 	
 	deactivate DataAccessUtilities
-	NotificationSystem <<- ReservationManagement: confirm()
+	NotificationSystem <<- ReservationManagement: confirmReservation(passengerId, reservation)
 	
 	activate NotificationSystem
 	ReservationManagement <<-- NotificationSystem
-	PassengerApp <<- NotificationSystem: confirm()
+	PassengerApp <<- NotificationSystem: confirmReservation(passengerId, reservation)
 	PassengerApp -->> NotificationSystem
 	
 	deactivate NotificationSystem
 else wrong data
 
-	ReservationManagement ->> NotificationSystem: error(...)
+	ReservationManagement ->> NotificationSystem: notifyErrorInReservation(passengerId)
 	
 	activate NotificationSystem
 	ReservationManagement <<-- NotificationSystem
-	PassengerApp <<- NotificationSystem: error(...)
+	PassengerApp <<- NotificationSystem: notifyErrorInReservation(passengerId)
 	PassengerApp -->> NotificationSystem
 	
 	deactivate NotificationSystem

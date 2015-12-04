@@ -7,7 +7,7 @@ PassengerApp ->> RemoteServiceInterface: requestTaxi(passengerId, passengerLocat
 
 activate RemoteServiceInterface
 PassengerApp <<-- RemoteServiceInterface
-RemoteServiceInterface ->> RequestManagement: requestTaxi(passengerID, passengerLocation)
+RemoteServiceInterface ->> RequestManagement: requestTaxi(passengerId, passengerLocation)
 
 activate RequestManagement
 RemoteServiceInterface <<-- RequestManagement
@@ -33,37 +33,37 @@ loop until a taxi driver accepts the call, or there are no more taxi drivers lef
 	activate TaxiManagement
 	
 	deactivate TaxiManagement
-	TaxiManagement ->> NotificationSystem: notifyCallRequest()
+	TaxiManagement ->> NotificationSystem: notifyCallRequest(taxiDriver, request)
 	
 	activate NotificationSystem
 	TaxiManagement <<-- NotificationSystem
-	NotificationSystem ->> TaxiDriverApp: notifyCallRequest()
+	NotificationSystem ->> TaxiDriverApp: notifyCallRequest(taxiDriver, request)
 	
 	activate TaxiDriverApp
 	NotificationSystem <<-- TaxiDriverApp
 	
 	deactivate NotificationSystem
 	alt accept ride
-		TaxiDriverApp ->> RemoteServiceInterface: acceptRide()
+		TaxiDriverApp ->> RemoteServiceInterface: acceptRide(taxiDriver, request)
 		
 		activate RemoteServiceInterface
 		RemoteServiceInterface -->> TaxiDriverApp
-		RemoteServiceInterface ->> TaxiManagement: acceptRide()
+		RemoteServiceInterface ->> TaxiManagement: acceptRide(taxiDriver, request)
 		RemoteServiceInterface <<-- TaxiManagement
 		
 		deactivate RemoteServiceInterface
-		TaxiManagement -> TaxiManagement: setCurrentlyRiding(taxiDriver)
+		TaxiManagement -> TaxiManagement: setCurrentlyRiding(taxiDriver, request)
 		
 	else reject ride or taxi driver doesn't reply on time
-		TaxiDriverApp ->> RemoteServiceInterface: refuseRide()
+		TaxiDriverApp ->> RemoteServiceInterface: refuseRide(taxiDriver, request)
 		
 		activate RemoteServiceInterface
 		RemoteServiceInterface -->> TaxiDriverApp
-		RemoteServiceInterface ->> TaxiManagement: rideRefused()
+		RemoteServiceInterface ->> TaxiManagement: refuseRide(taxiDriver, request)
 		RemoteServiceInterface <<-- TaxiManagement
 		
 		deactivate RemoteServiceInterface
-		TaxiManagement -> TaxiManagement: enqueueTaxiDriver(zone)
+		TaxiManagement -> TaxiManagement: enqueueTaxiDriver(taxiDriver, zone)
 		
 	end
 end
@@ -89,7 +89,7 @@ alt result == true (i.e., a taxi driver accepted)
 	
 	deactivate TaxiDriverApp
 	deactivate NotificationSystem
-	RequestManagement -> NotificationSystem: notifyRequestConfirmation(passenger, request, secretCode)
+	RequestManagement ->> NotificationSystem: notifyRequestConfirmation(passenger, request, secretCode)
 
 	activate NotificationSystem
 	RequestManagement <<-- NotificationSystem
