@@ -146,11 +146,27 @@ The first picture represents a snapshot of the system during its execution. In t
 	\item The Load Balancing nodes are running instances of the Apache Web Server to redirect HTTP requests to different instances of the business logic nodes.
 \end{itemize}
 
-All the other pictures depict the flow of events (in particular method invocations) for the most important operations in the form of sequence diagrams. 
-
 \begin{landscape}
 \includepdf[scale=0.95,angle=90]{pdfs/runtime.pdf}
 \end{landscape}
+
+
+All the other pictures depict the flow of events (in particular method invocations) for the most important operations in the form of sequence diagrams. 
+
+To help clarifying the scope and meaning of each diagram, we'll provide a brief description of each one: 
+\begin{itemize}
+	\item sd\_administrative\_data\_insertion: illustrates how configuration data is inserted by the administration personnel at the first start of the system
+	\item sd\_reserve: describes how the taxi reservation procedure works
+	\item sd\_reservation\_allocation: shows how the system allocates a previously stored reservation, by converting it into a taxi request
+	\item sd\_request: illustrates how the system handles a taxi request coming from a passenger
+	\item sd\_allocate: shows how the system matches a request of a passenger with a taxi driver and how it notifies the passenger and the taxi driver about the event
+	\item sd\_show\_reservations: describes the procedure that allows a passenger to visualize all his past and pending reservations
+	\item sd\_zone\_update: shows how the system allows the administration personnel to update the information about the city zone division
+	\item sd\_drop\_call: illustrates how the system handles the call drop procedure
+	\item sd\_end\_ride: shows the procedure that is triggered when a taxi driver has ended a ride and has notified the system about it
+	\item sd\_taxi\_location\_changed: shows all the operations executed by the system to correctly handle the change of a taxi driver location
+	\item sd\_toggle: describes the operations that are triggered when a taxi driver changes his availability status using the toggle button in the mobile application
+\end{itemize}
 
 \begin{landscape}
 \includepdf[scale=0.95,angle=90]{pdfs/sequence/sd_administrative_data_insertion.pdf}
