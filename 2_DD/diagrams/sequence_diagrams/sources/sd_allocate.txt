@@ -1,0 +1,135 @@
+@startuml
+
+title sd_allocate
+
+activate RequestManagement
+RequestManagement -> LocationManagement: getZone(passengerLocation)
+
+activate LocationManagement
+LocationManagement --> RequestManagement: zone
+
+deactivate LocationManagement
+RequestManagement -> TaxiManagement: existsAvailableTaxiDriver(request, zone)
+
+activate TaxiManagement
+loop until a taxi driver accepts the call, or there are no more taxi drivers left
+	TaxiManagement -> TaxiManagement: dequeueTaxiDriver(zone)
+	
+	activate TaxiManagement
+	
+	deactivate TaxiManagement
+	TaxiManagement -> TaxiManagement: setPending(taxiDriver)
+	
+	activate TaxiManagement
+	
+	deactivate TaxiManagement
+	TaxiManagement ->> NotificationSystem: notifyCallRequest(taxiDriver, request)
+	
+	activate NotificationSystem
+	TaxiManagement <<-- NotificationSystem
+	NotificationSystem ->> TaxiDriverApp: notifyCallRequest(taxiDriver, request)
+	
+	activate TaxiDriverApp
+	NotificationSystem <<-- TaxiDriverApp
+	
+	deactivate NotificationSystem
+	alt accept ride
+		TaxiDriverApp ->> RemoteServiceInterface: acceptRide(taxiDriver, request)
+		
+		activate RemoteServiceInterface
+		RemoteServiceInterface -->> TaxiDriverApp
+		
+		RemoteServiceInterface ->> TaxiManagement: acceptRide(taxiDriver, request)
+		RemoteServiceInterface <<-- TaxiManagement
+		
+		deactivate RemoteServiceInterface
+		TaxiManagement -> TaxiManagement: setCurrentlyRiding(taxiDriver, request)
+		
+	else reject ride or taxi driver doesn't reply on time
+		TaxiDriverApp ->> RemoteServiceInterface: refuseRide(taxiDriver, request)
+		
+		activate RemoteServiceInterface
+		RemoteServiceInterface -->> TaxiDriverApp
+		RemoteServiceInterface ->> TaxiManagement: refuseRide(taxiDriver, request)
+		RemoteServiceInterface <<-- TaxiManagement
+		
+		deactivate RemoteServiceInterface
+		TaxiManagement -> TaxiManagement: enqueueTaxiDriver(taxiDriver, zone)
+	end
+	
+	deactivate TaxiDriverApp
+end
+TaxiManagement --> RequestManagement: result
+
+deactivate TaxiManagement
+alt successful allocation (i.e., a taxi driver accepted)
+		RequestManagement -> TaxiManagement: getAvailableTaxiDriver(request)
+		
+		activate TaxiManagement
+		RequestManagement <-- TaxiManagement: taxiDriver
+		
+		deactivate TaxiManagement
+		RequestManagement -> TaxiManagement: getETA(taxiDriver, passengerLocation)
+		
+		activate TaxiManagement
+		TaxiManagement -> MappingService: computeETA(passengerLocation, taxiDriverLocation)
+			
+		activate MappingService
+		TaxiManagement <-- MappingService: ETA
+			
+		deactivate MappingService
+		RequestManagement <-- TaxiManagement: ETA
+		
+		deactivate TaxiManagement
+		RequestManagement -> RequestManagement: generateSecretCode()
+		RequestManagement ->> NotificationSystem: notifyRequestConfirmation(taxiDriver, request, secretCode)
+		
+		activate NotificationSystem
+		RequestManagement <<-- NotificationSystem
+		NotificationSystem ->> TaxiDriverApp: confirmRide(secretCode)
+		
+		activate TaxiDriverApp
+		NotificationSystem <<-- TaxiDriverApp
+		
+		deactivate TaxiDriverApp
+		deactivate NotificationSystem
+		RequestManagement ->> NotificationSystem: notifyRequestConfirmation(passenger, request, secretCode)
+
+		activate NotificationSystem
+		RequestManagement <<-- NotificationSystem
+		NotificationSystem ->> PassengerApp: confirmRide(secretCode)
+		
+		activate PassengerApp
+		NotificationSystem <<-- PassengerApp
+		
+		deactivate PassengerApp
+		deactivate NotificationSystem
+		
+		RequestManagement -> DataAccessUtilities: insertReservation(...)
+			
+		activate DataAccessUtilities
+		DataAccessUtilities -> DBMS: insert(...)
+		
+		activate DBMS
+		DataAccessUtilities <-- DBMS
+		
+		deactivate DBMS
+		RequestManagement <-- DataAccessUtilities
+		
+		deactivate DataAccessUtilities
+	else result == false (i.e., no taxi driver accepted)
+		RequestManagement ->> NotificationSystem: notifyRequestRejection(passengerId)
+	
+		activate NotificationSystem
+		NotificationSystem ->> PassengerApp: notifyRequestRejection(passengerId)
+		
+		activate PassengerApp
+		NotificationSystem <<-- PassengerApp
+		
+		deactivate NotificationSystem
+		deactivate PassengerApp
+	end
+
+deactivate RequestManagement
+deactivate TaxiManagement
+@enduml

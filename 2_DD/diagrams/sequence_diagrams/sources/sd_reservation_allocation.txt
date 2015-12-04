@@ -2,16 +2,22 @@
 
 title sd_reservation_allocation
 
-ReservationManagement -> ReservationManagement: checkReservations()
-alt no reservation to be allocated
-	
-else some reservation must be allocated
+activate ReservationManagement
+ReservationManagement -> ReservationManagement: checkReservations()	
+opt some reservation must be allocated
 	loop for all reservations to be allocated
-		|||
+		ReservationManagement -> RequestManagement: allocateReservation(passengerId, passengerLocation, destination)
+		
+		activate RequestManagement
 		loop try every two minutes, up to 10 times
-			|||
-			ref over ReservationManagement, DataAccessUtilities, DBMS: sd_allocate
-			ReservationManagement -> ReservationManagement: setReservationAsDone()
+			ref over RequestManagement, DataAccessUtilities, DBMS: sd_allocate
+			RequestManagement --> ReservationManagement: allocationResult
+			alt successful allocation (i.e., a taxi driver accepted)
+				ReservationManagement -> ReservationManagement: setReservationAsDone()
+				
+			else
+				ReservationManagement -> ReservationManagement: deleteReservation()
+			end
 			ReservationManagement -> DataAccessUtilities: updateReservationList(...)
 			
 			activate DataAccessUtilities
@@ -24,7 +30,10 @@ else some reservation must be allocated
 			ReservationManagement <-- DataAccessUtilities
 			
 			deactivate DataAccessUtilities
-		end		
+		end
+		deactivate RequestManagement
 	end
 end
+
+deactivate ReservationManagement
 @enduml
