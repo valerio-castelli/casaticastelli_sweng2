@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.2)  3 DEC 2015 22:24
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.2)  4 DEC 2015 20:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -609,7 +609,7 @@ LaTeX Info: Redefining \nameref on input line 3.
 \makeMPintoPDFobject=\count131
 \everyMPtoPDFconversion=\toks26
 ) (./title/title_page.tex
-<title/polimi_logo.png, id=103, 419.31656pt x 417.81094pt>
+<title/polimi_logo.png, id=99, 419.31656pt x 417.81094pt>
 File: title/polimi_logo.png Graphic file (type png)
 
 <use title/polimi_logo.png>
@@ -664,7 +664,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [3]
 Chapter 2.
-<pdfs/overall_architecture.pdf, id=157, 626.34pt x 706.64pt>
+<pdfs/overall_architecture.pdf, id=152, 626.34pt x 706.64pt>
 File: pdfs/overall_architecture.pdf Graphic file (type pdf)
 
 <use pdfs/overall_architecture.pdf>
@@ -686,7 +686,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[6] <pdfs/overall_components.pdf, id=174, 1796.7125pt x 1043.9pt>
+[6] <pdfs/overall_components.pdf, id=169, 1796.7125pt x 1043.9pt>
 File: pdfs/overall_components.pdf Graphic file (type pdf)
 
 <use pdfs/overall_components.pdf>
@@ -711,7 +711,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[8] <pdfs/taxi_mgmt_component.pdf, id=187, 1696.3375pt x 1204.5pt>
+[8] <pdfs/taxi_mgmt_component.pdf, id=182, 1696.3375pt x 1204.5pt>
 File: pdfs/taxi_mgmt_component.pdf Graphic file (type pdf)
 
 <use pdfs/taxi_mgmt_component.pdf>
@@ -732,7 +732,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [10 <./pdfs/taxi_mgmt_component.pdf>]
-<pdfs/account_management_component.pdf, id=200, 1696.3375pt x 702.625pt>
+<pdfs/account_management_component.pdf, id=195, 1696.3375pt x 702.625pt>
 File: pdfs/account_management_component.pdf Graphic file (type pdf)
 
 <use pdfs/account_management_component.pdf>
@@ -747,7 +747,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [11 <./pdfs/account_management_component.pdf>]
-<pdfs/sysadmin_component.pdf, id=210, 1686.3pt x 782.925pt>
+<pdfs/sysadmin_component.pdf, id=205, 1686.3pt x 782.925pt>
 File: pdfs/sysadmin_component.pdf Graphic file (type pdf)
 
 <use pdfs/sysadmin_component.pdf>
@@ -767,7 +767,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[13] <pdfs/deployment.pdf, id=223, 3252.15pt x 1114.1625pt>
+[13] <pdfs/deployment.pdf, id=218, 3252.15pt x 1114.1625pt>
 File: pdfs/deployment.pdf Graphic file (type pdf)
 
 <use pdfs/deployment.pdf>
@@ -778,7 +778,7 @@ File: pdfs/deployment.pdf Graphic file (type pdf)
 Package pdftex.def Info: pdfs/deployment.pdf used on input line 133.
 (pdftex.def)             Requested size: 3252.1421pt x 1114.15979pt.
 
-<pdfs/deployment.pdf, id=226, page=1, 3252.15pt x 1114.1625pt>
+<pdfs/deployment.pdf, id=221, page=1, 3252.15pt x 1114.1625pt>
 File: pdfs/deployment.pdf Graphic file (type pdf)
 
 <use pdfs/deployment.pdf, page 1>
@@ -813,130 +813,591 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [15
 
-] <pdfs/runtime.pdf, id=242, 3252.15pt x 1134.2375pt>
+] <pdfs/runtime.pdf, id=237, 3252.15pt x 1134.2375pt>
 File: pdfs/runtime.pdf Graphic file (type pdf)
 
 <use pdfs/runtime.pdf>
-Package pdftex.def Info: pdfs/runtime.pdf used on input line 151.
+Package pdftex.def Info: pdfs/runtime.pdf used on input line 152.
 (pdftex.def)             Requested size: 3252.1421pt x 1134.23474pt.
 File: pdfs/runtime.pdf Graphic file (type pdf)
  <use pdfs/runtime.pdf>
-Package pdftex.def Info: pdfs/runtime.pdf used on input line 151.
+Package pdftex.def Info: pdfs/runtime.pdf used on input line 152.
 (pdftex.def)             Requested size: 3252.1421pt x 1134.23474pt.
 
-<pdfs/runtime.pdf, id=245, page=1, 3252.15pt x 1134.2375pt>
+<pdfs/runtime.pdf, id=240, page=1, 3252.15pt x 1134.2375pt>
 File: pdfs/runtime.pdf Graphic file (type pdf)
 
 <use pdfs/runtime.pdf, page 1>
-Package pdftex.def Info: pdfs/runtime.pdf, page1 used on input line 151.
+Package pdftex.def Info: pdfs/runtime.pdf, page1 used on input line 152.
 (pdftex.def)             Requested size: 3252.1421pt x 1134.23474pt.
 File: pdfs/runtime.pdf Graphic file (type pdf)
  <use pdfs/runtime.pdf, page 1>
-Package pdftex.def Info: pdfs/runtime.pdf, page1 used on input line 151.
+Package pdftex.def Info: pdfs/runtime.pdf, page1 used on input line 152.
 (pdftex.def)             Requested size: 3089.52507pt x 1077.51953pt.
 File: pdfs/runtime.pdf Graphic file (type pdf)
 
 <use pdfs/runtime.pdf, page 1>
-Package pdftex.def Info: pdfs/runtime.pdf, page1 used on input line 151.
+Package pdftex.def Info: pdfs/runtime.pdf, page1 used on input line 152.
 (pdftex.def)             Requested size: 3089.52507pt x 1077.51953pt.
 File: pdfs/runtime.pdf Graphic file (type pdf)
  <use pdfs/runtime.pdf, page 1>
-Package pdftex.def Info: pdfs/runtime.pdf, page1 used on input line 151.
+Package pdftex.def Info: pdfs/runtime.pdf, page1 used on input line 152.
 (pdftex.def)             Requested size: 3089.52507pt x 1077.51953pt.
 File: pdfs/runtime.pdf Graphic file (type pdf)
 
 <use pdfs/runtime.pdf, page 1>
-Package pdftex.def Info: pdfs/runtime.pdf, page1 used on input line 151.
+Package pdftex.def Info: pdfs/runtime.pdf, page1 used on input line 152.
 (pdftex.def)             Requested size: 3089.52507pt x 1077.51953pt.
  [16
 
  <./pdfs/runtime.pdf>]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[17
-
-]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[18]) (./chapters/others.tex
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[19]
-Chapter 3.
-[20
-
-]
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 33.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[21]
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 84.
- (/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
-File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+<pdfs/sequence/sd_administrative_data_insertion.pdf, id=252, 845.1575pt x 597.2
+3125pt>
+File: pdfs/sequence/sd_administrative_data_insertion.pdf Graphic file (type pdf
 )
-LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <9> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 84.
+ <use pdfs/sequence/sd_administrative_data_insertion.pdf>
+Package pdftex.def Info: pdfs/sequence/sd_administrative_data_insertion.pdf use
+d on input line 156.
+(pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
+File: pdfs/sequence/sd_administrative_data_insertion.pdf Graphic file (type pdf
+)
+
+<use pdfs/sequence/sd_administrative_data_insertion.pdf>
+Package pdftex.def Info: pdfs/sequence/sd_administrative_data_insertion.pdf use
+d on input line 156.
+(pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
+
+<pdfs/sequence/sd_administrative_data_insertion.pdf, id=255, page=1, 845.1575pt
+ x 597.23125pt>
+File: pdfs/sequence/sd_administrative_data_insertion.pdf Graphic file (type pdf
+)
+
+<use pdfs/sequence/sd_administrative_data_insertion.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_administrative_data_insertion.pdf, pa
+ge1 used on input line 156.
+(pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
+File: pdfs/sequence/sd_administrative_data_insertion.pdf Graphic file (type pdf
+)
+
+<use pdfs/sequence/sd_administrative_data_insertion.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_administrative_data_insertion.pdf, pa
+ge1 used on input line 156.
+(pdftex.def)             Requested size: 802.89508pt x 567.36647pt.
+File: pdfs/sequence/sd_administrative_data_insertion.pdf Graphic file (type pdf
+)
+
+<use pdfs/sequence/sd_administrative_data_insertion.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_administrative_data_insertion.pdf, pa
+ge1 used on input line 156.
+(pdftex.def)             Requested size: 802.89508pt x 567.36647pt.
+File: pdfs/sequence/sd_administrative_data_insertion.pdf Graphic file (type pdf
+)
+
+<use pdfs/sequence/sd_administrative_data_insertion.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_administrative_data_insertion.pdf, pa
+ge1 used on input line 156.
+(pdftex.def)             Requested size: 802.89508pt x 567.36647pt.
+File: pdfs/sequence/sd_administrative_data_insertion.pdf Graphic file (type pdf
+)
+
+<use pdfs/sequence/sd_administrative_data_insertion.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_administrative_data_insertion.pdf, pa
+ge1 used on input line 156.
+(pdftex.def)             Requested size: 802.89508pt x 567.36647pt.
+ [17
 
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
+ <./pdfs/sequence/sd_administrative_data_insertion.pdf>]
+<pdfs/sequence/sd_reserve.pdf, id=375, 845.1575pt x 597.23125pt>
+File: pdfs/sequence/sd_reserve.pdf Graphic file (type pdf)
 
-[22]
+<use pdfs/sequence/sd_reserve.pdf>
+Package pdftex.def Info: pdfs/sequence/sd_reserve.pdf used on input line 160.
+(pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
+File: pdfs/sequence/sd_reserve.pdf Graphic file (type pdf)
+ <use pdfs/sequence/sd_reserve.pdf>
+Package pdftex.def Info: pdfs/sequence/sd_reserve.pdf used on input line 160.
+(pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
+<pdfs/sequence/sd_reserve.pdf, id=378, page=1, 845.1575pt x 597.23125pt>
+File: pdfs/sequence/sd_reserve.pdf Graphic file (type pdf)
 
-[23]
+<use pdfs/sequence/sd_reserve.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_reserve.pdf, page1 used on input line
+ 160.
+(pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
+File: pdfs/sequence/sd_reserve.pdf Graphic file (type pdf)
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
+<use pdfs/sequence/sd_reserve.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_reserve.pdf, page1 used on input line
+ 160.
+(pdftex.def)             Requested size: 802.89508pt x 567.36647pt.
+File: pdfs/sequence/sd_reserve.pdf Graphic file (type pdf)
 
-[24]
+<use pdfs/sequence/sd_reserve.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_reserve.pdf, page1 used on input line
+ 160.
+(pdftex.def)             Requested size: 802.89508pt x 567.36647pt.
+File: pdfs/sequence/sd_reserve.pdf Graphic file (type pdf)
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
+<use pdfs/sequence/sd_reserve.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_reserve.pdf, page1 used on input line
+ 160.
+(pdftex.def)             Requested size: 802.89508pt x 567.36647pt.
+File: pdfs/sequence/sd_reserve.pdf Graphic file (type pdf)
 
-[25]
+<use pdfs/sequence/sd_reserve.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_reserve.pdf, page1 used on input line
+ 160.
+(pdftex.def)             Requested size: 802.89508pt x 567.36647pt.
+ [18
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
 
-[26]
+ <./pdfs/sequence/sd_reserve.pdf>]
+<pdfs/sequence/sd_reservation_allocation.pdf, id=432, 845.1575pt x 597.23125pt>
+File: pdfs/sequence/sd_reservation_allocation.pdf Graphic file (type pdf)
+<use pdfs/sequence/sd_reservation_allocation.pdf>
+Package pdftex.def Info: pdfs/sequence/sd_reservation_allocation.pdf used on in
+put line 164.
+(pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
+File: pdfs/sequence/sd_reservation_allocation.pdf Graphic file (type pdf)
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
+<use pdfs/sequence/sd_reservation_allocation.pdf>
+Package pdftex.def Info: pdfs/sequence/sd_reservation_allocation.pdf used on in
+put line 164.
+(pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
 
-[27]
+<pdfs/sequence/sd_reservation_allocation.pdf, id=435, page=1, 845.1575pt x 597.
+23125pt>
+File: pdfs/sequence/sd_reservation_allocation.pdf Graphic file (type pdf)
+ <use pdfs/sequence/sd_reservation_allocation.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_reservation_allocation.pdf, page1 use
+d on input line 164.
+(pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
+File: pdfs/sequence/sd_reservation_allocation.pdf Graphic file (type pdf)
+
+<use pdfs/sequence/sd_reservation_allocation.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_reservation_allocation.pdf, page1 use
+d on input line 164.
+(pdftex.def)             Requested size: 802.89508pt x 567.36647pt.
+File: pdfs/sequence/sd_reservation_allocation.pdf Graphic file (type pdf)
+
+<use pdfs/sequence/sd_reservation_allocation.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_reservation_allocation.pdf, page1 use
+d on input line 164.
+(pdftex.def)             Requested size: 802.89508pt x 567.36647pt.
+File: pdfs/sequence/sd_reservation_allocation.pdf Graphic file (type pdf)
+
+<use pdfs/sequence/sd_reservation_allocation.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_reservation_allocation.pdf, page1 use
+d on input line 164.
+(pdftex.def)             Requested size: 802.89508pt x 567.36647pt.
+File: pdfs/sequence/sd_reservation_allocation.pdf Graphic file (type pdf)
+
+<use pdfs/sequence/sd_reservation_allocation.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_reservation_allocation.pdf, page1 use
+d on input line 164.
+(pdftex.def)             Requested size: 802.89508pt x 567.36647pt.
+ [19
+
+
+ <./pdfs/sequence/sd_reservation_allocation.pdf>]
+<pdfs/sequence/sd_request.pdf, id=493, 845.1575pt x 597.23125pt>
+File: pdfs/sequence/sd_request.pdf Graphic file (type pdf)
+
+<use pdfs/sequence/sd_request.pdf>
+Package pdftex.def Info: pdfs/sequence/sd_request.pdf used on input line 168.
+(pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
+File: pdfs/sequence/sd_request.pdf Graphic file (type pdf)
+ <use pdfs/sequence/sd_request.pdf>
+Package pdftex.def Info: pdfs/sequence/sd_request.pdf used on input line 168.
+(pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
+
+<pdfs/sequence/sd_request.pdf, id=496, page=1, 845.1575pt x 597.23125pt>
+File: pdfs/sequence/sd_request.pdf Graphic file (type pdf)
+
+<use pdfs/sequence/sd_request.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_request.pdf, page1 used on input line
+ 168.
+(pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
+File: pdfs/sequence/sd_request.pdf Graphic file (type pdf)
+
+<use pdfs/sequence/sd_request.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_request.pdf, page1 used on input line
+ 168.
+(pdftex.def)             Requested size: 802.89508pt x 567.36647pt.
+File: pdfs/sequence/sd_request.pdf Graphic file (type pdf)
+
+<use pdfs/sequence/sd_request.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_request.pdf, page1 used on input line
+ 168.
+(pdftex.def)             Requested size: 802.89508pt x 567.36647pt.
+File: pdfs/sequence/sd_request.pdf Graphic file (type pdf)
+
+<use pdfs/sequence/sd_request.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_request.pdf, page1 used on input line
+ 168.
+(pdftex.def)             Requested size: 802.89508pt x 567.36647pt.
+File: pdfs/sequence/sd_request.pdf Graphic file (type pdf)
+
+<use pdfs/sequence/sd_request.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_request.pdf, page1 used on input line
+ 168.
+(pdftex.def)             Requested size: 802.89508pt x 567.36647pt.
+ [20
+
+
+ <./pdfs/sequence/sd_request.pdf>] <pdfs/sequence/sd_allocate.pdf, id=546, 845.
+1575pt x 597.23125pt>
+File: pdfs/sequence/sd_allocate.pdf Graphic file (type pdf)
+
+<use pdfs/sequence/sd_allocate.pdf>
+Package pdftex.def Info: pdfs/sequence/sd_allocate.pdf used on input line 172.
+(pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
+File: pdfs/sequence/sd_allocate.pdf Graphic file (type pdf)
+ <use pdfs/sequence/sd_allocate.pdf>
+Package pdftex.def Info: pdfs/sequence/sd_allocate.pdf used on input line 172.
+(pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
+
+<pdfs/sequence/sd_allocate.pdf, id=549, page=1, 845.1575pt x 597.23125pt>
+File: pdfs/sequence/sd_allocate.pdf Graphic file (type pdf)
+
+<use pdfs/sequence/sd_allocate.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_allocate.pdf, page1 used on input lin
+e 172.
+(pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
+File: pdfs/sequence/sd_allocate.pdf Graphic file (type pdf)
+
+<use pdfs/sequence/sd_allocate.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_allocate.pdf, page1 used on input lin
+e 172.
+(pdftex.def)             Requested size: 802.89508pt x 567.36647pt.
+File: pdfs/sequence/sd_allocate.pdf Graphic file (type pdf)
+
+<use pdfs/sequence/sd_allocate.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_allocate.pdf, page1 used on input lin
+e 172.
+(pdftex.def)             Requested size: 802.89508pt x 567.36647pt.
+File: pdfs/sequence/sd_allocate.pdf Graphic file (type pdf)
+
+<use pdfs/sequence/sd_allocate.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_allocate.pdf, page1 used on input lin
+e 172.
+(pdftex.def)             Requested size: 802.89508pt x 567.36647pt.
+File: pdfs/sequence/sd_allocate.pdf Graphic file (type pdf)
+
+<use pdfs/sequence/sd_allocate.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_allocate.pdf, page1 used on input lin
+e 172.
+(pdftex.def)             Requested size: 802.89508pt x 567.36647pt.
+ [21
+
+
+ <./pdfs/sequence/sd_allocate.pdf>] <pdfs/sequence/sd_show_reservations.pdf, id
+=717, 845.1575pt x 597.23125pt>
+File: pdfs/sequence/sd_show_reservations.pdf Graphic file (type pdf)
+
+<use pdfs/sequence/sd_show_reservations.pdf>
+Package pdftex.def Info: pdfs/sequence/sd_show_reservations.pdf used on input l
+ine 176.
+(pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
+File: pdfs/sequence/sd_show_reservations.pdf Graphic file (type pdf)
+
+<use pdfs/sequence/sd_show_reservations.pdf>
+Package pdftex.def Info: pdfs/sequence/sd_show_reservations.pdf used on input l
+ine 176.
+(pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
+
+<pdfs/sequence/sd_show_reservations.pdf, id=720, page=1, 845.1575pt x 597.23125
+pt>
+File: pdfs/sequence/sd_show_reservations.pdf Graphic file (type pdf)
+ <use pdfs/sequence/sd_show_reservations.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_show_reservations.pdf, page1 used on 
+input line 176.
+(pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
+File: pdfs/sequence/sd_show_reservations.pdf Graphic file (type pdf)
+
+<use pdfs/sequence/sd_show_reservations.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_show_reservations.pdf, page1 used on 
+input line 176.
+(pdftex.def)             Requested size: 802.89508pt x 567.36647pt.
+File: pdfs/sequence/sd_show_reservations.pdf Graphic file (type pdf)
+
+<use pdfs/sequence/sd_show_reservations.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_show_reservations.pdf, page1 used on 
+input line 176.
+(pdftex.def)             Requested size: 802.89508pt x 567.36647pt.
+File: pdfs/sequence/sd_show_reservations.pdf Graphic file (type pdf)
+
+<use pdfs/sequence/sd_show_reservations.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_show_reservations.pdf, page1 used on 
+input line 176.
+(pdftex.def)             Requested size: 802.89508pt x 567.36647pt.
+File: pdfs/sequence/sd_show_reservations.pdf Graphic file (type pdf)
+
+<use pdfs/sequence/sd_show_reservations.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_show_reservations.pdf, page1 used on 
+input line 176.
+(pdftex.def)             Requested size: 802.89508pt x 567.36647pt.
+ [22
+
+
+ <./pdfs/sequence/sd_show_reservations.pdf>]
+<pdfs/sequence/sd_zone_update.pdf, id=760, 845.1575pt x 597.23125pt>
+File: pdfs/sequence/sd_zone_update.pdf Graphic file (type pdf)
+
+<use pdfs/sequence/sd_zone_update.pdf>
+Package pdftex.def Info: pdfs/sequence/sd_zone_update.pdf used on input line 18
+0.
+(pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
+File: pdfs/sequence/sd_zone_update.pdf Graphic file (type pdf)
+ <use pdfs/sequence/sd_zone_update.pdf>
+Package pdftex.def Info: pdfs/sequence/sd_zone_update.pdf used on input line 18
+0.
+(pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
+
+<pdfs/sequence/sd_zone_update.pdf, id=763, page=1, 845.1575pt x 597.23125pt>
+File: pdfs/sequence/sd_zone_update.pdf Graphic file (type pdf)
+
+<use pdfs/sequence/sd_zone_update.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_zone_update.pdf, page1 used on input 
+line 180.
+(pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
+File: pdfs/sequence/sd_zone_update.pdf Graphic file (type pdf)
+
+<use pdfs/sequence/sd_zone_update.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_zone_update.pdf, page1 used on input 
+line 180.
+(pdftex.def)             Requested size: 802.89508pt x 567.36647pt.
+File: pdfs/sequence/sd_zone_update.pdf Graphic file (type pdf)
+
+<use pdfs/sequence/sd_zone_update.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_zone_update.pdf, page1 used on input 
+line 180.
+(pdftex.def)             Requested size: 802.89508pt x 567.36647pt.
+File: pdfs/sequence/sd_zone_update.pdf Graphic file (type pdf)
+
+<use pdfs/sequence/sd_zone_update.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_zone_update.pdf, page1 used on input 
+line 180.
+(pdftex.def)             Requested size: 802.89508pt x 567.36647pt.
+File: pdfs/sequence/sd_zone_update.pdf Graphic file (type pdf)
+
+<use pdfs/sequence/sd_zone_update.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_zone_update.pdf, page1 used on input 
+line 180.
+(pdftex.def)             Requested size: 802.89508pt x 567.36647pt.
+ [23
+
+
+ <./pdfs/sequence/sd_zone_update.pdf>] <pdfs/sequence/sd_drop_call.pdf, id=843,
+ 845.1575pt x 597.23125pt>
+File: pdfs/sequence/sd_drop_call.pdf Graphic file (type pdf)
+
+<use pdfs/sequence/sd_drop_call.pdf>
+Package pdftex.def Info: pdfs/sequence/sd_drop_call.pdf used on input line 184.
+
+(pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
+File: pdfs/sequence/sd_drop_call.pdf Graphic file (type pdf)
+ <use pdfs/sequence/sd_drop_call.pdf>
+Package pdftex.def Info: pdfs/sequence/sd_drop_call.pdf used on input line 184.
+
+(pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
+
+<pdfs/sequence/sd_drop_call.pdf, id=846, page=1, 845.1575pt x 597.23125pt>
+File: pdfs/sequence/sd_drop_call.pdf Graphic file (type pdf)
+
+<use pdfs/sequence/sd_drop_call.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_drop_call.pdf, page1 used on input li
+ne 184.
+(pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
+File: pdfs/sequence/sd_drop_call.pdf Graphic file (type pdf)
+
+<use pdfs/sequence/sd_drop_call.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_drop_call.pdf, page1 used on input li
+ne 184.
+(pdftex.def)             Requested size: 802.89508pt x 567.36647pt.
+File: pdfs/sequence/sd_drop_call.pdf Graphic file (type pdf)
+
+<use pdfs/sequence/sd_drop_call.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_drop_call.pdf, page1 used on input li
+ne 184.
+(pdftex.def)             Requested size: 802.89508pt x 567.36647pt.
+File: pdfs/sequence/sd_drop_call.pdf Graphic file (type pdf)
+
+<use pdfs/sequence/sd_drop_call.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_drop_call.pdf, page1 used on input li
+ne 184.
+(pdftex.def)             Requested size: 802.89508pt x 567.36647pt.
+File: pdfs/sequence/sd_drop_call.pdf Graphic file (type pdf)
+
+<use pdfs/sequence/sd_drop_call.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_drop_call.pdf, page1 used on input li
+ne 184.
+(pdftex.def)             Requested size: 802.89508pt x 567.36647pt.
+ [24
+
+
+ <./pdfs/sequence/sd_drop_call.pdf>] <pdfs/sequence/sd_end_ride.pdf, id=965, 84
+5.1575pt x 597.23125pt>
+File: pdfs/sequence/sd_end_ride.pdf Graphic file (type pdf)
+
+<use pdfs/sequence/sd_end_ride.pdf>
+Package pdftex.def Info: pdfs/sequence/sd_end_ride.pdf used on input line 188.
+(pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
+File: pdfs/sequence/sd_end_ride.pdf Graphic file (type pdf)
+ <use pdfs/sequence/sd_end_ride.pdf>
+Package pdftex.def Info: pdfs/sequence/sd_end_ride.pdf used on input line 188.
+(pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
+
+<pdfs/sequence/sd_end_ride.pdf, id=968, page=1, 845.1575pt x 597.23125pt>
+File: pdfs/sequence/sd_end_ride.pdf Graphic file (type pdf)
+
+<use pdfs/sequence/sd_end_ride.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_end_ride.pdf, page1 used on input lin
+e 188.
+(pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
+File: pdfs/sequence/sd_end_ride.pdf Graphic file (type pdf)
+
+<use pdfs/sequence/sd_end_ride.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_end_ride.pdf, page1 used on input lin
+e 188.
+(pdftex.def)             Requested size: 802.89508pt x 567.36647pt.
+File: pdfs/sequence/sd_end_ride.pdf Graphic file (type pdf)
+
+<use pdfs/sequence/sd_end_ride.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_end_ride.pdf, page1 used on input lin
+e 188.
+(pdftex.def)             Requested size: 802.89508pt x 567.36647pt.
+File: pdfs/sequence/sd_end_ride.pdf Graphic file (type pdf)
+
+<use pdfs/sequence/sd_end_ride.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_end_ride.pdf, page1 used on input lin
+e 188.
+(pdftex.def)             Requested size: 802.89508pt x 567.36647pt.
+File: pdfs/sequence/sd_end_ride.pdf Graphic file (type pdf)
+
+<use pdfs/sequence/sd_end_ride.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_end_ride.pdf, page1 used on input lin
+e 188.
+(pdftex.def)             Requested size: 802.89508pt x 567.36647pt.
+ [25
+
+
+ <./pdfs/sequence/sd_end_ride.pdf>]
+<pdfs/sequence/sd_taxi_location_changed.pdf, id=1055, 597.23125pt x 845.1575pt>
+File: pdfs/sequence/sd_taxi_location_changed.pdf Graphic file (type pdf)
+<use pdfs/sequence/sd_taxi_location_changed.pdf>
+Package pdftex.def Info: pdfs/sequence/sd_taxi_location_changed.pdf used on inp
+ut line 191.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: pdfs/sequence/sd_taxi_location_changed.pdf Graphic file (type pdf)
+
+<use pdfs/sequence/sd_taxi_location_changed.pdf>
+Package pdftex.def Info: pdfs/sequence/sd_taxi_location_changed.pdf used on inp
+ut line 191.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+
+<pdfs/sequence/sd_taxi_location_changed.pdf, id=1058, page=1, 597.23125pt x 845
+.1575pt>
+File: pdfs/sequence/sd_taxi_location_changed.pdf Graphic file (type pdf)
+ <use pdfs/sequence/sd_taxi_location_changed.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_taxi_location_changed.pdf, page1 used
+ on input line 191.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: pdfs/sequence/sd_taxi_location_changed.pdf Graphic file (type pdf)
+
+<use pdfs/sequence/sd_taxi_location_changed.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_taxi_location_changed.pdf, page1 used
+ on input line 191.
+(pdftex.def)             Requested size: 567.36647pt x 802.89508pt.
+File: pdfs/sequence/sd_taxi_location_changed.pdf Graphic file (type pdf)
+
+<use pdfs/sequence/sd_taxi_location_changed.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_taxi_location_changed.pdf, page1 used
+ on input line 191.
+(pdftex.def)             Requested size: 567.36647pt x 802.89508pt.
+File: pdfs/sequence/sd_taxi_location_changed.pdf Graphic file (type pdf)
+
+<use pdfs/sequence/sd_taxi_location_changed.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_taxi_location_changed.pdf, page1 used
+ on input line 191.
+(pdftex.def)             Requested size: 567.36647pt x 802.89508pt.
+File: pdfs/sequence/sd_taxi_location_changed.pdf Graphic file (type pdf)
+
+<use pdfs/sequence/sd_taxi_location_changed.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_taxi_location_changed.pdf, page1 used
+ on input line 191.
+(pdftex.def)             Requested size: 567.36647pt x 802.89508pt.
+ [26
+
+ <./pdfs/sequence/sd_taxi_location_changed.pdf>]
+<pdfs/sequence/sd_toggle.pdf, id=1232, 597.23125pt x 845.1575pt>
+File: pdfs/sequence/sd_toggle.pdf Graphic file (type pdf)
+
+<use pdfs/sequence/sd_toggle.pdf>
+Package pdftex.def Info: pdfs/sequence/sd_toggle.pdf used on input line 193.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: pdfs/sequence/sd_toggle.pdf Graphic file (type pdf)
+ <use pdfs/sequence/sd_toggle.pdf>
+Package pdftex.def Info: pdfs/sequence/sd_toggle.pdf used on input line 193.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+
+<pdfs/sequence/sd_toggle.pdf, id=1235, page=1, 597.23125pt x 845.1575pt>
+File: pdfs/sequence/sd_toggle.pdf Graphic file (type pdf)
+
+<use pdfs/sequence/sd_toggle.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_toggle.pdf, page1 used on input line 
+193.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: pdfs/sequence/sd_toggle.pdf Graphic file (type pdf)
+
+<use pdfs/sequence/sd_toggle.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_toggle.pdf, page1 used on input line 
+193.
+(pdftex.def)             Requested size: 567.36647pt x 802.89508pt.
+File: pdfs/sequence/sd_toggle.pdf Graphic file (type pdf)
+
+<use pdfs/sequence/sd_toggle.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_toggle.pdf, page1 used on input line 
+193.
+(pdftex.def)             Requested size: 567.36647pt x 802.89508pt.
+File: pdfs/sequence/sd_toggle.pdf Graphic file (type pdf)
+
+<use pdfs/sequence/sd_toggle.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_toggle.pdf, page1 used on input line 
+193.
+(pdftex.def)             Requested size: 567.36647pt x 802.89508pt.
+File: pdfs/sequence/sd_toggle.pdf Graphic file (type pdf)
+
+<use pdfs/sequence/sd_toggle.pdf, page 1>
+Package pdftex.def Info: pdfs/sequence/sd_toggle.pdf, page1 used on input line 
+193.
+(pdftex.def)             Requested size: 567.36647pt x 802.89508pt.
+ [27 <./pdfs/sequence/sd_toggle.pdf>]
+Overfull \hbox (21.21257pt too wide) in paragraph at lines 203--205
+\OT1/cmr/m/n/10.95 com-po-nents can in-ter-act with the Reser-va-tion-Man-age-m
+ent sub-component.
+ []
+
+
+Overfull \hbox (0.17235pt too wide) in paragraph at lines 208--210
+[]\OT1/cmr/m/n/10.95 The \OT1/cmr/bx/n/10.95 IRe-quest-Man-age-ment \OT1/cmr/m/
+n/10.95 in-ter-face, which rep-re-sents the way com-
+ []
+
+
+Overfull \hbox (0.68129pt too wide) in paragraph at lines 211--212
+[]\OT1/cmr/m/n/10.95 requestTaxi(passengerId, pas-sen-ger-Loca-tion, des-ti-na-
+tion): im-ple-
+ []
+
+
+Overfull \hbox (3.30368pt too wide) in paragraph at lines 213--215
+[]\OT1/cmr/m/n/10.95 The \OT1/cmr/bx/n/10.95 ILo-ca-tion-Man-age-ment \OT1/cmr/
+m/n/10.95 in-ter-face, which rep-re-sents the way com-
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -944,10 +1405,23 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [28]
-Chapter 4.
-[29
+Overfull \hbox (1.94391pt too wide) in paragraph at lines 240--242
+[]\OT1/cmr/m/n/10.95 The \OT1/cmr/bx/n/10.95 IZone-Di-vi-sion-Man-age-ment \OT1
+/cmr/m/n/10.95 in-ter-face, which rep-re-sents the way
+ []
 
-]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[29]
+Overfull \hbox (21.79047pt too wide) in paragraph at lines 247--249
+\OT1/cmr/m/n/10.95 com-po-nents can in-ter-act with the Taxi Driver Man-age-men
+t sub-component.
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -955,16 +1429,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [30]
-Chapter 5.
 
-Overfull \hbox (0.93993pt too wide) in paragraph at lines 364--365
-[]\OT1/cmr/m/n/10.95 The \OT1/cmr/bx/n/10.95 Ad-min-is-tra-tion Web Ap-pli-ca-t
-ion \OT1/cmr/m/n/10.95 com-po-nent, which pro-
- []
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
 
-[31
-
-]
+[31]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -979,13 +1450,177 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [33]
-Overfull \hbox (19.77887pt too wide) in paragraph at lines 410--411
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[34]) (./chapters/others.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[35]
+Chapter 3.
+[36
+
+]
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 33.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[37]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[38]
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 98.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
+File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <9> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 98.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[39]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[40]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[41]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[42]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[43]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[44]
+Chapter 4.
+[45
+
+] <images/sketches/Admin_Home.png, id=1800, 875.27pt x 512.91624pt>
+File: images/sketches/Admin_Home.png Graphic file (type png)
+
+<use images/sketches/Admin_Home.png>
+Package pdftex.def Info: images/sketches/Admin_Home.png used on input line 375.
+
+(pdftex.def)             Requested size: 450.0pt x 263.70479pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[46 <./images/sketches/Admin_Home.png>]
+<images/sketches/Admin_Insert_Taxi_Driver.png, id=1807, 875.27pt x 512.91624pt>
+File: images/sketches/Admin_Insert_Taxi_Driver.png Graphic file (type png)
+<use images/sketches/Admin_Insert_Taxi_Driver.png>
+Package pdftex.def Info: images/sketches/Admin_Insert_Taxi_Driver.png used on i
+nput line 381.
+(pdftex.def)             Requested size: 450.0pt x 263.70479pt.
+
+<images/sketches/Admin_Taxi_Drivers_List.png, id=1808, 875.27pt x 512.91624pt>
+File: images/sketches/Admin_Taxi_Drivers_List.png Graphic file (type png)
+
+<use images/sketches/Admin_Taxi_Drivers_List.png>
+Package pdftex.def Info: images/sketches/Admin_Taxi_Drivers_List.png used on in
+put line 387.
+(pdftex.def)             Requested size: 450.0pt x 263.70479pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[47 <./images/sketches/Admin_Insert_Taxi_Driver.png> <./images/sketches/Admin_T
+axi_Drivers_List.png>]
+<images/sketches/Admin_Zone_Update.png, id=1816, 875.27pt x 512.91624pt>
+File: images/sketches/Admin_Zone_Update.png Graphic file (type png)
+
+<use images/sketches/Admin_Zone_Update.png>
+Package pdftex.def Info: images/sketches/Admin_Zone_Update.png used on input li
+ne 394.
+(pdftex.def)             Requested size: 450.0pt x 263.70479pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[48 <./images/sketches/Admin_Zone_Update.png>]
+Chapter 5.
+
+Overfull \hbox (0.93993pt too wide) in paragraph at lines 408--409
+[]\OT1/cmr/m/n/10.95 The \OT1/cmr/bx/n/10.95 Ad-min-is-tra-tion Web Ap-pli-ca-t
+ion \OT1/cmr/m/n/10.95 com-po-nent, which pro-
+ []
+
+[49
+
+]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[50]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[51]
+Overfull \hbox (19.77887pt too wide) in paragraph at lines 454--455
 []\OT1/cmr/m/n/10.95 Req. 9.8 is han-dled by the Lo-ca-tion Man-age-ment sub-co
 mponent,
  []
 
 
-Overfull \hbox (4.24606pt too wide) in paragraph at lines 411--412
+Overfull \hbox (4.24606pt too wide) in paragraph at lines 455--456
 \OT1/cmr/m/n/10.95 pend-ing re-quest, by the Re-quest Man-age-ment sub-componen
 t. 
  []
@@ -996,15 +1631,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[34]
+[52]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[35]
-Overfull \hbox (10.56667pt too wide) in paragraph at lines 446--447
+[53]
+Overfull \hbox (10.56667pt too wide) in paragraph at lines 490--491
 \OT1/cmr/m/n/10.95 Taxi Man-age-ment and Re-quest Man-age-ment sub-components w
 hich
  []
@@ -1015,22 +1650,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[36]
+[54]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[37]
-Chapter 6.
-[38
-
-]
+[55]
 Appendix A.
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 15.
- [39
+ [56
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 15.
@@ -1038,14 +1669,14 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 15.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 15.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 15.
 Package rerunfilecheck Info: File `2_DD.out' has not changed.
-(rerunfilecheck)             Checksum: 44A99FC35A60B5F2242917D6EC37834C;1576.
+(rerunfilecheck)             Checksum: 26009D9C8C5B418A3AAF3189055C365A;1530.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 15.
  ) 
 Here is how much of TeX's memory you used:
- 9484 strings out of 494967
- 136622 string characters out of 6179868
- 452033 words of memory out of 5000000
- 12202 multiletter control sequences out of 15000+600000
+ 9642 strings out of 494967
+ 141487 string characters out of 6179868
+ 454033 words of memory out of 5000000
+ 12296 multiletter control sequences out of 15000+600000
  10924 words of font info for 38 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
  44i,21n,51p,1418b,1891s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1060,9 +1691,9 @@ ublic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
 9.pfb>
-Output written on 2_DD.pdf (41 pages, 503903 bytes).
+Output written on 2_DD.pdf (58 pages, 2230263 bytes).
 PDF statistics:
- 759 PDF objects out of 1000 (max. 8388607)
- 357 named destinations out of 1000 (max. 500000)
- 271 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1974 PDF objects out of 2073 (max. 8388607)
+ 393 named destinations out of 1000 (max. 500000)
+ 503 words of extra memory for PDF output out of 10000 (max. 10000000)
 
