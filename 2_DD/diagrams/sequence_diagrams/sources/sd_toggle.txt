@@ -58,8 +58,10 @@ else status == unavailable
 	TaxiManagement -> LocationManagement: isLocationInsideCity(currentLocation)
 	
 	activate LocationManagement
+	TaxiManagement <-- LocationManagement
+	
+	deactivate LocationManagement
 	alt true
-		TaxiManagement <-- LocationManagement: true
 		TaxiManagement -> TaxiManagement: setAvailable(taxiDriverId)
 		
 		activate TaxiManagement
@@ -88,24 +90,11 @@ else status == unavailable
 	TaxiManagement <-- DataAccessUtilities
 	
 	deactivate DataAccessUtilities
-		TaxiManagement ->> NotificationSystem: confirmAvailability(taxiDriverId)
-		
-		activate NotificationSystem
-		TaxiManagement <<-- NotificationSystem
-		NotificationSystem ->> TaxiDriverApp: confirmAvailability(taxiDriverId)
-		NotificationSystem <<-- TaxiDriverApp
-		
-		deactivate NotificationSystem
+		TaxiManagement --> RemoteServicesInterface
+		RemoteServicesInterface --> TaxiDriverApp
 	else false
-		TaxiManagement <-- LocationManagement: false
-		TaxiManagement ->> NotificationSystem: rejectAvailabilityChange(taxiDriverId)
-		
-		activate NotificationSystem
-		TaxiManagement <<-- NotificationSystem
-		NotificationSystem ->> TaxiDriverApp: rejectAvailabilityChange(taxiDriverId)
-		NotificationSystem <<-- TaxiDriverApp
-		
-		deactivate NotificationSystem
+		TaxiManagement --> RemoteServicesInterface
+		RemoteServicesInterface --> TaxiDriverApp
 	end
 else status == outside_city
 	TaxiManagement -> TaxiManagement: removeTaxiFromOutsideCityList(taxiDriverId)
@@ -140,16 +129,12 @@ else status == outside_city
 	TaxiManagement <-- DataAccessUtilities
 	
 	deactivate DataAccessUtilities
-	TaxiManagement ->> NotificationSystem: confirm()
-		
-	activate NotificationSystem
-	TaxiManagement <<-- NotificationSystem
-	NotificationSystem ->> TaxiDriverApp: confirm()
-	NotificationSystem <<-- TaxiDriverApp
-		
-	deactivate NotificationSystem
+	TaxiManagement --> RemoteServicesInterface
+	RemoteServicesInterface --> TaxiDriverApp
 end
+
 deactivate LocationManagement
 deactivate TaxiManagement
 deactivate TaxiDriverApp
+
 @enduml
