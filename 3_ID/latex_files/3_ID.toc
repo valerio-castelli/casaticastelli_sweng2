@@ -1,2 +1,4 @@
 \select@language {english}
-\contentsline {chapter}{Appendix \numberline {A}Hours of work}{1}{Appendix.1.A}
+\contentsline {chapter}{\numberline {1}Chapter}{1}{chapter.1}
+\contentsline {chapter}{Appendix \numberline {A}Checklist}{2}{Appendix.1.A}
+\contentsline {chapter}{Appendix \numberline {B}Hours of work}{8}{Appendix.1.B}
