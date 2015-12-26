@@ -72,3 +72,11 @@
   morecomment=[s]{/*}{*/},%
   morecomment=[l]//,
 }
+
+% To insert code in the text
+%\newcommand{\code}[1]{\texttt{#1}}
+%\newcommand{\code}[1]{
+%\lstset{
+%  rulecolor=\color{red}
+%}\lstinline|#1|}
+\newcommand{\code}[1]{{\color{blue}{#1}}}
