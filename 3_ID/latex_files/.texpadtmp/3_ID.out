@@ -1,6 +1,10 @@
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
 \BOOKMARK [0][-]{chapter.2}{Functional Role}{}% 2
-\BOOKMARK [0][-]{chapter.3}{Checklist issues}{}% 3
-\BOOKMARK [0][-]{chapter.4}{Other Problems}{}% 4
-\BOOKMARK [0][-]{Appendix.1.A}{Appendix Checklist}{}% 5
-\BOOKMARK [0][-]{Appendix.1.B}{Appendix Hours of work}{}% 6
+\BOOKMARK [0][-]{chapter.3}{Code issues}{}% 3
+\BOOKMARK [1][-]{section.3.1}{Notation}{chapter.3}% 4
+\BOOKMARK [1][-]{section.3.2}{Checklist issues}{chapter.3}% 5
+\BOOKMARK [2][-]{subsection.3.2.1}{ActiveJmsResourceAdapter class}{section.3.2}% 6
+\BOOKMARK [2][-]{subsection.3.2.2}{createManagedConnectionFactory method}{section.3.2}% 7
+\BOOKMARK [0][-]{chapter.4}{Other Problems}{}% 8
+\BOOKMARK [0][-]{Appendix.1.A}{Appendix Checklist}{}% 9
+\BOOKMARK [0][-]{Appendix.1.B}{Appendix Hours of work}{}% 10
