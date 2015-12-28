@@ -7,6 +7,6 @@
 \contentsline {subsection}{\numberline {3.2.1}ActiveJmsResourceAdapter class}{7}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}createManagedConnectionFactory method}{10}{subsection.3.2.2}
 \contentsline {subsection}{\numberline {3.2.3}createManagedConnectionFactories method}{13}{subsection.3.2.3}
-\contentsline {chapter}{\numberline {4}Other Problems}{14}{chapter.4}
-\contentsline {chapter}{Appendix \numberline {A}Checklist}{15}{Appendix.1.A}
-\contentsline {chapter}{Appendix \numberline {B}Hours of work}{21}{Appendix.1.B}
+\contentsline {chapter}{\numberline {4}Other Problems}{16}{chapter.4}
+\contentsline {chapter}{Appendix \numberline {A}Checklist}{17}{Appendix.1.A}
+\contentsline {chapter}{Appendix \numberline {B}Hours of work}{23}{Appendix.1.B}
