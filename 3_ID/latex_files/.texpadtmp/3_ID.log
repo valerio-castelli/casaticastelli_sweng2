@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.21)  28 DEC 2015 16:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.21)  28 DEC 2015 20:39
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -553,7 +553,7 @@ LaTeX Info: Redefining \nameref on input line 3.
 \MPnumerator=\count130
 \makeMPintoPDFobject=\count131
 \everyMPtoPDFconversion=\toks26
-) (./title/title_page.tex <title/polimi_logo.png, id=44, 419.31656pt x 417.81094pt>
+) (./title/title_page.tex <title/polimi_logo.png, id=48, 419.31656pt x 417.81094pt>
 File: title/polimi_logo.png Graphic file (type png)
  <use title/polimi_logo.png>
 Package pdftex.def Info: title/polimi_logo.png used on input line 3.
@@ -596,7 +596,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 11.
  [2
 
-] <images/jms-programmingModel.png, id=86, 438.63875pt x 337.26pt>
+] <images/jms-programmingModel.png, id=91, 438.63875pt x 337.26pt>
 File: images/jms-programmingModel.png Graphic file (type png)
  <use images/jms-programmingModel.png>
 Package pdftex.def Info: images/jms-programmingModel.png used on input line 25.
@@ -634,132 +634,132 @@ Chapter 3.
 [7
 
 ]
-Overfull \hbox (28.42145pt too wide) in paragraph at lines 23--24
+Overfull \hbox (28.42145pt too wide) in paragraph at lines 24--25
 \OT1/cmr/m/n/10.95 L.756(123), L.794(130), L.1355(137), L.1358(136), L.1841(131), L.1922(125),
  []
 
 
-Overfull \hbox (39.37146pt too wide) in paragraph at lines 23--24
+Overfull \hbox (39.37146pt too wide) in paragraph at lines 24--25
 \OT1/cmr/m/n/10.95 L.1958(141), L.2008(132), L.2021(141), L.2140(130), L.2262(125), L.2285(149),
  []
 
 
-Overfull \hbox (39.37146pt too wide) in paragraph at lines 23--24
+Overfull \hbox (39.37146pt too wide) in paragraph at lines 24--25
 \OT1/cmr/m/n/10.95 L.2290(132), L.2296(131), L.2320(126), L.2333(145), L.2334(129), L.2340(135),
  []
 
 
-Overfull \hbox (39.37146pt too wide) in paragraph at lines 23--24
+Overfull \hbox (39.37146pt too wide) in paragraph at lines 24--25
 \OT1/cmr/m/n/10.95 L.2342(125), L.2349(129), L.2361(129), L.2364(125), L.2369(149), L.2396(135),
  []
 
 
-Overfull \hbox (39.37146pt too wide) in paragraph at lines 23--24
+Overfull \hbox (39.37146pt too wide) in paragraph at lines 24--25
 \OT1/cmr/m/n/10.95 L.2410(133), L.2412(135), L.2443(123), L.2474(128), L.2590(135), L.2605(131). 
  []
 
 
-Overfull \hbox (15.61597pt too wide) in paragraph at lines 29--30
+Overfull \hbox (15.61597pt too wide) in paragraph at lines 30--31
 []\OT1/cmr/m/n/10.95 public static String get-Bro-kerIn-stan-ce-Name(JmsService js)[] at L.1137 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
 [][]\OT1/cmr/m/n/10.95 oss far
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
 \OT1/cmr/m/n/10.95 no-tare
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
 \OT1/cmr/m/n/10.95 questa
  []
 
 
-Underfull \hbox (badness 1348) in paragraph at lines 31--31
+Underfull \hbox (badness 1348) in paragraph at lines 32--32
 \OT1/cmr/m/n/10.95 bad prac-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
 \OT1/cmr/m/n/10.95 tice di
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
 \OT1/cmr/m/n/10.95 ri-tornare
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
 \OT1/cmr/m/n/10.95 vari-abili
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
 [][]\OT1/cmr/m/n/10.95 ci sono
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
 \OT1/cmr/m/n/10.95 ton-nel-late
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
 \OT1/cmr/m/n/10.95 des-ti-na-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
 \OT1/cmr/m/n/10.95 uguali
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
 \OT1/cmr/m/n/10.95 a cui
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
 \OT1/cmr/m/n/10.95 cam-biano
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
 \OT1/cmr/m/n/10.95 solo i
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
 \OT1/cmr/m/n/10.95 parametri,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
 \OT1/cmr/m/n/10.95 da con-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
 \OT1/cmr/m/n/10.95 trol-lare
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
 \OT1/cmr/m/n/10.95 pi^^Ru a
  []
 
 
-Overfull \hbox (3.83728pt too wide) in paragraph at lines 31--32
+Overfull \hbox (3.83728pt too wide) in paragraph at lines 32--33
 \OT1/cmr/m/n/10.95 TARE QUESTA BAD PRAC-TICE DI RI-TORNARE VARI-ABILI
  []
 
 
-Overfull \hbox (6.04495pt too wide) in paragraph at lines 31--32
+Overfull \hbox (6.04495pt too wide) in paragraph at lines 32--33
 \OT1/cmr/m/n/10.95 PRI-VATECI SONO TON-NEL-LATE DI GETJMS-DES-TI-NA-TION
  []
 
@@ -770,38 +770,37 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [8]
-Overfull \hbox (4.97015pt too wide) in paragraph at lines 38--39
+
+LaTeX Warning: Marginpar on page 9 moved.
+
+
+Overfull \hbox (4.97015pt too wide) in paragraph at lines 39--40
 []\OT1/cmr/m/n/10.95 public void val-i-date-Ac-ti-va-tion-Spec(ActivationSpec spec)[] at L.1165 
  []
 
 
-Underfull \hbox (badness 3861) in paragraph at lines 45--45
+Underfull \hbox (badness 3861) in paragraph at lines 46--46
 \OT1/cmr/m/n/10.95 one more
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--45
+Underfull \hbox (badness 10000) in paragraph at lines 46--46
 \OT1/cmr/m/n/10.95 thor-
  []
 
 
-Overfull \hbox (50.57072pt too wide) in paragraph at lines 57--58
+Overfull \hbox (50.57072pt too wide) in paragraph at lines 58--59
 \OT1/cmr/m/n/10.95 tion-Fac-to-ries (com.sun.enterprise.connectors.ConnectorConnectionPool
  []
 
 
-Overfull \hbox (9.93405pt too wide) in paragraph at lines 59--60
+Overfull \hbox (9.93405pt too wide) in paragraph at lines 60--61
 []\OT1/cmr/m/n/10.95 public Man-aged-Con-nec-tion-Fac-tory cre-ate-M-an-aged-Con-nec-tion-
  []
 
 
-Overfull \hbox (22.8307pt too wide) in paragraph at lines 59--60
+Overfull \hbox (22.8307pt too wide) in paragraph at lines 60--61
 \OT1/cmr/m/n/10.95 Fac-tory(com.sun.enterprise.connectors.ConnectorConnectionPool
- []
-
-
-Overfull \hbox (20.002pt too wide) in paragraph at lines 60--61
-[]\OT1/cmr/m/n/10.95 public void up-dateMD-BRun-time-Info(EjbMessageBeanDescriptor
  []
 
 
@@ -811,13 +810,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [9]
-Overfull \hbox (73.12378pt too wide) in paragraph at lines 72--73
-\OT1/cmr/m/n/10.95 turn an []Ob-ject[] ob-ject which is not store nor used. In prac-tice, s[]setMethodAction.run()[]
+Overfull \hbox (20.002pt too wide) in paragraph at lines 61--62
+[]\OT1/cmr/m/n/10.95 public void up-dateMD-BRun-time-Info(EjbMessageBeanDescriptor
  []
 
 
-Overfull \hbox (89.5894pt too wide) in paragraph at lines 73--74
-\OT1/cmr/m/n/10.95 tions to the set re-turned by []cpr.getConnectorDescriptorInfo().getMCFConfigProperties()[],
+Overfull \hbox (2.29321pt too wide) in paragraph at lines 69--70
+[]\OT1/cmr/bx/n/10.95 C30 \OT1/cmr/m/n/10.95 The in-vo-ca-tion []con-fig-Prop-er-ties.toArray()[] at L.2014 doesn't check
  []
 
 
@@ -827,27 +826,43 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [10]
-Overfull \hbox (97.22377pt too wide) in paragraph at lines 82--83
+Overfull \hbox (73.12378pt too wide) in paragraph at lines 77--78
+\OT1/cmr/m/n/10.95 turn an []Ob-ject[] ob-ject which is not store nor used. In prac-tice, s[]setMethodAction.run()[]
+ []
+
+
+Overfull \hbox (89.5894pt too wide) in paragraph at lines 78--79
+\OT1/cmr/m/n/10.95 tions to the set re-turned by []cpr.getConnectorDescriptorInfo().getMCFConfigProperties()[],
+ []
+
+
+Overfull \hbox (97.22377pt too wide) in paragraph at lines 87--88
 []\OT1/cmr/bx/n/10.95 C44 []\OT1/cmr/m/n/10.95 !"".equals(prop.getValue())[] at L.1987 should be re-placed by []!prop.getValue.isEmpty()[],
  []
 
 
-Overfull \hbox (26.1401pt too wide) in paragraph at lines 83--84
+Overfull \hbox (26.1401pt too wide) in paragraph at lines 88--89
 []\OT1/cmr/m/n/10.95 prop-erty.getValue().isEmpty())[] and []"lo-cal-host".equals(property.getValue())[]
  []
 
 
-Overfull \hbox (0.89429pt too wide) in paragraph at lines 84--85
+Overfull \hbox (0.89429pt too wide) in paragraph at lines 89--90
 \OT1/cmr/m/n/10.95 fact that []cpr.getConnectorDescriptorInfo().getMCFConfigProperties()[]
  []
 
 
-Overfull \hbox (83.41478pt too wide) in paragraph at lines 84--85
+Overfull \hbox (83.41478pt too wide) in paragraph at lines 89--90
 \OT1/cmr/m/n/10.95 re-turns a generic []Set[] ob-ject in-stead of a more ap-pro-pri-ate []Set<ConnectorConfigProperty>[]
  []
 
 
-Overfull \hbox (2.26297pt too wide) in paragraph at lines 87--88
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[11]
+Overfull \hbox (2.26297pt too wide) in paragraph at lines 92--93
 []\OT1/cmr/m/n/10.95 The in-vo-ca-tion []con-fig-Prop-er-ties.toArray()[] at L.2014 doesn't check
  []
 
@@ -857,16 +872,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[11]) (./chapters/other_problems.tex
+[12]) (./chapters/other_problems.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[12]
+[13]
 Chapter 4.
-) (./chapters/checklist.tex [13
+) (./chapters/checklist.tex [14
 
 ]
 Appendix A.
@@ -880,7 +895,7 @@ Overfull \hbox (15.43097pt too wide) in paragraph at lines 9--10
 \OT1/cmr/m/n/10.95 word cap-i-tal-ized. Ex-am-ples: \OT1/cmtt/m/n/10.95 getBackground()\OT1/cmr/m/n/10.95 ; \OT1/cmtt/m/n/10.95 computeTemperature()\OT1/cmr/m/n/10.95 . 
  []
 
-[14
+[15
 
 ]
 
@@ -889,14 +904,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[15]
+[16]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16]
+[17]
 LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 103.
 LaTeX Font Info:    No file OMScmtt.fd. on input line 103.
 
@@ -911,7 +926,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[17]
+[18]
 Overfull \hbox (23.7937pt too wide) in paragraph at lines 129--130
 []$\OT1/cmtt/m/n/10.95 http : / / users . csc . calpoly . edu / []jdalbey / SWE / CodeSmells / bonehead .
  []
@@ -927,18 +942,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[18]) (./chapters/hours_of_work.tex
+[19]) (./chapters/hours_of_work.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[19]
+[20]
 Appendix B.
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 25.
- [20
+ [21
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 25.
@@ -954,18 +969,18 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 25.
  ) 
 Here is how much of TeX's memory you used:
- 8812 strings out of 493089
- 128879 string characters out of 6134841
- 255035 words of memory out of 5000000
- 11980 multiletter control sequences out of 15000+600000
+ 8821 strings out of 493089
+ 128968 string characters out of 6134841
+ 256035 words of memory out of 5000000
+ 11981 multiletter control sequences out of 15000+600000
  11259 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  32i,12n,43p,1040b,678s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on /Users/Valerio/GitHub/casaticastelli_sweng2/3_ID/latex_files/.texpadtmp/3_ID.pdf (22 pages, 260214 bytes).
+Output written on /Users/Valerio/GitHub/casaticastelli_sweng2/3_ID/latex_files/.texpadtmp/3_ID.pdf (23 pages, 261793 bytes).
 PDF statistics:
- 367 PDF objects out of 1000 (max. 8388607)
- 327 compressed objects within 4 object streams
- 161 named destinations out of 1000 (max. 500000)
- 91 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 384 PDF objects out of 1000 (max. 8388607)
+ 343 compressed objects within 4 object streams
+ 169 named destinations out of 1000 (max. 500000)
+ 99 words of extra memory for PDF output out of 10000 (max. 10000000)
 

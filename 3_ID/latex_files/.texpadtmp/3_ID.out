@@ -5,6 +5,7 @@
 \BOOKMARK [1][-]{section.3.2}{Checklist issues}{chapter.3}% 5
 \BOOKMARK [2][-]{subsection.3.2.1}{ActiveJmsResourceAdapter class}{section.3.2}% 6
 \BOOKMARK [2][-]{subsection.3.2.2}{createManagedConnectionFactory method}{section.3.2}% 7
-\BOOKMARK [0][-]{chapter.4}{Other Problems}{}% 8
-\BOOKMARK [0][-]{Appendix.1.A}{Appendix Checklist}{}% 9
-\BOOKMARK [0][-]{Appendix.1.B}{Appendix Hours of work}{}% 10
+\BOOKMARK [2][-]{subsection.3.2.3}{createManagedConnectionFactories method}{section.3.2}% 8
+\BOOKMARK [0][-]{chapter.4}{Other Problems}{}% 9
+\BOOKMARK [0][-]{Appendix.1.A}{Appendix Checklist}{}% 10
+\BOOKMARK [0][-]{Appendix.1.B}{Appendix Hours of work}{}% 11

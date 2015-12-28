@@ -19,6 +19,7 @@ This chapter highlights all the bad practices that we have recognized during the
 	\item \checklist{5} The name of method \code{listToProperties} at \codeline{1101} is not a verb. The same is valid for method \code{postConstruct} at \codeline{342} and for method \code{postRAConfiguration} at \codeline{860}.
 	\item \checklist{7} There is a huge number of constants which do not follow the naming convention at \codelines{166}{202}, \codelines{207}{211}, \codeline{213}, \codelines{233}{237}, \codeline{242}, \codeline{246}, \codelines{262}{264}. 
 	\item \checklist{8} and \checklist{9} are not followed consistently throughout the code. Most of the class uses four spaces indentation, but tabs are also occasionally used as at \codeline{357}, \codeline{493}, \codelines{537}{556}, \codelines{992}{997}, \codelines{1008-1010}, \codelines{1026}{1030}, \codelines{1102}{1112}, \codelines{1351}{1357}, \codelines{1976}{1978}. 
+	\item \checklist{10} Method \code{public void postConstruct()} at \codeline{340} doesn't follow the bracing style used throughout the rest of the class.
 	\item \checklist{11} There are a number of single-line \code{if} statements that do not follow the convention. It would be very time consuming to enumerate them all, but at \codeline{1245}, \codeline{1254}, \codeline{1303}, \codeline{1307} there are a few examples of this behavior. 
 	\item \checklist{14} There are a number of occurrences in which the line length exceeds the 120 character limit: at \codeline{153}(130), \codeline{423}(134), \codeline{604}(169), \codeline{756}(123), \codeline{794}(130), \codeline{1355}(137), \codeline{1358}(136), \codeline{1841}(131), \codeline{1922}(125), \codeline{1958}(141), \codeline{2008}(132), \codeline{2021}(141), \codeline{2140}(130), \codeline{2262}(125), \codeline{2285}(149), \codeline{2290}(132), \codeline{2296}(131), \codeline{2320}(126), \codeline{2333}(145), \codeline{2334}(129), \codeline{2340}(135), \codeline{2342}(125), \codeline{2349}(129), \codeline{2361}(129), \codeline{2364}(125), \codeline{2369}(149), \codeline{2396}(135), \codeline{2410}(133), \codeline{2412}(135), \codeline{2443}(123), \codeline{2474}(128), \codeline{2590}(135), \codeline{2605}(131).
 	\item \checklist{18} Some methods don't have an explanation of what they're supposed to do. Also, large pieces of code are left uncommented or only have extremely brief explanations of their purpose. 
@@ -65,6 +66,10 @@ This chapter highlights all the bad practices that we have recognized during the
 
 \subsection{createManagedConnectionFactory method}
 \begin{enumerate}
+	\item \checklist{30} The invocation \code{configProperties.toArray()} at \codeline{2014} doesn't check if \code{configProperties} is not null.
+	\item \checklist{30} The assignment \code{Iterator it = s.iterator()} at \codeline{1980} should check that \code{Set s} is not null to avoid raising an unhandled \code{NullPointerException}. 
+	\item \checklist{30} The assignment \code{String propName = prop.getName()} at \codeline{1983} should check that \code{prop} is not null to avoid raising an unhandled \code{NullPointerException}. Since the collection is not accessed in a thread-safe way, the returned item could be null, resulting in a dangerous situation. For the same reason, the \code{propName} variable itself should be checked. 
+	\item \checklist{30} The \code{if} statements at \codeline{2020}{2021} should verify that \code{property} is not null before accessing it. 
 	\item \checklist{33} Attribute \code{moduleName} is declared in \codeline{2009} which is not at the beginning of a block. 
 	\item \checklist{33} Attribute \code{setMethodAction} is declared in \codeline{2028} which is not at the beginning of a block.
 	\item \checklist{36} The invocation of a method via java reflection returns an \code{Object} object which is not stored nor used. This may be coherent with the expected behavior of the setProperty(String, String) method which is found via reflection, but it's worth checking. 
@@ -92,3 +97,13 @@ This chapter highlights all the bad practices that we have recognized during the
 	\item \checklist{53} The \code{catch()} clauses at \codeline{1994}, \codeline{1999} and \codeline{2031} are not properly handling the error, limiting themselves to logging it. This is probably necessary given the fact that the caught exceptions are not under the developer's control as they mostly depend on invocation of methods obtained by reflection; however possible improvements should be considered for those exceptions that are raised by the code that the developer has written (as mentioned in point 11 of this list), even by just improving the content of the error messages. 
 	\item \checklist{56} The \code{while} loop at \codelines{1981}{2006} could behave strangely if set over which it's iterating is modified by a concurrent thread. It should be isolated and executed in a synchronized way. 
 	\end{enumerate}
+	
+	
+\subsection{createManagedConnectionFactories method}
+\begin{enumerate}
+	\item \checklist{30} There are a number of accesses to variables which could be null. In particular:
+		\begin{itemize}
+			\item 
+		\end{itemize} 
+\end{enumerate}
+
