@@ -45,6 +45,7 @@ This chapter highlights all the bad practices that we have recognized during the
 	\item \checklist{26} \note{WE SHOULD CHECK THIS ONE MORE THOROUGHLY}
 	\item \checklist{27} Issues:
 		\begin{itemize}
+			\item This class is probably too long, counting 2612 lines of code (including comments). It should probably be refactored to be more manageable. 
 			\item There are a number of methods which seem to be too long and should probably be split. They are:
 				\begin{itemize}
 				\item \code{private void setAvailabilityProperties()} at \codelines{582}{762}
@@ -57,10 +58,37 @@ This chapter highlights all the bad practices that we have recognized during the
 				\item \code{public ManagedConnectionFactory createManagedConnectionFactory(com.sun.enterprise.connectors.ConnectorConnectionPool cpr,
                    ClassLoader loader)} at \codelines{1970}{2046}
                 \item \code{public void updateMDBRuntimeInfo(EjbMessageBeanDescriptor descriptor\_, BeanPoolDescriptor poolDescriptor)} at \codelines{2064}{2223}                     
-				\end{itemize} 
-				
-         		
+				\end{itemize}        
+		\item \checklist{44} Constants at \codelines{268}{271} should probably be refactored as a single enum with four different values. 	
 		\end{itemize}
 \end{enumerate}
 
 \subsection{createManagedConnectionFactory method}
+\begin{enumerate}
+	\item \checklist{33} Attribute \code{moduleName} is declared in \codeline{2009} which is not at the beginning of a block. 
+	\item \checklist{33} Attribute \code{setMethodAction} is declared in \codeline{2028} which is not at the beginning of a block.
+	\item \checklist{36} The invocation of a method via java reflection returns an \code{Object} object which is not stored nor used. This may be coherent with the expected behavior of the setProperty(String, String) method which is found via reflection, but it's worth checking. 
+	\item \checklist{36} Method \code{configProperties.remove(property)} at \codeline{2023} could return \code{false} if the specified \code{property} is not present in the \code{configProperties} set. In practice this shouldn't happen if threads are managed correctly, as \code{property} is an item of the array obtained by invoking \code{configProperties.toArray()}, however it would probably be a good idea to put an extra check. 
+	\item \checklist{36} Method \code{setMethodAction.run()} at \codeline{2030} could potentially return an \code{Object} object which is not store nor used. In practice, s\code{setMethodAction.run()} always return null, so this is not particularly significant; however, it highlights a bad design decision, as \code{setMethodAction.run()} should probably be a void method instead. 
+	\item \checklist{37} and \checklist{38} The usage of an iterator at \codelines{1979}{1982} is potentially not thread safe. A different thread could attempt to make modifications to the set returned by \code{cpr.getConnectorDescriptorInfo().getMCFConfigProperties()}, producing an inconsistent state. 
+	\item \checklist{42} Error messages could be more informative. Given the way they're written, they seem to be intended mostly to be read and interpreted by the same developer who has written the code, which in general is not the case. In particular:
+		\begin{itemize}
+			\item The error message at \codelines{1995}{1997} says that the setter method could not be found, but it could be even clearer by also specifying that the error has been raised while trying to perform java reflection on a ManagedConnectionFactory object. We think this could be an important information to give to developers for troubleshooting purposes, as we would expect to be able to invoke the setProperty(String, String) method if a non-null imq property is specified for the given ManagedConnectionFactory. 
+			\item The error message at \codelines{2000}{2002} is marked as "severe", but doesn't actually report what kind of exception has been raised. 
+			\item The log message at \codeline{2022} is not sufficiently informative. It suggests that something could be wrong if the \code{addressList} property is null, empty or set to localhost, but it doesn't actually say why that should be the case in the message. 
+			\item The error messages at \codelines{2034}{2039} could probably be unified. 
+			\item All error messages should probably be put in constants somewhere for better maintainability. 
+		\end{itemize}
+	\item \checklist{44} \code{!"".equals(prop.getValue())} at \codeline{1987} should be replaced by \code{!prop.getValue.isEmpty()}, which is more understandable and readable.
+	\item \checklist{44} \code{"".equals(property.getValue())} at \codeline{2021} should be refactored as \code{property.getValue().isEmpty())} and \code{"localhost".equals(property.getValue())} should be refactored as \code{property.getValue().equals("localhost")}. Also, \code{"localhost"} should be a constant. 
+	\item \checklist{44} The whole block of code at \codelines{2013}{2027} is a workaround to the fact that \code{cpr.getConnectorDescriptorInfo().getMCFConfigProperties()} returns a generic \code{Set} object instead of a more appropriate \code{Set<ConnectorConfigProperty>} using generics. Because of this, the developer has to manually convert the \code{Set} into an \code{Array} of \code{Object} objects and then manually test that they are actually instances of \code{ConnectorConfigProperty}. This is a terrible design decision and should be refactored.  
+	\item \checklist{50} The whole try-catch block at \codelines{2012}{2041} is badly designed. 
+		\begin{itemize}
+			\item The invocation \code{configProperties.toArray()} at \codeline{2014} doesn't check if \code{configProperties} is not null. This could result in an unnecessary \code{NullPointerException}. 
+			\item The typecast at \codeline{2019} could result in a \code{ClassCastException} being raised if someone has messed around in inappropriate ways with the \code{configProperties} collection. This modification should not be allowed by design, instead of being caught this way. 
+		\end{itemize}
+	\item \checklist{52} The \code{catch(Exception ex)} clause at \codeline{1999} is very generic. This could be appropriate for the context as it may be difficult to predict all possible exceptions of the setProperty(String, String) method, supposing that this method can be developed in many different ways depending on the specific ManagedConnectionFactory implementation (in fact, it's not explicitly defined by the interface); however, it is still useful to highlight this, as maybe it could be further refined depending on the exact nature of the object we are expecting to deal with. 
+	\item \checklist{52} The \code{catch(Exception ex)} clause at \codeline{2031} is similarly bound to be generic in order to handle the possible exceptions raised by \code{setMethodAction.run()} at \codeline{2030}. However, it could be refined to properly catch exceptions mentioned in point 11 of this list. 
+	\item \checklist{53} The \code{catch()} clauses at \codeline{1994}, \codeline{1999} and \codeline{2031} are not properly handling the error, limiting themselves to logging it. This is probably necessary given the fact that the caught exceptions are not under the developer's control as they mostly depend on invocation of methods obtained by reflection; however possible improvements should be considered for those exceptions that are raised by the code that the developer has written (as mentioned in point 11 of this list), even by just improving the content of the error messages. 
+	\item \checklist{56} The \code{while} loop at \codelines{1981}{2006} could behave strangely if set over which it's iterating is modified by a concurrent thread. It should be isolated and executed in a synchronized way. 
+	\end{enumerate}
