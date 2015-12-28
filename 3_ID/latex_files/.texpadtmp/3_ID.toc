@@ -5,7 +5,7 @@
 \contentsline {section}{\numberline {3.1}Notation}{7}{section.3.1}
 \contentsline {section}{\numberline {3.2}Checklist issues}{7}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}ActiveJmsResourceAdapter class}{7}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}createManagedConnectionFactory method}{8}{subsection.3.2.2}
-\contentsline {chapter}{\numberline {4}Other Problems}{9}{chapter.4}
-\contentsline {chapter}{Appendix \numberline {A}Checklist}{10}{Appendix.1.A}
-\contentsline {chapter}{Appendix \numberline {B}Hours of work}{16}{Appendix.1.B}
+\contentsline {subsection}{\numberline {3.2.2}createManagedConnectionFactory method}{10}{subsection.3.2.2}
+\contentsline {chapter}{\numberline {4}Other Problems}{11}{chapter.4}
+\contentsline {chapter}{Appendix \numberline {A}Checklist}{12}{Appendix.1.A}
+\contentsline {chapter}{Appendix \numberline {B}Hours of work}{18}{Appendix.1.B}

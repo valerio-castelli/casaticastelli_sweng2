@@ -20,6 +20,47 @@ This chapter highlights all the bad practices that we have recognized during the
 	\item \checklist{7} There is a huge number of constants which do not follow the naming convention at \codelines{166}{202}, \codelines{207}{211}, \codeline{213}, \codelines{233}{237}, \codeline{242}, \codeline{246}, \codelines{262}{264}. 
 	\item \checklist{8} and \checklist{9} are not followed consistently throughout the code. Most of the class uses four spaces indentation, but tabs are also occasionally used as at \codeline{357}, \codeline{493}, \codelines{537}{556}, \codelines{992}{997}, \codelines{1008-1010}, \codelines{1026}{1030}, \codelines{1102}{1112}, \codelines{1351}{1357}, \codelines{1976}{1978}. 
 	\item \checklist{11} There are a number of single-line \code{if} statements that do not follow the convention. It would be very time consuming to enumerate them all, but at \codeline{1245}, \codeline{1254}, \codeline{1303}, \codeline{1307} there are a few examples of this behavior. 
+	\item \checklist{14} There are a number of occurrences in which the line length exceeds the 120 character limit: at \codeline{153}(130), \codeline{423}(134), \codeline{604}(169), \codeline{756}(123), \codeline{794}(130), \codeline{1355}(137), \codeline{1358}(136), \codeline{1841}(131), \codeline{1922}(125), \codeline{1958}(141), \codeline{2008}(132), \codeline{2021}(141), \codeline{2140}(130), \codeline{2262}(125), \codeline{2285}(149), \codeline{2290}(132), \codeline{2296}(131), \codeline{2320}(126), \codeline{2333}(145), \codeline{2334}(129), \codeline{2340}(135), \codeline{2342}(125), \codeline{2349}(129), \codeline{2361}(129), \codeline{2364}(125), \codeline{2369}(149), \codeline{2396}(135), \codeline{2410}(133), \codeline{2412}(135), \codeline{2443}(123), \codeline{2474}(128), \codeline{2590}(135), \codeline{2605}(131).
+	\item \checklist{18} Some methods don't have an explanation of what they're supposed to do. Also, large pieces of code are left uncommented or only have extremely brief explanations of their purpose. 
+	\item \checklist{19} None of the occurrences of commented out code contains an explanation as to why it has been commented out. 
+	\item \checklist{23} Javadoc is not complete. In particular, the following public methods are not documented: 
+		\begin{itemize}
+		\item \code{public int getAddressListCount()} at \codeline{2512}
+		\item \code{public static String getBrokerInstanceName(JmsService js)} at \codeline{1137}
+		\item \code{public boolean getDoBind()} at \codeline{1534}
+		\item \code{public Set<String> getGrizzlyListeners()} at \codeline{441} OSS FAR NOTARE QUESTA BAD PRACTICE DI RITORNARE VARIABILI PRIVATE // altra osservazione: ci sono tonnellate di getJMSDestination tutte uguali a cui cambiano solo i parametri, da controllare più a fondo
+		\item \code{public void handleRequest(SelectableChannel selectableChannel)} at \codeline{2556}
+		\item \code{public boolean handles(ConnectorDescriptor cd, String moduleName)} at \codeline{1161} (questo poi è proprio controintuitivo, da segnalare)
+		\item \code{public boolean initializeService()} at \codeline{2541}
+		\item \code{public void postConstruct()} at \codeline{342}
+		\item \code{public void setMasterBroker(String newMasterBroker)} at \codeline{2581}
+		\item \code{public void setup()} at \codeline{562}
+		\item \code{public void validateActivationSpec(ActivationSpec spec)} at \codeline{1165}
+		\end{itemize}
+	\item \checklist{25} There are a number of issues in the order of declarations:
+		\begin{itemize}
+			\item Static variables are not listed in order of visibility. Package level and protected static variables are not used, however private and public static variables are mixed together. See \codelines{156}{246}, \codelines{262}{271}, \codelines{276}{291} for reference.
+			\item Instance variables are interleaved with static variables instead of being declared all at once after them. See \codelines{250}{259}, \codeline{273}, \codelines{295}{332} for reference. 
+		\end{itemize}
+	\item \checklist{26} WE SHOULD CHECK THIS ONE MORE THOROUGHLY
+	\item \checklist{27} Issues:
+		\begin{itemize}
+			\item There are a number of methods which seem to be too long and should probably be split. They are:
+				\begin{itemize}
+				\item \code{private void setAvailabilityProperties()} at \codelines{582}{762}
+				\item \code{private void loadDBProperties(JmsAvailability jmsAvailability, ClusterMode clusterMode)} at \codelines{764}{828}
+				\item \code{private void setLifecycleProperties()} at \codelines{919}{1099}
+				\item \code{private void setJmsServiceProperties(JmsService service)} at \codelines{1601}{1673}
+				\item \code{public ManagedConnectionFactory [] createManagedConnectionFactories
+        (com.sun.enterprise.connectors.ConnectorConnectionPool cpr,
+         ClassLoader loader)} at \codelines{1860}{1941}
+				\item \code{public ManagedConnectionFactory createManagedConnectionFactory(com.sun.enterprise.connectors.ConnectorConnectionPool cpr,
+                   ClassLoader loader)} at \codelines{1970}{2046}
+                \item \code{public void updateMDBRuntimeInfo(EjbMessageBeanDescriptor descriptor\_, BeanPoolDescriptor poolDescriptor)} at \codelines{2064}{2223}                     
+				\end{itemize} 
+				
+         		
+		\end{itemize}
 \end{enumerate}
 
 \subsection{createManagedConnectionFactory method}
