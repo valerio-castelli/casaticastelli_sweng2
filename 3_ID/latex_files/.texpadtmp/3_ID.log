@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.21)  28 DEC 2015 20:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.21)  28 DEC 2015 21:30
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -640,22 +640,22 @@ Overfull \hbox (28.42145pt too wide) in paragraph at lines 24--25
 
 
 Overfull \hbox (39.37146pt too wide) in paragraph at lines 24--25
-\OT1/cmr/m/n/10.95 L.1958(141), L.2008(132), L.2021(141), L.2140(130), L.2262(125), L.2285(149),
+\OT1/cmr/m/n/10.95 L.1958(141), L.2005(132), L.2018(141), L.2137(130), L.2259(125), L.2282(149),
  []
 
 
 Overfull \hbox (39.37146pt too wide) in paragraph at lines 24--25
-\OT1/cmr/m/n/10.95 L.2290(132), L.2296(131), L.2320(126), L.2333(145), L.2334(129), L.2340(135),
+\OT1/cmr/m/n/10.95 L.2287(132), L.2293(131), L.2317(126), L.2330(145), L.2331(129), L.2337(135),
  []
 
 
 Overfull \hbox (39.37146pt too wide) in paragraph at lines 24--25
-\OT1/cmr/m/n/10.95 L.2342(125), L.2349(129), L.2361(129), L.2364(125), L.2369(149), L.2396(135),
+\OT1/cmr/m/n/10.95 L.2339(125), L.2346(129), L.2358(129), L.2361(125), L.2366(149), L.2393(135),
  []
 
 
 Overfull \hbox (39.37146pt too wide) in paragraph at lines 24--25
-\OT1/cmr/m/n/10.95 L.2410(133), L.2412(135), L.2443(123), L.2474(128), L.2590(135), L.2605(131). 
+\OT1/cmr/m/n/10.95 L.2407(133), L.2409(135), L.2440(123), L.2471(128), L.2587(135), L.2602(131). 
  []
 
 
@@ -775,7 +775,7 @@ LaTeX Warning: Marginpar on page 9 moved.
 
 
 Overfull \hbox (4.97015pt too wide) in paragraph at lines 39--40
-[]\OT1/cmr/m/n/10.95 public void val-i-date-Ac-ti-va-tion-Spec(ActivationSpec spec)[] at L.1165 
+[]\OT1/cmr/m/n/10.95 public void val-i-date-Ac-ti-va-tion-Spec(ActivationSpec spec)[] at L.1162 
  []
 
 
@@ -815,8 +815,8 @@ Overfull \hbox (20.002pt too wide) in paragraph at lines 61--62
  []
 
 
-Overfull \hbox (2.29321pt too wide) in paragraph at lines 69--70
-[]\OT1/cmr/bx/n/10.95 C30 \OT1/cmr/m/n/10.95 The in-vo-ca-tion []con-fig-Prop-er-ties.toArray()[] at L.2014 doesn't check
+Overfull \hbox (2.29321pt too wide) in paragraph at lines 72--73
+[]\OT1/cmr/bx/n/10.95 C30 \OT1/cmr/m/n/10.95 The in-vo-ca-tion []con-fig-Prop-er-ties.toArray()[] at L.2011 doesn't check
  []
 
 
@@ -826,33 +826,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [10]
-Overfull \hbox (73.12378pt too wide) in paragraph at lines 77--78
+Overfull \hbox (73.12378pt too wide) in paragraph at lines 80--81
 \OT1/cmr/m/n/10.95 turn an []Ob-ject[] ob-ject which is not store nor used. In prac-tice, s[]setMethodAction.run()[]
  []
 
 
-Overfull \hbox (89.5894pt too wide) in paragraph at lines 78--79
+Overfull \hbox (89.5894pt too wide) in paragraph at lines 81--82
 \OT1/cmr/m/n/10.95 tions to the set re-turned by []cpr.getConnectorDescriptorInfo().getMCFConfigProperties()[],
  []
 
 
-Overfull \hbox (97.22377pt too wide) in paragraph at lines 87--88
-[]\OT1/cmr/bx/n/10.95 C44 []\OT1/cmr/m/n/10.95 !"".equals(prop.getValue())[] at L.1987 should be re-placed by []!prop.getValue.isEmpty()[],
- []
-
-
-Overfull \hbox (26.1401pt too wide) in paragraph at lines 88--89
-[]\OT1/cmr/m/n/10.95 prop-erty.getValue().isEmpty())[] and []"lo-cal-host".equals(property.getValue())[]
- []
-
-
-Overfull \hbox (0.89429pt too wide) in paragraph at lines 89--90
-\OT1/cmr/m/n/10.95 fact that []cpr.getConnectorDescriptorInfo().getMCFConfigProperties()[]
- []
-
-
-Overfull \hbox (83.41478pt too wide) in paragraph at lines 89--90
-\OT1/cmr/m/n/10.95 re-turns a generic []Set[] ob-ject in-stead of a more ap-pro-pri-ate []Set<ConnectorConfigProperty>[]
+Overfull \hbox (97.22377pt too wide) in paragraph at lines 90--91
+[]\OT1/cmr/bx/n/10.95 C44 []\OT1/cmr/m/n/10.95 !"".equals(prop.getValue())[] at L.1984 should be re-placed by []!prop.getValue.isEmpty()[],
  []
 
 
@@ -862,8 +847,23 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [11]
-Overfull \hbox (2.26297pt too wide) in paragraph at lines 92--93
-[]\OT1/cmr/m/n/10.95 The in-vo-ca-tion []con-fig-Prop-er-ties.toArray()[] at L.2014 doesn't check
+Overfull \hbox (26.1401pt too wide) in paragraph at lines 91--92
+[]\OT1/cmr/m/n/10.95 prop-erty.getValue().isEmpty())[] and []"lo-cal-host".equals(property.getValue())[]
+ []
+
+
+Overfull \hbox (0.89429pt too wide) in paragraph at lines 92--93
+\OT1/cmr/m/n/10.95 fact that []cpr.getConnectorDescriptorInfo().getMCFConfigProperties()[]
+ []
+
+
+Overfull \hbox (83.41478pt too wide) in paragraph at lines 92--93
+\OT1/cmr/m/n/10.95 re-turns a generic []Set[] ob-ject in-stead of a more ap-pro-pri-ate []Set<ConnectorConfigProperty>[]
+ []
+
+
+Overfull \hbox (2.26297pt too wide) in paragraph at lines 95--96
+[]\OT1/cmr/m/n/10.95 The in-vo-ca-tion []con-fig-Prop-er-ties.toArray()[] at L.2011 doesn't check
  []
 
 
@@ -872,7 +872,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[12]) (./chapters/other_problems.tex
+[12]
+Overfull \hbox (11.81375pt too wide) in paragraph at lines 107--108
+[]\OT1/cmr/bx/n/10.95 C1 \OT1/cmr/m/n/10.95 Pa-ram-e-ter []cpr[] and vari-ables []mcfs[](L.1866), []mcf[](L.1893) and []s[](L.1874)
+ []
+
+) (./chapters/other_problems.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -969,18 +974,18 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 25.
  ) 
 Here is how much of TeX's memory you used:
- 8829 strings out of 493089
- 129032 string characters out of 6134841
+ 8835 strings out of 493089
+ 129080 string characters out of 6134841
  256035 words of memory out of 5000000
  11981 multiletter control sequences out of 15000+600000
  11259 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  32i,12n,43p,1040b,678s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on /Users/Valerio/GitHub/casaticastelli_sweng2/3_ID/latex_files/.texpadtmp/3_ID.pdf (23 pages, 262513 bytes).
+Output written on /Users/Valerio/GitHub/casaticastelli_sweng2/3_ID/latex_files/.texpadtmp/3_ID.pdf (23 pages, 263544 bytes).
 PDF statistics:
- 393 PDF objects out of 1000 (max. 8388607)
- 352 compressed objects within 4 object streams
- 177 named destinations out of 1000 (max. 500000)
+ 401 PDF objects out of 1000 (max. 8388607)
+ 360 compressed objects within 4 object streams
+ 183 named destinations out of 1000 (max. 500000)
  99 words of extra memory for PDF output out of 10000 (max. 10000000)
 

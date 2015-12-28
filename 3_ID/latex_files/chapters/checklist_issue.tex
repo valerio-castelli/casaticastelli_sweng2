@@ -18,10 +18,10 @@ This chapter highlights all the bad practices that we have recognized during the
 	\item \checklist{1} The name of method \code{handles(ConnectorDescriptor cd, String moduleName)} at \codeline{1161} doesn't clearly described what this method is supposed to, nor why it is returning a boolean. 
 	\item \checklist{5} The name of method \code{listToProperties} at \codeline{1101} is not a verb. The same is valid for method \code{postConstruct} at \codeline{342} and for method \code{postRAConfiguration} at \codeline{860}.
 	\item \checklist{7} There is a huge number of constants which do not follow the naming convention at \codelines{166}{202}, \codelines{207}{211}, \codeline{213}, \codelines{233}{237}, \codeline{242}, \codeline{246}, \codelines{262}{264}. 
-	\item \checklist{8} and \checklist{9} are not followed consistently throughout the code. Most of the class uses four spaces indentation, but tabs are also occasionally used as at \codeline{357}, \codeline{493}, \codelines{537}{556}, \codelines{992}{997}, \codelines{1008-1010}, \codelines{1026}{1030}, \codelines{1102}{1112}, \codelines{1351}{1357}, \codelines{1976}{1978}. 
+	\item \checklist{8} and \checklist{9} are not followed consistently throughout the code. Most of the class uses four spaces indentation, but tabs are also occasionally used as at \codeline{357}, \codeline{493}, \codelines{537}{556}, \codelines{992}{997}, \codelines{1008-1010}, \codelines{1026}{1030}, \codelines{1102}{1112}, \codelines{1351}{1357}, \codelines{1973}{1975}. 
 	\item \checklist{10} Method \code{public void postConstruct()} at \codeline{340} and method \code{private boolean isDAS()} at \codeline{1739} don't follow the bracing style used throughout the rest of the class.
 	\item \checklist{11} There are a number of single-line \code{if} statements that do not follow the convention. It would be very time consuming to enumerate them all, but at \codeline{1245}, \codeline{1254}, \codeline{1303}, \codeline{1307} there are a few examples of this behavior. 
-	\item \checklist{14} There are a number of occurrences in which the line length exceeds the 120 character limit: at \codeline{153}(130), \codeline{423}(134), \codeline{604}(169), \codeline{756}(123), \codeline{794}(130), \codeline{1355}(137), \codeline{1358}(136), \codeline{1841}(131), \codeline{1922}(125), \codeline{1958}(141), \codeline{2008}(132), \codeline{2021}(141), \codeline{2140}(130), \codeline{2262}(125), \codeline{2285}(149), \codeline{2290}(132), \codeline{2296}(131), \codeline{2320}(126), \codeline{2333}(145), \codeline{2334}(129), \codeline{2340}(135), \codeline{2342}(125), \codeline{2349}(129), \codeline{2361}(129), \codeline{2364}(125), \codeline{2369}(149), \codeline{2396}(135), \codeline{2410}(133), \codeline{2412}(135), \codeline{2443}(123), \codeline{2474}(128), \codeline{2590}(135), \codeline{2605}(131).
+	\item \checklist{14} There are a number of occurrences in which the line length exceeds the 120 character limit: at \codeline{153}(130), \codeline{423}(134), \codeline{604}(169), \codeline{756}(123), \codeline{794}(130), \codeline{1355}(137), \codeline{1358}(136), \codeline{1841}(131), \codeline{1922}(125), \codeline{1958}(141), \codeline{2005}(132), \codeline{2018}(141), \codeline{2137}(130), \codeline{2259}(125), \codeline{2282}(149), \codeline{2287}(132), \codeline{2293}(131), \codeline{2317}(126), \codeline{2330}(145), \codeline{2331}(129), \codeline{2337}(135), \codeline{2339}(125), \codeline{2346}(129), \codeline{2358}(129), \codeline{2361}(125), \codeline{2366}(149), \codeline{2393}(135), \codeline{2407}(133), \codeline{2409}(135), \codeline{2440}(123), \codeline{2471}(128), \codeline{2587}(135), \codeline{2602}(131).
 	\item \checklist{18} Some methods don't have an explanation of what they're supposed to do. Also, large pieces of code are left uncommented or only have extremely brief explanations of their purpose. 
 	\item \checklist{19} None of the occurrences of commented out code contains an explanation as to why it has been commented out. 
 	\item \checklist{23} Javadoc is not complete. In particular, the following public methods are not documented: 
@@ -30,13 +30,13 @@ This chapter highlights all the bad practices that we have recognized during the
 		\item \code{public static String getBrokerInstanceName(JmsService js)} at \codeline{1137}
 		\item \code{public boolean getDoBind()} at \codeline{1534}
 		\item \code{public Set$\langle$String$\rangle$ getGrizzlyListeners()} at \codeline{441} \note{OSS FAR NOTARE QUESTA BAD PRACTICE DI RITORNARE VARIABILI PRIVATE}\note{ci sono tonnellate di getJMSDestination tutte uguali a cui cambiano solo i parametri, da controllare più a fondo}
-		\item \code{public void handleRequest(SelectableChannel selectableChannel)} at \codeline{2556}
+		\item \code{public void handleRequest(SelectableChannel selectableChannel)} at \codeline{2553}
 		\item \code{public boolean handles(ConnectorDescriptor cd, String moduleName)} at \codeline{1161} (questo poi è proprio controintuitivo, da segnalare)
-		\item \code{public boolean initializeService()} at \codeline{2541}
+		\item \code{public boolean initializeService()} at \codeline{2538}
 		\item \code{public void postConstruct()} at \codeline{342}
-		\item \code{public void setMasterBroker(String newMasterBroker)} at \codeline{2581}
+		\item \code{public void setMasterBroker(String newMasterBroker)} at \codeline{2578}
 		\item \code{public void setup()} at \codeline{562}
-		\item \code{public void validateActivationSpec(ActivationSpec spec)} at \codeline{1165}
+		\item \code{public void validateActivationSpec(ActivationSpec spec)} at \codeline{1162}
 		\end{itemize}
 	\item \checklist{25} There are a number of issues in the order of declarations:
 		\begin{itemize}
@@ -57,8 +57,8 @@ This chapter highlights all the bad practices that we have recognized during the
         (com.sun.enterprise.connectors.ConnectorConnectionPool cpr,
          ClassLoader loader)} at \codelines{1860}{1941}
 				\item \code{public ManagedConnectionFactory createManagedConnectionFactory(com.sun.enterprise.connectors.ConnectorConnectionPool cpr,
-                   ClassLoader loader)} at \codelines{1970}{2046}
-                \item \code{public void updateMDBRuntimeInfo(EjbMessageBeanDescriptor descriptor\_, BeanPoolDescriptor poolDescriptor)} at \codelines{2064}{2223}                     
+                   ClassLoader loader)} at \codelines{1970}{2043}
+                \item \code{public void updateMDBRuntimeInfo(EjbMessageBeanDescriptor descriptor\_, BeanPoolDescriptor poolDescriptor)} at \codelines{2061}{2220}                     
 				\end{itemize}        
 		\item \checklist{44} Constants at \codelines{268}{271} should probably be refactored as a single enum with four different values. 	
 		\end{itemize}
@@ -66,41 +66,47 @@ This chapter highlights all the bad practices that we have recognized during the
 
 \subsection{createManagedConnectionFactory method}
 \begin{enumerate}
-	\item \checklist{30} The invocation \code{configProperties.toArray()} at \codeline{2014} doesn't check if \code{configProperties} is not null.
-	\item \checklist{30} The assignment \code{Iterator it = s.iterator()} at \codeline{1980} should check that \code{Set s} is not null to avoid raising an unhandled \code{NullPointerException}. 
-	\item \checklist{30} The assignment \code{String propName = prop.getName()} at \codeline{1983} should check that \code{prop} is not null to avoid raising an unhandled \code{NullPointerException}. Since the collection is not accessed in a thread-safe way, the returned item could be null, resulting in a dangerous situation. For the same reason, the \code{propName} variable itself should be checked. 
-	\item \checklist{30} The \code{if} statements at \codelines{2020}{2021} should verify that \code{property} is not null before accessing it. 
-	\item \checklist{33} Attribute \code{moduleName} is declared in \codeline{2009} which is not at the beginning of a block. 
-	\item \checklist{33} Attribute \code{setMethodAction} is declared in \codeline{2028} which is not at the beginning of a block.
-	\item \checklist{36} The invocation of a method via java reflection returns an \code{Object} object which is not stored nor used. This may be coherent with the expected behavior of the setProperty(String, String) method which is found via reflection, but it's worth checking. 
-	\item \checklist{36} Method \code{configProperties.remove(property)} at \codeline{2023} could return \code{false} if the specified \code{property} is not present in the \code{configProperties} set. In practice this shouldn't happen if threads are managed correctly, as \code{property} is an item of the array obtained by invoking \code{configProperties.toArray()}, however it would probably be a good idea to put an extra check. 
-	\item \checklist{36} Method \code{setMethodAction.run()} at \codeline{2030} could potentially return an \code{Object} object which is not store nor used. In practice, s\code{setMethodAction.run()} always return null, so this is not particularly significant; however, it highlights a bad design decision, as \code{setMethodAction.run()} should probably be a void method instead. 
-	\item \checklist{37} and \checklist{38} The usage of an iterator at \codelines{1979}{1982} is potentially not thread safe. A different thread could attempt to make modifications to the set returned by \code{cpr.getConnectorDescriptorInfo().getMCFConfigProperties()}, producing an inconsistent state. 
+	\item \checklist{1} Parameter \code{cpr} and variables \code{mcf}(\codeline{1971}) and \code{s}(\codeline{1976}) are not particularly meaningful. 
+	\item \checklist{2} Variable \code{s} at \codeline{1976} is named with a single character although it's not properly a "throwaway" variable. 
+	\item \checklist{10} There are a number of \code{if} and \code{for} statements that don't follow the bracing style followed by the rest of the class. This happens at \codelines{2007}{2008} and \codelines{2012}{2013}, \codelines{2014}{2015}.
+	\item \checklist{30} The invocation \code{configProperties.toArray()} at \codeline{2011} doesn't check if \code{configProperties} is not null.
+	\item \checklist{30} The assignment \code{Iterator it = s.iterator()} at \codeline{1977} should check that \code{Set s} is not null to avoid raising an unhandled \code{NullPointerException}. 
+	\item \checklist{30} The assignment \code{String propName = prop.getName()} at \codeline{1980} should check that \code{prop} is not null to avoid raising an unhandled \code{NullPointerException}. Since the collection is not accessed in a thread-safe way, the returned item could be null, resulting in a dangerous situation. For the same reason, the \code{propName} variable itself should be checked. 
+	\item \checklist{30} The \code{if} statements at \codelines{2017}{2018} should verify that \code{property} is not null before accessing it. 
+	\item \checklist{33} Attribute \code{moduleName} is declared in \codeline{2006} which is not at the beginning of a block. 
+	\item \checklist{33} Attribute \code{setMethodAction} is declared in \codeline{2025} which is not at the beginning of a block.
+	\item \checklist{36} The invocation of a method via java at \codeline{1989} reflection returns an \code{Object} object which is not stored nor used. This may be coherent with the expected behavior of the setProperty(String, String) method which is found via reflection, but it's worth checking. 
+	\item \checklist{36} Method \code{configProperties.remove(property)} at \codeline{2020} could return \code{false} if the specified \code{property} is not present in the \code{configProperties} set. In practice this shouldn't happen if threads are managed correctly, as \code{property} is an item of the array obtained by invoking \code{configProperties.toArray()}, however it would probably be a good idea to put an extra check. 
+	\item \checklist{36} Method \code{setMethodAction.run()} at \codeline{2027} could potentially return an \code{Object} object which is not store nor used. In practice, s\code{setMethodAction.run()} always return null, so this is not particularly significant; however, it highlights a bad design decision, as \code{setMethodAction.run()} should probably be a void method instead. 
+	\item \checklist{37} and \checklist{38} The usage of an iterator at \codelines{1976}{1979} is potentially not thread safe. A different thread could attempt to make modifications to the set returned by \code{cpr.getConnectorDescriptorInfo().getMCFConfigProperties()}, producing an inconsistent state. 
 	\item \checklist{42} Error messages could be more informative. Given the way they're written, they seem to be intended mostly to be read and interpreted by the same developer who has written the code, which in general is not the case. In particular:
 		\begin{itemize}
-			\item The error message at \codelines{1995}{1997} says that the setter method could not be found, but it could be even clearer by also specifying that the error has been raised while trying to perform java reflection on a ManagedConnectionFactory object. We think this could be an important information to give to developers for troubleshooting purposes, as we would expect to be able to invoke the setProperty(String, String) method if a non-null imq property is specified for the given ManagedConnectionFactory. 
-			\item The error message at \codelines{2000}{2002} is marked as "severe", but doesn't actually report what kind of exception has been raised. 
-			\item The log message at \codeline{2022} is not sufficiently informative. It suggests that something could be wrong if the \code{addressList} property is null, empty or set to localhost, but it doesn't actually say why that should be the case in the message. 
-			\item The error messages at \codelines{2034}{2039} could probably be unified. 
+			\item The error message at \codelines{1992}{1994} says that the setter method could not be found, but it could be even clearer by also specifying that the error has been raised while trying to perform java reflection on a ManagedConnectionFactory object. We think this could be an important information to give to developers for troubleshooting purposes, as we would expect to be able to invoke the setProperty(String, String) method if a non-null imq property is specified for the given ManagedConnectionFactory. 
+			\item The error message at \codelines{1997}{1999} is marked as "severe", but doesn't actually report what kind of exception has been raised. 
+			\item The log message at \codeline{2019} is not sufficiently informative. It suggests that something could be wrong if the \code{addressList} property is null, empty or set to localhost, but it doesn't actually say why that should be the case in the message. 
+			\item The error messages at \codelines{2031}{2036} could probably be unified. 
 			\item All error messages should probably be put in constants somewhere for better maintainability. 
 		\end{itemize}
-	\item \checklist{44} \code{!"".equals(prop.getValue())} at \codeline{1987} should be replaced by \code{!prop.getValue.isEmpty()}, which is more understandable and readable.
-	\item \checklist{44} \code{"".equals(property.getValue())} at \codeline{2021} should be refactored as \code{property.getValue().isEmpty())} and \code{"localhost".equals(property.getValue())} should be refactored as \code{property.getValue().equals("localhost")}. Also, \code{"localhost"} should be a constant. 
-	\item \checklist{44} The whole block of code at \codelines{2013}{2027} is a workaround to the fact that \code{cpr.getConnectorDescriptorInfo().getMCFConfigProperties()} returns a generic \code{Set} object instead of a more appropriate \code{Set<ConnectorConfigProperty>} using generics. Because of this, the developer has to manually convert the \code{Set} into an \code{Array} of \code{Object} objects and then manually test that they are actually instances of \code{ConnectorConfigProperty}. This is a terrible design decision and should be refactored.  
-	\item \checklist{50} The whole try-catch block at \codelines{2012}{2041} is badly designed. 
+	\item \checklist{44} \code{!"".equals(prop.getValue())} at \codeline{1984} should be replaced by \code{!prop.getValue.isEmpty()}, which is more understandable and readable.
+	\item \checklist{44} \code{"".equals(property.getValue())} at \codeline{2018} should be refactored as \code{property.getValue().isEmpty())} and \code{"localhost".equals(property.getValue())} should be refactored as \code{property.getValue().equals("localhost")}. Also, \code{"localhost"} should be a constant. 
+	\item \checklist{44} The whole block of code at \codelines{2010}{2024} is a workaround to the fact that \code{cpr.getConnectorDescriptorInfo().getMCFConfigProperties()} returns a generic \code{Set} object instead of a more appropriate \code{Set<ConnectorConfigProperty>} using generics. Because of this, the developer has to manually convert the \code{Set} into an \code{Array} of \code{Object} objects and then manually test that they are actually instances of \code{ConnectorConfigProperty}. This is a terrible design decision and should be refactored.  
+	\item \checklist{50} The whole try-catch block at \codelines{2009}{2038} is badly designed. 
 		\begin{itemize}
-			\item The invocation \code{configProperties.toArray()} at \codeline{2014} doesn't check if \code{configProperties} is not null. This could result in an unnecessary \code{NullPointerException}. 
-			\item The typecast at \codeline{2019} could result in a \code{ClassCastException} being raised if someone has messed around in inappropriate ways with the \code{configProperties} collection. This modification should not be allowed by design, instead of being caught this way. 
+			\item The invocation \code{configProperties.toArray()} at \codeline{2011} doesn't check if \code{configProperties} is not null. This could result in an unnecessary \code{NullPointerException}. 
+			\item The typecast at \codeline{2016} could result in a \code{ClassCastException} being raised if someone has messed around in inappropriate ways with the \code{configProperties} collection. This modification should not be allowed by design, instead of being caught this way. 
 		\end{itemize}
-	\item \checklist{52} The \code{catch(Exception ex)} clause at \codeline{1999} is very generic. This could be appropriate for the context as it may be difficult to predict all possible exceptions of the setProperty(String, String) method, supposing that this method can be developed in many different ways depending on the specific ManagedConnectionFactory implementation (in fact, it's not explicitly defined by the interface); however, it is still useful to highlight this, as maybe it could be further refined depending on the exact nature of the object we are expecting to deal with. 
-	\item \checklist{52} The \code{catch(Exception ex)} clause at \codeline{2031} is similarly bound to be generic in order to handle the possible exceptions raised by \code{setMethodAction.run()} at \codeline{2030}. However, it could be refined to properly catch exceptions mentioned in point 11 of this list. 
-	\item \checklist{53} The \code{catch()} clauses at \codeline{1994}, \codeline{1999} and \codeline{2031} are not properly handling the error, limiting themselves to logging it. This is probably necessary given the fact that the caught exceptions are not under the developer's control as they mostly depend on invocation of methods obtained by reflection; however possible improvements should be considered for those exceptions that are raised by the code that the developer has written (as mentioned in point 11 of this list), even by just improving the content of the error messages. 
-	\item \checklist{56} The \code{while} loop at \codelines{1981}{2006} could behave strangely if set over which it's iterating is modified by a concurrent thread. It should be isolated and executed in a synchronized way. 
+	\item \checklist{52} The \code{catch(Exception ex)} clause at \codeline{1996} is very generic. This could be appropriate for the context as it may be difficult to predict all possible exceptions of the setProperty(String, String) method, supposing that this method can be developed in many different ways depending on the specific ManagedConnectionFactory implementation (in fact, it's not explicitly defined by the interface); however, it is still useful to highlight this, as maybe it could be further refined depending on the exact nature of the object we are expecting to deal with. 
+	\item \checklist{52} The \code{catch(Exception ex)} clause at \codeline{2028} is similarly bound to be generic in order to handle the possible exceptions raised by \code{setMethodAction.run()} at \codeline{2027}. However, it could be refined to properly catch exceptions mentioned in point 11 of this list. 
+	\item \checklist{53} The \code{catch()} clauses at \codeline{1991}, \codeline{1996} and \codeline{2028} are not properly handling the error, limiting themselves to logging it. This is probably necessary given the fact that the caught exceptions are not under the developer's control as they mostly depend on invocation of methods obtained by reflection; however possible improvements should be considered for those exceptions that are raised by the code that the developer has written (as mentioned in point 11 of this list), even by just improving the content of the error messages. 
+	\item \checklist{56} The \code{while} loop at \codelines{1978}{2003} could behave strangely if set over which it's iterating is modified by a concurrent thread. It should be isolated and executed in a synchronized way. 
 	\end{enumerate}
 	
 	
 \subsection{createManagedConnectionFactories method}
 \begin{enumerate}
+	\item \checklist{1} Parameter \code{cpr} and variables \code{mcfs}(\codeline{1866}), \code{mcf}(\codeline{1893}) and \code{s}(\codeline{1874}) are not particularly meaningful. 
+	\item \checklist{1} The name of variable \code{addressProp3} at \codeline{1922} is not totally satisfying: it represents for sure an address property, but why it has the "3" suffix is not clear. 
+	\item \checklist{2} Variable \code{s} at \codeline{1874} is named with a single character although it's not properly a "throwaway" variable. 
 	\item \checklist{30} The assignment at \codeline{1875} should check that \code{Set s} is not null. 
 	\item \checklist{30} The assignment at \codeline{1878} and the \code{if} statement at \codeline{1879} should check that \code{prop} is not null.
 	\item \checklist{30} The assignment at \codeline{1894} should check that \code{Set s} is not null.
