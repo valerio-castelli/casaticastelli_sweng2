@@ -26,17 +26,17 @@ This chapter highlights all the bad practices that we have recognized during the
 	\item \checklist{19} None of the occurrences of commented out code contains an explanation as to why it has been commented out. 
 	\item \checklist{23} Javadoc is not complete. In particular, the following public methods are not documented: 
 		\begin{itemize}
-		\item \code{public int getAddressListCount()} at \codeline{2512}
-		\item \code{public static String getBrokerInstanceName(JmsService js)} at \codeline{1137}
-		\item \code{public boolean getDoBind()} at \codeline{1534}
-		\item \code{public Set$\langle$String$\rangle$ getGrizzlyListeners()} at \codeline{441} \note{OSS FAR NOTARE QUESTA BAD PRACTICE DI RITORNARE VARIABILI PRIVATE}\note{ci sono tonnellate di getJMSDestination tutte uguali a cui cambiano solo i parametri, da controllare più a fondo}
-		\item \code{public void handleRequest(SelectableChannel selectableChannel)} at \codeline{2553}
-		\item \code{public boolean handles(ConnectorDescriptor cd, String moduleName)} at \codeline{1161} (questo poi è proprio controintuitivo, da segnalare)
-		\item \code{public boolean initializeService()} at \codeline{2538}
-		\item \code{public void postConstruct()} at \codeline{342}
-		\item \code{public void setMasterBroker(String newMasterBroker)} at \codeline{2578}
-		\item \code{public void setup()} at \codeline{562}
-		\item \code{public void validateActivationSpec(ActivationSpec spec)} at \codeline{1162}
+		\item \code{public int getAddressListCount()} at \codeline{2512}.
+		\item \code{public static String getBrokerInstanceName(JmsService js)} at \codeline{1137}.
+		\item \code{public boolean getDoBind()} at \codeline{1534}.
+		\item \code{public Set<String> getGrizzlyListeners()} at \codeline{441} \note{OSS FAR NOTARE QUESTA BAD PRACTICE DI RITORNARE VARIABILI PRIVATE}\note{ci sono tonnellate di getJMSDestination tutte uguali a cui cambiano solo i parametri, da controllare più a fondo}
+		\item \code{public void handleRequest(SelectableChannel selectableChannel)} at \codeline{2553}.
+		\item \code{public boolean handles(ConnectorDescriptor cd, String moduleName)} at \codeline{1161}. \note{questo poi è proprio controintuitivo, da segnalare}
+		\item \code{public boolean initializeService()} at \codeline{2538}.
+		\item \code{public void postConstruct()} at \codeline{342}.
+		\item \code{public void setMasterBroker(String newMasterBroker)} at \codeline{2578}.
+		\item \code{public void setup()} at \codeline{562}.
+		\item \code{public void validateActivationSpec(ActivationSpec spec)} at \codeline{1162}.
 		\end{itemize}
 	\item \checklist{25} There are a number of issues in the order of declarations:
 		\begin{itemize}
@@ -88,9 +88,9 @@ This chapter highlights all the bad practices that we have recognized during the
 			\item The error messages at \codelines{2031}{2036} could probably be unified. 
 			\item All error messages should probably be put in constants somewhere for better maintainability. 
 		\end{itemize}
-	\item \checklist{44} \code{!“”.equals(prop.getValue())} at \codeline{1984} should be replaced by \code{!prop.getValue.isEmpty()}, which is more understandable and readable.
-	\item \checklist{44} \code{“”.equals(property.getValue())} at \codeline{2018} should be refactored as \code{property.getValue().isEmpty())} and \code{“localhost”.equals(property.getValue())} should be refactored as \code{property.getValue().equals(“localhost”)}. Also, \code{“localhost”} should be a constant. 
-	\item \checklist{44} The whole block of code at \codelines{2010}{2024} is a workaround to the fact that \code{cpr.getConnectorDescriptorInfo().getMCFConfigProperties()} returns a generic \code{Set} object instead of a more appropriate \code{Set$\langle$ConnectorConfigProperty$\rangle$} using generics. Because of this, the developer has to manually convert the \code{Set} into an \code{Array} of \code{Object} objects and then manually test that they are actually instances of \code{ConnectorConfigProperty}. This is a terrible design decision and should be refactored.
+	\item \checklist{44} \code{!"".equals(prop.getValue())} at \codeline{1984} should be replaced by \code{!prop.getValue.isEmpty()}, which is more understandable and readable.
+	\item \checklist{44} \code{"".equals(property.getValue())} at \codeline{2018} should be refactored as \code{property.getValue().isEmpty())} and \code{"localhost".equals(property.getValue())} should be refactored as \code{property.getValue().equals("localhost")}. Also, \code{"localhost"} should be a constant.
+	\item \checklist{44} The whole block of code at \codelines{2010}{2024} is a workaround to the fact that \code{cpr.getConnectorDescriptorInfo().getMCFConfigProperties()} returns a generic \code{Set} object instead of a more appropriate \code{Set<ConnectorConfigProperty>} using generics. Because of this, the developer has to manually convert the \code{Set} into an \code{Array} of \code{Object} objects and then manually test that they are actually instances of \code{ConnectorConfigProperty}. This is a terrible design decision and should be refactored.
 	\item \checklist{50} The whole \code{try-catch} block at \codelines{2009}{2038} is badly designed. 
 		\begin{itemize}
 			\item The invocation \code{configProperties.toArray()} at \codeline{2011} doesn't check if \code{configProperties} is not \code{null}. This could result in an unnecessary \code{NullPointerException}. 
@@ -128,7 +128,7 @@ This chapter highlights all the bad practices that we have recognized during the
 			\item Logged message at \codeline{1864} contains the word “AJMSRA”. It would probably be more comprehensible if it contained the full “ActiveJMSResourceAdapter” name of which it is the acronym. 
 			\item All error messages should probably be put in constants somewhere for better maintainability. 
 		\end{itemize}
-	\item \checklist{44} \code{!“”.equals(prop.getValue())} at \codeline{1899} should be replaced by \code{!prop.getValue.isEmpty()}, which is more understandable and readable.
+	\item \checklist{44} \code{!"".equals(prop.getValue())} at \codeline{1899} should be replaced by \code{!prop.getValue.isEmpty()}, which is more understandable and readable.
 	\item \checklist{52} The \code{catch(Exception ex)} clause at \codeline{1914} is very generic. This could be appropriate for the context as it may be difficult to predict all possible exceptions of the \code{setProperty(String, String)} method, supposing that this method can be developed in many different ways depending on the specific \code{ManagedConnectionFactory} implementation (in fact, it's not explicitly defined by the interface); however, it is still useful to highlight this, as maybe it could be further refined depending on the exact nature of the object we are expecting to deal with. 
 	\item \checklist{52} The \code{catch(Exception ex)} clause at \codeline{1934} is similarly bound to be generic in order to handle the possible exceptions raised by \code{setMethodAction.run()} at \codeline{1933}.
 	\item \checklist{53} The \code{catch(Exception ex)} clause at \codeline{1934} is empty. This is a very poor design choice, as one would expect that at least some logging would be performed to document that an exception has been raised. 

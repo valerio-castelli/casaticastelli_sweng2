@@ -1,11 +1,14 @@
 % % CUSTOM COMMANDS
 
-% Commands to insert code in the text or references to code.
-\newcommand{\code}[1]{{\color{blue}{#1}}}
+% Commands to insert a code line or a reference to code inside text.
+%\newcommand{\code}[1]{{\color{blue}{#1}}}
+%\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\code}[1]{\lstinline[basicstyle=\ttfamily\color{blue}]|#1|}
+
 \newcommand{\checklist}[1]{\textbf{C#1}}
 \newcommand{\codeline}[1]{L.#1}
 \newcommand{\codelines}[2]{L.#1-#2}
-%\newcommand{\code}[1]{\texttt{#1}}
+
 %\newcommand{\code}[1]{
 %\lstset{
 %  rulecolor=\color{red}

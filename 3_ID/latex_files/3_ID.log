@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.2)  29 DEC 2015 05:23
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.2)  29 DEC 2015 05:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -570,22 +570,22 @@ File: lstlang1.sty 2013/08/26 1.5b listings language file
 (./preamble/commands.tex)) (./3_ID.aux)
 \openout1 = `3_ID.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
 \AtBeginShipoutBox=\box39
-Package hyperref Info: Link coloring OFF on input line 3.
+Package hyperref Info: Link coloring OFF on input line 4.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -595,9 +595,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count124
 )
-LaTeX Info: Redefining \ref on input line 3.
-LaTeX Info: Redefining \pageref on input line 3.
-LaTeX Info: Redefining \nameref on input line 3.
+LaTeX Info: Redefining \ref on input line 4.
+LaTeX Info: Redefining \pageref on input line 4.
+LaTeX Info: Redefining \nameref on input line 4.
 
 (./3_ID.out) (./3_ID.out)
 \@outlinefile=\write3
@@ -644,7 +644,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.7 \tableofcontents
+l.8 \tableofcontents
                      [1
 
 ] (./chapters/introduction.tex
@@ -689,6 +689,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [4 <./images/jms-programmingModel.png>]
+Overfull \hbox (65.98433pt too wide) in paragraph at lines 36--37
+[]\OT1/cmr/m/n/10.95 It dy-nam-i-cally loads the class im-ple-ment-ing the de-s
+ired [][]
+ []
+
+
+Overfull \hbox (3.99513pt too wide) in paragraph at lines 37--38
+[]\OT1/cmr/m/n/10.95 For ev-ery prop-erty enu-mer-ated in the given [][]
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -704,6 +714,17 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [6]
 Chapter 3.
+
+Overfull \hbox (18.927pt too wide) in paragraph at lines 2--3
+[][][][][][] \OT1/cmr/m/n/10.95 and [][]
+ []
+
+
+Overfull \hbox (2.80772pt too wide) in paragraph at lines 18--19
+[]\OT1/cmr/bx/n/10.95 C1 \OT1/cmr/m/n/10.95 The name of method [][][][][][][][]
+[][][][][][][][]
+ []
+
 [7
 
 ]
@@ -737,9 +758,8 @@ Overfull \hbox (39.37146pt too wide) in paragraph at lines 24--25
  []
 
 
-Overfull \hbox (15.61597pt too wide) in paragraph at lines 30--31
-[]\OT1/cmr/m/n/10.95 public static String get-Bro-kerIn-stan-ce-Name(JmsService
- js)[] at L.1137 
+Overfull \hbox (1.89423pt too wide) in paragraph at lines 30--31
+[][][][][][][][][][][][][][][][][][][][][][][][][]
  []
 
 
@@ -833,13 +853,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 32--32
  []
 
 
-Overfull \hbox (3.83728pt too wide) in paragraph at lines 32--33
-\OT1/cmr/m/n/10.95 TARE QUESTA BAD PRAC-TICE DI RI-TORNARE VARI-ABILI
+Overfull \hbox (10.07611pt too wide) in paragraph at lines 32--33
+[][][][][][][][][][][][][][][][][][][][][][][][][] \OT1/cmr/m/n/10.95 at L.441 
+OSS FAR
  []
 
 
-Overfull \hbox (6.04495pt too wide) in paragraph at lines 32--33
-\OT1/cmr/m/n/10.95 PRI-VATECI SONO TON-NEL-LATE DI GETJMS-DES-TI-NA-TION
+Overfull \hbox (34.93604pt too wide) in paragraph at lines 32--33
+\OT1/cmr/m/n/10.95 NA-TION TUTTE UGUALI A CUI CAM-BIANO SOLO I PARAMETRI,
  []
 
 
@@ -853,9 +874,31 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 LaTeX Warning: Marginpar on page 9 moved.
 
 
-Overfull \hbox (4.97015pt too wide) in paragraph at lines 39--40
-[]\OT1/cmr/m/n/10.95 public void val-i-date-Ac-ti-va-tion-Spec(ActivationSpec s
-pec)[] at L.1162 
+Overfull \hbox (42.13504pt too wide) in paragraph at lines 33--34
+[][][][][][][][][][][][][][][][][][][][][][][]
+ []
+
+
+Underfull \hbox (badness 5050) in paragraph at lines 34--34
+\OT1/cmr/m/n/10.95 ^^Re pro-prio
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--34
+\OT1/cmr/m/n/10.95 con-troin-
+ []
+
+
+Overfull \hbox (1.89423pt too wide) in paragraph at lines 34--35
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+ []
+
+
+LaTeX Warning: Marginpar on page 9 moved.
+
+
+Overfull \hbox (1.89423pt too wide) in paragraph at lines 39--40
+[][][][][][][][][][][][][][][][][][][][][][][]
  []
 
 
@@ -869,21 +912,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 46--46
  []
 
 
-Overfull \hbox (50.57072pt too wide) in paragraph at lines 58--59
-\OT1/cmr/m/n/10.95 tion-Fac-to-ries (com.sun.enterprise.connectors.ConnectorCon
-nectionPool
+Overfull \hbox (2.87457pt too wide) in paragraph at lines 52--53
+[][][][][][][][][][][][][][][][][][][][][] \OT1/cmr/m/n/10.95 at L.582-762 
  []
 
 
-Overfull \hbox (9.93405pt too wide) in paragraph at lines 60--61
-[]\OT1/cmr/m/n/10.95 public Man-aged-Con-nec-tion-Fac-tory cre-ate-M-an-aged-Co
-n-nec-tion-
+Overfull \hbox (62.61153pt too wide) in paragraph at lines 53--54
+[][][][][][][][][][][][][][][][][][][][][][][]
  []
 
 
-Overfull \hbox (22.8307pt too wide) in paragraph at lines 60--61
-\OT1/cmr/m/n/10.95 Fac-tory(com.sun.enterprise.connectors.ConnectorConnectionPo
-ol
+Overfull \hbox (28.1194pt too wide) in paragraph at lines 55--56
+[][][][][][][][][][][][][][][][][][][][][][][]
+ []
+
+
+Overfull \hbox (97.10365pt too wide) in paragraph at lines 58--59
+[][][][][][][][][][][][][][][][][]
+ []
+
+
+Overfull \hbox (28.1194pt too wide) in paragraph at lines 58--59
+[][][][][][][][][][][][][][][][][][][][][][]
  []
 
 
@@ -893,21 +943,24 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [9]
-Overfull \hbox (20.002pt too wide) in paragraph at lines 61--62
-[]\OT1/cmr/m/n/10.95 public void up-dateMD-BRun-time-Info(EjbMessageBeanDescrip
-tor
+Overfull \hbox (68.36021pt too wide) in paragraph at lines 60--61
+[][][][][][][][][][][][][]
  []
 
 
-Overfull \hbox (84.66188pt too wide) in paragraph at lines 72--73
-\OT1/cmr/m/n/10.95 tent of the set re-turned by []cpr.getConnectorDescriptorInf
-o().getMCFConfigProperties()[]. 
+Overfull \hbox (22.37071pt too wide) in paragraph at lines 60--61
+[][][][][][][][][][][][][][][][][][][][]
  []
 
 
-Overfull \hbox (2.29321pt too wide) in paragraph at lines 73--74
-[]\OT1/cmr/bx/n/10.95 C30 \OT1/cmr/m/n/10.95 The in-vo-ca-tion []con-fig-Prop-e
-r-ties.toArray()[] at L.2011 doesn't check
+Overfull \hbox (39.61678pt too wide) in paragraph at lines 61--62
+[][][][][][][][][][][][][][][][][][][]
+ []
+
+
+Overfull \hbox (58.10602pt too wide) in paragraph at lines 74--75
+\OT1/cmr/m/n/10.95 check that [][][][][][][][][][] is not [][][][][][][][] to a
+void rais-ing an un-han-dled [][]
  []
 
 
@@ -917,9 +970,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [10]
-Overfull \hbox (89.5894pt too wide) in paragraph at lines 82--83
-\OT1/cmr/m/n/10.95 tions to the set re-turned by []cpr.getConnectorDescriptorIn
-fo().getMCFConfigProperties()[],
+Overfull \hbox (34.80684pt too wide) in paragraph at lines 80--81
+\OT1/cmr/m/n/10.95 re-turn [][][][][][][][] if the spec-i-fied [][][][][][] is 
+not present in the [][]
  []
 
 
@@ -929,34 +982,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [11]
-Overfull \hbox (97.22377pt too wide) in paragraph at lines 91--92
-[]\OT1/cmr/bx/n/10.95 C44 []\OT1/cmr/m/n/10.95 !\".equals(prop.getValue())[] at
- L.1984 should be re-placed by []!prop.getValue.isEmpty()[],
+Overfull \hbox (5.4534pt too wide) in paragraph at lines 92--93
+\OT1/cmr/m/n/10.95 tored as [][][][][][][][][][][][][][][][][][][][] and [][][]
+[][][][][][][][][][][][][]
  []
 
 
-Overfull \hbox (26.1401pt too wide) in paragraph at lines 92--93
-[]\OT1/cmr/m/n/10.95 prop-erty.getValue().isEmpty())[] and []\lo-cal-host".equa
-ls(property.getValue())[]
- []
-
-
-Overfull \hbox (0.89429pt too wide) in paragraph at lines 93--94
-\OT1/cmr/m/n/10.95 fact that []cpr.getConnectorDescriptorInfo().getMCFConfigPro
-perties()[]
- []
-
-
-Overfull \hbox (83.71895pt too wide) in paragraph at lines 93--94
-\OT1/cmr/m/n/10.95 re-turns a generic []Set[] ob-ject in-stead of a more ap-pro
--pri-ate []Set$\OMS/cmsy/m/n/10.95 h$\OT1/cmr/m/n/10.95 ConnectorConfigProperty
-$\OMS/cmsy/m/n/10.95 i$[]
- []
-
-
-Overfull \hbox (2.26297pt too wide) in paragraph at lines 96--97
-[]\OT1/cmr/m/n/10.95 The in-vo-ca-tion []con-fig-Prop-er-ties.toArray()[] at L.
-2011 doesn't check
+Overfull \hbox (26.44046pt too wide) in paragraph at lines 93--94
+\OT1/cmr/m/n/10.95 fact that [][][][][][][][][][][][]
  []
 
 
@@ -966,11 +999,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [12]
-Overfull \hbox (84.66188pt too wide) in paragraph at lines 111--112
-\OT1/cmr/m/n/10.95 tent of the set re-turned by []cpr.getConnectorDescriptorInf
-o().getMCFConfigProperties()[]. 
- []
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -978,15 +1006,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [13]
-Overfull \hbox (157.41866pt too wide) in paragraph at lines 123--124
-\OT1/cmr/m/n/10.95 make mod-i-fi-ca-tions to the set re-turned by []cpr.getConn
-ectorDescriptorInfo().getMCFConfigProperties()[],
- []
-
-
-Overfull \hbox (97.22377pt too wide) in paragraph at lines 131--132
-[]\OT1/cmr/bx/n/10.95 C44 []\OT1/cmr/m/n/10.95 !\".equals(prop.getValue())[] at
- L.1899 should be re-placed by []!prop.getValue.isEmpty()[],
+Overfull \hbox (36.20596pt too wide) in paragraph at lines 123--124
+\OT1/cmr/m/n/10.95 make mod-i-fi-ca-tions to the set re-turned by [][][][][][]
  []
 
 
@@ -1081,30 +1102,30 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [22]
 Appendix B.
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 26.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 20.
  [23
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 26.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 20.
  (./3_ID.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 26.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 26.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 20.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 20.
 Package rerunfilecheck Info: File `3_ID.out' has not changed.
 (rerunfilecheck)             Checksum: 377979D9BF852EF12E7FADE4FEB6B6AE;691.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 26.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 20.
  ) 
 Here is how much of TeX's memory you used:
- 9220 strings out of 494967
- 131493 string characters out of 6179868
- 258997 words of memory out of 5000000
- 12092 multiletter control sequences out of 15000+600000
+ 9635 strings out of 494967
+ 135711 string characters out of 6179868
+ 289997 words of memory out of 5000000
+ 12507 multiletter control sequences out of 15000+600000
  11259 words of font info for 40 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
- 39i,12n,43p,1040b,676s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,11n,43p,1059b,1385s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
@@ -1115,7 +1136,7 @@ type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmtt9.pfb>
-Output written on 3_ID.pdf (25 pages, 305858 bytes).
+Output written on 3_ID.pdf (25 pages, 309298 bytes).
 PDF statistics:
  419 PDF objects out of 1000 (max. 8388607)
  197 named destinations out of 1000 (max. 500000)
