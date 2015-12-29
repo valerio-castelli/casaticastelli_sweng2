@@ -66,8 +66,8 @@ This chapter highlights all the bad practices that we have recognized during the
 
 \subsection{createManagedConnectionFactory method}
 \begin{enumerate}
-	\item \checklist{1} Parameter \code{cpr} and variables \code{mcf}(\codeline{1971}), \code{s}(\codeline{1976}) and \code{array}(\codeline{2011}) are not particularly meaningful. 
-	\item \checklist{2} Variable \code{s} at \codeline{1976} is named with a single character although it's not properly a "throwaway" variable. 
+	\item \checklist{1} Parameter \code{cpr} and variables \code{mcf} (\codeline{1971}), \code{s} (\codeline{1976}) and \code{array} (\codeline{2011}) are not particularly meaningful. 
+	\item \checklist{2} Variable \code{s} at \codeline{1976} is named with a single character although it's not properly a “throwaway” variable. 
 	\item \checklist{10} There are a number of \code{if} and \code{for} statements that don't follow the bracing style followed by the rest of the class. This happens at \codelines{2007}{2008} and \codelines{2012}{2013}, \codelines{2014}{2015}.
 	\item \checklist{28} Typecasts at \codeline{1979} and \codeline{2016} could potentially produce an unhandled \code{ClassCastException} if another thread has messed up the content of the set returned by \code{cpr.getConnectorDescriptorInfo().getMCFConfigProperties()}.
 	\item \checklist{30} The invocation \code{configProperties.toArray()} at \codeline{2011} doesn't check if \code{configProperties} is not \code{null}.
@@ -119,7 +119,7 @@ This chapter highlights all the bad practices that we have recognized during the
 	\item \checklist{33} Attribute \code{addressProp} is declared at \codeline{1929} which is not at the beginning of a block.
 	\item \checklist{33} Attribute \code{setMethodAction} is declared at \codeline{1931} which is not at the beginning of a block.
 	\item \checklist{36} The invocation of a method via java at \codeline{1905} and \codeline{1907} reflection returns an \code{Object} object which is not stored nor used. This may be coherent with the expected behavior of the \code{setProperty(String, String)} method which is found via reflection, but it's worth checking. 
-	\item \checklist{36} Method \code{setMethodAction.run()} at \codeline{1933} could potentially return an \code{Object} object which is not store nor used. In practice, s\code{setMethodAction.run()} always return \code{null}, so this is not particularly significant; however, it highlights a bad design decision, as \code{setMethodAction.run()} should probably be a void method instead. 
+	\item \checklist{36} Method \code{setMethodAction.run()} at \codeline{1933} could potentially return an \code{Object} object which is not store nor used. In practice, \code{setMethodAction.run()} always return \code{null}, so this is not particularly significant; however, it highlights a bad design decision, as \code{setMethodAction.run()} should probably be a void method instead. 
 	\item \checklist{37} and \checklist{38} The usage of an iterator at \codelines{1875}{1877} and \codelines{1894}{1896} is potentially not thread safe. A different thread could attempt to make modifications to the set returned by \code{cpr.getConnectorDescriptorInfo().getMCFConfigProperties()}, producing an inconsistent state. 
 	\item \checklist{42} Error messages could be more informative. Given the way they're written, they seem to be intended mostly to be read and interpreted by the same developer who has written the code, which in general is not the case. In particular:
 		\begin{itemize}
