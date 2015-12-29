@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.2)  28 DEC 2015 13:08
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.2)  29 DEC 2015 05:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -163,43 +163,6 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks16
 \@floatcapt=\box27
 )
-(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count99
-\lst@gtempboxa=\box28
-\lst@token=\toks17
-\lst@length=\count100
-\lst@currlwidth=\dimen107
-\lst@column=\count101
-\lst@pos=\count102
-\lst@lostspace=\dimen108
-\lst@width=\dimen109
-\lst@newlines=\count103
-\lst@lineno=\count104
-\lst@maxwidth=\dimen110
-
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
-\c@lstnumber=\count105
-\lst@skipnumbers=\count106
-\lst@framebox=\box29
-)
-(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2013/08/26 1.5b listings configuration
-))
-Package: listings 2013/08/26 1.5b (Carsten Heinz)
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
-
-(/etc/texmf/tex/latex/config/color.cfg
-File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
-)
-Package color Info: Driver file: pdftex.def on input line 130.
-
-(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-\Gread@gobject=\count107
-))
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -213,20 +176,21 @@ Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
-)
-\Gin@req@height=\dimen111
-\Gin@req@width=\dimen112
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+\Gread@gobject=\count99
+))
+\Gin@req@height=\dimen107
+\Gin@req@width=\dimen108
 )
 (/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen113
-\WF@size=\dimen114
-\c@WF@wrappedlines=\count108
-\WF@box=\box30
-\WF@everypar=\toks18
+\wrapoverhang=\dimen109
+\WF@size=\dimen110
+\c@WF@wrappedlines=\count100
+\WF@box=\box28
+\WF@everypar=\toks17
 Package: wrapfig 2003/01/31  v 3.6
-)
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
-Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/rotating/rotating.sty
 Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
@@ -234,11 +198,11 @@ Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\c@r@tfl@t=\count109
+\c@r@tfl@t=\count101
 \rotFPtop=\skip53
 \rotFPbot=\skip54
-\rot@float@box=\box31
-\rot@mess@toks=\toks19
+\rot@float@box=\box29
+\rot@mess@toks=\toks18
 )
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf.sty
 Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
@@ -258,6 +222,9 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 )))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
 Package: pdflscape 2008/08/11 v0.10 Display of landscape pages in PDF (HO)
 Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
@@ -267,33 +234,50 @@ Package: pdfpages 2013/08/25 v0.4v Insert pages of external PDF documents (AM)
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count110
-\calc@Bcount=\count111
-\calc@Adimen=\dimen115
-\calc@Bdimen=\dimen116
+\calc@Acount=\count102
+\calc@Bcount=\count103
+\calc@Adimen=\dimen111
+\calc@Bdimen=\dimen112
 \calc@Askip=\skip55
 \calc@Bskip=\skip56
 LaTeX Info: Redefining \setlength on input line 76.
 LaTeX Info: Redefining \addtolength on input line 77.
-\calc@Ccount=\count112
+\calc@Ccount=\count104
 \calc@Cskip=\skip57
 )
 (/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 Package: eso-pic 2013/10/06 v2.0d eso-pic (RN)
+
+(/usr/share/texmf/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/etc/texmf/tex/latex/config/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+))
 (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
 File: pppdftex.def 2013/08/25 v0.4v Pdfpages driver for pdfTeX (AM)
 )
-\AM@pagebox=\box32
-\AM@toc@title=\toks20
-\c@AM@survey=\count113
-\AM@templatesizebox=\box33
+\AM@pagebox=\box30
+\AM@toc@title=\toks19
+\c@AM@survey=\count105
+\AM@templatesizebox=\box31
 )
 (/usr/share/texlive/texmf-dist/tex/latex/appendix/appendix.sty
 Package: appendix 2009/09/02 v1.2b extra appendix facilities
-\c@@pps=\count114
-\c@@ppsavesec=\count115
-\c@@ppsaveapp=\count116
+\c@@pps=\count106
+\c@@ppsavesec=\count107
+\c@@ppsaveapp=\count108
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
@@ -301,17 +285,17 @@ Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
 \LTright=\skip59
 \LTpre=\skip60
 \LTpost=\skip61
-\LTchunksize=\count117
-\LTcapwidth=\dimen117
-\LT@head=\box34
-\LT@firsthead=\box35
-\LT@foot=\box36
-\LT@lastfoot=\box37
-\LT@cols=\count118
-\LT@rows=\count119
-\c@LT@tables=\count120
-\c@LT@chunks=\count121
-\LT@p@ftn=\toks21
+\LTchunksize=\count109
+\LTcapwidth=\dimen113
+\LT@head=\box32
+\LT@firsthead=\box33
+\LT@foot=\box34
+\LT@lastfoot=\box35
+\LT@cols=\count110
+\LT@rows=\count111
+\c@LT@tables=\count112
+\c@LT@chunks=\count113
+\LT@p@ftn=\toks20
 )
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2013/12/03 3.9h The Babel package
@@ -321,8 +305,8 @@ Language: english 2012/08/20 v3.3p English support from the babel system
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2013/12/03 3.9h Babel common definitions
-\babel@savecnt=\count122
-\U@D=\dimen118
+\babel@savecnt=\count114
+\U@D=\dimen114
 )
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
@@ -330,8 +314,8 @@ File: babel.def 2013/12/03 3.9h Babel common definitions
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2008/03/30 v1.1d Input encoding file
-\inpenc@prehook=\toks22
-\inpenc@posthook=\toks23
+\inpenc@prehook=\toks21
+\inpenc@posthook=\toks22
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
@@ -550,11 +534,36 @@ Now handling font encoding PD1 ...
 (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \labelindent=\skip62
-\enit@outerparindent=\dimen119
-\enit@toks=\toks24
-\enit@inbox=\box38
-\enitdp@description=\count123
+\enit@outerparindent=\dimen115
+\enit@toks=\toks23
+\enit@inbox=\box36
+\enitdp@description=\count115
 )
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count116
+\lst@gtempboxa=\box37
+\lst@token=\toks24
+\lst@length=\count117
+\lst@currlwidth=\dimen116
+\lst@column=\count118
+\lst@pos=\count119
+\lst@lostspace=\dimen117
+\lst@width=\dimen118
+\lst@newlines=\count120
+\lst@lineno=\count121
+\lst@maxwidth=\dimen119
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
+\c@lstnumber=\count122
+\lst@skipnumbers=\count123
+\lst@framebox=\box38
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2013/08/26 1.5b listings configuration
+))
+Package: listings 2013/08/26 1.5b (Carsten Heinz)
+
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2013/08/26 1.5b listings language file
 )
@@ -594,23 +603,24 @@ LaTeX Info: Redefining \nameref on input line 3.
 \@outlinefile=\write3
 \openout3 = `3_ID.out'.
 
-\c@lstlisting=\count125
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count126
+\scratchcounter=\count125
 \scratchdimen=\dimen120
 \scratchbox=\box40
-\nofMPsegments=\count127
-\nofMParguments=\count128
+\nofMPsegments=\count126
+\nofMParguments=\count127
 \everyMPshowfont=\toks25
-\MPscratchCnt=\count129
+\MPscratchCnt=\count128
 \MPscratchDim=\dimen121
-\MPnumerator=\count130
-\makeMPintoPDFobject=\count131
+\MPnumerator=\count129
+\makeMPintoPDFobject=\count130
 \everyMPtoPDFconversion=\toks26
-) (./title/title_page.tex
-<title/polimi_logo.png, id=43, 419.31656pt x 417.81094pt>
+)
+\c@lstlisting=\count131
+ (./title/title_page.tex
+<title/polimi_logo.png, id=47, 419.31656pt x 417.81094pt>
 File: title/polimi_logo.png Graphic file (type png)
 
 <use title/polimi_logo.png>
@@ -657,7 +667,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [2
 
 ]
-<images/jms-programmingModel.png, id=85, 438.63875pt x 337.26pt>
+<images/jms-programmingModel.png, id=90, 438.63875pt x 337.26pt>
 File: images/jms-programmingModel.png Graphic file (type png)
 
 <use images/jms-programmingModel.png>
@@ -685,7 +695,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[5]) (./chapters/checklist_issue.tex
+[5]) (./chapters/code_issue.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -697,138 +707,138 @@ Chapter 3.
 [7
 
 ]
-Overfull \hbox (28.42145pt too wide) in paragraph at lines 23--24
+Overfull \hbox (28.42145pt too wide) in paragraph at lines 24--25
 \OT1/cmr/m/n/10.95 L.756(123), L.794(130), L.1355(137), L.1358(136), L.1841(131
 ), L.1922(125),
  []
 
 
-Overfull \hbox (39.37146pt too wide) in paragraph at lines 23--24
-\OT1/cmr/m/n/10.95 L.1958(141), L.2008(132), L.2021(141), L.2140(130), L.2262(1
-25), L.2285(149),
+Overfull \hbox (39.37146pt too wide) in paragraph at lines 24--25
+\OT1/cmr/m/n/10.95 L.1958(141), L.2005(132), L.2018(141), L.2137(130), L.2259(1
+25), L.2282(149),
  []
 
 
-Overfull \hbox (39.37146pt too wide) in paragraph at lines 23--24
-\OT1/cmr/m/n/10.95 L.2290(132), L.2296(131), L.2320(126), L.2333(145), L.2334(1
-29), L.2340(135),
+Overfull \hbox (39.37146pt too wide) in paragraph at lines 24--25
+\OT1/cmr/m/n/10.95 L.2287(132), L.2293(131), L.2317(126), L.2330(145), L.2331(1
+29), L.2337(135),
  []
 
 
-Overfull \hbox (39.37146pt too wide) in paragraph at lines 23--24
-\OT1/cmr/m/n/10.95 L.2342(125), L.2349(129), L.2361(129), L.2364(125), L.2369(1
-49), L.2396(135),
+Overfull \hbox (39.37146pt too wide) in paragraph at lines 24--25
+\OT1/cmr/m/n/10.95 L.2339(125), L.2346(129), L.2358(129), L.2361(125), L.2366(1
+49), L.2393(135),
  []
 
 
-Overfull \hbox (39.37146pt too wide) in paragraph at lines 23--24
-\OT1/cmr/m/n/10.95 L.2410(133), L.2412(135), L.2443(123), L.2474(128), L.2590(1
-35), L.2605(131). 
+Overfull \hbox (39.37146pt too wide) in paragraph at lines 24--25
+\OT1/cmr/m/n/10.95 L.2407(133), L.2409(135), L.2440(123), L.2471(128), L.2587(1
+35), L.2602(131). 
  []
 
 
-Overfull \hbox (15.61597pt too wide) in paragraph at lines 29--30
+Overfull \hbox (15.61597pt too wide) in paragraph at lines 30--31
 []\OT1/cmr/m/n/10.95 public static String get-Bro-kerIn-stan-ce-Name(JmsService
  js)[] at L.1137 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
 [][]\OT1/cmr/m/n/10.95 oss far
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
 \OT1/cmr/m/n/10.95 no-tare
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
 \OT1/cmr/m/n/10.95 questa
  []
 
 
-Underfull \hbox (badness 1348) in paragraph at lines 31--31
+Underfull \hbox (badness 1348) in paragraph at lines 32--32
 \OT1/cmr/m/n/10.95 bad prac-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
 \OT1/cmr/m/n/10.95 tice di
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
 \OT1/cmr/m/n/10.95 ri-tornare
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
 \OT1/cmr/m/n/10.95 vari-abili
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
 [][]\OT1/cmr/m/n/10.95 ci sono
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
 \OT1/cmr/m/n/10.95 ton-nel-late
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
 \OT1/cmr/m/n/10.95 des-ti-na-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
 \OT1/cmr/m/n/10.95 uguali
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
 \OT1/cmr/m/n/10.95 a cui
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
 \OT1/cmr/m/n/10.95 cam-biano
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
 \OT1/cmr/m/n/10.95 solo i
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
 \OT1/cmr/m/n/10.95 parametri,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
 \OT1/cmr/m/n/10.95 da con-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
 \OT1/cmr/m/n/10.95 trol-lare
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
 \OT1/cmr/m/n/10.95 pi^^Ru a
  []
 
 
-Overfull \hbox (3.83728pt too wide) in paragraph at lines 31--32
+Overfull \hbox (3.83728pt too wide) in paragraph at lines 32--33
 \OT1/cmr/m/n/10.95 TARE QUESTA BAD PRAC-TICE DI RI-TORNARE VARI-ABILI
  []
 
 
-Overfull \hbox (6.04495pt too wide) in paragraph at lines 31--32
+Overfull \hbox (6.04495pt too wide) in paragraph at lines 32--33
 \OT1/cmr/m/n/10.95 PRI-VATECI SONO TON-NEL-LATE DI GETJMS-DES-TI-NA-TION
  []
 
@@ -839,46 +849,43 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [8]
-Overfull \hbox (4.97015pt too wide) in paragraph at lines 38--39
+
+LaTeX Warning: Marginpar on page 9 moved.
+
+
+Overfull \hbox (4.97015pt too wide) in paragraph at lines 39--40
 []\OT1/cmr/m/n/10.95 public void val-i-date-Ac-ti-va-tion-Spec(ActivationSpec s
-pec)[] at L.1165 
+pec)[] at L.1162 
  []
 
 
-Underfull \hbox (badness 3861) in paragraph at lines 45--45
+Underfull \hbox (badness 3861) in paragraph at lines 46--46
 \OT1/cmr/m/n/10.95 one more
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--45
+Underfull \hbox (badness 10000) in paragraph at lines 46--46
 \OT1/cmr/m/n/10.95 thor-
  []
 
 
-Overfull \hbox (50.57072pt too wide) in paragraph at lines 56--57
+Overfull \hbox (50.57072pt too wide) in paragraph at lines 58--59
 \OT1/cmr/m/n/10.95 tion-Fac-to-ries (com.sun.enterprise.connectors.ConnectorCon
 nectionPool
  []
 
 
-Overfull \hbox (9.93405pt too wide) in paragraph at lines 58--59
+Overfull \hbox (9.93405pt too wide) in paragraph at lines 60--61
 []\OT1/cmr/m/n/10.95 public Man-aged-Con-nec-tion-Fac-tory cre-ate-M-an-aged-Co
 n-nec-tion-
  []
 
 
-Overfull \hbox (22.8307pt too wide) in paragraph at lines 58--59
+Overfull \hbox (22.8307pt too wide) in paragraph at lines 60--61
 \OT1/cmr/m/n/10.95 Fac-tory(com.sun.enterprise.connectors.ConnectorConnectionPo
 ol
  []
 
-
-Overfull \hbox (20.002pt too wide) in paragraph at lines 59--60
-[]\OT1/cmr/m/n/10.95 public void up-dateMD-BRun-time-Info(EjbMessageBeanDescrip
-tor
- []
-
-) (./chapters/other_problems.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -886,6 +893,29 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [9]
+Overfull \hbox (20.002pt too wide) in paragraph at lines 61--62
+[]\OT1/cmr/m/n/10.95 public void up-dateMD-BRun-time-Info(EjbMessageBeanDescrip
+tor
+ []
+
+
+Overfull \hbox (15.15959pt too wide) in paragraph at lines 69--70
+[]\OT1/cmr/bx/n/10.95 C1 \OT1/cmr/m/n/10.95 Pa-ram-e-ter []cpr[] and vari-ables
+ []mcf[](L.1971), []s[](L.1976) and []ar-ray[](L.2011)
+ []
+
+
+Overfull \hbox (84.66188pt too wide) in paragraph at lines 72--73
+\OT1/cmr/m/n/10.95 tent of the set re-turned by []cpr.getConnectorDescriptorInf
+o().getMCFConfigProperties()[]. 
+ []
+
+
+Overfull \hbox (2.29321pt too wide) in paragraph at lines 73--74
+[]\OT1/cmr/bx/n/10.95 C30 \OT1/cmr/m/n/10.95 The in-vo-ca-tion []con-fig-Prop-e
+r-ties.toArray()[] at L.2011 doesn't check
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -893,8 +923,100 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [10]
+Overfull \hbox (89.5894pt too wide) in paragraph at lines 82--83
+\OT1/cmr/m/n/10.95 tions to the set re-turned by []cpr.getConnectorDescriptorIn
+fo().getMCFConfigProperties()[],
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[11]
+Overfull \hbox (97.22377pt too wide) in paragraph at lines 91--92
+[]\OT1/cmr/bx/n/10.95 C44 []\OT1/cmr/m/n/10.95 !\".equals(prop.getValue())[] at
+ L.1984 should be re-placed by []!prop.getValue.isEmpty()[],
+ []
+
+
+Overfull \hbox (26.1401pt too wide) in paragraph at lines 92--93
+[]\OT1/cmr/m/n/10.95 prop-erty.getValue().isEmpty())[] and []\lo-cal-host".equa
+ls(property.getValue())[]
+ []
+
+
+Overfull \hbox (0.89429pt too wide) in paragraph at lines 93--94
+\OT1/cmr/m/n/10.95 fact that []cpr.getConnectorDescriptorInfo().getMCFConfigPro
+perties()[]
+ []
+
+
+Overfull \hbox (83.71895pt too wide) in paragraph at lines 93--94
+\OT1/cmr/m/n/10.95 re-turns a generic []Set[] ob-ject in-stead of a more ap-pro
+-pri-ate []Set$\OMS/cmsy/m/n/10.95 h$\OT1/cmr/m/n/10.95 ConnectorConfigProperty
+$\OMS/cmsy/m/n/10.95 i$[]
+ []
+
+
+Overfull \hbox (2.26297pt too wide) in paragraph at lines 96--97
+[]\OT1/cmr/m/n/10.95 The in-vo-ca-tion []con-fig-Prop-er-ties.toArray()[] at L.
+2011 doesn't check
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[12]
+Overfull \hbox (84.66188pt too wide) in paragraph at lines 111--112
+\OT1/cmr/m/n/10.95 tent of the set re-turned by []cpr.getConnectorDescriptorInf
+o().getMCFConfigProperties()[]. 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[13]
+Overfull \hbox (73.12378pt too wide) in paragraph at lines 122--123
+\OT1/cmr/m/n/10.95 turn an []Ob-ject[] ob-ject which is not store nor used. In 
+prac-tice, s[]setMethodAction.run()[]
+ []
+
+
+Overfull \hbox (157.41866pt too wide) in paragraph at lines 123--124
+\OT1/cmr/m/n/10.95 make mod-i-fi-ca-tions to the set re-turned by []cpr.getConn
+ectorDescriptorInfo().getMCFConfigProperties()[],
+ []
+
+
+Overfull \hbox (97.22377pt too wide) in paragraph at lines 131--132
+[]\OT1/cmr/bx/n/10.95 C44 []\OT1/cmr/m/n/10.95 !\".equals(prop.getValue())[] at
+ L.1899 should be re-placed by []!prop.getValue.isEmpty()[],
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[14]) (./chapters/other_problems.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[15]
 Chapter 4.
-) (./chapters/checklist.tex [11
+) (./chapters/checklist.tex [16
 
 ]
 Appendix A.
@@ -911,7 +1033,7 @@ ground()\OT1/cmr/m/n/10.95 ; \OT1/cmtt/m/n/10.95 computeTemperature()\OT1/cmr/m
 /n/10.95 . 
  []
 
-[12
+[17
 
 ]
 
@@ -920,14 +1042,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[13]
+[18]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[14]
+[19]
 LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 103
 .
 LaTeX Font Info:    No file OMScmtt.fd. on input line 103.
@@ -943,7 +1065,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[15]
+[20]
 Overfull \hbox (23.7937pt too wide) in paragraph at lines 129--130
 []$\OT1/cmtt/m/n/10.95 http : / / users . csc . calpoly . edu / []jdalbey / SWE
  / CodeSmells / bonehead .
@@ -961,40 +1083,40 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16]) (./chapters/hours_of_work.tex
+[21]) (./chapters/hours_of_work.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[17]
+[22]
 Appendix B.
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 25.
- [18
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 26.
+ [23
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 25.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 26.
  (./3_ID.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 25.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 25.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 26.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 26.
 Package rerunfilecheck Info: File `3_ID.out' has not changed.
-(rerunfilecheck)             Checksum: AFF0825675BB4C5938B73AC9ED40B48D;598.
+(rerunfilecheck)             Checksum: 377979D9BF852EF12E7FADE4FEB6B6AE;691.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 25.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 26.
  ) 
 Here is how much of TeX's memory you used:
- 8769 strings out of 494967
- 126770 string characters out of 6179868
- 249035 words of memory out of 5000000
- 11696 multiletter control sequences out of 15000+600000
+ 9220 strings out of 494967
+ 131493 string characters out of 6179868
+ 258997 words of memory out of 5000000
+ 12092 multiletter control sequences out of 15000+600000
  11259 words of font info for 40 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
- 32i,12n,43p,1040b,676s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,12n,43p,1040b,676s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
@@ -1005,9 +1127,9 @@ type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmtt9.pfb>
-Output written on 3_ID.pdf (20 pages, 283406 bytes).
+Output written on 3_ID.pdf (25 pages, 305849 bytes).
 PDF statistics:
- 335 PDF objects out of 1000 (max. 8388607)
- 144 named destinations out of 1000 (max. 500000)
- 91 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 419 PDF objects out of 1000 (max. 8388607)
+ 197 named destinations out of 1000 (max. 500000)
+ 99 words of extra memory for PDF output out of 10000 (max. 10000000)
 

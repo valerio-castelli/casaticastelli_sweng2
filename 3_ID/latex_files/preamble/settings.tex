@@ -1,9 +1,10 @@
 \documentclass[11pt,oneside,a4paper]{report}
 
-% hyperlinks in the table of contents
+% Hyperlinks in the table of contents
 \usepackage{hyperref}
 \hypersetup{pdfborder = {0 0 0}} %remove boxes from hyperlinks
 
+% Page header
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \lhead{\leftmark}
@@ -13,12 +14,10 @@
 \cfoot{\thepage}
 \rfoot{}
 
+% Various packages
 \usepackage{float}
-\usepackage{listings}
-\usepackage{color}
 \usepackage{graphicx}
 \usepackage{wrapfig}
-\usepackage{lscape}
 \usepackage{rotating}
 \usepackage{epstopdf}
 \usepackage{lscape}
@@ -30,7 +29,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{enumitem}
 
-%roman numbers for table of contents
+% Roman numbers for table of contents
 \pagenumbering{roman}
 \let\myTOC\tableofcontents
 \renewcommand\tableofcontents{%
@@ -39,10 +38,12 @@
 \pagenumbering{arabic}
 }
 
+% Code insertion
+\usepackage{color}
 \definecolor{mygreen}{rgb}{0,0.6,0}
 \definecolor{mygray}{rgb}{0.5,0.5,0.5}
 \definecolor{mymauve}{rgb}{0.58,0,0.82}
-
+\usepackage{listings}
 \lstset{ %
   backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}
   basicstyle=\footnotesize,        % the size of the fonts that are used for the code
@@ -75,4 +76,3 @@
 
 % Custom Commands
 \input{preamble/commands.tex}
-

@@ -1,0 +1,141 @@
+% A more concise version of the checkilist: examples and "check that" expressions are removed, and some other improvements are applied
+
+\chapter{Checklist}
+
+\section*{Naming Conventions}
+\begin{enumerate}
+\item All class names, interface names, method names, class variables, method variables, and constants used should have meaningful names and do what the name suggests.
+\item If one-character variables are used, they are used only for temporary “throwaway” variables, such as those used in for loops.
+\item Class names are nouns, in mixed case, with the first letter of each word in capitalized.
+\item Interface names should be capitalized like classes.
+\item Method names should be verbs, with the first letter of each addition word capitalized.
+\item Class variables, also called attributes, are mixed case, but might begin with an underscore (`\texttt{\_}') followed by a lowercase first letter. All the remaining words in the variable name have their first letter capitalized.
+\item Constants are declared using all uppercase with words separated by an underscore.
+\end{enumerate}
+
+\section*{Indention}\begin{enumerate}[resume]
+\item Three or four spaces are used for indentation and done so consistently.
+\item No tabs are used to indent.
+\end{enumerate}
+
+\section*{Braces}\begin{enumerate}[resume]
+\item Consistent bracing style is used, either the preferred “Allman” style (first brace goes underneath the opening block) or the “Kernighan and Ritchie” style (first brace is on the same line of the instruction that opens the new block).
+\item All \texttt{if}, \texttt{while}, \texttt{do-while}, \texttt{try-catch}, and \texttt{for} statements that have only one statement to execute are surrounded by curly braces.
+\end{enumerate}
+
+\section*{File Organization}\begin{enumerate}[resume]
+\item Blank lines and optional comments are used to separate sections (beginning comments, package/import statements, class/interface declarations which include class variable/attributes declarations, constructors, and methods).
+\item Where practical, line length does not exceed 80 characters.
+\item When line length must exceed 80 characters, it does NOT exceed 120 characters.
+\end{enumerate}
+
+\section*{Wrapping Lines}\begin{enumerate}[resume]
+\item Line break occurs after a comma or an operator.
+\item Higher-level breaks are used.
+\item A new statement is aligned with the beginning of the expression at the same level as the previous line.
+\end{enumerate}
+
+\section*{Comments}\begin{enumerate}[resume]
+\item Comments are used to adequately explain what the class, interface, methods, and blocks of code are doing.
+\item Commented out code contains a reason for being commented out and a date it can be removed from the source file if determined it is no longer needed.
+\end{enumerate}
+
+\section*{Java Source Files}\begin{enumerate}[resume]
+\item Each Java source file contains a single public class or interface.
+\item The public class is the first class or interface in the file.
+\item External program interfaces are implemented consistently with what is described in the javadoc.
+\item Javadoc is complete (i.e., it covers all classes and files part of the set of classes assigned to you).
+\end{enumerate}
+
+\section*{Package and Import Statements}\begin{enumerate}[resume]
+\item If any package statements are needed, they should be the first non-comment statements. Import statements follow.
+\end{enumerate}
+
+\section*{Class and Interface Declarations}\begin{enumerate}[resume]
+\item The class or interface declarations shall be in the following order:
+	\begin{enumerate}
+		\item class/interface documentation comment;
+		\item class or interface statement;
+		\item class/interface implementation comment, if necessary;
+		\item class (static) variables;
+		\begin{enumerate}
+			\item first public class variables;
+			\item next protected class variables;
+			\item next package level (no access modifier);
+			\item last private class variables.
+		\end{enumerate}
+		\item instance variables;
+		\begin{enumerate}
+			\item first public instance variables;
+			\item next protected instance variables;
+			\item next package level (no access modifier);
+			\item last private instance variables.
+		\end{enumerate}
+		\item constructors;
+		\item methods.
+	\end{enumerate}
+	\item Methods are grouped by functionality rather than by scope or accessibility.
+	\item Check that the code is free of duplicates, long methods, big classes, breaking encapsulation, as well as if coupling and cohesion are adequate.
+\end{enumerate}
+
+\section*{Initialization and Declarations}\begin{enumerate}[resume]
+\item Variables and class members are of the correct type. Check that they have the right visibility (public/private/protected).
+\item Variables are declared in the proper scope.
+\item Constructors are called when a new object is desired.
+\item All object references are initialized before use.
+\item Variables are initialized where they are declared, unless dependent upon a computation.
+\item Declarations appear at the beginning of blocks (block: any code surrounded by curly braces `\texttt{\{}' and `\texttt{\}}'). The exception is a variable can be declared in a \texttt{for} loop.
+\end{enumerate}
+
+\section*{Method Calls}\begin{enumerate}[resume]
+\item Parameters are presented in the correct order.
+\item Check that the correct method is being called, or should it be a different method with a similar name.
+\item Method returned values are used properly.
+\end{enumerate}
+
+\section*{Arrays}\begin{enumerate}[resume]
+\item There are no off-by-one errors in array indexing (that is, all required array elements are correctly accessed through the index).
+\item All array (or other collection) indexes have been prevented from going out-of-bounds.
+\item Constructors are called when a new array item is desired.
+\end{enumerate}
+
+\section*{Object Comparison}\begin{enumerate}[resume]
+\item All objects (including \code{String}s) are compared with \texttt{equals} and not with \texttt{==}.
+\end{enumerate}
+
+\section*{Output Format}\begin{enumerate}[resume]
+\item Displayed output is free of spelling and grammatical errors.
+\item Error messages are comprehensive and provide guidance as to how to correct the problem.
+\item The output is formatted correctly in terms of line stepping and spacing.
+\end{enumerate}
+
+\section*{Computation, Comparisons and Assignments}\begin{enumerate}[resume]
+\item Implementation avoids “brutish programming”\footnote{See \url{http://users.csc.calpoly.edu/~jdalbey/SWE/CodeSmells/bonehead.html} for more information.}. 
+\item Check order of computation/evaluation, operator precedence and parenthesizing.
+\item Liberal use of parenthesis is used to avoid operator precedence problems.
+\item All denominators of a division are prevented from being zero.
+\item Integer arithmetic, especially division, is used appropriately to avoid causing unexpected truncation/rounding.
+\item Comparison and Boolean operators are correct.
+\item Check \code{throw-catch} expressions, and check that the error condition is actually legitimate.
+\item Check that the code is free of any implicit type conversions.
+\end{enumerate}
+
+\section*{Exceptions}\begin{enumerate}[resume]
+\item Check that the most relevant exceptions are caught.
+\item Appropriate action are taken for each catch block.
+\end{enumerate}
+
+\section*{Flow of Control}\begin{enumerate}[resume]
+\item In a \texttt{switch} statement, check that all cases are addressed by break or return.
+\item All switch statements have a default branch.
+\item All loops are correctly formed, with the appropriate initialization, increment and termination expressions.
+\end{enumerate}
+
+\section*{Files}\begin{enumerate}[resume]
+\item All files are properly declared and opened.
+\item All files are closed properly, even in the case of an error.
+\item EOF conditions are detected and handled correctly.
+\item All file exceptions are caught and dealt with accordingly.
+\end{enumerate}
+
+
