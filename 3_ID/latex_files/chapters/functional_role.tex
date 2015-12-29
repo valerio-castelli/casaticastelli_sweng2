@@ -38,11 +38,9 @@ The \code{createManagedConnectionFactory} method is precisely involved with the 
 	\item If everything has been successful, it returns a pointer to the created \code{ManagedConnectionFactory} instance; otherwise, it returns null.
 \end{itemize}
 
-\note{< >}
-%However, this code is only able to configure properties for which a setter with the same name exists. Apparently, older implementations of the MQ API only provided properties in the form of \code{$\langle$property, value$\rangle$} tuples which had to be passed to a \code{setProperty(String property, String value)} method; this properties starting with the “imq” prefix are thus not set by the initial call of the super \code{createManagedConnectionFactory} method.
+However, this code is only able to configure properties for which a setter with the same name exists. Apparently, older implementations of the MQ API only provided properties in the form of \code{<property, value>} tuples which had to be passed to a \code{setProperty(String property, String value)} method; this properties starting with the “imq” prefix are thus not set by the initial call of the super \code{createManagedConnectionFactory} method.
 
-\note{< >}
-%For this reason, if a valid \code{ManagedConnectionFactory} instance is returned, the method proceeds to check all the properties stated in the \code{ConnectorConnectionPool} object looking for those who have “imq” as a prefix and, if any of them is found, it uses Java reflection to obtain the \code{setProperty(String property, String value)} method of the \code{ManagedConnectionFactory} and invokes it with the corresponding \code{$\langle$property, value$\rangle$} tuple. If no such method is found, then an exception is raised.
+For this reason, if a valid \code{ManagedConnectionFactory} instance is returned, the method proceeds to check all the properties stated in the \code{ConnectorConnectionPool} object looking for those who have “imq” as a prefix and, if any of them is found, it uses Java reflection to obtain the \code{setProperty(String property, String value)} method of the \code{ManagedConnectionFactory} and invokes it with the corresponding \code{<property, value>} tuple. If no such method is found, then an exception is raised.
 
 For compatibility reasons, most properties still have an old, deprecated imq version and a newer official version, which should be used in lieu of the old one. If the two are present with different values in the same file, it is assumed that the newer one should be considered as the legal one.
 
