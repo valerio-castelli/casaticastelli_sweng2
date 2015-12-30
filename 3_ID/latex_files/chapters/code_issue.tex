@@ -21,7 +21,7 @@ This chapter highlights all the bad practices that we have recognized during the
 	\item \checklist{8} and \checklist{9} are not followed consistently throughout the code. Most of the class uses four spaces indentation, but tabs are also occasionally used as at \codeline{357}, \codeline{493}, \codelines{537}{556}, \codelines{992}{997}, \codelines{1008-1010}, \codelines{1026}{1030}, \codelines{1102}{1112}, \codelines{1351}{1357}, \codelines{1973}{1975}. 
 	\item \checklist{10} Method \code{public void postConstruct()} at \codeline{340} and method \code{private boolean isDAS()} at \codeline{1739} don't follow the bracing style used throughout the rest of the class.
 	\item \checklist{11} There are a number of single-line \code{if} statements that do not follow the convention. It would be very time consuming to enumerate them all, but at \codeline{1245}, \codeline{1254}, \codeline{1303}, \codeline{1307} there are a few examples of this behavior. 
-	\item \checklist{14} There are a number of occurrences in which the line length exceeds the 120 character limit: at \codeline{153}(130), \codeline{423}(134), \codeline{604}(169), \codeline{756}(123), \codeline{794}(130), \codeline{1355}(137), \codeline{1358}(136), \codeline{1841}(131), \codeline{1922}(125), \codeline{1958}(141), \codeline{2005}(132), \codeline{2018}(141), \codeline{2137}(130), \codeline{2259}(125), \codeline{2282}(149), \codeline{2287}(132), \codeline{2293}(131), \codeline{2317}(126), \codeline{2330}(145), \codeline{2331}(129), \codeline{2337}(135), \codeline{2339}(125), \codeline{2346}(129), \codeline{2358}(129), \codeline{2361}(125), \codeline{2366}(149), \codeline{2393}(135), \codeline{2407}(133), \codeline{2409}(135), \codeline{2440}(123), \codeline{2471}(128), \codeline{2587}(135), \codeline{2602}(131).
+	\item \checklist{14} There are a number of occurrences in which the line length exceeds the 120 character limit: at \codeline{153} (130), \codeline{423} (134), \codeline{604} (169), \codeline{756}(123), \codeline{794} (130), \codeline{1355} (137), \codeline{1358}( 136), \codeline{1841} (131), \codeline{1922} (125), \codeline{1958} (141), \codeline{2005} (132), \codeline{2018} (141), \codeline{2137} (130), \codeline{2259} (125), \codeline{2282} (149), \codeline{2287} (132), \codeline{2293} (131), \codeline{2317} (126), \codeline{2330} (145), \codeline{2331} (129), \codeline{2337} (135), \codeline{2339} (125), \codeline{2346} (129), \codeline{2358} (129), \codeline{2361} (125), \codeline{2366} (149), \codeline{2393} (135), \codeline{2407} (133), \codeline{2409} (135), \codeline{2440} (123), \codeline{2471} (128), \codeline{2587} (135), \codeline{2602} (131).
 	\item \checklist{18} Some methods don't have an explanation of what they're supposed to do. Also, large pieces of code are left uncommented or only have extremely brief explanations of their purpose. 
 	\item \checklist{19} None of the occurrences of commented out code contains an explanation as to why it has been commented out. 
 	\item \checklist{23} Javadoc is not complete. In particular, the following public methods are not documented: 
@@ -49,16 +49,16 @@ This chapter highlights all the bad practices that we have recognized during the
 			\item This class is probably too long, counting 2612 lines of code (including comments). It should probably be refactored to be more manageable. 
 			\item There are a number of methods which seem to be too long and should probably be split. They are:
 				\begin{itemize}
-				\item \code{private void setAvailabilityProperties()} at \codelines{582}{762}
-				\item \code{private void loadDBProperties(JmsAvailability jmsAvailability, ClusterMode clusterMode)} at \codelines{764}{828}
-				\item \code{private void setLifecycleProperties()} at \codelines{919}{1099}
-				\item \code{private void setJmsServiceProperties(JmsService service)} at \codelines{1601}{1673}
+				\item \code{private void setAvailabilityProperties()} at \codelines{582}{762}.
+				\item \code{private void loadDBProperties(JmsAvailability jmsAvailability, ClusterMode clusterMode)} at \codelines{764}{828}.
+				\item \code{private void setLifecycleProperties()} at \codelines{919}{1099}.
+				\item \code{private void setJmsServiceProperties(JmsService service)} at \codelines{1601}{1673}.
 				\item \code{public ManagedConnectionFactory [] createManagedConnectionFactories
         (com.sun.enterprise.connectors.ConnectorConnectionPool cpr,
-         ClassLoader loader)} at \codelines{1860}{1941}
+         ClassLoader loader)} at \linebreak\codelines{1860}{1941}.
 				\item \code{public ManagedConnectionFactory createManagedConnectionFactory(com.sun.enterprise.connectors.ConnectorConnectionPool cpr,
-                   ClassLoader loader)} at \codelines{1970}{2043}
-                \item \code{public void updateMDBRuntimeInfo(EjbMessageBeanDescriptor descriptor\_, BeanPoolDescriptor poolDescriptor)} at \codelines{2061}{2220}                     
+                   ClassLoader loader)} at \codelines{1970}{\linebreak2043}.
+                \item \code{public void updateMDBRuntimeInfo(EjbMessageBeanDescriptor descriptor\_, BeanPoolDescriptor poolDescriptor)} at \codelines{2061}{2220}.                   
 				\end{itemize}        
 		\item \checklist{44} Constants at \codelines{268}{271} should probably be refactored as a single enum with four different values. 	
 		\end{itemize}

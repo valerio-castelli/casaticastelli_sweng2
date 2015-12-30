@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.2)  30 DEC 2015 10:37
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.2)  30 DEC 2015 11:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -711,36 +711,6 @@ Chapter 3.
 [7
 
 ]
-Overfull \hbox (28.42145pt too wide) in paragraph at lines 24--25
-\OT1/cmr/m/n/10.95 L.756(123), L.794(130), L.1355(137), L.1358(136), L.1841(131
-), L.1922(125),
- []
-
-
-Overfull \hbox (39.37146pt too wide) in paragraph at lines 24--25
-\OT1/cmr/m/n/10.95 L.1958(141), L.2005(132), L.2018(141), L.2137(130), L.2259(1
-25), L.2282(149),
- []
-
-
-Overfull \hbox (39.37146pt too wide) in paragraph at lines 24--25
-\OT1/cmr/m/n/10.95 L.2287(132), L.2293(131), L.2317(126), L.2330(145), L.2331(1
-29), L.2337(135),
- []
-
-
-Overfull \hbox (39.37146pt too wide) in paragraph at lines 24--25
-\OT1/cmr/m/n/10.95 L.2339(125), L.2346(129), L.2358(129), L.2361(125), L.2366(1
-49), L.2393(135),
- []
-
-
-Overfull \hbox (39.37146pt too wide) in paragraph at lines 24--25
-\OT1/cmr/m/n/10.95 L.2407(133), L.2409(135), L.2440(123), L.2471(128), L.2587(1
-35), L.2602(131). 
- []
-
-
 Overfull \hbox (1.89423pt too wide) in paragraph at lines 30--31
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -748,6 +718,12 @@ Overfull \hbox (1.89423pt too wide) in paragraph at lines 30--31
  []
 
 
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[8]
 Underfull \hbox (badness 10000) in paragraph at lines 32--32
 [][]\OT1/cmr/m/n/10.95 oss far
  []
@@ -850,13 +826,6 @@ Overfull \hbox (34.93604pt too wide) in paragraph at lines 32--33
  []
 
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[8]
-
 LaTeX Warning: Marginpar on page 9 moved.
 
 
@@ -904,10 +873,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 46--46
  []
 
 
-Overfull \hbox (2.87457pt too wide) in paragraph at lines 52--53
+Overfull \hbox (5.91624pt too wide) in paragraph at lines 52--53
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
-[][] \OT1/cmr/m/n/10.95 at L.582-762 
+[][] \OT1/cmr/m/n/10.95 at L.582-762. 
  []
 
 
@@ -925,6 +894,12 @@ Overfull \hbox (5.12465pt too wide) in paragraph at lines 55--56
  []
 
 
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[9]
 Overfull \hbox (5.12465pt too wide) in paragraph at lines 58--59
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -939,19 +914,13 @@ Overfull \hbox (5.12465pt too wide) in paragraph at lines 58--59
  []
 
 
-Overfull \hbox (20.668pt too wide) in paragraph at lines 58--59
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
-[][][][][][][][][][][] \OT1/cmr/m/n/10.95 at L.1860-
+[][][][][][][][][][][] \OT1/cmr/m/n/10.95 at
  []
 
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[9]
 Overfull \hbox (5.12465pt too wide) in paragraph at lines 60--61
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -966,10 +935,10 @@ Overfull \hbox (5.12465pt too wide) in paragraph at lines 60--61
  []
 
 
-Overfull \hbox (8.0759pt too wide) in paragraph at lines 60--61
+Underfull \hbox (badness 3029) in paragraph at lines 60--61
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] \
-OT1/cmr/m/n/10.95 at L.1970-2043 
+OT1/cmr/m/n/10.95 at L.1970-
  []
 
 
@@ -1125,11 +1094,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 20.
 Here is how much of TeX's memory you used:
  9559 strings out of 494967
  134426 string characters out of 6179868
- 416159 words of memory out of 5000000
+ 434159 words of memory out of 5000000
  12427 multiletter control sequences out of 15000+600000
  11259 words of font info for 40 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
- 39i,11n,43p,1059b,1374s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,11n,43p,1059b,1376s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
@@ -1140,7 +1109,7 @@ type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmtt9.pfb>
-Output written on 3_ID.pdf (25 pages, 310473 bytes).
+Output written on 3_ID.pdf (25 pages, 310530 bytes).
 PDF statistics:
  419 PDF objects out of 1000 (max. 8388607)
  197 named destinations out of 1000 (max. 500000)
