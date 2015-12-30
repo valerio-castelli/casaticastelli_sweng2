@@ -6,12 +6,15 @@
 \makeatother%
 
 % Commands to insert a code line or a reference to code inside text.
+\usepackage{color}
+\definecolor{inlinecode}{rgb}{0,0,1}
 \newcommand{\code}[1]{%
 	\lstinline[
 	breaklines=true,
 	breakatwhitespace=false, % if true, allow line breaking only after a white space
 	%prebreak=-, % insert an hypern when a word is broken on two lines
-	basicstyle=\ttfamily\color{blue}
+	basicstyle=\ttfamily\color{inlinecode},
+	stringstyle=\color{inlinecode},
 	]|#1|}
 \newcommand{\codeold}[1]{% 
 	{\color{blue} \noindent\texttt{\seqsplit{#1}}}}
