@@ -1,5 +1,5 @@
 \chapter{Code issues}
-This chapter highlights all the bad practices that we have recognized during the inspection of \code{ActiveJmsResourceAdapter}, and specifically in methods \code{createManagedConnectionFactory} and \code{createManagedConnectionFactories}. The issues we have identified can be either traced back to specific violations of the checklist, or to other bad programming practices. 
+This chapter highlights all the bad practices that we have recognized during the inspection of \code{ActiveJmsResourceAdapter}, and specifically in methods \code{createManagedConnectionFactory} and \code{createManagedConnectionFactories}. The issues we have identified can be either traced back to specific violations of the checklist or to other bad programming practices. 
 
 \section{Notation}
 \begin{itemize}
@@ -136,3 +136,10 @@ This chapter highlights all the bad practices that we have recognized during the
 	\item \checklist{56} The \code{while} loop at \codelines{1895}{1921} could behave strangely if set over which it's iterating is modified by a concurrent thread. It should be isolated and executed in a synchronized way. 
 \end{enumerate}
 
+
+\section{Other issues}
+\begin{itemize}
+	\item String literal "imq" at \codeline{1984} should be refactored as a constant.	
+	\item String literals "imqAddressList" at \codeline{1879} and \codeline{1904}, "AddressList" at \codeline{1879}, "localhost" at \codeline{1884} and "imq" at \codeline{1899} should be refactored as constants. 
+\end{itemize}
+	 
