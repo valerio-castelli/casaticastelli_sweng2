@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.2)  30 DEC 2015 11:26
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.2)  3 JAN 2016 11:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -624,7 +624,7 @@ LaTeX Info: Redefining \nameref on input line 4.
 )
 \c@lstlisting=\count131
  (./title/title_page.tex
-<title/polimi_logo.png, id=47, 419.31656pt x 417.81094pt>
+<title/polimi_logo.png, id=51, 419.31656pt x 417.81094pt>
 File: title/polimi_logo.png Graphic file (type png)
 
 <use title/polimi_logo.png>
@@ -635,11 +635,11 @@ Package pdftex.def Info: title/polimi_logo.png used on input line 3.
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./title/polimi_logo.png>])
  (./3_ID.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 5.
+(Font)              <10.95> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 5.
+(Font)              <8> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 5.
+(Font)              <6> on input line 3.
 )
 \tf@toc=\write4
 \openout4 = `3_ID.toc'.
@@ -651,40 +651,39 @@ been already used, duplicate ignored
 l.8 \tableofcontents
                      [1
 
-] (./chapters/introduction.tex
+] (./chapters/code_description.tex
 Chapter 1.
-) (./chapters/functional_role.tex [1
-
-
-]
-Chapter 2.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 6.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 3.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 13.
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 6.
- [2
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 13.
+ [1
+
 
 ]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 12.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 12.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[3] <images/jms-programmingModel.png, id=101, 438.63875pt x 337.26pt>
+[2] <images/jms-programmingModel.png, id=104, 438.63875pt x 337.26pt>
 File: images/jms-programmingModel.png Graphic file (type png)
 
 <use images/jms-programmingModel.png>
-Package pdftex.def Info: images/jms-programmingModel.png used on input line 26.
+Package pdftex.def Info: images/jms-programmingModel.png used on input line 33.
 
 (pdftex.def)             Requested size: 250.0pt x 192.22475pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
+
+ []
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -692,7 +691,22 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[4 <./images/jms-programmingModel.png>]
+[3 <./images/jms-programmingModel.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
+
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -707,16 +721,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [6]
-Chapter 3.
+Chapter 2.
 [7
 
 ]
-Overfull \hbox (1.89423pt too wide) in paragraph at lines 30--31
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][]
- []
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -724,125 +732,17 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 32--32
-[][]\OT1/cmr/m/n/10.95 oss far
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--32
-\OT1/cmr/m/n/10.95 no-tare
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--32
-\OT1/cmr/m/n/10.95 questa
- []
-
-
-Underfull \hbox (badness 1348) in paragraph at lines 32--32
-\OT1/cmr/m/n/10.95 bad prac-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--32
-\OT1/cmr/m/n/10.95 tice di
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--32
-\OT1/cmr/m/n/10.95 ri-tornare
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--32
-\OT1/cmr/m/n/10.95 vari-abili
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--32
-[][]\OT1/cmr/m/n/10.95 ci sono
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--32
-\OT1/cmr/m/n/10.95 ton-nel-late
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--32
-\OT1/cmr/m/n/10.95 des-ti-na-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--32
-\OT1/cmr/m/n/10.95 uguali
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--32
-\OT1/cmr/m/n/10.95 a cui
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--32
-\OT1/cmr/m/n/10.95 cam-biano
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--32
-\OT1/cmr/m/n/10.95 solo i
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--32
-\OT1/cmr/m/n/10.95 parametri,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--32
-\OT1/cmr/m/n/10.95 da con-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--32
-\OT1/cmr/m/n/10.95 trol-lare
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--32
-\OT1/cmr/m/n/10.95 pi^^Ru a
- []
-
-
-Overfull \hbox (10.07611pt too wide) in paragraph at lines 32--33
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] \OT
-1/cmr/m/n/10.95 at L.441 OSS FAR
- []
-
-
-Overfull \hbox (34.93604pt too wide) in paragraph at lines 32--33
-\OT1/cmr/m/n/10.95 NA-TION TUTTE UGUALI A CUI CAM-BIANO SOLO I PARAMETRI,
- []
-
-
-LaTeX Warning: Marginpar on page 9 moved.
-
-
-Overfull \hbox (1.89423pt too wide) in paragraph at lines 33--34
+Overfull \hbox (1.89423pt too wide) in paragraph at lines 30--31
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][]
  []
 
 
-Underfull \hbox (badness 5050) in paragraph at lines 34--34
-\OT1/cmr/m/n/10.95 ^^Re pro-prio
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 34--34
-\OT1/cmr/m/n/10.95 con-troin-
+Overfull \hbox (1.89423pt too wide) in paragraph at lines 33--34
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][]
  []
 
 
@@ -853,9 +753,6 @@ Overfull \hbox (1.89423pt too wide) in paragraph at lines 34--35
  []
 
 
-LaTeX Warning: Marginpar on page 9 moved.
-
-
 Overfull \hbox (7.64291pt too wide) in paragraph at lines 39--40
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -863,34 +760,45 @@ Overfull \hbox (7.64291pt too wide) in paragraph at lines 39--40
  []
 
 
-Underfull \hbox (badness 3861) in paragraph at lines 46--46
-\OT1/cmr/m/n/10.95 one more
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
-\OT1/cmr/m/n/10.95 thor-
- []
-
-
-Overfull \hbox (5.91624pt too wide) in paragraph at lines 52--53
+Overfull \hbox (5.91624pt too wide) in paragraph at lines 51--52
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][] \OT1/cmr/m/n/10.95 at L.582-762. 
  []
 
 
-Overfull \hbox (5.12465pt too wide) in paragraph at lines 53--54
+Overfull \hbox (5.12465pt too wide) in paragraph at lines 52--53
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][][][][][][][][][][][][][][][][]
  []
 
 
-Overfull \hbox (5.12465pt too wide) in paragraph at lines 55--56
+Overfull \hbox (5.12465pt too wide) in paragraph at lines 54--55
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][][][][][][][][][][][][][][][][]
+ []
+
+
+Overfull \hbox (5.12465pt too wide) in paragraph at lines 57--58
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][]
+ []
+
+
+Overfull \hbox (5.12465pt too wide) in paragraph at lines 57--58
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][] \OT1/cmr/m/n/10.95 at
  []
 
 
@@ -900,59 +808,45 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [9]
-Overfull \hbox (5.12465pt too wide) in paragraph at lines 58--59
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
-[][][][][][][][][][][][][][][][][][][][][][]
- []
-
-
-Overfull \hbox (5.12465pt too wide) in paragraph at lines 58--59
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
-[][][][][][][][][][][][][][][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--59
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
-[][][][][][][][][][][] \OT1/cmr/m/n/10.95 at
- []
-
-
-Overfull \hbox (5.12465pt too wide) in paragraph at lines 60--61
+Overfull \hbox (5.12465pt too wide) in paragraph at lines 59--60
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][][][][][][][][][][][][][][][][][][]
  []
 
 
-Overfull \hbox (5.12465pt too wide) in paragraph at lines 60--61
+Overfull \hbox (5.12465pt too wide) in paragraph at lines 59--60
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][][][][][][][]
  []
 
 
-Underfull \hbox (badness 3029) in paragraph at lines 60--61
+Underfull \hbox (badness 3029) in paragraph at lines 59--60
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] \
 OT1/cmr/m/n/10.95 at L.1970-
  []
 
 
-Overfull \hbox (5.12465pt too wide) in paragraph at lines 61--62
+Overfull \hbox (5.12465pt too wide) in paragraph at lines 60--61
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][][][][][][][][][][][][][][][][]
  []
 
 
-Overfull \hbox (5.12465pt too wide) in paragraph at lines 61--62
+Overfull \hbox (5.12465pt too wide) in paragraph at lines 60--61
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][][][][][][][][][][][][][][][]
+ []
+
+
+Overfull \hbox (1.8648pt too wide) in paragraph at lines 62--63
+[]\OT1/cmr/m/n/10.95 Method [][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][] at L.441
  []
 
 
@@ -989,7 +883,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[14]) (./chapters/other_problems.tex
+[14]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -997,10 +891,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [15]
-Chapter 4.
-) (./chapters/checklist.tex [16
 
-]
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[16]) (./chapters/checklist.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[17]
 Appendix A.
 
 Overfull \hbox (5.30463pt too wide) in paragraph at lines 5--6
@@ -1015,7 +919,7 @@ ground()\OT1/cmr/m/n/10.95 ; \OT1/cmtt/m/n/10.95 computeTemperature()\OT1/cmr/m
 /n/10.95 . 
  []
 
-[17
+[18
 
 ]
 
@@ -1024,14 +928,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[18]
+[19]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[19]
+[20]
 LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 103
 .
 LaTeX Font Info:    No file OMScmtt.fd. on input line 103.
@@ -1047,7 +951,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[20]
+[21]
 Overfull \hbox (23.7937pt too wide) in paragraph at lines 129--130
 []$\OT1/cmtt/m/n/10.95 http : / / users . csc . calpoly . edu / []jdalbey / SWE
  / CodeSmells / bonehead .
@@ -1065,40 +969,40 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[21]) (./chapters/hours_of_work.tex
+[22]) (./chapters/hours_of_work.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[22]
+[23]
 Appendix B.
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 20.
- [23
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 18.
+ [24
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 20.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 18.
  (./3_ID.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 20.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 20.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 18.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 18.
 Package rerunfilecheck Info: File `3_ID.out' has not changed.
-(rerunfilecheck)             Checksum: 377979D9BF852EF12E7FADE4FEB6B6AE;691.
+(rerunfilecheck)             Checksum: FC83AA0DC54DC5A1FA4A7532648A2E77;790.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 20.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 18.
  ) 
 Here is how much of TeX's memory you used:
- 9559 strings out of 494967
- 134426 string characters out of 6179868
- 434159 words of memory out of 5000000
- 12427 multiletter control sequences out of 15000+600000
+ 9555 strings out of 494967
+ 134329 string characters out of 6179868
+ 432159 words of memory out of 5000000
+ 12424 multiletter control sequences out of 15000+600000
  11259 words of font info for 40 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
- 39i,11n,43p,1059b,1376s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,12n,43p,1194b,1374s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
@@ -1109,9 +1013,9 @@ type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmtt9.pfb>
-Output written on 3_ID.pdf (25 pages, 310530 bytes).
+Output written on 3_ID.pdf (26 pages, 317113 bytes).
 PDF statistics:
- 419 PDF objects out of 1000 (max. 8388607)
- 197 named destinations out of 1000 (max. 500000)
- 99 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 434 PDF objects out of 1000 (max. 8388607)
+ 202 named destinations out of 1000 (max. 500000)
+ 107 words of extra memory for PDF output out of 10000 (max. 10000000)
 
