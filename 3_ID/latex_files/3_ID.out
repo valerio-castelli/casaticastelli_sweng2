@@ -4,9 +4,9 @@
 \BOOKMARK [0][-]{chapter.2}{Code issues}{}% 4
 \BOOKMARK [1][-]{section.2.1}{Notation}{chapter.2}% 5
 \BOOKMARK [1][-]{section.2.2}{Checklist issues}{chapter.2}% 6
-\BOOKMARK [2][-]{subsection.2.2.1}{ActiveJmsResourceAdapter class}{section.2.2}% 7
-\BOOKMARK [2][-]{subsection.2.2.2}{createManagedConnectionFactory method}{section.2.2}% 8
-\BOOKMARK [2][-]{subsection.2.2.3}{createManagedConnectionFactories method}{section.2.2}% 9
+\BOOKMARK [2][-]{subsection.2.2.1}{[ breaklines=true, breakatwhitespace=false, basicstyle=inlinecode, stringstyle=inlinecode, ]|ActiveJmsResourceAdapter| class}{section.2.2}% 7
+\BOOKMARK [2][-]{subsection.2.2.2}{[ breaklines=true, breakatwhitespace=false, basicstyle=inlinecode, stringstyle=inlinecode, ]|createManagedConnectionFactory| method}{section.2.2}% 8
+\BOOKMARK [2][-]{subsection.2.2.3}{[ breaklines=true, breakatwhitespace=false, basicstyle=inlinecode, stringstyle=inlinecode, ]|createManagedConnectionFactories| method}{section.2.2}% 9
 \BOOKMARK [1][-]{section.2.3}{Other issues}{chapter.2}% 10
 \BOOKMARK [0][-]{Appendix.1.A}{Appendix Checklist}{}% 11
 \BOOKMARK [0][-]{Appendix.1.B}{Appendix Hours of work}{}% 12
