@@ -112,9 +112,8 @@ This chapter highlights all the bad practices that we have recognized during the
 	\item \checklist{2} Variable \code{s} at \codeline{1874} is named with a single character although it's not properly a “throwaway” variable. 
 	\item \checklist{18} This method is effectively undocumented. There are a number of instructions, especially related to the resolution of replicated properties, which are totally left uncommented. This makes the process of verifying the behavior of the code very hard, as it's not clear what the expected result should be and what's the rationale behind it. 
 	\item \checklist{28} Typecasts at \codeline{1877} and \codeline{1896} could potentially produce an unhandled \code{ClassCastException} if another thread has messed up the content of the set returned by \code{cpr.getConnectorDescriptorInfo().getMCFConfigProperties()}.
-	\item \checklist{30} The assignment at \codeline{1875} should check that \code{Set s} is not \code{null}. 
+	\item \checklist{30} The assignments at \codeline{1875} and at \codeline{1894} should check that \code{Set s} is not \code{null}. 
 	\item \checklist{30} The assignment at \codeline{1878} and the \code{if} statement at \codeline{1879} should check that \code{prop} is not \code{null}.
-	\item \checklist{30} The assignment at \codeline{1894} should check that \code{Set s} is not \code{null}.
 	\item \checklist{30} The assignments at \codelines{1897}{1898} and the \code{if} statement at \codeline{1899} should check that \code{prop} is not \code{null}.
 	\item \checklist{33} Attribute \code{mcfs} is declared at \codeline{1866} which is not at the beginning of a block. 
 	\item \checklist{33} Attribute \code{tokenizer} is declared at \codeline{1883} which is not at the beginning of a block.
