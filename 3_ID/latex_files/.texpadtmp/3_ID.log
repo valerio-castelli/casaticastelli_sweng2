@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.21)  3 JAN 2016 14:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.21)  4 JAN 2016 21:56
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -840,7 +840,30 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16]) (./chapters/checklist.tex
+[16]
+./chapters/code_issue.tex:151: Undefined control sequence.
+l.151 ...amples of this can be found at \codeliens
+                                                  {275}{278}, \codelines{514...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+)
+Runaway argument?
+{1592{1599}, not to mention the whole \code {createManagedConnectionF\ETC.
+./3_ID.tex:12: File ended while scanning use of \codelines.
+<inserted text> 
+                \par 
+l.12 \input{chapters/code_issue.tex}
+                                    
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
+(./chapters/checklist.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -850,18 +873,27 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [17]
 Appendix A.
 
-Overfull \hbox (5.30463pt too wide) in paragraph at lines 5--6
-[]\OT1/cmr/m/n/10.95 All class names, in-ter-face names, method names, class vari-ables, method
+Overfull \hbox (16.58722pt too wide) in paragraph at lines 7--8
+\OT1/cmr/m/n/10.95 word in cap-i-tal-ized. Ex-am-ples: \OT1/cmtt/m/n/10.95 class Raster\OT1/cmr/m/n/10.95 ; \OT1/cmtt/m/n/10.95 class ImageSprite\OT1/cmr/m/n/10.95 ; 
  []
 
 
-Overfull \hbox (15.43097pt too wide) in paragraph at lines 9--10
-\OT1/cmr/m/n/10.95 word cap-i-tal-ized. Ex-am-ples: \OT1/cmtt/m/n/10.95 getBackground()\OT1/cmr/m/n/10.95 ; \OT1/cmtt/m/n/10.95 computeTemperature()\OT1/cmr/m/n/10.95 . 
+Overfull \hbox (60.8127pt too wide) in paragraph at lines 9--10
+\OT1/cmr/m/n/10.95 tion word cap-i-tal-ized. Ex-am-ples: \OT1/cmtt/m/n/10.95 getBackground()\OT1/cmr/m/n/10.95 ; \OT1/cmtt/m/n/10.95 computeTemperature()\OT1/cmr/m/n/10.95 . 
+ []
+
+
+Overfull \hbox (23.64597pt too wide) in paragraph at lines 20--21
+\OT1/cmr/m/n/10.95 style (first brace goes un-der-neath the open-ing block) or the ``Kernighan
  []
 
 [18
 
 ]
+Overfull \hbox (3.5709pt too wide) in paragraph at lines 21--23
+\OT1/cmr/m/n/10.95 have only one state-ment to ex-e-cute are sur-rounded by curly braces.
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -891,13 +923,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [21]
-Overfull \hbox (23.7937pt too wide) in paragraph at lines 129--130
-[]$\OT1/cmtt/m/n/10.95 http : / / users . csc . calpoly . edu / []jdalbey / SWE / CodeSmells / bonehead .
- []
-
-
-Overfull \hbox (5.7305pt too wide) in paragraph at lines 130--131
-[]\OT1/cmr/m/n/10.95 Check or-der of com-pu-ta-tion/e-val-u-a-tion, op-er-a-tor prece-dence and paren-
+Overfull \hbox (16.88972pt too wide) in paragraph at lines 129--130
+\OT1/cmr/m/n/10.95 (see []$\OT1/cmtt/m/n/10.95 http : / / users . csc . calpoly . edu / []jdalbey / SWE / CodeSmells /
  []
 
 
@@ -916,8 +943,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [23]
 Appendix B.
 )
+
+./3_ID.tex:18: LaTeX Error: \begin{itemize} on input line 143 ended by \end{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 \end{document}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 18.
- [24
+[24
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 18.
@@ -931,17 +971,21 @@ Package rerunfilecheck Info: File `3_ID.out' has not changed.
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 18.
- ) 
+ )
+(\end occurred inside a group at level 1)
+
+### semi simple group (level 1) entered at line 143 (\begingroup)
+### bottom level 
 Here is how much of TeX's memory you used:
- 9585 strings out of 493089
- 136428 string characters out of 6134841
+ 9586 strings out of 493089
+ 136441 string characters out of 6134841
  438110 words of memory out of 5000000
- 12712 multiletter control sequences out of 15000+600000
+ 12713 multiletter control sequences out of 15000+600000
  11428 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,12n,43p,1194b,1374s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on /Users/Valerio/GitHub/casaticastelli_sweng2/3_ID/latex_files/.texpadtmp/3_ID.pdf (26 pages, 283813 bytes).
+Output written on /Users/Valerio/GitHub/casaticastelli_sweng2/3_ID/latex_files/.texpadtmp/3_ID.pdf (26 pages, 284981 bytes).
 PDF statistics:
  442 PDF objects out of 1000 (max. 8388607)
  397 compressed objects within 4 object streams
