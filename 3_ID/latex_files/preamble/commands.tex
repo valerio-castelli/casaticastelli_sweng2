@@ -7,7 +7,7 @@
 
 % Commands to insert a code line or a reference to code inside text.
 \usepackage{color}
-\definecolor{inlinecode}{rgb}{0,0,1}
+\definecolor{inlinecode}{rgb}{0,0.298,0.6}
 \newcommand{\code}[1]{%
 	\lstinline[
 	breaklines=true,
@@ -19,8 +19,8 @@
 \newcommand{\codeold}[1]{% 
 	{\color{blue} \noindent\texttt{\seqsplit{#1}}}}
 \newcommand{\checklist}[1]{\textbf{C#1}}
-\newcommand{\codeline}[1]{L.#1}
-\newcommand{\codelines}[2]{L.#1-#2}
+\newcommand{\codeline}[1]{\texttt{L.#1}}
+\newcommand{\codelines}[2]{\texttt{L.#1-#2}}
 
 % Marginal note for observations
 \newcommand{\note}[1]{\MakeUppercase{#1}\marginpar{\MakeLowercase{\textcolor{red}{#1}}}}
