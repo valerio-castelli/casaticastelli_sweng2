@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.2)  4 JAN 2016 22:05
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.2)  4 JAN 2016 22:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -774,10 +774,10 @@ Overfull \hbox (7.64291pt too wide) in paragraph at lines 39--40
  []
 
 
-Overfull \hbox (5.91624pt too wide) in paragraph at lines 51--52
+Overfull \hbox (5.00374pt too wide) in paragraph at lines 51--52
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
-[][] \OT1/cmr/m/n/10.95 at L.582-762. 
+[][] \OT1/cmr/m/n/10.95 at \OT1/cmss/m/n/10.95 L.582-762\OT1/cmr/m/n/10.95 . 
  []
 
 
@@ -836,10 +836,10 @@ Overfull \hbox (5.12465pt too wide) in paragraph at lines 59--60
  []
 
 
-Underfull \hbox (badness 3029) in paragraph at lines 59--60
+Underfull \hbox (badness 3826) in paragraph at lines 59--60
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] \
-OT1/cmr/m/n/10.95 at L.1970-
+OT1/cmr/m/n/10.95 at \OT1/cmss/m/n/10.95 L.1970-
  []
 
 
@@ -857,10 +857,10 @@ Overfull \hbox (5.12465pt too wide) in paragraph at lines 60--61
  []
 
 
-Overfull \hbox (1.8648pt too wide) in paragraph at lines 62--63
+Overfull \hbox (0.9523pt too wide) in paragraph at lines 62--63
 []\OT1/cmr/m/n/10.95 Method [][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
-[][][][][][][][][][][] at L.441
+[][][][][][][][][][][] at \OT1/cmss/m/n/10.95 L.441
  []
 
 
@@ -1034,13 +1034,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 18.
  ) 
 Here is how much of TeX's memory you used:
- 9559 strings out of 494967
- 134386 string characters out of 6179868
+ 9561 strings out of 494967
+ 134410 string characters out of 6179868
  432159 words of memory out of 5000000
- 12428 multiletter control sequences out of 15000+600000
- 11428 words of font info for 41 fonts, out of 8000000 for 9000
+ 12429 multiletter control sequences out of 15000+600000
+ 11733 words of font info for 42 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
- 39i,12n,43p,1194b,1374s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,12n,43p,1194b,1378s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
@@ -1048,13 +1048,14 @@ live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mtt9.pfb>
-Output written on 3_ID.pdf (26 pages, 325526 bytes).
+blic/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.p
+fb>
+Output written on 3_ID.pdf (26 pages, 336966 bytes).
 PDF statistics:
- 437 PDF objects out of 1000 (max. 8388607)
+ 441 PDF objects out of 1000 (max. 8388607)
  201 named destinations out of 1000 (max. 500000)
  107 words of extra memory for PDF output out of 10000 (max. 10000000)
 
