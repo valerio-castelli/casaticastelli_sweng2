@@ -1,6 +1,27 @@
 \chapter{Integration Strategy}
 \section{Entry Criteria}
 \section{Elements to be Integrated}
+In the following paragraph we're going to provide a list of all the components that need to be integrated together.
+
+As specified in myTaxiService's Design Document, the system is built upon the interactions among a number of high-level components, each one implementing a specific set of functionalities. For the sake of modularity, each subsystem is further obtained by the combination of several lower-level components.
+Because of this software architecture, the integration phase will be executed in two distinct steps. 
+
+In the first step, we're going to integrate together the single low-level components in order to obtain the different subsystems of myTaxiService. The functional units that needs to be integrated at this point are:
+\begin{itemize}
+	\item The \textbf{Reservation Management}, \textbf{Request Management}, \textbf{Location Management} and \textbf{Taxi Management} subcomponents in order to obtain the \textbf{Taxi Management System} subsystem.
+	\item The \textbf{API Permissions Management}, \textbf{Zone Division Management}, \textbf{Taxi Driver Management}, \textbf{Service Statistics} and \textbf{Plugin Management} subcomponents in order to obtain the \textbf{System Administration} subsystem.
+	\item The \textbf{Passenger Registration}, \textbf{Login}, \textbf{Password Retrieval} and \textbf{Settings Management} subcomponents in order to obtain the \textbf{Account Management} subsystem.
+\end{itemize}
+At a higher level, instead, the integration activity will involve:
+\begin{itemize}
+	\item Some commercial, preexisting components: \textbf{DBMS}, \textbf{Mapping Service}, \textbf{Notification System}, \textbf{Remote Services Interface}
+	\item The custom developed components: 
+		\begin{itemize}
+		\item On the server side: \textbf{Taxi Management System}, \textbf{System Administration}, \textbf{Account Management}, \textbf{Data Access Utilities}
+		\item On the client side: \textbf{Administration Web Application}, \textbf{Passenger Web Application}, \textbf{Passenger Mobile Application}, \textbf{Taxi Driver Mobile Application}.
+		\end{itemize}
+\end{itemize}
+ 
 \section{Integration Testing Strategy}
 \section{Sequence of Component/Function Integration}
 \subsection{Software Integration Sequence}
