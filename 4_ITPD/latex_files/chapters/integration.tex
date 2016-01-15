@@ -3,22 +3,26 @@
 \section{Elements to be Integrated}
 In the following paragraph we're going to provide a list of all the components that need to be integrated together.
 
-As specified in myTaxiService's Design Document, the system is built upon the interactions among a number of high-level components, each one implementing a specific set of functionalities. For the sake of modularity, each subsystem is further obtained by the combination of several lower-level components.
-Because of this software architecture, the integration phase will be executed in two distinct steps. 
+As specified in myTaxiService's Design Document, the system is built upon the interactions of many high-level components, each one implementing a specific set of functionalities. For the sake of modularity, each subsystem is further obtained by the combination of several lower-level components.
+Because of this software architecture, the integration phase will involve the integration of components at two different levels of abstraction. 
 
-In the first step, we're going to integrate together the single low-level components in order to obtain the different subsystems of myTaxiService. The functional units that needs to be integrated at this point are:
+At the lowest level, we'll integrate together those components that depend strongly on one another to offer the higher level functionalities of myTaxiService. In our specific case, this involves the integration of the \textbf{Reservation Management}, \textbf{Request Management}, \textbf{Location Management} and \textbf{Taxi Management} subcomponents in order to obtain the \textbf{Taxi Management System} subsystem. 
+
+For what concerns the building of the \textbf{System Administration} and \textbf{Account Management} subsystems, the integration activity is actually quite limited; in fact, they simply represent a collection of functionalities belonging to the same area which however are not dependent on one another. As a result of this, their subcomponents don't really interact with each other, and the integration phase will be limited to the task of ensuring that the set of functionalities of each subcomponent is properly exposed by the subsystem. The components involved in this phase are:
 \begin{itemize}
-	\item The \textbf{Reservation Management}, \textbf{Request Management}, \textbf{Location Management} and \textbf{Taxi Management} subcomponents in order to obtain the \textbf{Taxi Management System} subsystem.
 	\item The \textbf{API Permissions Management}, \textbf{Zone Division Management}, \textbf{Taxi Driver Management}, \textbf{Service Statistics} and \textbf{Plugin Management} subcomponents in order to obtain the \textbf{System Administration} subsystem.
 	\item The \textbf{Passenger Registration}, \textbf{Login}, \textbf{Password Retrieval} and \textbf{Settings Management} subcomponents in order to obtain the \textbf{Account Management} subsystem.
 \end{itemize}
-At a higher level, instead, the integration activity will involve:
+
+Some of these subcomponents also directly rely on higher level, atomic components: that is the case, for instance, of the dependency on the \textbf{Data Access Utilities} component. This dependency will be taken care of in the integration process.
+
+Finally, we will proceed with the integration of the higher level subsystems. In particular, the integration activity will involve:
 \begin{itemize}
-	\item Some commercial, preexisting components: \textbf{DBMS}, \textbf{Mapping Service}, \textbf{Notification System}, \textbf{Remote Services Interface}
-	\item The custom developed components: 
+	\item A number of commercial, already existing components, used to achieve specific functionalities: these are the \textbf{DBMS}, \textbf{Mapping Service}, \textbf{Notification System} and \textbf{Remote Services Interface} components.
+	\item Those components and subsystems specifically developed for myTaxiService, specifically:
 		\begin{itemize}
-		\item On the server side: \textbf{Taxi Management System}, \textbf{System Administration}, \textbf{Account Management}, \textbf{Data Access Utilities}
-		\item On the client side: \textbf{Administration Web Application}, \textbf{Passenger Web Application}, \textbf{Passenger Mobile Application}, \textbf{Taxi Driver Mobile Application}.
+		\item On the server side: the \textbf{Taxi Management System}, \textbf{System Administration}, \textbf{Account Management} subsystems, together with the \textbf{Data Access Utilities} component.
+		\item On the client side: the \textbf{Administration Web Application}, \textbf{Passenger Web Application}, \textbf{Passenger Mobile Application} and \textbf{Taxi Driver Mobile Application} components.
 		\end{itemize}
 \end{itemize}
  
