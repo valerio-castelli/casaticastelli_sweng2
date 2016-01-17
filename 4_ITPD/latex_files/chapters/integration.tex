@@ -40,6 +40,11 @@ Finally, we will proceed with the integration of the higher level subsystems. In
 \end{itemize}
  
 \section{Integration Testing Strategy}
+The approach we're going to use to perform integration testing is based on a mixture of the bottom-up and critical-module-first integration strategies.
+
+Using the bottom-up approach, we will start integrating together those components that do not depend on other components to function, or that only depend on already developed components. This strategy brings a number of important advantages. First, it allows us to perform integration tests on "real" components that are almost fully developed and thus obtain more precise indications about how the system may react and fail in real world usage with respect to a top-down approach. Secondly, working bottom-up enables us to more closely follow the development process, which in our case is also proceeding using the bottom-up approach; by doing this we can start performing integration testing earlier in the development process as soon as the required components have been developed in order to maximize parallelism and efficiency.
+
+Since subsystems are fairly independent from one another, the order in which they're integrated together to obtain the full system follows the critical-module-first approach. This strategy allows us to concentrate our testing efforts on the riskiest components first, that is those that represents the core functionalities of the whole system and whose malfunctioning could pose a very serious threat to the correct implementation of the entire myTaxiService infrastructure. By proceeding this way, we are able to discover bugs earlier in the integration progress and take the necessary measures to correct them on time.
 \section{Sequence of Component/Function Integration}
 \subsection{Software Integration Sequence}
 \subsubsection*{Data Access}
