@@ -1,5 +1,18 @@
 \chapter{Integration Strategy}
 \section{Entry Criteria}
+In order for the integration testing to be possible and to produce meaningful results, there are a a number of conditions on the progress of the project that have to be met.
+
+First of all, the \textbf{Requirements Analysis and Specification Document} and the \textbf{Design Document} must have been fully written. This is a required step in order to have a complete picture of the interaction between the different components of the system and of their required functionalities. 
+
+Secondly, the integration process should start only when the estimated percentage of completion of every component with respect to its functionalities is:
+\begin{itemize}
+	\item \textbf{100\%} for the \textbf{Data Access Utilities} component
+	\item At least \textbf{90\%} for the \textbf{Taxi Management System} subsystem
+	\item At least \textbf{70\%} for the \textbf{System Administration} and \textbf{Account Management} subsystems
+	\item At least \textbf{50\%} for the \textbf{client applications}
+\end{itemize} 
+It should be noted that these percentages refer to the status of the project at the beginning of the integration testing phase and they do not represent the minimum completion percentage necessary to consider a component for integration, which must be at least \textbf{90\%}. The choice of having different completion percentages for the different components has been made to reflect their order of integration and to take into account the required time to fully perform integration testing.
+
 \section{Elements to be Integrated}
 In the following paragraph we're going to provide a list of all the components that need to be integrated together.
 
@@ -29,4 +42,64 @@ Finally, we will proceed with the integration of the higher level subsystems. In
 \section{Integration Testing Strategy}
 \section{Sequence of Component/Function Integration}
 \subsection{Software Integration Sequence}
+\subsubsection*{Data Access}
+\begin{figure}[H]
+\centering
+\makebox[\columnwidth]{\includegraphics[width=250pt,keepaspectratio]{pdfs/integration_dataaccess.pdf}}
+\end{figure}
+\subsubsection*{Taxi Management}
+
+\begin{figure}[H]
+\centering
+\makebox[\columnwidth]{\includegraphics[width=350pt,keepaspectratio]{pdfs/taximan/integration_reqmansub.pdf}}
+\end{figure}
+\begin{figure}[H]
+\centering
+\makebox[\columnwidth]{\includegraphics[width=350pt,keepaspectratio]{pdfs/taximan/integration_resmansub.pdf}}
+\end{figure}
+\begin{figure}[H]
+\centering
+\makebox[\columnwidth]{\includegraphics[width=350pt,keepaspectratio]{pdfs/taximan/integration_taximansub.pdf}}
+\end{figure}
+\begin{figure}[H]
+\centering
+\makebox[\columnwidth]{\includegraphics[width=350pt,keepaspectratio]{pdfs/integration_taximan.pdf}}
+\end{figure}
+\subsubsection*{System Administration}\begin{figure}[H]
+\centering
+\makebox[\columnwidth]{\includegraphics[width=350pt,keepaspectratio]{pdfs/systemadmin/integration_apipermansub.pdf}}
+\end{figure}
+\begin{figure}[H]
+\centering
+\makebox[\columnwidth]{\includegraphics[width=350pt,keepaspectratio]{pdfs/systemadmin/integration_zonedivmansub.pdf}}
+\end{figure}
+\begin{figure}[H]
+\centering
+\makebox[\columnwidth]{\includegraphics[width=350pt,keepaspectratio]{pdfs/systemadmin/integration_taxidrivermansub.pdf}}
+\end{figure}
+\begin{figure}[H]
+\centering
+\makebox[\columnwidth]{\includegraphics[width=350pt,keepaspectratio]{pdfs/systemadmin/integration_servstatsub.pdf}}
+\end{figure}
+\begin{figure}[H]
+\centering
+\makebox[\columnwidth]{\includegraphics[width=350pt,keepaspectratio]{pdfs/systemadmin/integration_pluginmansub.pdf}}
+\end{figure}
+\subsubsection*{Account Management}
+\begin{figure}[H]
+\centering
+\makebox[\columnwidth]{\includegraphics[width=350pt,keepaspectratio]{pdfs/accountman/integration_passregsub.pdf}}
+\end{figure}
+\begin{figure}[H]
+\centering
+\makebox[\columnwidth]{\includegraphics[width=350pt,keepaspectratio]{pdfs/accountman/integration_loginsub.pdf}}
+\end{figure}
+\begin{figure}[H]
+\centering
+\makebox[\columnwidth]{\includegraphics[width=350pt,keepaspectratio]{pdfs/accountman/integration_pwdretsub.pdf}}
+\end{figure}
+\begin{figure}[H]
+\centering
+\makebox[\columnwidth]{\includegraphics[width=350pt,keepaspectratio]{pdfs/accountman/integration_settingsmansub.pdf}}
+\end{figure}
 \subsection{Subsystem Integration Sequence}
