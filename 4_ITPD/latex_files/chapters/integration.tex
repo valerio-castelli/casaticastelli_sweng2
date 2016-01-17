@@ -49,13 +49,13 @@ Since subsystems are fairly independent from one another, the order in which the
 In this section we're going to describe the order of integration (and integration testing) of the various components and subsystems of myTaxiService. As a notation, an arrow going from component C1 to component C2 means that C1 is necessary for C2 to function and so it must have already been implemented. 
 \subsection{Software Integration Sequence}
 Following the already mentioned bottom-up approach, we now describe how the various subcomponents are integrated together to create higher level subsystems. 
-\subsubsection*{Data Access}
+\subsubsection*{Data Access Utilities}
 The first two elements to be integrated are the \textbf{Data Access Utilities} and the \textbf{Database Management System} components. We start from here because every other component relies on \textbf{Data Access Utilities} to perform queries on the underlying data structure. 
 \begin{figure}[H]
 \centering
 \makebox[\columnwidth]{\includegraphics[width=250pt,keepaspectratio]{pdfs/integration_dataaccess.pdf}}
 \end{figure}
-\subsubsection*{Taxi Management}
+\subsubsection*{Taxi Management System}
 The second step in the integration process is to appropriately connect the subcomponents implementing the \textbf{Taxi Management System}. This choice comes from the critical-module-first approach, because the taxi management is the single most important functionality of myTaxiService.
 
 In the following diagrams, we are going to show exactly which components must be integrated together in order to implement this functionality using a bottom-up approach.
@@ -127,4 +127,10 @@ In the following diagrams, we are going to show exactly how these subcomponents 
 \centering
 \makebox[\columnwidth]{\includegraphics[width=350pt,keepaspectratio]{pdfs/accountman/integration_settingsmansub.pdf}}
 \end{figure}
+\pagebreak
 \subsection{Subsystem Integration Sequence}
+In the following diagram we provide a general overview of how the various high-level subsystems are integrated together to create the full myTaxiService infrastructure.
+\begin{figure}[H]
+\centering
+\makebox[\columnwidth]{\includegraphics[width=550pt,keepaspectratio]{pdfs/integration_subsystems.pdf}}
+\end{figure}
