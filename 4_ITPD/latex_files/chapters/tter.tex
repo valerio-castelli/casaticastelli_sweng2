@@ -1,1 +1,36 @@
 \chapter{Tools and Test Equipment Required}
+All the integration testing activities have to be performed within a specific testing environment. 
+
+Since myTaxiService incorporates both a set of client components and a backend infrastructure, we must define the characteristics of the devices that have to be used in each of these two areas.
+
+For what concerns the mobile client side of the testing environment, the following devices are required:
+\begin{itemize}
+	\item For the Taxi Driver Mobile Application:
+		\begin{itemize}
+		\item At least one Android smartphone for each display size from 3” to 6” at steps of 1/2”. .
+		\item At least one Android tablet for each display size from 7” to 12” at steps of 1/2”. 
+		\item At least one iOS smartphone for each member of the iOS product family.
+		\item At least one iOS tablet for each display size of the iOS product family.
+		\item At least one Windows Phone smartphone for each display size from 3” to 6” at steps of 1/2”. 
+		\end{itemize}
+\end{itemize}
+These devices will be used to test both the native mobile applications and the mobile versions of the web applications.
+It should be noted that these are general guidelines to drive the selection of the testing devices in a way that covers the widest range of possible configurations. Some display sizes or resolutions may not be offered by all product families. 
+As a general note, we should consider the possibility of performing an analysis of the smartphone market to identify the most common display sizes and resolutions right before starting the integration testing phase, in order to better reflect the typical usage scenarios we will encounter in the real operating environment. 
+
+Regarding the desktop web applications, they will be tested using a set of normal desktop and notebook computers. There are no specific requirements on display resolution, operating system and processing power.
+
+As for the backend testing, the business logic components should be deployed on a cloud infrastructure that closely mimics the one that will be used in the operating environment. 
+Specifically, the testing cloud infrastructure needs to run the same operating system, the same Java Enterprise Application Server, the same \textbf{Notification System} and \textbf{Remote Services Interface} middleware (message brokers) and the same DBMS.
+As such, it is strongly required to use a scaled down version of the final operating cloud infrastructure chosen from the same service provider. 
+
+Depending on the actual implementation decisions, the specific software components may change. As a preliminary draft we assume to be using the \textbf{Red Hat OpenShift cloud infrastructure}, that is built upon the following software components:
+\begin{itemize}
+	\item The \textbf{Red Had Enterprise Linux} distribution.
+	\item The \textbf{Java Enterprise Edition} runtime.
+	\item The \textbf{GlassFish Java Application Server}.
+	\item The \textbf{GlassFish Message Broker}.
+	\item The \textbf{Apache Web Server} as an HTTP load balancer.
+	\item The \textbf{Oracle Database Management System}.
+\end{itemize}
+
