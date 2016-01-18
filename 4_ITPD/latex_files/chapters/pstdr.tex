@@ -1,5 +1,5 @@
 \chapter{Required Program Stubs and Test Data}
-\subsection{Program Stubs and Drivers}
+\section{Program Stubs and Drivers}
 As we have mentioned in the Integration Testing Strategy section of this document, we are going to adopt a bottom-up approach to component integration and testing.
 
 Because of this choice, we are going to need a number of drivers to actually perform the necessary method invocations on the components to be tested; this will be mainly accomplished in conjunction with the JUnit framework. While the bottom-up approach in general doesn't require the usage of any stubs as the system is developed from the ground up, we are still going to introduce a number of them to test some specific parts of the system, namely the \textbf{Remote Services Interface} and the \textbf{Notification System} components. We think this approach is useful to be able to test whether the interaction between these components and the sender (receiver) of a message is working correctly, independently from the behavior of the corresponding receiver (sender). This allows us to improve the bug tracking process, as it automatically eliminates all the possible issues stemming from a bug on the other end of the communication channel and that could be confused as a sign that the channel itself is not working properly. 
@@ -14,4 +14,4 @@ Here follows a list of all the drivers that will be developed as part of the int
 \end{itemize}
 \note{Fix diagram of taxi management}
 \note{Remember to add a stub to first test Req. Man. vs Res. Man. connection, if it even exists!!}
-\subsection{Test Data}
+\section{Test Data}
