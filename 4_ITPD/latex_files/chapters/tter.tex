@@ -1,6 +1,6 @@
 \chapter{Tools and Test Equipment Required}
 \subsection{Tools}
-In order to test the various components more effectively, we are going to make usage of a number of automated testing tools. 
+In order to test the various components of myTaxiService more effectively, we are going to make usage of a number of automated testing tools. 
 
 For what concerns the business logic components running in the Java Enterprise Edition runtime environment, we are going to take advantage of two tools.
 The first one is the \textbf{Arquillian integration testing framework}. This tool enables us to execute tests against a Java container in order to check that the interaction between a component and its surrounding execution environment is happening correctly (as far as the Java application server is involved). Specifically, we are going to use Arquillian to verify that the right components are injected when dependency injection is specified, that the connections with the database are properly managed and similar container-level tests.
@@ -9,9 +9,11 @@ The second tool is the \textbf{JUnit framework}. Though this tool is primarily d
 Furthermore, as we have already mentioned briefly in the previous chapter of this document, we are going to use specific performance analysis tools to make sure that the applications for all the target mobile platforms, regardless whether they're destined to taxi drivers or to passengers, have reasonable CPU and main memory usages. Depending on the specific platform we are targeting, the tools we are going to use are:
 \begin{itemize}
 	\item On Android: the Memory Profiler, Memory Monitor and Allocation Tracker tools to monitor main memory usage; the Traceview Walkthrough to monitor method execution time and the battery profiler to monitor energy consumption.
-	\item On iOS: the full suite of performance analysis tools provided by the Xcode IDE. This includes Instruments as a general tool, MallocDebug to find memory leaks, Activity Monitor and BigTop to monitor system statistics, such as CPU, disk, network and memory usage graphically over time.  
+	\item On iOS: the full suite of performance analysis tools provided by the Xcode IDE. This includes Instruments as a general performance profiling tool, MallocDebug to find memory leaks, Activity Monitor and BigTop to monitor system statistics such as CPU, disk, network and memory usage. 
 	\item On Windows Phone: the Windows Phone Application Analysis toolkit, specifically the Windows Performance Analyzer tool.
 \end{itemize}
+
+Finally, it should be noted that despite the usage of automated testing tools, some of the planned testing activities will also require a significant amount of manual operations, especially to devise the appropriate set of testing data.
 \subsection{Test Equipment}
 All the integration testing activities have to be performed within a specific testing environment. 
 
