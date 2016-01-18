@@ -5,14 +5,27 @@
 \hypersetup{pdfborder = {0 0 0}} %remove boxes from hyperlinks
 
 % Page header
+%\usepackage{fancyhdr}
+%\pagestyle{fancy}
+%\lhead{\leftmark}
+%\chead{}
+%\rhead{Casati F., Castelli V.}
+%\lfoot{}
+%\cfoot{\thepage}
+%\rfoot{}
+
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\lhead{\leftmark}
-\chead{}
-\rhead{Casati F., Castelli V.}
-\lfoot{}
-\cfoot{\thepage}
-\rfoot{}
+\fancyhead{}
+\renewcommand{\chaptermark}[1]{%
+\markboth{\chaptername
+\ \thechapter.\ #1}{}}
+\fancyhead[LO,LE]{\slshape\leftmark}
+\fancyfoot[LO,CE]{F. Casati, V. Castelli}
+%\fancyfoot[RO,RE]{\bfseries ITPD v1.0}
+\fancyfoot[RO,RE]{ITPD v1.0}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
 
 % Various packages
 \usepackage{float}
