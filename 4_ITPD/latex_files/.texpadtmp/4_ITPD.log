@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.21)  18 JAN 2016 17:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.21)  18 JAN 2016 17:58
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -566,7 +566,7 @@ LaTeX Info: Redefining \nameref on input line 4.
 \everyMPtoPDFconversion=\toks26
 )
 \c@lstlisting=\count131
- (./title/title_page.tex <title/polimi_logo.png, id=84, 419.31656pt x 417.81094pt>
+ (./title/title_page.tex <title/polimi_logo.png, id=92, 419.31656pt x 417.81094pt>
 File: title/polimi_logo.png Graphic file (type png)
  <use title/polimi_logo.png>
 Package pdftex.def Info: title/polimi_logo.png used on input line 3.
@@ -645,7 +645,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[6] <pdfs/integration_dataaccess.pdf, id=146, 445.665pt x 114.4275pt>
+[6] <pdfs/integration_dataaccess.pdf, id=157, 445.665pt x 114.4275pt>
 File: pdfs/integration_dataaccess.pdf Graphic file (type pdf)
  <use pdfs/integration_dataaccess.pdf>
 Package pdftex.def Info: pdfs/integration_dataaccess.pdf used on input line 56.
@@ -655,17 +655,17 @@ Overfull \hbox (1.31786pt too wide) in paragraph at lines 59--60
 \OT1/cmr/m/n/10.95 sub-com-po-nents im-ple-ment-ing the \OT1/cmr/bx/n/10.95 Taxi Man-age-ment Sys-tem\OT1/cmr/m/n/10.95 . This choice
  []
 
-<pdfs/taximan/integration_reqmansub.pdf, id=147, 686.565pt x 114.4275pt>
+<pdfs/taximan/integration_reqmansub.pdf, id=158, 686.565pt x 114.4275pt>
 File: pdfs/taximan/integration_reqmansub.pdf Graphic file (type pdf)
  <use pdfs/taximan/integration_reqmansub.pdf>
 Package pdftex.def Info: pdfs/taximan/integration_reqmansub.pdf used on input line 66.
 (pdftex.def)             Requested size: 350.0pt x 58.3328pt.
- <pdfs/taximan/integration_resmansub.pdf, id=148, 686.565pt x 114.4275pt>
+ <pdfs/taximan/integration_resmansub.pdf, id=159, 686.565pt x 114.4275pt>
 File: pdfs/taximan/integration_resmansub.pdf Graphic file (type pdf)
  <use pdfs/taximan/integration_resmansub.pdf>
 Package pdftex.def Info: pdfs/taximan/integration_resmansub.pdf used on input line 71.
 (pdftex.def)             Requested size: 350.0pt x 58.3328pt.
- <pdfs/taximan/integration_taximansub.pdf, id=149, 686.565pt x 259.97125pt>
+ <pdfs/taximan/integration_taximansub.pdf, id=160, 686.565pt x 259.97125pt>
 File: pdfs/taximan/integration_taximansub.pdf Graphic file (type pdf)
  <use pdfs/taximan/integration_taximansub.pdf>
 Package pdftex.def Info: pdfs/taximan/integration_taximansub.pdf used on input line 76.
@@ -677,7 +677,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[7 <./pdfs/integration_dataaccess.pdf> <./pdfs/taximan/integration_reqmansub.pdf> <./pdfs/taximan/integration_resmansub.pdf>] <pdfs/integration_taximan.pdf, id=166, 736.7525pt x 425.59pt>
+[7 <./pdfs/integration_dataaccess.pdf> <./pdfs/taximan/integration_reqmansub.pdf> <./pdfs/taximan/integration_resmansub.pdf>] <pdfs/integration_taximan.pdf, id=176, 736.7525pt x 425.59pt>
 File: pdfs/integration_taximan.pdf Graphic file (type pdf)
  <use pdfs/integration_taximan.pdf>
 Package pdftex.def Info: pdfs/integration_taximan.pdf used on input line 81.
@@ -689,27 +689,27 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[8 <./pdfs/taximan/integration_taximansub.pdf> <./pdfs/integration_taximan.pdf>] <pdfs/systemadmin/integration_apipermansub.pdf, id=178, 686.565pt x 114.4275pt>
+[8 <./pdfs/taximan/integration_taximansub.pdf> <./pdfs/integration_taximan.pdf>] <pdfs/systemadmin/integration_apipermansub.pdf, id=188, 686.565pt x 114.4275pt>
 File: pdfs/systemadmin/integration_apipermansub.pdf Graphic file (type pdf)
  <use pdfs/systemadmin/integration_apipermansub.pdf>
 Package pdftex.def Info: pdfs/systemadmin/integration_apipermansub.pdf used on input line 91.
 (pdftex.def)             Requested size: 350.0pt x 58.3328pt.
- <pdfs/systemadmin/integration_zonedivmansub.pdf, id=179, 686.565pt x 114.4275pt>
+ <pdfs/systemadmin/integration_zonedivmansub.pdf, id=189, 686.565pt x 114.4275pt>
 File: pdfs/systemadmin/integration_zonedivmansub.pdf Graphic file (type pdf)
  <use pdfs/systemadmin/integration_zonedivmansub.pdf>
 Package pdftex.def Info: pdfs/systemadmin/integration_zonedivmansub.pdf used on input line 95.
 (pdftex.def)             Requested size: 350.0pt x 58.3328pt.
- <pdfs/systemadmin/integration_taxidrivermansub.pdf, id=180, 686.565pt x 114.4275pt>
+ <pdfs/systemadmin/integration_taxidrivermansub.pdf, id=190, 686.565pt x 114.4275pt>
 File: pdfs/systemadmin/integration_taxidrivermansub.pdf Graphic file (type pdf)
  <use pdfs/systemadmin/integration_taxidrivermansub.pdf>
 Package pdftex.def Info: pdfs/systemadmin/integration_taxidrivermansub.pdf used on input line 99.
 (pdftex.def)             Requested size: 350.0pt x 58.3328pt.
- <pdfs/systemadmin/integration_servstatsub.pdf, id=181, 686.565pt x 114.4275pt>
+ <pdfs/systemadmin/integration_servstatsub.pdf, id=191, 686.565pt x 114.4275pt>
 File: pdfs/systemadmin/integration_servstatsub.pdf Graphic file (type pdf)
  <use pdfs/systemadmin/integration_servstatsub.pdf>
 Package pdftex.def Info: pdfs/systemadmin/integration_servstatsub.pdf used on input line 103.
 (pdftex.def)             Requested size: 350.0pt x 58.3328pt.
- <pdfs/systemadmin/integration_pluginmansub.pdf, id=182, 686.565pt x 114.4275pt>
+ <pdfs/systemadmin/integration_pluginmansub.pdf, id=192, 686.565pt x 114.4275pt>
 File: pdfs/systemadmin/integration_pluginmansub.pdf Graphic file (type pdf)
  <use pdfs/systemadmin/integration_pluginmansub.pdf>
 Package pdftex.def Info: pdfs/systemadmin/integration_pluginmansub.pdf used on input line 107.
@@ -725,22 +725,22 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[9 <./pdfs/systemadmin/integration_apipermansub.pdf> <./pdfs/systemadmin/integration_zonedivmansub.pdf> <./pdfs/systemadmin/integration_taxidrivermansub.pdf> <./pdfs/systemadmin/integration_servstatsub.pdf> <./pdfs/systemadmin/integration_pluginmansub.pdf>] <pdfs/accountman/integration_passregsub.pdf, id=203, 686.565pt x 114.4275pt>
+[9 <./pdfs/systemadmin/integration_apipermansub.pdf> <./pdfs/systemadmin/integration_zonedivmansub.pdf> <./pdfs/systemadmin/integration_taxidrivermansub.pdf> <./pdfs/systemadmin/integration_servstatsub.pdf> <./pdfs/systemadmin/integration_pluginmansub.pdf>] <pdfs/accountman/integration_passregsub.pdf, id=213, 686.565pt x 114.4275pt>
 File: pdfs/accountman/integration_passregsub.pdf Graphic file (type pdf)
  <use pdfs/accountman/integration_passregsub.pdf>
 Package pdftex.def Info: pdfs/accountman/integration_passregsub.pdf used on input line 117.
 (pdftex.def)             Requested size: 350.0pt x 58.3328pt.
- <pdfs/accountman/integration_loginsub.pdf, id=204, 686.565pt x 114.4275pt>
+ <pdfs/accountman/integration_loginsub.pdf, id=214, 686.565pt x 114.4275pt>
 File: pdfs/accountman/integration_loginsub.pdf Graphic file (type pdf)
  <use pdfs/accountman/integration_loginsub.pdf>
 Package pdftex.def Info: pdfs/accountman/integration_loginsub.pdf used on input line 121.
 (pdftex.def)             Requested size: 350.0pt x 58.3328pt.
- <pdfs/accountman/integration_pwdretsub.pdf, id=205, 686.565pt x 114.4275pt>
+ <pdfs/accountman/integration_pwdretsub.pdf, id=215, 686.565pt x 114.4275pt>
 File: pdfs/accountman/integration_pwdretsub.pdf Graphic file (type pdf)
  <use pdfs/accountman/integration_pwdretsub.pdf>
 Package pdftex.def Info: pdfs/accountman/integration_pwdretsub.pdf used on input line 125.
 (pdftex.def)             Requested size: 350.0pt x 58.3328pt.
- <pdfs/accountman/integration_settingsmansub.pdf, id=206, 686.565pt x 114.4275pt>
+ <pdfs/accountman/integration_settingsmansub.pdf, id=216, 686.565pt x 114.4275pt>
 File: pdfs/accountman/integration_settingsmansub.pdf Graphic file (type pdf)
  <use pdfs/accountman/integration_settingsmansub.pdf>
 Package pdftex.def Info: pdfs/accountman/integration_settingsmansub.pdf used on input line 129.
@@ -752,7 +752,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10 <./pdfs/accountman/integration_passregsub.pdf> <./pdfs/accountman/integration_loginsub.pdf> <./pdfs/accountman/integration_pwdretsub.pdf> <./pdfs/accountman/integration_settingsmansub.pdf>] <pdfs/integration_subsystems.pdf, id=223, 1676.2625pt x 1013.7875pt>
+[10 <./pdfs/accountman/integration_passregsub.pdf> <./pdfs/accountman/integration_loginsub.pdf> <./pdfs/accountman/integration_pwdretsub.pdf> <./pdfs/accountman/integration_settingsmansub.pdf>] <pdfs/integration_subsystems.pdf, id=233, 1676.2625pt x 1013.7875pt>
 File: pdfs/integration_subsystems.pdf Graphic file (type pdf)
  <use pdfs/integration_subsystems.pdf>
 Package pdftex.def Info: pdfs/integration_subsystems.pdf used on input line 136.
@@ -779,24 +779,35 @@ Overfull \hbox (4.42253pt too wide) in paragraph at lines 8--9
 
 ]
 Chapter 5.
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 2.
+
 [14
 
-]) (./chapters/pstdr.tex
+]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[15]
+[15]) (./chapters/pstdr.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[16]
 Chapter 6.
-) (./chapters/hours_of_work.tex [16
+) (./chapters/hours_of_work.tex [17
 
 ]
 Appendix A.
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 21.
- [17
+ [18
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 21.
@@ -808,18 +819,18 @@ Package rerunfilecheck Info: File `4_ITPD.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 21.
  ) 
 Here is how much of TeX's memory you used:
- 9168 strings out of 493089
- 135505 string characters out of 6134841
+ 9173 strings out of 493089
+ 135580 string characters out of 6134841
  262110 words of memory out of 5000000
- 12432 multiletter control sequences out of 15000+600000
+ 12434 multiletter control sequences out of 15000+600000
  10012 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,12n,43p,878b,533s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on /Users/Valerio/GitHub/casaticastelli_sweng2/4_ITPD/latex_files/.texpadtmp/4_ITPD.pdf (19 pages, 575375 bytes).
+Output written on /Users/Valerio/GitHub/casaticastelli_sweng2/4_ITPD/latex_files/.texpadtmp/4_ITPD.pdf (20 pages, 578836 bytes).
 PDF statistics:
- 293 PDF objects out of 1000 (max. 8388607)
- 247 compressed objects within 3 object streams
- 45 named destinations out of 1000 (max. 500000)
- 241 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 307 PDF objects out of 1000 (max. 8388607)
+ 260 compressed objects within 3 object streams
+ 48 named destinations out of 1000 (max. 500000)
+ 257 words of extra memory for PDF output out of 10000 (max. 10000000)
 
