@@ -19,9 +19,6 @@ Here follows a list of all the drivers that will be developed as part of the int
 
 
 While the bottom-up approach in general doesn't require the usage of any stubs as the system is developed from the ground up, a full test of the core system isn't possible without introducing a few of them. In fact, there is a mutual dependency between the clients (which send requests) and the core system (which replies to them). Since we are developing and integrating the system from the core, we are going to introduce stubs to simulate the presence of clients until they are fully developed. In practice, the only purpose of these stubs is to write on a log that they have correctly received the messages.
-
-
-\note{Remember to add a stub to first test Req. Man. vs Res. Man. connection, if it even exists!!}
 \section{Test Data}
 In order to be able to perform the battery of tests that we have specified, we are going to need:
 \begin{itemize}
