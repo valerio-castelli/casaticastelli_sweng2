@@ -245,7 +245,7 @@ System</panel_attributes>
       <w>234</w>
       <h>18</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <panel_attributes>lt=-&gt;&gt;&gt;</panel_attributes>
     <additional_attributes>370.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
@@ -256,7 +256,7 @@ System</panel_attributes>
       <w>234</w>
       <h>54</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <panel_attributes>lt=-&gt;&gt;&gt;</panel_attributes>
     <additional_attributes>370.0;10.0;260.0;10.0;260.0;70.0;10.0;70.0</additional_attributes>
   </element>
   <element>
@@ -311,7 +311,7 @@ System</panel_attributes>
       <w>18</w>
       <h>84</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <panel_attributes>lt=-&gt;&gt;&gt;</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
   </element>
   <element>
@@ -322,7 +322,7 @@ System</panel_attributes>
       <w>18</w>
       <h>84</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <panel_attributes>lt=-&gt;&gt;&gt;</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
   </element>
   <element>
@@ -333,7 +333,7 @@ System</panel_attributes>
       <w>96</w>
       <h>474</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <panel_attributes>lt=-&gt;&gt;&gt;</panel_attributes>
     <additional_attributes>70.0;10.0;10.0;10.0;10.0;770.0;140.0;770.0</additional_attributes>
   </element>
   <element>
@@ -344,7 +344,7 @@ System</panel_attributes>
       <w>288</w>
       <h>564</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <panel_attributes>lt=-&gt;&gt;&gt;</panel_attributes>
     <additional_attributes>460.0;50.0;460.0;10.0;10.0;10.0;10.0;920.0;190.0;920.0</additional_attributes>
   </element>
   <element>
@@ -399,7 +399,7 @@ System</panel_attributes>
       <w>234</w>
       <h>108</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <panel_attributes>lt=-&gt;&gt;&gt;</panel_attributes>
     <additional_attributes>370.0;10.0;180.0;10.0;180.0;160.0;10.0;160.0</additional_attributes>
   </element>
 </diagram>
