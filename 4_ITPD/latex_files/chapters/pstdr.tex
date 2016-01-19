@@ -23,3 +23,41 @@ While the bottom-up approach in general doesn't require the usage of any stubs a
 
 \note{Remember to add a stub to first test Req. Man. vs Res. Man. connection, if it even exists!!}
 \section{Test Data}
+In order to be able to perform the battery of tests that we have specified, we are going to need:
+\begin{itemize}
+	\item A list of both valid and invalid candidate taxi drivers to test the \textbf{Taxi Driver Management} component. The set should contain instances exhibiting the following problems: 
+		\begin{itemize}
+		\item Null object
+		\item Null fields
+		\item Taxi license not compliant with the legal format
+		\item Driving license not compliant with the legal format 
+		\end{itemize}
+	\item A list of both valid and invalid candidate passengers to test the \textbf{Passenger Registration} component. The set should contain instances exhibiting the following problems: 
+	\begin{itemize}
+		\item Null object
+		\item Null fields
+		\item Invalid mobile phone number
+		\item Invalid email address
+		\end{itemize}
+	\item A list of both valid and invalid candidate city zones to test the \textbf{Zone Division Management} component. The set should contain instances exhibiting the following problems: 
+	\begin{itemize}
+		\item Null object
+		\item Null fields
+		\item Sequence of location vertices not producing a convex area, including the degenerate case in which the set has cardinality less than three
+		\item Sequence of vertices including invalid or null locations
+		\end{itemize}
+	\item A list of both valid and invalid candidate taxi requests to test the \textbf{Request Management} component. The set should contain instances exhibiting the following problems: 
+		\begin{itemize}
+		\item Null object
+		\item Null fields
+		\item Location is outside the city
+		\end{itemize}
+	\item A list of both valid and invalid candidate taxi reservations to test the \textbf{Reservation Management} component. The set should contain instances exhibiting the following problems: 
+		\begin{itemize}
+		\item Null object
+		\item Null fields
+		\item Source location is outside the city
+		\item Destination location is outside the city
+		\item The time of the meeting does not respect the validity range
+		\end{itemize}		
+\end{itemize}
