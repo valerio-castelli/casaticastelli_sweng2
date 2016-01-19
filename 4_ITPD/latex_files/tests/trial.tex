@@ -1,0 +1,497 @@
+\documentclass[11pt,oneside,a4paper]{report} 
+\usepackage{multirow}% http://ctan.org/pkg/multirow
+\usepackage{hhline}% http://ctan.org/pkg/hhline
+\usepackage{showframe}
+\begin{document}
+% Marginal note for observations
+\newcommand{\note}[1]{\MakeUppercase{#1}\marginpar{\MakeLowercase{\textcolor{red}{#1}}}}
+\chapter{1}
+\centerline{
+  \begin{tabular}{p{8cm}|p{3cm}|p{3cm}}
+    \hline
+    \multirow{4}{*}{\parbox{8cm}{existsAvailableTaxiDriver(request, zone):}} & ciao & ciao \\\hhline{~--}
+    & ciao ciao ciao ciao ciao & ciao \\\hhline{~--}
+    & ciao & ciao \\\hhline{~--}
+    & ciao & ciao \\\hline
+        \multirow{2}{*}{\parbox{8cm}{existsAvailableTaxiDriver(request, zone):}} & ciao & ciao \\
+            & ciao & ciao \\
+    \hline
+  \end{tabular}
+}
+asdoabdso asdonadon aosndaond
+
+
+\chapter{2}
+\begin{table}[ph]
+  \centering
+  \begin{tabular}{p{8cm}|p{3cm}|p{3cm}}
+    \hline
+    \multirow{4}{*}{\parbox{8cm}{existsAvailableTaxiDriver(request, zone):}} & ciao & ciao \\\hhline{~--}
+    & ciao ciao ciao ciao ciao & ciao \\\hhline{~--}
+    & ciao & ciao \\\hhline{~--}
+    & ciao & ciao \\\hline
+        \multirow{2}{*}{\parbox{8cm}{existsAvailableTaxiDriver(request, zone):}} & ciao & ciao \\
+            & ciao & ciao \\
+    \hline
+  \end{tabular}
+  \caption{R, C ripple size}
+\end{table}
+asdoabdso asdonadon aosndaond
+
+
+\chapter{3}
+\begin{table}[ph]
+  \centering
+  \begin{tabular}{c|c}
+    \hline
+   \multicolumn{2}{c}{existsAvailableTaxiDriver(request, zone)}\\\hline
+   I: an array of zones & O:  the zone are inserted in the database \\\hline
+   ciao ciao ciao ciao ciao & ciao\\
+   \hline\hline
+      \multicolumn{2}{c}{existsAvailableTaxiDriver(request, zone)}\\\hline
+      I: an array of zones & O:  the zone are inserted in the database \\\hline
+      ciao ciao ciao ciao ciao & ciao\\
+  \end{tabular}
+  \caption{R, C ripple size}
+\end{table}
+asdoabdso asdonadon aosndaond
+
+
+\chapter{Taxi Management System}
+{\Huge (Caller, Called)}
+\section{Request Management, Data Access Utilities}
+\begin{table}[ph]
+\centering
+\begin{tabular}{c|c}
+\hline
+\multicolumn{2}{c}{insertRequest()}\\\hline\hline
+null
+reservations & \\\hline
+\multicolumn{2}{c}{updateReservationList}\\\hline
+\end{tabular}
+\end{table}
+
+
+\section{Reservation Management, Data Access Utilities}
+\begin{table}[ph]
+\centering
+\begin{tabular}{p{5cm}|p{6cm}}
+	\hline
+	\multicolumn{2}{c}{insertReservation(passengerId, origin, destination, date, time)}\\\hline\hline
+	Input & Effect \\\hline
+	A null parameter &
+	A NullArgumentException is raised.\\\hline
+	Formally valid arguments &
+	An entry containing the reservation data is inserted into the database.\\\hline\hline
+	
+	\multicolumn{2}{c}{updateReservationList(...)}\\\hline\hline
+	Input & Effect \\\hline
+	A null parameter &
+	A NullArgumentException is raised. \\\hline
+	Formally valid arguments &
+	An entry containing the reservation data is inserted into the database for each reservation? What is this method for?.\\\hline
+\end{tabular}
+\end{table}
+
+
+\section{Taxi Management, Data Access Utilities Management}
+\begin{tabular}{p{5cm}|p{6cm}}
+	\hline
+	\multicolumn{2}{c}{updateQueues}\\\hline
+	Input & Effect \\\hline
+	a null parameter &
+	A NullArgumentException is raised. \\\hline
+	an array containing some null values &
+	exception\\\hline
+	array of queues, with some queues containing null values &
+	A NullArgumentException is raised. \\\hline
+	valid arguments &
+	ok \\\hline\hline
+	
+	\multicolumn{2}{c}{updateLocation}\\\hline
+	Input & Effect \\\hline
+	A null parameter &
+	A NullArgumentException is raised. \\\hline
+	valid &
+	inserted in DB \\\hline\hline
+	
+	\multicolumn{2}{c}{updateTaxiStatus}\\\hline
+	Input & Effect \\\hline
+	A null parameter &
+	A NullArgumentException is raised. \\\hline
+	valid &
+	inserted in DB \\\hline
+\end{tabular}
+
+
+\section{Taxi Management, Location Management}
+\begin{table}[ph]
+\centering
+\begin{tabular}{p{5cm}|p{6cm}}
+	\hline
+	\multicolumn{2}{c}{isLocationInsideCity(location)}\\\hline
+	Input & Effect \\\hline
+	A null parameter &
+	A NullArgumentException is raised. \\\hline
+	A location whose coordinates are invalid &
+	An InvalidLocationException is raised. \\\hline
+	A location outside the city &
+	Returns false. \\\hline
+	A location inside the city &
+	Returns true \\\hline\hline
+		
+	\multicolumn{2}{c}{getZone(location)}\\\hline
+	Input & Effect \\\hline
+	A null parameter &
+	A NullArgumentException is raised. \\\hline
+	A location whose coordinates are invalid &
+	An InvalidLocationException is raised. \\\hline
+	A location outside the city &
+	An InvalidLocationException is raised. \\\hline
+	A location inside the city &
+	The id of the zone to which the location belongs. \\\hline\hline
+	
+\end{tabular}
+\end{table}
+
+
+\section{Reservation Management, Location Management}
+\begin{tabular}{p{5cm}|p{6cm}}
+\hline
+	\multicolumn{2}{c}{getZone(location)}\\\hline
+	Input & Effect \\\hline
+	A null parameter &
+	A NullArgumentException is raised.\\\hline
+	A location whose coordinates are invalid &
+	An InvalidLocationException is raised. \\\hline
+	A location outside the city &
+	An InvalidLocationException is raised. \\\hline
+	A location inside the city &
+	The id of the zone to which the location belongs. \\\hline\hline
+		
+	\multicolumn{2}{c}{	checkTaxiDriverLocation(currentLocation, meetingPoint)}\\\hline
+	Input & Effect \\\hline
+	A null parameter &
+	A NullArgumentException is raised. \\\hline
+	A currentLocation whose coordinates are invalid &
+	An InvalidLocationException is raised. \\\hline
+	A meetingPoint whose coordinates are invalid &
+	An InvalidLocationException is raised. \\\hline
+	A currentLocation outside the city &
+	Returns false. \\\hline
+	A meetingPoint outside the city & 
+	An InvalidLocationException is raised. \\\hline
+	Both currentLocation and meetingPoint inside the city, but not within 50m (?) from one another &
+	Returns false. \\\hline
+	Both currentLocation and meetingPoint inside the city, within 50m (?) from one another &
+	Returns false. \\\hline
+\end{tabular}
+
+
+\section{Reservation Management, Request Management}
+\begin{tabular}{p{5cm}|p{6cm}}
+\hline
+	\multicolumn{2}{c}{requestTaxi(passengerId, passengerLocation, destination)}\\\hline
+	Input & Effect \\\hline
+	A null parameter &
+	A NullArgumentException is raised.\\\hline
+	A passengerId not correctly formatted &
+	An InvalidArgumentFormatException is raised. \\\hline
+	A passengerLocation whose coordinates are invalid &
+	An InvalidLocationException is raised. \\\hline
+	A destination whose coordinates are invalid &
+	An InvalidLocationException is raised. \\\hline
+	invalid values (?) &
+	error \\\hline
+	A passengerLocation outside the city &
+	A passengerId not correctly formatted \\\hline
+	A valid set of parameters &
+	A new request is created and handled; refer to the RASD for the specific outcomes of this operation. \\\hline\hline
+\end{tabular}
+
+
+\section{Request Management, Taxi Management}
+\begin{tabular}{p{5cm}|p{6cm}}
+\hline
+	\multicolumn{2}{c}{existsAvailableTaxiDriver(request, zone)}\\\hline
+	Input & Effect \\\hline
+	A null parameter &
+	A NullArgumentException is raised. \\\hline
+	An inexistent zone &
+	An InvalidArgumentValueException is raised. \\\hline
+	A zone with invalid fields &
+	An InvalidArgumentValueException  is raised. \\\hline
+	A valid set of parameters &
+	true if a taxi driver is available to serve the request, false otherwise \\\hline\hline
+	
+	\multicolumn{2}{c}{getETA(taxiDriver, passengerLocation)}\\\hline
+	Input & Effect \\\hline
+	A null parameter &
+	A NullArgumentException is raised. \\\hline
+	A passengerLocation whose coordinates are invalid &
+	An InvalidLocationException is raised. \\\hline
+	An inexistent taxi driver &
+	An InvalidArgumentValueException is raised. \\\hline
+	A valid taxiDriver and passengerLocation &
+	Returns the estimated time of the arrival of the taxi to the location. \\\hline\hline
+
+	\multicolumn{2}{c}{taxiDriverDroppedRequest(taxiId)}\\\hline
+	Input & Effect \\\hline
+	An invalid taxiId &
+	An InvalidArgumentValueException is raised. \\\hline
+	A valid taxiId &
+	If the taxi driver is allowed to drop the request (check RASD conditions), it will return true, notify the passenger that his request has been dropped and update the database accordingly; otherwise it will return false.  \\\hline\hline
+	
+	\multicolumn{2}{c}{sendCurrentLocation(taxiId, location)}\\\hline
+	Input & Effect \\\hline
+	A null location &
+	A NullArgumentException is raised. \\\hline
+	A location whose coordinates are invalid &
+	An InvalidLocationException is raised. \\\hline
+	An invalid taxiId &
+	An InvalidArgumentValueException is raised. \\\hline
+	taxiId is valid, location is inside city&
+	Location is set as the new position of the taxi, the taxi is moved into the new zone, its status is set as available and the modification is written in the database.\\\hline
+	taxiId is valid, location is outside city&
+	Location is set as the new position of the taxi, the taxi is moved into the out-of-city queue, its status is set as outide-city and the modification is written in the database. \\\hline\\\hline
+
+	
+\end{tabular}
+
+
+\chapter{System Administration}
+\section{Zone Management, Data Access Utilities}
+\begin{tabular}{p{5cm}|p{6cm}}
+	\hline
+	\multicolumn{2}{c}{insertZones(Zone[] zones}\\\hline
+	Input & Effect \\\hline
+	A null parameter &
+	A NullArgumentException is raised.\\\hline
+	An empty array &
+	An InvalidArgumentValueException is raised.\\\hline
+	An array containing some null values &
+	A NullArgumentException is raised.\\\hline
+	An array of non-null, but invalid zones &
+	An InvalidArgumentValueException  is raised. \\\hline
+	An array of valid, but already existing zones &
+	An InvalidArgumentValueException  is raised. \\\hline
+	A non-empty array of valid and not existing zones &
+	The zones are inserted in the database. \ \\\hline\hline
+	
+	\multicolumn{2}{c}{insertZone{Zone zone}}\\\hline
+	A null parameter &
+	A NullArgumentException is raised.\\\hline
+	An invalid zone &
+	An InvalidArgumentValueException  is raised. \\\hline
+	A valid, but already existent zone &
+	An InvalidArgumentValueException  is raised. \\\hline
+	A valid and not existing zone &
+	The zone is inserted in the database. \ \\\hline\hline
+	
+	\multicolumn{2}{c}{updateZones(Zone[] zones)}\\\hline
+	Input & Effect \\\hline
+	A null parameter &
+	A NullArgumentException is raised.\\\hline
+	An empty array &
+	An InvalidArgumentValueException is raised.\\\hline
+	An array containing some null values &
+	A NullArgumentException is raised.\\\hline
+	An array of non-null, but invalid or inexistent zones &
+	An InvalidArgumentValueException  is raised. \\\hline
+	A non-empty array of valid, existing zones &
+	The data associated with the specified zones is updated in the database. \\\hline\hline
+	
+	
+	\multicolumn{2}{c}{getZoneList()}\\
+	Input & Effect \\\hline
+	Nothing &
+	Returns the zones that are stored in the database.  \\\hline\hline
+	
+	
+	\multicolumn{2}{c}{
+	(?) insertNewPassenger}\\
+	
+		\multicolumn{2}{c}{
+	(?) updatePassengerData}\\
+		\multicolumn{2}{c}{
+	(?) logins}\\
+	\multicolumn{2}{c}{	(?) getPassengerPassword}\\\hline
+	
+\end{tabular}
+\note{Should we add adminId here?}
+
+
+
+\section{API Permission Management, Data Access Utilities}
+\begin{tabular}{p{5cm}|p{6cm}}
+	\hline
+	\multicolumn{2}{c}{...}\\\hline
+\end{tabular}
+
+
+\section{Taxi Driver Management}
+\subsection{Data Access Utilities}
+\begin{tabular}{p{5cm}|p{6cm}}
+	\hline
+	\multicolumn{2}{c}{insertTaxiDrivers(TaxiDriver[] tds)}\\\hline
+	Input & Effect \\\hline
+	A null parameter &
+	A NullArgumentException is raised.\\\hline
+	An empty array &
+	An InvalidArgumentValueException is raised.\\\hline
+	An array containing some null values &
+	A NullArgumentException is raised.\\\hline
+	An array of valid, but already existing taxi drivers &
+	An InvalidArgumentValueException  is raised. \\\hline
+	A non-empty array of valid and not existing taxi drivers &
+	The taxi drivers are inserted in the database. \ \\\hline\hline
+	
+		\multicolumn{2}{c}{insertTaxiDriver(TaxiDriver td)}\\\hline
+	A null parameter &
+	A NullArgumentException is raised.\\\hline
+	An invalid taxi driver &
+	An InvalidArgumentValueException  is raised. \\\hline
+	A valid, but already existent taxi driver &
+	An InvalidArgumentValueException  is raised. \\\hline
+	A valid and not existing taxi driver &
+	The taxi driver is inserted in the database. \ \\\hline\hline
+
+	\multicolumn{2}{c}{(?) updateTaxiDriver(TaxiDriver td)}\\\hline
+	A null parameter &
+	A NullArgumentException is raised. \\\hline
+	An inexistent taxi driver &
+	An InvalidArgumentValueException is raised. \\\hline
+	A taxi driver with some null or empty fields &
+	An InvalidArgumentValueException is raised. \\\hline
+	A valid taxi driver &
+	The data associated with the specified taxi driver is updated in the database. \\\hline	
+\end{tabular}
+
+
+\chapter{Account Management}
+\section{Passenger Registration, Data Access Utilities}
+
+\section{Login, Data Access Utilities}
+
+\section{Password Retrieval, Data Access Utilities}
+
+\section{Settings Management, Data Access Utilities}
+
+
+\chapter{Component-Component Integration}
+\section{Remote Services Interface, Taxi Management System}
+\begin{tabular}{p{5cm}|p{6cm}}
+	\hline
+	\multicolumn{2}{c}{requestTaxi(passengerId, passengerLocation, destination)}\\\hline
+	Input & Effect \\\hline
+	A null parameter &
+	A NullArgumentException is raised.\\\hline
+	A passengerId not correctly formatted &
+	An InvalidArgumentFormatException is raised. \\\hline
+	A passengerLocation whose coordinates are invalid &
+	An InvalidLocationException is raised. \\\hline
+	A destination whose coordinates are invalid &
+	An InvalidLocationException is raised. \\\hline
+	invalid values (?) &
+	error \\\hline
+	A passengerLocation outside the city &
+	A passengerId not correctly formatted \\\hline
+	A valid set of parameters &
+	A new request is created and handled; refer to the RASD for the specific outcomes of this operation. \\\hline\hline
+	
+	\multicolumn{2}{c}{endRide(taxiId, currentLocation)}\\\hline
+	A null parameter &
+	A NullArgumentException is raised. \\\hline
+		invalid taxiId &
+	error \\\hline
+	
+		non existing taxiId &
+	error \\\hline
+
+				non existing currLOc &
+	error \\\hline\\\hline
+
+\multicolumn{2}{c}{endRide(taxiId, currentLocation)}\\\hline
+	A null parameter &
+	A NullArgumentException is raised. \\\hline
+	
+				invalid taxiId &
+		error \\\hline
+		
+						non existing taxiId &
+			error \\\hline
+
+	invalid currLoc\\\hline
+	non existing currLOc\\\hline\\\hline
+	 togglePressed(taxiDriverId)\\\hline\\
+	invalid\\\hline
+	null\\\hline
+	non existing\\\hline
+	
+\end{tabular}
+
+
+\section{Remote Services Interface, Account Management}
+\begin{tabular}{p{5cm}|p{6cm}}
+	\hline
+	
+	\multicolumn{2}{c}{(?)insertPassenger}\\\hline
+
+	\multicolumn{2}{c}{(?)updatePassenger}\\\hline
+
+	\multicolumn{2}{c}{(?)deletePassenger}\\\hline
+	
+\end{tabular}
+
+
+\section{Remote Services Interface, System Administration}
+\note{We should be uniform in notation, and probably also revise a bit the DD}
+
+\begin{tabular}{p{5cm}|p{6cm}}
+	\hline
+	\multicolumn{2}{c}{checkPassword(adminId, password)}\\\hline
+	
+	null\\\hline invalid\\\hline
+	non-existing adminId\\\hline\\\hline
+	
+	\multicolumn{2}{c}{	 verifyPermission(appId, operation)}\\\hline
+
+	A null parameter\\\hline invalid\\\hline
+	non existing appId\\\hline operation not existing(???)\\\hline
+	permission not given to appId for the operation\\\hline
+	permission granted\\\hline\\\hline
+	
+	\multicolumn{2}{c}{
+	 sendData(data)}\\\hline
+	invalid format\\\hline null\\\hline
+	wrong data\\\hline
+	insertZones\\\hline
+	invalid format\\\hline null\\\hline
+	wrong data\\\hline
+
+
+	\multicolumn{2}{c}{askZoneList(adminId)}\\
+	Input & Effect \\\hline
+	An invalid adminId &
+	An InvalidSecurityLevelException is raised. \\\hline	
+	A valid adminId &
+	Returns the zones that are stored in the database.  \\\hline\hline
+
+	\multicolumn{2}{c}{updateZones(Zone[] zones)}\\\hline
+	Input & Effect \\\hline
+	A null parameter &
+	A NullArgumentException is raised.\\\hline
+	An empty array &
+	An InvalidArgumentValueException is raised.\\\hline
+	An array containing some null values &
+	A NullArgumentException is raised.\\\hline
+	An array of non-null, but invalid or inexistent zones &
+	An InvalidArgumentValueException  is raised. \\\hline
+	A non-empty array of valid, existing zones &
+	The data associated with the specified zones is updated in the database. \\\hline\hline
+	
+	\multicolumn{2}{c}{insert, …}\\\hline\\\hline
+	invalid format\\\hline null\\\hline
+	wrong data\\\hline
+\end{tabular}
+\end{document}
