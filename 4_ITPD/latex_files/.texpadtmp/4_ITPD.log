@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.21)  19 JAN 2016 15:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.21)  19 JAN 2016 16:27
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -854,7 +854,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  39i,12n,43p,878b,535s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on /Users/Valerio/GitHub/casaticastelli_sweng2/4_ITPD/latex_files/.texpadtmp/4_ITPD.pdf (23 pages, 598444 bytes).
+Output written on /Users/Valerio/GitHub/casaticastelli_sweng2/4_ITPD/latex_files/.texpadtmp/4_ITPD.pdf (23 pages, 598433 bytes).
 PDF statistics:
  334 PDF objects out of 1000 (max. 8388607)
  283 compressed objects within 3 object streams
