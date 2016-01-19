@@ -142,11 +142,6 @@ reservations & \\\hline
 	a location inside the city &
 	ok \\\hline\hline
 	
-	\multicolumn{2}{c}{updateTaxiStatus}\\\hline
-	null &
-	NullPointerException \\\hline
-	valid &
-	inserted in DB \\\hline
 \end{tabular}
 \end{table}
 
@@ -164,7 +159,7 @@ reservations & \\\hline
 	a location inside the city &
 	ok \\\hline\hline
 		
-	\multicolumn{2}{c}{	checkTaxiDriverLocation}\\\hline
+	\multicolumn{2}{c}{	checkTaxiDriverLocation(currentLocation, meetingPoint)}\\\hline
 	null &
 	NullPointerException \\\hline
 	an invalid location &
@@ -223,6 +218,10 @@ reservations & \\\hline
 	\multicolumn{2}{c}{taxiDriverDropped}\\\hline
 	invalid values (?) &
 	error \\\hline
+	
+	\multicolumn{2}{c}{	sendCurrentLocation(taxiId, location)}\\\hline
+
+	
 \end{tabular}
 
 
