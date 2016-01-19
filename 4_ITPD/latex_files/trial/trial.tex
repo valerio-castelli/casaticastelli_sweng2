@@ -1,0 +1,413 @@
+\documentclass[11pt,oneside,a4paper]{report} 
+\usepackage{multirow}% http://ctan.org/pkg/multirow
+\usepackage{hhline}% http://ctan.org/pkg/hhline
+\usepackage{showframe}
+\begin{document}
+\chapter{1}
+\centerline{
+  \begin{tabular}{p{8cm}|p{3cm}|p{3cm}}
+    \hline
+    \multirow{4}{*}{\parbox{8cm}{existsAvailableTaxiDriver(request, zone):}} & ciao & ciao \\\hhline{~--}
+    & ciao ciao ciao ciao ciao & ciao \\\hhline{~--}
+    & ciao & ciao \\\hhline{~--}
+    & ciao & ciao \\\hline
+        \multirow{2}{*}{\parbox{8cm}{existsAvailableTaxiDriver(request, zone):}} & ciao & ciao \\
+            & ciao & ciao \\
+    \hline
+  \end{tabular}
+}
+asdoabdso asdonadon aosndaond
+
+
+\chapter{2}
+\begin{table}[ph]
+  \centering
+  \begin{tabular}{p{8cm}|p{3cm}|p{3cm}}
+    \hline
+    \multirow{4}{*}{\parbox{8cm}{existsAvailableTaxiDriver(request, zone):}} & ciao & ciao \\\hhline{~--}
+    & ciao ciao ciao ciao ciao & ciao \\\hhline{~--}
+    & ciao & ciao \\\hhline{~--}
+    & ciao & ciao \\\hline
+        \multirow{2}{*}{\parbox{8cm}{existsAvailableTaxiDriver(request, zone):}} & ciao & ciao \\
+            & ciao & ciao \\
+    \hline
+  \end{tabular}
+  \caption{R, C ripple size}
+\end{table}
+asdoabdso asdonadon aosndaond
+
+
+\chapter{3}
+\begin{table}[ph]
+  \centering
+  \begin{tabular}{c|c}
+    \hline
+   \multicolumn{2}{c}{existsAvailableTaxiDriver(request, zone)}\\\hline
+   I: an array of zones & O:  the zone are inserted in the database \\\hline
+   ciao ciao ciao ciao ciao & ciao\\
+   \hline\hline
+      \multicolumn{2}{c}{existsAvailableTaxiDriver(request, zone)}\\\hline
+      I: an array of zones & O:  the zone are inserted in the database \\\hline
+      ciao ciao ciao ciao ciao & ciao\\
+  \end{tabular}
+  \caption{R, C ripple size}
+\end{table}
+asdoabdso asdonadon aosndaond
+
+
+\chapter{Taxi Management System}
+{\Huge (Caller, Called)}
+\section{Request Management, Data Access Utilities}
+\begin{table}[ph]
+\centering
+\begin{tabular}{c|c}
+\hline
+\multicolumn{2}{c}{insertRequest()}\\\hline\hline
+null
+reservations & \\\hline
+\multicolumn{2}{c}{updateReservationList}\\\hline
+\end{tabular}
+\end{table}
+
+
+\section{Reservation Management, Data Access Utilities}
+\begin{table}[ph]
+\centering
+\begin{tabular}{p{5cm}|p{6cm}}
+	\hline
+	\multicolumn{2}{c}{insertReservation(passengerId, origin, destination, date, time)}\\\hline\hline
+	a null parameter &
+	NullPointerException \\\hline
+	valid arguments &
+	the reservation is inserted in the databases \\\hline\hline
+	
+	\multicolumn{2}{c}{updateReservationList}\\\hline\hline
+	null &
+	NullPointerException \\\hline
+	valid &
+	inserted in DB \\\hline
+\end{tabular}
+\end{table}
+
+
+\section{Taxi Management, Data Access Utilities Management}
+\begin{tabular}{p{5cm}|p{6cm}}
+	\hline
+	\multicolumn{2}{c}{updateQueues}\\\hline
+	a null parameter &
+	NullPointerException \\\hline
+	an array containing some null values &
+	exception\\\hline
+	array of queues, with some queues containing null values &
+	NullPointerException \\\hline
+	valid arguments &
+	ok \\\hline\hline
+	
+	\multicolumn{2}{c}{updateLocation}\\\hline
+	null &
+	NullPointerException \\\hline
+	valid &
+	inserted in DB \\\hline\hline
+	
+	\multicolumn{2}{c}{updateTaxiStatus}\\\hline
+	null &
+	NullPointerException \\\hline
+	valid &
+	inserted in DB \\\hline
+\end{tabular}
+
+
+\section{Taxi Management, Location Management}
+\begin{table}[ph]
+\centering
+\begin{tabular}{p{5cm}|p{6cm}}
+	\hline
+	\multicolumn{2}{c}{isLocationInsideCity(location)}\\\hline
+	a null parameter &
+	NullPointerException \\\hline
+	an invalid location (can a location be non existing?)&
+	error \\\hline
+	location outside city &
+	false \\\hline
+	location inside city &
+	true \\\hline\hline
+		
+	\multicolumn{2}{c}{getZone(location)}\\\hline
+	null &
+	NullPointerException \\\hline
+	an invalid location &
+	error \\\hline
+	a location outside the city &
+	error \\\hline
+	a location inside the city &
+	ok \\\hline\hline
+	
+	\multicolumn{2}{c}{updateTaxiStatus}\\\hline
+	null &
+	NullPointerException \\\hline
+	valid &
+	inserted in DB \\\hline
+\end{tabular}
+\end{table}
+
+
+\section{Reservation Management, Location Management}
+\begin{tabular}{p{5cm}|p{6cm}}
+\hline
+	\multicolumn{2}{c}{getZone(location)}\\\hline
+	null &
+	NullPointerException \\\hline
+	an invalid location &
+	error \\\hline
+	a location outside the city &
+	error \\\hline
+	a location inside the city &
+	ok \\\hline\hline
+		
+	\multicolumn{2}{c}{	checkTaxiDriverLocation}\\\hline
+	null &
+	NullPointerException \\\hline
+	an invalid location &
+	error \\\hline
+	a location outside the city &
+	error \\\hline
+	a location inside the city &
+	ok \\\hline
+\end{tabular}
+
+
+\section{Reservation Management, Reservation Management}
+\begin{tabular}{p{5cm}|p{6cm}}
+\hline
+	\multicolumn{2}{c}{requestTaxi(passengerId, passengerLocation, destination)}\\\hline
+	null &
+	NullPointerException \\\hline
+	invalid format for passengerId &
+	error \\\hline
+	invalid format for passengerLocation &
+	error \\\hline
+	invalid format for destination &
+	error \\\hline
+	invalid values (?) &
+	error \\\hline
+	passengerLocation outside city &
+	error \\\hline
+	valid values &
+	ok \\\hline\hline
+\end{tabular}
+
+
+\section{Request Management, Taxi Management}
+\begin{tabular}{p{5cm}|p{6cm}}
+\hline
+	\multicolumn{2}{c}{existsAvailableTaxiDriver(request, zone)}\\\hline
+	null &
+	NullPointerException \\\hline
+	invalid fields of request (???) &
+	error \\\hline
+	invalid format for passengerLocation &
+	error \\\hline
+	invalid format for destination &
+	error \\\hline
+	invalid values (?) &
+	error \\\hline
+	passengerLocation outside city &
+	error \\\hline
+	valid values &
+	ok \\\hline\hline
+	
+	\multicolumn{2}{c}{getETA}\\\hline
+	invalid values (?) &
+	error \\\hline\hline
+
+	\multicolumn{2}{c}{taxiDriverDropped}\\\hline
+	invalid values (?) &
+	error \\\hline
+\end{tabular}
+
+
+\chapter{System Administration}
+\section{Zone Management, Data Access Utilities}
+\begin{tabular}{p{5cm}|p{6cm}}
+	\hline
+	\multicolumn{2}{c}{insertZones}\\\hline
+	I: an array of zones &
+	O:  the zone are inserted in the database \\\hline
+	a null value &
+	error\\\hline
+	an array containing some null values &
+	exception\\\hline
+	valid arguments &
+	the reservation is inserted in the databases \\\hline\hline
+	
+	\multicolumn{2}{c}{updateZone
+	a zone}\\\hline
+	null &
+	NullPointerException \\\hline
+	valid &
+	inserted in DB \\\hline\hline
+	
+	\multicolumn{2}{c}{(?) updateTaxiDriver}\\\hline
+	null &
+	NullPointerException \\\hline
+	valid &
+	inserted in DB \\\hline
+	
+	\multicolumn{2}{c}{(?)insertSingleZone}\\\hline
+	
+	\multicolumn{2}{c}{(?) getZoneList}\\
+	
+	\multicolumn{2}{c}{
+	(?) insertNewPassenger}\\
+	
+		\multicolumn{2}{c}{
+	(?) updatePassengerData}\\
+		\multicolumn{2}{c}{
+	(?) logins}\\
+	\multicolumn{2}{c}{	(?) getPassengerPassword}\\\hline
+	
+\end{tabular}
+
+
+\section{API Permission Management, Data Access Utilities}
+\begin{tabular}{p{5cm}|p{6cm}}
+	\hline
+	\multicolumn{2}{c}{...}\\\hline
+\end{tabular}
+
+
+\section{Taxi Driver Management}
+\subsection{Data Access Utilities}
+\begin{tabular}{p{5cm}|p{6cm}}
+	\hline
+	\multicolumn{2}{c}{insertTaxiDrivers}\\\hline
+	a null parameter &
+	NullPointerException \\\hline
+	an array containing some null values &
+	exception\\\hline
+	valid arguments &
+	the reservation is inserted in the databases \\\hline\hline
+	
+	\multicolumn{2}{c}{(for single taxi driver) insertTaxiDriver}\\\hline
+	null &
+	NullPointerException \\\hline
+	valid &
+	inserted in DB \\\hline\hline
+	
+	\multicolumn{2}{c}{(?) updateTaxiDriver}\\\hline
+	null &
+	NullPointerException \\\hline
+	valid &
+	inserted in DB \\\hline
+\end{tabular}
+
+
+\chapter{Account Management}
+\section{Passenger Registration, Data Access Utilities}
+
+\section{Login, Data Access Utilities}
+
+\section{Password Retrieval, Data Access Utilities}
+
+\section{Settings Management, Data Access Utilities}
+
+
+\chapter{Component-Component Integration}
+\section{Remote Services Interface, Taxi Management System}
+\begin{tabular}{p{5cm}|p{6cm}}
+	\hline
+	\multicolumn{2}{c}{requestTaxi(passengerId, passengerLocation, destination)}\\\hline
+	a null parameter &
+	NullPointerException \\\hline
+	a passengerId not conform with the specifics &
+	exception\\\hline
+	a passengerLocation outside the city &
+	exception\\\hline
+	an passengerLocation whose address doesn't exist &
+	exception \\\hline
+	a destination ... &
+	... \\\hline
+	valid arguments &
+	ok\\\hline\hline
+	
+	\multicolumn{2}{c}{endRide(taxiId, currentLocation)}\\\hline
+	a null parameter &
+	NullPointerException \\\hline
+		invalid taxiId &
+	error \\\hline
+	
+		non existing taxiId &
+	error \\\hline
+
+				non existing currLOc &
+	error \\\hline\\\hline
+
+\multicolumn{2}{c}{endRide(taxiId, currentLocation)}\\\hline
+	null &
+	error \\\hline
+	
+				invalid taxiId &
+		error \\\hline
+		
+						non existing taxiId &
+			error \\\hline
+
+	invalid currLoc\\\hline
+	non existing currLOc\\\hline\\\hline
+	 togglePressed(taxiDriverId)\\\hline\\
+	invalid\\\hline
+	null\\\hline
+	non existing\\\hline
+	
+\end{tabular}
+
+
+\section{Remote Services Interface, Account Management}
+\begin{tabular}{p{5cm}|p{6cm}}
+	\hline
+	
+	\multicolumn{2}{c}{(?)insertPassenger}\\\hline
+
+	\multicolumn{2}{c}{(?)updatePassenger}\\\hline
+
+	\multicolumn{2}{c}{(?)deletePassenger}\\\hline
+	
+\end{tabular}
+
+
+\section{Remote Services Interface, System Administration}
+\begin{tabular}{p{5cm}|p{6cm}}
+	\hline
+	\multicolumn{2}{c}{checkPassword(adminId, password)}\\\hline
+	
+	null\\\hline invalid\\\hline
+	non-existing adminId\\\hline\\\hline
+	
+	\multicolumn{2}{c}{	 verifyPermission(appId, operation)}\\\hline
+
+	null\\\hline invalid\\\hline
+	non existing appId\\\hline operation not existing(???)\\\hline
+	permission not given to appId for the operation\\\hline
+	permission granted\\\hline\\\hline
+	
+	\multicolumn{2}{c}{
+	 sendData(data)}\\\hline
+	invalid format\\\hline null\\\hline
+	wrong data\\\hline
+	insertZones\\\hline
+	invalid format\\\hline null\\\hline
+	wrong data\\\hline
+	
+	\multicolumn{2}{c}{askZoneList}\\\hline
+	\\\hline
+
+	\multicolumn{2}{c}{updateZone}\\\hline
+	\\\hline
+	invalid format	\\\hline null	\\\hline
+	wrong data	\\\hline	\\\hline
+	
+	\multicolumn{2}{c}{insert, …}\\\hline\\\hline
+	invalid format\\\hline null\\\hline
+	wrong data\\\hline
+\end{tabular}
+\end{document}
