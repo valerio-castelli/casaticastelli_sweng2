@@ -1,0 +1,610 @@
+\chapter{Individual Steps and Test Description}
+\section{Taxi Management System}
+\subsection{Request Management, Data Access Utilities}
+\begin{table}[ph]
+\centering
+\begin{tabular}{|p{5cm}|p{6cm}|}
+	\hline
+	\method{insertRequest(request)}
+	A null parameter &
+	A NullArgumentException is raised.\\\hline
+	A request with an id already existent in the database  &
+	An InvalidArgumentValueException is raised. \\\hline
+	Formally valid arguments &
+	An entry containing the request data is inserted into the database.\\\hline\hline
+	
+	\method{deleteRequest(request)}
+	A null parameter &
+	A NullArgumentException is raised.\\\hline
+	A request with a inexistent id &
+	An InvalidArgumentValueException is raised. \\\hline
+	Formally valid arguments &
+	The entry containing the request data is deleted from the database.\\\hline\hline
+
+	\method{getRequestList()}
+	Nothing &
+	The list of all pending requests. \\\hline\\\hline
+\end{tabular}
+\end{table}
+
+
+\subsection{Reservation Management, Data Access Utilities}
+\begin{table}[ph]
+\centering
+\begin{tabular}{|p{5cm}|p{6cm}|}
+	\hline
+	\method{insertReservation(reservation)}
+	A null parameter &
+	A NullArgumentException is raised.\\\hline
+	A reservation with an id already existent in the database  &
+	An InvalidArgumentValueException is raised. \\\hline
+	Formally valid arguments &
+	An entry containing the reservation data is inserted into the database.\\\hline\hline
+	
+	\method{deleteReservation(reservation)}
+	A null parameter &
+	A NullArgumentException is raised.\\\hline
+	A reservation with a inexistent id &
+	An InvalidArgumentValueException is raised. \\\hline
+	Formally valid arguments &
+	The entry containing the reservation data is deleted from the database.\\\hline\hline
+		
+	\method{updateReservationList(Reservation[])}
+	A null parameter &
+	A NullArgumentException is raised.\\\hline
+	An empty array &
+	An InvalidArgumentValueException is raised.\\\hline
+	An array containing some null values &
+	A NullArgumentException is raised.\\\hline
+	An array of non-null, but inexistent reservations &
+	An InvalidArgumentValueException  is raised. \\\hline
+	An array of valid and existing reservations &
+	The corresponding entries in the database are updated to set the reservation as completed. \\\hline\hline
+	
+	\method{getReservationList()}
+	Nothing &
+	The list of all pending reservations. \\\hline
+\end{tabular}
+\end{table}
+
+
+\subsection{Taxi Management, Data Access Utilities Management}
+\begin{tabular}{|p{5cm}|p{6cm}}
+	\hline
+	\method{updateQueues(TaxiQueue[] tq)}
+	A null parameter &
+	A NullArgumentException is raised. \\\hline
+	An empty array &
+	An InvalidArgumentValueException is raised.\\\hline
+	An array containing some null values &
+	A NullArgumentException is raised.\\\hline
+	An array of non-null queues, but containing null values &
+	An InvalidArgumentValueException is raised. \\\hline
+	A non-empty array of valid queues &
+	The content of the queues is updated in the database. \\\hline\hline
+	
+	\method{updateTaxiLocation(taxiId, location)}
+	A null location &
+	A NullArgumentException is raised. \\\hline
+	A set of valid parameters &
+	The new location of the taxi is written in the database.\\\hline	
+	\method{updateTaxiStatus(taxiId, TaxiStatusAvailable)}
+	A null parameter &
+	A NullArgumentException is raised. \\\hline
+	A set of valid parameters &
+	The taxi status is set to available in the database.\\\hline\hline
+\end{tabular}
+
+
+\subsection{Taxi Management, Location Management}
+\begin{table}[ph]
+\centering
+\begin{tabular}{p{5cm}|p{6cm}}
+	\hline
+	\method{isLocationInsideCity(location)}
+	A null parameter &
+	A NullArgumentException is raised. \\\hline
+	A location whose coordinates are invalid &
+	An InvalidLocationException is raised. \\\hline
+	A location outside the city &
+	Returns false. \\\hline
+	A location inside the city &
+	Returns true \\\hline
+		
+	\method{getZone(location)}
+	A null parameter &
+	A NullArgumentException is raised. \\\hline
+	A location whose coordinates are invalid &
+	An InvalidLocationException is raised. \\\hline
+	A location outside the city &
+	An InvalidLocationException is raised. \\\hline
+	A location inside the city &
+	The id of the zone to which the location belongs. \\\hline\hline
+	
+\end{tabular}
+\end{table}
+
+
+\subsection{Reservation Management, Location Management}
+\begin{tabular}{p{5cm}|p{6cm}}
+\hline
+	\method{getZone(location)}
+	A null parameter &
+	A NullArgumentException is raised.\\\hline
+	A location whose coordinates are invalid &
+	An InvalidLocationException is raised. \\\hline
+	A location outside the city &
+	An InvalidLocationException is raised. \\\hline
+	A location inside the city &
+	The id of the zone to which the location belongs. \\\hline
+			
+	\method{checkTaxiDriverLocation(currentLocation, meetingPoint)}
+	A null parameter &
+	A NullArgumentException is raised. \\\hline
+	A currentLocation whose coordinates are invalid &
+	An InvalidLocationException is raised. \\\hline
+	A meetingPoint whose coordinates are invalid &
+	An InvalidLocationException is raised. \\\hline
+	A currentLocation outside the city &
+	Returns false. \\\hline
+	A meetingPoint outside the city & 
+	An InvalidLocationException is raised. \\\hline
+	Both currentLocation and meetingPoint inside the city, but not within 50m from one another &
+	Returns false. \\\hline
+	Both currentLocation and meetingPoint inside the city, within 50m  from one another &
+	Returns false. \\\hline\hline
+\end{tabular}
+
+
+\subsection{Reservation Management, Request Management}
+\begin{tabular}{p{5cm}|p{6cm}}
+\hline
+	\method{requestTaxi(passengerId, passengerLocation, destination)}
+	A null parameter &
+	A NullArgumentException is raised.\\\hline
+	A passengerId not correctly formatted &
+	An InvalidArgumentFormatException is raised. \\\hline
+	A passengerLocation whose coordinates are invalid &
+	An InvalidLocationException is raised. \\\hline
+	A destination whose coordinates are invalid &
+	An InvalidLocationException is raised. \\\hline
+	A passengerLocation outside the city &
+	A passengerId not correctly formatted \\\hline
+	A valid set of parameters &
+	A new request is created and handled; refer to the RASD for the specific outcomes of this operation. \\\hline\hline
+\end{tabular}
+
+
+\subsection{Request Management, Taxi Management}
+\begin{tabular}{p{5cm}|p{6cm}}
+\hline
+	\method{existsAvailableTaxiDriver(request, zone)}
+	A null parameter &
+	A NullArgumentException is raised. \\\hline
+	An inexistent zone &
+	An InvalidArgumentValueException is raised. \\\hline
+	A zone with invalid fields &
+	An InvalidArgumentValueException  is raised. \\\hline
+	A valid set of parameters &
+	true if a taxi driver is available to serve the request, false otherwise \\\hline\hline
+	
+	\method{getETA(taxiDriver, passengerLocation)}
+	A null parameter &
+	A NullArgumentException is raised. \\\hline
+	A passengerLocation whose coordinates are invalid &
+	An InvalidLocationException is raised. \\\hline
+	An inexistent taxi driver &
+	An InvalidArgumentValueException is raised. \\\hline
+	A valid taxiDriver and passengerLocation &
+	Returns the estimated time of the arrival of the taxi to the location. \\\hline
+
+	\method{taxiDriverDroppedRequest(taxiId)}
+	An invalid taxiId &
+	An InvalidArgumentValueException is raised. \\\hline
+	A valid taxiId &
+	If the taxi driver is allowed to drop the request (check RASD conditions), it will return true, notify the passenger that his request has been dropped and update the database accordingly; otherwise it will return false.  \\\hline	
+	\method{sendCurrentLocation(taxiId, location)}
+	A null location &
+	A NullArgumentException is raised. \\\hline
+	A location whose coordinates are invalid &
+	An InvalidLocationException is raised. \\\hline
+	An invalid taxiId &
+	An InvalidArgumentValueException is raised. \\\hline
+	taxiId is valid, location is inside city&
+	Location is set as the new position of the taxi, the taxi is moved into the new zone, its status is set as available and the modification is written in the database.\\\hline
+	taxiId is valid, location is outside city&
+	Location is set as the new position of the taxi, the taxi is moved into the out-of-city queue, its status is set as outide-city and the modification is written in the database. \\\hline\hline
+\end{tabular}
+
+
+\section{System Administration}
+\subsection{Zone Management, Data Access Utilities}
+\begin{tabular}{p{5cm}|p{6cm}}
+	\hline
+	\method{insertZones(Zone[] zones}
+	A null parameter &
+	A NullArgumentException is raised.\\\hline
+	An empty array &
+	An InvalidArgumentValueException is raised.\\\hline
+	An array containing some null values &
+	A NullArgumentException is raised.\\\hline
+	An array of non-null, but invalid zones &
+	An InvalidArgumentValueException  is raised. \\\hline
+	An array of valid, but already existing zones &
+	An InvalidArgumentValueException  is raised. \\\hline
+	A non-empty array of valid and not existing zones &
+	The zones are inserted in the database. \\\hline
+	
+	\method{insertZone{Zone zone}}
+	A NullArgumentException is raised.\\\hline
+	An invalid zone &
+	An InvalidArgumentValueException  is raised. \\\hline
+	A valid, but already existent zone &
+	An InvalidArgumentValueException  is raised. \\\hline
+	A valid and not existing zone &
+	The zone is inserted in the database. \ \\\hline
+	
+	\method{updateZones(Zone[] zones)}
+	A null parameter &
+	A NullArgumentException is raised.\\\hline
+	An empty array &
+	An InvalidArgumentValueException is raised.\\\hline
+	An array containing some null values &
+	A NullArgumentException is raised.\\\hline
+	An array of non-null, but invalid or inexistent zones &
+	An InvalidArgumentValueException  is raised. \\\hline
+	A non-empty array of valid, existing zones &
+	The data associated with the specified zones is updated in the database. \\\hline
+	
+	\method{getZoneList()}
+	Nothing &
+	Returns the zones that are stored in the database.  \\\hline\hline
+\end{tabular}
+asda\note{Should we add adminId here?}
+
+
+
+\subsection{API Permission Management, Data Access Utilities}
+\begin{tabular}{p{5cm}|p{6cm}}
+	\hline
+	\method{verifyPermission(appId, operation)}
+	A null parameter &
+	A NullArgumentException is raised. \\\hline
+	A non-existing appId &
+	An InvalidSecurityLevelException is raised. \\\hline	
+	A non-existing operation &
+	An InvalidSecurityLevelException is raised. \\\hline	
+	A valid appId and operation, but the app hasn't enough privileges to execute the desired operation &
+	Returns false. \\\hline	
+	A valid appId and operation, and the app has enough privileges to execute the desired operation &
+	Returns true. \\\hline
+	
+	\method{grantPermission(appId, operation)}
+	A null parameter &
+	A NullArgumentException is raised. \\\hline
+	A non-existing operation &
+	An InvalidSecurityLevelException is raised. \\\hline	
+	A valid appId and operation &
+	Insert a new <appId, operation> pair in the permission table in the database. \\\hline
+	
+	\method{revokePermission(appId, operation)}
+	A null parameter &
+	A NullArgumentException is raised. \\\hline
+	A non-existing operation &
+	An InvalidSecurityLevelException is raised. \\\hline	
+	A valid appId and operation, but the <appId, operation> is not present in the database &
+	An InvalidArgumentValueException is raised. \\\hline\
+	A valid appId and operation, and the <appId, operation> is present in the database &
+	Remove the <appId, operation> pair from the permission table of the database. \\\hline\hline
+	
+\end{tabular}
+
+
+\subsection{Taxi Driver Management}
+\subsubsection{Data Access Utilities}
+\begin{tabular}{p{5cm}|p{6cm}}
+	\hline
+	\method{insertTaxiDrivers(TaxiDriver[] tds)}
+	A null parameter &
+	A NullArgumentException is raised.\\\hline
+	An empty array &
+	An InvalidArgumentValueException is raised.\\\hline
+	An array containing some null values &
+	A NullArgumentException is raised.\\\hline
+	An array of valid, but already existing taxi drivers &
+	An InvalidArgumentValueException  is raised. \\\hline
+	A non-empty array of valid and not existing taxi drivers &
+	The taxi drivers are inserted in the database. \ \\\hline
+	
+	\method{insertTaxiDriver(TaxiDriver td)}
+	A null parameter &
+	A NullArgumentException is raised.\\\hline
+	An invalid taxi driver &
+	An InvalidArgumentValueException is raised. \\\hline
+	A valid, but already existent taxi driver &
+	An InvalidArgumentValueException  is raised. \\\hline
+	A valid and not existing taxi driver &
+	The taxi driver is inserted in the database. \\\hline
+
+	\method{updateTaxiDriver(TaxiDriver td)}
+	A NullArgumentException is raised. \\\hline
+	An inexistent taxi driver &
+	An InvalidArgumentValueException is raised. \\\hline
+	A taxi driver with some null or empty fields &
+	An InvalidArgumentValueException is raised. \\\hline
+	A valid taxi driver &
+	The data associated with the specified taxi driver is updated in the database. \\\hline	
+\end{tabular}
+
+
+\section{Account Management}
+\subsection{Passenger Registration, Data Access Utilities}
+\begin{tabular}{p{5cm}|p{6cm}}
+	\hline
+	\method{insertPassenger(Passenger p)}
+	A null parameter &
+	A NullArgumentException is raised.\\\hline
+	A passenger with one or more null fields &
+	An InvalidArgumentValueException is raised. \\\hline
+	A passenger with one or more empty fields &
+	An InvalidArgumentValueException is raised. \\\hline
+	A passenger with the same mail address as an existing passenger &
+	An InvalidArgumentValueException is raised. \\\hline
+	A valid passenger &
+	The passenger data is inserted in the database and a registration confirmation mail is sent to him. The passenger status is set as "pending confirmation". \\\hline
+	
+	\method{confirmPassenger(PassengerId)}
+	A non-existing passengerId &
+	An InvalidArgumentValueException is raised. \\\hline
+	A passengerId that has already been confirmed &
+	An InvalidArgumentValueException is raised. \\\hline
+	A passengerId that hasn't already been confirmed &
+	The passenger status in the database is set as "confirmed". \\\hline\hline
+\end{tabular}
+
+\subsection{Login, Data Access Utilities}
+\begin{tabular}{p{5cm}|p{6cm}}
+	\hline
+	\method{checkCredentials(User u, String password)}
+	A null parameter &
+	A NullArgumentException is raised.\\\hline
+	An inexistent user &
+	An InvalidArgumentValueException is raised. \\\hline
+	An empty password &
+	An InvalidArgumentValueException is raised. \\\hline
+	A valid user and password combination, which however is not the correct one &
+	Returns an InvalidCredentialError. \\\hline
+	A correct and valid user and password combination &
+	Returns a session cookie.\\\hline\hline
+\end{tabular}
+
+\subsection{Password Retrieval, Data Access Utilities}
+\begin{tabular}{p{5cm}|p{6cm}}
+	\hline
+	\method{verifyUserSecretCode(User u, String secretCode)}
+	A null parameter &
+	A NullArgumentException is raised.\\\hline
+	A valid user and secretCode combination, which however is not the correct one &
+	Returns false. \\\hline
+	A correct and valid user and secretCode combination &
+	Returns true. \\\hline
+	
+	\method{updateUserPassword(User u, String secretCode, String newPassword)}
+	A null parameter &
+	A NullArgumentException is raised.\\\hline
+	A valid user and secretCode combination, which however is not the correct one &
+	An InvalidSecurityLevelException is raised. \\\hline
+	A correct and valid user and secretCode combination, but an correctly formatted password &
+	An InvalidArgumentFormatException is raised. \\\hline
+	A correct and valid user and secretCode combination, and a correctly formatted password &
+	Updates the user password in the database. \\\hline\hline
+\end{tabular}
+
+\subsection{Settings Management, Data Access Utilities}
+
+
+\section{Integration Between Subsystems}
+\subsection{Remote Services Interface, Taxi Management System}
+\begin{tabular}{p{5cm}|p{6cm}}
+	\hline
+	\method{requestTaxi(passengerId, passengerLocation, destination)}
+	A null parameter &
+	A NullArgumentException is raised.\\\hline
+	A passengerId not correctly formatted &
+	An InvalidArgumentFormatException is raised. \\\hline
+	A passengerLocation whose coordinates are invalid &
+	An InvalidLocationException is raised. \\\hline
+	A destination whose coordinates are invalid &
+	An InvalidLocationException is raised. \\\hline
+	A passengerLocation outside the city &
+	A passengerId not correctly formatted \\\hline
+	A valid set of parameters &
+	A new request is created and handled; refer to the RASD for the specific outcomes of this operation. \\\hline
+	
+	\method{endRide(taxiId, currentLocation)}
+	A null location &
+	A NullArgumentException is raised. \\\hline
+	A currentLocation whose coordinates are invalid &
+	An InvalidLocationException is raised. \\\hline
+	An invalid taxiId &
+	An InvalidArgumentValueException is raised. \\\hline
+	A valid taxiId and currentLocation, but taxi is not on a ride &
+	An InvalidOperationException is raised. \\\hline
+	A valid taxiId and currentLocation, the taxi is on a ride and currentLocation is inside city&
+	The ride is considered closed and is finalized in the database, the taxi changes its status to available \\\hline
+	A valid taxiId and currentLocation, the taxi is on a ride and currentLocation is outside city&
+	The ride is considered closed and is finalized in the database, the taxi changes its status to outside-city \\\hline
+
+	\method{togglePressed(taxiId)}
+	An invalid taxiId &
+	An InvalidArgumentValueException is raised. \\\hline
+	A valid taxiId and the taxi is available &
+	The taxi status is set to unavailable and is written in the database. \\\hline
+	A valid taxiId, the taxi is unavailable and the taxi is inside the city&
+	The taxi status is set to available, the taxi is moved to the queue of its current zone and these modifications are written in the database. \\\hline
+	A valid taxiId, the taxi is unavailable and the taxi is outside the city&
+	An InvalidOperationException is raised. \\\hline\hline	
+\end{tabular}
+
+
+\subsection{Remote Services Interface, Account Management}
+\begin{tabular}{p{5cm}|p{6cm}}
+	\hline
+	\method{insertPassenger(Passenger p)}
+	A null parameter &
+	A NullArgumentException is raised.\\\hline
+	A passenger with one or more null fields &
+	An InvalidArgumentValueException is raised. \\\hline
+	A passenger with one or more empty fields &
+	An InvalidArgumentValueException is raised. \\\hline
+	A passenger with the same mail address as an existing passenger &
+	An InvalidArgumentValueException is raised. \\\hline
+	A valid passenger &
+	The passenger data is inserted in the database and a registration confirmation mail is sent to him. The passenger status is set as "pending confirmation". \\\hline\hline
+	
+	\method{confirmPassenger(PassengerId)}
+	A non-existing passengerId &
+	An InvalidArgumentValueException is raised. \\\hline
+	A passengerId that has already been confirmed &
+	An InvalidArgumentValueException is raised. \\\hline
+	A passengerId that hasn't already been confirmed &
+	The passenger status in the database is set as "confirmed". \\\hline
+	
+	\method{checkCredentials(User u, String password)}
+	A null parameter &
+	A NullArgumentException is raised.\\\hline
+	An inexistent user &
+	An InvalidArgumentValueException is raised. \\\hline
+	An empty password &
+	An InvalidArgumentValueException is raised. \\\hline
+	A valid user and password combination, which however is not the correct one &
+	Returns an InvalidCredentialError. \\\hline
+	A correct and valid user and password combination &
+	Returns a session cookie.\\\hline
+	
+	\method{verifyUserSecretCode(User u, String secretCode)}
+	A null parameter &
+	A NullArgumentException is raised.\\\hline
+	A valid user and secretCode combination, which however is not the correct one &
+	Returns false. \\\hline
+	A correct and valid user and secretCode combination &
+	Returns true. \\\hline
+	
+	\method{updateUserPassword(User u, String secretCode, String newPassword)}
+	A null parameter &
+	A NullArgumentException is raised.\\\hline
+	A valid user and secretCode combination, which however is not the correct one &
+	An InvalidSecurityLevelException is raised. \\\hline
+	A correct and valid user and secretCode combination, but an correctly formatted password &
+	An InvalidArgumentFormatException is raised. \\\hline
+	A correct and valid user and secretCode combination, and a correctly formatted password &
+	Updates the user password in the database. \\\hline\hline
+	
+	\method{(?)insertPassenger}
+
+	\method{(?)updatePassenger}
+
+	\method{(?)deletePassenger}
+	
+\end{tabular}
+
+
+\subsection{Remote Services Interface, System Administration}
+asda\note{We should be uniform in notation, and probably also revise a bit the DD}
+
+\begin{tabular}{p{5cm}|p{6cm}}
+	\hline
+	\method{checkPassword(adminId, password)}
+	A null parameter &
+	A NullArgumentException is raised. \\\hline
+	An empty password &
+	An InvalidArgumentValueException is raised. \\\hline
+	An invalid adminId &
+	An InvalidSecurityLevelException is raised. \\\hline
+	A valid adminId and password, but password does not correspond to an authorized one &
+	Returns false. \\\hline		
+	A valid adminId and password, and password does correspond to an authorized one &
+	Returns true. \\\hline
+
+	\method{verifyPermission(appId, operation)}
+	A null parameter &
+	A NullArgumentException is raised. \\\hline
+	A non-existing appId &
+	An InvalidSecurityLevelException is raised. \\\hline	
+	A non-existing operation &
+	An InvalidSecurityLevelException is raised. \\\hline	
+	A valid appId and operation, but the app hasn't enough privileges to execute the desired operation &
+	Returns false. \\\hline	
+	A valid appId and operation, and the app has enough privileges to execute the desired operation &
+	Returns true. \\\hline
+	
+	\method{grantPermission(adminId, appId, operation)}
+	A null parameter &
+	A NullArgumentException is raised. \\\hline
+	A non-existing operation &
+	An InvalidSecurityLevelException is raised. \\\hline	
+	An invalid adminId &
+	An InvalidSecurityLevelException is raised. \\\hline
+	A valid appId and operation &
+	Insert a new <appId, operation> pair in the permission table in the database. \\\hline
+	
+	\method{revokePermission(adminId, appId, operation)}
+	A null parameter &
+	A NullArgumentException is raised. \\\hline
+	A non-existing operation &
+	An InvalidSecurityLevelException is raised. \\\hline	
+	An invalid adminId &
+	An InvalidSecurityLevelException is raised. \\\hline
+	A valid appId and operation, but the <appId, operation> is not present in the database &
+	An InvalidArgumentValueException is raised. \\\hline
+	A valid appId and operation, and the <appId, operation> is present in the database &
+	Remove the <appId, operation> pair from the permission table of the database. \\\hline\hline
+
+	\method{askZoneList(adminId)}
+	An invalid adminId &
+	An InvalidSecurityLevelException is raised. \\\hline	
+	A valid adminId &
+	Returns the zones that are stored in the database.  \\\hline\hline
+
+	\method{sendZoneData(adminId, Zone[] zones)}
+	A null parameter &
+	A NullArgumentException is raised.\\\hline
+	An invalid adminId &
+	An InvalidSecurityLevelException is raised. \\\hline
+	An empty array &
+	An InvalidArgumentValueException is raised.\\\hline
+	An array containing some null values &
+	A NullArgumentException is raised.\\\hline
+	An array of non-null, but invalid  zones &
+	An InvalidArgumentValueException  is raised. \\\hline
+	A valid adminId and a non-empty array of valid zones &
+	The data associated with the existing zones is updated in the database, while new zones are inserted from scratch. \\\hline\hline
+	
+	\method{sendTaxiData(adminId, TaxiDriver[] tds)}
+	A null parameter &
+	A NullArgumentException is raised.\\\hline
+	An invalid adminId &
+	An InvalidSecurityLevelException is raised. \\\hline
+	An empty array &
+	An InvalidArgumentValueException is raised.\\\hline
+	An array containing some null values &
+	A NullArgumentException is raised.\\\hline
+	An array of non-null, but invalid taxi drivers &
+	An InvalidArgumentValueException  is raised. \\\hline
+	A valid adminId and a non-empty array of taxi drivers&
+	The data associated with the existing taxi drivers is updated in the database, while new taxi drivers are inserted from scratch. \\\hline\hline
+	
+		\method{sendSetupData(adminId, Object[] data)}
+	A null parameter &
+	A NullArgumentException is raised.\\\hline
+	An invalid adminId &
+	An InvalidSecurityLevelException is raised. \\\hline
+	An empty array &
+	An InvalidArgumentValueException is raised.\\\hline
+	An array containing some null values &
+	A NullArgumentException is raised.\\\hline
+	An array of non-null, but invalid or existing taxi drivers and zones &
+	An InvalidArgumentValueException  is raised. \\\hline
+	A valid adminId and a non-empty array of non-existing taxi drivers and zones &
+	The data associated with the new taxi drivers and zones are inserted in the database. \\\hline\hline
+\end{tabular}

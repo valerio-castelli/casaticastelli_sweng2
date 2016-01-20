@@ -2,10 +2,14 @@
 \usepackage{multirow}% http://ctan.org/pkg/multirow
 \usepackage{hhline}% http://ctan.org/pkg/hhline
 \usepackage{showframe}
+
+\newenvironment{testtable}{\begin{tabular}{|p{8cm}|p{3cm}|p{3cm}|}}{\end{tabular}}
+
 \begin{document}
 \chapter{1}
+
 \centerline{
-  \begin{tabular}{p{8cm}|p{3cm}|p{3cm}}
+  \begin{testtable}
     \hline
     \multirow{4}{*}{\parbox{8cm}{existsAvailableTaxiDriver(request, zone):}} & ciao & ciao \\\hhline{~--}
     & ciao ciao ciao ciao ciao & ciao \\\hhline{~--}
@@ -14,7 +18,7 @@
         \multirow{2}{*}{\parbox{8cm}{existsAvailableTaxiDriver(request, zone):}} & ciao & ciao \\
             & ciao & ciao \\
     \hline
-  \end{tabular}
+  \end{testtable}
 }
 asdoabdso asdonadon aosndaond
 

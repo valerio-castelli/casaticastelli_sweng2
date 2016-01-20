@@ -1,0 +1,661 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.2)  20 JAN 2016 14:10
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**trial.tex
+(./trial.tex
+LaTeX2e <2011/06/27>
+Babel <3.9h> and hyphenation patterns for 5 languages loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen103
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/hhline.sty
+Package: hhline 1994/05/23 v2.03 Table rule package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen104
+\extrarowheight=\dimen105
+\NC@list=\toks14
+\extratabsurround=\skip43
+\backup@length=\skip44
+) (./trial.aux)
+\openout1 = `trial.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+
+Chapter 1.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 26.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 26.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 26.
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 1400) in paragraph at lines 34--34
+[]|\OT1/cmr/m/n/10.95 An en-try con-tain-ing the re-quest
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--60
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--76
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--80
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--98
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--102
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+[1
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
+Underfull \hbox (badness 10000) in paragraph at lines 128--128
+[]|\OT1/cmr/m/n/10.95 An In-valid-Lo-ca-tionEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--138
+[]|\OT1/cmr/m/n/10.95 An In-valid-Lo-ca-tionEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--140
+[]|\OT1/cmr/m/n/10.95 An In-valid-Lo-ca-tionEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 155--155
+[]|\OT1/cmr/m/n/10.95 An In-valid-Lo-ca-tionEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--157
+[]|\OT1/cmr/m/n/10.95 An In-valid-Lo-ca-tionEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 165--165
+[]|\OT1/cmr/m/n/10.95 An In-valid-Lo-ca-tionEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 167--167
+[]|\OT1/cmr/m/n/10.95 An In-valid-Lo-ca-tionEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--171
+[]|\OT1/cmr/m/n/10.95 An In-valid-Lo-ca-tionEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--172
+[]|\OT1/cmr/m/n/10.95 Both cur-rent-Lo-ca-tion and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+[]|\OT1/cmr/m/n/10.95 Both cur-rent-Lo-ca-tion and
+ []
+
+[3]
+Underfull \hbox (badness 1577) in paragraph at lines 186--186
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-For-ma-tEx-cep-
+ []
+
+
+Underfull \hbox (badness 2376) in paragraph at lines 187--187
+[]|\OT1/cmr/m/n/10.95 A pas-sen-ger-Loca-tion whose
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
+[]|\OT1/cmr/m/n/10.95 An In-valid-Lo-ca-tionEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 190--190
+[]|\OT1/cmr/m/n/10.95 An In-valid-Lo-ca-tionEx-cep-tion is
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 205--205
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 207--207
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 2376) in paragraph at lines 214--214
+[]|\OT1/cmr/m/n/10.95 A pas-sen-ger-Loca-tion whose
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--215
+[]|\OT1/cmr/m/n/10.95 An In-valid-Lo-ca-tionEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 217--217
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 223--223
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 1132) in paragraph at lines 225--225
+\OT1/cmr/m/n/10.95 the re-quest (check RASD con-di-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 230--230
+[]|\OT1/cmr/m/n/10.95 An In-valid-Lo-ca-tionEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+[5]
+Overfull \vbox (64.34302pt too high) has occurred while \output is active []
+
+
+[6] [7]
+Chapter 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 248--248
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 252--252
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 254--254
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 4001) in paragraph at lines 256--256
+[]|\OT1/cmr/m/n/10.95 The zones are in-serted in the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 261--261
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--263
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 271--271
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 275--275
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 6047) in paragraph at lines 277--277
+\OT1/cmr/m/n/10.95 i-fied zones is up-dated in the
+ []
+
+
+Overfull \hbox (1.16615pt too wide) in paragraph at lines 242--284
+[] \OT1/cmr/m/n/10.95 asda 
+ []
+
+[8
+
+]
+Overfull \vbox (136.54295pt too high) has occurred while \output is active []
+
+
+[9]
+Overfull \hbox (11.86795pt too wide) in paragraph at lines 287--287
+[]\OT1/cmr/bx/n/14.4 API Per-mis-sion Man-age-ment, Data Ac-cess Util-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 294--294
+[]|\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--296
+[]|\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 306--306
+[]|\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion
+ []
+
+
+Underfull \hbox (badness 1642) in paragraph at lines 308--308
+[]|\OT1/cmr/m/n/10.95 Insert a new <ap-pId, op-er-a-tion>
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 314--314
+[]|\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 316--316
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 331--331
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 335--335
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 343--343
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 345--345
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 352--352
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 354--354
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+[10] [11]
+Chapter 3.
+
+Underfull \hbox (badness 10000) in paragraph at lines 368--368
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 370--370
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 372--372
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 378--378
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 380--380
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 382--382
+[]|\OT1/cmr/m/n/10.95 The pas-sen-ger sta-tus in the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 392--392
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 394--394
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 1009) in paragraph at lines 395--395
+[]|\OT1/cmr/m/n/10.95 A valid user and pass-word
+ []
+
+[12
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 416--416
+[]|\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion
+ []
+
+
+Underfull \hbox (badness 1577) in paragraph at lines 418--418
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-For-ma-tEx-cep-
+ []
+
+
+Underfull \hbox (badness 1360) in paragraph at lines 419--419
+\OT1/cmr/m/n/10.95 a cor-rectly for-mat-ted pass-
+ []
+
+[13]
+Chapter 4.
+
+Underfull \hbox (badness 1577) in paragraph at lines 434--434
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-For-ma-tEx-cep-
+ []
+
+
+Underfull \hbox (badness 2376) in paragraph at lines 435--435
+[]|\OT1/cmr/m/n/10.95 A pas-sen-ger-Loca-tion whose
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 436--436
+[]|\OT1/cmr/m/n/10.95 An In-valid-Lo-ca-tionEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 438--438
+[]|\OT1/cmr/m/n/10.95 An In-valid-Lo-ca-tionEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 448--448
+[]|\OT1/cmr/m/n/10.95 An In-valid-Lo-ca-tionEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 450--450
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 4416) in paragraph at lines 452--452
+[]|\OT1/cmr/m/n/10.95 An In-vali-d-Op-er-a-tionEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 460--460
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 4416) in paragraph at lines 466--466
+[]|\OT1/cmr/m/n/10.95 An In-vali-d-Op-er-a-tionEx-cep-tion is
+ []
+
+[14
+
+]
+Overfull \vbox (278.94304pt too high) has occurred while \output is active []
+
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 477--477
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 479--479
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 481--481
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 487--487
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 489--489
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 491--491
+[]|\OT1/cmr/m/n/10.95 The pas-sen-ger sta-tus in the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 497--497
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 499--499
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 1009) in paragraph at lines 500--500
+[]|\OT1/cmr/m/n/10.95 A valid user and pass-word
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 517--517
+[]|\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion
+ []
+
+
+Underfull \hbox (badness 1577) in paragraph at lines 519--519
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-For-ma-tEx-cep-
+ []
+
+
+Underfull \hbox (badness 1360) in paragraph at lines 520--520
+\OT1/cmr/m/n/10.95 a cor-rectly for-mat-ted pass-
+ []
+
+
+Overfull \vbox (315.94286pt too high) has occurred while \output is active []
+
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 541--541
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 543--543
+[]|\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 553--553
+[]|\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]|\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 565--565
+[]|\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 567--567
+[]|\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion
+ []
+
+
+Underfull \hbox (badness 1642) in paragraph at lines 569--569
+[]|\OT1/cmr/m/n/10.95 Insert a new <ap-pId, op-er-a-tion>
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 575--575
+[]|\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 577--577
+[]|\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 579--579
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 585--585
+[]|\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 593--593
+[]|\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 595--595
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 599--599
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 3439) in paragraph at lines 601--601
+\OT1/cmr/m/n/10.95 ist-ing zones is up-dated in the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 607--607
+[]|\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 609--609
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 613--613
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 621--621
+[]|\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 623--623
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 627--627
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+[17]
+Overfull \vbox (833.89915pt too high) has occurred while \output is active []
+
+
+[18] (./trial.aux) ) 
+Here is how much of TeX's memory you used:
+ 333 strings out of 494967
+ 3834 string characters out of 6179868
+ 64583 words of memory out of 5000000
+ 3625 multiletter control sequences out of 15000+600000
+ 9147 words of font info for 32 fonts, out of 8000000 for 9000
+ 38 hyphenation exceptions out of 8191
+ 21i,9n,19p,243b,224s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on trial.pdf (18 pages, 88097 bytes).
+PDF statistics:
+ 76 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
