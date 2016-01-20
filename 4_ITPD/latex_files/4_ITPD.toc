@@ -21,5 +21,5 @@
 \contentsline {section}{\numberline {5.2}Test Equipment}{15}{section.5.2}
 \contentsline {chapter}{\numberline {6}Required Program Stubs and Test Data}{17}{chapter.6}
 \contentsline {section}{\numberline {6.1}Program Stubs and Drivers}{17}{section.6.1}
-\contentsline {section}{\numberline {6.2}Test Data}{18}{section.6.2}
-\contentsline {chapter}{Appendix \numberline {A}Hours of work}{19}{Appendix.1.A}
+\contentsline {section}{\numberline {6.2}Test Data}{19}{section.6.2}
+\contentsline {chapter}{Appendix \numberline {A}Hours of work}{21}{Appendix.1.A}

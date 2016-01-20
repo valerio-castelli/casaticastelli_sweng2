@@ -1,0 +1,355 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.2)  20 JAN 2016 12:45
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**trial.tex
+(./trial.tex
+LaTeX2e <2011/06/27>
+Babel <3.9h> and hyphenation patterns for 5 languages loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen103
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/hhline.sty
+Package: hhline 1994/05/23 v2.03 Table rule package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen104
+\extrarowheight=\dimen105
+\NC@list=\toks14
+\extratabsurround=\skip43
+\backup@length=\skip44
+) (./trial.aux)
+\openout1 = `trial.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+
+Chapter 1.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 23.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 23.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 23.
+[1
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 88--88
+[]|\OT1/cmr/m/n/10.95 An In-valid-Lo-ca-tionEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--98
+[]|\OT1/cmr/m/n/10.95 An In-valid-Lo-ca-tionEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--100
+[]|\OT1/cmr/m/n/10.95 An In-valid-Lo-ca-tionEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 115--115
+[]|\OT1/cmr/m/n/10.95 An In-valid-Lo-ca-tionEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
+[]|\OT1/cmr/m/n/10.95 An In-valid-Lo-ca-tionEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
+[]|\OT1/cmr/m/n/10.95 An In-valid-Lo-ca-tionEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--127
+[]|\OT1/cmr/m/n/10.95 An In-valid-Lo-ca-tionEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--131
+[]|\OT1/cmr/m/n/10.95 An In-valid-Lo-ca-tionEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+[]|\OT1/cmr/m/n/10.95 Both cur-rent-Lo-ca-tion and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--134
+[]|\OT1/cmr/m/n/10.95 Both cur-rent-Lo-ca-tion and
+ []
+
+[2]
+Underfull \hbox (badness 1577) in paragraph at lines 146--146
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-For-ma-tEx-cep-
+ []
+
+
+Underfull \hbox (badness 2376) in paragraph at lines 147--147
+[]|\OT1/cmr/m/n/10.95 A pas-sen-ger-Loca-tion whose
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+[]|\OT1/cmr/m/n/10.95 An In-valid-Lo-ca-tionEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--150
+[]|\OT1/cmr/m/n/10.95 An In-valid-Lo-ca-tionEx-cep-tion is
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 167--167
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 169--169
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 2376) in paragraph at lines 176--176
+[]|\OT1/cmr/m/n/10.95 A pas-sen-ger-Loca-tion whose
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 177--177
+[]|\OT1/cmr/m/n/10.95 An In-valid-Lo-ca-tionEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--185
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 1132) in paragraph at lines 187--187
+\OT1/cmr/m/n/10.95 the re-quest (check RASD con-di-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 193--193
+[]|\OT1/cmr/m/n/10.95 An In-valid-Lo-ca-tionEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--195
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+[4]
+Overfull \vbox (80.743pt too high) has occurred while \output is active []
+
+
+[5]
+Chapter 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 211--211
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--215
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 217--217
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 4001) in paragraph at lines 219--219
+[]|\OT1/cmr/m/n/10.95 The zones are in-serted in the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--224
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 226--226
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--234
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--238
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 6047) in paragraph at lines 240--240
+\OT1/cmr/m/n/10.95 i-fied zones is up-dated in the
+ []
+
+
+Overfull \hbox (1.16615pt too wide) in paragraph at lines 205--256
+[] \OT1/cmr/m/n/10.95 asda 
+ []
+
+[6
+
+]
+Overfull \vbox (255.74281pt too high) has occurred while \output is active []
+
+
+[7]
+Overfull \hbox (11.86795pt too wide) in paragraph at lines 259--259
+[]\OT1/cmr/bx/n/14.4 API Per-mis-sion Man-age-ment, Data Ac-cess Util-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 274--274
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 286--286
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 288--288
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--295
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--297
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+[8]
+Chapter 3.
+[9
+
+]
+Chapter 4.
+
+Underfull \hbox (badness 1577) in paragraph at lines 321--321
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-For-ma-tEx-cep-
+ []
+
+
+Underfull \hbox (badness 2376) in paragraph at lines 322--322
+[]|\OT1/cmr/m/n/10.95 A pas-sen-ger-Loca-tion whose
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 323--323
+[]|\OT1/cmr/m/n/10.95 An In-valid-Lo-ca-tionEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 325--325
+[]|\OT1/cmr/m/n/10.95 An In-valid-Lo-ca-tionEx-cep-tion is
+ []
+
+[10
+
+]
+Overfull \vbox (145.34283pt too high) has occurred while \output is active []
+
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 405--405
+[]|\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 413--413
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 417--417
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 6047) in paragraph at lines 419--419
+\OT1/cmr/m/n/10.95 i-fied zones is up-dated in the
+ []
+
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ¦ in font cmr10!
+[12]
+Overfull \vbox (100.69913pt too high) has occurred while \output is active []
+
+
+[13] (./trial.aux) ) 
+Here is how much of TeX's memory you used:
+ 333 strings out of 494967
+ 3834 string characters out of 6179868
+ 59583 words of memory out of 5000000
+ 3625 multiletter control sequences out of 15000+600000
+ 9147 words of font info for 32 fonts, out of 8000000 for 9000
+ 38 hyphenation exceptions out of 8191
+ 21i,9n,19p,248b,224s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on trial.pdf (13 pages, 76915 bytes).
+PDF statistics:
+ 61 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
