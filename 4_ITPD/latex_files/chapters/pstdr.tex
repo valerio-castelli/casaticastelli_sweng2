@@ -40,8 +40,8 @@ In order to be able to perform the battery of tests that we have specified, we a
 	\begin{itemize}
 		\item Null object
 		\item Null fields
-		\item Sequence of location vertices not producing a convex area, including the degenerate case in which the set has cardinality less than three
-		\item Sequence of vertices including invalid or null locations
+		\item Zones built as sequences of location vertices not producing a convex area, including the degenerate case in which the set has cardinality less than three
+		\item Zones built as sequences of vertices representing invalid or null locations
 		\end{itemize}
 	\item A list of both valid and invalid candidate taxi requests to test the \textbf{Request Management} component. The set should contain instances exhibiting the following problems: 
 		\begin{itemize}
@@ -55,5 +55,7 @@ In order to be able to perform the battery of tests that we have specified, we a
 		\item Null fields
 		\item Source location is outside the city
 		\item The time of the meeting does not respect the validity range
-		\end{itemize}		
+		\end{itemize}	
+		
+More specific information about the required test data can be found by analyzing the inputs of all the test cases described in chapter 3.	
 \end{itemize}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.21)  19 JAN 2016 16:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.21)  20 JAN 2016 18:33
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -504,19 +504,23 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enitdp@description=\count115
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/seqsplit/seqsplit.sty
 Package: seqsplit 2006/08/07 v0.1 Splitting long sequences (DNA, RNA, proteins, etc.) 
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen118
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/tools/hhline.sty
+Package: hhline 2014/10/28 v2.03 Table rule package (DPC)
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count116
 \lst@gtempboxa=\box37
 \lst@token=\toks24
 \lst@length=\count117
-\lst@currlwidth=\dimen118
+\lst@currlwidth=\dimen119
 \lst@column=\count118
 \lst@pos=\count119
-\lst@lostspace=\dimen119
-\lst@width=\dimen120
+\lst@lostspace=\dimen120
+\lst@width=\dimen121
 \lst@newlines=\count120
 \lst@lineno=\count121
-\lst@maxwidth=\dimen121
+\lst@maxwidth=\dimen122
  (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
 \c@lstnumber=\count122
@@ -564,19 +568,19 @@ LaTeX Info: Redefining \nameref on input line 4.
  (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count125
-\scratchdimen=\dimen122
+\scratchdimen=\dimen123
 \scratchbox=\box40
 \nofMPsegments=\count126
 \nofMParguments=\count127
 \everyMPshowfont=\toks25
 \MPscratchCnt=\count128
-\MPscratchDim=\dimen123
+\MPscratchDim=\dimen124
 \MPnumerator=\count129
 \makeMPintoPDFobject=\count130
 \everyMPtoPDFconversion=\toks26
 )
 \c@lstlisting=\count131
- (./title/title_page.tex <title/polimi_logo.png, id=100, 419.31656pt x 417.81094pt>
+ (./title/title_page.tex <title/polimi_logo.png, id=184, 419.31656pt x 417.81094pt>
 File: title/polimi_logo.png Graphic file (type png)
  <use title/polimi_logo.png>
 Package pdftex.def Info: title/polimi_logo.png used on input line 3.
@@ -590,33 +594,40 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 3.
-)
-\tf@toc=\write4
-\openout4 = `4_ITPD.toc'.
-
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.8 \tableofcontents
-                     [1
+l.35 ...ta Access Utilities}{25}{subsection.3.3.4}
+                                                   [1
 
-] (./chapters/introduction.tex
+])
+\tf@toc=\write4
+\openout4 = `4_ITPD.toc'.
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[2] (./chapters/introduction.tex
 Chapter 1.
 
 Underfull \vbox (badness 10000) detected at line 16
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 25.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 26.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 25.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 26.
  [1
 
 
 ]
-Overfull \hbox (34.68718pt too wide) in paragraph at lines 60--61
+Overfull \hbox (34.68718pt too wide) in paragraph at lines 62--63
 []\OT1/cmr/m/n/10.95 myTaxiService Re-quire-ment Anal-y-sis and Spec-i-fi-ca-tion Doc-u-ment: RASD.pdf 
  []
 
@@ -655,7 +666,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[6] <pdfs/integration_dataaccess.pdf, id=168, 445.665pt x 114.4275pt>
+[6] <pdfs/integration_dataaccess.pdf, id=277, 445.665pt x 114.4275pt>
 File: pdfs/integration_dataaccess.pdf Graphic file (type pdf)
  <use pdfs/integration_dataaccess.pdf>
 Package pdftex.def Info: pdfs/integration_dataaccess.pdf used on input line 58.
@@ -665,12 +676,12 @@ Overfull \hbox (1.31786pt too wide) in paragraph at lines 61--62
 \OT1/cmr/m/n/10.95 sub-com-po-nents im-ple-ment-ing the \OT1/cmr/bx/n/10.95 Taxi Man-age-ment Sys-tem\OT1/cmr/m/n/10.95 . This choice
  []
 
-<pdfs/taximan/integration_reqmansub.pdf, id=169, 686.565pt x 114.4275pt>
+<pdfs/taximan/integration_reqmansub.pdf, id=278, 686.565pt x 114.4275pt>
 File: pdfs/taximan/integration_reqmansub.pdf Graphic file (type pdf)
  <use pdfs/taximan/integration_reqmansub.pdf>
 Package pdftex.def Info: pdfs/taximan/integration_reqmansub.pdf used on input line 68.
 (pdftex.def)             Requested size: 350.0pt x 58.3328pt.
- <pdfs/taximan/integration_resmansub.pdf, id=170, 686.565pt x 114.4275pt>
+ <pdfs/taximan/integration_resmansub.pdf, id=279, 686.565pt x 114.4275pt>
 File: pdfs/taximan/integration_resmansub.pdf Graphic file (type pdf)
  <use pdfs/taximan/integration_resmansub.pdf>
 Package pdftex.def Info: pdfs/taximan/integration_resmansub.pdf used on input line 73.
@@ -682,12 +693,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[7 <./pdfs/integration_dataaccess.pdf> <./pdfs/taximan/integration_reqmansub.pdf>] <pdfs/taximan/integration_taximansub.pdf, id=183, 686.565pt x 259.97125pt>
+[7 <./pdfs/integration_dataaccess.pdf> <./pdfs/taximan/integration_reqmansub.pdf>] <pdfs/taximan/integration_taximansub.pdf, id=292, 686.565pt x 259.97125pt>
 File: pdfs/taximan/integration_taximansub.pdf Graphic file (type pdf)
  <use pdfs/taximan/integration_taximansub.pdf>
 Package pdftex.def Info: pdfs/taximan/integration_taximansub.pdf used on input line 78.
 (pdftex.def)             Requested size: 350.0pt x 132.52805pt.
- <pdfs/integration_taximan.pdf, id=184, 736.7525pt x 425.59pt>
+ <pdfs/integration_taximan.pdf, id=293, 736.7525pt x 425.59pt>
 File: pdfs/integration_taximan.pdf Graphic file (type pdf)
  <use pdfs/integration_taximan.pdf>
 Package pdftex.def Info: pdfs/integration_taximan.pdf used on input line 83.
@@ -699,27 +710,27 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[8 <./pdfs/taximan/integration_resmansub.pdf> <./pdfs/taximan/integration_taximansub.pdf> <./pdfs/integration_taximan.pdf>] <pdfs/systemadmin/integration_apipermansub.pdf, id=199, 686.565pt x 114.4275pt>
+[8 <./pdfs/taximan/integration_resmansub.pdf> <./pdfs/taximan/integration_taximansub.pdf> <./pdfs/integration_taximan.pdf>] <pdfs/systemadmin/integration_apipermansub.pdf, id=309, 686.565pt x 114.4275pt>
 File: pdfs/systemadmin/integration_apipermansub.pdf Graphic file (type pdf)
  <use pdfs/systemadmin/integration_apipermansub.pdf>
 Package pdftex.def Info: pdfs/systemadmin/integration_apipermansub.pdf used on input line 93.
 (pdftex.def)             Requested size: 350.0pt x 58.3328pt.
- <pdfs/systemadmin/integration_zonedivmansub.pdf, id=200, 686.565pt x 114.4275pt>
+ <pdfs/systemadmin/integration_zonedivmansub.pdf, id=310, 686.565pt x 114.4275pt>
 File: pdfs/systemadmin/integration_zonedivmansub.pdf Graphic file (type pdf)
  <use pdfs/systemadmin/integration_zonedivmansub.pdf>
 Package pdftex.def Info: pdfs/systemadmin/integration_zonedivmansub.pdf used on input line 97.
 (pdftex.def)             Requested size: 350.0pt x 58.3328pt.
- <pdfs/systemadmin/integration_taxidrivermansub.pdf, id=201, 686.565pt x 114.4275pt>
+ <pdfs/systemadmin/integration_taxidrivermansub.pdf, id=311, 686.565pt x 114.4275pt>
 File: pdfs/systemadmin/integration_taxidrivermansub.pdf Graphic file (type pdf)
  <use pdfs/systemadmin/integration_taxidrivermansub.pdf>
 Package pdftex.def Info: pdfs/systemadmin/integration_taxidrivermansub.pdf used on input line 101.
 (pdftex.def)             Requested size: 350.0pt x 58.3328pt.
- <pdfs/systemadmin/integration_servstatsub.pdf, id=202, 686.565pt x 114.4275pt>
+ <pdfs/systemadmin/integration_servstatsub.pdf, id=312, 686.565pt x 114.4275pt>
 File: pdfs/systemadmin/integration_servstatsub.pdf Graphic file (type pdf)
  <use pdfs/systemadmin/integration_servstatsub.pdf>
 Package pdftex.def Info: pdfs/systemadmin/integration_servstatsub.pdf used on input line 105.
 (pdftex.def)             Requested size: 350.0pt x 58.3328pt.
- <pdfs/systemadmin/integration_pluginmansub.pdf, id=203, 686.565pt x 114.4275pt>
+ <pdfs/systemadmin/integration_pluginmansub.pdf, id=313, 686.565pt x 114.4275pt>
 File: pdfs/systemadmin/integration_pluginmansub.pdf Graphic file (type pdf)
  <use pdfs/systemadmin/integration_pluginmansub.pdf>
 Package pdftex.def Info: pdfs/systemadmin/integration_pluginmansub.pdf used on input line 109.
@@ -735,22 +746,22 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[9 <./pdfs/systemadmin/integration_apipermansub.pdf> <./pdfs/systemadmin/integration_zonedivmansub.pdf> <./pdfs/systemadmin/integration_taxidrivermansub.pdf> <./pdfs/systemadmin/integration_servstatsub.pdf> <./pdfs/systemadmin/integration_pluginmansub.pdf>] <pdfs/accountman/integration_passregsub.pdf, id=223, 686.565pt x 114.4275pt>
+[9 <./pdfs/systemadmin/integration_apipermansub.pdf> <./pdfs/systemadmin/integration_zonedivmansub.pdf> <./pdfs/systemadmin/integration_taxidrivermansub.pdf> <./pdfs/systemadmin/integration_servstatsub.pdf> <./pdfs/systemadmin/integration_pluginmansub.pdf>] <pdfs/accountman/integration_passregsub.pdf, id=333, 686.565pt x 114.4275pt>
 File: pdfs/accountman/integration_passregsub.pdf Graphic file (type pdf)
  <use pdfs/accountman/integration_passregsub.pdf>
 Package pdftex.def Info: pdfs/accountman/integration_passregsub.pdf used on input line 119.
 (pdftex.def)             Requested size: 350.0pt x 58.3328pt.
- <pdfs/accountman/integration_loginsub.pdf, id=224, 686.565pt x 114.4275pt>
+ <pdfs/accountman/integration_loginsub.pdf, id=334, 686.565pt x 114.4275pt>
 File: pdfs/accountman/integration_loginsub.pdf Graphic file (type pdf)
  <use pdfs/accountman/integration_loginsub.pdf>
 Package pdftex.def Info: pdfs/accountman/integration_loginsub.pdf used on input line 123.
 (pdftex.def)             Requested size: 350.0pt x 58.3328pt.
- <pdfs/accountman/integration_pwdretsub.pdf, id=225, 686.565pt x 114.4275pt>
+ <pdfs/accountman/integration_pwdretsub.pdf, id=335, 686.565pt x 114.4275pt>
 File: pdfs/accountman/integration_pwdretsub.pdf Graphic file (type pdf)
  <use pdfs/accountman/integration_pwdretsub.pdf>
 Package pdftex.def Info: pdfs/accountman/integration_pwdretsub.pdf used on input line 127.
 (pdftex.def)             Requested size: 350.0pt x 58.3328pt.
- <pdfs/accountman/integration_settingsmansub.pdf, id=226, 686.565pt x 114.4275pt>
+ <pdfs/accountman/integration_settingsmansub.pdf, id=336, 686.565pt x 114.4275pt>
 File: pdfs/accountman/integration_settingsmansub.pdf Graphic file (type pdf)
  <use pdfs/accountman/integration_settingsmansub.pdf>
 Package pdftex.def Info: pdfs/accountman/integration_settingsmansub.pdf used on input line 131.
@@ -762,12 +773,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10 <./pdfs/accountman/integration_passregsub.pdf> <./pdfs/accountman/integration_loginsub.pdf> <./pdfs/accountman/integration_pwdretsub.pdf> <./pdfs/accountman/integration_settingsmansub.pdf>] <pdfs/integration_subsystems.pdf, id=244, 1676.2625pt x 1013.7875pt>
+[10 <./pdfs/accountman/integration_passregsub.pdf> <./pdfs/accountman/integration_loginsub.pdf> <./pdfs/accountman/integration_pwdretsub.pdf> <./pdfs/accountman/integration_settingsmansub.pdf>] <pdfs/integration_subsystems.pdf, id=355, 1676.2625pt x 1013.7875pt>
 File: pdfs/integration_subsystems.pdf Graphic file (type pdf)
  <use pdfs/integration_subsystems.pdf>
 Package pdftex.def Info: pdfs/integration_subsystems.pdf used on input line 138.
 (pdftex.def)             Requested size: 550.0pt x 332.63274pt.
-) (./chapters/istd.tex
+) (./chapters/trial.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -776,20 +787,52 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [11 <./pdfs/integration_subsystems.pdf>]
 Chapter 3.
-) (./chapters/performance.tex [12
 
-]
-Chapter 4.
-
-Overfull \hbox (4.42253pt too wide) in paragraph at lines 8--9
-[]\OT1/cmr/m/n/10.95 It must run cor-rectly on smart-phones with sin-gle core pro-ces-sors clocked
+Underfull \hbox (badness 10000) in paragraph at lines 12--12
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
  []
 
-) (./chapters/tter.tex [13
 
-]
-Chapter 5.
-[14
+Underfull \hbox (badness 1400) in paragraph at lines 14--14
+[]\OT1/cmr/m/n/10.95 An en-try con-tain-ing the re-quest
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--20
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--48
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--56
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--60
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--78
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--82
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+[12
 
 ]
 
@@ -798,7 +841,133 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[15]) (./chapters/pstdr.tex
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+[]\OT1/cmr/m/n/10.95 An In-valid-Lo-ca-tionEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--118
+[]\OT1/cmr/m/n/10.95 An In-valid-Lo-ca-tionEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--120
+[]\OT1/cmr/m/n/10.95 An In-valid-Lo-ca-tionEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--135
+[]\OT1/cmr/m/n/10.95 An In-valid-Lo-ca-tionEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--137
+[]\OT1/cmr/m/n/10.95 An In-valid-Lo-ca-tionEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--145
+[]\OT1/cmr/m/n/10.95 An In-valid-Lo-ca-tionEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--147
+[]\OT1/cmr/m/n/10.95 An In-valid-Lo-ca-tionEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--151
+[]\OT1/cmr/m/n/10.95 An In-valid-Lo-ca-tionEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--152
+[]\OT1/cmr/m/n/10.95 Both cur-rent-Lo-ca-tion and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--154
+[]\OT1/cmr/m/n/10.95 Both cur-rent-Lo-ca-tion and
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[14]
+Underfull \hbox (badness 1577) in paragraph at lines 166--166
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-For-ma-tEx-cep-
+ []
+
+
+Underfull \hbox (badness 2376) in paragraph at lines 167--167
+[]\OT1/cmr/m/n/10.95 A pas-sen-ger-Loca-tion whose
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--168
+[]\OT1/cmr/m/n/10.95 An In-valid-Lo-ca-tionEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--170
+[]\OT1/cmr/m/n/10.95 An In-valid-Lo-ca-tionEx-cep-tion is
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 185--185
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--187
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 2376) in paragraph at lines 194--194
+[]\OT1/cmr/m/n/10.95 A pas-sen-ger-Loca-tion whose
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--195
+[]\OT1/cmr/m/n/10.95 An In-valid-Lo-ca-tionEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--197
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 203--203
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 1132) in paragraph at lines 205--205
+\OT1/cmr/m/n/10.95 the re-quest (check RASD con-di-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 210--210
+[]\OT1/cmr/m/n/10.95 An In-valid-Lo-ca-tionEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 212--212
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -806,10 +975,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [16]
-Chapter 6.
-[17
 
-]
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[17]
+Overfull \vbox (61.30469pt too high) has occurred while \output is active []
+
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -817,13 +992,136 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [18]
+Underfull \hbox (badness 10000) in paragraph at lines 228--228
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--234
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 4001) in paragraph at lines 236--236
+[]\OT1/cmr/m/n/10.95 The zones are in-serted in the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 241--241
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--251
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 255--255
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 6047) in paragraph at lines 257--257
+\OT1/cmr/m/n/10.95 i-fied zones is up-dated in the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--263
+[][]\OT1/cmr/m/n/10.95 should
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--263
+\OT1/cmr/m/n/10.95 we add
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--263
+\OT1/cmr/m/n/10.95 ad-minid
+ []
+
+
+Overfull \hbox (46.99957pt too wide) in paragraph at lines 222--264
+[] \OT1/cmr/m/n/10.95 as-daSHOULD
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 274--274
+[]\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 276--276
+[]\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 286--286
+[]\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion
+ []
+
+
+Underfull \hbox (badness 1642) in paragraph at lines 288--288
+[]\OT1/cmr/m/n/10.95 Insert a new <ap-pId, op-er-a-tion>
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 294--294
+[]\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--296
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[19]) (./chapters/hours_of_work.tex
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 311--311
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 315--315
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 323--323
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 325--325
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 332--332
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 334--334
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -831,33 +1129,455 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [20]
-Appendix A.
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 21.
- [21
+Underfull \hbox (badness 10000) in paragraph at lines 348--348
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 350--350
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 352--352
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 358--358
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 360--360
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 362--362
+[]\OT1/cmr/m/n/10.95 The pas-sen-ger sta-tus in the
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 372--372
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 374--374
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 1009) in paragraph at lines 375--375
+[]\OT1/cmr/m/n/10.95 A valid user and pass-word
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 396--396
+[]\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion
+ []
+
+
+Underfull \hbox (badness 1577) in paragraph at lines 398--398
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-For-ma-tEx-cep-
+ []
+
+
+Underfull \hbox (badness 1360) in paragraph at lines 399--399
+\OT1/cmr/m/n/10.95 a cor-rectly for-mat-ted pass-
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[22]
+Underfull \hbox (badness 1577) in paragraph at lines 414--414
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-For-ma-tEx-cep-
+ []
+
+
+Underfull \hbox (badness 2376) in paragraph at lines 415--415
+[]\OT1/cmr/m/n/10.95 A pas-sen-ger-Loca-tion whose
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 416--416
+[]\OT1/cmr/m/n/10.95 An In-valid-Lo-ca-tionEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 418--418
+[]\OT1/cmr/m/n/10.95 An In-valid-Lo-ca-tionEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 428--428
+[]\OT1/cmr/m/n/10.95 An In-valid-Lo-ca-tionEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 430--430
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 4416) in paragraph at lines 432--432
+[]\OT1/cmr/m/n/10.95 An In-vali-d-Op-er-a-tionEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 440--440
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 4416) in paragraph at lines 446--446
+[]\OT1/cmr/m/n/10.95 An In-vali-d-Op-er-a-tionEx-cep-tion is
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[23]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[24]
+Overfull \vbox (97.22008pt too high) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 457--457
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 459--459
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 461--461
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 467--467
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 469--469
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 471--471
+[]\OT1/cmr/m/n/10.95 The pas-sen-ger sta-tus in the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 477--477
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 479--479
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 1009) in paragraph at lines 480--480
+[]\OT1/cmr/m/n/10.95 A valid user and pass-word
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 497--497
+[]\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion
+ []
+
+
+Underfull \hbox (badness 1577) in paragraph at lines 499--499
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-For-ma-tEx-cep-
+ []
+
+
+Underfull \hbox (badness 1360) in paragraph at lines 500--500
+\OT1/cmr/m/n/10.95 a cor-rectly for-mat-ted pass-
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[26]
+Overfull \vbox (301.70451pt too high) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[27]
+Underfull \hbox (badness 10000) in paragraph at lines 513--513
+\OT1/cmr/m/n/10.95 be uni-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 513--513
+\OT1/cmr/m/n/10.95 form in
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 513--513
+\OT1/cmr/m/n/10.95 no-ta-tion,
+ []
+
+
+Underfull \hbox (badness 7379) in paragraph at lines 513--513
+\OT1/cmr/m/n/10.95 a-bly also
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 513--513
+\OT1/cmr/m/n/10.95 re-vise a
+ []
+
+
+Overfull \hbox (5.66118pt too wide) in paragraph at lines 513--514
+\OT1/cmr/m/n/10.95 asdaWE SHOULD BE UNI-FORM IN NO-TA-TION, AND PROB-A-BLY ALSO
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 521--521
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 523--523
+[]\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 533--533
+[]\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 535--535
+[]\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 545--545
+[]\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 547--547
+[]\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion
+ []
+
+
+Underfull \hbox (badness 1642) in paragraph at lines 549--549
+[]\OT1/cmr/m/n/10.95 Insert a new <ap-pId, op-er-a-tion>
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
+[]\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 557--557
+[]\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 559--559
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 565--565
+[]\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 573--573
+[]\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 575--575
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 579--579
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 3439) in paragraph at lines 581--581
+\OT1/cmr/m/n/10.95 ist-ing zones is up-dated in the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 587--587
+[]\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 589--589
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 593--593
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+[]\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 603--603
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 607--607
+[]\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-
+ []
+
+) (./chapters/performance.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[28]
+Overfull \vbox (837.89919pt too high) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[29]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[30]
+Chapter 4.
+) (./chapters/tter.tex [31
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 21.
+Chapter 5.
+[32
+
+]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[33]) (./chapters/pstdr.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[34]
+Chapter 6.
+[35
+
+]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[36]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[37]) (./chapters/hours_of_work.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[38]
+Appendix A.
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 22.
+ [39
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 22.
  (/Users/Valerio/GitHub/casaticastelli_sweng2/4_ITPD/latex_files/.texpadtmp/4_ITPD.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 21.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 21.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 22.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 22.
 Package rerunfilecheck Info: File `4_ITPD.out' has not changed.
-(rerunfilecheck)             Checksum: EB96A590FFE46994EBA6F9A9060EB6AA;1601.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 21.
+(rerunfilecheck)             Checksum: A7E6A9865156016CCE80566ABC7C84E2;3495.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 22.
  ) 
 Here is how much of TeX's memory you used:
- 9182 strings out of 493089
- 135653 string characters out of 6134841
- 262131 words of memory out of 5000000
- 12437 multiletter control sequences out of 15000+600000
- 10365 words of font info for 36 fonts, out of 8000000 for 9000
+ 9275 strings out of 493089
+ 137042 string characters out of 6134841
+ 278770 words of memory out of 5000000
+ 12481 multiletter control sequences out of 15000+600000
+ 10711 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,12n,43p,878b,535s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on /Users/Valerio/GitHub/casaticastelli_sweng2/4_ITPD/latex_files/.texpadtmp/4_ITPD.pdf (23 pages, 598433 bytes).
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on /Users/Valerio/GitHub/casaticastelli_sweng2/4_ITPD/latex_files/.texpadtmp/4_ITPD.pdf (42 pages, 642566 bytes).
 PDF statistics:
- 334 PDF objects out of 1000 (max. 8388607)
- 283 compressed objects within 3 object streams
- 53 named destinations out of 1000 (max. 500000)
- 273 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 535 PDF objects out of 1000 (max. 8388607)
+ 462 compressed objects within 5 object streams
+ 94 named destinations out of 1000 (max. 500000)
+ 441 words of extra memory for PDF output out of 10000 (max. 10000000)
 

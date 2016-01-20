@@ -63,7 +63,7 @@
 	
 	\method{getReservationList()}
 	Nothing &
-	The list of all pending reservations. \\\hline
+	The list of all pending reservations. \\\hline\hline
 \end{tabular}
 \end{table}
 
@@ -109,7 +109,7 @@
 	A location outside the city &
 	Returns false. \\\hline
 	A location inside the city &
-	Returns true \\\hline
+	Returns true \\\hline\hline
 		
 	\method{getZone(location)}
 	A null parameter &
@@ -136,7 +136,7 @@
 	A location outside the city &
 	An InvalidLocationException is raised. \\\hline
 	A location inside the city &
-	The id of the zone to which the location belongs. \\\hline
+	The id of the zone to which the location belongs. \\\hline\hline
 			
 	\method{checkTaxiDriverLocation(currentLocation, meetingPoint)}
 	A null parameter &
@@ -196,7 +196,7 @@
 	An inexistent taxi driver &
 	An InvalidArgumentValueException is raised. \\\hline
 	A valid taxiDriver and passengerLocation &
-	Returns the estimated time of the arrival of the taxi to the location. \\\hline
+	Returns the estimated time of the arrival of the taxi to the location. \\\hline\hline
 
 	\method{taxiDriverDroppedRequest(taxiId)}
 	An invalid taxiId &
@@ -233,7 +233,7 @@
 	An array of valid, but already existing zones &
 	An InvalidArgumentValueException  is raised. \\\hline
 	A non-empty array of valid and not existing zones &
-	The zones are inserted in the database. \\\hline
+	The zones are inserted in the database. \\\hline\hline
 	
 	\method{insertZone{Zone zone}}
 	A NullArgumentException is raised.\\\hline
@@ -242,7 +242,7 @@
 	A valid, but already existent zone &
 	An InvalidArgumentValueException  is raised. \\\hline
 	A valid and not existing zone &
-	The zone is inserted in the database. \ \\\hline
+	The zone is inserted in the database. \\\hline\hline
 	
 	\method{updateZones(Zone[] zones)}
 	A null parameter &
@@ -254,7 +254,7 @@
 	An array of non-null, but invalid or inexistent zones &
 	An InvalidArgumentValueException  is raised. \\\hline
 	A non-empty array of valid, existing zones &
-	The data associated with the specified zones is updated in the database. \\\hline
+	The data associated with the specified zones is updated in the database. \\\hline\hline
 	
 	\method{getZoneList()}
 	Nothing &
@@ -277,7 +277,7 @@ asda\note{Should we add adminId here?}
 	A valid appId and operation, but the app hasn't enough privileges to execute the desired operation &
 	Returns false. \\\hline	
 	A valid appId and operation, and the app has enough privileges to execute the desired operation &
-	Returns true. \\\hline
+	Returns true. \\\hline\hline
 	
 	\method{grantPermission(appId, operation)}
 	A null parameter &
@@ -285,7 +285,7 @@ asda\note{Should we add adminId here?}
 	A non-existing operation &
 	An InvalidSecurityLevelException is raised. \\\hline	
 	A valid appId and operation &
-	Insert a new <appId, operation> pair in the permission table in the database. \\\hline
+	Insert a new <appId, operation> pair in the permission table in the database. \\\hline\hline
 	
 	\method{revokePermission(appId, operation)}
 	A null parameter &
@@ -314,7 +314,7 @@ asda\note{Should we add adminId here?}
 	An array of valid, but already existing taxi drivers &
 	An InvalidArgumentValueException  is raised. \\\hline
 	A non-empty array of valid and not existing taxi drivers &
-	The taxi drivers are inserted in the database. \ \\\hline
+	The taxi drivers are inserted in the database. \\\hline\hline
 	
 	\method{insertTaxiDriver(TaxiDriver td)}
 	A null parameter &
@@ -324,7 +324,7 @@ asda\note{Should we add adminId here?}
 	A valid, but already existent taxi driver &
 	An InvalidArgumentValueException  is raised. \\\hline
 	A valid and not existing taxi driver &
-	The taxi driver is inserted in the database. \\\hline
+	The taxi driver is inserted in the database. \\\hline\hline
 
 	\method{updateTaxiDriver(TaxiDriver td)}
 	A NullArgumentException is raised. \\\hline
@@ -333,7 +333,7 @@ asda\note{Should we add adminId here?}
 	A taxi driver with some null or empty fields &
 	An InvalidArgumentValueException is raised. \\\hline
 	A valid taxi driver &
-	The data associated with the specified taxi driver is updated in the database. \\\hline	
+	The data associated with the specified taxi driver is updated in the database. \\\hline\hline	
 \end{tabular}
 
 
@@ -351,7 +351,7 @@ asda\note{Should we add adminId here?}
 	A passenger with the same mail address as an existing passenger &
 	An InvalidArgumentValueException is raised. \\\hline
 	A valid passenger &
-	The passenger data is inserted in the database and a registration confirmation mail is sent to him. The passenger status is set as "pending confirmation". \\\hline
+	The passenger data is inserted in the database and a registration confirmation mail is sent to him. The passenger status is set as "pending confirmation". \\\hline\hline
 	
 	\method{confirmPassenger(PassengerId)}
 	A non-existing passengerId &
@@ -387,7 +387,7 @@ asda\note{Should we add adminId here?}
 	A valid user and secretCode combination, which however is not the correct one &
 	Returns false. \\\hline
 	A correct and valid user and secretCode combination &
-	Returns true. \\\hline
+	Returns true. \\\hline\hline
 	
 	\method{updateUserPassword(User u, String secretCode, String newPassword)}
 	A null parameter &
@@ -419,7 +419,7 @@ asda\note{Should we add adminId here?}
 	A passengerLocation outside the city &
 	A passengerId not correctly formatted \\\hline
 	A valid set of parameters &
-	A new request is created and handled; refer to the RASD for the specific outcomes of this operation. \\\hline
+	A new request is created and handled; refer to the RASD for the specific outcomes of this operation. \\\hline\hline
 	
 	\method{endRide(taxiId, currentLocation)}
 	A null location &
@@ -433,7 +433,7 @@ asda\note{Should we add adminId here?}
 	A valid taxiId and currentLocation, the taxi is on a ride and currentLocation is inside city&
 	The ride is considered closed and is finalized in the database, the taxi changes its status to available \\\hline
 	A valid taxiId and currentLocation, the taxi is on a ride and currentLocation is outside city&
-	The ride is considered closed and is finalized in the database, the taxi changes its status to outside-city \\\hline
+	The ride is considered closed and is finalized in the database, the taxi changes its status to outside-city \\\hline\hline
 
 	\method{togglePressed(taxiId)}
 	An invalid taxiId &
@@ -468,8 +468,8 @@ asda\note{Should we add adminId here?}
 	A passengerId that has already been confirmed &
 	An InvalidArgumentValueException is raised. \\\hline
 	A passengerId that hasn't already been confirmed &
-	The passenger status in the database is set as "confirmed". \\\hline
-	
+	The passenger status in the database is set as "confirmed". \\\hline\hline
+		
 	\method{checkCredentials(User u, String password)}
 	A null parameter &
 	A NullArgumentException is raised.\\\hline
@@ -480,7 +480,7 @@ asda\note{Should we add adminId here?}
 	A valid user and password combination, which however is not the correct one &
 	Returns an InvalidCredentialError. \\\hline
 	A correct and valid user and password combination &
-	Returns a session cookie.\\\hline
+	Returns a session cookie.\\\hline\hline
 	
 	\method{verifyUserSecretCode(User u, String secretCode)}
 	A null parameter &
@@ -488,7 +488,7 @@ asda\note{Should we add adminId here?}
 	A valid user and secretCode combination, which however is not the correct one &
 	Returns false. \\\hline
 	A correct and valid user and secretCode combination &
-	Returns true. \\\hline
+	Returns true. \\\hline\hline
 	
 	\method{updateUserPassword(User u, String secretCode, String newPassword)}
 	A null parameter &
@@ -524,7 +524,7 @@ asda\note{We should be uniform in notation, and probably also revise a bit the D
 	A valid adminId and password, but password does not correspond to an authorized one &
 	Returns false. \\\hline		
 	A valid adminId and password, and password does correspond to an authorized one &
-	Returns true. \\\hline
+	Returns true. \\\hline\hline
 
 	\method{verifyPermission(appId, operation)}
 	A null parameter &
@@ -536,7 +536,7 @@ asda\note{We should be uniform in notation, and probably also revise a bit the D
 	A valid appId and operation, but the app hasn't enough privileges to execute the desired operation &
 	Returns false. \\\hline	
 	A valid appId and operation, and the app has enough privileges to execute the desired operation &
-	Returns true. \\\hline
+	Returns true. \\\hline\hline
 	
 	\method{grantPermission(adminId, appId, operation)}
 	A null parameter &
@@ -546,7 +546,7 @@ asda\note{We should be uniform in notation, and probably also revise a bit the D
 	An invalid adminId &
 	An InvalidSecurityLevelException is raised. \\\hline
 	A valid appId and operation &
-	Insert a new <appId, operation> pair in the permission table in the database. \\\hline
+	Insert a new <appId, operation> pair in the permission table in the database. \\\hline\hline
 	
 	\method{revokePermission(adminId, appId, operation)}
 	A null parameter &
@@ -594,7 +594,7 @@ asda\note{We should be uniform in notation, and probably also revise a bit the D
 	A valid adminId and a non-empty array of taxi drivers&
 	The data associated with the existing taxi drivers is updated in the database, while new taxi drivers are inserted from scratch. \\\hline\hline
 	
-		\method{sendSetupData(adminId, Object[] data)}
+	\method{sendSetupData(adminId, Object[] data)}
 	A null parameter &
 	A NullArgumentException is raised.\\\hline
 	An invalid adminId &

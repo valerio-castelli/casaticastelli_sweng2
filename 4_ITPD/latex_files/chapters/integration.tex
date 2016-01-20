@@ -2,7 +2,7 @@
 \section{Entry Criteria}
 In order for the integration testing to be possible and to produce meaningful results, there are a a number of conditions on the progress of the project that have to be met.
 
-First of all, the \textbf{Requirements Analysis and Specification Document} and the \textbf{Design Document} must have been fully written. This is a required step in order to have a complete picture of the interaction between the different components of the system and of their required functionalities. 
+First of all, the \textbf{Requirements Analysis and Specification Document} and the \textbf{Design Document} must have been fully written. This is a required step in order to have a complete picture of the interactions between the different components of the system and their required functionalities. 
 
 Secondly, the integration process should start only when the estimated percentage of completion of every component with respect to its functionalities is:
 \begin{itemize}
@@ -27,12 +27,12 @@ For what concerns the building of the \textbf{System Administration} and \textbf
 	\item The \textbf{Passenger Registration}, \textbf{Login}, \textbf{Password Retrieval} and \textbf{Settings Management} subcomponents in order to obtain the \textbf{Account Management} subsystem.
 \end{itemize}
 
-Some of these subcomponents also directly rely on higher level, atomic components: that is the case, for instance, of the dependency on the \textbf{Data Access Utilities} component. This dependency will be taken care of in the integration process.
+Some of these subcomponents also directly rely on higher level, atomic components: that is the case, for instance, of the dependency on the \textbf{Data Access Utilities} component. These dependencies will be taken care of in the integration process.
 
 Finally, we will proceed with the integration of the higher level subsystems. In particular, the integration activity will involve:
 \begin{itemize}
-	\item A number of commercial, already existing components, used to achieve specific functionalities: these are the \textbf{DBMS}, \textbf{Mapping Service}, \textbf{Notification System} and \textbf{Remote Services Interface} components.
-	\item Those components and subsystems specifically developed for myTaxiService, specifically:
+	\item A number of commercial, already existing components used to achieve specific functionalities: these are the \textbf{DBMS}, \textbf{Mapping Service}, \textbf{Notification System} and \textbf{Remote Services Interface} components.
+	\item Those components and subsystems specifically developed for myTaxiService, that are:
 		\begin{itemize}
 		\item On the server side: the \textbf{Taxi Management System}, \textbf{System Administration}, \textbf{Account Management} subsystems, together with the \textbf{Data Access Utilities} component.
 		\item On the client side: the \textbf{Administration Web Application}, \textbf{Passenger Web Application}, \textbf{Passenger Mobile Application} and \textbf{Taxi Driver Mobile Application} components.
@@ -44,7 +44,7 @@ The approach we're going to use to perform integration testing is based on a mix
 
 Using the bottom-up approach, we will start integrating together those components that do not depend on other components to function, or that only depend on already developed components. This strategy brings a number of important advantages. First, it allows us to perform integration tests on "real" components that are almost fully developed and thus obtain more precise indications about how the system may react and fail in real world usage with respect to a top-down approach. Secondly, working bottom-up enables us to more closely follow the development process, which in our case is also proceeding using the bottom-up approach; by doing this we can start performing integration testing earlier in the development process as soon as the required components have been developed in order to maximize parallelism and efficiency.
 
-Since subsystems are fairly independent from one another, the order in which they're integrated together to obtain the full system follows the critical-module-first approach. This strategy allows us to concentrate our testing efforts on the riskiest components first, that is those that represents the core functionalities of the whole system and whose malfunctioning could pose a very serious threat to the correct implementation of the entire myTaxiService infrastructure. By proceeding this way, we are able to discover bugs earlier in the integration progress and take the necessary measures to correct them on time.
+Since subsystems are fairly independent from one another, the order in which they're integrated together to obtain the full system follows the critical-module-first approach. This strategy allows us to concentrate our testing efforts on the riskiest components first, that is those that represent the core functionalities of the whole system and whose malfunctioning could pose a very serious threat to the correct implementation of the entire myTaxiService infrastructure. By proceeding this way, we are able to discover bugs earlier in the integration progress and take the necessary measures to correct them on time.
 
 It should be noted that \textbf{Notification System}, \textbf{Remote Services Interface}, \textbf{Mapping Service} and \textbf{DBMS} are commercial components that have already been developed and can thus be immediately used in a bottom-up approach without any explicit dependency. 
 \section{Sequence of Component/Function Integration}
@@ -58,11 +58,11 @@ The first two elements to be integrated are the \textbf{Data Access Utilities} a
 \makebox[\columnwidth]{\includegraphics[width=250pt,keepaspectratio]{pdfs/integration_dataaccess.pdf}}
 \end{figure}
 \subsubsection*{Taxi Management System}
-The second step in the integration process is to appropriately connect the subcomponents implementing the \textbf{Taxi Management System}. This choice comes from the critical-module-first approach, because the taxi management is the single most important functionality of myTaxiService.
+The second step in the integration process is to appropriately connect the subcomponents implementing the \textbf{Taxi Management System}. This choice comes from the critical-module-first approach, because taxi management is the single most important functionality of myTaxiService.
 
 In the following diagrams, we are going to show exactly which components must be integrated together in order to implement this functionality using a bottom-up approach.
 
-First, we procede by integrating together the \textbf{Request Management} subcomponent with the \textbf{Data Access Utilities} and the \textbf{Notification System} components.
+First, we proceed by integrating together the \textbf{Request Management} subcomponent with the \textbf{Data Access Utilities} and the \textbf{Notification System} components.
 \begin{figure}[H]
 \centering
 \makebox[\columnwidth]{\includegraphics[width=350pt,keepaspectratio]{pdfs/taximan/integration_reqmansub.pdf}}
@@ -83,11 +83,12 @@ At this point, the four sub-components of \textbf{Taxi Management System} are re
 \makebox[\columnwidth]{\includegraphics[width=350pt,keepaspectratio]{pdfs/integration_taximan.pdf}}
 \end{figure}
 \subsubsection*{System Administration}
-The third step in the integration process is to appropriately connect the subcomponents implementing the \textbf{System Administration} subsystem. This choice comes from the critical-module-first approach, because the system administration is the second most important functionality of myTaxiService. Once it has been integrated and tested, we can use this functionality to more easily populate the database for the following integration tests.
+The third step in the integration process is to appropriately connect the subcomponents implementing the \textbf{System Administration} subsystem. This choice comes from the critical-module-first approach, because system administration is the second most important functionality of myTaxiService. Once it has been integrated and tested, we can use this functionality to more easily populate the database for the following integration tests.
 
 It should be noted that the subcomponents of \textbf{System Administration} are loosely coupled together as they cover different aspects of the system administration activity. Because of this, they can be integrated with the other components of the system independently from one another. 
 
-In the following diagrams, we are going to show exactly how these subcomponents interact with the other components using a bottom-up approach. The \textbf{System Administration} subsystem, which here is not explicitly represented, is simply a wrapper for the methods of these subcomponents that have to be exposed to the other parts of the system and performs additional preprocessing to ensure these methods are properly called. It will be discussed more in depth in the \textbf{Subsystem Integration Sequence} section.\begin{figure}[H]
+In the following diagrams, we are going to show exactly how these subcomponents interact with the other components using a bottom-up approach. The \textbf{System Administration} subsystem, which here is not explicitly represented, is simply a wrapper for the methods of these subcomponents that have to be exposed to the other parts of the system and performs additional preprocessing to ensure these methods are properly called. 
+\begin{figure}[H]
 \centering
 \makebox[\columnwidth]{\includegraphics[width=350pt,keepaspectratio]{pdfs/systemadmin/integration_apipermansub.pdf}}
 \end{figure}
@@ -112,7 +113,7 @@ The fourth step in the integration process is to appropriately connect the subco
 
 It should be noted that the subcomponents of \textbf{Account Management} are loosely coupled together as they cover different operations that can be performed on accounts. Because of this, they can be integrated with the other components of the system independently from one another. 
 
-In the following diagrams, we are going to show exactly how these subcomponents interact with the other components using a bottom-up approach. The \textbf{Account Management} subsystem, which here is not explicitly represented, is simply a wrapper for the methods of these subcomponents that have to be exposed to the other parts of the system and performs additional preprocessing to ensure these methods are properly called. It will be discussed more in depth in the \textbf{Subsystem Integration Sequence} section.
+In the following diagrams, we are going to show exactly how these subcomponents interact with the other components using a bottom-up approach. The \textbf{Account Management} subsystem, which here is not explicitly represented, is simply a wrapper for the methods of these subcomponents that have to be exposed to the other parts of the system and performs additional preprocessing to ensure these methods are properly called.
 \begin{figure}[H]
 \centering
 \makebox[\columnwidth]{\includegraphics[width=350pt,keepaspectratio]{pdfs/accountman/integration_passregsub.pdf}}

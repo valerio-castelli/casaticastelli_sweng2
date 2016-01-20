@@ -18,6 +18,7 @@ Initial release \\
 
 \section{Purpose and Scope}
 This document represents the Integration Testing Plan Document for myTaxiService. 
+
 Integration testing is a key activity to guarantee that all the different subsystems composing myTaxiService interoperate consistently with the requirements they are supposed to fulfill and without exhibiting unexpected behaviors. 
 The purpose of this document is to outline, in a clear and comprehensive way, the main aspects concerning the organization of the integration testing activity for all the components that make up the system.
 In the following sections we're going to provide:
@@ -27,13 +28,14 @@ In the following sections we're going to provide:
 	\item A description of the integration testing approach and the rationale behind it
 	\item The sequence in which components and subsystems will be integrated 
 	\item A description of the planned testing activities for each integration step, including their input data and the expected output 
+	\item Some performance measures that should be performed on the components to check they are fulfilling the requirements
 	\item A list of all the tools that will have to be employed during the testing activities, together with a description of the operational environment in which the tests will be executed
 \end{itemize}
 \section{Definitions, Acronyms, Abbreviations}
 \subsection{Definitions}
 \begin{itemize}
-	\item Subcomponent
-	\item Subsystem\note{TBD}
+	\item Subcomponent: each of the low level components realizing the functionalities of a subsystem.
+	\item Subsystem: a high-level functional unit of the system.
 \end{itemize}
 \subsection{Acronyms}
 \begin{itemize}
