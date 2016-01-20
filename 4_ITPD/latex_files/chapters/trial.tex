@@ -3,7 +3,7 @@
 \subsection{Request Management, Data Access Utilities}
 \begin{table}[ph]
 \centering
-\begin{tabular}{|p{5cm}|p{6cm}|}
+\begin{testtable}
 	\hline
 	\method{insertRequest(request)}
 	A null parameter &
@@ -11,7 +11,7 @@
 	A request with an id already existent in the database  &
 	An InvalidArgumentValueException is raised. \\\hline
 	Formally valid arguments &
-	An entry containing the request data is inserted into the database.\\\hline\hline
+	An entry containing the request data is inserted into the database.\\\dline
 	
 	\method{deleteRequest(request)}
 	A null parameter &
@@ -23,15 +23,13 @@
 
 	\method{getRequestList()}
 	Nothing &
-	The list of all pending requests. \\\hline\\\hline
-\end{tabular}
+	The list of all pending requests.\\\hline
+\end{testtable}
 \end{table}
 
 
 \subsection{Reservation Management, Data Access Utilities}
-\begin{table}[ph]
-\centering
-\begin{tabular}{|p{5cm}|p{6cm}|}
+\begin{testtable}
 	\hline
 	\method{insertReservation(reservation)}
 	A null parameter &
@@ -63,13 +61,12 @@
 	
 	\method{getReservationList()}
 	Nothing &
-	The list of all pending reservations. \\\hline\hline
-\end{tabular}
-\end{table}
+	The list of all pending reservations. \\\hline
+\end{testtable}
 
 
 \subsection{Taxi Management, Data Access Utilities Management}
-\begin{tabular}{|p{5cm}|p{6cm}}
+\begin{testtable}
 	\hline
 	\method{updateQueues(TaxiQueue[] tq)}
 	A null parameter &
@@ -87,13 +84,14 @@
 	A null location &
 	A NullArgumentException is raised. \\\hline
 	A set of valid parameters &
-	The new location of the taxi is written in the database.\\\hline	
+	The new location of the taxi is written in the database.\\\dline
+	
 	\method{updateTaxiStatus(taxiId, TaxiStatusAvailable)}
 	A null parameter &
 	A NullArgumentException is raised. \\\hline
 	A set of valid parameters &
-	The taxi status is set to available in the database.\\\hline\hline
-\end{tabular}
+	The taxi status is set to available in the database.\\\hline
+\end{testtable}
 
 
 \subsection{Taxi Management, Location Management}
@@ -126,7 +124,7 @@
 
 
 \subsection{Reservation Management, Location Management}
-\begin{tabular}{p{5cm}|p{6cm}}
+\begin{testtable}
 \hline
 	\method{getZone(location)}
 	A null parameter &
@@ -152,12 +150,12 @@
 	Both currentLocation and meetingPoint inside the city, but not within 50m from one another &
 	Returns false. \\\hline
 	Both currentLocation and meetingPoint inside the city, within 50m  from one another &
-	Returns false. \\\hline\hline
-\end{tabular}
+	Returns false. \\\hline
+\end{testtable}
 
 
 \subsection{Reservation Management, Request Management}
-\begin{tabular}{p{5cm}|p{6cm}}
+\begin{testtable}
 \hline
 	\method{requestTaxi(passengerId, passengerLocation, destination)}
 	A null parameter &
@@ -171,12 +169,12 @@
 	A passengerLocation outside the city &
 	A passengerId not correctly formatted \\\hline
 	A valid set of parameters &
-	A new request is created and handled; refer to the RASD for the specific outcomes of this operation. \\\hline\hline
-\end{tabular}
+	A new request is created and handled; refer to the RASD for the specific outcomes of this operation. \\\hline
+\end{testtable}
 
 
 \subsection{Request Management, Taxi Management}
-\begin{tabular}{p{5cm}|p{6cm}}
+\begin{testtable}
 \hline
 	\method{existsAvailableTaxiDriver(request, zone)}
 	A null parameter &
@@ -196,13 +194,13 @@
 	An inexistent taxi driver &
 	An InvalidArgumentValueException is raised. \\\hline
 	A valid taxiDriver and passengerLocation &
-	Returns the estimated time of the arrival of the taxi to the location. \\\hline\hline
+	Returns the estimated time of the arrival of the taxi to the location. \\\dline
 
 	\method{taxiDriverDroppedRequest(taxiId)}
 	An invalid taxiId &
 	An InvalidArgumentValueException is raised. \\\hline
 	A valid taxiId &
-	If the taxi driver is allowed to drop the request (check RASD conditions), it will return true, notify the passenger that his request has been dropped and update the database accordingly; otherwise it will return false.  \\\hline	
+	If the taxi driver is allowed to drop the request (check RASD conditions), it will return true, notify the passenger that his request has been dropped and update the database accordingly; otherwise it will return false.  \\\dline	
 	\method{sendCurrentLocation(taxiId, location)}
 	A null location &
 	A NullArgumentException is raised. \\\hline
@@ -213,15 +211,15 @@
 	taxiId is valid, location is inside city&
 	Location is set as the new position of the taxi, the taxi is moved into the new zone, its status is set as available and the modification is written in the database.\\\hline
 	taxiId is valid, location is outside city&
-	Location is set as the new position of the taxi, the taxi is moved into the out-of-city queue, its status is set as outide-city and the modification is written in the database. \\\hline\hline
-\end{tabular}
+	Location is set as the new position of the taxi, the taxi is moved into the out-of-city queue, its status is set as outide-city and the modification is written in the database. \\\hline
+\end{testtable}
 
 
 \section{System Administration}
 \subsection{Zone Management, Data Access Utilities}
-\begin{tabular}{p{5cm}|p{6cm}}
+\begin{testtable}
 	\hline
-	\method{insertZones(Zone[] zones}
+	\method{insertZones(Zone[] zones)}
 	A null parameter &
 	A NullArgumentException is raised.\\\hline
 	An empty array &
@@ -236,6 +234,7 @@
 	The zones are inserted in the database. \\\hline\hline
 	
 	\method{insertZone{Zone zone}}
+	zone is null &
 	A NullArgumentException is raised.\\\hline
 	An invalid zone &
 	An InvalidArgumentValueException  is raised. \\\hline
@@ -258,14 +257,13 @@
 	
 	\method{getZoneList()}
 	Nothing &
-	Returns the zones that are stored in the database.  \\\hline\hline
-\end{tabular}
+	Returns the zones that are stored in the database.  \\\hline
+\end{testtable}
 asda\note{Should we add adminId here?}
 
 
-
 \subsection{API Permission Management, Data Access Utilities}
-\begin{tabular}{p{5cm}|p{6cm}}
+\begin{testtable}
 	\hline
 	\method{verifyPermission(appId, operation)}
 	A null parameter &
@@ -293,16 +291,15 @@ asda\note{Should we add adminId here?}
 	A non-existing operation &
 	An InvalidSecurityLevelException is raised. \\\hline	
 	A valid appId and operation, but the <appId, operation> is not present in the database &
-	An InvalidArgumentValueException is raised. \\\hline\
-	A valid appId and operation, and the <appId, operation> is present in the database &
-	Remove the <appId, operation> pair from the permission table of the database. \\\hline\hline
-	
-\end{tabular}
+	An InvalidArgumentValueException is raised. \\\hline
+	A valid appId and operation, and the $<appId, operation>$ is present in the database &
+	Remove the $<appId, operation>$ pair from the permission table of the database. \\\hline\hline
+\end{testtable}
 
 
 \subsection{Taxi Driver Management}
 \subsubsection{Data Access Utilities}
-\begin{tabular}{p{5cm}|p{6cm}}
+\begin{testtable}
 	\hline
 	\method{insertTaxiDrivers(TaxiDriver[] tds)}
 	A null parameter &
@@ -327,6 +324,7 @@ asda\note{Should we add adminId here?}
 	The taxi driver is inserted in the database. \\\hline\hline
 
 	\method{updateTaxiDriver(TaxiDriver td)}
+	td is null &
 	A NullArgumentException is raised. \\\hline
 	An inexistent taxi driver &
 	An InvalidArgumentValueException is raised. \\\hline
@@ -334,12 +332,12 @@ asda\note{Should we add adminId here?}
 	An InvalidArgumentValueException is raised. \\\hline
 	A valid taxi driver &
 	The data associated with the specified taxi driver is updated in the database. \\\hline\hline	
-\end{tabular}
+\end{testtable}
 
 
 \section{Account Management}
 \subsection{Passenger Registration, Data Access Utilities}
-\begin{tabular}{p{5cm}|p{6cm}}
+\begin{testtable}
 	\hline
 	\method{insertPassenger(Passenger p)}
 	A null parameter &
@@ -359,11 +357,11 @@ asda\note{Should we add adminId here?}
 	A passengerId that has already been confirmed &
 	An InvalidArgumentValueException is raised. \\\hline
 	A passengerId that hasn't already been confirmed &
-	The passenger status in the database is set as "confirmed". \\\hline\hline
-\end{tabular}
+	The passenger status in the database is set as "confirmed". \\\hline
+\end{testtable}
 
 \subsection{Login, Data Access Utilities}
-\begin{tabular}{p{5cm}|p{6cm}}
+\begin{testtable}
 	\hline
 	\method{checkCredentials(User u, String password)}
 	A null parameter &
@@ -376,10 +374,10 @@ asda\note{Should we add adminId here?}
 	Returns an InvalidCredentialError. \\\hline
 	A correct and valid user and password combination &
 	Returns a session cookie.\\\hline\hline
-\end{tabular}
+\end{testtable}
 
 \subsection{Password Retrieval, Data Access Utilities}
-\begin{tabular}{p{5cm}|p{6cm}}
+\begin{testtable}
 	\hline
 	\method{verifyUserSecretCode(User u, String secretCode)}
 	A null parameter &
@@ -398,14 +396,14 @@ asda\note{Should we add adminId here?}
 	An InvalidArgumentFormatException is raised. \\\hline
 	A correct and valid user and secretCode combination, and a correctly formatted password &
 	Updates the user password in the database. \\\hline\hline
-\end{tabular}
+\end{testtable}
 
 \subsection{Settings Management, Data Access Utilities}
 
 
 \section{Integration Between Subsystems}
 \subsection{Remote Services Interface, Taxi Management System}
-\begin{tabular}{p{5cm}|p{6cm}}
+\begin{testtable}
 	\hline
 	\method{requestTaxi(passengerId, passengerLocation, destination)}
 	A null parameter &
@@ -444,11 +442,11 @@ asda\note{Should we add adminId here?}
 	The taxi status is set to available, the taxi is moved to the queue of its current zone and these modifications are written in the database. \\\hline
 	A valid taxiId, the taxi is unavailable and the taxi is outside the city&
 	An InvalidOperationException is raised. \\\hline\hline	
-\end{tabular}
+\end{testtable}
 
 
 \subsection{Remote Services Interface, Account Management}
-\begin{tabular}{p{5cm}|p{6cm}}
+\begin{testtable}
 	\hline
 	\method{insertPassenger(Passenger p)}
 	A null parameter &
@@ -501,18 +499,16 @@ asda\note{Should we add adminId here?}
 	Updates the user password in the database. \\\hline\hline
 	
 	\method{(?)insertPassenger}
-
 	\method{(?)updatePassenger}
 
 	\method{(?)deletePassenger}
 	
-\end{tabular}
-
+\end{testtable}
+\note{sisteamre}
 
 \subsection{Remote Services Interface, System Administration}
 asda\note{We should be uniform in notation, and probably also revise a bit the DD}
-
-\begin{tabular}{p{5cm}|p{6cm}}
+\begin{testtable}
 	\hline
 	\method{checkPassword(adminId, password)}
 	A null parameter &
@@ -606,5 +602,5 @@ asda\note{We should be uniform in notation, and probably also revise a bit the D
 	An array of non-null, but invalid or existing taxi drivers and zones &
 	An InvalidArgumentValueException  is raised. \\\hline
 	A valid adminId and a non-empty array of non-existing taxi drivers and zones &
-	The data associated with the new taxi drivers and zones are inserted in the database. \\\hline\hline
-\end{tabular}
+	The data associated with the new taxi drivers and zones are inserted in the database. \\\hline
+\end{testtable}

@@ -25,6 +25,12 @@
 % Marginal note for observations
 \newcommand{\note}[1]{\MakeUppercase{#1}\marginpar{\MakeLowercase{\textcolor{red}{#1}}}}
 
+% Test table
+\newenvironment{testtable}{\begin{longtable}{|p{5cm}|p{6cm}|}}{\end{longtable}}
+
 % Methods in test tables
 \newcommand{\method}[1]{\multicolumn{2}{|c|}{{#1}}\\\hline
 	\textit{Input} & \textit{Effect} \\\hline}
+	
+% Double horizontal line for test table
+\newcommand{\dline}{\hhline{|=|=|}}
