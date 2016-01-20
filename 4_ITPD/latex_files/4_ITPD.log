@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.2)  20 JAN 2016 21:27
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.2)  20 JAN 2016 21:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -662,7 +662,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.35 ...ta Access Utilities}{54}{subsection.3.3.4}
+l.35 ...ta Access Utilities}{21}{subsection.3.3.4}
                                                    [1
 
 ])
@@ -904,8 +904,23 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [11 <./pdfs/integration_subsystems.pdf>]
 Chapter 3.
 
-Overfull \hbox (24.0pt too wide) in alignment at lines 6--27
- [] [] 
+Underfull \hbox (badness 4913) in paragraph at lines 11--11
+[]|\OT1/cmr/m/n/10.95 A re-quest with an id
+ []
+
+
+Underfull \hbox (badness 3872) in paragraph at lines 11--11
+\OT1/cmr/m/n/10.95 al-ready ex-is-tent in the
+ []
+
+
+Underfull \hbox (badness 5316) in paragraph at lines 12--12
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
+ []
+
+
+Underfull \hbox (badness 5316) in paragraph at lines 20--20
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
 
 
@@ -913,24 +928,54 @@ Underfull \vbox (badness 10000) detected at line 27
  []
 
 
-Overfull \hbox (24.0pt too wide) in alignment at lines 32--64
- [] [] 
+Underfull \hbox (badness 3872) in paragraph at lines 37--37
+\OT1/cmr/m/n/10.95 al-ready ex-is-tent in the
+ []
+
+
+Underfull \hbox (badness 5316) in paragraph at lines 38--38
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
+ []
+
+
+Underfull \hbox (badness 5316) in paragraph at lines 46--46
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
+ []
+
+
+Underfull \hbox (badness 5316) in paragraph at lines 54--54
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
+ []
+
+
+Underfull \hbox (badness 5316) in paragraph at lines 58--58
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
 
 
 Underfull \vbox (badness 10000) detected at line 64
  []
 
-
-Overfull \hbox (24.0pt too wide) in alignment at lines 64--65
- [] [] 
- []
-
 [12
 
 ]
-Overfull \hbox (24.0pt too wide) in alignment at lines 69--94
- [] [] 
+Underfull \hbox (badness 5316) in paragraph at lines 75--75
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--78
+[]|\OT1/cmr/m/n/10.95 An ar-ray of non-null
+ []
+
+
+Underfull \hbox (badness 7944) in paragraph at lines 78--78
+\OT1/cmr/m/n/10.95 queues, but con-tain-ing
+ []
+
+
+Underfull \hbox (badness 5316) in paragraph at lines 79--79
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
 
 
@@ -944,32 +989,22 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [13]
-Overfull \hbox (24.0pt too wide) in alignment at lines 98--119
- [] [] 
- []
-
-
 Underfull \vbox (badness 10000) detected at line 119
  []
 
 
-Underfull \hbox (badness 1072) in paragraph at lines 144--144
-[]|\OT1/cmr/m/n/10.95 A meet-ing-Point out-side the
+Underfull \hbox (badness 4454) in paragraph at lines 144--144
+[]|\OT1/cmr/m/n/10.95 A meet-ing-Point out-side
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--146
-[]|\OT1/cmr/m/n/10.95 Both cur-rent-Lo-ca-tion and
+Underfull \hbox (badness 4144) in paragraph at lines 146--146
+\OT1/cmr/m/n/10.95 meet-ing-Point in-side the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 148--148
-[]|\OT1/cmr/m/n/10.95 Both cur-rent-Lo-ca-tion and
- []
-
-
-Overfull \hbox (24.0pt too wide) in alignment at lines 123--150
- [] [] 
+Underfull \hbox (badness 4144) in paragraph at lines 148--148
+\OT1/cmr/m/n/10.95 meet-ing-Point in-side the
  []
 
 
@@ -983,18 +1018,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 160--160
-[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-For-ma-tEx-cep-tion is
+Underfull \hbox (badness 2951) in paragraph at lines 159--159
+[]|\OT1/cmr/m/n/10.95 A pas-sen-gerId not cor-
  []
 
 
-Underfull \hbox (badness 3758) in paragraph at lines 161--161
-[]|\OT1/cmr/m/n/10.95 A pas-sen-ger-Loca-tion whose
+Underfull \hbox (badness 10000) in paragraph at lines 161--161
+[]|\OT1/cmr/m/n/10.95 A pas-sen-ger-Loca-tion
  []
 
 
-Overfull \hbox (24.0pt too wide) in alignment at lines 154--169
- [] [] 
+Underfull \hbox (badness 10000) in paragraph at lines 161--161
+\OT1/cmr/m/n/10.95 whose co-or-di-nates are
  []
 
 
@@ -1002,22 +1037,38 @@ Underfull \vbox (badness 10000) detected at line 169
  []
 
 
-Underfull \hbox (badness 3758) in paragraph at lines 188--188
-[]|\OT1/cmr/m/n/10.95 A pas-sen-ger-Loca-tion whose
+Underfull \hbox (badness 5316) in paragraph at lines 179--179
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
 
 
-Overfull \hbox (24.0pt too wide) in alignment at lines 173--204
- [] [] 
+Underfull \hbox (badness 5316) in paragraph at lines 181--181
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
 
 
-Underfull \vbox (badness 10000) detected at line 204
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
+[]|\OT1/cmr/m/n/10.95 A pas-sen-ger-Loca-tion
  []
 
 
-Overfull \hbox (24.0pt too wide) in alignment at lines 204--211
- [] [] 
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
+\OT1/cmr/m/n/10.95 whose co-or-di-nates are
+ []
+
+
+Underfull \hbox (badness 5316) in paragraph at lines 191--191
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
+ []
+
+
+Underfull \hbox (badness 3260) in paragraph at lines 192--192
+[]|\OT1/cmr/m/n/10.95 A valid taxiDriver and
+ []
+
+
+Underfull \hbox (badness 5316) in paragraph at lines 197--197
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
 
 
@@ -1027,17 +1078,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [15]
-Overfull \hbox (24.0pt too wide) in alignment at lines 216--250
- [] [] 
+Underfull \vbox (badness 10000) detected at line 204
  []
 
 
-Underfull \vbox (badness 10000) detected at line 250
- []
-
-
-Overfull \hbox (24.0pt too wide) in alignment at lines 250--257
- [] [] 
+Underfull \hbox (badness 5316) in paragraph at lines 206--206
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
 
 
@@ -1047,6 +1093,56 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [16]
+Underfull \hbox (badness 5316) in paragraph at lines 222--222
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
+ []
+
+
+Underfull \hbox (badness 5316) in paragraph at lines 226--226
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
+ []
+
+
+Underfull \hbox (badness 5316) in paragraph at lines 228--228
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
+ []
+
+
+Underfull \hbox (badness 5316) in paragraph at lines 236--236
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
+ []
+
+
+Underfull \hbox (badness 5316) in paragraph at lines 238--238
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
+ []
+
+
+Underfull \hbox (badness 5316) in paragraph at lines 246--246
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
+ []
+
+
+Underfull \hbox (badness 5316) in paragraph at lines 250--250
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 250
+ []
+
+
+Underfull \hbox (badness 6412) in paragraph at lines 251--251
+[]|\OT1/cmr/m/n/10.95 A non-empty ar-ray of
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[17]
 Underfull \hbox (badness 10000) in paragraph at lines 258--258
 [][]\OT1/cmr/m/n/10.95 should
  []
@@ -1062,13 +1158,48 @@ Underfull \hbox (badness 10000) in paragraph at lines 258--258
  []
 
 
-Underfull \hbox (badness 1215) in paragraph at lines 271--271
-\OT1/cmr/m/n/10.95 but the app hasn't enough
+Underfull \hbox (badness 10000) in paragraph at lines 268--268
+[]|\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion is
  []
 
 
-Overfull \hbox (24.0pt too wide) in alignment at lines 262--293
- [] [] 
+Underfull \hbox (badness 10000) in paragraph at lines 270--270
+[]|\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 1178) in paragraph at lines 273--273
+\OT1/cmr/m/n/10.95 a-tion, and the app has
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 280--280
+[]|\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 288--288
+[]|\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 5316) in paragraph at lines 290--290
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 291--291
+[]|\OT1/cmr/m/n/10.95 A valid ap-pId and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 291--291
+\OT1/cmr/m/n/10.95 op-er-a-tion, and the
+ []
+
+
+Underfull \hbox (badness 5592) in paragraph at lines 291--291
+\OML/cmm/m/it/10.95 < appId; operation >$
  []
 
 
@@ -1081,9 +1212,44 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[17]
-Overfull \hbox (24.0pt too wide) in alignment at lines 298--331
- [] [] 
+[18]
+Underfull \hbox (badness 5316) in paragraph at lines 304--304
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
+ []
+
+
+Underfull \hbox (badness 5316) in paragraph at lines 308--308
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
+ []
+
+
+Underfull \hbox (badness 6412) in paragraph at lines 309--309
+[]|\OT1/cmr/m/n/10.95 A non-empty ar-ray of
+ []
+
+
+Underfull \hbox (badness 1960) in paragraph at lines 310--310
+[]|\OT1/cmr/m/n/10.95 The taxi drivers are in-serted in the
+ []
+
+
+Underfull \hbox (badness 5316) in paragraph at lines 316--316
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
+ []
+
+
+Underfull \hbox (badness 5316) in paragraph at lines 318--318
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
+ []
+
+
+Underfull \hbox (badness 5316) in paragraph at lines 326--326
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
+ []
+
+
+Underfull \hbox (badness 5316) in paragraph at lines 328--328
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
 
 
@@ -1091,37 +1257,33 @@ Underfull \vbox (badness 10000) detected at line 331
  []
 
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[18]
-Underfull \hbox (badness 1320) in paragraph at lines 353--353
-[]|\OT1/cmr/m/n/10.95 A pas-sen-gerId that has al-
+Underfull \hbox (badness 5316) in paragraph at lines 342--342
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
 
 
-Overfull \hbox (24.0pt too wide) in alignment at lines 336--357
- [] [] 
+Underfull \hbox (badness 5316) in paragraph at lines 344--344
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
 
 
-Underfull \vbox (badness 10000) detected at line 357
+Underfull \hbox (badness 5316) in paragraph at lines 346--346
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
 
 
-Underfull \hbox (badness 1383) in paragraph at lines 369--369
-[]|\OT1/cmr/m/n/10.95 A valid user and pass-word
+Underfull \hbox (badness 10000) in paragraph at lines 351--351
+[]|\OT1/cmr/m/n/10.95 A non-existing pas-sen-
  []
 
 
-Overfull \hbox (24.0pt too wide) in alignment at lines 360--373
- [] [] 
+Underfull \hbox (badness 5316) in paragraph at lines 352--352
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
 
 
-Underfull \vbox (badness 10000) detected at line 373
+Underfull \hbox (badness 5316) in paragraph at lines 354--354
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
 
 
@@ -1131,46 +1293,31 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [19]
-Underfull \hbox (badness 10000) in paragraph at lines 392--392
-[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-For-ma-tEx-cep-tion is
+Underfull \vbox (badness 10000) detected at line 357
  []
 
 
-Underfull \hbox (badness 1975) in paragraph at lines 393--393
-\OT1/cmr/m/n/10.95 a cor-rectly for-mat-ted pass-
+Underfull \hbox (badness 5316) in paragraph at lines 366--366
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
 
 
-Overfull \hbox (24.0pt too wide) in alignment at lines 376--395
- [] [] 
+Underfull \hbox (badness 5316) in paragraph at lines 368--368
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
 
 
-Underfull \vbox (badness 10000) detected at line 395
+Underfull \vbox (badness 10000) detected at line 373
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 408--408
-[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-For-ma-tEx-cep-tion is
+Underfull \hbox (badness 10000) in paragraph at lines 390--390
+[]|\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion is
  []
 
 
-Underfull \hbox (badness 3758) in paragraph at lines 409--409
-[]|\OT1/cmr/m/n/10.95 A pas-sen-ger-Loca-tion whose
- []
-
-
-Overfull \hbox (24.0pt too wide) in alignment at lines 402--436
- [] [] 
- []
-
-
-Underfull \vbox (badness 10000) detected at line 436
- []
-
-
-Overfull \hbox (24.0pt too wide) in alignment at lines 436--441
- [] [] 
+Underfull \hbox (badness 6876) in paragraph at lines 394--394
+[]|\OT1/cmr/m/n/10.95 Updates the user pass-word in the
  []
 
 
@@ -1180,37 +1327,36 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [20]
-Underfull \hbox (badness 1320) in paragraph at lines 462--462
-[]|\OT1/cmr/m/n/10.95 A pas-sen-gerId that has al-
+Underfull \vbox (badness 10000) detected at line 395
  []
 
 
-Underfull \hbox (badness 1383) in paragraph at lines 474--474
-[]|\OT1/cmr/m/n/10.95 A valid user and pass-word
+Underfull \hbox (badness 2951) in paragraph at lines 407--407
+[]|\OT1/cmr/m/n/10.95 A pas-sen-gerId not cor-
  []
 
 
-Overfull \hbox (24.0pt too wide) in alignment at lines 445--479
- [] [] 
+Underfull \hbox (badness 10000) in paragraph at lines 409--409
+[]|\OT1/cmr/m/n/10.95 A pas-sen-ger-Loca-tion
  []
 
 
-Underfull \vbox (badness 10000) detected at line 479
+Underfull \hbox (badness 10000) in paragraph at lines 409--409
+\OT1/cmr/m/n/10.95 whose co-or-di-nates are
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 493--493
-[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-For-ma-tEx-cep-tion is
+Underfull \hbox (badness 5316) in paragraph at lines 424--424
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
 
 
-Underfull \hbox (badness 1975) in paragraph at lines 494--494
-\OT1/cmr/m/n/10.95 a cor-rectly for-mat-ted pass-
+Underfull \hbox (badness 5316) in paragraph at lines 434--434
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
 
 
-Overfull \hbox (24.0pt too wide) in alignment at lines 479--502
- [] [] 
+Underfull \vbox (badness 10000) detected at line 436
  []
 
 
@@ -1227,6 +1373,66 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [22]
+Underfull \hbox (badness 5316) in paragraph at lines 451--451
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
+ []
+
+
+Underfull \hbox (badness 5316) in paragraph at lines 453--453
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
+ []
+
+
+Underfull \hbox (badness 5316) in paragraph at lines 455--455
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 460--460
+[]|\OT1/cmr/m/n/10.95 A non-existing pas-sen-
+ []
+
+
+Underfull \hbox (badness 5316) in paragraph at lines 461--461
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
+ []
+
+
+Underfull \hbox (badness 5316) in paragraph at lines 463--463
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
+ []
+
+
+Underfull \hbox (badness 5316) in paragraph at lines 471--471
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
+ []
+
+
+Underfull \hbox (badness 5316) in paragraph at lines 473--473
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 479
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 491--491
+[]|\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 6876) in paragraph at lines 495--495
+[]|\OT1/cmr/m/n/10.95 Updates the user pass-word in the
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[23]
 Underfull \hbox (badness 10000) in paragraph at lines 506--506
 \OT1/cmr/m/n/10.95 be uni-
  []
@@ -1258,23 +1464,38 @@ Overfull \hbox (5.66118pt too wide) in paragraph at lines 506--507
  []
 
 
-Underfull \hbox (badness 1270) in paragraph at lines 516--516
-[]|\OT1/cmr/m/n/10.95 A valid ad-minId and pass-
+Underfull \hbox (badness 5316) in paragraph at lines 513--513
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
 
 
-Underfull \hbox (badness 1270) in paragraph at lines 518--518
-[]|\OT1/cmr/m/n/10.95 A valid ad-minId and pass-
+Underfull \hbox (badness 10000) in paragraph at lines 515--515
+[]|\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion is
  []
 
 
-Underfull \hbox (badness 1215) in paragraph at lines 528--528
-\OT1/cmr/m/n/10.95 but the app hasn't enough
+Underfull \hbox (badness 10000) in paragraph at lines 525--525
+[]|\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion is
  []
 
 
-Overfull \hbox (24.0pt too wide) in alignment at lines 507--541
- [] [] 
+Underfull \hbox (badness 10000) in paragraph at lines 527--527
+[]|\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 1178) in paragraph at lines 530--530
+\OT1/cmr/m/n/10.95 a-tion, and the app has
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 537--537
+[]|\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 539--539
+[]|\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion is
  []
 
 
@@ -1282,8 +1503,43 @@ Underfull \vbox (badness 10000) detected at line 541
  []
 
 
-Overfull \hbox (24.0pt too wide) in alignment at lines 541--575
- [] [] 
+Underfull \hbox (badness 10000) in paragraph at lines 547--547
+[]|\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 549--549
+[]|\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 5316) in paragraph at lines 551--551
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 557--557
+[]|\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 565--565
+[]|\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 5316) in paragraph at lines 567--567
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
+ []
+
+
+Underfull \hbox (badness 5316) in paragraph at lines 571--571
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
+ []
+
+
+Underfull \hbox (badness 1354) in paragraph at lines 572--572
+[]|\OT1/cmr/m/n/10.95 A valid ad-minId and a
  []
 
 
@@ -1292,18 +1548,56 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[23]
-Overfull \hbox (24.0pt too wide) in alignment at lines 575--602
- [] [] 
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 579--579
+[]|\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion is
  []
 
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
+Underfull \hbox (badness 5316) in paragraph at lines 581--581
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
+ []
 
-[24]) (./chapters/performance.tex
+
+Underfull \hbox (badness 5316) in paragraph at lines 585--585
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
+ []
+
+
+Underfull \hbox (badness 1354) in paragraph at lines 586--586
+[]|\OT1/cmr/m/n/10.95 A valid ad-minId and a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 593--593
+[]|\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 5316) in paragraph at lines 595--595
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
+ []
+
+
+Underfull \hbox (badness 3690) in paragraph at lines 598--598
+\OT1/cmr/m/n/10.95 in-valid or ex-ist-ing taxi
+ []
+
+
+Underfull \hbox (badness 5316) in paragraph at lines 599--599
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
+ []
+
+
+Underfull \hbox (badness 1354) in paragraph at lines 600--600
+[]|\OT1/cmr/m/n/10.95 A valid ad-minId and a
+ []
+
+
+Underfull \hbox (badness 1014) in paragraph at lines 601--601
+\OT1/cmr/m/n/10.95 drivers and zones are in-serted in the
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1311,12 +1605,26 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [25]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[26]) (./chapters/performance.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[27]
 Chapter 4.
-) (./chapters/tter.tex [26
+) (./chapters/tter.tex [28
 
 ]
 Chapter 5.
-[27
+[29
 
 ]
 
@@ -1325,18 +1633,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[28]) (./chapters/pstdr.tex
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[29]
-Chapter 6.
-[30
-
-]
+[30]) (./chapters/pstdr.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1344,13 +1641,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [31]
+Chapter 6.
+[32
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[32]) (./chapters/hours_of_work.tex
+]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1358,10 +1652,24 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [33]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[34]) (./chapters/hours_of_work.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[35]
 Appendix A.
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 21.
- [34
+ [36
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 21.
@@ -1373,8 +1681,8 @@ Package rerunfilecheck Info: File `4_ITPD.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 21.
  ) 
 Here is how much of TeX's memory you used:
- 9278 strings out of 494967
- 135170 string characters out of 6179868
+ 9280 strings out of 494967
+ 135184 string characters out of 6179868
  279819 words of memory out of 5000000
  12215 multiletter control sequences out of 15000+600000
  10711 words of font info for 37 fonts, out of 8000000 for 9000
@@ -1389,9 +1697,9 @@ st/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmti10.pfb>
-Output written on 4_ITPD.pdf (37 pages, 756828 bytes).
+Output written on 4_ITPD.pdf (39 pages, 754468 bytes).
 PDF statistics:
- 531 PDF objects out of 1000 (max. 8388607)
- 105 named destinations out of 1000 (max. 500000)
+ 539 PDF objects out of 1000 (max. 8388607)
+ 107 named destinations out of 1000 (max. 500000)
  441 words of extra memory for PDF output out of 10000 (max. 10000000)
 

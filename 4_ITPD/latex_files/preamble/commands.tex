@@ -25,7 +25,10 @@
 
 % Test table
 \newenvironment{testtable}{
-\begin{longtable}{|p{\dimexpr.4\textwidth}|p{\dimexpr.6\textwidth}|}}{\end{longtable}}
+	\begin{longtable}{|p{\dimexpr.35\textwidth}|p{\dimexpr.55\textwidth}|}
+}{
+	\end{longtable}
+}
 
 % Methods in test tables
 \newcommand{\method}[1]{\multicolumn{2}{|c|}{{#1}}\\\hline

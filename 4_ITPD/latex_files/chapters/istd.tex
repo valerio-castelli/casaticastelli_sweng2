@@ -47,7 +47,7 @@
 	Formally valid arguments &
 	The entry containing the reservation data is deleted from the database.\\\dline
 		
-	\method{updateReservationList(Reservation[])}
+	\method{updateReservationList(reservationList}
 	A null parameter &
 	A NullArgumentException is raised.\\\hline
 	An empty array &
@@ -68,7 +68,7 @@
 \subsection{Taxi Management, Data Access Utilities Management}
 \begin{testtable}
 	\hline
-	\method{updateQueues(TaxiQueue[] tq)}
+	\method{updateQueues(taxiQueue)}
 	A null parameter &
 	A NullArgumentException is raised. \\\hline
 	An empty array &
@@ -215,7 +215,7 @@
 \subsection{Zone Management, Data Access Utilities}
 \begin{testtable}
 	\hline
-	\method{insertZones(Zone[] zones)}
+	\method{insertZones(zones)}
 	A null parameter &
 	A NullArgumentException is raised.\\\hline
 	An empty array &
@@ -229,7 +229,7 @@
 	A non-empty array of valid and not existing zones &
 	The zones are inserted in the database. \\\dline
 	
-	\method{insertZone{Zone zone}}
+	\method{insertZone(zone)}
 	zone is null &
 	A NullArgumentException is raised.\\\hline
 	An invalid zone &
@@ -239,7 +239,7 @@
 	A valid and not existing zone &
 	The zone is inserted in the database. \\\dline
 	
-	\method{updateZones(Zone[] zones)}
+	\method{updateZones(zones)}
 	A null parameter &
 	A NullArgumentException is raised.\\\hline
 	An empty array &
@@ -297,7 +297,7 @@ asda\note{Should we add adminId here?}
 \subsubsection{Data Access Utilities}
 \begin{testtable}
 	\hline
-	\method{insertTaxiDrivers(TaxiDriver[] tds)}
+	\method{insertTaxiDrivers(taxiDriverList)}
 	A null parameter &
 	A NullArgumentException is raised.\\\hline
 	An empty array &
@@ -309,7 +309,7 @@ asda\note{Should we add adminId here?}
 	A non-empty array of valid and not existing taxi drivers &
 	The taxi drivers are inserted in the database. \\\dline
 	
-	\method{insertTaxiDriver(TaxiDriver td)}
+	\method{insertTaxiDriver(taxiDriver)}
 	A null parameter &
 	A NullArgumentException is raised.\\\hline
 	An invalid taxi driver &
@@ -319,7 +319,7 @@ asda\note{Should we add adminId here?}
 	A valid and not existing taxi driver &
 	The taxi driver is inserted in the database. \\\dline
 
-	\method{updateTaxiDriver(TaxiDriver td)}
+	\method{updateTaxiDriver(taxiDriver)}
 	td is null &
 	A NullArgumentException is raised. \\\hline
 	An inexistent taxi driver &
@@ -335,7 +335,7 @@ asda\note{Should we add adminId here?}
 \subsection{Passenger Registration, Data Access Utilities}
 \begin{testtable}
 	\hline
-	\method{insertPassenger(Passenger p)}
+	\method{insertPassenger(passenger)}
 	A null parameter &
 	A NullArgumentException is raised.\\\hline
 	A passenger with one or more null fields &
@@ -345,21 +345,21 @@ asda\note{Should we add adminId here?}
 	A passenger with the same mail address as an existing passenger &
 	An InvalidArgumentValueException is raised. \\\hline
 	A valid passenger &
-	The passenger data is inserted in the database and a registration confirmation mail is sent to him. The passenger status is set as "pending confirmation". \\\dline
+	The passenger data is inserted in the database and a registration confirmation mail is sent to him. The passenger status is set as “pending confirmation”. \\\dline
 	
-	\method{confirmPassenger(PassengerId)}
+	\method{confirmPassenger(passengerId)}
 	A non-existing passengerId &
 	An InvalidArgumentValueException is raised. \\\hline
 	A passengerId that has already been confirmed &
 	An InvalidArgumentValueException is raised. \\\hline
 	A passengerId that hasn't already been confirmed &
-	The passenger status in the database is set as "confirmed". \\\hline
+	The passenger status in the database is set as “confirmed”. \\\hline
 \end{testtable}
 
 \subsection{Login, Data Access Utilities}
 \begin{testtable}
 	\hline
-	\method{checkCredentials(User u, String password)}
+	\method{checkCredentials(user, password)}
 	A null parameter &
 	A NullArgumentException is raised.\\\hline
 	An inexistent user &
@@ -375,7 +375,7 @@ asda\note{Should we add adminId here?}
 \subsection{Password Retrieval, Data Access Utilities}
 \begin{testtable}
 	\hline
-	\method{verifyUserSecretCode(User u, String secretCode)}
+	\method{verifyUserSecretCode(user, secretCode)}
 	A null parameter &
 	A NullArgumentException is raised.\\\hline
 	A valid user and secretCode combination, which however is not the correct one &
@@ -383,7 +383,7 @@ asda\note{Should we add adminId here?}
 	A correct and valid user and secretCode combination &
 	Returns true. \\\dline
 	
-	\method{updateUserPassword(User u, String secretCode, String newPassword)}
+	\method{updateUserPassword(user, secretCode, newPassword)}
 	A null parameter &
 	A NullArgumentException is raised.\\\hline
 	A valid user and secretCode combination, which however is not the correct one &
@@ -440,11 +440,11 @@ asda\note{Should we add adminId here?}
 	An InvalidOperationException is raised. \\\hline
 \end{testtable}
 
-
+\pagebreak
 \subsection{Remote Services Interface, Account Management}
 \begin{testtable}
 	\hline
-	\method{insertPassenger(Passenger p)}
+	\method{insertPassenger(passenger)}
 	A null parameter &
 	A NullArgumentException is raised.\\\hline
 	A passenger with one or more null fields &
@@ -454,17 +454,17 @@ asda\note{Should we add adminId here?}
 	A passenger with the same mail address as an existing passenger &
 	An InvalidArgumentValueException is raised. \\\hline
 	A valid passenger &
-	The passenger data is inserted in the database and a registration confirmation mail is sent to him. The passenger status is set as "pending confirmation". \\\dline
+	The passenger data is inserted in the database and a registration confirmation mail is sent to him. The passenger status is set as “pending confirmation”. \\\dline
 	
-	\method{confirmPassenger(PassengerId)}
+	\method{confirmPassenger(passengerId)}
 	A non-existing passengerId &
 	An InvalidArgumentValueException is raised. \\\hline
 	A passengerId that has already been confirmed &
 	An InvalidArgumentValueException is raised. \\\hline
 	A passengerId that hasn't already been confirmed &
-	The passenger status in the database is set as "confirmed". \\\dline
+	The passenger status in the database is set as “confirmed”. \\\dline
 		
-	\method{checkCredentials(User u, String password)}
+	\method{checkCredentials(user, password)}
 	A null parameter &
 	A NullArgumentException is raised.\\\hline
 	An inexistent user &
@@ -476,7 +476,7 @@ asda\note{Should we add adminId here?}
 	A correct and valid user and password combination &
 	Returns a session cookie.\\\dline
 	
-	\method{verifyUserSecretCode(User u, String secretCode)}
+	\method{verifyUserSecretCode(user, secretCode)}
 	A null parameter &
 	A NullArgumentException is raised.\\\hline
 	A valid user and secretCode combination, which however is not the correct one &
@@ -484,7 +484,7 @@ asda\note{Should we add adminId here?}
 	A correct and valid user and secretCode combination &
 	Returns true. \\\dline
 	
-	\method{updateUserPassword(User u, String secretCode, String newPassword)}
+	\method{updateUserPassword(user, secretCode, newPassword)}
 	A null parameter &
 	A NullArgumentException is raised.\\\hline
 	A valid user and secretCode combination, which however is not the correct one &
@@ -558,7 +558,7 @@ asda\note{We should be uniform in notation, and probably also revise a bit the D
 	A valid adminId &
 	Returns the zones that are stored in the database.  \\\dline
 
-	\method{sendZoneData(adminId, Zone[] zones)}
+	\method{sendZoneData(adminId, zones)}
 	A null parameter &
 	A NullArgumentException is raised.\\\hline
 	An invalid adminId &
@@ -572,7 +572,7 @@ asda\note{We should be uniform in notation, and probably also revise a bit the D
 	A valid adminId and a non-empty array of valid zones &
 	The data associated with the existing zones is updated in the database, while new zones are inserted from scratch. \\\dline
 	
-	\method{sendTaxiData(adminId, TaxiDriver[] tds)}
+	\method{sendTaxiData(adminId, taxiDriverList)}
 	A null parameter &
 	A NullArgumentException is raised.\\\hline
 	An invalid adminId &
@@ -586,7 +586,7 @@ asda\note{We should be uniform in notation, and probably also revise a bit the D
 	A valid adminId and a non-empty array of taxi drivers&
 	The data associated with the existing taxi drivers is updated in the database, while new taxi drivers are inserted from scratch. \\\dline
 	
-	\method{sendSetupData(adminId, Object[] data)}
+	\method{sendSetupData(adminId, data)}
 	A null parameter &
 	A NullArgumentException is raised.\\\hline
 	An invalid adminId &
