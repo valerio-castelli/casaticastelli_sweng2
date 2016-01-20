@@ -16,8 +16,6 @@
 	basicstyle=\ttfamily\color{inlinecode},
 	stringstyle=\color{inlinecode},
 	]|#1|}
-\newcommand{\codeold}[1]{% 
-	{\color{blue} \noindent\texttt{\seqsplit{#1}}}}
 \newcommand{\checklist}[1]{\textbf{C#1}}
 \newcommand{\codeline}[1]{\textsf{L.#1}}
 \newcommand{\codelines}[2]{\textsf{L.#1-#2}}
@@ -26,7 +24,8 @@
 \newcommand{\note}[1]{\MakeUppercase{#1}\marginpar{\MakeLowercase{\textcolor{red}{#1}}}}
 
 % Test table
-\newenvironment{testtable}{\begin{longtable}{|p{5cm}|p{6cm}|}}{\end{longtable}}
+\newenvironment{testtable}{
+\begin{longtable}{|p{\dimexpr.4\textwidth}|p{\dimexpr.6\textwidth}|}}{\end{longtable}}
 
 % Methods in test tables
 \newcommand{\method}[1]{\multicolumn{2}{|c|}{{#1}}\\\hline
