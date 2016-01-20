@@ -251,12 +251,16 @@
 	A non-empty array of valid, existing zones &
 	The data associated with the specified zones is updated in the database. \\\dline
 	
+	\method{deleteZone(zoneId)}
+	A non-existing zoneId &
+	An InvalidArgumentValueException is raised. \\\hline
+	A valid zoneId &
+	The zone data is removed from the database.\\\dline
+	
 	\method{getZoneList()}
 	Nothing &
 	Returns the zones that are stored in the database.  \\\hline
 \end{testtable}
-asda\note{Should we add adminId here?}
-
 
 \subsection{API Permission Management, Data Access Utilities}
 \begin{testtable}
@@ -320,7 +324,7 @@ asda\note{Should we add adminId here?}
 	The taxi driver is inserted in the database. \\\dline
 
 	\method{updateTaxiDriver(taxiDriver)}
-	td is null &
+	A null parameter &
 	A NullArgumentException is raised. \\\hline
 	An inexistent taxi driver &
 	An InvalidArgumentValueException is raised. \\\hline
@@ -328,6 +332,12 @@ asda\note{Should we add adminId here?}
 	An InvalidArgumentValueException is raised. \\\hline
 	A valid taxi driver &
 	The data associated with the specified taxi driver is updated in the database. \\\hline	
+	
+	\method{deleteTaxiDriver(taxiDriverId)}
+	A non-existing taxiDriverId &
+	An InvalidArgumentValueException is raised. \\\hline
+	A valid taxiDriverId &
+	The taxi driver data is removed from the database.\\\dline
 \end{testtable}
 
 
@@ -338,14 +348,20 @@ asda\note{Should we add adminId here?}
 	\method{insertPassenger(passenger)}
 	A null parameter &
 	A NullArgumentException is raised.\\\hline
-	A passenger with one or more null fields &
+	A non-null passenger &
+	The passenger data is inserted in the database. \\\dline
+	
+	\method{deletePassenger(passengerId)}
+	A non-existing passengerId &
 	An InvalidArgumentValueException is raised. \\\hline
-	A passenger with one or more empty fields &
-	An InvalidArgumentValueException is raised. \\\hline
-	A passenger with the same mail address as an existing passenger &
-	An InvalidArgumentValueException is raised. \\\hline
-	A valid passenger &
-	The passenger data is inserted in the database and a registration confirmation mail is sent to him. The passenger status is set as “pending confirmation”. \\\dline
+	A valid passengerId &
+	The passenger data is removed from the database.\\\dline
+	
+	\method{updatePassengerData(passenger)}
+	A null parameter &
+	A NullArgumentException is raised.\\\hline
+	A non-null valid passenger &
+	The passenger data is updated in the database.\\\dline
 	
 	\method{confirmPassenger(passengerId)}
 	A non-existing passengerId &
@@ -395,8 +411,26 @@ asda\note{Should we add adminId here?}
 \end{testtable}
 
 \subsection{Settings Management, Data Access Utilities}
-\note{inserire tabella!!!}
-
+\begin{testtable}
+	\hline
+	\method{getUserSettings(userId)}
+	A non-existing userId &
+	An InvalidArgumentValueException is raised. \\\hline
+	A valid userId &
+	A structure containing all pairs $<setting, value>$ for the given userId preferences.\\\dline
+	
+	\method{updateUserSettings(userId, settings)}
+	A non-existing userId &
+	An InvalidArgumentValueException is raised. \\\hline
+	A null settings object &
+	A NullArgumentException is raised.\\\hline
+	An empty settings array &
+	An InvalidArgumentValueException is raised.\\\hline
+	A settings array containing some null values &
+	A NullArgumentException is raised.\\\hline
+	A valid userId and array of settings  &
+	The preferences of the given user are updated in the database accordingly to the $<setting, value>$ contained in the settings array.\\\hline
+\end{testtable}
 
 \section{Integration Between Subsystems}
 \subsection{Remote Services Interface, Taxi Management System}
@@ -457,6 +491,26 @@ asda\note{Should we add adminId here?}
 	A valid passenger &
 	The passenger data is inserted in the database and a registration confirmation mail is sent to him. The passenger status is set as “pending confirmation”. \\\dline
 	
+	\method{deletePassenger(passengerId)}
+	A null parameter &
+	A NullArgumentException is raised.\\\hline
+	A non-existing passengerId &
+	An InvalidArgumentValueException is raised. \\\hline
+	A valid passengerId &
+	The passenger data is removed from the database and a deletion confirmation mail is sent to him.\\\dline
+	
+	\method{updatePassengerData(passenger)}
+	A null parameter &
+	A NullArgumentException is raised.\\\hline
+	A passenger with one or more null fields &
+	An InvalidArgumentValueException is raised. \\\hline
+	A passenger with one or more empty fields &
+	An InvalidArgumentValueException is raised. \\\hline
+	A passenger that is not present in the database &
+	An InvalidArgumentValueException is raised. \\\hline
+	A valid passenger &
+	The passenger data is updated in the database.\\\dline
+	
 	\method{confirmPassenger(passengerId)}
 	A non-existing passengerId &
 	An InvalidArgumentValueException is raised. \\\hline
@@ -494,17 +548,10 @@ asda\note{Should we add adminId here?}
 	An InvalidArgumentFormatException is raised. \\\hline
 	A correct and valid user and secretCode combination, and a correctly formatted password &
 	Updates the user password in the database. \\\dline
-	
-	\method{(?)insertPassenger}
-	\method{(?)updatePassenger}
-
-	\method{(?)deletePassenger}
-	
 \end{testtable}
-\note{sisteamre}
 
 \subsection{Remote Services Interface, System Administration}
-asda\note{We should be uniform in notation, and probably also revise a bit the DD}
+\note{We should be uniform in notation, and probably also revise a bit the DD}
 \begin{testtable}
 	\hline
 	\method{checkPassword(adminId, password)}
