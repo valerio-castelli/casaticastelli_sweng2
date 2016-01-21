@@ -22,4 +22,5 @@
 \contentsline {chapter}{\numberline {5}Requirements Traceability}{51}{chapter.5}
 \contentsline {section}{\numberline {5.1}Functional Requirements}{51}{section.5.1}
 \contentsline {section}{\numberline {5.2}Quality Requirements}{56}{section.5.2}
-\contentsline {chapter}{Appendix \numberline {A}Hours of work}{58}{Appendix.1.A}
+\contentsline {chapter}{Appendix \numberline {A}Changelog}{58}{Appendix.1.A}
+\contentsline {chapter}{Appendix \numberline {B}Hours of work}{59}{Appendix.1.B}
