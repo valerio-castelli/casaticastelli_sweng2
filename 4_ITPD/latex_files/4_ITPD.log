@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.2)  21 JAN 2016 18:13
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.2)  21 JAN 2016 18:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -662,7 +662,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.35 ...ta Access Utilities}{23}{subsection.3.3.4}
+l.35 ...ta Access Utilities}{55}{subsection.3.3.4}
                                                    [1
 
 ])
@@ -919,9 +919,19 @@ Underfull \hbox (badness 5316) in paragraph at lines 15--15
  []
 
 
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 
+4 ignored in \hhline argument
+(hhline)                 on input line 17.
+
+
 Underfull \hbox (badness 5316) in paragraph at lines 23--23
 []|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
+
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 
+4 ignored in \hhline argument
+(hhline)                 on input line 25.
 
 
 Underfull \vbox (badness 10000) detected at line 30
@@ -940,9 +950,19 @@ Underfull \hbox (badness 5316) in paragraph at lines 40--40
  []
 
 
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 
+4 ignored in \hhline argument
+(hhline)                 on input line 42.
+
+
 Underfull \hbox (badness 5316) in paragraph at lines 48--48
 []|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
+
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 
+4 ignored in \hhline argument
+(hhline)                 on input line 50.
 
 
 Underfull \hbox (badness 5316) in paragraph at lines 56--56
@@ -953,6 +973,11 @@ Underfull \hbox (badness 5316) in paragraph at lines 56--56
 Underfull \hbox (badness 5316) in paragraph at lines 60--60
 []|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
+
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 
+4 ignored in \hhline argument
+(hhline)                 on input line 62.
 
 
 Underfull \vbox (badness 10000) detected at line 66
@@ -979,14 +1004,29 @@ Underfull \hbox (badness 5316) in paragraph at lines 81--81
  []
 
 
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 
+4 ignored in \hhline argument
+(hhline)                 on input line 83.
+
+
 Underfull \hbox (badness 5316) in paragraph at lines 89--89
 []|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
 
 
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 
+4 ignored in \hhline argument
+(hhline)                 on input line 91.
+
+
 Underfull \hbox (badness 5316) in paragraph at lines 97--97
 []|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
+
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 
+4 ignored in \hhline argument
+(hhline)                 on input line 99.
 
 
 Underfull \hbox (badness 5316) in paragraph at lines 103--103
@@ -998,9 +1038,26 @@ Underfull \vbox (badness 10000) detected at line 103
  []
 
 
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[13]
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 
+4 ignored in \hhline argument
+(hhline)                 on input line 105.
+
+
 Underfull \hbox (badness 5316) in paragraph at lines 109--109
 []|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
+
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 
+4 ignored in \hhline argument
+(hhline)                 on input line 111.
 
 
 Underfull \hbox (badness 5316) in paragraph at lines 117--117
@@ -1013,16 +1070,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[13]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
 [14]
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 
+4 ignored in \hhline argument
+(hhline)                 on input line 134.
+
+
 Underfull \vbox (badness 10000) detected at line 145
  []
+
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 
+4 ignored in \hhline argument
+(hhline)                 on input line 159.
 
 
 Underfull \hbox (badness 4454) in paragraph at lines 170--170
@@ -1079,9 +1140,19 @@ Underfull \hbox (badness 5316) in paragraph at lines 207--207
  []
 
 
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 
+4 ignored in \hhline argument
+(hhline)                 on input line 209.
+
+
 Underfull \hbox (badness 5316) in paragraph at lines 215--215
 []|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
+
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 
+4 ignored in \hhline argument
+(hhline)                 on input line 217.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 222--222
@@ -1104,6 +1175,11 @@ Underfull \hbox (badness 3260) in paragraph at lines 226--226
  []
 
 
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 
+4 ignored in \hhline argument
+(hhline)                 on input line 227.
+
+
 Underfull \hbox (badness 5316) in paragraph at lines 231--231
 []|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
@@ -1111,6 +1187,11 @@ Underfull \hbox (badness 5316) in paragraph at lines 231--231
 
 Underfull \vbox (badness 10000) detected at line 231
  []
+
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 
+4 ignored in \hhline argument
+(hhline)                 on input line 233.
 
 
 Underfull \hbox (badness 5316) in paragraph at lines 240--240
@@ -1146,6 +1227,11 @@ Underfull \hbox (badness 5316) in paragraph at lines 262--262
  []
 
 
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 
+4 ignored in \hhline argument
+(hhline)                 on input line 264.
+
+
 Underfull \hbox (badness 5316) in paragraph at lines 270--270
 []|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
@@ -1154,6 +1240,11 @@ Underfull \hbox (badness 5316) in paragraph at lines 270--270
 Underfull \hbox (badness 5316) in paragraph at lines 272--272
 []|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
+
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 
+4 ignored in \hhline argument
+(hhline)                 on input line 274.
 
 
 Underfull \hbox (badness 5316) in paragraph at lines 280--280
@@ -1175,6 +1266,11 @@ Underfull \hbox (badness 6412) in paragraph at lines 285--285
  []
 
 
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 
+4 ignored in \hhline argument
+(hhline)                 on input line 286.
+
+
 Underfull \hbox (badness 5316) in paragraph at lines 290--290
 []|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
@@ -1183,6 +1279,11 @@ Underfull \hbox (badness 5316) in paragraph at lines 290--290
 Underfull \hbox (badness 2050) in paragraph at lines 292--292
 []|\OT1/cmr/m/n/10.95 The zone data is re-moved from the
  []
+
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 
+4 ignored in \hhline argument
+(hhline)                 on input line 292.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1201,6 +1302,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 308--308
  []
 
 
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 
+4 ignored in \hhline argument
+(hhline)                 on input line 312.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 318--318
 []|\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion is
  []
@@ -1216,9 +1322,19 @@ Underfull \hbox (badness 1178) in paragraph at lines 323--323
  []
 
 
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 
+4 ignored in \hhline argument
+(hhline)                 on input line 324.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 330--330
 []|\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion is
  []
+
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 
+4 ignored in \hhline argument
+(hhline)                 on input line 332.
 
 
 Underfull \vbox (badness 10000) detected at line 334
@@ -1276,6 +1392,11 @@ Underfull \hbox (badness 1960) in paragraph at lines 360--360
  []
 
 
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 
+4 ignored in \hhline argument
+(hhline)                 on input line 360.
+
+
 Underfull \hbox (badness 5316) in paragraph at lines 366--366
 []|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
@@ -1286,6 +1407,11 @@ Underfull \hbox (badness 5316) in paragraph at lines 368--368
  []
 
 
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 
+4 ignored in \hhline argument
+(hhline)                 on input line 370.
+
+
 Underfull \hbox (badness 5316) in paragraph at lines 376--376
 []|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
@@ -1294,6 +1420,11 @@ Underfull \hbox (badness 5316) in paragraph at lines 376--376
 Underfull \hbox (badness 5316) in paragraph at lines 378--378
 []|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
+
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 
+4 ignored in \hhline argument
+(hhline)                 on input line 380.
 
 
 Underfull \vbox (badness 10000) detected at line 382
@@ -1316,6 +1447,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [20]
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 
+4 ignored in \hhline argument
+(hhline)                 on input line 398.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 401--401
 []|\OT1/cmr/m/n/10.95 A non-existing pas-sen-
  []
@@ -1324,6 +1461,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 401--401
 Underfull \hbox (badness 5316) in paragraph at lines 402--402
 []|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
+
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 
+4 ignored in \hhline argument
+(hhline)                 on input line 404.
+
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 
+4 ignored in \hhline argument
+(hhline)                 on input line 410.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 413--413
@@ -1365,6 +1512,11 @@ Underfull \vbox (badness 10000) detected at line 435
  []
 
 
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 
+4 ignored in \hhline argument
+(hhline)                 on input line 446.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 452--452
 []|\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion is
  []
@@ -1396,6 +1548,11 @@ Underfull \hbox (badness 5817) in paragraph at lines 466--466
  []
 
 
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 
+4 ignored in \hhline argument
+(hhline)                 on input line 466.
+
+
 Underfull \hbox (badness 5316) in paragraph at lines 470--470
 []|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
@@ -1425,9 +1582,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 490--490
  []
 
 
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 
+4 ignored in \hhline argument
+(hhline)                 on input line 497.
+
+
 Underfull \hbox (badness 5316) in paragraph at lines 505--505
 []|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
+
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 
+4 ignored in \hhline argument
+(hhline)                 on input line 511.
 
 
 Underfull \hbox (badness 5316) in paragraph at lines 517--517
@@ -1439,9 +1606,19 @@ Underfull \vbox (badness 10000) detected at line 517
  []
 
 
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 
+4 ignored in \hhline argument
+(hhline)                 on input line 527.
+
+
 Underfull \hbox (badness 5316) in paragraph at lines 533--533
 []|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
+
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 
+4 ignored in \hhline argument
+(hhline)                 on input line 535.
 
 
 Underfull \hbox (badness 5316) in paragraph at lines 539--539
@@ -1484,6 +1661,11 @@ Underfull \hbox (badness 5316) in paragraph at lines 560--560
  []
 
 
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 
+4 ignored in \hhline argument
+(hhline)                 on input line 562.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 567--567
 []|\OT1/cmr/m/n/10.95 A non-existing pas-sen-
  []
@@ -1492,6 +1674,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 567--567
 Underfull \hbox (badness 5316) in paragraph at lines 568--568
 []|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
+
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 
+4 ignored in \hhline argument
+(hhline)                 on input line 570.
 
 
 Underfull \hbox (badness 5316) in paragraph at lines 576--576
@@ -1507,6 +1694,11 @@ Underfull \hbox (badness 5316) in paragraph at lines 578--578
 Underfull \hbox (badness 5316) in paragraph at lines 580--580
 []|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
+
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 
+4 ignored in \hhline argument
+(hhline)                 on input line 582.
 
 
 Underfull \vbox (badness 10000) detected at line 584
@@ -1528,6 +1720,11 @@ Underfull \hbox (badness 5316) in paragraph at lines 588--588
  []
 
 
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 
+4 ignored in \hhline argument
+(hhline)                 on input line 590.
+
+
 Underfull \hbox (badness 5316) in paragraph at lines 596--596
 []|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
@@ -1536,6 +1733,16 @@ Underfull \hbox (badness 5316) in paragraph at lines 596--596
 Underfull \hbox (badness 5316) in paragraph at lines 598--598
 []|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
+
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 
+4 ignored in \hhline argument
+(hhline)                 on input line 602.
+
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 
+4 ignored in \hhline argument
+(hhline)                 on input line 610.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 616--616
@@ -1548,6 +1755,11 @@ Underfull \hbox (badness 6876) in paragraph at lines 620--620
  []
 
 
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 
+4 ignored in \hhline argument
+(hhline)                 on input line 620.
+
+
 Underfull \hbox (badness 5316) in paragraph at lines 624--624
 []|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
@@ -1557,6 +1769,11 @@ Underfull \hbox (badness 5817) in paragraph at lines 626--626
 []|\OT1/cmr/m/n/10.95 A struc-ture con-tain-ing all pairs $\OML/cmm/m/it/10.95 
 <
  []
+
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 
+4 ignored in \hhline argument
+(hhline)                 on input line 626.
 
 
 Underfull \hbox (badness 5316) in paragraph at lines 630--630
@@ -1592,6 +1809,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 650--650
  []
 
 
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 
+4 ignored in \hhline argument
+(hhline)                 on input line 654.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 660--660
 []|\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion is
  []
@@ -1607,6 +1829,11 @@ Underfull \hbox (badness 1178) in paragraph at lines 665--665
  []
 
 
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 
+4 ignored in \hhline argument
+(hhline)                 on input line 666.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 672--672
 []|\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion is
  []
@@ -1619,6 +1846,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 674--674
 
 Underfull \vbox (badness 10000) detected at line 676
  []
+
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 
+4 ignored in \hhline argument
+(hhline)                 on input line 676.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 682--682
@@ -1636,14 +1868,29 @@ Underfull \hbox (badness 5316) in paragraph at lines 686--686
  []
 
 
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 
+4 ignored in \hhline argument
+(hhline)                 on input line 688.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 692--692
 []|\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion is
  []
 
 
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 
+4 ignored in \hhline argument
+(hhline)                 on input line 694.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 698--698
 []|\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion is
  []
+
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 
+4 ignored in \hhline argument
+(hhline)                 on input line 700.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 706--706
@@ -1672,6 +1919,11 @@ Underfull \hbox (badness 1354) in paragraph at lines 713--713
  []
 
 
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 
+4 ignored in \hhline argument
+(hhline)                 on input line 714.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 720--720
 []|\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion is
  []
@@ -1690,6 +1942,11 @@ Underfull \hbox (badness 5316) in paragraph at lines 726--726
 Underfull \hbox (badness 1354) in paragraph at lines 727--727
 []|\OT1/cmr/m/n/10.95 A valid ad-minId and a
  []
+
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 
+4 ignored in \hhline argument
+(hhline)                 on input line 728.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 734--734
@@ -1806,7 +2063,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 21.
 Here is how much of TeX's memory you used:
  9286 strings out of 494967
  135230 string characters out of 6179868
- 278819 words of memory out of 5000000
+ 279819 words of memory out of 5000000
  12216 multiletter control sequences out of 15000+600000
  10711 words of font info for 37 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
@@ -1820,7 +2077,7 @@ st/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmti10.pfb>
-Output written on 4_ITPD.pdf (43 pages, 784332 bytes).
+Output written on 4_ITPD.pdf (43 pages, 784489 bytes).
 PDF statistics:
  559 PDF objects out of 1000 (max. 8388607)
  112 named destinations out of 1000 (max. 500000)

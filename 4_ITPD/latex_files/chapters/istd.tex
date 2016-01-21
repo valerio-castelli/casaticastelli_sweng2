@@ -96,7 +96,7 @@ For each method we're going to provide a brief description of the input values a
 	A non-existing taxiId &
 	An InvalidArgumentValueException is raised. \\\hline
 	A set of valid parameters &
-	The taxi status is set to available in the database.\\\hline
+	The taxi status is set to available in the database.\\\dline
 	
 	\method{getStoredTaxiLocation(taxiId)}
 	A non-existing taxiId &
@@ -141,7 +141,7 @@ For each method we're going to provide a brief description of the input values a
 	A location outside the city &
 	An InvalidLocationException is raised. \\\hline
 	A location inside the city &
-	The id of the zone to which the location belongs. \\\dline
+	The id of the zone to which the location belongs.\\\hline
 \end{testtable}
 
 
@@ -377,13 +377,13 @@ For each method we're going to provide a brief description of the input values a
 	A taxi driver with some null or empty fields &
 	An InvalidArgumentValueException is raised. \\\hline
 	A valid taxi driver &
-	The data associated with the specified taxi driver is updated in the database. \\\hline	
+	The data associated with the specified taxi driver is updated in the database. \\\dline	
 	
 	\method{deleteTaxiDriver(taxiDriverId)}
 	A non-existing taxiDriverId &
 	An InvalidArgumentValueException is raised. \\\hline
 	A valid taxiDriverId &
-	The taxi driver data is removed from the database.\\\dline
+	The taxi driver data is removed from the database.\\\hline
 \end{testtable}
 
 
@@ -691,8 +691,8 @@ For each method we're going to provide a brief description of the input values a
 	An invalid adminId &
 	An InvalidSecurityLevelException is raised. \\\hline	
 	A valid adminId &
-	Returns the zones that are stored in the database.  \\\dline
-
+	Returns the zones that are stored in the database.  \\\hline\pagebreak\dline
+	
 	\method{askDriverList(adminId)}
 	An invalid adminId &
 	An InvalidSecurityLevelException is raised. \\\hline	
