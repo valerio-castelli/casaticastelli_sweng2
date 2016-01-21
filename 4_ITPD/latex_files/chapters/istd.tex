@@ -49,7 +49,7 @@ For each method we're going to provide a brief description of the input values a
 	Formally valid arguments &
 	The entry containing the reservation data is deleted from the database.\\\dline
 		
-	\method{updateReservationList(reservationList}
+	\method{updateReservationList(reservationList)}
 	A null parameter &
 	A NullArgumentException is raised.\\\hline
 	An empty array &
@@ -524,7 +524,7 @@ For each method we're going to provide a brief description of the input values a
 	A valid taxiId and request, but taxi is unavailable &
 	An InvalidOperationException is raised. \\\hline
 	A valid taxiId and request, and the taxi is available &
-	The taxi status is set to currently-riding, the taxi is removed from its zone queue, the request is marked as being served and the modifications are written to the database. \\\hline
+	The taxi status is set to currently-riding, the taxi is removed from its zone queue, the request is marked as being served and the modifications are written to the database. \\\dline
 	
 	\method{refuseRide(taxiId, request)}
 	A null request &
@@ -532,7 +532,7 @@ For each method we're going to provide a brief description of the input values a
 	An invalid taxiId &
 	An InvalidArgumentValueException is raised. \\\hline
 	A valid taxiId and request &
-	The taxi is moved to the last position of its zone queue and the request is marked as refused from the specified taxi driver. \\\hline
+	The taxi is moved to the last position of its zone queue and the request is marked as refused from the specified taxi driver. \\\dline
 	
 	\method{togglePressed(taxiId)}
 	An invalid taxiId &
@@ -619,7 +619,6 @@ For each method we're going to provide a brief description of the input values a
 	A correct and valid user and secretCode combination, and a correctly formatted password &
 	Updates the user password in the database. \\\dline
 	
-	\hline
 	\method{getUserSettings(userId)}
 	A non-existing userId &
 	An InvalidArgumentValueException is raised. \\\hline
@@ -726,7 +725,7 @@ For each method we're going to provide a brief description of the input values a
 	An array of non-null, but invalid taxi drivers &
 	An InvalidArgumentValueException  is raised. \\\hline
 	A valid adminId and a non-empty array of taxi drivers&
-	The data associated with the existing taxi drivers is updated in the database, while new taxi drivers are inserted from scratch. \\\hline\hline
+	The data associated with the existing taxi drivers is updated in the database, while new taxi drivers are inserted from scratch. \\\dline
 	
 	\method{sendSetupData(adminId, data)}
 	A null parameter &
