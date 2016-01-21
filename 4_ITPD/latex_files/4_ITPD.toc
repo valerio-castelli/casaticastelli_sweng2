@@ -18,7 +18,7 @@
 \contentsline {section}{\numberline {3.1}Taxi Management System}{12}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Request Management, Data Access Utilities}{12}{subsection.3.1.1}
 \contentsline {subsection}{\numberline {3.1.2}Reservation Management, Data Access Utilities}{13}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Taxi Management, Data Access Utilities Management}{13}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.3}Taxi Management, Data Access Utilities Management}{14}{subsection.3.1.3}
 \contentsline {subsection}{\numberline {3.1.4}Taxi Management, Location Management}{15}{subsection.3.1.4}
 \contentsline {subsection}{\numberline {3.1.5}Reservation Management, Location Management}{15}{subsection.3.1.5}
 \contentsline {subsection}{\numberline {3.1.6}Reservation Management, Request Management}{16}{subsection.3.1.6}
@@ -33,8 +33,8 @@
 \contentsline {subsection}{\numberline {3.3.2}Login, Data Access Utilities}{22}{subsection.3.3.2}
 \contentsline {subsection}{\numberline {3.3.3}Password Retrieval, Data Access Utilities}{22}{subsection.3.3.3}
 \contentsline {subsection}{\numberline {3.3.4}Settings Management, Data Access Utilities}{23}{subsection.3.3.4}
-\contentsline {section}{\numberline {3.4}Integration Between Subsystems}{23}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Remote Services Interface, Taxi Management System}{23}{subsection.3.4.1}
+\contentsline {section}{\numberline {3.4}Integration Between Subsystems}{24}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Remote Services Interface, Taxi Management System}{24}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}Remote Services Interface, Account Management}{26}{subsection.3.4.2}
 \contentsline {subsection}{\numberline {3.4.3}Remote Services Interface, System Administration}{28}{subsection.3.4.3}
 \contentsline {chapter}{\numberline {4}Performance analysis}{32}{chapter.4}
