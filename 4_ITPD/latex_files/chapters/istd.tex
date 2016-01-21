@@ -1,8 +1,11 @@
 \chapter{Individual Steps and Test Description}
+In this chapter we'll provide a detailed description of the tests to be performed on each pair of components that have to be integrated.
+
+Each pair of components is described in a specific subsection, identified by the $<caller, called>$ notation, containing the list of methods that the $<caller>$ component invokes on the $<called>$ component. 
+
+For each method we're going to provide a brief description of the input values and the corresponding expected effects on the system.
 \section{Taxi Management System}
 \subsection{Request Management, Data Access Utilities}
-\begin{table}[ph]
-\centering
 \begin{testtable}
 	\hline
 	\method{insertRequest(request)}
@@ -16,7 +19,7 @@
 	\method{deleteRequest(request)}
 	A null parameter &
 	A NullArgumentException is raised.\\\hline
-	A request with a inexistent id &
+	A request with an inexistent id &
 	An InvalidArgumentValueException is raised. \\\hline
 	Formally valid arguments &
 	The entry containing the request data is deleted from the database.\\\dline
@@ -25,7 +28,6 @@
 	Nothing &
 	The list of all pending requests.\\\hline
 \end{testtable}
-\end{table}
 
 
 \subsection{Reservation Management, Data Access Utilities}
@@ -42,7 +44,7 @@
 	\method{deleteReservation(reservation)}
 	A null parameter &
 	A NullArgumentException is raised.\\\hline
-	A reservation with a inexistent id &
+	A reservation with an inexistent id &
 	An InvalidArgumentValueException is raised. \\\hline
 	Formally valid arguments &
 	The entry containing the reservation data is deleted from the database.\\\dline
@@ -83,14 +85,38 @@
 	\method{updateTaxiLocation(taxiId, location)}
 	A null location &
 	A NullArgumentException is raised. \\\hline
+	A non-existing taxiId &
+	An InvalidArgumentValueException is raised. \\\hline
 	A set of valid parameters &
 	The new location of the taxi is written in the database.\\\dline
 	
 	\method{updateTaxiStatus(taxiId, TaxiStatusAvailable)}
 	A null parameter &
 	A NullArgumentException is raised. \\\hline
+	A non-existing taxiId &
+	An InvalidArgumentValueException is raised. \\\hline
 	A set of valid parameters &
 	The taxi status is set to available in the database.\\\hline
+	
+	\method{getStoredTaxiLocation(taxiId)}
+	A non-existing taxiId &
+	An InvalidArgumentValueException is raised. \\\hline
+	A valid taxiId &
+	Returns the stored taxi location.\\\dline
+	
+	\method{getTaxiStatus(taxiId)}
+	A non-existing taxiId &
+	An InvalidArgumentValueException is raised. \\\hline
+	A valid taxiId &
+	Returns the stored taxi status.\\\dline
+	
+	\method{endRide(taxiId, currentLocation)}
+	A null location &
+	A NullArgumentException is raised. \\\hline
+	A non-existing taxiId &
+	An InvalidArgumentValueException is raised. \\\hline
+	A valid taxiId and currentLocation, the taxi is on a ride and currentLocation is inside city&
+	The ride is considered closed and is finalized in the database\\\hline
 \end{testtable}
 
 
@@ -182,6 +208,14 @@
 	A valid set of parameters &
 	true if a taxi driver is available to serve the request, false otherwise \\\dline
 	
+	\method{getAvailableTaxiDriver(request)}
+	A null request &
+	A NullArgumentException is raised. \\\hline
+	An unassigned request &
+	An InvalidArgumentValueException is raised. \\\hline
+	An assigned request &
+	A reference to the taxi driver that has been selected to serve the request.\\\dline
+	
 	\method{getETA(taxiDriver, passengerLocation)}
 	A null parameter &
 	A NullArgumentException is raised. \\\hline
@@ -265,6 +299,18 @@
 \subsection{API Permission Management, Data Access Utilities}
 \begin{testtable}
 	\hline
+	\method{checkPassword(adminId, password)}
+	A null parameter &
+	A NullArgumentException is raised. \\\hline
+	An empty password &
+	An InvalidArgumentValueException is raised. \\\hline
+	An invalid adminId &
+	An InvalidSecurityLevelException is raised. \\\hline
+	A valid adminId and password, but password does not correspond to an authorized one &
+	Returns false. \\\hline		
+	A valid adminId and password, and password does correspond to an authorized one &
+	Returns true. \\\dline
+
 	\method{verifyPermission(appId, operation)}
 	A null parameter &
 	A NullArgumentException is raised. \\\hline
@@ -463,7 +509,31 @@
 	The ride is considered closed and is finalized in the database, the taxi changes its status to available \\\hline
 	A valid taxiId and currentLocation, the taxi is on a ride and currentLocation is outside city&
 	The ride is considered closed and is finalized in the database, the taxi changes its status to outside-city \\\dline
-
+	
+	\method{acceptRide(taxiId, request)}
+	A null request &
+	A NullArgumentException is raised. \\\hline
+	An invalid taxiId &
+	An InvalidArgumentValueException is raised. \\\hline
+	A request that has already been assigned to another taxi &
+	An InvalidOperationException is raised. \\\hline
+	A valid taxiId and request, but taxi is already on a ride &
+	An InvalidOperationException is raised. \\\hline
+	A valid taxiId and request, but taxi is outside-city &
+	An InvalidOperationException is raised. \\\hline
+	A valid taxiId and request, but taxi is unavailable &
+	An InvalidOperationException is raised. \\\hline
+	A valid taxiId and request, and the taxi is available &
+	The taxi status is set to currently-riding, the taxi is removed from its zone queue, the request is marked as being served and the modifications are written to the database. \\\hline
+	
+	\method{refuseRide(taxiId, request)}
+	A null request &
+	A NullArgumentException is raised. \\\hline
+	An invalid taxiId &
+	An InvalidArgumentValueException is raised. \\\hline
+	A valid taxiId and request &
+	The taxi is moved to the last position of its zone queue and the request is marked as refused from the specified taxi driver. \\\hline
+	
 	\method{togglePressed(taxiId)}
 	An invalid taxiId &
 	An InvalidArgumentValueException is raised. \\\hline
@@ -548,10 +618,28 @@
 	An InvalidArgumentFormatException is raised. \\\hline
 	A correct and valid user and secretCode combination, and a correctly formatted password &
 	Updates the user password in the database. \\\dline
+	
+	\hline
+	\method{getUserSettings(userId)}
+	A non-existing userId &
+	An InvalidArgumentValueException is raised. \\\hline
+	A valid userId &
+	A structure containing all pairs $<setting, value>$ for the given userId preferences.\\\dline
+	
+	\method{updateUserSettings(userId, settings)}
+	A non-existing userId &
+	An InvalidArgumentValueException is raised. \\\hline
+	A null settings object &
+	A NullArgumentException is raised.\\\hline
+	An empty settings array &
+	An InvalidArgumentValueException is raised.\\\hline
+	A settings array containing some null values &
+	A NullArgumentException is raised.\\\hline
+	A valid userId and array of settings  &
+	The preferences of the given user are updated in the database accordingly to the $<setting, value>$ contained in the settings array.\\\hline
 \end{testtable}
 
 \subsection{Remote Services Interface, System Administration}
-\note{We should be uniform in notation, and probably also revise a bit the DD}
 \begin{testtable}
 	\hline
 	\method{checkPassword(adminId, password)}
@@ -606,7 +694,13 @@
 	A valid adminId &
 	Returns the zones that are stored in the database.  \\\dline
 
-	\method{sendZoneData(adminId, zones)}
+	\method{askDriverList(adminId)}
+	An invalid adminId &
+	An InvalidSecurityLevelException is raised. \\\hline	
+	A valid adminId &
+	Returns a list of the taxi drivers that are stored in the database. \\\dline
+
+	\method{insertZones(adminId, zones)}
 	A null parameter &
 	A NullArgumentException is raised.\\\hline
 	An invalid adminId &
@@ -620,7 +714,7 @@
 	A valid adminId and a non-empty array of valid zones &
 	The data associated with the existing zones is updated in the database, while new zones are inserted from scratch. \\\dline
 	
-	\method{sendTaxiData(adminId, taxiDriverList)}
+	\method{insertTaxiDrivers(adminId, taxiDriverList)}
 	A null parameter &
 	A NullArgumentException is raised.\\\hline
 	An invalid adminId &
