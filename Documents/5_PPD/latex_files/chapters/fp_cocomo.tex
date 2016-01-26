@@ -39,6 +39,42 @@ External Outputs & 4 & 5 & 7\\
 External Inquiries & 3 & 4 & 6\\
 \end{fptable}
 
+\subsection{Internal Logic Files (ILFs)}
+myTaxiService relies on a number of ILFs to store the information it needs to offer the required functionalities. In the next few paragraphs, we'll analyze in detail the various ILFs we have identified.
+
+First of all, the system has to store information about taxis and taxi drivers. These data are condensed in a single table that holds the first name, last name and birthdate of a taxi driver as Strings, together with his home address, SSN, email address and mobile phone number as contact information. It also stores the taxi driver's driving license, his taxi license, the taxi plate number and the taxi status (available / unavailable / on a ride / outside city) for convenience. 
+
+As for the zones, they are stores using a two-level structure. The first level of the structure holds the identifiers of all the zones, while a secondary table contains all the location coordinates (as <latitude, longitude> pairs) necessary to identify the vertices of the zone polygon. 
+
+The system furthermore needs a queue for each zone in which it can store the identifiers of the taxi drivers waiting in that zone and their relative position in the queue, and similar structures to store the lists of taxi drivers who are unavailable, outside the city or currently on a ride. These data are stored on disk primarily to facilitate a fast recovery of the system in case of failure.
+
+Reservations are stored in a dedicated table that holds all the information about the identifier of the passenger who booked them, the timestamp of the moment when the tuple is created, the date and time of the pickup, the origin and destination locations as addresses and the status (pending / being served / completed / cancelled). 
+
+Requests are also stored in a dedicated table with a similar structure, the only difference being the absence of the destination field and the presence of an extra field for the secret code. 
+
+The system has a dedicated table to store the passenger data. Each passenger is associated with an identifier, a name, surname and birthdate, the username, an email address and a mobile phone number. The passenger identifier is used as foreign key in a secondary table that stores his the personal settings.
+
+Passengers and taxi drivers login information, that is username, password, identifier and user type are stored in a dedicated user table. Admin accounts are not stored in this table to achieve a greater level of security. 
+
+To keep track of who can access the administration services, information on the admin accounts is stored in a dedicated table. The main fields are name, surname, username, password and the id of the privilege level of the account, which is referencing a correspondent entry in a dedicated privileges table.
+
+Finally, the system keeps a list of application and plugin identifiers that have access to the privileged API. Each identifier is associated with the contact information of the developer, a description of what the application or plugin does and the exhaustive list of methods that can be called. 
+
+(should we add the statistical data here? or keep it as a computed set of things?) 
+
+Using the previously defined tables, this is the count we obtain:
+
+\begin{fpcounttable}{ILF}
+Login data & Low & 7 \\
+Passenger data & Low & 7 \\
+Taxi drivers & Low & 7 \\
+Zones & Low & 7 \\
+Queues & Average & 10 \\
+Reservations and requests & Low & 7 \\
+API permissions & Average & 10 \\\hline
+\fptotal{55}	
+\end{fpcounttable}
+
 
 \section{Cost and effort estimation: COCOMO}
 \begin{itemize}

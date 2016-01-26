@@ -42,6 +42,20 @@
 	\hline\end{longtable}\end{center}
 }
 
+% FP count table
+\newenvironment{fpcounttable}[1]{
+	\begin{center}
+	\begin{longtable}{|l|l|l|}
+	\hline 
+	#1 & Complexity & FPs \\\hline
+}{
+	\end{longtable}\end{center}
+}
+
+\newcommand{\fptotal}[1]{
+	\multicolumn{2}{|l|}{{Total}}
+	& #1\\\hline
+}
 
 % Methods in test tables
 \newcommand{\method}[1]{%
