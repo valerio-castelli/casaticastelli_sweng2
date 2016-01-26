@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.21)  26 JAN 2016 19:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.21)  26 JAN 2016 21:57
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -580,7 +580,7 @@ LaTeX Info: Redefining \nameref on input line 4.
 \everyMPtoPDFconversion=\toks26
 )
 \c@lstlisting=\count131
- (./title/title_page.tex <title/polimi_logo.png, id=72, 419.31656pt x 417.81094pt>
+ (./title/title_page.tex <title/polimi_logo.png, id=92, 419.31656pt x 417.81094pt>
 File: title/polimi_logo.png Graphic file (type png)
  <use title/polimi_logo.png>
 Package pdftex.def Info: title/polimi_logo.png used on input line 3.
@@ -668,8 +668,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [5]
-Overfull \hbox (13.88216pt too wide) in paragraph at lines 96--99
-\OT1/cmr/m/n/10.95 change set-tings for user, in-sert/up-date/delete zones, in-sert/up-date/delete
+Underfull \vbox (badness 10000) detected at line 97
  []
 
 
@@ -678,7 +677,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[6]) (./chapters/schedule.tex
+[6]
+Underfull \vbox (badness 10000) detected at line 146
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -686,26 +688,80 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [7]
+Underfull \vbox (badness 10000) detected at line 168
+ []
+
+
+Overfull \vbox (26.59373pt too high) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[8]
+Underfull \vbox (badness 10000) detected at line 189
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 201
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[9]
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 207.
+
+Overfull \hbox (5.42635pt too wide) in paragraph at lines 216--219
+\OT1/cmr/m/n/10.95 tings for user, in-sert/up-date/delete zones, in-sert/up-date/delete taxi (drivers),
+ []
+
+
+Overfull \hbox (1.13748pt too wide) in paragraph at lines 216--219
+\OT1/cmr/m/n/10.95 reg-is-ter new pas-sen-ger, delete pas-sen-ger, new re-quest, new reser-va-tion, delete
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[10]) (./chapters/schedule.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[11]
 Chapter 3.
-) (./chapters/resources.tex [8
+) (./chapters/resources.tex [12
 
 ]
 Chapter 4.
-) (./chapters/risks.tex [9
+) (./chapters/risks.tex [13
 
 ]
 Chapter 5.
-) (./chapters/conclusions.tex [10
+) (./chapters/conclusions.tex [14
 
 ]
 Chapter 6.
-) (./chapters/hours_of_work.tex [11
+) (./chapters/hours_of_work.tex [15
 
 ]
 Appendix A.
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 21.
- [12
+ [16
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 21.
@@ -717,18 +773,18 @@ Package rerunfilecheck Info: File `5_PPD.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 21.
  ) 
 Here is how much of TeX's memory you used:
- 9123 strings out of 493089
- 133045 string characters out of 6134841
- 267767 words of memory out of 5000000
- 12405 multiletter control sequences out of 15000+600000
- 10711 words of font info for 37 fonts, out of 8000000 for 9000
+ 9481 strings out of 493089
+ 136056 string characters out of 6134841
+ 274767 words of memory out of 5000000
+ 12743 multiletter control sequences out of 15000+600000
+ 11265 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,11n,43p,525b,484s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on /Users/Valerio/GitHub/casaticastelli_sweng2/Documents/5_PPD/latex_files/.texpadtmp/5_PPD.pdf (14 pages, 186248 bytes).
+ 39i,11n,43p,525b,1164s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on /Users/Valerio/GitHub/casaticastelli_sweng2/Documents/5_PPD/latex_files/.texpadtmp/5_PPD.pdf (18 pages, 221786 bytes).
 PDF statistics:
- 203 PDF objects out of 1000 (max. 8388607)
- 176 compressed objects within 2 object streams
- 38 named destinations out of 1000 (max. 500000)
- 142 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 269 PDF objects out of 1000 (max. 8388607)
+ 234 compressed objects within 3 object streams
+ 56 named destinations out of 1000 (max. 500000)
+ 182 words of extra memory for PDF output out of 10000 (max. 10000000)
 

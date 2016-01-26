@@ -52,6 +52,15 @@
 	\end{longtable}\end{center}
 }
 
+\newenvironment{fptotaltable}{
+	\begin{center}
+	\begin{longtable}{|l|r|}
+	\hline 
+	Function Type & Value \\\hline
+}{
+	\end{longtable}\end{center}
+}
+
 \newcommand{\fptotal}[1]{
 	\multicolumn{2}{|l|}{{Total}}
 	& #1\\\hline

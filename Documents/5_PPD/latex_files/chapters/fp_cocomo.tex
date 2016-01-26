@@ -75,8 +75,148 @@ API permissions & Average & 10 \\\hline
 \fptotal{55}	
 \end{fpcounttable}
 
+\subsection{External Logic Files (ELFs)}
+The only external data source myTaxiService relies on is represented by the Mapping Service. 
+
+The interaction between the core system and the remote service provider happens through a RESTful API and data can be returned in JSON or XML format. The results have then to be processed before they can be used as part of our computation.
+
+There are two main kind of interactions:
+\begin{itemize}
+	\item Given the coordinates of two locations, get an estimate of the time that is necessary to drive from one to the other
+	\item Given an address, get the correspondent pair of coordinates (reverse geocoding) 
+\end{itemize}
+
+On the client side, the mapping service is also used to retrieve the graphical representation of the city map to be displayed on the smartphone of the taxi driver.
+
+Given the complexity of the interaction and the amount of data that is retrieved, it is reasonable to classify this logic file as a complex one. 
+\begin{fpcounttable}{ELF}
+ETA computation & Low & 10 \\
+Reverse geocoding & Low & 10 \\
+Map data retrieval & Low & 10 \\\hline
+\fptotal{30}	
+\end{fpcounttable}
+
+\subsection{External Inputs (EIs)}
+myTaxiService supports many kind of interactions with different categories of users. 
+
+We are now going to summarize the impact of the offered features, grouping them by user category.  
+All users:
+\begin{itemize}
+	\item Login/Logout: these are simple operations that involve only the account manager. They contribute 3 FPs each.
+\end{itemize}
+Passengers:
+\begin{itemize}
+	\item Password retrieval: this operation has an average complexity, as it involves a number of steps in order to be sure the user is really entitled to retrieve his password. For this reason, it contributes 4 FPs.
+	\item Change settings: this operation also has an average complexity, as the number of settings to be managed can be quite high. As such, it contributes 4 FPs.
+	\item Request or reserve a taxi: these are both very complex operations that involve a large number of components. For this reason they account 6 FPs each.
+	\item Delete a reservation: since this is straightforward operation, it yields 3 FPs. 
+	\item Register a new account: this operation also has an average complexity, as it involves a number of checks on the validity of the fields. As such, it contributes 4 FPs.
+	\item View reservation history: since this is straightforward operation, it yields 3 FPs. 
+\end{itemize}
+Administrators:
+\begin{itemize}
+	\item Insert, delete and update zones: these are very complex operations that involve a great number of components. For this reason they account 6 FPs each.
+	\item Insert, delete and update taxi drivers: as for the zones, the complexity of these operations is high, so they account another 6 FPs each. 
+	\item Request service statistics: as this operation involves some fairly complicated aggregate queries on the database, it can be considered complex and thus contributes 6FPs to the total amount.
+	\item Grant and revoke privileges to an application or plugin: while these two specular operations involve a large number of fields that can be set, the impact on the database is quite limited. For this reason we think they have an average complexity and they should contribute 4 FPs each.
+\end{itemize}
+Taxi drivers:
+\begin{itemize}
+	\item Accept, refuse and end ride: even though from a client point of view these operations seem trivial, the steps required to properly rearrange the taxi queues are quite complex. For this reason they account 6 FPs each.
+	\item Set availability: this operation also involves a few rearrangements of the taxi queues, but has a smaller impact on the overall behavior of the system. For this reason it can be though as having an average complexity and it contributes 4 FPs.
+\end{itemize}
+
+The final results are shown in the following table:
+\begin{fpcounttable}{EI}
+Login/Logout & Low & 2x3 \\
+Password retrieval & Average & 4 \\
+Change settings & Average & 4 \\
+Request or reserve a taxi & High & 2x4 \\
+Delete a reservation & Low & 3 \\
+Register a new passenger account & Average & 4 \\
+View reservation history & Low & 3 \\
+Insert, delete and update zones & High & 3x6 \\
+Insert, delete and update taxi drivers & High & 3x6 \\
+Request service statistics & High & 6 \\
+Grant and revoke app privileges & Average & 2x4 \\
+Grant and revoke plugin privileges & Average & 2x4 \\
+Accept, refuse and end ride & High & 3x6 \\
+Set taxi availability & Average & 4 \\\hline 
+\fptotal{112}	
+\end{fpcounttable}
+
+\subsection{External Inquiries (EQs)}
+As specified by the FP guidelines, an inquiry is essentially a data retrieval request performed by an user. 
+
+myTaxiService supports a few interactions of this type that don't require complex computations:
+\begin{itemize}
+	\item A taxi driver can retrieve his position in the queue of his current zone. 
+	\item A passenger can retrieve his reservation history.
+	\item An administrator can retrieve the full list of taxi drivers, zones, passengers or approved applications and plugins that are making usage of the APIs.
+\end{itemize}
+
+All these operations can be though as fairly simple. The resulting table is the following:
+\begin{fpcounttable}{EQ}
+Retrieve taxi position in queue & Low & 3 \\
+Retrieve passenger reservation history & Low & 3 \\
+Retrieve list of taxi drivers & Low & 3 \\
+Retrieve list of zones & Low & 3 \\
+Retrieve list of passengers & Low & 3 \\
+Retrieve list of approved applications & Low & 3 \\
+Retrieve list of approved plugins & Low & 3 \\\hline 
+\fptotal{21}	
+\end{fpcounttable}
+
+\subsection{External Outputs (EOs)}
+As part of its normal behavior, myTaxiService occasionally needs to communicate with the user outside the context of an inquiry. These occasions are:
+
+\begin{itemize}
+	\item Notify a taxi driver that he has been assigned to a request.
+	\item Notify a passenger that his request has been accepted.
+	\item Notify a passenger that his request has been dropped.
+	\item Notify a taxi driver that his zone has changed.
+	\item Notify a taxi driver that his position in the zone queue has changed.
+\end{itemize}
+
+All these operations can be though as fairly simple. The resulting table is the following:
+\begin{fpcounttable}{EQ}
+Taxi request assignment notification & Low & 4 \\
+Request accepted notification & Low & 4 \\
+Request dropped notification & Low & 4 \\
+Zone changed notification & Low & 4 \\
+Position in the queue changed notification & Low & 4 \\\hline 
+\fptotal{20}	
+\end{fpcounttable}
+
+\subsection{Overall estimation}
+The following table summarizes the results of our estimation activity:
+
+\begin{fptotaltable}
+	Internal Logic Files & 55 \\
+	External Logic Files & 30 \\
+	External Inputs & 112 \\
+	External Inquiries & 21 \\
+	External Outputs & 20 \\\hline
+	Total & 238\\\hline
+\end{fptotaltable}
+
+Considering Java Enterprise Edition as a development platform and disregarding the aspects concerning the implementation of the mobile applications (which can be thought as pure presentation with no business logic), we can estimate the total number of lines of code.
+
+Depending on the conversion rate, we have a lower bound of:
+\begin{lstlisting}
+	SLOC = 238 * 46 = 10948
+\end{lstlisting}
+and an upper bound of
+\begin{lstlisting}
+	SLOC = 238 * 67 = 15946	
+\end{lstlisting}
 
 \section{Cost and effort estimation: COCOMO}
+
+\textbf{External Input (EI)}:
+Elementary operation to elaborate data coming form the external environment --> 
+login/logout, password retrieval, change settings for user, insert/update/delete zones, insert/update/delete taxi (drivers), register new passenger, delete passenger, new request, new reservation, delete reservation, accept ride, refuse ride, set availability, end ride, request stats, insert new app API key, refuse App API key, view reservation history
+
 \begin{itemize}
 \item \textbf{Internal Logical File (ILF)}:
 homogeneous set of data used and managed by the application --> 
@@ -93,9 +233,6 @@ tabelle che memorizziamo (utenti per loggarsi/admin?, dati tassisti, dati zone, 
 \item \textbf{External Interface File (EIF)}: homogeneous set of data used by the application but generated and maintained by other applications --> 
 dati del mapping service
 
-\item \textbf{External Input (EI)}:
-Elementary operation to elaborate data coming form the external environment --> 
-login/logout, password retrieval, change settings for user, insert/update/delete zones, insert/update/delete taxi (drivers), register new passenger, delete passenger, new request, new reservation, delete reservation, accept ride, refuse ride, set availability, end ride, request stats, insert new app API key, refuse App API key, view reservation history
 
 \item \textbf{External Output (EO)}:
 Elementary operation that generates data for the external environment. It usually includes the elaboration of data from logic files -->
