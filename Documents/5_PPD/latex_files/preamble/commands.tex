@@ -30,12 +30,31 @@
 	\end{longtable}
 }
 
+% FP table
+\newenvironment{fptable}[2]{
+	\begin{center}
+	#1
+	\begin{longtable}{|c|c|c|c|}
+	\hline 
+	&
+	\multicolumn{3}{|c|}{{#2}}\\\nopagebreak\hline	
+}{
+	\hline\end{longtable}\end{center}
+}
+
+
 % Methods in test tables
 \newcommand{\method}[1]{%
 	\nopagebreak
 	\multicolumn{2}{|c|}{{#1}}\\\nopagebreak\hline
 	\textit{Input} & \textit{Effect}\\\nopagebreak\hline
 }
+
+
+\newcommand{\fpvalues}[4]{%
+	\textit{#1} & \textit{#2}& \textit{#3}& \textit{#4}\\\nopagebreak\hline
+}
+	
 	
 % Double horizontal line for test table
 \newcommand{\dline}{\nopagebreak\hhline{|==|\nopagebreak}}

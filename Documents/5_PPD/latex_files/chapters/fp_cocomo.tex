@@ -1,5 +1,45 @@
 \chapter{Project size, cost and effort estimation}
+This section is specifically focused on providing some estimations of the expected size, cost and required effort of myTaxiService. 
 
+For the size estimation part we will essentially use the Function Points approach, taking into account all the main functionalities of myTaxiService and estimating the correspondent amount of lines of code to be written in Java. This estimation will only take into account the parts of the project that concur to the implementation of the business logic and will disregard the aspects concerning the user interface.
+
+For the cost and effort estimation we will instead rely on the COCOMO approach, using as in initial guidance the amount of lines of code computed with the FP approach. 
+\section{Size estimation: function points}
+The Function Points approach provides an estimation of the size of a project taking as inputs the amount of functionalities to be developed and their complexity.
+
+The estimation is based on the usage of figures obtained through statistical analysis of real projects, which have been properly normalized and condensed in the following tables:
+
+\begin{fptable}{For Internal Logic Files and External Logic Files}{Data Elements}
+\fpvalues{Record Elements}{1-19}{20-50}{51+}
+1 & Low & Low & Avg\\
+2-5 & Low & Avg & High\\
+6+ & Avg & High & High\\
+\end{fptable}
+
+\begin{fptable}{For External Output and External Inquiry}{Data Elements}
+\fpvalues{File Types}{1-5}{6-19}{20+}
+0-1 & Low & Low & Avg\\
+2-3 & Low & Avg & High\\
+4+ & Avg & High & High\\
+\end{fptable}
+
+\begin{fptable}{For External Input}{Data Elements}
+\fpvalues{File Types}{1-4}{5-15}{16+}
+0-1 & Low & Low & Avg\\
+2-3 & Low & Avg & High\\
+4+ & Avg & High & High\\
+\end{fptable}
+
+\begin{fptable}{UFP Complexity Weights}{Complexity Weight}
+\fpvalues{Function Type}{Low}{Average}{High}
+Internal Logic Files & 7 & 10 & 15\\
+External Logic Files & 5 & 7 & 10\\
+External Inputs & 3 & 4 & 6\\
+External Outputs & 4 & 5 & 7\\
+External Inquiries & 3 & 4 & 6\\
+\end{fptable}
+
+\section{Cost and effort estimation: COCOMO}
 
 
 Internal Logical File (ILF): homogeneous set of data used and managed by the application --> tabelle che memorizziamo (utenti per loggarsi/admin?, dati tassisti, dati zone, code x zona (e non solo), reservation, request (pending/soddisfatte), stato taxi, elenco app registrate x API con permissions, elenco permissions (in generale), settings x utenti?, dati statistici?) 
