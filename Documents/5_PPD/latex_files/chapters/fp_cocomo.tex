@@ -39,12 +39,34 @@ External Outputs & 4 & 5 & 7\\
 External Inquiries & 3 & 4 & 6\\
 \end{fptable}
 
+
 \section{Cost and effort estimation: COCOMO}
+\begin{itemize}
+\item \textbf{Internal Logical File (ILF)}:
+homogeneous set of data used and managed by the application --> 
+\begin{itemize}
+\item taxi drivers: firstname, lastname, birthdate, address, email, mobile phone number, taxi license, driver license, taxi plate number.
+\item zones: coordinates...
+\item queues: taxi number, position
+\item reservation list: passengerId, insertion timestamp, data, time, origin, destination, status
+\item request list: passengerId, insertion timestamp, origin, status, secret code
+\item 
+tabelle che memorizziamo (utenti per loggarsi/admin?, dati tassisti, dati zone, code x zona (e non solo), reservation, request (pending/soddisfatte), stato taxi, elenco app registrate x API con permissions, elenco permissions (in generale), settings x utenti?, dati statistici?) 
+\end{itemize}
 
+\item \textbf{External Interface File (EIF)}: homogeneous set of data used by the application but generated and maintained by other applications --> 
+dati del mapping service
 
-Internal Logical File (ILF): homogeneous set of data used and managed by the application --> tabelle che memorizziamo (utenti per loggarsi/admin?, dati tassisti, dati zone, code x zona (e non solo), reservation, request (pending/soddisfatte), stato taxi, elenco app registrate x API con permissions, elenco permissions (in generale), settings x utenti?, dati statistici?) 
+\item \textbf{External Input (EI)}:
+Elementary operation to elaborate data coming form the external environment --> 
+login/logout, password retrieval, change settings for user, insert/update/delete zones, insert/update/delete taxi (drivers), register new passenger, delete passenger, new request, new reservation, delete reservation, accept ride, refuse ride, set availability, end ride, request stats, insert new app API key, refuse App API key, view reservation history
 
-External Interface File (EIF): homogeneous set of data used by the application but generated and maintained by other applications --> dati del mapping service
-External InputElementary operation to elaborate data coming form the external environment --> login/logout, password retrieval, change settings for user, insert/update/delete zones, insert/update/delete taxi (drivers), register new passenger, delete passenger, new request, new reservation, delete reservation, accept ride, refuse ride, set availability, end ride, request stats, insert new app API key, refuse App API key, view reservation history
-External OutputElementary operation that generates data for the external environmentIt usually includes the elaboration of data from logic files --> notification to taxi driver that he has been assigned to a request/drive, notification to passenger that his request has been accepted / refused (no one is able to serve him), notify driver his zone has changed, notify driver his position in zone queue has changed... 
-External InquiryElementary operation that involves input and output Without significant elaboration of data from logic files --> taxi driver request his position in zone queue, passenger request his reservation history, show stats (only if precomputed), get taxi drivers in the system, get zones (admin.), get list of approved app APIs, get list of passengers
+\item \textbf{External Output (EO)}:
+Elementary operation that generates data for the external environment. It usually includes the elaboration of data from logic files -->
+notification to taxi driver that he has been assigned to a request/drive, notification to passenger that his request has been accepted / refused (no one is able to serve him), notify driver his zone has changed, notify driver his position in zone queue has changed... 
+
+\item \textbf{External Inquiry (EQ)}:
+Elementary operation that involves input and output Without significant elaboration of data from logic files -->
+taxi driver request his position in zone queue, passenger request his reservation history, show stats (only if precomputed), get taxi drivers in the system, get zones (admin.), get list of approved app APIs, get list of passengers
+
+\end{itemize}
