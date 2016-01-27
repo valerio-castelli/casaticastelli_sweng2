@@ -212,35 +212,309 @@ and an upper bound of
 	SLOC = 238 * 67 = 15946	
 \end{lstlisting}
 
-\section{Cost and effort estimation: COCOMO}
+\section{Cost and effort estimation: COCOMO II}
+In this section we're going to use the COCOMO II approach to estimate the cost and effort needed to develop myTaxiService.
+\subsection{Scale Drivers}
+In order to evaluate the values of the scale drivers, we refer to the following official COCOMO II table:
+\begin{scaledriverstable}{Scale Factor values, SF$_j$, for COCOMO II Models}
+	Scale Factors & Very Low & Low & Nominal & High & Very High & Extra High\\\hline
+	\addfactor{PREC}{thoroughly unprecedented}{largely unprecedented}{somewhat unprecedented}{generally familiar}{largely familiar}{thoroughly familiar}
+	\addfactorvalues{6.20}{4.96}{3.72}{2.48}{1.24}{0.00}
+	\addfactor{FLEX}{rigorous}{occasional relaxation}{some relaxation}{general conformity}{some conformity}{general goals}
+	\addfactorvalues{5.07}{4.05}{3.04}{2.03}{1.01}{0.00}
+	\addfactor{RESL}{little (20\%)}{some (40\%)}{often (60\%)}{generally (75\%)}{mostly (90\%)}{full (100\%)}
+	\addfactorvalues{7.07}{5.65}{4.24}{2.83}{1.41}{0.00}
+	\addfactor{TEAM}{very difficult interactions}{some difficult interactions}{basically cooperative interactions}{largely cooperative}{highly cooperative}{seamless interactions}
+	\addfactorvalues{5.48}{4.38}{3.29}{2.19}{1.10}{0.00}
+	\addfactor{PMAT}{Level 1 Lower}{Level 1 Upper}{Level 2}{Level 3}{Level 4}{Level 5}
+	\addfactorvalues{7.80}{6.24}{4.68}{3.12}{1.56}{0.00}
+\end{scaledriverstable}
 
-\textbf{External Input (EI)}:
-Elementary operation to elaborate data coming form the external environment --> 
-login/logout, password retrieval, change settings for user, insert/update/delete zones, insert/update/delete taxi (drivers), register new passenger, delete passenger, new request, new reservation, delete reservation, accept ride, refuse ride, set availability, end ride, request stats, insert new app API key, refuse App API key, view reservation history
-
+A brief description for each scale driver:
 \begin{itemize}
-\item \textbf{Internal Logical File (ILF)}:
-homogeneous set of data used and managed by the application --> 
-\begin{itemize}
-\item taxi drivers: firstname, lastname, birthdate, address, email, mobile phone number, taxi license, driver license, taxi plate number.
-\item zones: coordinates...
-\item queues: taxi number, position
-\item reservation list: passengerId, insertion timestamp, data, time, origin, destination, status
-\item request list: passengerId, insertion timestamp, origin, status, secret code
-\item 
-tabelle che memorizziamo (utenti per loggarsi/admin?, dati tassisti, dati zone, code x zona (e non solo), reservation, request (pending/soddisfatte), stato taxi, elenco app registrate x API con permissions, elenco permissions (in generale), settings x utenti?, dati statistici?) 
+	\item Precedentedness: it reflects the previous experience of our team with the development of large scale projects. Since we are not expert in the field, this value will be low.
+	\item Development flexibility: it reflects the degree of flexibility in the development process with respect to the external specification and requirements. Since there are very strict requirements on the functionalities but nothing specific is stated as for the technology to be used, this value will be low.
+	\item Risk resolution: reflects the level of awareness and reactiveness with respect to risks. The risk analysis we performed is quite extensive, so the value will be set to very high.
+	\item Team cohesion: it's an indicator of how well the team members know each other and work together in a cooperative way. For our team, the value is very high.
+	\item Process maturity: although we had some problems during the development of the project, the goals have been successfully achieved, so this value is set to high.
 \end{itemize}
 
-\item \textbf{External Interface File (EIF)}: homogeneous set of data used by the application but generated and maintained by other applications --> 
-dati del mapping service
+The results of our evaluation is the following:
+\begin{factorcounttable}{Scale Driver}
+	Precedented (PREC) & Low & 4.96\\
+	Development flexibility (FLEX) & Low & 4.05\\
+	Risk resolution (RESL) & Very high & 1.41\\
+	Team cohesion (TEAM) & Very high & 1.10\\
+	Process maturity (PMAT) & Very high & 3.12\\\hline
+	\fptotal{14,64}
+\end{factorcounttable}
 
-
-\item \textbf{External Output (EO)}:
-Elementary operation that generates data for the external environment. It usually includes the elaboration of data from logic files -->
-notification to taxi driver that he has been assigned to a request/drive, notification to passenger that his request has been accepted / refused (no one is able to serve him), notify driver his zone has changed, notify driver his position in zone queue has changed... 
-
-\item \textbf{External Inquiry (EQ)}:
-Elementary operation that involves input and output Without significant elaboration of data from logic files -->
-taxi driver request his position in zone queue, passenger request his reservation history, show stats (only if precomputed), get taxi drivers in the system, get zones (admin.), get list of approved app APIs, get list of passengers
-
+\subsection{Cost Drivers}
+\begin{itemize}
+	\item Required Software Reliability:
+	\begin{itemize}
+	\item[] Since the system represents the only way to get taxis in the city, a malfunctioning could lead to important financial losses. For this reason, the RELY cost driver is set to high.
+	\begin{costdriverstable}{RELY Cost Drivers}
+		\costdescriptors{RELY Descriptors}{slightly inconvenience}{easily recoverable losses}{moderate recoverable losses}{high financial loss}{risk to human life}{}\hline
+		\ratinglevel{Very low}{Low}{Nominal}{High}{Very High}{Extra High}
+		\effortmultipliers{0.82}{0.92}{1.00}{1.10}{1.26}{n/a}
+	\end{costdriverstable}
+	\end{itemize}
 \end{itemize}
+
+\begin{itemize}
+	\item Database size:
+	\begin{itemize}
+	\item[] This measure considers the effective dimension of our database. We don't have the ultimate answer, but our estimation given the tables and fields we have is to reach a 3GB database. Since it is distributed over 10.000-15.000 SLOC, the ratio D/P is between 209 and 314, resulting in the DATA cost driver being high. 
+	\begin{costdriverstable}{DATA Cost Drivers}
+		\costdescriptors{DATA Descriptors}{}{Testing DB bytes/pgm SLOC $<$ 10}{10$\le$D/P$\le$100}{100$\le$/P$\le$000}{DP $>$ 1000}{}\hline
+		\ratinglevel{Very low}{Low}{Nominal}{High}{Very High}{Extra High}
+		\effortmultipliers{n/a}{0.90}{1.00}{1.14}{1.28}{n/a}
+	\end{costdriverstable}
+	\end{itemize}
+\end{itemize}
+
+\begin{itemize}
+	\item Product complexity: 
+	\begin{itemize}
+	\item[] Set to very high according to the COCOMO II rating scale.
+	\begin{costdriverstable}{CPLX Cost Driver}
+		\ratinglevel{Very low}{Low}{Nominal}{High}{Very High}{Extra High}
+		\effortmultipliers{0.73}{0.87}{1.00}{1.17}{1.34}{1.74}	
+	\end{costdriverstable}
+	\end{itemize}
+\end{itemize}
+
+\begin{itemize}
+	\item Required reusability: 
+	\begin{itemize}
+	\item[] In our case, the reusability requirements are limited in scope to the project itself, so the RUSE cost driver is set to nominal.
+	\begin{costdriverstable}{RUSE Cost Driver}
+		\costdescriptors{RUSE Descriptors}{}{None}{Across project}{Across program}{Across product line}{Across multiple product lines}\hline
+		\ratinglevel{Very low}{Low}{Nominal}{High}{Very High}{Extra High}
+		\effortmultipliers{n/a}{0.95}{1.00}{1.07}{1.15}{1.24}		
+	\end{costdriverstable}
+	\end{itemize}
+\end{itemize}
+
+\begin{itemize}
+	\item Documentation match to life-cycle needs: 
+	\begin{itemize}
+	\item[] This parameter describes the relationship between the  documentation and the application requirements. In our case, every need of the product life-cycle is already foreseen in the documentation, so the DOCU cost driver is set to nominal.
+	\begin{costdriverstable}{DOCU Cost Driver}
+		\costdescriptors{DOCU Descriptors}{Many life-cycle needs uncovered}{Some life-cycle needs uncovered}{Right-sized to life-cycle needs}{Excessive for life-cycle needs}{Very excessive for life-cycle needs}{}\hline
+		\ratinglevel{Very low}{Low}{Nominal}{High}{Very High}{Extra High}
+		\effortmultipliers{0.81}{0.91}{1.00}{1.11}{1.23}{n/a}		
+	\end{costdriverstable}
+	\end{itemize}
+\end{itemize}
+
+\begin{itemize}
+	\item Execution time constraint: 
+	\begin{itemize}
+	\item[] This parameter describes the expected amount of CPU usage with respect to the computational capabilities of the hardware. As myTaxiService is a quite complex software, our expectance is that its CPU usage will be very high.
+	\begin{costdriverstable}{TIME Cost Driver}
+		\costdescriptors{TIME Descriptors}{}{}{$\le$ 50\% use of available execution time}{70\% use of available execution time}{85\% use of available execution time} {95\% use of available execution time}\hline
+		\ratinglevel{Very low}{Low}{Nominal}{High}{Very High}{Extra High}
+		\effortmultipliers{n/a}{n/a}{1.00}{1.11}{1.29}{1.63}	
+	\end{costdriverstable}
+	\end{itemize}
+\end{itemize}
+
+\begin{itemize}
+	\item Storage constraint: 
+	\begin{itemize}
+	\item[] This parameter describes the expected amount of storage usage with respect to the availability of the hardware. As current disk drives can easily contain several terabytes of storage, this value is set to nominal.
+	\begin{costdriverstable}{STOR Cost Driver}
+		\costdescriptors{STOR Descriptors}{}{}{$\le$  50\% use of available storage}{70\% use of available storage}{85\% use of available storage} {95\% use of available storage}\hline
+		\ratinglevel{Very low}{Low}{Nominal}{High}{Very High}{Extra High}
+		\effortmultipliers{n/a}{n/a}{1.00}{1.05}{1.17}{1.46}	
+	\end{costdriverstable}
+	\end{itemize}
+\end{itemize}
+
+\begin{itemize}
+	\item Platform Volatility: 
+	\begin{itemize}
+	\item[] For what concerns the core system, we don't expect our fundamental platforms to change very often. However, the client applications may require at least a major release once every six months to be aligned with the development cycle of the main mobile operating systems. For this reason, this parameter is set to nominal.
+	\begin{costdriverstable}{PVOL Cost Driver}
+		\costdescriptors{PVOL Descriptors}{}{Major change every 12 mo., minor change every 1 mo.}{Major: 6mo; minor: 2wk.}{Major: 2mo, minor: 1wk}	{Major: 2wk; minor: 2 days}{}\hline
+		\ratinglevel{Very low}{Low}{Nominal}{High}{Very High}{Extra High}
+		\effortmultipliers{n/a}{0.87}{1.00}{1.15}{1.30}{n/a}
+	\end{costdriverstable}
+	\end{itemize}
+\end{itemize}
+
+\begin{itemize}
+	\item Analyst Capability: 
+	\begin{itemize}
+	\item[] We think the analysis of the problem has been conducted in a thorough and complete way with respect to a potential real world implementation. For this reason, this parameter is set to high.
+	\begin{costdriverstable}{ACAP Cost Driver}
+		\costdescriptors{ACAP Descriptors}{15th percentile}{35th percentile}{55th percentile}{75th percentile}{90th percentile}{}\hline
+		\ratinglevel{Very low}{Low}{Nominal}{High}{Very High}{Extra High}
+		\effortmultipliers{1.42}{1.19}{1.00}{0.85}{0.71}{n/a}	
+	\end{costdriverstable}
+	\end{itemize}
+\end{itemize}
+
+\begin{itemize}
+	\item Programmer Capability: 
+	\begin{itemize}
+	\item[] We have not implemented the project, so this parameter is just an estimation; however we are fairly in our programming abilities, so we'll set this parameter to high.
+	\begin{costdriverstable}{PCAP Cost Driver}
+		\costdescriptors{PCAP Descriptors}{15th percentile}{35th percentile}{55th percentile}{75th percentile}{90th percentile}{}\hline
+		\ratinglevel{Very low}{Low}{Nominal}{High}{Very High}{Extra High}
+		\effortmultipliers{1.34}{1.15}{1.00}{0.88}{0.76}{n/a}	
+	\end{costdriverstable}
+	\end{itemize}
+\end{itemize}
+
+\begin{itemize}
+	\item Application Experience: 
+	\begin{itemize}
+	\item[] We have some experience in the development of Java applications, but we never tackled a Java EE system of this kind. For this reason we're going to set this parameter to low. 
+	\begin{costdriverstable}{APEX Cost Driver}
+		\costdescriptors{APEX Descriptors}{$\le$ 2 months}{6 months}{1 year}{3 years}{6 years}{}\hline
+		\ratinglevel{Very low}{Low}{Nominal}{High}{Very High}{Extra High}
+		\effortmultipliers{1.22}{1.10}{1.00}{0.88}{0.81}{n/a}
+	\end{costdriverstable}
+	\end{itemize}
+\end{itemize}
+
+\begin{itemize}
+	\item Platform Experience: 
+	\begin{itemize}
+	\item[] We don't have any experience with the Java EE platform, but we have some previous experience with databases, user interfaces and server side development. For this reason, we're going to set this parameter to nominal.
+	\begin{costdriverstable}{PLEX Cost Driver}
+		\costdescriptors{PLEX Descriptors}{$\le$ 2 months}{6 months}{1 year}{3 years}{6 years}{}\hline
+		\ratinglevel{Very low}{Low}{Nominal}{High}{Very High}{Extra High}
+		\effortmultipliers{1.19}{1.09}{1.00}{0.91}{0.85}{n/a}
+	\end{costdriverstable}
+	\end{itemize}
+\end{itemize}
+
+\begin{itemize}
+	\item Language and Tool Experience: 
+	\begin{itemize}
+	\item[] We don't have any experience with the Java EE platform, but we have some previous experience with databases, user interfaces and server side development. We are also knowledgable of the development environment, so we're going to set this parameter to nominal.
+	\begin{costdriverstable}{LTEX Cost Driver}
+		\costdescriptors{LTEX Descriptors}{$\le$ 2 months}{6 months}{1 year}{3 years}{6 years}{}\hline
+		\ratinglevel{Very low}{Low}{Nominal}{High}{Very High}{Extra High}
+		\effortmultipliers{1.20}{1.09}{1.00}{0.91}{0.84}{n/a}
+	\end{costdriverstable}
+	\end{itemize}
+\end{itemize}
+
+\begin{itemize}
+	\item Personnel continuity: 
+	\begin{itemize}
+	\item[] This parameter is quite relevant in our case, since the time we can spend on this project is limited. For this reason, this parameter is set to very low. 
+	\begin{costdriverstable}{PCON Cost Driver}
+		\costdescriptors{PCON Descriptors}{48\% / year}{24\% / year}{12\% / year}{6\% / year}{3\% / year}{}\hline	
+		\ratinglevel{Very low}{Low}{Nominal}{High}{Very High}{Extra High}
+		\effortmultipliers{1.29}{1.12}{1.00}{0.90}{0.81}{n/a}
+	\end{costdriverstable}
+	\end{itemize}
+\end{itemize}
+
+\begin{itemize}
+	\item Usage of Software Tools: 
+	\begin{itemize}
+	\item[] Our application environment is complete and well integrated, so we'll set this parameter as high. 
+	\begin{costdriverstable}{TOOL Cost Driver}
+		\costdescriptors{TOOL Descriptors}{edit, code, debug}{simple, frontend, backend CASE, little integration}{basic life-cycle tools, moderately integrated}{strong, mature life-cycle tools, moderately integrated}{strong, mature, proactive life-cycle tools, well integrated with processes, methods, reuse}{}\hline
+		\ratinglevel{Very low}{Low}{Nominal}{High}{Very High}{Extra High}
+		\effortmultipliers{1.17}{1.09}{1.00}{0.90}{0.78}{n/a}	
+	\end{costdriverstable}
+	\end{itemize}
+\end{itemize}
+
+\begin{itemize}
+	\item Multisite development: 
+	\begin{itemize}
+	\item[] Although we live in two different cities, we have collaborated relying hugely on wideband Internet services including social networks and emails. For this reason, we're going to set this parameter to very high.
+	\begin{costdriverstable}{SITE Cost Driver}
+		\costdescriptors{SITE Collocation Descriptors}{International}{Multi-city and multi-company}{Multi-city or multi-company}{Same city or metro area}{Same building or complex}{Fully collocated}
+		\costdescriptors{SITE Communications Descriptors}{Some phone, mail}{Individual phone, fax}{Narrow band email}{Wideband electronic communication}{Wideband elect. comm., occasional video conf.}{Interactive multimedia}\hline
+		\ratinglevel{Very low}{Low}{Nominal}{High}{Very High}{Extra High}
+		\effortmultipliers{1.22}{1.09}{1.00}{0.93}{0.86}{0.80}		
+	\end{costdriverstable}
+	\end{itemize}
+\end{itemize}
+
+\begin{itemize}
+	\item Required development schedule: 
+	\begin{itemize}
+	\item[] Although our efforts were well distributed over the available development time, the definition of all the required documentation took a consistent amount of time, especially for the requirement analysis and the design phases. For this reason, this parameter is set to high.
+	\begin{costdriverstable}{SCED Cost Driver}
+		\costdescriptors{SCED Descriptors}{75\% of nominal}{85\% of nominal}{100\% of nominal}{130\% of nominal}{160\% of nominal}{}\hline
+		\ratinglevel{Very low}{Low}{Nominal}{High}{Very High}{Extra High}
+		\effortmultipliers{1.43}{1.14}{1.00}{1.00}{1.00}{n/a}	
+	\end{costdriverstable}
+	\end{itemize}
+\end{itemize}
+
+
+Overall, our results are expressed by the following table:
+\begin{factorcounttable}{Cost Driver}
+	Required Software Reliability (RELY) & High & 1.10\\
+	Database size (DATA) & High & 1.14\\
+	Product complexity (CPLX) & Very high & 1.34\\
+	Required Reusability (RUSE) & Nominal & 1.00\\
+	Documentation match to life-cycle needs (DOCU) & Nominal & 1.00\\
+	Execution Time Constraint (TIME) & Very high & 1.29 \\
+	Main storage constraint (STOR) & Nominal & 1.00 \\
+	Platform volatility (PVOL) & Nominal & 1.00 \\
+	Analyst capability (ACAP) & High & 0.85 \\
+	Programmer capability (PCAP) & High & 0.88 \\
+	Application Experience (APEX) & Low & 1.10 \\
+	Platform Experience (PLEX) & Nominal & 1.00 \\
+	Language and Tool Experience (LTEX) & Nominal & 1.00 \\
+	Personnel continuity (PCON) & Very low & 1.12 \\
+	Usage of Software Tools (TOOL) & High & 0.90 \\
+	Multisite development (SITE) & Very high & 0.86 \\
+	Required development schedule (SCED) & High & 1.00 \\\hline
+	\fptotal{1,54613}
+\end{factorcounttable}
+
+\subsection{Effort equation}
+This final equation gives us the effort estimation measured in Person-Months (PM):
+\begin{lstlisting}[mathescape]
+	Effort = A * EAF * KSLOC$^E$
+\end{lstlisting}
+where:
+\begin{lstlisting}[mathescape]
+	A = 2.94 (for COCOMO II) 
+	EAF = product of all cost drivers (1.54613)
+	E = exponent derived from the scale drivers. It is computed as:
+		B + 0.01 * $\sum_{i} SF[i]$ = B + 0.01 * 14.64 = 0.91 + 0.1464 = 1.0564
+		in which B is equal to: 0.91 for COCOMO II.
+\end{lstlisting}
+
+With this parameters we can compute the effort value, which has a lower bound of:
+\begin{lstlisting}[mathescape]
+	Effort = A * EAF * KSLOC$^E$ = 2.94 * 1.54613 * 10.948$^{1.0564}$ = 56.957 PM $\approx$ 57 PM
+\end{lstlisting}
+and an upper bound of:
+\begin{lstlisting}[mathescape]
+	Effort = A * EAF * KSLOC$^E$ = 2.94 * 1.54613 * 15.946$^{1.0564}$ = 84.737 PM $\approx$ 85 PM
+\end{lstlisting}
+
+\subsection{Schedule estimation}
+Regarding the final schedule, we are going to use the following formula:
+\begin{lstlisting}[mathescape]
+	Duration = 3.67 * Effort$^E$
+\end{lstlisting}
+As a lower bound, we consider
+\begin{lstlisting}[mathescape]
+	F = 0.28 + 0.2 * (E - B) = 0.28 + 0.2 * 0.1464 = 0.30928
+	Effort = 56.957 PM 
+	Duration = 3.67 * (56.957)$^{0.30928}$ = 12.81 months
+\end{lstlisting}
+while as an upper bound, we consider
+\begin{lstlisting}[mathescape]
+	F = 0.28 + 0.2 * (E - B) = 0.28 + 0.2 * 0.1464 = 0.30928
+	Effort = 84.737 PM 
+	Duration = 3.67 * (56.957)$^{0.30928}$ = 14.49 months
+\end{lstlisting}
+which seem to be both reasonable estimates. 

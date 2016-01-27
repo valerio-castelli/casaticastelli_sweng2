@@ -30,8 +30,6 @@
 	\end{longtable}
 }
 
-
-
 % FP table
 \newenvironment{fptable}[2]{
 	\begin{center}
@@ -39,7 +37,7 @@
 	\begin{longtable}{|c|c|c|c|}
 	\hline 
 	&
-	\multicolumn{3}{|c|}{{#2}}\\\hline	
+	\multicolumn{3}{|c|}{{#2}}\\\nopagebreak\hline	
 }{
 	\hline\end{longtable}\end{center}
 }
@@ -68,16 +66,69 @@
 	& #1\\\hline
 }
 
+%  table
+\newenvironment{scaledriverstable}[1]{
+	\begin{center}
+	#1 
+	\begin{longtable}{|p{\dimexpr.16\textwidth}|p{\dimexpr.14\textwidth}|p{\dimexpr.14\textwidth}|p{\dimexpr.14\textwidth}|p{\dimexpr.14\textwidth}|p{\dimexpr.14\textwidth}|p{\dimexpr.14\textwidth}|}
+	\hline
+}{
+	\hline\end{longtable}\end{center}
+}
+
+% scale driver count table
+\newenvironment{factorcounttable}[1]{
+	\begin{center}
+	\begin{longtable}{|l|r|r|}
+	\hline 
+	#1 & Factor & Value \\\hline
+}{
+	\end{longtable}\end{center}
+}
+
+%  table
+\newenvironment{costdriverstable}[1]{
+	\begin{center}
+	#1 
+	\begin{longtable}{|p{\dimexpr.16\textwidth}|p{\dimexpr.14\textwidth}|p{\dimexpr.14\textwidth}|p{\dimexpr.14\textwidth}|p{\dimexpr.14\textwidth}|p{\dimexpr.14\textwidth}|p{\dimexpr.14\textwidth}|}
+	\hline
+}{
+	\hline\end{longtable}\end{center}
+}
+
+\newcommand{\costdescriptors}[7]{
+	#1 & #2 & #3 & #4 & #5 & #6 & #7\\
+}
+
+\newcommand{\ratinglevel}[6]{
+	Rating level & #1 & #2 & #3 & #4 & #5 & #6 \\\hline
+}
+
+\newcommand{\effortmultipliers}[6]{
+	Effort multipliers & #1 & #2 & #3 & #4 & #5 & #6 \\\hline
+}
+
+
+\newcommand{\addfactor}[7]{
+	#1 & #2 & #3 & #4 & #5 & #6 & #7 \\
+}
+\newcommand{\addfactorvalues}[6]{
+SF$_j$ & #1 & #2 & #3 & #4 & #5 & #6 \\\hline
+}
+
+	
+
+
 % Methods in test tables
 \newcommand{\method}[1]{%
 	\nopagebreak
-	\multicolumn{2}{|c|}{{#1}}\\\hline
-	\textit{Input} & \textit{Effect}\\\hline
+	\multicolumn{2}{|c|}{{#1}}\\\nopagebreak\hline
+	\textit{Input} & \textit{Effect}\\\nopagebreak\hline
 }
 
 
 \newcommand{\fpvalues}[4]{%
-	\textit{#1} & \textit{#2}& \textit{#3}& \textit{#4}\\\hline
+	\textit{#1} & \textit{#2}& \textit{#3}& \textit{#4}\\\nopagebreak\hline
 }
 	
 	
