@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Software Engineering 2 Project" company="C&amp;C" webLink="http://" view-date="2015-09-01" view-index="0" gantt-divider-location="484" resource-divider-location="306" version="2.7.1" locale="en_GB">
+<?xml version="1.0" encoding="UTF-8"?><project name="myTaxiService Project" company="C&amp;C" webLink="http://" view-date="2015-09-01" view-index="0" gantt-divider-location="484" resource-divider-location="306" version="2.7.1" locale="en_GB">
     <description/>
     <view zooming-state="default:9" id="gantt-chart">
         <field id="tpd3" name="Name" width="100" order="0"/>
