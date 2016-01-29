@@ -252,40 +252,28 @@ The results of our evaluation is the following:
 \end{factorcounttable}
 
 \subsection{Cost Drivers}
-\begin{itemize}
-	\item Required Software Reliability:
-	\begin{itemize}
-	\item[] Since the system represents the only way to get taxis in the city, a malfunctioning could lead to important financial losses. For this reason, the RELY cost driver is set to high.
-	\begin{costdriverstable}{RELY Cost Drivers}
-		\costdescriptors{RELY Descriptors}{slightly inconvenience}{easily recoverable losses}{moderate recoverable losses}{high financial loss}{risk to human life}{}\hline
-		\ratinglevel{Very low}{Low}{Nominal}{High}{Very High}{Extra High}
-		\effortmultipliers{0.82}{0.92}{1.00}{1.10}{1.26}{n/a}
-	\end{costdriverstable}
-	\end{itemize}
-\end{itemize}
+\paragraph{Required Software Reliability}
+Since the system represents the only way to get taxis in the city, a malfunctioning could lead to important financial losses. For this reason, the RELY cost driver is set to high.
+\begin{costdriverstable}{RELY Cost Drivers}
+	\costdescriptors{RELY Descriptors}{slightly inconvenience}{easily recoverable losses}{moderate recoverable losses}{high financial loss}{risk to human life}{}\hline
+	\ratinglevel{Very low}{Low}{Nominal}{High}{Very High}{Extra High}
+	\effortmultipliers{0.82}{0.92}{1.00}{1.10}{1.26}{n/a}
+\end{costdriverstable}
 
-\begin{itemize}
-	\item Database size:
-	\begin{itemize}
-	\item[] This measure considers the effective dimension of our database. We don't have the ultimate answer, but our estimation given the tables and fields we have is to reach a 3GB database. Since it is distributed over 10.000-15.000 SLOC, the ratio D/P is between 209 and 314, resulting in the DATA cost driver being high. 
-	\begin{costdriverstable}{DATA Cost Drivers}
-		\costdescriptors{DATA Descriptors}{}{Testing DB bytes/pgm SLOC $<$ 10}{10$\le$D/P$\le$100}{100$\le$/P$\le$000}{DP $>$ 1000}{}\hline
-		\ratinglevel{Very low}{Low}{Nominal}{High}{Very High}{Extra High}
-		\effortmultipliers{n/a}{0.90}{1.00}{1.14}{1.28}{n/a}
-	\end{costdriverstable}
-	\end{itemize}
-\end{itemize}
+\paragraph{Database size}
+This measure considers the effective dimension of our database. We don't have the ultimate answer, but our estimation given the tables and fields we have is to reach a 3GB database. Since it is distributed over 10.000-15.000 SLOC, the ratio D/P is between 209 and 314, resulting in the DATA cost driver being high. 
+\begin{costdriverstable}{DATA Cost Drivers}
+	\costdescriptors{DATA Descriptors}{}{Testing DB bytes/pgm SLOC $<$ 10}{10$\le$D/P$\le$100}{100$\le$/P$\le$000}{DP $>$ 1000}{}\hline
+	\ratinglevel{Very low}{Low}{Nominal}{High}{Very High}{Extra High}
+	\effortmultipliers{n/a}{0.90}{1.00}{1.14}{1.28}{n/a}
+\end{costdriverstable}
 
-\begin{itemize}
-	\item Product complexity: 
-	\begin{itemize}
-	\item[] Set to very high according to the COCOMO II rating scale.
-	\begin{costdriverstable}{CPLX Cost Driver}
-		\ratinglevel{Very low}{Low}{Nominal}{High}{Very High}{Extra High}
-		\effortmultipliers{0.73}{0.87}{1.00}{1.17}{1.34}{1.74}	
-	\end{costdriverstable}
-	\end{itemize}
-\end{itemize}
+\paragraph{Product complexity}
+Set to very high according to the COCOMO II rating scale.
+\begin{costdriverstable}{CPLX Cost Driver}
+	\ratinglevel{Very low}{Low}{Nominal}{High}{Very High}{Extra High}
+	\effortmultipliers{0.73}{0.87}{1.00}{1.17}{1.34}{1.74}	
+\end{costdriverstable}
 
 \begin{itemize}
 	\item Required reusability: 

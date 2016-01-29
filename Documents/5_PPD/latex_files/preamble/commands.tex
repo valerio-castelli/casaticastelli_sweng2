@@ -68,6 +68,7 @@
 
 %  table
 \newenvironment{scaledriverstable}[1]{
+	\setlength{\LTleft}{-40pt}
 	\begin{center}
 	#1 
 	\begin{longtable}{|p{\dimexpr.16\textwidth}|p{\dimexpr.14\textwidth}|p{\dimexpr.14\textwidth}|p{\dimexpr.14\textwidth}|p{\dimexpr.14\textwidth}|p{\dimexpr.14\textwidth}|p{\dimexpr.14\textwidth}|}
@@ -88,12 +89,12 @@
 
 %  table
 \newenvironment{costdriverstable}[1]{
-	\begin{center}
-	#1 
+	\setlength{\LTleft}{-40pt}
 	\begin{longtable}{|p{\dimexpr.16\textwidth}|p{\dimexpr.14\textwidth}|p{\dimexpr.14\textwidth}|p{\dimexpr.14\textwidth}|p{\dimexpr.14\textwidth}|p{\dimexpr.14\textwidth}|p{\dimexpr.14\textwidth}|}
 	\hline
+	\multicolumn{7}{|c|}{{#1}}\\\hhline{|=======|}
 }{
-	\hline\end{longtable}\end{center}
+	\hline\end{longtable}
 }
 
 \newcommand{\costdescriptors}[7]{
