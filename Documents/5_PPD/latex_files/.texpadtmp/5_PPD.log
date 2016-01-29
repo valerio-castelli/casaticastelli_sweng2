@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.21)  27 JAN 2016 23:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.21)  29 JAN 2016 23:46
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -508,24 +508,63 @@ Package: seqsplit 2006/08/07 v0.1 Splitting long sequences (DNA, RNA, proteins, 
 \bigstrutjot=\dimen118
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/tools/hhline.sty
 Package: hhline 2014/10/28 v2.03 Table rule package (DPC)
-) (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count116
-\lst@gtempboxa=\box37
-\lst@token=\toks24
-\lst@length=\count117
-\lst@currlwidth=\dimen119
-\lst@column=\count118
-\lst@pos=\count119
-\lst@lostspace=\dimen120
-\lst@width=\dimen121
-\lst@newlines=\count120
-\lst@lineno=\count121
-\lst@maxwidth=\dimen122
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2012/05/21 v1.0 Adjusting TeX boxes (trim, clip, ...)
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+ (/usr/local/texlive/2015/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/local/texlive/2015/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks24
+\XKV@tempa@toks=\toks25
+)
+\XKV@depth=\count116
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (/usr/local/texlive/2015/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back-ends (calc, etex, pgfmath)
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box37
+)
+\tc@llx=\dimen119
+\tc@lly=\dimen120
+\tc@urx=\dimen121
+\tc@ury=\dimen122
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen123
+\adjbox@Height=\dimen124
+\adjbox@Depth=\dimen125
+\adjbox@Totalheight=\dimen126
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2011/09/13 v1.0 Conditionals for odd/even page detection
+\c@checkoddpage=\count117
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box38
+\sift@deathcycles=\count118
+\@vwid@loff=\dimen127
+\@vwid@roff=\dimen128
+)) (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count119
+\lst@gtempboxa=\box39
+\lst@token=\toks26
+\lst@length=\count120
+\lst@currlwidth=\dimen129
+\lst@column=\count121
+\lst@pos=\count122
+\lst@lostspace=\dimen130
+\lst@width=\dimen131
+\lst@newlines=\count123
+\lst@lineno=\count124
+\lst@maxwidth=\dimen132
  (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
-\c@lstnumber=\count122
-\lst@skipnumbers=\count123
-\lst@framebox=\box38
+\c@lstnumber=\count125
+\lst@skipnumbers=\count126
+\lst@framebox=\box40
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2014/09/06 1.5e listings configuration
 ))
@@ -549,14 +588,14 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
-\AtBeginShipoutBox=\box39
+\AtBeginShipoutBox=\box41
 Package hyperref Info: Link coloring OFF on input line 4.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
  (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count124
+\c@section@level=\count127
 )
 LaTeX Info: Redefining \ref on input line 4.
 LaTeX Info: Redefining \pageref on input line 4.
@@ -567,19 +606,19 @@ LaTeX Info: Redefining \nameref on input line 4.
 
  (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count125
-\scratchdimen=\dimen123
-\scratchbox=\box40
-\nofMPsegments=\count126
-\nofMParguments=\count127
-\everyMPshowfont=\toks25
-\MPscratchCnt=\count128
-\MPscratchDim=\dimen124
-\MPnumerator=\count129
-\makeMPintoPDFobject=\count130
-\everyMPtoPDFconversion=\toks26
+\scratchcounter=\count128
+\scratchdimen=\dimen133
+\scratchbox=\box42
+\nofMPsegments=\count129
+\nofMParguments=\count130
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count131
+\MPscratchDim=\dimen134
+\MPnumerator=\count132
+\makeMPintoPDFobject=\count133
+\everyMPtoPDFconversion=\toks28
 )
-\c@lstlisting=\count131
+\c@lstlisting=\count134
  (./title/title_page.tex <title/polimi_logo.png, id=108, 419.31656pt x 417.81094pt>
 File: title/polimi_logo.png Graphic file (type png)
  <use title/polimi_logo.png>
@@ -658,22 +697,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 63--63
-\OT1/cmr/m/n/10.95 add the
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 63--63
-\OT1/cmr/m/n/10.95 sta-tis-ti-cal
- []
-
-
-Underfull \hbox (badness 2781) in paragraph at lines 63--63
-\OT1/cmr/m/n/10.95 puted set
- []
-
-
-Underfull \vbox (badness 10000) detected at line 76
+Underfull \vbox (badness 10000) detected at line 74
  []
 
 
@@ -683,7 +707,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [5]
-Underfull \vbox (badness 10000) detected at line 97
+Underfull \vbox (badness 10000) detected at line 95
  []
 
 
@@ -693,7 +717,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [6]
-Underfull \vbox (badness 10000) detected at line 146
+Underfull \vbox (badness 10000) detected at line 144
  []
 
 
@@ -710,15 +734,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [8]
-Underfull \vbox (badness 10000) detected at line 169
+Underfull \vbox (badness 10000) detected at line 167
  []
 
 
-Underfull \vbox (badness 10000) detected at line 190
+Underfull \vbox (badness 10000) detected at line 188
  []
 
 
-Underfull \vbox (badness 10000) detected at line 202
+Underfull \vbox (badness 10000) detected at line 200
  []
 
 
@@ -729,164 +753,164 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [9]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 208.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 206.
 
-Underfull \hbox (badness 10000) in paragraph at lines 220--220
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
 []|\OT1/cmr/m/n/10.95 Scale Fac-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 220--220
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
 []|\OT1/cmr/m/n/10.95 Extra
  []
 
 
-Overfull \hbox (1.64323pt too wide) in paragraph at lines 221--221
+Overfull \hbox (1.64323pt too wide) in paragraph at lines 220--220
 []|\OT1/cmr/m/n/10.95 thoroughly
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 221--221
+Underfull \hbox (badness 10000) in paragraph at lines 220--220
 \OT1/cmr/m/n/10.95 un-prece-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 221--221
+Underfull \hbox (badness 10000) in paragraph at lines 220--220
 []|\OT1/cmr/m/n/10.95 largely
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 221--221
+Underfull \hbox (badness 10000) in paragraph at lines 220--220
 \OT1/cmr/m/n/10.95 un-prece-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 221--221
+Underfull \hbox (badness 10000) in paragraph at lines 220--220
 []|\OT1/cmr/m/n/10.95 somewhat
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 221--221
+Underfull \hbox (badness 10000) in paragraph at lines 220--220
 \OT1/cmr/m/n/10.95 un-prece-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 221--221
+Underfull \hbox (badness 10000) in paragraph at lines 220--220
 []|\OT1/cmr/m/n/10.95 generally
  []
 
 
-Overfull \hbox (1.64323pt too wide) in paragraph at lines 221--222
+Overfull \hbox (1.64323pt too wide) in paragraph at lines 220--221
 []|\OT1/cmr/m/n/10.95 thoroughly
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 223--223
+Underfull \hbox (badness 10000) in paragraph at lines 222--222
 []|\OT1/cmr/m/n/10.95 occasional
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 223--223
+Underfull \hbox (badness 10000) in paragraph at lines 222--222
 []|\OT1/cmr/m/n/10.95 some
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 223--223
+Underfull \hbox (badness 10000) in paragraph at lines 222--222
 []|\OT1/cmr/m/n/10.95 general
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 223--223
+Underfull \hbox (badness 10000) in paragraph at lines 222--222
 \OT1/cmr/m/n/10.95 con-for-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 223--224
+Underfull \hbox (badness 10000) in paragraph at lines 222--223
 []|\OT1/cmr/m/n/10.95 general
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 225--225
+Underfull \hbox (badness 10000) in paragraph at lines 224--224
 []|\OT1/cmr/m/n/10.95 little
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 225--225
+Underfull \hbox (badness 10000) in paragraph at lines 224--224
 []|\OT1/cmr/m/n/10.95 some
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 225--225
+Underfull \hbox (badness 10000) in paragraph at lines 224--224
 []|\OT1/cmr/m/n/10.95 often
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 225--225
+Underfull \hbox (badness 10000) in paragraph at lines 224--224
 []|\OT1/cmr/m/n/10.95 generally
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 225--225
+Underfull \hbox (badness 10000) in paragraph at lines 224--224
 []|\OT1/cmr/m/n/10.95 mostly
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 225--226
+Underfull \hbox (badness 10000) in paragraph at lines 224--225
 []|\OT1/cmr/m/n/10.95 full
  []
 
 
-Underfull \hbox (badness 1436) in paragraph at lines 227--227
+Underfull \hbox (badness 1436) in paragraph at lines 226--226
 []|\OT1/cmr/m/n/10.95 very dif-fi-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--227
+Underfull \hbox (badness 10000) in paragraph at lines 226--226
 []|\OT1/cmr/m/n/10.95 basically
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--227
+Underfull \hbox (badness 10000) in paragraph at lines 226--226
 \OT1/cmr/m/n/10.95 co-op-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--227
+Underfull \hbox (badness 10000) in paragraph at lines 226--226
 \OT1/cmr/m/n/10.95 er-a-tive
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--227
+Underfull \hbox (badness 10000) in paragraph at lines 226--226
 \OT1/cmr/m/n/10.95 in-ter-ac-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--228
+Underfull \hbox (badness 10000) in paragraph at lines 226--227
 []|\OT1/cmr/m/n/10.95 seamless
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--228
+Underfull \hbox (badness 10000) in paragraph at lines 226--227
 \OT1/cmr/m/n/10.95 in-ter-ac-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--229
+Underfull \hbox (badness 10000) in paragraph at lines 228--228
 []|\OT1/cmr/m/n/10.95 Level 1
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--229
+Underfull \hbox (badness 10000) in paragraph at lines 228--228
 []|\OT1/cmr/m/n/10.95 Level 1
  []
 
 
-Overfull \hbox (84.0pt too wide) in alignment at lines 219--231
+Overfull \hbox (44.0pt too wide) in alignment at lines 218--230
  [] [] [] [] [] [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 231
+Underfull \vbox (badness 10000) detected at line 230
  []
 
 
@@ -896,13 +920,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [10]
-Underfull \vbox (badness 10000) detected at line 250
- []
-
-
-Overfull \vbox (21.13084pt too high) has occurred while \output is active []
-
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -910,6 +927,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [11]
+Underfull \vbox (badness 10000) detected at line 250
+ []
+
+
 Underfull \hbox (badness 6708) in paragraph at lines 258--258
 []|\OT1/cmr/m/n/10.95 RELY De-
  []
@@ -970,7 +991,7 @@ Underfull \hbox (badness 1490) in paragraph at lines 260--260
  []
 
 
-Overfull \hbox (84.0pt too wide) in alignment at lines 257--261
+Overfull \hbox (44.0pt too wide) in alignment at lines 257--261
  [] [] [] [] [] [] [] 
  []
 
@@ -984,41 +1005,6 @@ Underfull \hbox (badness 4531) in paragraph at lines 270--270
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 270--270
-[]|\OT1/cmr/m/n/10.95 Testing
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 270--270
-\OT1/cmr/m/n/10.95 DB
- []
-
-
-Overfull \hbox (0.76112pt too wide) in paragraph at lines 270--270
-\OT1/cmr/m/n/10.95 bytes/pgm
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 270--270
-\OT1/cmr/m/n/10.95 SLOC $\OML/cmm/m/it/10.95 <$
- []
-
-
-Overfull \hbox (15.30032pt too wide) in paragraph at lines 270--270
-[]|\OT1/cmr/m/n/10.95 10$\OMS/cmsy/m/n/10.95 ^^T$\OT1/cmr/m/n/10.95 D/P$\OMS/cmsy/m/n/10.95 ^^T$\OT1/cmr/m/n/10.95 100| 
- []
-
-
-Overfull \hbox (12.41074pt too wide) in paragraph at lines 270--270
-[]|\OT1/cmr/m/n/10.95 100$\OMS/cmsy/m/n/10.95 ^^T$\OT1/cmr/m/n/10.95 /P$\OMS/cmsy/m/n/10.95 ^^T$\OT1/cmr/m/n/10.95 000| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 270--270
-[]|\OT1/cmr/m/n/10.95 DP $\OML/cmm/m/it/10.95 >$
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 271--271
 []|\OT1/cmr/m/n/10.95 Extra
  []
@@ -1029,7 +1015,7 @@ Underfull \hbox (badness 1490) in paragraph at lines 272--272
  []
 
 
-Overfull \hbox (84.0pt too wide) in alignment at lines 269--273
+Overfull \hbox (44.0pt too wide) in alignment at lines 269--273
  [] [] [] [] [] [] [] 
  []
 
@@ -1038,6 +1024,16 @@ Underfull \vbox (badness 10000) detected at line 273
  []
 
 
+Overfull \vbox (6.65187pt too high) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[12]
 Underfull \hbox (badness 10000) in paragraph at lines 282--282
 []|\OT1/cmr/m/n/10.95 Extra
  []
@@ -1048,7 +1044,7 @@ Underfull \hbox (badness 1490) in paragraph at lines 283--283
  []
 
 
-Overfull \hbox (84.0pt too wide) in alignment at lines 281--284
+Overfull \hbox (44.0pt too wide) in alignment at lines 281--284
  [] [] [] [] [] [] [] 
  []
 
@@ -1057,12 +1053,6 @@ Underfull \vbox (badness 10000) detected at line 284
  []
 
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[12]
 Underfull \hbox (badness 7133) in paragraph at lines 293--293
 []|\OT1/cmr/m/n/10.95 RUSE De-
  []
@@ -1113,7 +1103,7 @@ Underfull \hbox (badness 1490) in paragraph at lines 295--295
  []
 
 
-Overfull \hbox (84.0pt too wide) in alignment at lines 292--296
+Overfull \hbox (44.0pt too wide) in alignment at lines 292--296
  [] [] [] [] [] [] [] 
  []
 
@@ -1207,7 +1197,7 @@ Underfull \hbox (badness 1490) in paragraph at lines 307--307
  []
 
 
-Overfull \hbox (84.0pt too wide) in alignment at lines 304--308
+Overfull \hbox (44.0pt too wide) in alignment at lines 304--308
  [] [] [] [] [] [] [] 
  []
 
@@ -1216,6 +1206,12 @@ Underfull \vbox (badness 10000) detected at line 308
  []
 
 
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[13]
 Underfull \hbox (badness 7576) in paragraph at lines 317--317
 []|\OT1/cmr/m/n/10.95 TIME De-
  []
@@ -1281,17 +1277,11 @@ Underfull \hbox (badness 1490) in paragraph at lines 319--319
  []
 
 
-Overfull \hbox (84.0pt too wide) in alignment at lines 316--320
+Overfull \hbox (44.0pt too wide) in alignment at lines 316--320
  [] [] [] [] [] [] [] 
  []
 
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[13]
 Underfull \vbox (badness 10000) detected at line 320
  []
 
@@ -1341,7 +1331,7 @@ Underfull \hbox (badness 1490) in paragraph at lines 331--331
  []
 
 
-Overfull \hbox (84.0pt too wide) in alignment at lines 328--332
+Overfull \hbox (44.0pt too wide) in alignment at lines 328--332
  [] [] [] [] [] [] [] 
  []
 
@@ -1445,7 +1435,7 @@ Underfull \hbox (badness 1490) in paragraph at lines 343--343
  []
 
 
-Overfull \hbox (84.0pt too wide) in alignment at lines 340--344
+Overfull \hbox (44.0pt too wide) in alignment at lines 340--344
  [] [] [] [] [] [] [] 
  []
 
@@ -1500,7 +1490,7 @@ Underfull \hbox (badness 1490) in paragraph at lines 355--355
  []
 
 
-Overfull \hbox (84.0pt too wide) in alignment at lines 352--356
+Overfull \hbox (44.0pt too wide) in alignment at lines 352--356
  [] [] [] [] [] [] [] 
  []
 
@@ -1549,7 +1539,7 @@ Underfull \hbox (badness 1490) in paragraph at lines 367--367
  []
 
 
-Overfull \hbox (84.0pt too wide) in alignment at lines 364--368
+Overfull \hbox (44.0pt too wide) in alignment at lines 364--368
  [] [] [] [] [] [] [] 
  []
 
@@ -1584,7 +1574,7 @@ Underfull \hbox (badness 1490) in paragraph at lines 379--379
  []
 
 
-Overfull \hbox (84.0pt too wide) in alignment at lines 376--380
+Overfull \hbox (44.0pt too wide) in alignment at lines 376--380
  [] [] [] [] [] [] [] 
  []
 
@@ -1613,7 +1603,7 @@ Underfull \hbox (badness 1490) in paragraph at lines 391--391
  []
 
 
-Overfull \hbox (84.0pt too wide) in alignment at lines 388--392
+Overfull \hbox (44.0pt too wide) in alignment at lines 388--392
  [] [] [] [] [] [] [] 
  []
 
@@ -1642,7 +1632,7 @@ Underfull \hbox (badness 1490) in paragraph at lines 403--403
  []
 
 
-Overfull \hbox (84.0pt too wide) in alignment at lines 400--404
+Overfull \hbox (44.0pt too wide) in alignment at lines 400--404
  [] [] [] [] [] [] [] 
  []
 
@@ -1687,7 +1677,7 @@ Underfull \hbox (badness 1490) in paragraph at lines 415--415
  []
 
 
-Overfull \hbox (84.0pt too wide) in alignment at lines 412--416
+Overfull \hbox (44.0pt too wide) in alignment at lines 412--416
  [] [] [] [] [] [] [] 
  []
 
@@ -1826,7 +1816,7 @@ Underfull \hbox (badness 1490) in paragraph at lines 427--427
  []
 
 
-Overfull \hbox (84.0pt too wide) in alignment at lines 424--428
+Overfull \hbox (44.0pt too wide) in alignment at lines 424--428
  [] [] [] [] [] [] [] 
  []
 
@@ -1835,152 +1825,152 @@ Underfull \vbox (badness 10000) detected at line 428
  []
 
 
-Underfull \hbox (badness 8000) in paragraph at lines 437--437
+Underfull \hbox (badness 8000) in paragraph at lines 438--438
 \OT1/cmr/m/n/10.95 ca-tion De-
  []
 
 
-Overfull \hbox (11.68071pt too wide) in paragraph at lines 437--437
-[]|\OT1/cmr/m/n/10.95 International| 
+Underfull \hbox (badness 10000) in paragraph at lines 438--438
+[]|\OT1/cmr/m/n/10.95 Intern-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 437--437
+Underfull \hbox (badness 10000) in paragraph at lines 438--438
 []|\OT1/cmr/m/n/10.95 Multi-city
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 437--437
+Underfull \hbox (badness 10000) in paragraph at lines 438--438
 []|\OT1/cmr/m/n/10.95 Multi-city
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 437--437
+Underfull \hbox (badness 10000) in paragraph at lines 438--438
 \OT1/cmr/m/n/10.95 or multi-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 437--437
+Underfull \hbox (badness 10000) in paragraph at lines 438--438
 \OT1/cmr/m/n/10.95 or metro
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 437--437
+Underfull \hbox (badness 10000) in paragraph at lines 438--438
 []|\OT1/cmr/m/n/10.95 Same
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 437--437
+Underfull \hbox (badness 10000) in paragraph at lines 438--438
 \OT1/cmr/m/n/10.95 build-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 437--437
+Underfull \hbox (badness 10000) in paragraph at lines 438--438
 \OT1/cmr/m/n/10.95 ing or
  []
 
 
-Underfull \hbox (badness 2781) in paragraph at lines 437--438
+Underfull \hbox (badness 2781) in paragraph at lines 438--439
 []|\OT1/cmr/m/n/10.95 Fully col-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 438--438
+Underfull \hbox (badness 10000) in paragraph at lines 439--439
 \OT1/cmr/m/n/10.95 mu-ni-ca-tions
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 438--438
+Underfull \hbox (badness 10000) in paragraph at lines 439--439
 []|\OT1/cmr/m/n/10.95 Some
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 438--438
+Underfull \hbox (badness 10000) in paragraph at lines 439--439
 \OT1/cmr/m/n/10.95 phone,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 438--438
+Underfull \hbox (badness 10000) in paragraph at lines 439--439
 []|\OT1/cmr/m/n/10.95 Individual
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 438--438
+Underfull \hbox (badness 10000) in paragraph at lines 439--439
 []|\OT1/cmr/m/n/10.95 Narrow
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 438--438
+Underfull \hbox (badness 10000) in paragraph at lines 439--439
 \OT1/cmr/m/n/10.95 band
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 438--438
+Underfull \hbox (badness 10000) in paragraph at lines 439--439
 []|\OT1/cmr/m/n/10.95 Wideband
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 438--438
-\OT1/cmr/m/n/10.95 elec-tronic
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 438--438
-\OT1/cmr/m/n/10.95 com-mu-ni-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 438--438
-[]|\OT1/cmr/m/n/10.95 Wideband
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 438--438
-\OT1/cmr/m/n/10.95 elect.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 438--438
-\OT1/cmr/m/n/10.95 comm.,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 438--438
-\OT1/cmr/m/n/10.95 oc-ca-sional
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 438--438
-\OT1/cmr/m/n/10.95 video
- []
-
-
-Overfull \hbox (0.73068pt too wide) in paragraph at lines 438--438
-[]|\OT1/cmr/m/n/10.95 Interactive
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 438--438
-\OT1/cmr/m/n/10.95 mul-ti-me-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 439--439
+\OT1/cmr/m/n/10.95 elec-tronic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 439--439
+\OT1/cmr/m/n/10.95 com-mu-ni-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 439--439
+[]|\OT1/cmr/m/n/10.95 Wideband
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 439--439
+\OT1/cmr/m/n/10.95 elect.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 439--439
+\OT1/cmr/m/n/10.95 comm.,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 439--439
+\OT1/cmr/m/n/10.95 oc-ca-sional
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 439--439
+\OT1/cmr/m/n/10.95 video
+ []
+
+
+Overfull \hbox (0.73068pt too wide) in paragraph at lines 439--439
+[]|\OT1/cmr/m/n/10.95 Interactive
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 439--439
+\OT1/cmr/m/n/10.95 mul-ti-me-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 440--440
 []|\OT1/cmr/m/n/10.95 Extra
  []
 
 
-Underfull \hbox (badness 1490) in paragraph at lines 440--440
+Underfull \hbox (badness 1490) in paragraph at lines 441--441
 []|\OT1/cmr/m/n/10.95 Effort mul-
  []
 
 
-Overfull \hbox (84.0pt too wide) in alignment at lines 436--441
+Overfull \hbox (44.0pt too wide) in alignment at lines 437--442
  [] [] [] [] [] [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 441
+Underfull \vbox (badness 10000) detected at line 442
  []
 
 
@@ -1990,56 +1980,56 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [17]
-Underfull \hbox (badness 6300) in paragraph at lines 450--450
+Underfull \hbox (badness 6300) in paragraph at lines 452--452
 []|\OT1/cmr/m/n/10.95 SCED De-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 450--450
+Underfull \hbox (badness 10000) in paragraph at lines 452--452
 []|\OT1/cmr/m/n/10.95 75% of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 450--450
+Underfull \hbox (badness 10000) in paragraph at lines 452--452
 []|\OT1/cmr/m/n/10.95 85% of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 450--450
+Underfull \hbox (badness 10000) in paragraph at lines 452--452
 []|\OT1/cmr/m/n/10.95 100% of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 450--450
+Underfull \hbox (badness 10000) in paragraph at lines 452--452
 []|\OT1/cmr/m/n/10.95 130% of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 450--450
+Underfull \hbox (badness 10000) in paragraph at lines 452--452
 []|\OT1/cmr/m/n/10.95 160% of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 451--451
+Underfull \hbox (badness 10000) in paragraph at lines 453--453
 []|\OT1/cmr/m/n/10.95 Extra
  []
 
 
-Underfull \hbox (badness 1490) in paragraph at lines 452--452
+Underfull \hbox (badness 1490) in paragraph at lines 454--454
 []|\OT1/cmr/m/n/10.95 Effort mul-
  []
 
 
-Overfull \hbox (84.0pt too wide) in alignment at lines 449--453
+Overfull \hbox (44.0pt too wide) in alignment at lines 451--455
  [] [] [] [] [] [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 453
+Underfull \vbox (badness 10000) detected at line 455
  []
 
 
-Underfull \vbox (badness 10000) detected at line 478
+Underfull \vbox (badness 10000) detected at line 480
  []
 
 
@@ -2050,34 +2040,108 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [18]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 483.
+(Font)              <9> on input line 485.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 483.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[19]) (./chapters/schedule.tex
+(Font)              <5> on input line 485.
+) (./chapters/schedule.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[20]
+[19]
 Chapter 3.
-) (./chapters/resources.tex [21
+<images/gantt_gen_1.png, id=298, 246.1998pt x 486.3771pt>
+File: images/gantt_gen_1.png Graphic file (type png)
+ <use images/gantt_gen_1.png>
+Package pdftex.def Info: images/gantt_gen_1.png used on input line 11.
+(pdftex.def)             Requested size: 303.71428pt x 600.0pt.
+ <images/gantt_gen_2.png, id=300, 1240.635pt x 2017.5375pt>
+File: images/gantt_gen_2.png Graphic file (type png)
+ <use images/gantt_gen_2.png>
+Package pdftex.def Info: images/gantt_gen_2.png used on input line 15.
+(pdftex.def)             Requested size: 368.95625pt x 600.0pt.
+ [20
 
 ]
+Overfull \vbox (4.19974pt too high) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[21 <./images/gantt_gen_1.png>]) (./chapters/resources.tex
+Overfull \vbox (4.19974pt too high) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[22 <./images/gantt_gen_2.png>]
 Chapter 4.
-) (./chapters/risks.tex [22
+<images/resource_alloc_fabri_1.png, id=315, 724.7075pt x 1348.03625pt>
+File: images/resource_alloc_fabri_1.png Graphic file (type png)
+ <use images/resource_alloc_fabri_1.png>
+Package pdftex.def Info: images/resource_alloc_fabri_1.png used on input line 12.
+(pdftex.def)             Requested size: 320.0pt x 595.23587pt.
+ [23
 
-]
+] <images/resource_alloc_fabri_2.png, id=321, 722.7pt x 1349.04pt>
+File: images/resource_alloc_fabri_2.png Graphic file (type png)
+ <use images/resource_alloc_fabri_2.png>
+Package pdftex.def Info: images/resource_alloc_fabri_2.png used on input line 16.
+(pdftex.def)             Requested size: 320.0pt x 597.32585pt.
+ <images/resource_alloc_vale_1.png, id=322, 726.715pt x 1348.03625pt>
+File: images/resource_alloc_vale_1.png Graphic file (type png)
+ <use images/resource_alloc_vale_1.png>
+Package pdftex.def Info: images/resource_alloc_vale_1.png used on input line 20.
+(pdftex.def)             Requested size: 320.0pt x 593.61089pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[24 <./images/resource_alloc_fabri_1.png>]
+Overfull \vbox (1.52559pt too high) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[25 <./images/resource_alloc_fabri_2.png>] <images/resource_alloc_vale_2.png, id=333, 726.715pt x 1348.03625pt>
+File: images/resource_alloc_vale_2.png Graphic file (type png)
+ <use images/resource_alloc_vale_2.png>
+Package pdftex.def Info: images/resource_alloc_vale_2.png used on input line 24.
+(pdftex.def)             Requested size: 320.0pt x 593.61089pt.
+) (./chapters/risks.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[26 <./images/resource_alloc_vale_1.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[27 <./images/resource_alloc_vale_2.png>]
 Chapter 5.
-[23
+[28
 
 ]
 
@@ -2086,45 +2150,45 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[24]) (./chapters/conclusions.tex
+[29]) (./chapters/conclusions.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[25]
+[30]
 Chapter 6.
-) (./chapters/hours_of_work.tex [26
+) (./chapters/hours_of_work.tex [31
 
 ]
 Appendix A.
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 21.
- [27
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 22.
+ [32
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 21.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 22.
  (/Users/Valerio/GitHub/casaticastelli_sweng2/Documents/5_PPD/latex_files/.texpadtmp/5_PPD.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 21.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 21.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 22.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 22.
 Package rerunfilecheck Info: File `5_PPD.out' has not changed.
-(rerunfilecheck)             Checksum: 1F5F9F5F56FBA4EBA94A836F58309B9C;1476.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 21.
+(rerunfilecheck)             Checksum: 05882C07F20B730678046FE7748B850F;1754.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 22.
  ) 
 Here is how much of TeX's memory you used:
- 9579 strings out of 493089
- 137162 string characters out of 6134841
- 405767 words of memory out of 5000000
- 12783 multiletter control sequences out of 15000+600000
+ 10347 strings out of 493089
+ 150134 string characters out of 6134841
+ 444775 words of memory out of 5000000
+ 13504 multiletter control sequences out of 15000+600000
  11623 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,11n,43p,1044b,1180s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,12n,67p,1044b,1216s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on /Users/Valerio/GitHub/casaticastelli_sweng2/Documents/5_PPD/latex_files/.texpadtmp/5_PPD.pdf (29 pages, 298077 bytes).
+Output written on /Users/Valerio/GitHub/casaticastelli_sweng2/Documents/5_PPD/latex_files/.texpadtmp/5_PPD.pdf (34 pages, 1363745 bytes).
 PDF statistics:
- 409 PDF objects out of 1000 (max. 8388607)
- 357 compressed objects within 4 object streams
- 113 named destinations out of 1000 (max. 500000)
- 214 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 444 PDF objects out of 1000 (max. 8388607)
+ 375 compressed objects within 4 object streams
+ 118 named destinations out of 1000 (max. 500000)
+ 244 words of extra memory for PDF output out of 10000 (max. 10000000)
 
