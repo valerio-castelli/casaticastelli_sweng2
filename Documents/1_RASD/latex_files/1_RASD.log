@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.2)  29 JAN 2016 21:49
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.2)  30 JAN 2016 10:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1293,7 +1293,7 @@ xmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmtt10.pfb>
-Output written on 1_RASD.pdf (73 pages, 3818647 bytes).
+Output written on 1_RASD.pdf (73 pages, 3818648 bytes).
 PDF statistics:
  1352 PDF objects out of 1440 (max. 8388607)
  529 named destinations out of 1000 (max. 500000)

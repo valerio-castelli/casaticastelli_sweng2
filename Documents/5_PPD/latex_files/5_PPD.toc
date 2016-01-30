@@ -20,8 +20,7 @@
 \contentsline {subsection}{\numberline {2.2.2}Cost Drivers}{12}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}Effort equation}{19}{subsection.2.2.3}
 \contentsline {subsection}{\numberline {2.2.4}Schedule estimation}{19}{subsection.2.2.4}
-\contentsline {chapter}{\numberline {3}Schedule}{20}{chapter.3}
-\contentsline {chapter}{\numberline {4}Resource allocation}{21}{chapter.4}
-\contentsline {chapter}{\numberline {5}Risk management}{22}{chapter.5}
-\contentsline {chapter}{\numberline {6}Conclusions}{25}{chapter.6}
-\contentsline {chapter}{Appendix \numberline {A}Hours of work}{26}{Appendix.1.A}
+\contentsline {chapter}{\numberline {3}Schedule}{21}{chapter.3}
+\contentsline {chapter}{\numberline {4}Resource allocation}{24}{chapter.4}
+\contentsline {chapter}{\numberline {5}Risk management}{29}{chapter.5}
+\contentsline {chapter}{Appendix \numberline {A}Hours of work}{32}{Appendix.1.A}
