@@ -3,10 +3,10 @@
 \section{Purpose}
 This document represents the Software Design Description (SDD), also simply called Design Document, for myTaxiService.
 
-The purpose of this document is to share with all the interested parties a more detailed description of how myTaxiService is designed and architected, with a particular emphasis on what design decisions the development team has made and the rationale behind them.
+The purpose of this document is to share with all the interested parties a more detailed description of how myTaxiService is designed and architected, with a particular emphasis on which design decisions the development team has made and the rationale behind them.
 
 \section{Scope}
-One of the key decisions a software engineer must make while designing a system is between which software components should be actually developed and implemented, and which can be taken for granted as already existing on the market. 
+One of the key decisions a software engineer must make while designing a system is the choice of which software components should be actually developed and implemented, and which can be taken for granted as already existing on the market. 
 
 This decision has an obvious impact on what a design document should describe and what components are instead left out of the analysis and simply considered ready to be used.
 
@@ -17,7 +17,7 @@ For this reason, throughout this document we will mainly focus on the peculiar c
 \subsection{Definitions}
 Here we present a list of significant, context-specific terms used in the document. 
 \begin{itemize}
-	\item ACID properties: set of properties of transactions in a relational database management system. Stands for Atomicity, Consistency, Isolation and Durability.
+	\item ACID properties: set of properties of transactions in transactional systems. ACID stands for Atomicity, Consistency, Isolation and Durability.
 	\item SOAP: originally an acronym for Simple Object Access Protocol, it is a protocol specification for exchanging structured information in the implementation of web services in computer networks. 
 \end{itemize}
 \subsection{Acronyms}
@@ -67,6 +67,6 @@ In the Architectural Design section, we will go in depth describing how the syst
 	
 In the Algorithm Design section, we will focus on defining the most relevant and critical algorithms that drive the system operations. In particular, for each of them we will outline the key steps using a short pseudo-code representation.
 
-In the User Interface Design, we will mainly reference the existing UI sketches that were already defined in the RASD and further refine them. 
+In the User Interface design section we will mainly reference the existing UI sketches that were already defined in the RASD and further refine them. 
 
 Finally, the Requirements Traceability section will explain how our software architecture fulfills the requirements that were identified in the requirement analysis phase and how those requirements have influenced our design decisions. 

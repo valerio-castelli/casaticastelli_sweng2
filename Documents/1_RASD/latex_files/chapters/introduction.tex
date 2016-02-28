@@ -3,17 +3,18 @@ This document represents the Requirement Analysis and Specification Document (RA
 
 
 \section{Scope}
-The aim of the project is to create a new taxi management system to optimize an existing taxi service provided by the government of a city. The primary goal of this system, which from now on will be referred to as myTaxiService, is to provide passengers simplified access to taxi reservations and offer an appropriate management of taxi queues. In particular, a passenger may request a taxi either through a web application or a mobile application; in both cases, the passenger should receive a notification containing an identifier of the incoming taxi and an estimate of the time he has to wait for. Taxi drivers should be able to notify the system about their availability and to receive, accept and refuse incoming calls by means of a single mobile application. The city is divided into taxi zones that are uniquely associated with corresponding taxi queues. The system should be able to collect GPS location data from each taxi of the fleet and use this information to automatically compute the distribution of taxis among the various zones. Every time a taxi driver notifies the system he's free to accept rides, the system should store the taxi identifier in the queue of taxis associated with the zone the taxi is in at that moment. Ride requests are catalogued by the zone they're coming from; in particular, each request should be forwarded to the first taxi queueing in the same zone. In case of acceptance, the system should send the appropriate confirmation notification to the passenger, containing both the identifier of the taxi and an estimate of the waiting time. Otherwise, the system should forward the request to the second taxi in the queue and should also move the first taxi in the last position in the queue, until a taxi positively answers to the call. In case no taxi can be found in the queue of the selected zone or every taxi drops the request, the system will not be able to provide the service. Passengers should be able to both ask for a taxi when they need it and reserve it in advance by specifying the meeting time, the origin and the destination of the ride. In this case, the reservation has to occur at least two hours before the ride. The system will confirm the reservation to the passenger and will proceed to allocate a taxi only 10 minutes before the specified meeting time. Finally, the system should provide programmatic interfaces to allow additional services to be developed on top of the basic one.
+The aim of the project is to create a new taxi management system to optimize an existing taxi service provided by the government of a city. The primary goal of this system, which from now on will be referred to as myTaxiService, is to provide passengers simplified access to taxi reservations and offer an appropriate management of taxi queues. In particular, a passenger may request a taxi either through a web application or a mobile application; in both cases, the passenger should receive a notification containing an identifier of the incoming taxi and an estimate of the time he has to wait for. Taxi drivers should be able to notify the system about their availability and to receive, accept and refuse incoming calls by means of a single mobile application. The city is divided into taxi zones that are uniquely associated with corresponding taxi queues. The system should be able to collect GPS location data from each taxi of the fleet and use this information to automatically compute the distribution of taxis among the various zones. Every time a taxi driver notifies the system he's free to accept rides, the system should store the taxi identifier in the queue of taxis associated with the zone the taxi is in at that moment. Ride requests are catalogued by the zone they come from; in particular, each request should be forwarded to the first taxi queueing in the same zone. In case of acceptance, the system should send an appropriate confirmation notification to the passenger, containing both the identifier of the taxi and an estimate of the waiting time. Otherwise, the system should forward the request to the second taxi in the queue and should also move the first taxi in the last position of the queue, until a taxi positively answers to the call. In case no taxi can be found in the queue of the selected zone or every taxi drops the request, the system will not be able to provide the service. Passengers should be able to both ask for a taxi when they need it and reserve it in advance by specifying the meeting time, the origin and the destination of the ride. In this case, the reservation has to occur at least two hours before the ride. The system will confirm the reservation to the passenger and will proceed to allocate a taxi only 10 minutes before the specified meeting time. Finally, the system should provide programmatic interfaces to allow additional services to be developed on top of the basic one.
 
 
 \section{Stakeholders}
-We have identified a list of potential stakeholders for our system. Every stakeholder has a specific interest, either positive or negative, for the system.
+We have identified a list of potential stakeholders for our system. Every stakeholder has a specific interest, either positive or negative, in the system.
 \begin{itemize}
-\item Passengers: all the people that want to require a taxi and that will use the system to accomplish this.
+\item Passengers: all the people interested in calling a taxi and that will use the system to accomplish this.
 \item Taxi drivers: all the people that drive a taxi. They are supposed to employ the system to answer passengers' requests and drive them to their desired location.
 \item City government (or city administration): it is the main stakeholder of the project, since it is the one who has commissioned it and that will pay for it.
 \item Taxi drivers' union: as the system will have an impact on the way taxi drivers work, it's necessary to consider that their labor union could have something to say on this matter. 
 \item Mobile phone producers: they have an interest in providing the mobile terminals that the city government will provide to the taxi drivers in order to operate the service. 
+\item Wireless carriers: they have an interest in providing the data plans required to connect the mobile terminals of the taxi drivers to the Internet.
 \end{itemize}
 
 
@@ -21,32 +22,32 @@ We have identified a list of potential stakeholders for our system. Every stakeh
 \subsection{Definitions}
 Here we present a list of significant, context-specific terms used in the document.
 \begin{itemize}
-\item System: the system that has to be designed. 
+\item System: defines the overall set of software components that implement the required functionalities.
 \item Passenger: a person that uses the system to request a ride.
 \item User: synonym for passenger, unless otherwise specified.
-\item Guest passenger: a person that is using the passenger application, but that has not performed a login. 
-\item Logged in passenger: a person that is using the passenger application and that has performed a login. 
-\item Guest taxi driver: a person that is using the taxi driver application, but that has not performed a login. 
-\item Logged in taxi driver: a person that is using the taxi driver application and that has performed a login. 
+\item Guest passenger: a person that is using the passenger application but has not performed a login. 
+\item Logged in passenger: a person that is using the passenger application and has performed a login. 
+\item Guest taxi driver: a person that is using the taxi driver application but has not performed a login. 
+\item Logged in taxi driver: a person that is using the taxi driver application and has performed a login. 
 \item Administrative personnel: the city administration staff that is responsible for the administrative operations related to the configuration of the system.
 \item City administration: the political organ that governs the city.
 \item City government: synonym for city administration.
 \item City council:  synonym for city administration.
 \item Taxi code: the unique identifier associated to each taxi.
-\item Secret code: the random identifier associated to each request to certify that the passenger that is getting on a taxi is effectively the one that has requested it.
+\item Secret code: the random identifier associated to each request to certify that the passenger who gets on a taxi is effectively the one that has requested it.
 \item Security code: synonym for secret code.
 \item Available taxi: a taxi is considered available if its driver can answer to a passenger's call.
 \item Unavailable taxi:  a taxi is considered unavailable if it's not in service.
 \item Currently riding taxi: a taxi is considered to be currently riding if it's driving a passenger somewhere. 
-\item Outside city taxi: a taxi which is outside the city boundaries. 
+\item Outside city taxi: a taxi that is outside the city boundaries and isn't carrying any passenger.
 \item Taxi zone: a geographical area of the city which is logically associated to a single list of available taxis. 
 \item Availability list: the list where the taxi manager stores references to the taxis which are available in the whole city.
 \item Unavailability list: the list where the taxi manager stores references to the taxis which are not in service.
 \item Currently riding list: the list where the taxi manager stores references to the taxis which are performing a ride.
-\item Out of city list: the list where the taxi manager stores references to the taxis which are outside the boundaries of the city. 
-\item Zone queue: the FIFO list associated to a certain zone that contains the references to the available taxis which are considered for requests coming from locations inside that zone. 
+\item Out of city list: the list where the taxi manager stores references to the taxis which are outside the boundaries of the city and aren't carrying passengers. 
+\item Zone queue: the FIFO list associated to each zone that contains the references to the taxis available in that zone; these taxis will be considered for requests coming from locations inside that zone. 
 \item Location data: the latitude and longitude information of a geographical location.
-\item Location reverse-geocoding: the operation that maps a couple of latitude, longitude coordinates into an address. 
+\item Location reverse-geocoding: the operation that maps a pair of latitude, longitude coordinates into an address. 
 \item Exceptional circumstances: extraordinary situations which are not considered to be part of the normal operating conditions. This includes, but is not limited to, strikes, severe weather conditions, service suspension decided by the city council and specific holidays.
 \end{itemize}
 
@@ -78,9 +79,9 @@ No abbreviations other than the acronyms are used in this document.
 
 
 \section{Overview}
-In the following part of this SRS document, we provide a general description of the system, with a particular focus on the assumptions it is based on and the required functionalities (Section 2).
+In the following part of this SRS document, we're going to provide a general description of the system, with a particular focus on the assumptions it is based on and the required functionalities (Section 2).
 
-Next, we go deeper in the specification of system functionalities, by providing a formal definition of all system requirements and an UML model (Section 3).
+Next, we'll go deeper in the specification of system functionalities, by providing a formal definition of all system requirements and an UML model (Section 3).
 
 In the final appendix section, we will provide the skeleton of a possible Alloy formalization of the system (Appendix A). 
 

@@ -8,7 +8,7 @@ For sake of readability, we will use the notation \textbf{req. x.y} to make refe
 \begin{itemize}
 	\item \textbf{Goal 1, 2 and 3} are essentially administration-oriented requirements; as such, they are satisfied by:
 	\begin{itemize}
-	\item The \textbf{System Administration} component, which provides the backend business logic to handle the required data modification operations. In particular, operations related to taxi and taxi drivers (goal 1, 2) are handled by the Taxi Driver Management sub-component, while operations related to the definition of taxi zones (goal 1, 3) are handled by the Zone Division Management sub-component.
+	\item The \textbf{System Administration} component, which provides the backend business logic to handle the required data modification operations. In particular, operations related to taxi and taxi drivers (goal 1, 2) are handled by the Taxi Driver Management sub-component, while operations related to the definition of taxi zones (goal 1, 3) are handled by the Zone Division Management sub-component. Operations related to the management of third party plugins and services are handled by the API Permissions Management sub-component.
 	\item The \textbf{Administration Web Application} component, which provides administrators an appropriate user interface to interact with the backend.
 	\end{itemize}
 	\item \textbf{Goal 4} describes the way in which the availability status of a taxi driver is updated. As such, several components are involved in its fulfillment:
@@ -16,9 +16,9 @@ For sake of readability, we will use the notation \textbf{req. x.y} to make refe
 	\item The \textbf{Taxi Driver Application} component, which provides taxi drivers the ability to interact with the central system to notify a change in their availability status. In particular, this component is responsible for reqs. 4.1 to 4.6 and reqs. 4.8, 4.11.
 	\item The \textbf{Taxi Management System} component, which provides the backend business logic to handle the update operations. In particular:
 	\begin{itemize}
-	\item Req. 4.6 and 4.7 are handled by the Location Management sub-component for the zone computation part and by the Taxi Management sub-component for the update operation on taxi queues
-	\item Reqs 4.9 and 4.10 are handled by the Taxi Management sub-component by moving the taxi to the unavailability list and setting its status to unavailable
-	\item Req. 4.8 and 4.11 are handled by the Taxi Management sub-component
+	\item Req. 4.6 and 4.7 are handled by the Location Management sub-component for the zone computation part and by the Taxi Management sub-component for the update operation on taxi queues.
+	\item Reqs 4.9 and 4.10 are handled by the Taxi Management sub-component by moving the taxi to the unavailability list and setting its status to unavailable.
+	\item Req. 4.8 and 4.11 are handled by the Taxi Management sub-component.
 	\end{itemize}
 	\item The \textbf{Remote Services Interfaces} component, which provides a way for the remote application to communicate with the central system. This component is used to satisfy requirement 4.6.
 	\item The \textbf{Notification System} component, which provides to the central system the dispatch mechanism it needs for sending notifications to the taxi driver application. This component is essentially involved in satisfying reqs. 4.8 and 4.11.
@@ -66,7 +66,7 @@ For sake of readability, we will use the notation \textbf{req. x.y} to make refe
 		\item The \textbf{Remote Services Interface} component, which enables the passenger applications (web and mobile) to request services to the central system and thus provides the necessary callbacks to satisfy req 9.2.
 		\item The \textbf{Notification System} component, which provides to the central system the dispatch mechanism it needs for sending notifications to both the taxi driver application and the passenger applications and fulfill reqs 9.10 to 9.12 and 9.16.
 	\end{itemize}
-	\item \textbf{Goal 10} requires the system to offer passengers a way to register. This goal is satisfied by an interplay of four components:
+	\item \textbf{Goal 10} requires the system to offer passengers a way to create an account. This goal is satisfied by an interplay of four components:
 	\begin{itemize}
 		\item The \textbf{Account Management} component, specifically the Passenger Registration sub-component, is responsible of offering the backend services that enables passenger registration and validation of the required data. 
 		\item The \textbf{Passenger Web Application} component, which provides the registration entry form.
@@ -86,7 +86,7 @@ For sake of readability, we will use the notation \textbf{req. x.y} to make refe
 		\end{itemize}	
 		\item The \textbf{Passenger Application} component, which provides a suitable UI to fulfill reqs. 11.1, 11.2.1, 11.4 to 11.7, 11.11 to 11.13 and 11.15.
 		\item The \textbf{Passenger Web Application} component, which provides a suitable UI to fulfill reqs. 11.1, 11.2.2, 11.6, 11.7, 11.11 to 11.13 and 11.15.
-		\item The \textbf{Taxi Driver Application} component, which provides a suitable UI to notify a taxi driver that he has been assigned a taxi request, as in goal 9.
+		\item The \textbf{Taxi Driver Application} component, which provides a suitable UI to notify a taxi driver that he has been assigned to a taxi request, as in goal 9.
 		\item The \textbf{Remote Services Interface} component, which enables the passenger applications (web and mobile) to request services to the central system and thus provides the necessary callbacks to satisfy req 11.2.
 		\item The \textbf{Notification System} component, which provides to the central system the dispatch mechanism it needs for sending notifications to both the taxi driver application and the passenger applications and fulfill reqs 11.9, 11.14 and 11.15.
 		\end{itemize}
@@ -106,7 +106,7 @@ In particular, we will focus on Performance, Reliability, Availability, Security
 
 The usage of a Platform as a Service (PaaS) cloud infrastructure, combined with the n-tier and multi-layered software architecture we have chosen to adopt, provides myTaxiService a great level of performance. Specifically, the division of myTaxiService in a plethora of components implementing functionalities at different levels of abstraction and running on separate machines enables us to scale the hardware infrastructure as needed to achieve exactly the level of performance required. Concurrency requirements, for example, are satisfied by accurate load-balancing of requests across multiple servers running different instances of the same core services, in order to achieve a high level of parallelism and be able to serve as many requests as needed, with the option to increase the capabilities of the system in the future by renting more computation capabilities. 
 
-The same n-tier infrastructure also let us achieve satisfying levels of availability and reliability, as the system components are distributed across several servers, possibly housed in different server farms by the cloud provider. Because of the way the PaaS cloud is designed, in case of failures requests can be smoothly transitioned from a server to another one without any interruption in the system operation; also, data is backed up across different locations, to provide a great level of resilience to natural disasters.
+The same n-tier infrastructure also lets us achieve satisfying levels of availability and reliability, as the system components are distributed across several servers, possibly housed in different server farms by the cloud provider. Because of the way the PaaS cloud is designed, in case of failures requests can be smoothly transitioned from a server to another one without any interruption in the system operation; also, data is backed up across different locations, to provide a great level of resilience to natural disasters.
 
 Security is achieved through both system-level and hardware-level measures. At the system level, the Account Manager and the System Administration components are responsible for checking that methods can only be invoked by authorized personnel. Furthermore, APIs are exposed via the Remote Services Interface in a way that prevents SQL injection attacks to take place and are invoked via secure token and encryption mechanisms to prevent man-in-the-middle attacks. DDoS attacks are mitigated by the presence of multiple load-balancers to redistribute requests across all the servers and thus minimize the possibility of a server going down due to the excessive amount of requests; a hardware firewall is also positioned at the boundaries of the central system to limit the number of ports that are publicly exposed and to temporarily ban IP addresses that are performing an excessive amount of requests in an attempt to block DDoS attacks. Other firewalls are positioned to separate the Communication Services Server from the servers providing the core functionalities of the system (Taxi Management, Account Management, System Administration and Database) and to separate the Database Server from everything else. All passwords are encrypted at the software level before being stored in the DBMS; to achieve better security, disks are physically encrypted at the hardware-level.
 

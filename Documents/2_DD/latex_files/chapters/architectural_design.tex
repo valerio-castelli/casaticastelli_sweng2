@@ -3,7 +3,7 @@
 \section{Overview}
 In the following paragraphs we'll present a general overview of how the system is architected, with specific focus on the distinction between logically separated layers.
 
-Specifically, myTaxiService has been envisioned from the ground up to be fully scalable and easily deployable on any number of servers. This characteristic is not only desirable, but actually fundamental for the system to fully accomplish the tasks it's been designed for. In order to guarantee this level of flexibility and modularity, we have settled for a system architecture that inherently enables a wide range of hardware configurations for all kinds of workloads.
+In fact, myTaxiService has been envisioned from the ground up to be fully scalable and easily deployable on any number of servers. This characteristic is not only desirable, but actually fundamental for the system to fully accomplish the tasks it's been designed for. In order to guarantee this level of flexibility and modularity, we have settled for a system architecture that inherently enables a wide range of hardware configurations for all kinds of workloads.
 
 The system architecture is thus logically organized in a set of interplaying software layers, whose detailed description is hereby presented.
 
@@ -17,20 +17,20 @@ In order to provide a higher level of abstraction to all components that need ac
 
 The \textbf{Business Layer} implements all core functionalities of the system. In particular, all operations related to handling taxi requests and reservations, taxi availability and zone management are performed by components of this layer. Data is stored and retrieved using the APIs exposed by the Data Layer. Core functionalities are exposed to clients through a unified Application Façade that allows fine-grained tuning of which operations can be invoked from outside the central system.
 
-The Business Layer also depends on an external \textbf{Mapping Service} for the implementation of reverse geocoding and waiting time estimation operations. This external service is directly invoked by classes of the Business Layer by using a public API provided by the Mapping Service itself. 
+The Business Layer also depends on an external \textbf{Mapping Service} for the implementation of reverse geocoding and waiting time estimation functionalities. This external service is directly invoked by classes of the Business Layer by using a public API provided by the Mapping Service itself. 
 
-However, not every functionality exposed by the Application Façade may actually be made publicly available to every client. In principle, several levels of permissions could be offered to third parties while maintaining control over private APIs which should only be used by "official clients". Read-only reporting functionalities, for example, could be made available to any requesting party, while more critical operations could be offered only to selected developers after having verified certain requirements are satisfied. Furthermore, specific sets of APIs could be made available only to approved plugins and not be offered to remote services. For this reason, the \textbf{Services Layer} provides a comprehensive interface to all kinds of third party services and plugins by carefully defining which methods are available for remote and local invocation, what protocols should be followed for invoking them and what kind of messages can be exchanged between a remote component and the central system.
+However, not every functionality exposed by the Application Façade may actually be made publicly available to every client. In principle, several levels of permissions could be offered to third parties while maintaining control over private APIs which should only be used by ``official clients''. Read-only reporting functionalities, for example, could be made available to any requesting party, while more critical operations could be offered only to selected developers after having verified that certain requirements are satisfied. Furthermore, specific sets of APIs could be made available only to approved plugins and not be offered to remote services. For this reason, the \textbf{Services Layer} provides a comprehensive interface to all kinds of third party services and plugins by carefully defining which methods are available for remote and local invocation, what protocols should be followed for invoking them and what kind of messages can be exchanged between a remote component and the central system.
 
 While locally invokable APIs are made available only to plugins, remotely invokable APIs are also offered to components living outside the perimeter of the central system. The \textbf{Message Broker and Notification System} is precisely concerned with guaranteeing an efficient and reliable communication channel with these remote entities by supporting message queues, publish/subscribe communications and dynamic, asynchronous event notifications.
 
-The \textbf{Web Presentation Layer} is responsible for the implementation of the web application. It generates the dynamic web pages, offers them to the client via a web server, accepts requests and forwards them to the business layer by means of the communication layer and of the services layer. 
+The \textbf{Web Presentation Layer} is responsible for the implementation of the web applications. It generates the dynamic web pages, offers them to the client via a web server, accepts requests and forwards them to the business layer by means of the communication layer and of the services layer. 
 
-Finally, the \textbf{Mobile Applications} let users access the functionalities offered by the system on their smartphones and tablets in a native way. As for the web application, they interact with the central system using the communication layer and the services layer.
+Finally, the \textbf{Mobile Applications} let users access the functionalities offered by the system on their smartphones and tablets in a native way. As for the web applications, they interact with the central system using the communication layer and the services layer.
   
 \section{High level components and their interactions}
-The purpose of this section is to present the main components in which myTaxiService is divided and the relations between them.
+The purpose of this section is to describe the main components in which myTaxiService is divided and the relations between them.
 
-In particular, it should be noted that the components discussed here are very abstract clusters of functionalities which do not directly map to any specific module in the final system. Instead, they are intended as an useful representation to show how the main functionalities of the system are grouped together and interact with each other. Further details on how these components are realized in the actual system will be discussed with greater depth in the Component view subsection.
+In particular, it should be noted that the components discussed here are very abstract clusters of functionalities which do not directly map to any specific module in the final system. Instead, they are intended to be an useful representation of how the main functionalities of the system are grouped together and interact with each other. Further details on how these components are realized in the actual system will be discussed in greater detail in the Component view subsection.
 
 A schematic representation of the component structure of the system is the following.
 \begin{figure}[H]
@@ -63,9 +63,9 @@ The \textbf{Mapping Service} component is provided by a third party and is acces
 
 The \textbf{Remote Services Interfaces} component provides external applications and clients a way to invoke the services offered by the central system. Specifically, it implements a platform-independent, SOAP-based web service which exposes the full set of remotely invokable methods defined by the public API specification of myTaxiService.
 
-The \textbf{Notification System} component implements an event-based mechanism to notify remote applications and clients of specific changes in the status of the central system. In particular, this is employed to let users known when the system has assigned a taxi to their reservation.
+The \textbf{Notification System} component implements an event-based mechanism to notify remote applications and clients of specific changes in the status of the central system. In particular, this is employed to notify taxi drivers of incoming calls and let passengers known when the system has assigned a taxi to their reservation.
 
-As for how the system can be accessed by its users, the \textbf{Taxi Driver Application} and the \textbf{Passenger Application} provide a way for taxi drivers and passenger respectively to interact with the system through their smartphones, while the \textbf{Passenger Web Application} allows passengers perform their operations through a web browser. Finally, administrators can access the system using the aforementioned \textbf{Administration Web Application}.
+As for how the system can be accessed by its users, the \textbf{Taxi Driver Application} and the \textbf{Passenger Application} provide a way for taxi drivers and passengers respectively to interact with the system through their smartphones, while the \textbf{Passenger Web Application} allows passengers perform their operations through a web browser. Finally, administrators can access the system using the aforementioned \textbf{Administration Web Application}.
 
 
 
@@ -74,7 +74,7 @@ In this section, we'll provide a more detailed description of the most significa
 
 It should be noted that, when multiple operations or tasks are managed by a certain sub-component, not all of them will be explicitly mentioned in this section. This is because, at this level of detail, we want to put the focus on the primary goal of every sub-component; an exhaustive description of the functionalities implemented by each sub-component will be presented in the Requirements Traceability section of this document. 
 
-The first component that we'll examine is the \textbf{Taxi Management System}. As we already mentioned, this component is primarily responsible for all operations related to taxi management. Although it may appear to be an atomic component, it is in fact composed of three different sub-components, each of them dedicated to handling a specific subset of operations:
+The first component that we'll examine is the \textbf{Taxi Management System}. As we already mentioned, this component is primarily responsible for all operations related to taxi management. Although it may appear to be an atomic component, it is in fact composed of four different sub-components, each of them dedicated to handling a specific subset of operations:
 	\begin{itemize}
 		\item The \textbf{Reservation Management} sub-component performs all the activities related to reservation handling. In particular, it is able to receive a request for a new reservation, store it into an internal data structure and periodically look for reservations that have come to expiration. Once such a reservation is found, it creates a request for it and transfers the computation to the Request Manager.
 		\item The \textbf{Request Management} sub-component performs all the activities related to request handling. In particular, it is able to receive a new taxi request (either from an end user or from the reservation manager), retrieve the associated geographical coordinates through invocation of the Mapping Service API if the request only contains the meeting address, and use them to discover the zone from which the request is coming by invocation of an appropriate method of the Location Management sub-component. It then forwards the necessary information to the Taxi Management sub-component.
@@ -89,7 +89,7 @@ The first component that we'll examine is the \textbf{Taxi Management System}. A
 
 The second component that we'll examine is the \textbf{Account Management} component. As we already mentioned, this component is primarily responsible for all operations related to user accounts handling. More specifically, this component is divided into four sub-components, each related to a different kind of operation:
 	\begin{itemize}
-		\item The \textbf{Passenger Registration} sub-component enables passengers to register to the taxi service and create their own account. In particular, it validates the required user data for formal consistency (i.e. checks that the date of birth, email address, mobile phone number and password are in valid format) and creates a temporary user account. It then sends a verification message containing a validation link to the specified email address and, upon user's confirmation, it enables the user account for full usage.
+		\item The \textbf{Passenger Registration} sub-component enables passengers to register to the taxi service and create their own account. In particular, it validates the required user data for formal consistency (e.g. checks that the date of birth, email address, mobile phone number and password are in valid format) and creates a temporary user account. It then sends a verification message containing a validation link to the specified email address and, upon user's confirmation, it enables the user account for full usage.
 		\item The \textbf{Login} sub-component performs all necessary operations to let registered users log into the system. The user can be either a registered passenger, a taxi driver or a system administrator; depending on the user type, different login data may be required and a different level of privileges will be granted. 
 		\item The \textbf{Password Retrieval} sub-components implements the password retrieval procedure for all registered users. Depending on the kind of user, a different recovery procedure may be followed.
 		\item The \textbf{Settings Management} sub-component contains all the logic that is related to manipulation of an existing account by its owner. Depending on the kind of user, different options may be allowed.
@@ -102,7 +102,7 @@ The second component that we'll examine is the \textbf{Account Management} compo
 
 The third component that we'll examine is the \textbf{System Administration} component. As we already mentioned, this component is primarily responsible for all operations related to system configuration and monitoring functionalities. More specifically, this component is divided into five sub-components, each related to a different kind of operation:	
 	\begin{itemize}
-		\item The \textbf{API Permissions Management} sub-component give administrators fine-grained control over which APIs can be publicly accessed and what level of permissions is required to invoke them. More specifically, for each method exposed by the Remote Services Interface component it defines a visibility level that can be either "public" or "restricted". If the method is marked as "restricted", it also allows specifying a specific private key that must be held by the invoking application in order for the invocation to be successful. 
+		\item The \textbf{API Permissions Management} sub-component gives administrators fine-grained control over which APIs can be publicly accessed and what level of permissions is required to invoke them. More specifically, for each method exposed by the Remote Services Interface component it defines a visibility level that can be either "public" or "restricted". If the method is marked as "restricted", it also allows setting a specific private key that must be held by the invoking application in order for the invocation to be successful. 
 		\item The \textbf{Zone Division Management} sub-component implements all the methods for inserting and updating the zone division of the city. In particular, it allows insertion of new taxi zones and deletion or modification of existing ones. It also performs all the necessary checks to ensure that zone consistency is preserved: in particular, this means that overlapping zones won't be accepted. For security reasons, this component verifies that its methods are only invoked by a user with a sufficient level of privileges.
 		\item The \textbf{Taxi Driver Management} sub-component implements all the methods for inserting and updating information about taxi drivers and the related taxis in the system. In particular, it allows insertion of new taxi drivers and taxis and deletion or modification of existing ones. It also performs all the necessary checks to ensure that information consistency is preserved. in particular, this includes validation of taxi driver licenses and taxi plates and enforces the one-to-one correspondence between a taxi driver and its taxi. For security reasons, this component verifies that its methods are only invoked by a user with a sufficient level of privileges.
 		\item The \textbf{Service Statistics} sub-components is focused on offering a set of Key Performance Indicators (KPI) about the system operational status to all interested parties with sufficient privileges. This information can include uptime, number of served requests per day, average waiting time and other indicators. 
@@ -228,7 +228,7 @@ The \textbf{ITaxiManagementSystem} interface is actually an umbrella interface w
 	\end{itemize}
 	\item The \textbf{ILocationManagement} interface, which represents the way components can interact with the LocationManagement sub-component. It exposes the following methods:
 	\begin{itemize}
-	\item checkTaxiDriverLocation(currentLocation, meetingPoint): verifies that the taxi driver has effectively reached both the meeting point.
+	\item checkTaxiDriverLocation(currentLocation, meetingPoint): verifies that the taxi driver has effectively reached the meeting point.
 	\item isLocationInsideCity(location): returns true if the location belongs to the city area, false otherwise.
 	\item getZone(location): if the location belongs to the city, returns the zone to which it belongs, otherwise it raises an exception.
 	\end{itemize}
@@ -293,14 +293,14 @@ Finally, the \textbf{IRemoteServices} interface let remote applications invoke a
 	\item sendTaxiData(data): receives a set of candidate taxi drivers.
 	\item sendPassword(adminId, password): receives the security password required to perform critical operations and performs the necessary validation procedures.
 	\item askZoneList(adminId): returns the list of all stored zones.
-	\item acceptRide(taxiDriver, request): notifies the central system that the specified taxiDriver has accepted the specified request.
-	\item refuseRide(taxiDriver, request): notifies the central system that the specified taxiDriver has refused the specified request.
+	\item acceptRide(taxiDriver, request): notifies the central system that the specified taxiDriver has accepted the given request.
+	\item refuseRide(taxiDriver, request): notifies the central system that the specified taxiDriver has refused the given request.
 	\item dropRequest(taxiId): allows a taxi driver to request a call drop operation.
-	\item endRide(taxiDriverId, currentLocation): notifies the central system that the specified taxiDriver has ended his currently assigned ride, and also provides his current location.
+	\item endRide(taxiDriverId, currentLocation): notifies the central system that the specified taxiDriver has ended his currently assigned ride and also provides his current location.
 	\item requestTaxi(passengerId, passengerLocation, destination): allows a passenger to request a taxi at his current location for a specified destination.
 	\item reserveTaxi(passengerId, origin, destination, date, time): allows a passenger to reserve a taxi for a journey going from the specified origin to the specified destination, with pickup scheduled at the given date and time.
 	\item getReservationList(passengerId): returns the list of reservations placed by the specified passenger.
-	\item sendCurrentLocation(taxiId, location): lets the taxi driver application periodically notify his new coordinates.
+	\item sendCurrentLocation(taxiId, location): lets the taxi driver application periodically notify the taxi's new coordinates.
 	\item togglePressed(taxiDriverId): notifies the central system that the specified taxi driver has switched the availability toggle in his mobile application.
 \end{itemize}
 
@@ -315,6 +315,7 @@ In this section we're going to highlight the main architectural styles and patte
 	\item Client/Server Architecture. This architectural style allows us to concentrate all the business logic, which is very computationally intensive, into a number of servers, while the end-user applications only have to offer a limited set of presentation functionalities. It should be noted that we will not use this style with only two tiers, in order to achieve better reliability and availability.
 	\item 4-Tier Physical Architecture. This architectural style allows us to run the various components of the system on different devices, not necessarily located in the same server farm. This flexibility in terms of allocation of hardware resources provides a number of key advantages. First of all, it improves security and resilience with respect to attacks: in fact it clearly separates the hardware which runs processes directly connected to the outside world (the web servers) from the hardware running more sensitive and critical services, like the account manager, the administration services and the taxi management system. Furthermore, this gives us the opportunity to easily scale the number of machines of each tier to more efficiently adapt to variations of demand. The tiers that we'll use are: a client tier, a web presentation and remote services tier, a business logic tier and a data tier.
 	\item Publish/Subscribe. This architectural style is primarily used in the implementation of the notification system. Even though one-to-one communications between the central system and remotely connected devices could be achieved without the usage of the publish/subscribe architectural style, this design choice provides us greater flexibility with respect to future expansions of the core functionalities. An example of situation in which this architectural style could be useful is the addition of taxi sharing.
+	\item Cloud Architecture. This architectural style allows us to more efficiently scale up and down the system resources to match the load and also saves us the cost of building dedicated server farms to host the business components. 
 \end{itemize}
 
 \section{Other design decisions}
@@ -325,6 +326,7 @@ The main infrastructure of the system, which comprises the Remote Services Inter
 	\item It supports interoperability with different platforms by using SOAP to expose web services to remote clients 
 	\item Applications are run inside a managed environment which provides support for reliable database transactions, secure network communications and authentication protocols, thus enabling developers to concentrate their efforts on the peculiar functionalities of myTaxiService
 	\item There are many highly efficient and robust application servers which support load balancing
+	\item It is a mature, well known and supported technology
 \end{itemize}
 
 As for the mobile applications, we have decided to use the native libraries offered by each mobile platform in order to achieve a better look \& feel and greater performance. This decision comes at the expense of portability of the mobile application code. However, this doesn't actually represent a problem, for three main reasons:

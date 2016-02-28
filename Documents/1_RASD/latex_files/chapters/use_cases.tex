@@ -16,7 +16,7 @@ The mobile app of the passenger detects the GPS location, creates a taxi request
 
 The system receives the request and extracts the GPS location to compute the zone where the passenger is.
 
-The system selects the first available taxi driver from that zone queue and send him the request.
+The system selects the first available taxi driver from that zone queue and sends him the request.
 
 The taxi driver receives the request and accepts it. The mobile app of the taxi driver sends a confirmation to the system.
 
@@ -25,14 +25,14 @@ The system receives the confirmation and sends a notification to the passenger i
 The taxi driver checks that the security number and the taxi code sent to the passenger correspond to his own. \\
 \hline
 Exit condition &
-The taxi driver confirms that the passenger is on board. \\
+The taxi driver confirms that the passenger is onboard. \\
 \hline
 Exceptions &
 - If the passenger mobile app cannot receive the GPS location, the mobile app asks the passenger to insert his position manually.
 
 - If the passenger cannot connect to Internet, the mobile app tells the passenger that he can't call a taxi at the moment.
 
-- If the taxi driver refuses the call (or doesn't answer in 2 minutes), the system moves the taxi driver in the last position of the zone queue and forwards the request to the next available taxi driver.
+- If the taxi driver refuses the call (or doesn't answer in 2 minutes), the system moves its taxi in the last position of the zone queue and forwards the request to the next available taxi driver.
 
 - If the system cannot forward the request to the taxi driver because he is not connected to Internet, it moves the taxi driver in the last position of the zone queue and forwards the request to the next available taxi driver.
 
@@ -68,7 +68,7 @@ Exit condition &
 The passenger receives the confirmation. \\
 \hline
 Exceptions &
-- If one of the inserted fields in incorrect, the app requests the passenger to insert it again. \\
+- If one of the inserted fields is not valid, the app asks the passenger to insert it again. \\
 \hline
 \end{longtable}
 \end{center}
@@ -85,7 +85,7 @@ Actors &
 Passenger, Taxi driver \\
 \hline
 Entry condition & 
-The system checks if a reservation must be allocated, and discovers that there is one. \\
+The system checks for reservations to be allocated and discovers that there is one. \\
 \hline
 Flow of events & 
 The system uses the specified departing address to compute the corresponding zone and forwards the request to the first taxi in the queue associated with that zone.
@@ -95,7 +95,7 @@ and clicks on the ``accept request'' button.
 
 The system receives the taxi driver's confirmation, sets his status to ``currently riding'' and moves his taxi code from the current taxi zone queue to the ``currently riding'' list.
 
-The system uses this information to retrieve from an external mapping service an estimate time of arrival (ETA) and sends it to the passenger in a notifications along with the security code associated with the ride and the code of the assigned taxi.
+The system uses this information to retrieve from an external mapping service an estimated time of arrival (ETA) and sends it to the passenger in a notification along with the security code associated with the ride and the code of the assigned taxi.
 
 The passenger receives the notification on his mobile phone and waits for the taxi.
 
@@ -104,10 +104,10 @@ The taxi driver drives to the meeting location.
 After arriving to the meeting location, the taxi driver checks that the passenger's security number and taxi code matches his own. \\
 \hline
 Exit condition &
-The taxi driver take the passenger on board. \\
+The taxi driver takes the passenger on board. \\
 \hline
 Exceptions &
-- If the taxi driver refuses the call (or do not answer in 2 minutes), the system moves the taxi driver in the last position of the zone queue and forwards the request to the next available taxi driver.
+- If the taxi driver refuses the call (or doesn't answer in 2 minutes), the system moves its taxi in the last position of the zone queue and forwards the request to the next available taxi driver.
 
 - If the system cannot forward the request to the taxi driver because he is not connected to Internet, it moves the taxi driver in the last position of the zone queue and forwards the request to the next available taxi driver.
 
@@ -163,7 +163,7 @@ Entry condition &
 The taxi driver switches the availability toggle in the mobile application to the ``unavailable'' position. \\
 \hline
 Flow of events & 
-The mobile application sends a notification message to the central system, 
+The mobile application sends a notification message to the central system. 
 
 The system receives the notification and sets the taxi driver state to ``unavailable'', then proceeds to move his taxi code from the queue of his current zone to the unavailability queue.
 
@@ -192,14 +192,14 @@ Actors &
 Taxi driver \\
 \hline
 Entry condition & 
-The taxi driver crosses the city border. \\
+The taxi driver crosses the city border and enters the city. \\
 \hline
 Flow of events & 
 The mobile app of the taxi driver sends a notification to the central system containing the new location data. 
 
-The system receives the notification and determines that the taxi driver's current location is now inside the boundaries of the city, and computes the associated zone.
+The system receives the notification and determines that the taxi driver's current location is now inside the boundaries of the city, so it computes the associated zone.
 
-The system sets the taxi status as available, moves the taxi code into the last position of the computed zone’s queue and send a notitication to the taxi driver. \\
+The system sets the taxi status as available, moves the taxi code into the last position of the computed zone’s queue and send a notification to the taxi driver. \\
 \hline
 Exit condition &
 The taxi driver receives the notification. \\

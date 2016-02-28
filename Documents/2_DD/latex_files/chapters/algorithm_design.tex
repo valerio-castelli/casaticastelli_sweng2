@@ -9,14 +9,15 @@ The first algorithm we will focus on is the Taxi Request processing algorithm, w
 The most critical aspect of the algorithm is the proper management of the queues in a concurrent environment. In fact, every request is processed independently in a different thread for efficiency reasons: this means that accesses to queues must be managed in a way that ensures proper and consistent sorting of taxis.
 
 This is achieved by using an additional mapping data structure in each thread that associates to every taxi contained in the queue of the interested zone a special checked/unchecked status. 
-At the beginning of the requestTaxi() method, all taxis in the interested zone are inserted in the map with an unchecked status. A taxi is then considered checked if the algorithm has already considered it for the given request and the taxi driver has refused it; this way, it won't be considered again for the same request. 
+At the beginning of the requestTaxi(...) method, all taxis in the interested zone are inserted in the map with an unchecked status. A taxi is then set as checked if the algorithm has already considered it for the given request and the taxi driver has refused it; this way, it won't be considered again for the same request. 
 
 In order to keep this map data structure updated with respect to the insertion and removal of taxis in/from the interested zone queue, an instance of the observer design pattern is implemented between the TaxiManagement component and the zone queue object. Specifically, the thread responsible of a specific request registers itself as an observer of the interested zone queue object by exposing a couple of callbacks that are called every time a taxi is inserted or removed in/from the zone queue. The behavior of these callbacks is designed to keep the internal thread data structure consistent with the behavior of a queue; more specifically:
 \begin{itemize}
 	\item When a taxi is removed from the original zone queue, it is removed from the map only if it hasn't already been checked. In fact, to guarantee convergence the algorithm must remember the taxis that have already been checked. If the taxi is still marked as unchecked, then it can be safely removed; in this case, two scenarios are possible:
 	\begin{enumerate}
 	\item The taxi has been removed because it's become unavailable or it has gone out of the zone. 
-	\item The taxi has been selected to serve another request.	\end{enumerate}
+	\item The taxi has been selected to serve another request.	
+	\end{enumerate}
 	In both cases, it is correct to remove the taxi from the map, since it wouldn't be available to serve our request anyway. The removal of the taxi from the map allows the system to insert it back later on if it becomes available again.
 	\item When a taxi is added to the original zone queue, it is added to the map only if it hasn't already been stored inside it. In this way, a taxi can be stored in the map only if one of these two conditions holds:
 	\begin{enumerate}
