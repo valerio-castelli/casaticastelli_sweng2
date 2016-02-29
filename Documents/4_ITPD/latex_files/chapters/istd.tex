@@ -116,7 +116,7 @@ For each method we're going to provide a brief description of the input values a
 	A non-existing taxiId &
 	An InvalidArgumentValueException is raised. \\\hline
 	A valid taxiId and currentLocation, the taxi is on a ride and currentLocation is inside city&
-	The ride is considered closed and is finalized in the database\\\hline
+	The ride is considered closed and is finalized in the database.\\\hline
 \end{testtable}
 
 
@@ -131,7 +131,7 @@ For each method we're going to provide a brief description of the input values a
 	A location outside the city &
 	Returns false. \\\hline
 	A location inside the city &
-	Returns true \\\dline
+	Returns true. \\\dline
 		
 	\method{getZone(location)}
 	A null parameter &
@@ -172,7 +172,7 @@ For each method we're going to provide a brief description of the input values a
 	Both currentLocation and meetingPoint inside the city, but not within 50m from one another &
 	Returns false. \\\hline
 	Both currentLocation and meetingPoint inside the city, within 50m  from one another &
-	Returns false. \\\hline
+	Returns true. \\\hline
 \end{testtable}
 
 
@@ -189,7 +189,7 @@ For each method we're going to provide a brief description of the input values a
 	A destination whose coordinates are invalid &
 	An InvalidLocationException is raised. \\\hline
 	A passengerLocation outside the city &
-	A passengerId not correctly formatted \\\hline
+	An InvalidLocationException is raised. \\\hline
 	A valid set of parameters &
 	A new request is created and handled; refer to the RASD for the specific outcomes of this operation. \\\hline
 \end{testtable}
@@ -204,9 +204,9 @@ For each method we're going to provide a brief description of the input values a
 	An inexistent zone &
 	An InvalidArgumentValueException is raised. \\\hline
 	A zone with invalid fields &
-	An InvalidArgumentValueException  is raised. \\\hline
+	An InvalidArgumentValueException is raised. \\\hline
 	A valid set of parameters &
-	true if a taxi driver is available to serve the request, false otherwise \\\dline
+	Returns true if a taxi driver is available to serve the request, false otherwise. \\\dline
 	
 	\method{getAvailableTaxiDriver(request)}
 	A null request &
@@ -230,7 +230,7 @@ For each method we're going to provide a brief description of the input values a
 	An invalid taxiId &
 	An InvalidArgumentValueException is raised. \\\hline
 	A valid taxiId &
-	If the taxi driver is allowed to drop the request (check RASD conditions), it will return true, notify the passenger that his request has been dropped and update the database accordingly; otherwise it will return false.  \\\dline	
+	If the taxi driver is allowed to drop the request (check RASD conditions) it will return true, notify the passenger that his request has been dropped and update the database accordingly; otherwise it will return false.  \\\dline	
 	\method{sendCurrentLocation(taxiId, location)}
 	A null location &
 	A NullArgumentException is raised. \\\hline
@@ -239,9 +239,9 @@ For each method we're going to provide a brief description of the input values a
 	An invalid taxiId &
 	An InvalidArgumentValueException is raised. \\\hline
 	taxiId is valid, location is inside city&
-	Location is set as the new position of the taxi, the taxi is moved into the new zone, its status is set as available and the modification is written in the database.\\\hline
+	Location is set as the new position of the taxi, the taxi is moved into the new zone, its status is set to available and the modification is written in the database.\\\hline
 	taxiId is valid, location is outside city&
-	Location is set as the new position of the taxi, the taxi is moved into the out-of-city queue, its status is set as outide-city and the modification is written in the database. \\\hline
+	Location is set as the new position of the taxi, the taxi is moved into the out-of-city queue, its status is set to outide-city and the modification is written in the database. \\\hline
 \end{testtable}
 
 
@@ -257,9 +257,9 @@ For each method we're going to provide a brief description of the input values a
 	An array containing some null values &
 	A NullArgumentException is raised.\\\hline
 	An array of non-null, but invalid zones &
-	An InvalidArgumentValueException  is raised. \\\hline
+	An InvalidArgumentValueException is raised. \\\hline
 	An array of valid, but already existing zones &
-	An InvalidArgumentValueException  is raised. \\\hline
+	An InvalidArgumentValueException is raised. \\\hline
 	A non-empty array of valid and not existing zones &
 	The zones are inserted in the database. \\\dline
 	
@@ -267,9 +267,9 @@ For each method we're going to provide a brief description of the input values a
 	zone is null &
 	A NullArgumentException is raised.\\\hline
 	An invalid zone &
-	An InvalidArgumentValueException  is raised. \\\hline
+	An InvalidArgumentValueException is raised. \\\hline
 	A valid, but already existent zone &
-	An InvalidArgumentValueException  is raised. \\\hline
+	An InvalidArgumentValueException is raised. \\\hline
 	A valid and not existing zone &
 	The zone is inserted in the database. \\\dline
 	
@@ -281,7 +281,7 @@ For each method we're going to provide a brief description of the input values a
 	An array containing some null values &
 	A NullArgumentException is raised.\\\hline
 	An array of non-null, but invalid or inexistent zones &
-	An InvalidArgumentValueException  is raised. \\\hline
+	An InvalidArgumentValueException is raised. \\\hline
 	A non-empty array of valid, existing zones &
 	The data associated with the specified zones is updated in the database. \\\dline
 	
@@ -329,14 +329,14 @@ For each method we're going to provide a brief description of the input values a
 	A non-existing operation &
 	An InvalidSecurityLevelException is raised. \\\hline	
 	A valid appId and operation &
-	Insert a new <appId, operation> pair in the permission table in the database. \\\dline
+	Insert a new $<appId, operation>$ pair in the permission table in the database. \\\dline
 	
 	\method{revokePermission(appId, operation)}
 	A null parameter &
 	A NullArgumentException is raised. \\\hline
 	A non-existing operation &
 	An InvalidSecurityLevelException is raised. \\\hline	
-	A valid appId and operation, but the <appId, operation> is not present in the database &
+	A valid appId and operation, but the $<appId, operation>$ is not present in the database &
 	An InvalidArgumentValueException is raised. \\\hline
 	A valid appId and operation, and the $<appId, operation>$ is present in the database &
 	Remove the $<appId, operation>$ pair from the permission table of the database. \\\hline
@@ -355,7 +355,7 @@ For each method we're going to provide a brief description of the input values a
 	An array containing some null values &
 	A NullArgumentException is raised.\\\hline
 	An array of valid, but already existing taxi drivers &
-	An InvalidArgumentValueException  is raised. \\\hline
+	An InvalidArgumentValueException is raised. \\\hline
 	A non-empty array of valid and not existing taxi drivers &
 	The taxi drivers are inserted in the database. \\\dline
 	
@@ -365,7 +365,7 @@ For each method we're going to provide a brief description of the input values a
 	An invalid taxi driver &
 	An InvalidArgumentValueException is raised. \\\hline
 	A valid, but already existent taxi driver &
-	An InvalidArgumentValueException  is raised. \\\hline
+	An InvalidArgumentValueException is raised. \\\hline
 	A valid and not existing taxi driver &
 	The taxi driver is inserted in the database. \\\dline
 
@@ -415,7 +415,7 @@ For each method we're going to provide a brief description of the input values a
 	A passengerId that has already been confirmed &
 	An InvalidArgumentValueException is raised. \\\hline
 	A passengerId that hasn't already been confirmed &
-	The passenger status in the database is set as “confirmed”. \\\hline
+	The passenger status in the database is set to “confirmed”. \\\hline
 \end{testtable}
 
 \subsection{Login, Data Access Utilities}
@@ -450,7 +450,7 @@ For each method we're going to provide a brief description of the input values a
 	A NullArgumentException is raised.\\\hline
 	A valid user and secretCode combination, which however is not the correct one &
 	An InvalidSecurityLevelException is raised. \\\hline
-	A correct and valid user and secretCode combination, but an correctly formatted password &
+	A correct and valid user and secretCode combination, but an incorrectly formatted password &
 	An InvalidArgumentFormatException is raised. \\\hline
 	A correct and valid user and secretCode combination, and a correctly formatted password &
 	Updates the user password in the database. \\\hline
@@ -507,9 +507,9 @@ For each method we're going to provide a brief description of the input values a
 	A valid taxiId and currentLocation, but taxi is not on a ride &
 	An InvalidOperationException is raised. \\\hline
 	A valid taxiId and currentLocation, the taxi is on a ride and currentLocation is inside city&
-	The ride is considered closed and is finalized in the database, the taxi changes its status to available \\\hline
+	The ride is considered closed and is finalized in the database, the taxi changes its status to available. \\\hline
 	A valid taxiId and currentLocation, the taxi is on a ride and currentLocation is outside city&
-	The ride is considered closed and is finalized in the database, the taxi changes its status to outside-city \\\dline
+	The ride is considered closed and is finalized in the database, the taxi changes its status to outside-city.\\\dline
 	
 	\method{acceptRide(taxiId, request)}
 	A null request &
@@ -533,7 +533,7 @@ For each method we're going to provide a brief description of the input values a
 	An invalid taxiId &
 	An InvalidArgumentValueException is raised. \\\hline
 	A valid taxiId and request &
-	The taxi is moved to the last position of its zone queue and the request is marked as refused from the specified taxi driver. \\\dline
+	The taxi is moved to the last position of its zone queue and the request is marked as refused by the specified taxi driver. \\\dline
 	
 	\method{togglePressed(taxiId)}
 	An invalid taxiId &
@@ -557,10 +557,10 @@ For each method we're going to provide a brief description of the input values a
 	An InvalidArgumentValueException is raised. \\\hline
 	A passenger with one or more empty fields &
 	An InvalidArgumentValueException is raised. \\\hline
-	A passenger with the same mail address as an existing passenger &
+	A passenger with the same mail address of an existing passenger &
 	An InvalidArgumentValueException is raised. \\\hline
 	A valid passenger &
-	The passenger data is inserted in the database and a registration confirmation mail is sent to him. The passenger status is set as “pending confirmation”. \\\dline
+	The passenger data is inserted in the database and a registration confirmation mail is sent to him. The passenger status is set to “pending confirmation”. \\\dline
 	
 	\method{deletePassenger(passengerId)}
 	A null parameter &
@@ -588,7 +588,7 @@ For each method we're going to provide a brief description of the input values a
 	A passengerId that has already been confirmed &
 	An InvalidArgumentValueException is raised. \\\hline
 	A passengerId that hasn't already been confirmed &
-	The passenger status in the database is set as “confirmed”. \\\dline
+	The passenger status in the database is set to “confirmed”. \\\dline
 		
 	\method{checkCredentials(user, password)}
 	A null parameter &
@@ -674,7 +674,7 @@ For each method we're going to provide a brief description of the input values a
 	An invalid adminId &
 	An InvalidSecurityLevelException is raised. \\\hline
 	A valid appId and operation &
-	Insert a new <appId, operation> pair in the permission table in the database. \\\dline
+	Insert a new $<appId, operation>$ pair in the permission table in the database. \\\dline
 	
 	\method{revokePermission(adminId, appId, operation)}
 	A null parameter &
@@ -683,10 +683,10 @@ For each method we're going to provide a brief description of the input values a
 	An InvalidSecurityLevelException is raised. \\\hline	
 	An invalid adminId &
 	An InvalidSecurityLevelException is raised. \\\hline
-	A valid appId and operation, but the <appId, operation> is not present in the database &
+	A valid appId and operation, but the $<appId, operation>$ is not present in the database &
 	An InvalidArgumentValueException is raised. \\\hline
-	A valid appId and operation, and the <appId, operation> is present in the database &
-	Remove the <appId, operation> pair from the permission table of the database. \\\dline
+	A valid appId and operation, and the $<appId, operation>$ is present in the database &
+	Remove the $<appId, operation>$ pair from the permission table of the database. \\\dline
 
 	\method{askZoneList(adminId)}
 	An invalid adminId &
@@ -738,7 +738,7 @@ For each method we're going to provide a brief description of the input values a
 	An array containing some null values &
 	A NullArgumentException is raised.\\\hline
 	An array of non-null, but invalid or existing taxi drivers and zones &
-	An InvalidArgumentValueException  is raised. \\\hline
+	An InvalidArgumentValueException is raised. \\\hline
 	A valid adminId and a non-empty array of non-existing taxi drivers and zones &
 	The data associated with the new taxi drivers and zones are inserted in the database. \\\hline
 \end{testtable}

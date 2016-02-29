@@ -10,4 +10,5 @@
 \contentsline {subsection}{\numberline {2.2.3}\lstinline [ breaklines=true, breakatwhitespace=false, basicstyle=\ttfamily \color {inlinecode}, stringstyle=\color {inlinecode}, ]|createManagedConnectionFactories| method}{13}{subsection.2.2.3}
 \contentsline {section}{\numberline {2.3}Other issues}{16}{section.2.3}
 \contentsline {chapter}{Appendix \numberline {A}Checklist}{18}{Appendix.1.A}
-\contentsline {chapter}{Appendix \numberline {B}Hours of work}{24}{Appendix.1.B}
+\contentsline {chapter}{Appendix \numberline {B}Changelog}{24}{Appendix.1.B}
+\contentsline {chapter}{Appendix \numberline {C}Hours of work}{25}{Appendix.1.C}

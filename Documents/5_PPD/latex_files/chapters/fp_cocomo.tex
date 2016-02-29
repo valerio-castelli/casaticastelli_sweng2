@@ -3,7 +3,7 @@ This section is specifically focused on providing some estimations of the expect
 
 For the size estimation part we will essentially use the Function Points approach, taking into account all the main functionalities of myTaxiService and estimating the correspondent amount of lines of code to be written in Java. This estimation will only take into account the parts of the project that concur to the implementation of the business logic and will disregard the aspects concerning the user interface.
 
-For the cost and effort estimation we will instead rely on the COCOMO approach, using as in initial guidance the amount of lines of code computed with the FP approach. 
+For the cost and effort estimation we will instead rely on the COCOMO approach, using as initial guidance the amount of lines of code computed with the FP approach. 
 \section{Size estimation: function points}
 The Function Points approach provides an estimation of the size of a project taking as inputs the amount of functionalities to be developed and their complexity.
 
@@ -42,11 +42,11 @@ External Inquiries & 3 & 4 & 6\\
 \subsection{Internal Logic Files (ILFs)}
 myTaxiService relies on a number of ILFs to store the information it needs to offer the required functionalities. In the next few paragraphs, we'll analyze in detail the various ILFs we have identified.
 
-First of all, the system has to store information about taxis and taxi drivers. These data are condensed in a single table that holds the first name, last name and birthdate of a taxi driver as Strings, together with his home address, SSN, email address and mobile phone number as contact information. It also stores the taxi driver's driving license, his taxi license, the taxi plate number and the taxi status (available, unavailable, on a ride, outside city) for convenience. 
+First of all, the system has to store information about taxis and taxi drivers. These data are condensed in a single table that holds the first name, last name and birthdate of a taxi driver as strings, together with his home address, SSN, email address and mobile phone number as contact information. It also stores the taxi driver's driving license, his taxi license, the taxi plate number and the taxi status (available, unavailable, on a ride, outside city, pending confirmation) for convenience. 
 
 As for the zones, they are stores using a two-level structure. The first level of the structure holds the identifiers of all the zones, while a secondary table contains all the location coordinates (as $<$latitude, longitude$>$ pairs) necessary to identify the vertices of the zone polygon. 
 
-The system furthermore needs a queue for each zone in which it can store the identifiers of the taxi drivers waiting in that zone and their relative position in the queue, and similar structures to store the lists of taxi drivers who are unavailable, outside the city or currently on a ride. These data are stored on disk primarily to facilitate a fast recovery of the system in case of failure.
+The system also needs a queue for each zone in which it can store the identifiers of the taxi drivers waiting in that zone and their relative position in the queue, and similar structures to store the lists of taxi drivers who are unavailable, outside the city, currently on a ride or pending confirmation. These data are stored on disk primarily to facilitate a fast recovery of the system in case of failure.
 
 Reservations are stored in a dedicated table that holds all the information about the identifier of the passenger who booked them, the timestamp of the moment when the tuple is created, the date and time of the pickup, the origin and destination locations as addresses and the status (pending, being served, completed, cancelled). 
 
@@ -107,21 +107,21 @@ Passengers:
 \begin{itemize}
 	\item Password retrieval: this operation has an average complexity, as it involves a number of steps in order to be sure the user is really entitled to retrieve his password. For this reason, it contributes 4 FPs.
 	\item Change settings: this operation also has an average complexity, as the number of settings to be managed can be quite high. As such, it contributes 4 FPs.
-	\item Request or reserve a taxi: these are both very complex operations that involve a large number of components. For this reason they account 6 FPs each.
+	\item Request or reserve a taxi: these are both very complex operations that involve a large number of components. For this reason they account for 6 FPs each.
 	\item Delete a reservation: since this is straightforward operation, it yields 3 FPs. 
 	\item Register a new account: this operation also has an average complexity, as it involves a number of checks on the validity of the fields. As such, it contributes 4 FPs.
 	\item View reservation history: since this is straightforward operation, it yields 3 FPs. 
 \end{itemize}
 Administrators:
 \begin{itemize}
-	\item Insert, delete and update zones: these are very complex operations that involve a great number of components. For this reason they account 6 FPs each.
-	\item Insert, delete and update taxi drivers: as for the zones, the complexity of these operations is high, so they account another 6 FPs each. 
+	\item Insert, delete and update zones: these are very complex operations that involve a great number of components. For this reason they account for 6 FPs each.
+	\item Insert, delete and update taxi drivers: as for the zones, the complexity of these operations is high, so they account for another 6 FPs each. 
 	\item Request service statistics: as this operation involves some fairly complicated aggregate queries on the database, it can be considered complex and thus contributes 6FPs to the total amount.
 	\item Grant and revoke privileges to an application or plugin: while these two specular operations involve a large number of fields that can be set, the impact on the database is quite limited. For this reason we think they have an average complexity and they should contribute 4 FPs each.
 \end{itemize}
 Taxi drivers:
 \begin{itemize}
-	\item Accept, refuse and end ride: even though from a client point of view these operations seem trivial, the steps required to properly rearrange the taxi queues are quite complex. For this reason they account 6 FPs each.
+	\item Accept, refuse and end ride: even though from a client point of view these operations seem trivial, the steps required to properly rearrange the taxi queues are quite complex. For this reason they account for 6 FPs each.
 	\item Set availability: this operation also involves a few rearrangements of the taxi queues, but has a smaller impact on the overall behavior of the system. For this reason it can be though as having an average complexity and it contributes 4 FPs.
 \end{itemize}
 
@@ -236,7 +236,7 @@ A brief description for each scale driver:
 	\item Development flexibility: it reflects the degree of flexibility in the development process with respect to the external specification and requirements. Since there are very strict requirements on the functionalities but nothing specific is stated as for the technology to be used, this value will be low.
 	\item Risk resolution: reflects the level of awareness and reactiveness with respect to risks. The risk analysis we performed is quite extensive, so the value will be set to very high.
 	\item Team cohesion: it's an indicator of how well the team members know each other and work together in a cooperative way. For our team, the value is very high.
-	\item Process maturity: although we had some problems during the development of the project, the goals have been successfully achieved, so this value is set to high.
+	\item Process maturity: although we had some problems during the development of the project, the goals have been successfully achieved. Since this is our first project of this kind, this value is set to level 3.
 \end{itemize}
 
 The results of our evaluation is the following:
@@ -246,7 +246,7 @@ The results of our evaluation is the following:
 	Development flexibility (FLEX) & Low & 4.05\\
 	Risk resolution (RESL) & Very high & 1.41\\
 	Team cohesion (TEAM) & Very high & 1.10\\
-	Process maturity (PMAT) & Very high & 3.12\\\hline
+	Process maturity (PMAT) & Level 3 & 3.12\\\hline
 	\fptotal{14.64}
 \end{factorcounttable}
 
@@ -266,7 +266,7 @@ The results of our evaluation is the following:
 \begin{itemize}
 	\item Database size:
 	\begin{itemize}
-	\item[] This measure considers the effective dimension of our database. We don't have the ultimate answer, but our estimation given the tables and fields we have is to reach a 3GB database. Since it is distributed over 10.000-15.000 SLOC, the ratio D/P (measured as testing DB bytes/program SLOC) is between 209 and 314, resulting in the DATA cost driver being high. 
+	\item[] This measure considers the effective size of our database. We don't have the ultimate answer, but our estimation given the tables and fields we have is to reach a 3GB database. Since it is distributed over 10.000-15.000 SLOC, the ratio D/P (measured as testing DB bytes/program SLOC) is between 209 and 314, resulting in the DATA cost driver being high. 
 	\begin{costdriverstable}{DATA Cost Drivers}
 		\costdescriptors{DATA Descriptors}{}{$\frac{D}{P}$ $<$ 10}{10 $\le$ $\frac{D}{P}$ $\le$ 100}{100 $\le$ $\frac{D}{P}$ $\le$ 1000}{$\frac{D}{P}$ $>$ 1000}{}\hline
 		\ratinglevel{Very low}{Low}{Nominal}{High}{Very High}{Extra High}
@@ -313,7 +313,7 @@ The results of our evaluation is the following:
 \begin{itemize}
 	\item Execution time constraint: 
 	\begin{itemize}
-	\item[] This parameter describes the expected amount of CPU usage with respect to the computational capabilities of the hardware. As myTaxiService is a quite complex software, our expectance is that its CPU usage will be very high.
+	\item[] This parameter describes the expected amount of CPU usage with respect to the computational capabilities of the hardware. As myTaxiService is a quite complex piece of software, our expectance is that its CPU usage will be very high.
 	\begin{costdriverstable}{TIME Cost Driver}
 		\costdescriptors{TIME Descriptors}{}{}{$\le$ 50\% use of available execution time}{70\% use of available execution time}{85\% use of available execution time} {95\% use of available execution time}\hline
 		\ratinglevel{Very low}{Low}{Nominal}{High}{Very High}{Extra High}

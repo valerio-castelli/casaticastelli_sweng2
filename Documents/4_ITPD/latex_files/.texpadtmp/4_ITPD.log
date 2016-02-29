@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.21)  21 JAN 2016 14:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.21)  29 FEB 2016 15:04
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -532,7 +532,7 @@ File: listings.cfg 2014/09/06 1.5e listings configuration
 Package: listings 2014/09/06 1.5e (Carsten Heinz)
  (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/09/06 1.5e listings language file
-) (./preamble/commands.tex)) (/Users/Valerio/GitHub/casaticastelli_sweng2/4_ITPD/latex_files/.texpadtmp/4_ITPD.aux)
+) (./preamble/commands.tex)) (/Users/Valerio/GitHub/casaticastelli_sweng2/Documents/4_ITPD/latex_files/.texpadtmp/4_ITPD.aux)
 \openout1 = `4_ITPD.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
@@ -561,7 +561,7 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 4.
 LaTeX Info: Redefining \pageref on input line 4.
 LaTeX Info: Redefining \nameref on input line 4.
- (/Users/Valerio/GitHub/casaticastelli_sweng2/4_ITPD/latex_files/.texpadtmp/4_ITPD.out) (/Users/Valerio/GitHub/casaticastelli_sweng2/4_ITPD/latex_files/.texpadtmp/4_ITPD.out)
+ (/Users/Valerio/GitHub/casaticastelli_sweng2/Documents/4_ITPD/latex_files/.texpadtmp/4_ITPD.out) (/Users/Valerio/GitHub/casaticastelli_sweng2/Documents/4_ITPD/latex_files/.texpadtmp/4_ITPD.out)
 \@outlinefile=\write3
 \openout3 = `4_ITPD.out'.
 
@@ -580,14 +580,14 @@ LaTeX Info: Redefining \nameref on input line 4.
 \everyMPtoPDFconversion=\toks26
 )
 \c@lstlisting=\count131
- (./title/title_page.tex <title/polimi_logo.png, id=184, 419.31656pt x 417.81094pt>
+ (./title/title_page.tex <title/polimi_logo.png, id=188, 419.31656pt x 417.81094pt>
 File: title/polimi_logo.png Graphic file (type png)
  <use title/polimi_logo.png>
 Package pdftex.def Info: title/polimi_logo.png used on input line 3.
 (pdftex.def)             Requested size: 150.0pt x 149.4619pt.
  [1
 
-{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./title/polimi_logo.png>]) (/Users/Valerio/GitHub/casaticastelli_sweng2/4_ITPD/latex_files/.texpadtmp/4_ITPD.toc
+{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./title/polimi_logo.png>]) (/Users/Valerio/GitHub/casaticastelli_sweng2/Documents/4_ITPD/latex_files/.texpadtmp/4_ITPD.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.95> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -614,30 +614,31 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [2] (./chapters/introduction.tex
 Chapter 1.
 
-Underfull \vbox (badness 10000) detected at line 16
+Underfull \vbox (badness 10000) detected at line 20
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 26.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 30.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 26.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 30.
  [1
 
 
 ]
-Overfull \hbox (34.68718pt too wide) in paragraph at lines 62--63
-[]\OT1/cmr/m/n/10.95 myTaxiService Re-quire-ment Anal-y-sis and Spec-i-fi-ca-tion Doc-u-ment: RASD.pdf 
- []
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2]) (./chapters/integration.tex
+[2]
+Overfull \hbox (34.68718pt too wide) in paragraph at lines 66--67
+[]\OT1/cmr/m/n/10.95 myTaxiService Re-quire-ment Anal-y-sis and Spec-i-fi-ca-tion Doc-u-ment: RASD.pdf 
+ []
+
+) (./chapters/integration.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -666,7 +667,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[6] <pdfs/integration_dataaccess.pdf, id=277, 445.665pt x 114.4275pt>
+[6] <pdfs/integration_dataaccess.pdf, id=282, 445.665pt x 114.4275pt>
 File: pdfs/integration_dataaccess.pdf Graphic file (type pdf)
  <use pdfs/integration_dataaccess.pdf>
 Package pdftex.def Info: pdfs/integration_dataaccess.pdf used on input line 58.
@@ -676,12 +677,12 @@ Overfull \hbox (1.31786pt too wide) in paragraph at lines 61--62
 \OT1/cmr/m/n/10.95 sub-com-po-nents im-ple-ment-ing the \OT1/cmr/bx/n/10.95 Taxi Man-age-ment Sys-tem\OT1/cmr/m/n/10.95 . This choice
  []
 
-<pdfs/taximan/integration_reqmansub.pdf, id=278, 686.565pt x 114.4275pt>
+<pdfs/taximan/integration_reqmansub.pdf, id=283, 686.565pt x 114.4275pt>
 File: pdfs/taximan/integration_reqmansub.pdf Graphic file (type pdf)
  <use pdfs/taximan/integration_reqmansub.pdf>
 Package pdftex.def Info: pdfs/taximan/integration_reqmansub.pdf used on input line 68.
 (pdftex.def)             Requested size: 350.0pt x 58.3328pt.
- <pdfs/taximan/integration_resmansub.pdf, id=279, 686.565pt x 114.4275pt>
+ <pdfs/taximan/integration_resmansub.pdf, id=284, 686.565pt x 114.4275pt>
 File: pdfs/taximan/integration_resmansub.pdf Graphic file (type pdf)
  <use pdfs/taximan/integration_resmansub.pdf>
 Package pdftex.def Info: pdfs/taximan/integration_resmansub.pdf used on input line 73.
@@ -693,12 +694,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[7 <./pdfs/integration_dataaccess.pdf> <./pdfs/taximan/integration_reqmansub.pdf>] <pdfs/taximan/integration_taximansub.pdf, id=292, 686.565pt x 259.97125pt>
+[7 <./pdfs/integration_dataaccess.pdf> <./pdfs/taximan/integration_reqmansub.pdf>] <pdfs/taximan/integration_taximansub.pdf, id=297, 686.565pt x 259.97125pt>
 File: pdfs/taximan/integration_taximansub.pdf Graphic file (type pdf)
  <use pdfs/taximan/integration_taximansub.pdf>
 Package pdftex.def Info: pdfs/taximan/integration_taximansub.pdf used on input line 78.
 (pdftex.def)             Requested size: 350.0pt x 132.52805pt.
- <pdfs/integration_taximan.pdf, id=293, 736.7525pt x 425.59pt>
+ <pdfs/integration_taximan.pdf, id=298, 736.7525pt x 425.59pt>
 File: pdfs/integration_taximan.pdf Graphic file (type pdf)
  <use pdfs/integration_taximan.pdf>
 Package pdftex.def Info: pdfs/integration_taximan.pdf used on input line 83.
@@ -710,27 +711,27 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[8 <./pdfs/taximan/integration_resmansub.pdf> <./pdfs/taximan/integration_taximansub.pdf> <./pdfs/integration_taximan.pdf>] <pdfs/systemadmin/integration_apipermansub.pdf, id=309, 686.565pt x 114.4275pt>
+[8 <./pdfs/taximan/integration_resmansub.pdf> <./pdfs/taximan/integration_taximansub.pdf> <./pdfs/integration_taximan.pdf>] <pdfs/systemadmin/integration_apipermansub.pdf, id=314, 686.565pt x 114.4275pt>
 File: pdfs/systemadmin/integration_apipermansub.pdf Graphic file (type pdf)
  <use pdfs/systemadmin/integration_apipermansub.pdf>
 Package pdftex.def Info: pdfs/systemadmin/integration_apipermansub.pdf used on input line 93.
 (pdftex.def)             Requested size: 350.0pt x 58.3328pt.
- <pdfs/systemadmin/integration_zonedivmansub.pdf, id=310, 686.565pt x 114.4275pt>
+ <pdfs/systemadmin/integration_zonedivmansub.pdf, id=315, 686.565pt x 114.4275pt>
 File: pdfs/systemadmin/integration_zonedivmansub.pdf Graphic file (type pdf)
  <use pdfs/systemadmin/integration_zonedivmansub.pdf>
 Package pdftex.def Info: pdfs/systemadmin/integration_zonedivmansub.pdf used on input line 97.
 (pdftex.def)             Requested size: 350.0pt x 58.3328pt.
- <pdfs/systemadmin/integration_taxidrivermansub.pdf, id=311, 686.565pt x 114.4275pt>
+ <pdfs/systemadmin/integration_taxidrivermansub.pdf, id=316, 686.565pt x 114.4275pt>
 File: pdfs/systemadmin/integration_taxidrivermansub.pdf Graphic file (type pdf)
  <use pdfs/systemadmin/integration_taxidrivermansub.pdf>
 Package pdftex.def Info: pdfs/systemadmin/integration_taxidrivermansub.pdf used on input line 101.
 (pdftex.def)             Requested size: 350.0pt x 58.3328pt.
- <pdfs/systemadmin/integration_servstatsub.pdf, id=312, 686.565pt x 114.4275pt>
+ <pdfs/systemadmin/integration_servstatsub.pdf, id=317, 686.565pt x 114.4275pt>
 File: pdfs/systemadmin/integration_servstatsub.pdf Graphic file (type pdf)
  <use pdfs/systemadmin/integration_servstatsub.pdf>
 Package pdftex.def Info: pdfs/systemadmin/integration_servstatsub.pdf used on input line 105.
 (pdftex.def)             Requested size: 350.0pt x 58.3328pt.
- <pdfs/systemadmin/integration_pluginmansub.pdf, id=313, 686.565pt x 114.4275pt>
+ <pdfs/systemadmin/integration_pluginmansub.pdf, id=318, 686.565pt x 114.4275pt>
 File: pdfs/systemadmin/integration_pluginmansub.pdf Graphic file (type pdf)
  <use pdfs/systemadmin/integration_pluginmansub.pdf>
 Package pdftex.def Info: pdfs/systemadmin/integration_pluginmansub.pdf used on input line 109.
@@ -746,22 +747,22 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[9 <./pdfs/systemadmin/integration_apipermansub.pdf> <./pdfs/systemadmin/integration_zonedivmansub.pdf> <./pdfs/systemadmin/integration_taxidrivermansub.pdf> <./pdfs/systemadmin/integration_servstatsub.pdf> <./pdfs/systemadmin/integration_pluginmansub.pdf>] <pdfs/accountman/integration_passregsub.pdf, id=333, 686.565pt x 114.4275pt>
+[9 <./pdfs/systemadmin/integration_apipermansub.pdf> <./pdfs/systemadmin/integration_zonedivmansub.pdf> <./pdfs/systemadmin/integration_taxidrivermansub.pdf> <./pdfs/systemadmin/integration_servstatsub.pdf> <./pdfs/systemadmin/integration_pluginmansub.pdf>] <pdfs/accountman/integration_passregsub.pdf, id=338, 686.565pt x 114.4275pt>
 File: pdfs/accountman/integration_passregsub.pdf Graphic file (type pdf)
  <use pdfs/accountman/integration_passregsub.pdf>
 Package pdftex.def Info: pdfs/accountman/integration_passregsub.pdf used on input line 119.
 (pdftex.def)             Requested size: 350.0pt x 58.3328pt.
- <pdfs/accountman/integration_loginsub.pdf, id=334, 686.565pt x 114.4275pt>
+ <pdfs/accountman/integration_loginsub.pdf, id=339, 686.565pt x 114.4275pt>
 File: pdfs/accountman/integration_loginsub.pdf Graphic file (type pdf)
  <use pdfs/accountman/integration_loginsub.pdf>
 Package pdftex.def Info: pdfs/accountman/integration_loginsub.pdf used on input line 123.
 (pdftex.def)             Requested size: 350.0pt x 58.3328pt.
- <pdfs/accountman/integration_pwdretsub.pdf, id=335, 686.565pt x 114.4275pt>
+ <pdfs/accountman/integration_pwdretsub.pdf, id=340, 686.565pt x 114.4275pt>
 File: pdfs/accountman/integration_pwdretsub.pdf Graphic file (type pdf)
  <use pdfs/accountman/integration_pwdretsub.pdf>
 Package pdftex.def Info: pdfs/accountman/integration_pwdretsub.pdf used on input line 127.
 (pdftex.def)             Requested size: 350.0pt x 58.3328pt.
- <pdfs/accountman/integration_settingsmansub.pdf, id=336, 686.565pt x 114.4275pt>
+ <pdfs/accountman/integration_settingsmansub.pdf, id=341, 686.565pt x 114.4275pt>
 File: pdfs/accountman/integration_settingsmansub.pdf Graphic file (type pdf)
  <use pdfs/accountman/integration_settingsmansub.pdf>
 Package pdftex.def Info: pdfs/accountman/integration_settingsmansub.pdf used on input line 131.
@@ -773,7 +774,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10 <./pdfs/accountman/integration_passregsub.pdf> <./pdfs/accountman/integration_loginsub.pdf> <./pdfs/accountman/integration_pwdretsub.pdf> <./pdfs/accountman/integration_settingsmansub.pdf>] <pdfs/integration_subsystems.pdf, id=355, 1676.2625pt x 1013.7875pt>
+[10 <./pdfs/accountman/integration_passregsub.pdf> <./pdfs/accountman/integration_loginsub.pdf> <./pdfs/accountman/integration_pwdretsub.pdf> <./pdfs/accountman/integration_settingsmansub.pdf>] <pdfs/integration_subsystems.pdf, id=360, 1676.2625pt x 1013.7875pt>
 File: pdfs/integration_subsystems.pdf Graphic file (type pdf)
  <use pdfs/integration_subsystems.pdf>
 Package pdftex.def Info: pdfs/integration_subsystems.pdf used on input line 138.
@@ -803,9 +804,17 @@ Underfull \hbox (badness 5316) in paragraph at lines 15--15
  []
 
 
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4 ignored in \hhline argument
+(hhline)                 on input line 17.
+
+
 Underfull \hbox (badness 5316) in paragraph at lines 23--23
 []|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
+
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4 ignored in \hhline argument
+(hhline)                 on input line 25.
 
 
 Underfull \vbox (badness 10000) detected at line 30
@@ -824,9 +833,17 @@ Underfull \hbox (badness 5316) in paragraph at lines 40--40
  []
 
 
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4 ignored in \hhline argument
+(hhline)                 on input line 42.
+
+
 Underfull \hbox (badness 5316) in paragraph at lines 48--48
 []|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
+
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4 ignored in \hhline argument
+(hhline)                 on input line 50.
 
 
 Underfull \hbox (badness 5316) in paragraph at lines 56--56
@@ -839,10 +856,20 @@ Underfull \hbox (badness 5316) in paragraph at lines 60--60
  []
 
 
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4 ignored in \hhline argument
+(hhline)                 on input line 62.
+
+
 Underfull \vbox (badness 10000) detected at line 66
  []
 
 
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[13]
 Underfull \hbox (badness 5316) in paragraph at lines 77--77
 []|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
@@ -863,14 +890,26 @@ Underfull \hbox (badness 5316) in paragraph at lines 81--81
  []
 
 
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4 ignored in \hhline argument
+(hhline)                 on input line 83.
+
+
 Underfull \hbox (badness 5316) in paragraph at lines 89--89
 []|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
 
 
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4 ignored in \hhline argument
+(hhline)                 on input line 91.
+
+
 Underfull \hbox (badness 5316) in paragraph at lines 97--97
 []|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
+
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4 ignored in \hhline argument
+(hhline)                 on input line 99.
 
 
 Underfull \hbox (badness 5316) in paragraph at lines 103--103
@@ -882,9 +921,17 @@ Underfull \vbox (badness 10000) detected at line 103
  []
 
 
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4 ignored in \hhline argument
+(hhline)                 on input line 105.
+
+
 Underfull \hbox (badness 5316) in paragraph at lines 109--109
 []|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
+
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4 ignored in \hhline argument
+(hhline)                 on input line 111.
 
 
 Underfull \hbox (badness 5316) in paragraph at lines 117--117
@@ -897,16 +944,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[13]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
 [14]
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4 ignored in \hhline argument
+(hhline)                 on input line 134.
+
+
 Underfull \vbox (badness 10000) detected at line 145
  []
+
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4 ignored in \hhline argument
+(hhline)                 on input line 159.
 
 
 Underfull \hbox (badness 4454) in paragraph at lines 170--170
@@ -963,9 +1012,17 @@ Underfull \hbox (badness 5316) in paragraph at lines 207--207
  []
 
 
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4 ignored in \hhline argument
+(hhline)                 on input line 209.
+
+
 Underfull \hbox (badness 5316) in paragraph at lines 215--215
 []|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
+
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4 ignored in \hhline argument
+(hhline)                 on input line 217.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 222--222
@@ -988,6 +1045,10 @@ Underfull \hbox (badness 3260) in paragraph at lines 226--226
  []
 
 
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4 ignored in \hhline argument
+(hhline)                 on input line 227.
+
+
 Underfull \hbox (badness 5316) in paragraph at lines 231--231
 []|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
@@ -995,6 +1056,10 @@ Underfull \hbox (badness 5316) in paragraph at lines 231--231
 
 Underfull \vbox (badness 10000) detected at line 231
  []
+
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4 ignored in \hhline argument
+(hhline)                 on input line 233.
 
 
 Underfull \hbox (badness 5316) in paragraph at lines 240--240
@@ -1030,6 +1095,10 @@ Underfull \hbox (badness 5316) in paragraph at lines 262--262
  []
 
 
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4 ignored in \hhline argument
+(hhline)                 on input line 264.
+
+
 Underfull \hbox (badness 5316) in paragraph at lines 270--270
 []|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
@@ -1038,6 +1107,10 @@ Underfull \hbox (badness 5316) in paragraph at lines 270--270
 Underfull \hbox (badness 5316) in paragraph at lines 272--272
 []|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
+
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4 ignored in \hhline argument
+(hhline)                 on input line 274.
 
 
 Underfull \hbox (badness 5316) in paragraph at lines 280--280
@@ -1059,6 +1132,10 @@ Underfull \hbox (badness 6412) in paragraph at lines 285--285
  []
 
 
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4 ignored in \hhline argument
+(hhline)                 on input line 286.
+
+
 Underfull \hbox (badness 5316) in paragraph at lines 290--290
 []|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
@@ -1067,6 +1144,10 @@ Underfull \hbox (badness 5316) in paragraph at lines 290--290
 Underfull \hbox (badness 2050) in paragraph at lines 292--292
 []|\OT1/cmr/m/n/10.95 The zone data is re-moved from the
  []
+
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4 ignored in \hhline argument
+(hhline)                 on input line 292.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1085,6 +1166,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 308--308
  []
 
 
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4 ignored in \hhline argument
+(hhline)                 on input line 312.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 318--318
 []|\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion is
  []
@@ -1100,9 +1185,17 @@ Underfull \hbox (badness 1178) in paragraph at lines 323--323
  []
 
 
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4 ignored in \hhline argument
+(hhline)                 on input line 324.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 330--330
 []|\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion is
  []
+
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4 ignored in \hhline argument
+(hhline)                 on input line 332.
 
 
 Underfull \vbox (badness 10000) detected at line 334
@@ -1111,6 +1204,26 @@ Underfull \vbox (badness 10000) detected at line 334
 
 Underfull \hbox (badness 10000) in paragraph at lines 338--338
 []|\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 339--339
+[]|\OT1/cmr/m/n/10.95 A valid ap-pId and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 339--339
+\OT1/cmr/m/n/10.95 op-er-a-tion, but the
+ []
+
+
+Underfull \hbox (badness 5592) in paragraph at lines 339--339
+\OML/cmm/m/it/10.95 < appId; operation >$
+ []
+
+
+Underfull \hbox (badness 6542) in paragraph at lines 339--339
+\OT1/cmr/m/n/10.95 is not present in the
  []
 
 
@@ -1160,6 +1273,10 @@ Underfull \hbox (badness 1960) in paragraph at lines 360--360
  []
 
 
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4 ignored in \hhline argument
+(hhline)                 on input line 360.
+
+
 Underfull \hbox (badness 5316) in paragraph at lines 366--366
 []|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
@@ -1170,6 +1287,10 @@ Underfull \hbox (badness 5316) in paragraph at lines 368--368
  []
 
 
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4 ignored in \hhline argument
+(hhline)                 on input line 370.
+
+
 Underfull \hbox (badness 5316) in paragraph at lines 376--376
 []|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
@@ -1178,6 +1299,10 @@ Underfull \hbox (badness 5316) in paragraph at lines 376--376
 Underfull \hbox (badness 5316) in paragraph at lines 378--378
 []|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
+
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4 ignored in \hhline argument
+(hhline)                 on input line 380.
 
 
 Underfull \vbox (badness 10000) detected at line 382
@@ -1200,6 +1325,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [20]
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4 ignored in \hhline argument
+(hhline)                 on input line 398.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 401--401
 []|\OT1/cmr/m/n/10.95 A non-existing pas-sen-
  []
@@ -1208,6 +1338,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 401--401
 Underfull \hbox (badness 5316) in paragraph at lines 402--402
 []|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
+
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4 ignored in \hhline argument
+(hhline)                 on input line 404.
+
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4 ignored in \hhline argument
+(hhline)                 on input line 410.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 413--413
@@ -1249,8 +1387,17 @@ Underfull \vbox (badness 10000) detected at line 435
  []
 
 
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4 ignored in \hhline argument
+(hhline)                 on input line 446.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 452--452
 []|\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion is
+ []
+
+
+Underfull \hbox (badness 1400) in paragraph at lines 453--453
+\OT1/cmr/m/n/10.95 tion, but an in-cor-rectly
  []
 
 
@@ -1279,6 +1426,10 @@ Underfull \hbox (badness 5817) in paragraph at lines 466--466
  []
 
 
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4 ignored in \hhline argument
+(hhline)                 on input line 466.
+
+
 Underfull \hbox (badness 5316) in paragraph at lines 470--470
 []|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
@@ -1293,51 +1444,66 @@ Underfull \vbox (badness 10000) detected at line 479
  []
 
 
-Underfull \hbox (badness 2951) in paragraph at lines 488--488
-[]|\OT1/cmr/m/n/10.95 A pas-sen-gerId not cor-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 490--490
-[]|\OT1/cmr/m/n/10.95 A pas-sen-ger-Loca-tion
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 490--490
-\OT1/cmr/m/n/10.95 whose co-or-di-nates are
- []
-
-
-Underfull \hbox (badness 5316) in paragraph at lines 505--505
-[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
- []
-
-
-Underfull \hbox (badness 5316) in paragraph at lines 517--517
-[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
- []
-
-
-Underfull \vbox (badness 10000) detected at line 517
- []
-
-
-Underfull \hbox (badness 5316) in paragraph at lines 533--533
-[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
- []
-
-
-Underfull \hbox (badness 5316) in paragraph at lines 539--539
-[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
- []
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [23]
+Underfull \hbox (badness 2951) in paragraph at lines 489--489
+[]|\OT1/cmr/m/n/10.95 A pas-sen-gerId not cor-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 491--491
+[]|\OT1/cmr/m/n/10.95 A pas-sen-ger-Loca-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 491--491
+\OT1/cmr/m/n/10.95 whose co-or-di-nates are
+ []
+
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4 ignored in \hhline argument
+(hhline)                 on input line 498.
+
+
+Underfull \hbox (badness 5316) in paragraph at lines 506--506
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
+ []
+
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4 ignored in \hhline argument
+(hhline)                 on input line 512.
+
+
+Underfull \hbox (badness 5316) in paragraph at lines 518--518
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 518
+ []
+
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4 ignored in \hhline argument
+(hhline)                 on input line 528.
+
+
+Underfull \hbox (badness 5316) in paragraph at lines 534--534
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
+ []
+
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4 ignored in \hhline argument
+(hhline)                 on input line 536.
+
+
+Underfull \hbox (badness 5316) in paragraph at lines 540--540
+[]|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1352,83 +1518,111 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [25]
-Underfull \hbox (badness 5316) in paragraph at lines 556--556
+Underfull \hbox (badness 5316) in paragraph at lines 557--557
 []|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
 
 
-Underfull \hbox (badness 5316) in paragraph at lines 558--558
+Underfull \hbox (badness 5316) in paragraph at lines 559--559
 []|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
 
 
-Underfull \hbox (badness 5316) in paragraph at lines 560--560
+Underfull \hbox (badness 5316) in paragraph at lines 561--561
 []|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 567--567
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4 ignored in \hhline argument
+(hhline)                 on input line 563.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 568--568
 []|\OT1/cmr/m/n/10.95 A non-existing pas-sen-
  []
 
 
-Underfull \hbox (badness 5316) in paragraph at lines 568--568
+Underfull \hbox (badness 5316) in paragraph at lines 569--569
 []|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
 
 
-Underfull \hbox (badness 5316) in paragraph at lines 576--576
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4 ignored in \hhline argument
+(hhline)                 on input line 571.
+
+
+Underfull \hbox (badness 5316) in paragraph at lines 577--577
 []|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
 
 
-Underfull \hbox (badness 5316) in paragraph at lines 578--578
+Underfull \hbox (badness 5316) in paragraph at lines 579--579
 []|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
 
 
-Underfull \hbox (badness 5316) in paragraph at lines 580--580
+Underfull \hbox (badness 5316) in paragraph at lines 581--581
 []|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
 
 
-Underfull \vbox (badness 10000) detected at line 584
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4 ignored in \hhline argument
+(hhline)                 on input line 583.
+
+
+Underfull \vbox (badness 10000) detected at line 585
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 585--585
+Underfull \hbox (badness 10000) in paragraph at lines 586--586
 []|\OT1/cmr/m/n/10.95 A non-existing pas-sen-
  []
 
 
-Underfull \hbox (badness 5316) in paragraph at lines 586--586
+Underfull \hbox (badness 5316) in paragraph at lines 587--587
 []|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
 
 
-Underfull \hbox (badness 5316) in paragraph at lines 588--588
+Underfull \hbox (badness 5316) in paragraph at lines 589--589
 []|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
 
 
-Underfull \hbox (badness 5316) in paragraph at lines 596--596
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4 ignored in \hhline argument
+(hhline)                 on input line 591.
+
+
+Underfull \hbox (badness 5316) in paragraph at lines 597--597
 []|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
 
 
-Underfull \hbox (badness 5316) in paragraph at lines 598--598
+Underfull \hbox (badness 5316) in paragraph at lines 599--599
 []|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 616--616
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4 ignored in \hhline argument
+(hhline)                 on input line 603.
+
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4 ignored in \hhline argument
+(hhline)                 on input line 611.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 617--617
 []|\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion is
  []
 
 
-Underfull \hbox (badness 6876) in paragraph at lines 620--620
+Underfull \hbox (badness 6876) in paragraph at lines 621--621
 []|\OT1/cmr/m/n/10.95 Updates the user pass-word in the
  []
+
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4 ignored in \hhline argument
+(hhline)                 on input line 621.
 
 
 Underfull \hbox (badness 5316) in paragraph at lines 625--625
@@ -1439,6 +1633,10 @@ Underfull \hbox (badness 5316) in paragraph at lines 625--625
 Underfull \hbox (badness 5817) in paragraph at lines 627--627
 []|\OT1/cmr/m/n/10.95 A struc-ture con-tain-ing all pairs $\OML/cmm/m/it/10.95 <
  []
+
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4 ignored in \hhline argument
+(hhline)                 on input line 627.
 
 
 Underfull \hbox (badness 5316) in paragraph at lines 631--631
@@ -1474,6 +1672,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 651--651
  []
 
 
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4 ignored in \hhline argument
+(hhline)                 on input line 655.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 661--661
 []|\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion is
  []
@@ -1487,6 +1689,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 663--663
 Underfull \hbox (badness 1178) in paragraph at lines 666--666
 \OT1/cmr/m/n/10.95 a-tion, and the app has
  []
+
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4 ignored in \hhline argument
+(hhline)                 on input line 667.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 673--673
@@ -1503,6 +1709,10 @@ Underfull \vbox (badness 10000) detected at line 677
  []
 
 
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4 ignored in \hhline argument
+(hhline)                 on input line 677.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 683--683
 []|\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion is
  []
@@ -1513,9 +1723,48 @@ Underfull \hbox (badness 10000) in paragraph at lines 685--685
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 686--686
+[]|\OT1/cmr/m/n/10.95 A valid ap-pId and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 686--686
+\OT1/cmr/m/n/10.95 op-er-a-tion, but the
+ []
+
+
+Underfull \hbox (badness 5592) in paragraph at lines 686--686
+\OML/cmm/m/it/10.95 < appId; operation >$
+ []
+
+
+Underfull \hbox (badness 6542) in paragraph at lines 686--686
+\OT1/cmr/m/n/10.95 is not present in the
+ []
+
+
 Underfull \hbox (badness 5316) in paragraph at lines 687--687
 []|\OT1/cmr/m/n/10.95 An In-val-i-dAr-gu-ment-Val-ue-Ex-cep-tion is
  []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 688--688
+[]|\OT1/cmr/m/n/10.95 A valid ap-pId and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 688--688
+\OT1/cmr/m/n/10.95 op-er-a-tion, and the
+ []
+
+
+Underfull \hbox (badness 5592) in paragraph at lines 688--688
+\OML/cmm/m/it/10.95 < appId; operation >$
+ []
+
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4 ignored in \hhline argument
+(hhline)                 on input line 689.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 693--693
@@ -1523,9 +1772,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 693--693
  []
 
 
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4 ignored in \hhline argument
+(hhline)                 on input line 695.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 699--699
 []|\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion is
  []
+
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4 ignored in \hhline argument
+(hhline)                 on input line 701.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 707--707
@@ -1554,6 +1811,10 @@ Underfull \hbox (badness 1354) in paragraph at lines 714--714
  []
 
 
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4 ignored in \hhline argument
+(hhline)                 on input line 715.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 721--721
 []|\OT1/cmr/m/n/10.95 An In-valid-Se-cu-rityLevelEx-cep-tion is
  []
@@ -1572,6 +1833,10 @@ Underfull \hbox (badness 5316) in paragraph at lines 727--727
 Underfull \hbox (badness 1354) in paragraph at lines 728--728
 []|\OT1/cmr/m/n/10.95 A valid ad-minId and a
  []
+
+
+Package hhline Warning: macro:->\noalign {\ifnum `}=0\fi \@testopt \LT@no@pgbk 4 ignored in \hhline argument
+(hhline)                 on input line 729.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 735--735
@@ -1663,7 +1928,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[38]) (./chapters/hours_of_work.tex
+[38]) (./chapters/changelog.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1672,32 +1937,36 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [39]
 Appendix A.
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 21.
- [40
+) (./chapters/hours_of_work.tex [40
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 21.
- (/Users/Valerio/GitHub/casaticastelli_sweng2/4_ITPD/latex_files/.texpadtmp/4_ITPD.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 21.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 21.
+Appendix B.
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 22.
+ [41
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 22.
+ (/Users/Valerio/GitHub/casaticastelli_sweng2/Documents/4_ITPD/latex_files/.texpadtmp/4_ITPD.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 22.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 22.
 Package rerunfilecheck Info: File `4_ITPD.out' has not changed.
 (rerunfilecheck)             Checksum: A7E6A9865156016CCE80566ABC7C84E2;3495.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 21.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 22.
  ) 
 Here is how much of TeX's memory you used:
- 9312 strings out of 493089
- 137323 string characters out of 6134841
+ 9318 strings out of 493089
+ 137541 string characters out of 6134841
  284770 words of memory out of 5000000
- 12500 multiletter control sequences out of 15000+600000
+ 12501 multiletter control sequences out of 15000+600000
  10711 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,12n,43p,904b,535s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on /Users/Valerio/GitHub/casaticastelli_sweng2/4_ITPD/latex_files/.texpadtmp/4_ITPD.pdf (43 pages, 730885 bytes).
+Output written on /Users/Valerio/GitHub/casaticastelli_sweng2/Documents/4_ITPD/latex_files/.texpadtmp/4_ITPD.pdf (44 pages, 734879 bytes).
 PDF statistics:
- 565 PDF objects out of 1000 (max. 8388607)
- 490 compressed objects within 5 object streams
- 112 named destinations out of 1000 (max. 500000)
- 441 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 574 PDF objects out of 1000 (max. 8388607)
+ 498 compressed objects within 5 object streams
+ 114 named destinations out of 1000 (max. 500000)
+ 449 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -22,7 +22,7 @@ All the integration testing activities have to be performed within a specific te
 
 Since myTaxiService incorporates both a set of client components and a backend infrastructure, we must define the characteristics of the devices that have to be used in each of these two areas.
 
-For what concerns the mobile client side of the testing environment, the following devices are required:
+For what concerns the mobile side of the testing environment, the following devices are required:
 \begin{itemize}
 	\item At least one Android smartphone for each display size from 3” to 6” at steps of 1/2”.
 	\item At least one Android tablet for each display size from 7” to 12” at steps of 1/2”. 
@@ -39,7 +39,7 @@ Regarding the desktop web applications, they will be tested using a set of norma
 
 As for the backend testing, the business logic components should be deployed on a cloud infrastructure that closely mimics the one that will be used in the operating environment. 
 Specifically, the testing cloud infrastructure needs to run the same operating system, the same Java Enterprise Application Server, the same Notification System and Remote Services Interface middleware (message brokers) and the same DBMS.
-As such, it is strongly required to use a scaled down version of the final operating cloud infrastructure chosen from the same service provider. 
+As such, it is strongly suggested to use a scaled down version of the final operating cloud infrastructure chosen from the same service provider. 
 
 Depending on the actual implementation decisions, the specific software components may change. As a preliminary draft we assume to be using the \textbf{Red Hat OpenShift cloud infrastructure}, that is built upon the following software components:
 \begin{itemize}
