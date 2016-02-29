@@ -8,12 +8,12 @@ activate AdministrationWebApp
 AdministrationWebApp -> RemoteServicesInterface: askZoneList(adminId)
 
 activate RemoteServicesInterface
-RemoteServicesInterface -> ZoneManagement: askZoneList(adminId)
+RemoteServicesInterface -> ZoneDivisionManagement: askZoneList(adminId)
 
-activate ZoneManagement
-ZoneManagement --> RemoteServicesInterface: zoneList
+activate ZoneDivisionManagement
+ZoneDivisionManagement --> RemoteServicesInterface: zoneList
 
-deactivate ZoneManagement
+deactivate ZoneDivisionManagement
 RemoteServicesInterface --> AdministrationWebApp: zoneList
 
 deactivate RemoteServicesInterface
@@ -24,14 +24,14 @@ loop until confirmation or exit
 	AdministrationWebApp -> RemoteServicesInterface: sendZoneData(data)
 
 	activate RemoteServicesInterface
-	RemoteServicesInterface -> ZoneManagement: sendZoneData(data)
+	RemoteServicesInterface -> ZoneDivisionManagement: sendZoneData(data)
 
-	activate ZoneManagement
+	activate ZoneDivisionManagement
 
-	ZoneManagement -> ZoneManagement: checkZonesConsistency(data)
-	ZoneManagement --> RemoteServicesInterface: result
+	ZoneDivisionManagement -> ZoneDivisionManagement: checkZonesConsistency(data)
+	ZoneDivisionManagement --> RemoteServicesInterface: result
 	
-	deactivate ZoneManagement
+	deactivate ZoneDivisionManagement
 	alt correct data
 		RemoteServicesInterface --> AdministrationWebApp: confirm
 		
@@ -46,8 +46,10 @@ loop until confirmation or exit
 		
 		deactivate PermissionManagament
 		alt password confirmed
-			RemoteServicesInterface -> ZoneManagement: updateZone(data)
-			ZoneManagement -> DataAccessUtilities: updateZone(data)
+			RemoteServicesInterface -> ZoneDivisionManagement: updateZone(data)
+			
+			activate ZoneDivisionManagement
+			ZoneDivisionManagement -> DataAccessUtilities: updateZone(data)
 			
 			activate DataAccessUtilities
 			DataAccessUtilities -> DBMS: update(...)
@@ -56,10 +58,12 @@ loop until confirmation or exit
 			DataAccessUtilities <-- DBMS
 			
 			deactivate DBMS
-			ZoneManagement <-- DataAccessUtilities
+			ZoneDivisionManagement <-- DataAccessUtilities
 			
 			deactivate DataAccessUtilities
-			RemoteServicesInterface <-- ZoneManagement
+			RemoteServicesInterface <-- ZoneDivisionManagement
+			
+			deactivate ZoneDivisionManagement
 			RemoteServicesInterface --> AdministrationWebApp: confirm
 			[<-- AdministrationWebApp: //show confirmation//
 		else password rejected
@@ -74,6 +78,6 @@ end
 
 deactivate AdministrationWebApp
 deactivate RemoteServicesInterface
-deactivate ZoneManagement
+deactivate ZoneDivisionManagement
 	
 @enduml

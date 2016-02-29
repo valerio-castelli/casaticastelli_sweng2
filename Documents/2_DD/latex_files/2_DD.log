@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.2)  30 JAN 2016 10:14
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.2)  29 FEB 2016 22:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1217,7 +1217,7 @@ line 196.
  [25
 
 
- <./pdfs/sequence/sd_zone_update.pdf>] <pdfs/sequence/sd_drop_call.pdf, id=857,
+ <./pdfs/sequence/sd_zone_update.pdf>] <pdfs/sequence/sd_drop_call.pdf, id=863,
  845.1575pt x 597.23125pt>
 File: pdfs/sequence/sd_drop_call.pdf Graphic file (type pdf)
 
@@ -1231,7 +1231,7 @@ Package pdftex.def Info: pdfs/sequence/sd_drop_call.pdf used on input line 200.
 
 (pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
 
-<pdfs/sequence/sd_drop_call.pdf, id=860, page=1, 845.1575pt x 597.23125pt>
+<pdfs/sequence/sd_drop_call.pdf, id=866, page=1, 845.1575pt x 597.23125pt>
 File: pdfs/sequence/sd_drop_call.pdf Graphic file (type pdf)
 
 <use pdfs/sequence/sd_drop_call.pdf, page 1>
@@ -1265,7 +1265,7 @@ ne 200.
  [26
 
 
- <./pdfs/sequence/sd_drop_call.pdf>] <pdfs/sequence/sd_end_ride.pdf, id=983, 84
+ <./pdfs/sequence/sd_drop_call.pdf>] <pdfs/sequence/sd_end_ride.pdf, id=989, 84
 5.1575pt x 597.23125pt>
 File: pdfs/sequence/sd_end_ride.pdf Graphic file (type pdf)
 
@@ -1277,7 +1277,7 @@ File: pdfs/sequence/sd_end_ride.pdf Graphic file (type pdf)
 Package pdftex.def Info: pdfs/sequence/sd_end_ride.pdf used on input line 204.
 (pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
 
-<pdfs/sequence/sd_end_ride.pdf, id=986, page=1, 845.1575pt x 597.23125pt>
+<pdfs/sequence/sd_end_ride.pdf, id=992, page=1, 845.1575pt x 597.23125pt>
 File: pdfs/sequence/sd_end_ride.pdf Graphic file (type pdf)
 
 <use pdfs/sequence/sd_end_ride.pdf, page 1>
@@ -1312,7 +1312,7 @@ e 204.
 
 
  <./pdfs/sequence/sd_end_ride.pdf>]
-<pdfs/sequence/sd_taxi_location_changed.pdf, id=1073, 597.23125pt x 845.1575pt>
+<pdfs/sequence/sd_taxi_location_changed.pdf, id=1079, 597.23125pt x 845.1575pt>
 File: pdfs/sequence/sd_taxi_location_changed.pdf Graphic file (type pdf)
 <use pdfs/sequence/sd_taxi_location_changed.pdf>
 Package pdftex.def Info: pdfs/sequence/sd_taxi_location_changed.pdf used on inp
@@ -1325,7 +1325,7 @@ Package pdftex.def Info: pdfs/sequence/sd_taxi_location_changed.pdf used on inp
 ut line 207.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 
-<pdfs/sequence/sd_taxi_location_changed.pdf, id=1076, page=1, 597.23125pt x 845
+<pdfs/sequence/sd_taxi_location_changed.pdf, id=1082, page=1, 597.23125pt x 845
 .1575pt>
 File: pdfs/sequence/sd_taxi_location_changed.pdf Graphic file (type pdf)
  <use pdfs/sequence/sd_taxi_location_changed.pdf, page 1>
@@ -1359,7 +1359,7 @@ Package pdftex.def Info: pdfs/sequence/sd_taxi_location_changed.pdf, page1 used
  [28
 
  <./pdfs/sequence/sd_taxi_location_changed.pdf>]
-<pdfs/sequence/sd_toggle.pdf, id=1250, 597.23125pt x 845.1575pt>
+<pdfs/sequence/sd_toggle.pdf, id=1256, 597.23125pt x 845.1575pt>
 File: pdfs/sequence/sd_toggle.pdf Graphic file (type pdf)
 
 <use pdfs/sequence/sd_toggle.pdf>
@@ -1370,7 +1370,7 @@ File: pdfs/sequence/sd_toggle.pdf Graphic file (type pdf)
 Package pdftex.def Info: pdfs/sequence/sd_toggle.pdf used on input line 209.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 
-<pdfs/sequence/sd_toggle.pdf, id=1253, page=1, 597.23125pt x 845.1575pt>
+<pdfs/sequence/sd_toggle.pdf, id=1259, page=1, 597.23125pt x 845.1575pt>
 File: pdfs/sequence/sd_toggle.pdf Graphic file (type pdf)
 
 <use pdfs/sequence/sd_toggle.pdf, page 1>
@@ -1496,7 +1496,7 @@ Chapter 3.
 
 ]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 33.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 34.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1512,12 +1512,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [40]
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 98.
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 99.
  (/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <9> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 98.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 99.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1564,7 +1564,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 Chapter 4.
 [47
 
-] <images/sketches/Admin_Home.png, id=1819, 875.27pt x 512.91624pt>
+] <images/sketches/Admin_Home.png, id=1825, 875.27pt x 512.91624pt>
 File: images/sketches/Admin_Home.png Graphic file (type png)
 
 <use images/sketches/Admin_Home.png>
@@ -1578,14 +1578,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [48 <./images/sketches/Admin_Home.png>]
-<images/sketches/Admin_Insert_Taxi_Driver.png, id=1826, 875.27pt x 512.91624pt>
+<images/sketches/Admin_Insert_Taxi_Driver.png, id=1832, 875.27pt x 512.91624pt>
 File: images/sketches/Admin_Insert_Taxi_Driver.png Graphic file (type png)
 <use images/sketches/Admin_Insert_Taxi_Driver.png>
 Package pdftex.def Info: images/sketches/Admin_Insert_Taxi_Driver.png used on i
 nput line 31.
 (pdftex.def)             Requested size: 450.0pt x 263.70479pt.
 
-<images/sketches/Admin_Taxi_Drivers_List.png, id=1827, 875.27pt x 512.91624pt>
+<images/sketches/Admin_Taxi_Drivers_List.png, id=1833, 875.27pt x 512.91624pt>
 File: images/sketches/Admin_Taxi_Drivers_List.png Graphic file (type png)
 
 <use images/sketches/Admin_Taxi_Drivers_List.png>
@@ -1601,7 +1601,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [49 <./images/sketches/Admin_Insert_Taxi_Driver.png> <./images/sketches/Admin_T
 axi_Drivers_List.png>]
-<images/sketches/Admin_Zone_Update.png, id=1834, 875.27pt x 512.91624pt>
+<images/sketches/Admin_Zone_Update.png, id=1840, 875.27pt x 512.91624pt>
 File: images/sketches/Admin_Zone_Update.png Graphic file (type png)
 
 <use images/sketches/Admin_Zone_Update.png>
@@ -1677,7 +1677,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[56]) (./chapters/appendix.tex
+[56]
+Overfull \hbox (4.48335pt too wide) in paragraph at lines 109--110
+\OT1/cmr/m/n/10.95 sev-eral servers, pos-si-bly housed in dif-fer-ent server fa
+rms by the cloud provider.
+ []
+
+) (./chapters/appendix.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1723,9 +1729,9 @@ sfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
 10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
 
-Output written on 2_DD.pdf (61 pages, 2247354 bytes).
+Output written on 2_DD.pdf (61 pages, 2254968 bytes).
 PDF statistics:
- 2002 PDF objects out of 2073 (max. 8388607)
+ 2008 PDF objects out of 2073 (max. 8388607)
  397 named destinations out of 1000 (max. 500000)
  511 words of extra memory for PDF output out of 10000 (max. 10000000)
 
