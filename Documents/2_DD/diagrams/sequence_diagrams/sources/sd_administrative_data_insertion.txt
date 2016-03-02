@@ -8,16 +8,16 @@ loop until confirmation or exit
 	AdministrationWebApp -> RemoteServicesInterface: sendSetupData(data)
 
 	activate RemoteServicesInterface
-	RemoteServicesInterface -> ZoneManagement: sendData(data)
+	RemoteServicesInterface -> ZoneDivisionManagement: sendData(data)
 	
-	activate ZoneManagement
-	ZoneManagement -> ZoneManagement: checkDataConsistency(data)
+	activate ZoneDivisionManagement
+	ZoneDivisionManagement -> ZoneDivisionManagement: checkDataConsistency(data)
 	
-	activate ZoneManagement
-	deactivate ZoneManagement
-	ZoneManagement --> RemoteServicesInterface: result
+	activate ZoneDivisionManagement
+	deactivate ZoneDivisionManagement
+	ZoneDivisionManagement --> RemoteServicesInterface: result
 		
-	deactivate ZoneManagement
+	deactivate ZoneDivisionManagement
 	alt correct zones data
 		
 		RemoteServicesInterface -> DriverManagement: sendData(data)
@@ -34,21 +34,21 @@ loop until confirmation or exit
 			deactivate DriverManagement
 			RemoteServicesInterface --> AdministrationWebApp: dataConfirmed
 			RemoteServicesInterface <- AdministrationWebApp: sendPassword(adminId, psw)
-			RemoteServicesInterface -> PermissionManagament: checkPassword(adminId, psw)
+			RemoteServicesInterface -> APIPermissionsManagement: sendPassword(adminId, psw)
 				
-			activate PermissionManagament
-			PermissionManagament -> PermissionManagament: sendPassword(adminId, psw)
+			activate APIPermissionsManagement
+			APIPermissionsManagement -> APIPermissionsManagement: checkPassword(adminId, psw)
 			
-			activate PermissionManagament
-			deactivate PermissionManagament
-			PermissionManagament --> RemoteServicesInterface: result
+			activate APIPermissionsManagement
+			deactivate APIPermissionsManagement
+			APIPermissionsManagement --> RemoteServicesInterface: result
 			
-			deactivate PermissionManagament
+			deactivate APIPermissionsManagement
 			alt password confirmed
-				RemoteServicesInterface -> ZoneManagement: insertZones(data)
+				RemoteServicesInterface -> ZoneDivisionManagement: insertZones(data)
 				
-				activate ZoneManagement
-				ZoneManagement -> DataAccessUtilities: insertZones(...)
+				activate ZoneDivisionManagement
+				ZoneDivisionManagement -> DataAccessUtilities: insertZones(data)
 				
 				activate DataAccessUtilities
 				DataAccessUtilities -> DBMS: insert(...)
@@ -57,16 +57,16 @@ loop until confirmation or exit
 				DataAccessUtilities <-- DBMS
 				
 				deactivate DBMS
-				ZoneManagement <-- DataAccessUtilities
+				ZoneDivisionManagement <-- DataAccessUtilities
 				
 				deactivate DataAccessUtilities
-				RemoteServicesInterface <-- ZoneManagement
+				RemoteServicesInterface <-- ZoneDivisionManagement
 				
-				deactivate ZoneManagement
+				deactivate ZoneDivisionManagement
 				RemoteServicesInterface -> DriverManagement: insertTaxiDrivers(data)
 				
 				activate DriverManagement
-				DriverManagement -> DataAccessUtilities: insertTaxiDrivers(...)
+				DriverManagement -> DataAccessUtilities: insertTaxiDrivers(data)
 				
 				activate DataAccessUtilities
 				DataAccessUtilities -> DBMS: insert(...)
@@ -96,6 +96,6 @@ loop until confirmation or exit
 end
 
 deactivate AdministrationWebApp
-deactivate ZoneManagement
+deactivate ZoneDivisionManagement
 
 @enduml
