@@ -1,0 +1,142 @@
+% % CUSTOM COMMANDS
+
+% Allow lstinline to break long word
+\makeatletter%
+\def\lst@lettertrue{\let\lst@ifletter\iffalse}%
+\makeatother%
+
+% Commands to insert a code line or a reference to code inside text.
+\usepackage{color}
+\definecolor{inlinecode}{rgb}{0,0.298,0.6}
+\newcommand{\code}[1]{%
+	\lstinline[
+	breaklines=true,
+	breakatwhitespace=false, % if true, allow line breaking only after a white space
+	%prebreak=-, % insert an hypern when a word is broken on two lines
+	basicstyle=\ttfamily\color{inlinecode},
+	stringstyle=\color{inlinecode},
+	]|#1|}
+\newcommand{\checklist}[1]{\textbf{C#1}}
+\newcommand{\codeline}[1]{\textsf{L.#1}}
+\newcommand{\codelines}[2]{\textsf{L.#1-#2}}
+
+% Marginal note for observations
+\newcommand{\note}[1]{\MakeUppercase{#1}\marginpar{\MakeLowercase{\textcolor{red}{#1}}}}
+
+% Test table
+\newenvironment{testtable}{
+	\begin{longtable}{|p{\dimexpr.35\textwidth}|p{\dimexpr.55\textwidth}|}
+}{
+	\end{longtable}
+}
+
+% FP table
+\newenvironment{fptable}[2]{
+	\begin{center}
+	#1
+	\begin{longtable}{|c|c|c|c|}
+	\hline 
+	&
+	\multicolumn{3}{|c|}{{#2}}\\\nopagebreak\hline	
+}{
+	\hline\end{longtable}\end{center}
+}
+
+% FP count table
+\newenvironment{fpcounttable}[1]{
+	\begin{center}
+	\begin{longtable}{|l|l|l|l|}
+	\hline 
+	#1 & Complexity & Type & FPs \\\hline
+}{
+	\end{longtable}\end{center}
+}
+
+\newenvironment{fptotaltable}{
+	\begin{center}
+	\begin{longtable}{|l|r|}
+	\hline 
+	Function Type & Value \\\hline
+}{
+	\end{longtable}\end{center}
+}
+
+\newcommand{\fptotal}[1]{
+	\multicolumn{3}{|l|}{{Total}}
+	& #1\\\hline
+}
+
+\newcommand{\cocomototal}[1]{
+	\multicolumn{2}{|l|}{{Total}}
+	& #1\\\hline
+}
+
+%  table
+\newenvironment{scaledriverstable}[1]{
+	\setlength{\LTleft}{-40pt}
+	\begin{center}
+	#1 
+	\begin{longtable}{|p{\dimexpr.16\textwidth}|p{\dimexpr.14\textwidth}|p{\dimexpr.14\textwidth}|p{\dimexpr.14\textwidth}|p{\dimexpr.14\textwidth}|p{\dimexpr.14\textwidth}|p{\dimexpr.14\textwidth}|}
+	\hline
+}{
+	\hline\end{longtable}\end{center}
+}
+
+% scale driver count table
+\newenvironment{factorcounttable}[1]{
+	\begin{center}
+	\begin{longtable}{|l|r|r|}
+	\hline 
+	#1 & Factor & Value \\\hline
+}{
+	\end{longtable}\end{center}
+}
+
+%  table
+\newenvironment{costdriverstable}[1]{
+	\setlength{\LTleft}{-40pt}
+	\begin{longtable}{|p{\dimexpr.16\textwidth}|p{\dimexpr.14\textwidth}|p{\dimexpr.14\textwidth}|p{\dimexpr.14\textwidth}|p{\dimexpr.14\textwidth}|p{\dimexpr.14\textwidth}|p{\dimexpr.14\textwidth}|}
+	\hline
+	\multicolumn{7}{|c|}{{#1}}\\\hhline{|=======|}
+}{
+	\hline\end{longtable}
+}
+
+\newcommand{\costdescriptors}[7]{
+	#1 & #2 & #3 & #4 & #5 & #6 & #7\\
+}
+
+\newcommand{\ratinglevel}[6]{
+	Rating level & #1 & #2 & #3 & #4 & #5 & #6 \\\hline
+}
+
+\newcommand{\effortmultipliers}[6]{
+	Effort multipliers & #1 & #2 & #3 & #4 & #5 & #6 \\\hline
+}
+
+
+\newcommand{\addfactor}[7]{
+	#1 & #2 & #3 & #4 & #5 & #6 & #7 \\
+}
+\newcommand{\addfactorvalues}[6]{
+SF$_j$ & #1 & #2 & #3 & #4 & #5 & #6 \\\hline
+}
+
+	
+
+
+% Methods in test tables
+\newcommand{\method}[1]{%
+	\nopagebreak
+	\multicolumn{2}{|c|}{{#1}}\\\nopagebreak\hline
+	\textit{Input} & \textit{Effect}\\\nopagebreak\hline
+}
+
+
+\newcommand{\fpvalues}[4]{%
+	\textit{#1} & \textit{#2}& \textit{#3}& \textit{#4}\\\nopagebreak\hline
+}
+	
+	
+% Double horizontal line for test table
+\newcommand{\dline}{\nopagebreak\hhline{|==|\nopagebreak}}

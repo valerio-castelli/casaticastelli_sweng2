@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="myTaxiService Project" company="C&amp;C" webLink="http://" view-date="2015-09-01" view-index="0" gantt-divider-location="484" resource-divider-location="306" version="2.7.1" locale="en_GB">
+    <description/>
+    <view zooming-state="default:9" id="gantt-chart">
+        <field id="tpd3" name="Name" width="100" order="0"/>
+        <option id="taskLabelUp" value=""/>
+        <option id="taskLabelLeft" value=""/>
+        <option id="color.recent"><![CDATA[#e1e1e1]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="100" order="0"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="0" mon="0" tue="0" wed="0" thu="0" fri="0" sat="0"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="RASD" meeting="false" start="2015-10-01" duration="22" complete="0" expand="true">
+            <task id="2" name="Meetings with local governement" color="#8cb6ce" meeting="false" start="2015-10-01" duration="2" complete="0" expand="true"/>
+            <task id="3" name="Identification of stakeholders" color="#8cb6ce" meeting="false" start="2015-10-02" duration="3" complete="0" expand="true"/>
+            <task id="4" name="Definition of main functionalities" color="#8cb6ce" meeting="false" start="2015-10-02" duration="6" complete="0" expand="true"/>
+            <task id="5" name="Initial requirements draft" color="#8cb6ce" meeting="false" start="2015-10-02" duration="3" complete="0" expand="true"/>
+            <task id="6" name="Initial assumptions" color="#8cb6ce" meeting="false" start="2015-10-02" duration="3" complete="0" expand="true"/>
+            <task id="7" name="Initial draft of activity diagrams" color="#8cb6ce" meeting="false" start="2015-10-03" duration="5" complete="0" expand="true"/>
+            <task id="8" name="Identification of use cases" color="#8cb6ce" meeting="false" start="2015-10-03" duration="5" complete="0" expand="true"/>
+            <task id="9" name="Initial mockups of UI" color="#8cb6ce" meeting="false" start="2015-10-03" duration="5" complete="0" expand="true"/>
+            <task id="10" name="Meeting with local government" color="#8cb6ce" meeting="false" start="2015-10-08" duration="2" complete="0" expand="true"/>
+            <task id="13" name="Refinement of functionalities" color="#8cb6ce" meeting="false" start="2015-10-08" duration="3" complete="0" expand="true"/>
+            <task id="15" name="Refinement of assumptions" color="#8cb6ce" meeting="false" start="2015-10-08" duration="3" complete="0" expand="true"/>
+            <task id="14" name="Refinement of requirements" color="#8cb6ce" meeting="false" start="2015-10-08" duration="3" complete="0" expand="true"/>
+            <task id="16" name="Refinement of activity diagrams" color="#8cb6ce" meeting="false" start="2015-10-08" duration="3" complete="0" expand="true"/>
+            <task id="17" name="Refinement of UI mockups" color="#8cb6ce" meeting="false" start="2015-10-08" duration="3" complete="0" expand="true"/>
+            <task id="18" name="Meeting with stakeholders" color="#8cb6ce" meeting="false" start="2015-10-11" duration="2" complete="0" expand="true"/>
+            <task id="19" name="Final requirements" color="#8cb6ce" meeting="false" start="2015-10-11" duration="2" complete="0" expand="true"/>
+            <task id="20" name="Final assumptions" color="#8cb6ce" meeting="false" start="2015-10-11" duration="2" complete="0" expand="true"/>
+            <task id="21" name="Final activity diagrams" color="#8cb6ce" meeting="false" start="2015-10-12" duration="4" complete="0" expand="true"/>
+            <task id="22" name="Final UI mockups" color="#8cb6ce" meeting="false" start="2015-10-13" duration="3" complete="0" expand="true"/>
+            <task id="23" name="Initial cost, schedule and effort estimation" color="#8cb6ce" meeting="false" start="2015-10-14" duration="5" complete="0" expand="true"/>
+            <task id="24" name="Meeting with stakeholders" color="#8cb6ce" meeting="false" start="2015-10-17" duration="2" complete="0" expand="true"/>
+            <task id="25" name="Revision of estimations" color="#8cb6ce" meeting="false" start="2015-10-18" duration="2" complete="0" expand="true"/>
+            <task id="26" name="Further refinements" color="#8cb6ce" meeting="false" start="2015-10-18" duration="2" complete="0" expand="true"/>
+            <task id="28" name="Meeting with stakeholders" color="#8cb6ce" meeting="true" start="2015-10-20" duration="0" complete="0" expand="true"/>
+            <task id="72" name="Final refinements" color="#8cb6ce" meeting="false" start="2015-10-20" duration="3" complete="0" expand="true"/>
+        </task>
+        <task id="29" name="DD" meeting="false" start="2015-10-23" duration="26" complete="0" expand="true">
+            <task id="30" name="High level draft of architecture" color="#8cb6ce" meeting="false" start="2015-10-23" duration="5" complete="0" expand="true"/>
+            <task id="31" name="Identification of main components" color="#8cb6ce" meeting="false" start="2015-10-23" duration="5" complete="0" expand="true"/>
+            <task id="32" name="Meeting with stakeholders" color="#8cb6ce" meeting="false" start="2015-10-28" duration="2" complete="0" expand="true"/>
+            <task id="33" name="Revision of architecture" color="#8cb6ce" meeting="false" start="2015-10-28" duration="3" complete="0" expand="true"/>
+            <task id="34" name="Refinements of components, identifification of subcomponents" color="#8cb6ce" meeting="false" start="2015-10-28" duration="3" complete="0" expand="true"/>
+            <task id="35" name="First draft of component interfaces" color="#8cb6ce" meeting="false" start="2015-10-28" duration="3" complete="0" expand="true"/>
+            <task id="36" name="Refinement of UI mockups" color="#8cb6ce" meeting="false" start="2015-10-28" duration="3" complete="0" expand="true"/>
+            <task id="37" name="Initial draft of algorithm design" color="#8cb6ce" meeting="false" start="2015-10-31" duration="7" complete="0" expand="true"/>
+            <task id="38" name="Meeting with stakeholders" color="#8cb6ce" meeting="false" start="2015-11-07" duration="2" complete="0" expand="true"/>
+            <task id="39" name="Final architecture design" color="#8cb6ce" meeting="false" start="2015-11-07" duration="3" complete="0" expand="true"/>
+            <task id="40" name="Refinement of component interfaces" color="#8cb6ce" meeting="false" start="2015-11-07" duration="3" complete="0" expand="true"/>
+            <task id="41" name="Refinement of UI mockups" color="#8cb6ce" meeting="false" start="2015-11-07" duration="3" complete="0" expand="true"/>
+            <task id="42" name="Refinement of algorithm design" color="#8cb6ce" meeting="false" start="2015-11-07" duration="5" complete="0" expand="true"/>
+            <task id="43" name="Meeting with stakeholders" color="#8cb6ce" meeting="false" start="2015-11-11" duration="1" complete="0" expand="true"/>
+            <task id="44" name="Final UI design" color="#8cb6ce" meeting="false" start="2015-11-12" duration="1" complete="0" expand="true"/>
+            <task id="45" name="Final component interfaces" color="#8cb6ce" meeting="false" start="2015-11-12" duration="1" complete="0" expand="true"/>
+            <task id="46" name="Final algorithm design" color="#8cb6ce" meeting="false" start="2015-11-12" duration="1" complete="0" expand="true"/>
+            <task id="47" name="Meeting with stakeholders" color="#8cb6ce" meeting="true" start="2015-11-13" duration="0" complete="0" expand="true"/>
+            <task id="99" name="Final refinements" color="#8cb6ce" meeting="false" start="2015-11-13" duration="5" complete="0" expand="true"/>
+        </task>
+        <task id="48" name="Development" meeting="false" start="2015-11-18" duration="166" complete="0" expand="true">
+            <task id="49" name="Subcomponent development" color="#8cb6ce" meeting="false" start="2015-11-18" duration="80" complete="0" expand="true"/>
+            <task id="50" name="External component acquisition and study" color="#8cb6ce" meeting="false" start="2015-12-01" duration="15" complete="0" expand="true"/>
+            <task id="52" name="Code inspection" color="#8cb6ce" meeting="false" start="2015-12-07" duration="50" complete="0" expand="true"/>
+            <task id="51" name="Unit tests" color="#8cb6ce" meeting="false" start="2015-12-11" duration="80" complete="0" expand="true"/>
+            <task id="53" name="Subcomponent integration" color="#8cb6ce" meeting="false" start="2016-01-01" duration="30" complete="0" expand="true"/>
+            <task id="54" name="Component development" color="#8cb6ce" meeting="false" start="2016-01-11" duration="20" complete="0" expand="true"/>
+            <task id="55" name="Component integration" color="#8cb6ce" meeting="false" start="2016-01-15" duration="10" complete="0" expand="true"/>
+            <task id="56" name="Integration testing" color="#8cb6ce" meeting="false" start="2016-01-20" duration="50" complete="0" expand="true"/>
+            <task id="62" name="System testing" color="#8cb6ce" meeting="false" start="2016-01-23" duration="80" complete="0" expand="true"/>
+            <task id="57" name="First internal demonstration" color="#8cb6ce" meeting="false" start="2016-02-01" duration="5" complete="0" expand="true"/>
+            <task id="137" name="Refinements" color="#8cb6ce" meeting="false" start="2016-02-05" duration="20" complete="0" expand="true"/>
+            <task id="181" name="Apps development" color="#8cb6ce" meeting="false" start="2016-02-22" duration="15" complete="0" expand="true"/>
+            <task id="58" name="Second internal demonstration" color="#8cb6ce" meeting="false" start="2016-03-01" duration="5" complete="0" expand="true"/>
+            <task id="59" name="First demonstration to stakeholders" color="#8cb6ce" meeting="false" start="2016-03-07" duration="3" complete="0" expand="true"/>
+            <task id="148" name="Refinements" color="#8cb6ce" meeting="false" start="2016-03-10" duration="15" complete="0" expand="true"/>
+            <task id="60" name="Third internal demonstration" color="#8cb6ce" meeting="false" start="2016-03-21" duration="3" complete="0" expand="true"/>
+            <task id="61" name="Second demonstration to stakeholders" color="#8cb6ce" meeting="false" start="2016-03-24" duration="1" complete="0" expand="true"/>
+            <task id="160" name="Refinements" color="#8cb6ce" meeting="false" start="2016-03-22" duration="20" complete="0" expand="true"/>
+            <task id="244" name="Document deep revision" color="#8cb6ce" meeting="false" start="2016-04-10" duration="3" complete="0" expand="true"/>
+            <task id="120" name="Final presentation to stakeholders" color="#8cb6ce" meeting="true" start="2016-04-13" duration="0" complete="0" expand="true"/>
+            <task id="195" name="Final refinements" color="#8cb6ce" meeting="false" start="2016-04-13" duration="15" complete="0" expand="true"/>
+            <task id="213" name="Final internal demonstration" color="#8cb6ce" meeting="false" start="2016-04-25" duration="5" complete="0" expand="true"/>
+            <task id="200" name="User manual" color="#8cb6ce" meeting="false" start="2016-04-25" duration="5" complete="0" expand="true"/>
+            <task id="63" name="Release" color="#8cb6ce" meeting="true" start="2016-04-30" duration="0" complete="0" expand="true"/>
+            <task id="252" name="Extra days" color="#8cb6ce" meeting="false" start="2016-04-30" duration="2" complete="0" expand="true"/>
+        </task>
+        <task id="175" name="Deployement" meeting="false" start="2016-05-02" duration="30" complete="0" expand="true">
+            <task id="207" name="System deployment" color="#8cb6ce" meeting="false" start="2016-05-02" duration="5" complete="0" expand="true"/>
+            <task id="177" name="Teaching meeting with administration personnel" color="#8cb6ce" meeting="false" start="2016-05-02" duration="7" complete="0" expand="true"/>
+            <task id="179" name="Mobile phones distribution" color="#8cb6ce" meeting="false" start="2016-05-02" duration="7" complete="0" expand="true"/>
+            <task id="180" name="Teaching meeting with taxi drivers" color="#8cb6ce" meeting="false" start="2016-05-09" duration="7" complete="0" expand="true"/>
+            <task id="227" name="Final meetings" color="#8cb6ce" meeting="false" start="2016-05-16" duration="15" complete="0" expand="true"/>
+            <task id="224" name="Final preparations" color="#8cb6ce" meeting="false" start="2016-05-20" duration="12" complete="0" expand="true"/>
+        </task>
+        <task id="217" name="Start-up" meeting="false" start="2016-06-01" duration="20" complete="0" expand="true">
+            <task id="260" name="System first start" color="#8cb6ce" meeting="true" start="2016-06-01" duration="0" complete="0" expand="true"/>
+            <task id="219" name="Real-life simulation" color="#8cb6ce" meeting="false" start="2016-06-01" duration="10" complete="0" expand="true"/>
+            <task id="218" name="Main updates and checks" color="#8cb6ce" meeting="false" start="2016-06-01" duration="20" complete="0" expand="true"/>
+        </task>
+    </tasks>
+    <resources>
+        <resource id="0" name="Fabrizio Casati" function="Default:1" contacts="" phone=""/>
+        <resource id="1" name="Valerio Castelli" function="Default:1" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="2" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="3" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="4" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="5" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="6" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="7" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="9" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="10" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="16" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="17" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="18" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="21" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="22" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="23" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="24" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="25" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="26" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="28" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="72" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="30" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="31" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="32" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="33" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="34" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="35" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="36" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="37" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="38" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="39" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="40" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="41" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="43" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="44" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="45" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="46" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="47" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="99" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="49" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="50" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="52" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="51" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="53" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="54" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="55" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="56" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="62" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="57" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="137" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="181" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="58" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="59" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="60" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="61" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="160" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="244" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="120" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="195" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="213" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="200" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="63" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="252" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="207" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="177" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="179" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="224" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="2" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="3" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="4" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="5" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="6" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="9" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="8" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="10" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="15" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="14" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="17" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="13" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="18" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="19" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="20" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="23" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="24" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="25" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="26" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="28" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="72" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="30" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="31" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="32" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="33" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="34" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="35" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="36" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="37" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="38" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="39" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="40" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="41" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="43" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="44" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="45" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="46" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="47" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="99" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="49" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="50" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="52" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="51" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="53" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="54" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="55" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="56" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="62" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="57" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="137" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="181" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="58" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="59" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="148" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="60" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="61" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="160" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="244" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="120" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="195" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="213" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="200" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="63" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="252" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="207" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="179" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="180" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="227" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="224" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <taskdisplaycolumns>
+        <displaycolumn property-id="tpd2" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpd4" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpd7" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpd8" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpd12" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpd6" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpd5" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpd10" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpd3" order="0" width="465" visible="true"/>
+        <displaycolumn property-id="tpd11" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpd9" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpd1" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpd13" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpd0" order="-1" width="75" visible="false"/>
+    </taskdisplaycolumns>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>

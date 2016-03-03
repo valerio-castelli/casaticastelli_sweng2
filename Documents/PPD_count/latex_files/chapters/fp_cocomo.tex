@@ -61,16 +61,45 @@ To keep track of who can access the administration services, information on the 
 Finally, the system keeps a list of application and plugin identifiers that have access to the privileged API. Each identifier is associated with the contact information of the developer, a description of what the application or plugin does and the exhaustive list of methods that can be called. 
 
 Using the previously defined tables, this is the count we obtain:
-
-\begin{fpcounttable}{ILF}
-Login data & Low & 7 \\
-Passenger data & Low & 7 \\
-Taxi drivers & Low & 7 \\
-Zones & Low & 7 \\
-Queues & Average & 10 \\
-Reservations and requests & Low & 7 \\
-API permissions & Average & 10 \\\hline
-\fptotal{55}	
+\pagebreak
+\begin{fpcounttable}{Function Points}
+Login data & Low & ILF & 7 \\
+Passenger data & Low & ILF & 7 \\
+Taxi drivers & Low & ILF & 7 \\
+Zones & Low & ILF & 7 \\
+Queues & Average & ILF & 10 \\
+Reservations and requests & Low & ILF & 7 \\
+API permissions & Average & ILF & 10 \\
+ETA computation & Low & ELF & 10 \\
+Reverse geocoding & Low & ELF & 10 \\
+Map data retrieval & Low & ELF & 10 \\
+Login/Logout & Low & EI & 2x3 \\
+Password retrieval & Average & EI & 4 \\
+Change settings & Average & EI & 4 \\
+Request or reserve a taxi & High & EI & 2x4 \\
+Delete a reservation & Low & EI & 3 \\
+Register a new passenger account & Average & EI & 4 \\
+View reservation history & Low & EI & 3 \\
+Insert, delete and update zones & High & EI & 3x6 \\
+Insert, delete and update taxi drivers & High & EI & 3x6 \\
+Request service statistics & High & EI & 6 \\
+Grant and revoke app privileges & Average & EI & 2x4 \\
+Grant and revoke plugin privileges & Average & EI & 2x4 \\
+Accept, refuse and end ride & High & EI & 3x6 \\
+Set taxi availability & Average & EI & 4 \\
+Retrieve taxi position in queue & Low & EQ & 3 \\
+Retrieve passenger reservation history & Low & EQ & 3 \\
+Retrieve list of taxi drivers & Low & EQ & 3 \\
+Retrieve list of zones & Low & EQ & 3 \\
+Retrieve list of passengers & Low & EQ & 3 \\
+Retrieve list of approved applications & Low & EQ & 3 \\
+Retrieve list of approved plugins & Low & EQ & 3 \\
+Taxi request assignment notification & Low & EO & 4 \\
+Request accepted notification & Low & EO & 4 \\
+Request dropped notification & Low & EO & 4 \\
+Zone changed notification & Low & EO & 4 \\
+Position in the queue changed notification & Low & EO & 4 \\\hline  
+\fptotal{238}	
 \end{fpcounttable}
 
 \subsection{External Logic Files (ELFs)}
@@ -87,12 +116,6 @@ There are two main kind of interactions:
 On the client side, the mapping service is also used to retrieve the graphical representation of the city map to be displayed on the smartphone of the taxi driver.
 
 Given the complexity of the interaction and the amount of data that is retrieved, it is reasonable to classify this logic file as a complex one. 
-\begin{fpcounttable}{ELF}
-ETA computation & Low & 10 \\
-Reverse geocoding & Low & 10 \\
-Map data retrieval & Low & 10 \\\hline
-\fptotal{30}	
-\end{fpcounttable}
 
 \subsection{External Inputs (EIs)}
 myTaxiService supports many kind of interactions with different categories of users. 
@@ -125,24 +148,6 @@ Taxi drivers:
 	\item Set availability: this operation also involves a few rearrangements of the taxi queues, but has a smaller impact on the overall behavior of the system. For this reason it can be though as having an average complexity and it contributes 4 FPs.
 \end{itemize}
 
-The final results are shown in the following table:
-\begin{fpcounttable}{EI}
-Login/Logout & Low & 2x3 \\
-Password retrieval & Average & 4 \\
-Change settings & Average & 4 \\
-Request or reserve a taxi & High & 2x4 \\
-Delete a reservation & Low & 3 \\
-Register a new passenger account & Average & 4 \\
-View reservation history & Low & 3 \\
-Insert, delete and update zones & High & 3x6 \\
-Insert, delete and update taxi drivers & High & 3x6 \\
-Request service statistics & High & 6 \\
-Grant and revoke app privileges & Average & 2x4 \\
-Grant and revoke plugin privileges & Average & 2x4 \\
-Accept, refuse and end ride & High & 3x6 \\
-Set taxi availability & Average & 4 \\\hline 
-\fptotal{112}	
-\end{fpcounttable}
 
 \subsection{External Inquiries (EQs)}
 As specified by the FP guidelines, an inquiry is essentially a data retrieval request performed by an user. 
@@ -156,16 +161,6 @@ myTaxiService supports a few interactions of this type that don't require comple
 
 All these operations can be though as fairly simple. The resulting table is the following:
 \pagebreak
-\begin{fpcounttable}{EQ}
-Retrieve taxi position in queue & Low & 3 \\
-Retrieve passenger reservation history & Low & 3 \\
-Retrieve list of taxi drivers & Low & 3 \\
-Retrieve list of zones & Low & 3 \\
-Retrieve list of passengers & Low & 3 \\
-Retrieve list of approved applications & Low & 3 \\
-Retrieve list of approved plugins & Low & 3 \\\hline 
-\fptotal{21}	
-\end{fpcounttable}
 
 \subsection{External Outputs (EOs)}
 As part of its normal behavior, myTaxiService occasionally needs to communicate with the user outside the context of an inquiry. These occasions are:
@@ -179,14 +174,6 @@ As part of its normal behavior, myTaxiService occasionally needs to communicate 
 \end{itemize}
 
 All these operations can be though as fairly simple. The resulting table is the following:
-\begin{fpcounttable}{EO}
-Taxi request assignment notification & Low & 4 \\
-Request accepted notification & Low & 4 \\
-Request dropped notification & Low & 4 \\
-Zone changed notification & Low & 4 \\
-Position in the queue changed notification & Low & 4 \\\hline 
-\fptotal{20}	
-\end{fpcounttable}
 
 \subsection{Overall estimation}
 The following table summarizes the results of our estimation activity:
@@ -246,8 +233,9 @@ The results of our evaluation is the following:
 	Development flexibility (FLEX) & Low & 4.05\\
 	Risk resolution (RESL) & Very high & 1.41\\
 	Team cohesion (TEAM) & Very high & 1.10\\
+	Documentation match to life-cycle needs (DOCU) & Nominal & 1.00 \\
 	Process maturity (PMAT) & Level 3 & 3.12\\\hline
-	\fptotal{14.64}
+	\cocomototal{14.64}
 \end{factorcounttable}
 
 \subsection{Cost Drivers}
@@ -460,6 +448,7 @@ The results of our evaluation is the following:
 
 
 Overall, our results are expressed by the following table:
+\pagebreak
 \begin{factorcounttable}{Cost Driver}
 	Required Software Reliability (RELY) & High & 1.10\\
 	Database size (DATA) & High & 1.14\\
@@ -478,7 +467,7 @@ Overall, our results are expressed by the following table:
 	Usage of Software Tools (TOOL) & High & 0.90 \\
 	Multisite development (SITE) & Very high & 0.86 \\
 	Required development schedule (SCED) & High & 1.00 \\\hline
-	\fptotal{1.54613}
+	\cocomototal{1.54613}
 \end{factorcounttable}
 
 \subsection{Effort equation}
